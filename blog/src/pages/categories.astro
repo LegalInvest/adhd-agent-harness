@@ -1,0 +1,112 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allArticles = await getCollection("articles");
+
+const categoryIcons: Record<string, string> = {
+  "ai-tools": "🛠️", "focus": "🎯", "time-mgmt": "⏰", "emotion": "💚",
+  "learning": "📚", "career": "💼", "entrepreneurship": "🚀",
+  "parenting": "👨‍👩‍👧‍👦", "science": "🔬", "lifestyle": "🌟", "community": "🌍",
+};
+
+const categoryColors: Record<string, string> = {
+  "ai-tools": "from-blue-500 to-blue-600",
+  "focus": "from-purple-500 to-purple-600",
+  "time-mgmt": "from-amber-500 to-amber-600",
+  "emotion": "from-emerald-500 to-emerald-600",
+  "learning": "from-pink-500 to-pink-600",
+  "career": "from-indigo-500 to-indigo-600",
+  "entrepreneurship": "from-orange-500 to-orange-600",
+  "parenting": "from-teal-500 to-teal-600",
+  "science": "from-red-500 to-red-600",
+  "lifestyle": "from-violet-500 to-violet-600",
+  "community": "from-lime-500 to-lime-600",
+};
+
+interface CategoryData {
+  id: string;
+  name: string;
+  icon: string;
+  gradient: string;
+  count: number;
+  avgScore: number;
+  topArticles: { title: string; slug: string; score: number }[];
+}
+
+const categoriesMap = new Map<string, CategoryData>();
+
+for (const article of allArticles) {
+  const catId = article.data.categoryId;
+  const existing = categoriesMap.get(catId);
+  if (existing) {
+    existing.count++;
+    existing.avgScore += article.data.score || 0;
+    existing.topArticles.push({
+      title: article.data.title,
+      slug: article.id,
+      score: article.data.score || 0,
+    });
+  } else {
+    categoriesMap.set(catId, {
+      id: catId,
+      name: article.data.category,
+      icon: categoryIcons[catId] || "📄",
+      gradient: categoryColors[catId] || "from-gray-500 to-gray-600",
+      count: 1,
+      avgScore: article.data.score || 0,
+      topArticles: [{
+        title: article.data.title,
+        slug: article.id,
+        score: article.data.score || 0,
+      }],
+    });
+  }
+}
+
+const categories = Array.from(categoriesMap.values()).map((cat) => ({
+  ...cat,
+  avgScore: Math.round((cat.avgScore / cat.count) * 100) / 100,
+  topArticles: cat.topArticles.sort((a, b) => b.score - a.score).slice(0, 3),
+}));
+---
+
+<BaseLayout title="分类 - ADHD × AI">
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="mb-12 text-center">
+      <h1 class="text-3xl font-extrabold sm:text-4xl">
+        <span class="gradient-text">内容分类</span>
+      </h1>
+      <p class="mt-4 text-lg text-[var(--color-text-secondary)]">
+        {categories.length} 大核心分类，覆盖 ADHD × AI 的方方面面
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {categories.map((cat) => (
+        <div class="article-card">
+          <div class={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${cat.gradient} text-2xl shadow-lg`}>
+            {cat.icon}
+          </div>
+          <h2 class="text-xl font-bold">{cat.name}</h2>
+          <div class="mt-2 flex items-center gap-3 text-sm text-[var(--color-text-secondary)]">
+            <span>{cat.count} 篇文章</span>
+            <span>&middot;</span>
+            <span>平均分 {cat.avgScore}</span>
+          </div>
+
+          <div class="mt-4 space-y-2">
+            {cat.topArticles.map((article) => (
+              <a
+                href={`/articles/${article.slug}`}
+                class="block truncate text-sm text-[var(--color-text-secondary)] transition-colors hover:text-brand-500"
+              >
+                &rarr; {article.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

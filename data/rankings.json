@@ -1,0 +1,204 @@
+{
+  "total": 400,
+  "categories": {
+    "ai-tools": {
+      "name": "AI工具实战",
+      "count": 37,
+      "avg_score": 6.89
+    },
+    "focus": {
+      "name": "专注力管理",
+      "count": 40,
+      "avg_score": 6.89
+    },
+    "time-mgmt": {
+      "name": "时间管理",
+      "count": 38,
+      "avg_score": 6.86
+    },
+    "emotion": {
+      "name": "情绪调节",
+      "count": 38,
+      "avg_score": 6.89
+    },
+    "learning": {
+      "name": "学习方法",
+      "count": 39,
+      "avg_score": 6.75
+    },
+    "career": {
+      "name": "职场发展",
+      "count": 35,
+      "avg_score": 6.76
+    },
+    "entrepreneurship": {
+      "name": "创业创新",
+      "count": 39,
+      "avg_score": 6.77
+    },
+    "parenting": {
+      "name": "亲子教育",
+      "count": 40,
+      "avg_score": 6.82
+    },
+    "science": {
+      "name": "科学研究",
+      "count": 30,
+      "avg_score": 6.58
+    },
+    "lifestyle": {
+      "name": "生活方式",
+      "count": 30,
+      "avg_score": 6.79
+    },
+    "community": {
+      "name": "社群与文化",
+      "count": 34,
+      "avg_score": 6.57
+    }
+  },
+  "evolution_history": [
+    {
+      "generation": 1,
+      "pool_size": 440,
+      "avg_score": 6.7,
+      "max_score": 8.82,
+      "min_score": 5.66,
+      "median_score": 6.68
+    },
+    {
+      "generation": 2,
+      "pool_size": 440,
+      "avg_score": 6.71,
+      "max_score": 8.82,
+      "min_score": 5.66,
+      "median_score": 6.68
+    },
+    {
+      "generation": 3,
+      "pool_size": 440,
+      "avg_score": 6.71,
+      "max_score": 8.82,
+      "min_score": 5.66,
+      "median_score": 6.68
+    },
+    {
+      "generation": 4,
+      "pool_size": 440,
+      "avg_score": 6.71,
+      "max_score": 8.82,
+      "min_score": 5.65,
+      "median_score": 6.68
+    },
+    {
+      "generation": 5,
+      "pool_size": 440,
+      "avg_score": 6.71,
+      "max_score": 8.82,
+      "min_score": 5.66,
+      "median_score": 6.68
+    }
+  ],
+  "top_20": [
+    {
+      "rank": 1,
+      "title": "AI 帮 ADHD 克服拖延症的 7 个策略",
+      "score": 8.82
+    },
+    {
+      "rank": 2,
+      "title": "10 个让 ADHD 患者效率翻倍的 AI 工具",
+      "score": 8.48
+    },
+    {
+      "rank": 3,
+      "title": "从分心到专注：AI 训练 ADHD 注意力的5个阶段",
+      "score": 7.97
+    },
+    {
+      "rank": 4,
+      "title": "ADHD 的 AI 早起策略",
+      "score": 7.92
+    },
+    {
+      "rank": 5,
+      "title": "AI 帮 ADHD 创业者从0到1的完整路线图",
+      "score": 7.89
+    },
+    {
+      "rank": 6,
+      "title": "AI 帮 ADHD 孩子准备考试",
+      "score": 7.83
+    },
+    {
+      "rank": 7,
+      "title": "AI 如何帮 ADHD 管理考试专注力",
+      "score": 7.81
+    },
+    {
+      "rank": 8,
+      "title": "ADHD 的 AI 睡眠时间管理",
+      "score": 7.81
+    },
+    {
+      "rank": 9,
+      "title": "ADHD 的 AI 电商创业全攻略",
+      "score": 7.78
+    },
+    {
+      "rank": 10,
+      "title": "ADHD 的 AI 家务时间管理",
+      "score": 7.77
+    },
+    {
+      "rank": 11,
+      "title": "ADHD 的 AI 专注力恢复方案",
+      "score": 7.76
+    },
+    {
+      "rank": 12,
+      "title": "AI 如何帮 ADHD 改善亲密关系中的情绪管理",
+      "score": 7.76
+    },
+    {
+      "rank": 13,
+      "title": "用 AI 帮 ADHD 管理学习焦虑",
+      "score": 7.73
+    },
+    {
+      "rank": 14,
+      "title": "Claude vs ChatGPT：哪个更适合 ADHD 用户",
+      "score": 7.71
+    },
+    {
+      "rank": 15,
+      "title": "ADHD 的 AI 学习游戏化方案",
+      "score": 7.69
+    },
+    {
+      "rank": 16,
+      "title": "AI 专注力教练 vs 人类教练：ADHD 该怎么选",
+      "score": 7.68
+    },
+    {
+      "rank": 17,
+      "title": "ADHD 孩子的 AI 学习伙伴：家长指南",
+      "score": 7.68
+    },
+    {
+      "rank": 18,
+      "title": "ADHD 的 AI 认证考试准备方案",
+      "score": 7.63
+    },
+    {
+      "rank": 19,
+      "title": "用 AI 帮 ADHD 学生做笔记：从混乱到系统",
+      "score": 7.61
+    },
+    {
+      "rank": 20,
+      "title": "ADHD 必备：7 个 AI 自动化工作流",
+      "score": 7.6
+    }
+  ]
+}

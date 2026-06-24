@@ -1,0 +1,72 @@
+---
+interface Props {
+  totalArticles: number;
+  totalCategories: number;
+}
+const { totalArticles, totalCategories } = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 px-4 py-20 sm:py-28">
+  <!-- Animated background -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -left-10 -top-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl"></div>
+    <div class="absolute -bottom-10 -right-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"></div>
+    <div class="absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-500/10 blur-3xl"></div>
+  </div>
+
+  <div class="relative mx-auto max-w-5xl text-center">
+    <div class="animate-fade-in-up">
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-purple-200 backdrop-blur-sm">
+        <span class="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+        {totalArticles} 篇精选文章持续更新中
+      </div>
+
+      <h1 class="text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+        <span class="block">ADHD</span>
+        <span class="mt-2 block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          &times; AI
+        </span>
+      </h1>
+
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-purple-100/80 sm:text-xl">
+        用 AI 的力量赋能每一个独特的 ADHD 大脑
+        <br />
+        <span class="text-purple-200/60">{totalCategories} 大核心分类 &middot; {totalArticles} 篇深度文章 &middot; 持续进化优化</span>
+      </p>
+    </div>
+
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-in-up animate-delay-200">
+      <a
+        href="#articles"
+        class="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-lg shadow-white/25 transition-all hover:shadow-xl hover:shadow-white/30 hover:-translate-y-0.5"
+      >
+        开始探索
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+      <a
+        href="/categories"
+        class="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/10"
+      >
+        浏览分类
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="mx-auto mt-16 grid max-w-3xl grid-cols-3 gap-6 animate-fade-in-up animate-delay-300">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+        <div class="text-3xl font-bold text-white">{totalArticles}</div>
+        <div class="mt-1 text-sm text-purple-200/60">精选文章</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+        <div class="text-3xl font-bold text-white">{totalCategories}</div>
+        <div class="mt-1 text-sm text-purple-200/60">核心分类</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+        <div class="text-3xl font-bold text-white">6</div>
+        <div class="mt-1 text-sm text-purple-200/60">评分维度</div>
+      </div>
+    </div>
+  </div>
+</section>

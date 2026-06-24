@@ -1,0 +1,138 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = "ADHD × AI - 400 篇精选文章，探索 ADHD 与 AI 的无限可能", ogImage } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] antialiased">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="/" class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-purple-500 text-lg font-bold text-white shadow-lg shadow-brand-500/25">
+            A
+          </div>
+          <div>
+            <span class="text-lg font-bold tracking-tight">ADHD</span>
+            <span class="mx-1 text-brand-500 font-light">&times;</span>
+            <span class="text-lg font-bold tracking-tight">AI</span>
+          </div>
+        </a>
+        <div class="flex items-center gap-6">
+          <a href="/" class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
+            首页
+          </a>
+          <a href="/categories" class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
+            分类
+          </a>
+          <a href="/about" class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
+            关于
+          </a>
+          <button
+            id="theme-toggle"
+            class="rounded-lg p-2 text-[var(--color-text-secondary)] transition-colors hover:bg-[var(--color-bg-secondary)]"
+            aria-label="Toggle theme"
+          >
+            <svg class="h-5 w-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg class="hidden h-5 w-5 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <div class="flex items-center gap-2 text-lg font-bold">
+              <span>ADHD</span>
+              <span class="text-brand-500">&times;</span>
+              <span>AI</span>
+            </div>
+            <p class="mt-3 text-sm text-[var(--color-text-secondary)]">
+              400 篇精选文章，探索 ADHD 与 AI 的无限可能。
+              <br />用技术赋能，让每个独特的大脑闪闪发光。
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold">分类</h3>
+            <ul class="mt-3 space-y-2 text-sm text-[var(--color-text-secondary)]">
+              <li><a href="/categories" class="hover:text-brand-500 transition-colors">AI工具实战</a></li>
+              <li><a href="/categories" class="hover:text-brand-500 transition-colors">专注力管理</a></li>
+              <li><a href="/categories" class="hover:text-brand-500 transition-colors">时间管理</a></li>
+              <li><a href="/categories" class="hover:text-brand-500 transition-colors">情绪调节</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">更多</h3>
+            <ul class="mt-3 space-y-2 text-sm text-[var(--color-text-secondary)]">
+              <li><a href="/about" class="hover:text-brand-500 transition-colors">关于我们</a></li>
+              <li><a href="/categories" class="hover:text-brand-500 transition-colors">所有分类</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-[var(--color-border)] pt-8 text-center text-sm text-[var(--color-text-secondary)]">
+          <p>&copy; 2025 ADHD &times; AI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      // Theme toggle
+      const toggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      // Check saved preference or system preference
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        html.classList.toggle("dark", savedTheme === "dark");
+      } else {
+        html.classList.toggle("dark", window.matchMedia("(prefers-color-scheme: dark)").matches);
+      }
+
+      toggle?.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem("theme", html.classList.contains("dark") ? "dark" : "light");
+      });
+    </script>
+  </body>
+</html>

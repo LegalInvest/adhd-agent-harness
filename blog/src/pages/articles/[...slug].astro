@@ -1,0 +1,109 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles");
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+const categoryColors: Record<string, string> = {
+  "ai-tools": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "focus": "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "time-mgmt": "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  "emotion": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "learning": "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300",
+  "career": "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
+  "entrepreneurship": "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+  "parenting": "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300",
+  "science": "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300",
+  "lifestyle": "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
+  "community": "bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300",
+};
+
+const colorClass = categoryColors[article.data.categoryId] || "bg-gray-100 text-gray-700";
+---
+
+<BaseLayout title={`${article.data.title} - ADHD × AI`} description={article.data.subtitle}>
+  <article class="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+    <!-- Header -->
+    <header class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <a href="/" class="text-sm text-[var(--color-text-secondary)] hover:text-brand-500 transition-colors">
+          &larr; 返回首页
+        </a>
+        <span class="text-[var(--color-text-secondary)]">/</span>
+        <span class={`category-badge ${colorClass}`}>
+          {article.data.category}
+        </span>
+      </div>
+
+      <h1 class="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+        {article.data.title}
+      </h1>
+
+      {article.data.subtitle && (
+        <p class="mt-4 text-lg text-[var(--color-text-secondary)] sm:text-xl">
+          {article.data.subtitle}
+        </p>
+      )}
+
+      <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-[var(--color-text-secondary)]">
+        <span class="flex items-center gap-1.5">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          {article.data.date}
+        </span>
+        {article.data.readingTime && (
+          <span class="flex items-center gap-1.5">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            {article.data.readingTime} 分钟阅读
+          </span>
+        )}
+        {article.data.rank && article.data.rank <= 20 && (
+          <span class="flex items-center gap-1.5 text-amber-500 font-medium">
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            Top {article.data.rank}
+          </span>
+        )}
+      </div>
+
+      {article.data.tags && (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {article.data.tags.map((tag: string) => (
+            <span class="tag-pill">{tag}</span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <!-- Content -->
+    <div class="prose-article">
+      <Content />
+    </div>
+
+    <!-- Footer navigation -->
+    <nav class="mt-16 border-t border-[var(--color-border)] pt-8">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 rounded-xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-600 hover:shadow-lg"
+      >
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        浏览更多文章
+      </a>
+    </nav>
+  </article>
+</BaseLayout>

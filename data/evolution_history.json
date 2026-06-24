@@ -1,0 +1,42 @@
+[
+  {
+    "generation": 1,
+    "pool_size": 440,
+    "avg_score": 6.7,
+    "max_score": 8.82,
+    "min_score": 5.66,
+    "median_score": 6.68
+  },
+  {
+    "generation": 2,
+    "pool_size": 440,
+    "avg_score": 6.71,
+    "max_score": 8.82,
+    "min_score": 5.66,
+    "median_score": 6.68
+  },
+  {
+    "generation": 3,
+    "pool_size": 440,
+    "avg_score": 6.71,
+    "max_score": 8.82,
+    "min_score": 5.66,
+    "median_score": 6.68
+  },
+  {
+    "generation": 4,
+    "pool_size": 440,
+    "avg_score": 6.71,
+    "max_score": 8.82,
+    "min_score": 5.65,
+    "median_score": 6.68
+  },
+  {
+    "generation": 5,
+    "pool_size": 440,
+    "avg_score": 6.71,
+    "max_score": 8.82,
+    "min_score": 5.66,
+    "median_score": 6.68
+  }
+]

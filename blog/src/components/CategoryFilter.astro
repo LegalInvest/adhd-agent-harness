@@ -1,0 +1,85 @@
+---
+interface CategoryInfo {
+  id: string;
+  name: string;
+  icon: string;
+  count: number;
+}
+interface Props {
+  categories: CategoryInfo[];
+  activeCategory?: string;
+}
+const { categories, activeCategory = "all" } = Astro.props;
+
+const categoryColors: Record<string, string> = {
+  "ai-tools": "border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-300",
+  "focus": "border-purple-500 bg-purple-50 text-purple-700 dark:bg-purple-900/20 dark:text-purple-300",
+  "time-mgmt": "border-amber-500 bg-amber-50 text-amber-700 dark:bg-amber-900/20 dark:text-amber-300",
+  "emotion": "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-300",
+  "learning": "border-pink-500 bg-pink-50 text-pink-700 dark:bg-pink-900/20 dark:text-pink-300",
+  "career": "border-indigo-500 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/20 dark:text-indigo-300",
+  "entrepreneurship": "border-orange-500 bg-orange-50 text-orange-700 dark:bg-orange-900/20 dark:text-orange-300",
+  "parenting": "border-teal-500 bg-teal-50 text-teal-700 dark:bg-teal-900/20 dark:text-teal-300",
+  "science": "border-red-500 bg-red-50 text-red-700 dark:bg-red-900/20 dark:text-red-300",
+  "lifestyle": "border-violet-500 bg-violet-50 text-violet-700 dark:bg-violet-900/20 dark:text-violet-300",
+  "community": "border-lime-500 bg-lime-50 text-lime-700 dark:bg-lime-900/20 dark:text-lime-300",
+};
+---
+
+<div class="flex flex-wrap gap-2" id="category-filter">
+  <button
+    class:list={[
+      "category-filter-btn rounded-full border-2 px-4 py-2 text-sm font-medium transition-all",
+      activeCategory === "all"
+        ? "border-brand-500 bg-brand-50 text-brand-700 dark:bg-brand-900/20 dark:text-brand-300"
+        : "border-transparent bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700",
+    ]}
+    data-category="all"
+  >
+    全部
+  </button>
+  {categories.map((cat) => (
+    <button
+      class:list={[
+        "category-filter-btn rounded-full border-2 px-4 py-2 text-sm font-medium transition-all",
+        activeCategory === cat.id
+          ? categoryColors[cat.id] || "border-gray-500 bg-gray-50 text-gray-700"
+          : "border-transparent bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700",
+      ]}
+      data-category={cat.id}
+    >
+      {cat.icon} {cat.name}
+      <span class="ml-1 text-xs opacity-60">({cat.count})</span>
+    </button>
+  ))}
+</div>
+
+<script is:inline>
+  document.querySelectorAll(".category-filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const category = btn.dataset.category;
+      const cards = document.querySelectorAll("[data-article-category]");
+      const buttons = document.querySelectorAll(".category-filter-btn");
+
+      buttons.forEach((b) => {
+        b.classList.remove("border-brand-500", "bg-brand-50", "text-brand-700", "dark:bg-brand-900/20", "dark:text-brand-300");
+        b.classList.add("border-transparent", "bg-gray-100", "text-gray-600", "dark:bg-gray-800", "dark:text-gray-400");
+      });
+      btn.classList.remove("border-transparent", "bg-gray-100", "text-gray-600", "dark:bg-gray-800", "dark:text-gray-400");
+      btn.classList.add("border-brand-500", "bg-brand-50", "text-brand-700", "dark:bg-brand-900/20", "dark:text-brand-300");
+
+      cards.forEach((card) => {
+        if (category === "all" || card.dataset.articleCategory === category) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      // Update count
+      const visibleCount = document.querySelectorAll('[data-article-category]:not([style*="display: none"])').length;
+      const countEl = document.getElementById("visible-count");
+      if (countEl) countEl.textContent = visibleCount.toString();
+    });
+  });
+</script>
