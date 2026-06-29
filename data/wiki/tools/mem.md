@@ -1,0 +1,36 @@
+# Mem
+
+## 是什么
+
+Mem 是一款以“AI 第二大脑”为定位的生产力工具，专注于跨会话保持项目上下文、偏好和过往工作，减少用户重复陈述和搜索开销（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。它通过持久记忆和可复用工作流，帮助用户在执行多步骤任务时保持连贯性。
+
+## 与 ADHD 的关系
+
+ADHD 的核心障碍之一是[[工作记忆]]不足，即难以在脑中短暂保持和操作信息（来源：6 ways AI can help you manage ADHD symptoms - Understood.org）。Mem 通过外部化记忆，将项目上下文持久存储，当用户的工作记忆“掉落”时，AI 助手能自动携带上下文继续工作（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。这直接对应了 ADHD 用户在专业工作中“需要 AI 助手记住会话间的工作”这一需求（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+
+## AI 如何介入
+
+Mem 的 AI 核心功能包括：
+- **持久记忆**：记住用户的上下文、偏好和跨会话的过往工作（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+- **项目上下文保持**：将项目相关信息置于助手可复用的位置，减少搜索循环和标签切换（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+- **多步骤工作流执行**：用户给出指令后，AI 自动执行多步流程，并根据用户标准检查质量（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+
+这些特性与 [[Saner.AI]] 等工具相似，但 Mem 更强调围绕文件、规则和可复用工作流构建的“第二大脑”架构（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+
+## 证据
+
+在 2026 年的 ADHD 生产力工具评测中，Mem 被列为“记住项目”类别的推荐工具，特别适合需要跨会话保持工作记忆的用户（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。评测指出，对于专业工作，基于文件和工作流的 AI 第二大脑（如 Mem）比单纯对话式 AI 更强，因为它能记住会话间的工作（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+
+## 局限与争议
+
+- **依赖用户初始设置**：尽管 Mem 降低了重复陈述的负担，但用户仍需投入时间建立规则和工作流，这对[[执行功能]]本就薄弱的 ADHD 用户可能构成门槛（来源：6 ways AI can help you manage ADHD symptoms - Understood.org）。
+- **与同类工具的对比**：Mem 的“持久记忆”优势与 [[Saner.AI]] 或本地记忆方案类似，但后者可能更轻量（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。用户需根据自身对“低设置摩擦”的需求选择（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+- **并非万能**：Mem 假设用户能维持长时间对话的专注，但 ADHD 用户可能难以做到（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。工具无法替代外部结构（如 [[Goblin Tools]] 的任务分解或 [[Motion]] 的日历支持）。
+
+> ⚠️ 矛盾：评测强调 Mem 适合“专业工作”，但另一来源指出 ADHD 用户需要的工具应“不需要你每天早晨重新陈述上下文”（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。Mem 虽能持久记忆，但初始设置和规则定义仍需用户主动投入，这可能与“低设置摩擦”的理想有差距。
+
+## 来源
+
+- Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar
+- AI Tools for ADHD: Boosting Productivity and Reducing Burnout
+- 6 ways AI can help you manage ADHD symptoms - Understood.org

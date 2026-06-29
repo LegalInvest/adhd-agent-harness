@@ -21,6 +21,8 @@ const articles = defineCollection({
     sourceCount: z.number().optional(),
     toolsCited: z.array(z.string()).optional(),
     isEvolved: z.boolean().optional(),
+    thesis: z.string().optional(),
+    llmGenerated: z.boolean().optional(),
   }),
 });
 

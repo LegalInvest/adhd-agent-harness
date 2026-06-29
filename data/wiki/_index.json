@@ -1,0 +1,1350 @@
+{
+  "pages": {
+    "concept:执行功能": {
+      "name": "执行功能",
+      "type": "concept",
+      "slug": "执行功能",
+      "path": "concepts/执行功能.md",
+      "summary": "执行功能是大脑的驾驶系统，负责计划、组织、工作记忆等认知控制；ADHD 患者常存在执行功能缺陷，AI 工具可提供个性化支持。",
+      "cross_links": [
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "拒绝敏感性焦虑",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
+          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        },
+        {
+          "title": "AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors",
+          "url": "https://thembatutors.com/ai-for-adhd-tools-and-apps/"
+        },
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT",
+          "url": "https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39"
+        }
+      ],
+      "ingested_source_hashes": [
+        "f2beccdde6c5",
+        "f261bbd70590",
+        "c510e3178d72",
+        "5efe17a535c1",
+        "83be1a65969e",
+        "9ee686cb6103",
+        "67da9f000d71",
+        "a10ea55b469a",
+        "e61b03d96795",
+        "d5ad6a3f2bad",
+        "0d31138584d9",
+        "717b5230a8c7",
+        "b732232ee64f",
+        "a59f8c6247f5"
+      ],
+      "updated_at": "2026-06-29T09:15:21.951837+00:00"
+    },
+    "concept:工作记忆": {
+      "name": "工作记忆",
+      "type": "concept",
+      "slug": "工作记忆",
+      "path": "concepts/工作记忆.md",
+      "summary": "工作记忆是ADHD核心执行功能缺陷之一，AI工具可作为数字工作记忆来弥补这一短板。",
+      "cross_links": [
+        "执行功能",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "拒绝敏感性焦虑",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        },
+        {
+          "title": "ADHD, Executive Functions, and AI: A New Era in Treatment | Psychology Today",
+          "url": "https://www.psychologytoday.com/us/blog/screen-play/202502/adhd-executive-functions-and-ai-a-new-era-in-treatment"
+        },
+        {
+          "title": "Outsourcing Executive Function with AI — Hacking Your ADHD",
+          "url": "https://www.hackingyouradhd.com/podcast/outsourcing-executive-function-with-ai"
+        }
+      ],
+      "ingested_source_hashes": [
+        "1187c589ca19",
+        "c510e3178d72",
+        "67da9f000d71",
+        "1263bc47ad31",
+        "7fcd0c429536",
+        "9ce808a8f59d",
+        "e9651fac7e7b",
+        "daf7a73952fc",
+        "c4dd4bea2423",
+        "f0baababbf15",
+        "09a86ab04387",
+        "dc6865b954ad",
+        "cc9d0769543d",
+        "c60187e258f1"
+      ],
+      "updated_at": "2026-06-29T09:15:45.698815+00:00"
+    },
+    "concept:时间盲": {
+      "name": "时间盲",
+      "type": "concept",
+      "slug": "时间盲",
+      "path": "concepts/时间盲.md",
+      "summary": "时间盲是ADHD的核心特征之一，指难以感知和估计时间流逝，导致计划、准时和任务管理困难。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "拒绝敏感性焦虑",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        },
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "9 Best AI Assistants for ADHD in 2026 - by Nia - rivva blog",
+          "url": "https://blog.rivva.app/p/ai-assistants-for-adhd"
+        },
+        {
+          "title": "AI and ADHD: Comprehensive Guide to Using AI Chatbots for People with ADHD",
+          "url": "https://resident.com/tech-and-gear/2024/09/02/ai-and-adhd-helpful-guide-to-using-ai-chatbots-for-people-with-adhd"
+        }
+      ],
+      "ingested_source_hashes": [
+        "92faded39507",
+        "de069279f55c",
+        "5a6f1ed8c815",
+        "af35b9c04390",
+        "3f289e95266d",
+        "efc1d790c7b4",
+        "124f05c1a601",
+        "f0bd9784ffcb",
+        "82456081037d",
+        "f3632dcfaae3"
+      ],
+      "updated_at": "2026-06-29T09:16:12.102618+00:00"
+    },
+    "concept:身体在场效应": {
+      "name": "身体在场效应",
+      "type": "concept",
+      "slug": "身体在场效应",
+      "path": "concepts/身体在场效应.md",
+      "summary": "身体在场效应（Body Doubling）是一种通过他人物理或虚拟在场来提升任务执行力的ADHD策略，尤其适用于启动困难和注意力维持。",
+      "cross_links": [
+        "执行功能",
+        "任务启动",
+        "Focusmate"
+      ],
+      "sources": [
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        }
+      ],
+      "ingested_source_hashes": [
+        "4d5a30f569f5",
+        "6702e8674100",
+        "2904ab2dccf4",
+        "1258a043fc90"
+      ],
+      "updated_at": "2026-06-29T09:16:34.707140+00:00"
+    },
+    "concept:多巴胺": {
+      "name": "多巴胺",
+      "type": "concept",
+      "slug": "多巴胺",
+      "path": "concepts/多巴胺.md",
+      "summary": "多巴胺是ADHD核心神经递质，其失调影响视网膜血管结构，AI可通过分析眼底照片识别ADHD生物标志物。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "任务启动",
+        "拒绝敏感性焦虑",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "The Retina as a Mirror: Decoding the ADHD AI \"Breakthrough\" and Its ...",
+          "url": "https://www.adhdevidence.org/blog/the-retina-as-a-mirror-decoding-the-adhd-ai-breakthrough-and-its-fatal-flaws"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        }
+      ],
+      "ingested_source_hashes": [
+        "78b7adf9fdbb",
+        "e85c4f501bd3",
+        "bd32208826d4",
+        "71e8314b873b"
+      ],
+      "updated_at": "2026-06-29T09:16:58.928452+00:00"
+    },
+    "concept:任务启动": {
+      "name": "任务启动",
+      "type": "concept",
+      "slug": "任务启动",
+      "path": "concepts/任务启动.md",
+      "summary": "任务启动是ADHD核心执行功能缺陷之一，指难以开始一项任务，常伴随拖延和启动焦虑。AI工具通过分解步骤、设置提醒和降低认知负荷来辅助任务启动。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "拒绝敏感性焦虑",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "AI Tools for Kids with ADHD: A Complete Guide for Parents...",
+          "url": "https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026"
+        }
+      ],
+      "ingested_source_hashes": [
+        "300e09f0b57c"
+      ],
+      "updated_at": "2026-06-29T09:17:23.470881+00:00"
+    },
+    "concept:超聚焦": {
+      "name": "超聚焦",
+      "type": "concept",
+      "slug": "超聚焦",
+      "path": "concepts/超聚焦.md",
+      "summary": "超聚焦是ADHD个体常见的一种高度专注状态，但常指向错误目标或导致时间丧失。AI工具可帮助引导和管理这种状态。",
+      "cross_links": [
+        "执行功能",
+        "时间盲",
+        "多巴胺",
+        "任务启动",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "5 ChatGPT Prompts That Keep My ADHD From Spiraling",
+          "url": "https://adhdinsightss.substack.com/p/5-chatgpt-prompts-that-keep-my-adhd"
+        },
+        {
+          "title": "9 Best AI Assistants for ADHD in 2026 - by Nia - rivva blog",
+          "url": "https://blog.rivva.app/p/ai-assistants-for-adhd"
+        }
+      ],
+      "ingested_source_hashes": [
+        "124f05c1a601",
+        "59d5b59a6925",
+        "82456081037d",
+        "e0cf388c8c1e"
+      ],
+      "updated_at": "2026-06-29T09:17:47.890257+00:00"
+    },
+    "concept:认知负荷": {
+      "name": "认知负荷",
+      "type": "concept",
+      "slug": "认知负荷",
+      "path": "concepts/认知负荷.md",
+      "summary": "认知负荷指工作记忆处理信息所需的心理努力，ADHD患者因执行功能缺陷更易超载。AI工具通过外化思考、自动决策等方式减轻认知负荷。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "Harnessing Artificial Intelligence to Live Better with ADHD - CHADD",
+          "url": "https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/"
+        },
+        {
+          "title": "9 Best AI Assistants for ADHD in 2026 - by Nia - rivva blog",
+          "url": "https://blog.rivva.app/p/ai-assistants-for-adhd"
+        },
+        {
+          "title": "ADHAPT: An AI Tool for Emotional Regulation",
+          "url": "https://www.csai.io/adhapt-an-ai-tool-for-emotional-regulation/"
+        }
+      ],
+      "ingested_source_hashes": [
+        "477afdc25a1d",
+        "64e68e110c75",
+        "91c9b338e961",
+        "22fb374ba327",
+        "6d81d998017d",
+        "75a3840d9084"
+      ],
+      "updated_at": "2026-06-29T09:18:11.956546+00:00"
+    },
+    "concept:情绪失调": {
+      "name": "情绪失调",
+      "type": "concept",
+      "slug": "情绪失调",
+      "path": "concepts/情绪失调.md",
+      "summary": "情绪失调是ADHD的核心特征之一，表现为情绪反应过度、调节困难，常与执行功能缺陷相关。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "AI and ADHD: Comprehensive Guide to Using AI Chatbots for People with ADHD",
+          "url": "https://resident.com/tech-and-gear/2024/09/02/ai-and-adhd-helpful-guide-to-using-ai-chatbots-for-people-with-adhd"
+        }
+      ],
+      "ingested_source_hashes": [
+        "e3f5f56b1fb1"
+      ],
+      "updated_at": "2026-06-29T09:18:34.307613+00:00"
+    },
+    "concept:执行功能障碍": {
+      "name": "执行功能障碍",
+      "type": "concept",
+      "slug": "执行功能障碍",
+      "path": "concepts/执行功能障碍.md",
+      "summary": "执行功能障碍是ADHD的核心挑战之一，表现为任务启动、时间管理、组织规划等困难，AI工具可通过提供外部执行功能来辅助应对。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo"
+      ],
+      "sources": [
+        {
+          "title": "Artificial Intelligence Identifies Adults with ADHD Using EEG Features",
+          "url": "https://advances.massgeneral.org/neuro/journal.aspx?id=1593"
+        },
+        {
+          "title": "10 ChatGPT Prompts for ADHD Management: Boost Productivity ...",
+          "url": "https://www.millenniummedicalassociates.com/blog/adhd-chatgpt-prompts-executive-dysfunction"
+        },
+        {
+          "title": "9 Best AI Assistants for ADHD in 2026 - by Nia - rivva blog",
+          "url": "https://blog.rivva.app/p/ai-assistants-for-adhd"
+        },
+        {
+          "title": "A Review of Artificial Intelligence-Based Educational ...",
+          "url": "https://nhsjs.com/2025/a-review-of-artificial-intelligence-based-educational-interventions-for-students-with-adhd/"
+        }
+      ],
+      "ingested_source_hashes": [
+        "1f8e14319420",
+        "cd3cbee5fd0c",
+        "73388433e2c3",
+        "de5256111dd8",
+        "7fffad25bf30",
+        "4f913710c34e",
+        "4b4e5991dea4"
+      ],
+      "updated_at": "2026-06-29T09:18:57.980228+00:00"
+    },
+    "tool:Goblin Tools": {
+      "name": "Goblin Tools",
+      "type": "tool",
+      "slug": "goblin-tools",
+      "path": "tools/goblin-tools.md",
+      "summary": "Goblin Tools 是一套专为 ADHD 和自闭症谱系人群设计的 AI 工具，通过分解任务、组织日程和优化沟通来支持执行功能。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "Brain.fm"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT",
+          "url": "https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39"
+        },
+        {
+          "title": "Harnessing Artificial Intelligence to Live Better with ADHD - CHADD",
+          "url": "https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/"
+        },
+        {
+          "title": "AI Tools for Kids with ADHD: A Complete Guide for Parents...",
+          "url": "https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026"
+        },
+        {
+          "title": "AI and ADHD: Comprehensive Guide to Using AI Chatbots for People with ADHD",
+          "url": "https://resident.com/tech-and-gear/2024/09/02/ai-and-adhd-helpful-guide-to-using-ai-chatbots-for-people-with-adhd"
+        }
+      ],
+      "ingested_source_hashes": [
+        "ac415cb2c7c7",
+        "5c06060395fa",
+        "b79cae2950e3",
+        "f3e07b501b61",
+        "035ea86ff257",
+        "5307fcb024a3",
+        "dd92f248ec30",
+        "fd6d91f584e1",
+        "52d8dd4de1c3",
+        "d496cc6322b2",
+        "b064eeaa9e51",
+        "99d63e8c9ac3"
+      ],
+      "updated_at": "2026-06-29T09:19:22.691183+00:00"
+    },
+    "tool:Saner.AI": {
+      "name": "Saner.AI",
+      "type": "tool",
+      "slug": "sanerai",
+      "path": "tools/sanerai.md",
+      "summary": "Saner.AI 是一款利用 AI 增强知识回忆的任务管理工具，有助于减少 ADHD 用户的搜索循环和标签切换。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "Goblin Tools",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "Brain.fm",
+        "多巴胺",
+        "身体在场效应",
+        "时间盲"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        }
+      ],
+      "ingested_source_hashes": [
+        "4ead2855c60c",
+        "43a66bb83449",
+        "13e7af9dd23e"
+      ],
+      "updated_at": "2026-06-29T09:19:46.067948+00:00"
+    },
+    "tool:Motion": {
+      "name": "Motion",
+      "type": "tool",
+      "slug": "motion",
+      "path": "tools/motion.md",
+      "summary": "Motion 是一款 AI 驱动的日程规划应用，能自动根据任务、会议和截止日期创建并动态调整每日计划，尤其适合 ADHD 用户在时间管理和执行功能方面获得支持。",
+      "cross_links": [
+        "Tiimo",
+        "Saner.AI",
+        "Reclaim.ai",
+        "执行功能",
+        "时间盲"
+      ],
+      "sources": [
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        },
+        {
+          "title": "The Role of Artificial Intelligence in ADHD Diagnosis and Treatment: A New Frontier in Neurotechnology | IntechOpen",
+          "url": "https://www.intechopen.com/online-first/1220045"
+        },
+        {
+          "title": "Artificial Intelligence Identifies Adults with ADHD Using EEG Features",
+          "url": "https://advances.massgeneral.org/neuro/journal.aspx?id=1593"
+        },
+        {
+          "title": "AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors",
+          "url": "https://thembatutors.com/ai-for-adhd-tools-and-apps/"
+        },
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "10 ChatGPT Prompts for ADHD Management: Boost Productivity ...",
+          "url": "https://www.millenniummedicalassociates.com/blog/adhd-chatgpt-prompts-executive-dysfunction"
+        },
+        {
+          "title": "ADHD, Executive Functions, and AI: A New Era in Treatment | Psychology Today",
+          "url": "https://www.psychologytoday.com/us/blog/screen-play/202502/adhd-executive-functions-and-ai-a-new-era-in-treatment"
+        }
+      ],
+      "ingested_source_hashes": [
+        "061645ecce76",
+        "13e7af9dd23e",
+        "b071ee0685f8",
+        "6792f4b30f12",
+        "de1fa001da4c",
+        "4dca055333ac",
+        "7ad844cd319f",
+        "afb392599f6e",
+        "933a047dda6c",
+        "21c224d60c67",
+        "5e792502bc4b",
+        "c2d7c14372d0",
+        "c026ee314123",
+        "e9651fac7e7b"
+      ],
+      "updated_at": "2026-06-29T09:20:10.313851+00:00"
+    },
+    "tool:Reclaim.ai": {
+      "name": "Reclaim.ai",
+      "type": "tool",
+      "slug": "reclaimai",
+      "path": "tools/reclaimai.md",
+      "summary": "Reclaim.ai 是一款通过智能时间块保护深度工作与习惯的 AI 生产力工具，特别适合 ADHD 用户应对时间盲与执行功能挑战。",
+      "cross_links": [
+        "执行功能",
+        "时间盲",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Tiimo",
+        "Brain.fm",
+        "工作记忆",
+        "身体在场效应",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        }
+      ],
+      "ingested_source_hashes": [
+        "67aee185ce68"
+      ],
+      "updated_at": "2026-06-29T09:20:33.255317+00:00"
+    },
+    "tool:Tiimo": {
+      "name": "Tiimo",
+      "type": "tool",
+      "slug": "tiimo",
+      "path": "tools/tiimo.md",
+      "summary": "Tiimo 是一款专为 ADHD 和自闭症成人设计的视觉化日常规划工具，通过将时间转化为可见元素来提升时间感知与执行功能。",
+      "cross_links": [
+        "执行功能",
+        "时间盲",
+        "Motion",
+        "Reclaim.ai"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        }
+      ],
+      "ingested_source_hashes": [
+        "ae4784cc2460",
+        "061645ecce76",
+        "8040561f3364"
+      ],
+      "updated_at": "2026-06-29T09:20:55.252339+00:00"
+    },
+    "tool:Brain.fm": {
+      "name": "Brain.fm",
+      "type": "tool",
+      "slug": "brainfm",
+      "path": "tools/brainfm.md",
+      "summary": "Brain.fm 是一款利用 AI 生成音乐、通过神经锁相技术帮助大脑进入专注状态的工具，对 ADHD 用户可能有助于改善执行功能和注意力管理。",
+      "cross_links": [
+        "执行功能",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        }
+      ],
+      "ingested_source_hashes": [
+        "64201d7502a5"
+      ],
+      "updated_at": "2026-06-29T09:21:16.559667+00:00"
+    },
+    "tool:Focusmate": {
+      "name": "Focusmate",
+      "type": "tool",
+      "slug": "focusmate",
+      "path": "tools/focusmate.md",
+      "summary": "Focusmate 是一种虚拟身体在场（body doubling）服务，通过 AI 匹配和视频会议提供实时问责，帮助 ADHD 用户保持专注。",
+      "cross_links": [
+        "身体在场效应",
+        "执行功能",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "AI Tools for Kids with ADHD: A Complete Guide for Parents...",
+          "url": "https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026"
+        }
+      ],
+      "ingested_source_hashes": [
+        "4d5a30f569f5",
+        "2904ab2dccf4",
+        "01c688a413cd",
+        "50d608cdc67e"
+      ],
+      "updated_at": "2026-06-29T09:21:39.909013+00:00"
+    },
+    "tool:Structured": {
+      "name": "Structured",
+      "type": "tool",
+      "slug": "structured",
+      "path": "tools/structured.md",
+      "summary": "Structured 是一款为 iOS 设计的视觉化时间线应用，通过将抽象日程转化为具体时间块，帮助 ADHD 用户克服时间盲，提升执行功能。",
+      "cross_links": [
+        "Goblin Tools",
+        "执行功能",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        },
+        {
+          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
+          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+        },
+        {
+          "title": "Supercharge Your ADHD Brain With ChatGPT: Your 24/7 AI Coach for ...",
+          "url": "https://add.org/course/supercharge-your-adhd-brain-with-chatgpt-your-24-7-ai-coach-for-focus-motivation-getting-stuff-done-with-bob-dietrich/"
+        },
+        {
+          "title": "Best AI Tools for ADHD Students in 2025 | Smarter Learning",
+          "url": "https://thembatutors.com/best-ai-tools-for-adhd-students/"
+        },
+        {
+          "title": "A Review of Artificial Intelligence-Based Educational ...",
+          "url": "https://nhsjs.com/2025/a-review-of-artificial-intelligence-based-educational-interventions-for-students-with-adhd/"
+        },
+        {
+          "title": "ADHAPT: An AI Tool for Emotional Regulation",
+          "url": "https://www.csai.io/adhapt-an-ai-tool-for-emotional-regulation/"
+        }
+      ],
+      "ingested_source_hashes": [
+        "ac415cb2c7c7",
+        "3cc24527dcac",
+        "e0162b1ffb18",
+        "0ec4bca9ddf5",
+        "663532bcc9a3",
+        "abab487e752c",
+        "3e0340faeaa8",
+        "6dace54b9b73",
+        "8ccc8c252f50",
+        "d884c7f08d3a"
+      ],
+      "updated_at": "2026-06-29T09:22:03.983801+00:00"
+    },
+    "tool:Lex": {
+      "name": "Lex",
+      "type": "tool",
+      "slug": "lex",
+      "path": "tools/lex.md",
+      "summary": "Lex 是一款旨在帮助 ADHD 用户通过单一指令触发复杂多步骤任务的 AI 生产力工具，强调实时适应大脑工作方式的灵活性。",
+      "cross_links": [
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
+          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        },
+        {
+          "title": "Frontiers | Artificial intelligence in ADHD assessment: a comprehensive review of research progress from early screening to precise differential diagnosis",
+          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1624485/full"
+        },
+        {
+          "title": "The Role of Artificial Intelligence in ADHD Diagnosis and Treatment: A New Frontier in Neurotechnology | IntechOpen",
+          "url": "https://www.intechopen.com/online-first/1220045"
+        },
+        {
+          "title": "AI may aid in diagnosing adolescents with ADHD | ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2023/11/231129150117.htm"
+        },
+        {
+          "title": "The Retina as a Mirror: Decoding the ADHD AI \"Breakthrough\" and Its ...",
+          "url": "https://www.adhdevidence.org/blog/the-retina-as-a-mirror-decoding-the-adhd-ai-breakthrough-and-its-fatal-flaws"
+        }
+      ],
+      "ingested_source_hashes": [
+        "133e7154bb1d",
+        "e85b9342987d",
+        "42b351ed5051",
+        "1f23efb6f508",
+        "b071ee0685f8",
+        "1fba0b3e2f45",
+        "4fe9344b0f5d",
+        "a21894960cc5",
+        "69ba5183672b",
+        "fce7df5a4035",
+        "239cd9919fe1",
+        "34b2cde5b3a8",
+        "67da09c5288e",
+        "e5ddbdb08009"
+      ],
+      "updated_at": "2026-06-29T09:22:29.807878+00:00"
+    },
+    "tool:Mem": {
+      "name": "Mem",
+      "type": "tool",
+      "slug": "mem",
+      "path": "tools/mem.md",
+      "summary": "Mem 是一款 AI 第二大脑工具，通过持久记忆和项目上下文保持，帮助 ADHD 用户减少工作记忆负担和搜索循环。",
+      "cross_links": [
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
+          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        }
+      ],
+      "ingested_source_hashes": [
+        "1cb8059f9dde",
+        "4ead2855c60c",
+        "1187c589ca19",
+        "b2513cbb1ccb",
+        "497a18a193a5",
+        "dd46d261a703",
+        "36bb8fce8123",
+        "85614339362b",
+        "c510e3178d72",
+        "4ebe8d256d94",
+        "d75a972eef16",
+        "9ee686cb6103",
+        "67da9f000d71",
+        "1263bc47ad31"
+      ],
+      "updated_at": "2026-06-29T09:22:57.319257+00:00"
+    },
+    "tool:ChatGPT": {
+      "name": "ChatGPT",
+      "type": "tool",
+      "slug": "chatgpt",
+      "path": "tools/chatgpt.md",
+      "summary": "ChatGPT 是 OpenAI 开发的对话式 AI 助手，被 ADHD 群体用作执行功能工具、创意出口和沟通辅助。",
+      "cross_links": [
+        "Goblin Tools",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT",
+          "url": "https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39"
+        }
+      ],
+      "ingested_source_hashes": [
+        "f2a206ac1d6c",
+        "b79cae2950e3",
+        "fb5244d5d0b5",
+        "92bc314dae8c",
+        "b732232ee64f",
+        "1efc3e2dbb75",
+        "a59f8c6247f5",
+        "a833c5b796a0",
+        "c44756c920e0",
+        "20e5305bba8b",
+        "5dbc2d0bd18f",
+        "0eaf3d448baa",
+        "8780fb3a222d",
+        "b65c6d7df6f2"
+      ],
+      "updated_at": "2026-06-29T09:23:21.724177+00:00"
+    },
+    "tool:Claude": {
+      "name": "Claude",
+      "type": "tool",
+      "slug": "claude",
+      "path": "tools/claude.md",
+      "summary": "Claude 是一款由 AI-PRO 开发的对话式 AI 工具，能帮助 ADHD 用户简化决策任务（如审查合同、制定商业计划），并与其他 AI 工具协同提升生产力。",
+      "cross_links": [
+        "Goblin Tools",
+        "执行功能",
+        "工作记忆"
+      ],
+      "sources": [
+        {
+          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
+          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+        },
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        },
+        {
+          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
+          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+        },
+        {
+          "title": "Harnessing Artificial Intelligence to Live Better with ADHD - CHADD",
+          "url": "https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/"
+        }
+      ],
+      "ingested_source_hashes": [
+        "3cc24527dcac",
+        "495efa960022",
+        "b79cae2950e3",
+        "db2eb4798066",
+        "33f71c53d6f8"
+      ],
+      "updated_at": "2026-06-29T09:23:44.656682+00:00"
+    },
+    "tool:Otter.ai": {
+      "name": "Otter.ai",
+      "type": "tool",
+      "slug": "otterai",
+      "path": "tools/otterai.md",
+      "summary": "Otter.ai 是一款实时语音转文字工具，可自动生成会议笔记和字幕，帮助 ADHD 用户减轻笔记负担。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "身体在场效应"
+      ],
+      "sources": [
+        {
+          "title": "Harnessing Artificial Intelligence to Live Better with ADHD - CHADD",
+          "url": "https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/"
+        },
+        {
+          "title": "AI Tools for Kids with ADHD: A Complete Guide for Parents...",
+          "url": "https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026"
+        }
+      ],
+      "ingested_source_hashes": [
+        "17bb2fa91f7a",
+        "c713e488d686",
+        "f3d8acd873eb"
+      ],
+      "updated_at": "2026-06-29T09:24:06.700491+00:00"
+    },
+    "tool:Reflect": {
+      "name": "Reflect",
+      "type": "tool",
+      "slug": "reflect",
+      "path": "tools/reflect.md",
+      "summary": "Reflect 是一种通过结构化回顾（如记录年度高低点）帮助 ADHD 用户整理思绪、提升自我觉察的 AI 工具，其核心在于利用 AI 的即时可用性和引导式提问降低执行功能负担。",
+      "cross_links": [
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
+          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+        },
+        {
+          "title": "Artificial Intelligence Identifies Adults with ADHD Using EEG Features",
+          "url": "https://advances.massgeneral.org/neuro/journal.aspx?id=1593"
+        },
+        {
+          "title": "5 ChatGPT Prompts That Keep My ADHD From Spiraling",
+          "url": "https://adhdinsightss.substack.com/p/5-chatgpt-prompts-that-keep-my-adhd"
+        },
+        {
+          "title": "How AI Helps ADHD Brains Work Smarter, Not Harder",
+          "url": "https://www.beyondbooksmart.com/executive-functioning-strategies-blog/how-ai-helps-adhd-brains-work-smarter-not-harder"
+        }
+      ],
+      "ingested_source_hashes": [
+        "5cff81ccb8d5",
+        "0f8b700d2b88",
+        "b58389639b03",
+        "9a3dae307455",
+        "a4dfee65ef76",
+        "15a5564f4372"
+      ],
+      "updated_at": "2026-06-29T09:24:31.820850+00:00"
+    },
+    "tool:Routinery": {
+      "name": "Routinery",
+      "type": "tool",
+      "slug": "routinery",
+      "path": "tools/routinery.md",
+      "summary": "Routinery 是一款通过可视化倒计时和过渡提示帮助用户建立和执行日常流程的 ADHD 生产力工具。",
+      "cross_links": [
+        "Tiimo",
+        "执行功能",
+        "时间盲",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors",
+          "url": "https://thembatutors.com/ai-for-adhd-tools-and-apps/"
+        },
+        {
+          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
+          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+        }
+      ],
+      "ingested_source_hashes": [
+        "bdbdee5a8311",
+        "0de72217f58a",
+        "ad5d44917a7b"
+      ],
+      "updated_at": "2026-06-29T09:24:55.605220+00:00"
+    },
+    "tool:Todoist": {
+      "name": "Todoist",
+      "type": "tool",
+      "slug": "todoist",
+      "path": "tools/todoist.md",
+      "summary": "Todoist 是一款集成 AI 的任务管理工具，可帮助 ADHD 用户通过智能优先级排序和提醒功能改善执行功能和工作记忆。",
+      "cross_links": [
+        "Saner.AI",
+        "执行功能",
+        "工作记忆"
+      ],
+      "sources": [
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        }
+      ],
+      "ingested_source_hashes": [
+        "43a66bb83449"
+      ],
+      "updated_at": "2026-06-29T09:25:18.102133+00:00"
+    },
+    "tool:RescueTime": {
+      "name": "RescueTime",
+      "type": "tool",
+      "slug": "rescuetime",
+      "path": "tools/rescuetime.md",
+      "summary": "RescueTime 是一款 AI 驱动的生产力追踪工具，可自动记录时间使用情况，帮助 ADHD 用户提升对时间分配的觉察。",
+      "cross_links": [
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺"
+      ],
+      "sources": [
+        {
+          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
+          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+        }
+      ],
+      "ingested_source_hashes": [
+        "93ea605a186f"
+      ],
+      "updated_at": "2026-06-29T09:25:41.456366+00:00"
+    },
+    "tool:Perplexity": {
+      "name": "Perplexity",
+      "type": "tool",
+      "slug": "perplexity",
+      "path": "tools/perplexity.md",
+      "summary": "Perplexity 是一款 AI 搜索工具，能帮助 ADHD 用户将目标分解为可执行步骤，提升任务管理效率。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲"
+      ],
+      "sources": [
+        {
+          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
+          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+        }
+      ],
+      "ingested_source_hashes": [
+        "42b351ed5051",
+        "1f23efb6f508"
+      ],
+      "updated_at": "2026-06-29T09:26:03.615520+00:00"
+    },
+    "topic:ADHD 的 AI 工具全景": {
+      "name": "ADHD 的 AI 工具全景",
+      "type": "topic",
+      "slug": "adhd-的-ai-工具全景",
+      "path": "topics/adhd-的-ai-工具全景.md",
+      "summary": "当前AI工具已能覆盖ADHD核心执行功能缺陷（如工作记忆、任务启动、时间管理），但缺乏整合性和个性化评估，且证据多基于用户报告而非临床试验。",
+      "cross_links": [
+        "Goblin Tools",
+        "Saner.AI",
+        "Lex",
+        "Mem",
+        "ChatGPT",
+        "Claude",
+        "Otter.ai",
+        "Reflect",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.509288+00:00"
+    },
+    "topic:AI 与 ADHD 的专注力": {
+      "name": "AI 与 ADHD 的专注力",
+      "type": "topic",
+      "slug": "ai-与-adhd-的专注力",
+      "path": "topics/ai-与-adhd-的专注力.md",
+      "summary": "AI工具通过减轻认知负荷、补偿工作记忆缺陷、提供外部问责等方式，能有效改善ADHD个体的专注力，但证据多来自间接推理，缺乏直接临床验证。",
+      "cross_links": [
+        "Brain.fm",
+        "Focusmate",
+        "RescueTime",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.510382+00:00"
+    },
+    "topic:AI 与 ADHD 的时间管理": {
+      "name": "AI 与 ADHD 的时间管理",
+      "type": "topic",
+      "slug": "ai-与-adhd-的时间管理",
+      "path": "topics/ai-与-adhd-的时间管理.md",
+      "summary": "AI 工具通过外化时间感知、降低认知负荷、提供即时反馈，有效弥补 ADHD 患者的时间盲与执行功能缺陷，但长期效果与个体差异仍需更多实证。",
+      "cross_links": [
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "Structured",
+        "Todoist",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.511796+00:00"
+    },
+    "topic:AI 与 ADHD 的情绪调节": {
+      "name": "AI 与 ADHD 的情绪调节",
+      "type": "topic",
+      "slug": "ai-与-adhd-的情绪调节",
+      "path": "topics/ai-与-adhd-的情绪调节.md",
+      "summary": "AI 工具通过弥补 ADHD 的执行功能缺陷（如工作记忆、时间盲、任务启动困难）来辅助情绪调节，但直接的情绪调节证据尚不充分，且存在依赖风险。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.512841+00:00"
+    },
+    "topic:AI 与 ADHD 的学习方式": {
+      "name": "AI 与 ADHD 的学习方式",
+      "type": "topic",
+      "slug": "ai-与-adhd-的学习方式",
+      "path": "topics/ai-与-adhd-的学习方式.md",
+      "summary": "AI工具通过外化执行功能、降低认知负荷、补偿工作记忆和时间盲等缺陷，显著改善ADHD学习方式，但需警惕超聚焦失控和个体差异。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷",
+        "Perplexity"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.514296+00:00"
+    },
+    "topic:AI 与 ADHD 的职业发展": {
+      "name": "AI 与 ADHD 的职业发展",
+      "type": "topic",
+      "slug": "ai-与-adhd-的职业发展",
+      "path": "topics/ai-与-adhd-的职业发展.md",
+      "summary": "AI 工具通过外化执行功能、补偿工作记忆与时间盲缺陷、降低认知负荷等方式，显著改善 ADHD 患者的职业表现，但长期效果和个体差异仍需更多证据。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.515723+00:00"
+    },
+    "topic:ADHD × AI 的科学与研究前沿": {
+      "name": "ADHD × AI 的科学与研究前沿",
+      "type": "topic",
+      "slug": "adhd-ai-的科学与研究前沿",
+      "path": "topics/adhd-ai-的科学与研究前沿.md",
+      "summary": "ADHD × AI 的研究前沿聚焦于利用人工智能技术弥补ADHD患者的执行功能缺陷，特别是在工作记忆、时间感知、任务启动和认知负荷管理等方面。当前核心论点是：AI作为“数字认知外挂”可有效补偿ADHD的核心神经认知障碍，但证据仍限于小样本研究和概念验证，缺乏大规模临床验证。",
+      "cross_links": [
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.516750+00:00"
+    },
+    "topic:AI 与 ADHD 的日常生活": {
+      "name": "AI 与 ADHD 的日常生活",
+      "type": "topic",
+      "slug": "ai-与-adhd-的日常生活",
+      "path": "topics/ai-与-adhd-的日常生活.md",
+      "summary": "AI 工具通过外化执行功能、补偿工作记忆、缓解时间盲和降低认知负荷，显著改善 ADHD 患者的日常生活，但证据仍以用户报告为主，缺乏大规模对照研究。",
+      "cross_links": [
+        "Routinery",
+        "执行功能",
+        "工作记忆",
+        "时间盲",
+        "身体在场效应",
+        "多巴胺",
+        "任务启动",
+        "超聚焦",
+        "认知负荷"
+      ],
+      "sources": [],
+      "ingested_source_hashes": [],
+      "updated_at": "2026-06-29T09:35:09.518190+00:00"
+    }
+  },
+  "meta": {
+    "overview_summary": "AI 对 ADHD 意味着一种「数字认知外挂」——通过外化执行功能、补偿工作记忆、缓解时间盲和降低认知负荷，AI 工具能有效弥补 ADHD 的核心神经认知缺陷。当前证据主要来自用户报告和概念验证，缺乏大规模临床验证，但已覆盖任务启动、时间管理、情绪调节等关键领域。",
+    "contradictions_summary": "ADHD × AI 领域存在若干矛盾或存疑的说法，主要集中在：AI 工具对执行功能的补偿效果是否被夸大、时间盲与工作记忆等核心缺陷的界定是否一致、以及证据基础是否充分。",
+    "source_articles": 37,
+    "concept_pages": 10,
+    "tool_pages": 18,
+    "topic_pages": 8,
+    "llm_model": "kimi-latest",
+    "built_at": "2026-06-29T09:35:09.520229+00:00"
+  }
+}

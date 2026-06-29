@@ -266,6 +266,146 @@ def generate_article(topic: dict, index: int, retriever: KnowledgeRetriever) -> 
     }
 
 
+ARTICLE_SYS = (
+    "你是一名资深的「ADHD × AI」中文内容作者，写作循证、克制、有观点。"
+    "你只能依据给定的 wiki 资料写作，不得编造资料中不存在的工具、数据或来源。"
+    "你的文章要在整合事实的同时**形成自己的判断与新观点**，并诚实指出争议与局限。"
+)
+
+
+def _wiki_context_block(ctx: dict) -> str:
+    """把 wiki 上下文压缩成提示词"""
+    blocks = []
+    if ctx.get("topic"):
+        t = ctx["topic"]
+        blocks.append(f"【主题综述：{t['name']}】\n{t['body'][:1400]}")
+    for c in ctx.get("concepts", []):
+        blocks.append(f"【概念页：{c['name']}】\n{c['body'][:1100]}")
+    for t in ctx.get("tools", []):
+        blocks.append(f"【工具页：{t['name']}】\n{t['body'][:1100]}")
+    if ctx.get("contradictions"):
+        blocks.append(f"【全局矛盾与存疑】\n{ctx['contradictions'][:1000]}")
+    return "\n\n".join(blocks)
+
+
+def _collect_wiki_sources(ctx: dict) -> list[dict]:
+    sources, seen = [], set()
+    pages = list(ctx.get("tools", [])) + list(ctx.get("concepts", []))
+    if ctx.get("topic"):
+        pages.append(ctx["topic"])
+    for p in pages:
+        for s in p.get("sources", []):
+            url = s.get("url", "")
+            if url and url not in seen:
+                seen.add(url)
+                sources.append({"title": s.get("title", ""), "url": url})
+    return sources
+
+
+def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
+    """
+    研究驱动 + LLM Wiki 版文章生成：
+    从 LLM 维护的互链 wiki 中取材，由大模型整合成有观点、可溯源的文章。
+    """
+    title = topic["title"]
+    subtitle = topic.get("subtitle", "")
+    category_id = topic.get("category_id", "")
+    category_name = topic.get("category_name", "")
+    category_name_en = topic.get("category_name_en", "")
+    angle = topic.get("angle", "")
+    keywords = topic.get("keywords", [])
+    topic_id = topic.get("id", f"article-{index:03d}")
+
+    seed = _seed_from(title)
+    slug = _slugify(title)
+    pub_date = (datetime(2025, 6, 1) - timedelta(days=seed % 90)).strftime("%Y-%m-%d")
+
+    ctx = wiki_retriever.context_for_topic(topic, offset=index)
+    context_block = _wiki_context_block(ctx)
+    wiki_sources = _collect_wiki_sources(ctx)
+
+    user = (
+        f"请基于以下 wiki 资料，写一篇面向中文 ADHD 读者的文章。\n\n"
+        f"选题标题：{title}\n副标题：{subtitle}\n分类：{category_name}\n切入角度：{angle}\n\n"
+        f"=== wiki 资料（你唯一可用的事实来源）===\n{context_block}\n=== 资料结束 ===\n\n"
+        "写作要求：\n"
+        "- 1200-1800 字，markdown，用 ## 小节组织；\n"
+        "- 必须整合上面 wiki 资料里的真实工具、概念与研究，关键论断后用「（来源：标题）」标注；\n"
+        "- 必须提出一个**鲜明的核心观点/判断**（不要只罗列工具），并结合『矛盾与存疑』诚实指出局限；\n"
+        "- 给出 2-4 条「今天就能试」的具体行动；\n"
+        "- 不要写 H1 大标题（标题会另行添加），从引言直接开始；\n"
+        "- 不得编造 wiki 资料中不存在的工具、数据或来源。\n\n"
+        "严格输出 JSON：\n"
+        '{\n'
+        '  "thesis": "一句话概括本文的核心观点",\n'
+        '  "tools_cited": ["文中真实引用到的工具名", ...],\n'
+        '  "body": "markdown 正文（不含 H1 标题）"\n'
+        "}"
+    )
+    data = llm.chat_json(
+        [
+            {"role": "system", "content": ARTICLE_SYS},
+            {"role": "user", "content": user},
+        ],
+        temperature=0.65,
+        max_tokens=3000,
+    )
+    if not isinstance(data, dict) or "body" not in data:
+        raise ValueError(f"文章 {title} 返回结构异常")
+
+    body = data["body"].strip()
+    thesis = data.get("thesis", "")
+    tools_cited = [t for t in data.get("tools_cited", []) if isinstance(t, str)][:8]
+
+    reading_time = 7 + (seed % 8)
+    tags = list(dict.fromkeys([
+        "ADHD", "AI", category_name, angle,
+        (keywords[seed % len(keywords)] if keywords else "效率"),
+    ]))[:6]
+
+    refs = [f"- [{s['title']}]({s['url']})" for s in wiki_sources[:6]]
+    refs_block = ("\n\n## 参考来源\n\n" + "\n".join(refs)) if refs else ""
+
+    full_content = (
+        f"# {title}\n\n"
+        + (f"> {subtitle}\n\n" if subtitle else "")
+        + body
+        + refs_block
+        + (
+            f"\n\n---\n\n*本文是「ADHD × AI」系列的第 {index + 1} 篇，"
+            f"由 AI 智能体从持续维护的 LLM Wiki（全网真实情报）中取材整合生成，并持续迭代更新。*\n"
+        )
+    )
+
+    frontmatter = {
+        "title": title,
+        "subtitle": subtitle,
+        "description": subtitle,
+        "date": pub_date,
+        "category": category_name,
+        "categoryId": category_id,
+        "categoryEn": category_name_en,
+        "tags": tags,
+        "readingTime": reading_time,
+        "slug": slug,
+        "topicId": topic_id,
+        "angle": angle,
+        "rank": topic.get("rank", index + 1),
+        "score": topic.get("weighted_score", 0),
+        "sourceCount": len(refs),
+        "toolsCited": tools_cited,
+        "thesis": thesis,
+        "isEvolved": topic.get("is_evolved", False),
+        "llmGenerated": True,
+    }
+    return {
+        "frontmatter": frontmatter,
+        "content": full_content,
+        "slug": slug,
+        "filename": f"{topic_id}.md",
+    }
+
+
 def generate_frontmatter_string(fm: dict) -> str:
     lines = ["---"]
     for key, value in fm.items():
