@@ -18,6 +18,9 @@ const articles = defineCollection({
     angle: z.string().optional(),
     rank: z.number().optional(),
     score: z.number().optional(),
+    sourceCount: z.number().optional(),
+    toolsCited: z.array(z.string()).optional(),
+    isEvolved: z.boolean().optional(),
   }),
 });
 

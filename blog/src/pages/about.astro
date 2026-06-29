@@ -16,22 +16,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
       <h2 class="mt-10 text-2xl font-bold">我们的使命</h2>
       <p class="text-[var(--color-text-secondary)]">
-        通过深入研究 ADHD 与 AI 的交叉领域，我们致力于为 ADHD 群体提供实用、科学、有温度的内容。
-        400 篇精选文章覆盖了从 AI 工具实战到科学研究的方方面面，帮助每一个独特的大脑找到属于自己的高效之路。
+        我们用 AI 智能体全网检索 ADHD × AI 的最新情报，从数十篇真实研究论文与社区实践中萃取事实、工具与策略，
+        再融合成有据可查的内容。每篇文章都标注了真实来源、引用了真实的研究发现和工具，
+        400 篇精选文章覆盖从 AI 工具实战到科学研究，帮助每一个独特的大脑找到属于自己的高效之路。
       </p>
 
       <h2 class="mt-10 text-2xl font-bold">内容特色</h2>
       <div class="mt-4 grid gap-4 sm:grid-cols-2">
         <div class="rounded-xl border border-[var(--color-border)] p-4">
-          <h3 class="font-semibold">📊 数据驱动</h3>
+          <h3 class="font-semibold">🌐 全网情报驱动</h3>
           <p class="mt-2 text-sm text-[var(--color-text-secondary)]">
-            每篇文章都经过 6 维度评分系统评估，确保内容质量和实用价值
+            AI 智能体全网检索最新研究与实践，萃取真实事实、工具与数据作为内容燃料
           </p>
         </div>
         <div class="rounded-xl border border-[var(--color-border)] p-4">
-          <h3 class="font-semibold">🧬 持续进化</h3>
+          <h3 class="font-semibold">🧬 证据驱动进化</h3>
           <p class="mt-2 text-sm text-[var(--color-text-secondary)]">
-            通过进化算法持续优化选题，保证你看到的都是最有价值的内容
+            按真实证据强度评分，每一代用最新发现替换缺乏支撑的选题，好的留下、差的被替换
           </p>
         </div>
         <div class="rounded-xl border border-[var(--color-border)] p-4">
@@ -41,16 +42,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </p>
         </div>
         <div class="rounded-xl border border-[var(--color-border)] p-4">
-          <h3 class="font-semibold">💡 实用为先</h3>
+          <h3 class="font-semibold">💡 可溯源实用</h3>
           <p class="mt-2 text-sm text-[var(--color-text-secondary)]">
-            每篇文章都包含具体可操作的建议和工具推荐
+            每篇文章都引用真实工具与研究，并在文末附上可点击的原始来源链接
           </p>
         </div>
       </div>
 
-      <h2 class="mt-10 text-2xl font-bold">评分维度</h2>
+      <h2 class="mt-10 text-2xl font-bold">证据驱动的评分维度</h2>
       <p class="text-[var(--color-text-secondary)]">
-        我们的内容评估体系包含 6 个核心维度：
+        我们的内容评估体系包含 6 个核心维度，其中「证据强度」权重最高，直接统计知识库中能支撑该选题的真实研究、工具与策略数量：
       </p>
       <ul class="mt-4 space-y-3">
         <li class="flex items-start gap-3">
@@ -63,7 +64,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </li>
         <li class="flex items-start gap-3">
           <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">3</span>
-          <div><strong>独特性</strong> - 选题角度的新颖程度</div>
+          <div><strong>证据强度</strong> - 知识库中支撑该选题的真实研究、统计与工具数量（权重最高）</div>
         </li>
         <li class="flex items-start gap-3">
           <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">4</span>

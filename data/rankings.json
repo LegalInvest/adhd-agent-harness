@@ -1,204 +1,796 @@
 {
   "total": 400,
+  "evidence_driven": true,
+  "research_sources": 37,
+  "knowledge_meta": {
+    "source_articles": 37,
+    "total_source_chars": 737793,
+    "tools": 19,
+    "findings": 163,
+    "statistics": 12,
+    "strategies": 428
+  },
   "categories": {
     "ai-tools": {
       "name": "AI工具实战",
-      "count": 37,
-      "avg_score": 6.89
+      "count": 64,
+      "avg_score": 7.1
     },
     "focus": {
       "name": "专注力管理",
-      "count": 40,
-      "avg_score": 6.89
+      "count": 50,
+      "avg_score": 7.12
     },
     "time-mgmt": {
       "name": "时间管理",
-      "count": 38,
-      "avg_score": 6.86
+      "count": 50,
+      "avg_score": 6.97
     },
     "emotion": {
       "name": "情绪调节",
-      "count": 38,
-      "avg_score": 6.89
+      "count": 35,
+      "avg_score": 6.94
     },
     "learning": {
       "name": "学习方法",
-      "count": 39,
-      "avg_score": 6.75
+      "count": 44,
+      "avg_score": 6.94
     },
     "career": {
       "name": "职场发展",
-      "count": 35,
-      "avg_score": 6.76
+      "count": 27,
+      "avg_score": 6.96
     },
     "entrepreneurship": {
       "name": "创业创新",
-      "count": 39,
-      "avg_score": 6.77
+      "count": 42,
+      "avg_score": 6.9
     },
     "parenting": {
       "name": "亲子教育",
-      "count": 40,
-      "avg_score": 6.82
+      "count": 38,
+      "avg_score": 7.0
     },
     "science": {
       "name": "科学研究",
-      "count": 30,
-      "avg_score": 6.58
+      "count": 21,
+      "avg_score": 6.82
     },
     "lifestyle": {
       "name": "生活方式",
-      "count": 30,
-      "avg_score": 6.79
+      "count": 20,
+      "avg_score": 6.9
     },
     "community": {
       "name": "社群与文化",
-      "count": 34,
-      "avg_score": 6.57
+      "count": 9,
+      "avg_score": 6.82
     }
   },
   "evolution_history": [
     {
       "generation": 1,
       "pool_size": 440,
-      "avg_score": 6.7,
-      "max_score": 8.82,
-      "min_score": 5.66,
-      "median_score": 6.68
+      "avg_score": 6.87,
+      "max_score": 8.42,
+      "min_score": 6.52,
+      "median_score": 6.79,
+      "candidates_available": 67,
+      "replaced": 35
     },
     {
       "generation": 2,
       "pool_size": 440,
-      "avg_score": 6.71,
-      "max_score": 8.82,
-      "min_score": 5.66,
-      "median_score": 6.68
+      "avg_score": 6.93,
+      "max_score": 8.42,
+      "min_score": 6.52,
+      "median_score": 6.85,
+      "candidates_available": 32,
+      "replaced": 32
     },
     {
       "generation": 3,
-      "pool_size": 440,
-      "avg_score": 6.71,
-      "max_score": 8.82,
-      "min_score": 5.66,
-      "median_score": 6.68
+      "pool_size": 437,
+      "avg_score": 6.95,
+      "max_score": 8.42,
+      "min_score": 6.52,
+      "median_score": 6.86,
+      "candidates_available": 0,
+      "replaced": 0
     },
     {
       "generation": 4,
-      "pool_size": 440,
-      "avg_score": 6.71,
-      "max_score": 8.82,
-      "min_score": 5.65,
-      "median_score": 6.68
+      "pool_size": 437,
+      "avg_score": 6.95,
+      "max_score": 8.42,
+      "min_score": 6.52,
+      "median_score": 6.86,
+      "candidates_available": 0,
+      "replaced": 0
     },
     {
       "generation": 5,
-      "pool_size": 440,
-      "avg_score": 6.71,
-      "max_score": 8.82,
-      "min_score": 5.66,
-      "median_score": 6.68
+      "pool_size": 437,
+      "avg_score": 6.95,
+      "max_score": 8.42,
+      "min_score": 6.52,
+      "median_score": 6.86,
+      "candidates_available": 0,
+      "replaced": 0
+    }
+  ],
+  "replacements": [
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮 ADHD 维护长期友谊",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 ChatGPT 解决 ADHD 的任务启动困难",
+        "score": 7.66
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 宠物管理助手",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Goblin Tools 支持 ADHD 孩子的学习",
+        "score": 7.54
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 购物决策助手",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Motion 支持 ADHD 孩子的学习",
+        "score": 7.54
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮 ADHD 管理数字生活",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ChatGPT 深度评测：ADHD 用户值得用吗",
+        "score": 7.5
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮 ADHD 做志愿服务",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 ChatGPT 接入你的第二大脑",
+        "score": 7.43
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮 ADHD 建立读书俱乐部",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Saner.AI 支持 ADHD 孩子的学习",
+        "score": 7.39
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 帮 ADHD 做人生重大决策",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 的听觉学习法：用 Perplexity 把读变成听",
+        "score": 7.37
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 兴趣爱好管理",
+        "score": 6.52
+      },
+      "in": {
+        "title": "身体在场效应 + Brain.fm：ADHD 的抗分心组合",
+        "score": 7.34
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮 ADHD 建立感恩实践",
+        "score": 6.52
+      },
+      "in": {
+        "title": "身体在场效应 + Focusmate：ADHD 的抗分心组合",
+        "score": 7.34
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 退休规划",
+        "score": 6.52
+      },
+      "in": {
+        "title": "身体在场效应 + Endel：ADHD 的抗分心组合",
+        "score": 7.34
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 生活仪式感打造",
+        "score": 6.52
+      },
+      "in": {
+        "title": "身体在场效应 + Forest：ADHD 的抗分心组合",
+        "score": 7.34
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 社群如何用 AI 建立互助网络",
+        "score": 6.52
+      },
+      "in": {
+        "title": "身体在场效应 + RescueTime：ADHD 的抗分心组合",
+        "score": 7.34
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 在不同文化中的认知差异",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Claude 解决 ADHD 的任务启动困难",
+        "score": 7.31
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 如何帮助 ADHD 患者获得更好的医疗资源",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 的听觉学习法：用 Speechify 把读变成听",
+        "score": 7.25
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 播客社群",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Claude 深度评测：ADHD 用户值得用吗",
+        "score": 7.23
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 做 ADHD 的公益教育",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Goblin Tools 解决 ADHD 的任务启动困难",
+        "score": 7.2
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 辅助社交媒体运营",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Claude 接入你的第二大脑",
+        "score": 7.16
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 如何帮助 ADHD 研究者做科研传播",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Goblin Tools 深度评测：ADHD 用户值得用吗",
+        "score": 7.14
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 帮助 ADHD 家长建立支持小组",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Saner.AI 解决 ADHD 的任务启动困难",
+        "score": 7.08
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 在影视作品中的 AI 分析",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Lex 解决 ADHD 的任务启动困难",
+        "score": 7.08
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮助 ADHD 写自传和回忆录",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Mem 解决 ADHD 的任务启动困难",
+        "score": 7.08
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 多语言社群",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Otter.ai 解决 ADHD 的任务启动困难",
+        "score": 7.08
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 帮助 ADHD 患者参与临床试验",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Reflect 解决 ADHD 的任务启动困难",
+        "score": 7.08
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 年度调查报告",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Goblin Tools 接入你的第二大脑",
+        "score": 7.07
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 建立 ADHD 导师匹配平台",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Saner.AI 深度评测：ADHD 用户值得用吗",
+        "score": 7.05
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 帮助 ADHD 做消费者权益保护",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Lex 深度评测：ADHD 用户值得用吗",
+        "score": 7.05
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 学术圈社群",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Mem 深度评测：ADHD 用户值得用吗",
+        "score": 7.05
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮助 ADHD 写公开信和倡议书",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Otter.ai 深度评测：ADHD 用户值得用吗",
+        "score": 7.05
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 艺术家社群",
+        "score": 6.52
+      },
+      "in": {
+        "title": "Reflect 深度评测：ADHD 用户值得用吗",
+        "score": 7.05
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 如何帮助 ADHD 老年人",
+        "score": 6.52
+      },
+      "in": {
+        "title": "AI 眼底/影像识别 ADHD：突破还是炒作",
+        "score": 7.03
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 职业社群网络",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Inflow 管理 ADHD 的情绪过山车",
+        "score": 7.01
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 帮助 ADHD 做公民参与",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Saner.AI 接入你的第二大脑",
+        "score": 6.98
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "AI 帮助 ADHD 做跨代际对话",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Lex 接入你的第二大脑",
+        "score": 6.98
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "ADHD 的 AI 全球地图",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Mem 接入你的第二大脑",
+        "score": 6.98
+      }
+    },
+    {
+      "generation": 1,
+      "out": {
+        "title": "用 AI 做 ADHD 的社会经济影响研究",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Otter.ai 接入你的第二大脑",
+        "score": 6.98
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "AI 时代的 ADHD 领导力",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 工作流：把 Reflect 接入你的第二大脑",
+        "score": 6.98
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 的 AI 职业规划师",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Goblin Tools 放大 ADHD 在职场的优势",
+        "score": 6.97
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "用 AI 帮 ADHD 管理绩效评估",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Motion 放大 ADHD 在职场的优势",
+        "score": 6.97
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 在 AI 行业的就业机会",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 创业者用 Goblin Tools 补齐执行短板",
+        "score": 6.97
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 的 AI 工作报告生成器",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 创业者用 Motion 补齐执行短板",
+        "score": 6.97
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "用 AI 帮 ADHD 建立个人品牌",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Motion 治好 ADHD 的时间盲",
+        "score": 6.9
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 的 AI 客户关系管理",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Perplexity 重塑 ADHD 的学习方式",
+        "score": 6.9
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "用 AI 帮 ADHD 做时间账单管理",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 自动排程：让 Motion 替你规划每一天",
+        "score": 6.89
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 教师在 AI 时代的教学优势",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Saner.AI 放大 ADHD 在职场的优势",
+        "score": 6.85
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "AI 帮 ADHD 管理多角色工作",
+        "score": 6.52
+      },
+      "in": {
+        "title": "ADHD 创业者用 Saner.AI 补齐执行短板",
+        "score": 6.85
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 销售人员的 AI 超级武器",
+        "score": 6.52
+      },
+      "in": {
+        "title": "AI 如何用 EEG 客观诊断 ADHD：最新研究解读",
+        "score": 6.84
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "AI 帮 ADHD 管理工作中的deadline",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Brain.fm 进入 ADHD 的专注状态",
+        "score": 6.81
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 的 AI 持续学习和职业成长",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Focusmate 进入 ADHD 的专注状态",
+        "score": 6.81
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "用 AI 帮 ADHD 做工作交接",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Endel 进入 ADHD 的专注状态",
+        "score": 6.81
+      }
+    },
+    {
+      "generation": 2,
+      "out": {
+        "title": "ADHD 的 AI 社交媒体营销自动化",
+        "score": 6.52
+      },
+      "in": {
+        "title": "用 Forest 进入 ADHD 的专注状态",
+        "score": 6.81
+      }
     }
   ],
   "top_20": [
     {
       "rank": 1,
       "title": "AI 帮 ADHD 克服拖延症的 7 个策略",
-      "score": 8.82
+      "score": 8.42,
+      "evidence": 10.0
     },
     {
       "rank": 2,
       "title": "10 个让 ADHD 患者效率翻倍的 AI 工具",
-      "score": 8.48
+      "score": 8.39,
+      "evidence": 10.0
     },
     {
       "rank": 3,
-      "title": "从分心到专注：AI 训练 ADHD 注意力的5个阶段",
-      "score": 7.97
+      "title": "ADHD 必备：7 个 AI 自动化工作流",
+      "score": 7.91,
+      "evidence": 10.0
     },
     {
       "rank": 4,
-      "title": "ADHD 的 AI 早起策略",
-      "score": 7.92
+      "title": "ADHD 的 AI 专注力恢复方案",
+      "score": 7.91,
+      "evidence": 10.0
     },
     {
       "rank": 5,
-      "title": "AI 帮 ADHD 创业者从0到1的完整路线图",
-      "score": 7.89
+      "title": "AI 帮 ADHD 孩子准备考试",
+      "score": 7.87,
+      "evidence": 10.0
     },
     {
       "rank": 6,
-      "title": "AI 帮 ADHD 孩子准备考试",
-      "score": 7.83
+      "title": "从分心到专注：AI 训练 ADHD 注意力的5个阶段",
+      "score": 7.85,
+      "evidence": 10.0
     },
     {
       "rank": 7,
-      "title": "AI 如何帮 ADHD 管理考试专注力",
-      "score": 7.81
+      "title": "AI 帮 ADHD 管理异步工作时间",
+      "score": 7.79,
+      "evidence": 10.0
     },
     {
       "rank": 8,
-      "title": "ADHD 的 AI 睡眠时间管理",
-      "score": 7.81
+      "title": "Claude vs ChatGPT：哪个更适合 ADHD 用户",
+      "score": 7.77,
+      "evidence": 10.0
     },
     {
       "rank": 9,
-      "title": "ADHD 的 AI 电商创业全攻略",
-      "score": 7.78
+      "title": "用 AI 做 ADHD 的私人教练：运动、饮食、睡眠全管理",
+      "score": 7.7,
+      "evidence": 10.0
     },
     {
       "rank": 10,
-      "title": "ADHD 的 AI 家务时间管理",
-      "score": 7.77
+      "title": "ADHD 的 AI 工具使用指南：避坑与最佳实践",
+      "score": 7.7,
+      "evidence": 10.0
     },
     {
       "rank": 11,
-      "title": "ADHD 的 AI 专注力恢复方案",
-      "score": 7.76
+      "title": "AI 如何帮 ADHD 管理考试专注力",
+      "score": 7.67,
+      "evidence": 10.0
     },
     {
       "rank": 12,
-      "title": "AI 如何帮 ADHD 改善亲密关系中的情绪管理",
-      "score": 7.76
+      "title": "用 ChatGPT 解决 ADHD 的任务启动困难",
+      "score": 7.66,
+      "evidence": 10.0
     },
     {
       "rank": 13,
-      "title": "用 AI 帮 ADHD 管理学习焦虑",
-      "score": 7.73
+      "title": "ADHD 在 AI 时代的 5 大职场超能力",
+      "score": 7.65,
+      "evidence": 10.0
     },
     {
       "rank": 14,
-      "title": "Claude vs ChatGPT：哪个更适合 ADHD 用户",
-      "score": 7.71
+      "title": "用 AI 帮 ADHD 准备面试：从焦虑到自信",
+      "score": 7.61,
+      "evidence": 10.0
     },
     {
       "rank": 15,
-      "title": "ADHD 的 AI 学习游戏化方案",
-      "score": 7.69
+      "title": "ADHD 孩子的 AI 睡眠改善方案",
+      "score": 7.61,
+      "evidence": 10.0
     },
     {
       "rank": 16,
-      "title": "AI 专注力教练 vs 人类教练：ADHD 该怎么选",
-      "score": 7.68
+      "title": "ADHD 的 AI 睡眠时间管理",
+      "score": 7.6,
+      "evidence": 10.0
     },
     {
       "rank": 17,
-      "title": "ADHD 孩子的 AI 学习伙伴：家长指南",
-      "score": 7.68
+      "title": "AI 专注力教练 vs 人类教练：ADHD 该怎么选",
+      "score": 7.57,
+      "evidence": 10.0
     },
     {
       "rank": 18,
-      "title": "ADHD 的 AI 认证考试准备方案",
-      "score": 7.63
+      "title": "ADHD 的 AI SaaS 创业指南",
+      "score": 7.57,
+      "evidence": 10.0
     },
     {
       "rank": 19,
-      "title": "用 AI 帮 ADHD 学生做笔记：从混乱到系统",
-      "score": 7.61
+      "title": "AI 帮 ADHD 建立可持续的自律系统",
+      "score": 7.57,
+      "evidence": 10.0
     },
     {
       "rank": 20,
-      "title": "ADHD 必备：7 个 AI 自动化工作流",
-      "score": 7.6
+      "title": "用 AI 帮 ADHD 处理社交焦虑",
+      "score": 7.56,
+      "evidence": 10.0
     }
   ]
 }

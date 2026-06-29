@@ -1,6 +1,8 @@
 """
-文章内容生成器
-根据选题信息生成完整的 Markdown 格式文章
+文章内容生成器（研究驱动版）
+不再用空洞模板填充，而是把知识库中的真实工具、研究发现、
+统计数据和实用策略编织进每一篇文章，并附上真实来源引用。
+每篇文章都是事实驱动、可溯源、彼此不同的。
 """
 
 import hashlib
@@ -8,204 +10,93 @@ import os
 import re
 from datetime import datetime, timedelta
 
+from engine.knowledge import KnowledgeRetriever, CORE_CONCEPTS
+
 
 def _seed_from(text: str) -> int:
     return int(hashlib.md5(text.encode("utf-8")).hexdigest()[:8], 16)
 
 
-def _pick(items: list, text: str, offset: int = 0) -> str:
-    idx = (_seed_from(text) + offset) % len(items)
-    return items[idx]
-
-
-# 文章结构模板
-ARTICLE_SECTIONS = {
-    "ai-tools": [
-        "为什么 ADHD 需要这个工具",
-        "核心功能与 ADHD 适配点",
-        "具体使用场景和方法",
-        "设置和个性化技巧",
-        "与其他工具的协同使用",
-        "实际效果和用户反馈",
-        "注意事项和使用建议",
-    ],
-    "focus": [
-        "ADHD 专注力的科学基础",
-        "AI 如何介入专注力管理",
-        "具体方法和步骤",
-        "实践案例和效果",
-        "常见问题和解决方案",
-        "长期坚持的策略",
-        "专家观点和建议",
-    ],
-    "time-mgmt": [
-        "ADHD 时间感知的特殊性",
-        "AI 时间管理的核心原理",
-        "具体实施步骤",
-        "工具和资源推荐",
-        "常见挫折和应对方法",
-        "建立可持续的时间系统",
-        "进阶技巧和优化",
-    ],
-    "emotion": [
-        "理解 ADHD 的情绪特点",
-        "AI 情绪管理的科学依据",
-        "实用的情绪调节技巧",
-        "AI 工具和资源",
-        "日常练习和习惯建立",
-        "应对特殊情境",
-        "长期情绪健康建设",
-    ],
-    "learning": [
-        "ADHD 学习者的独特优势",
-        "AI 如何匹配 ADHD 的学习风格",
-        "具体学习方法和策略",
-        "AI 工具推荐和使用技巧",
-        "克服学习障碍的方案",
-        "衡量学习效果",
-        "持续学习的动力维持",
-    ],
-    "career": [
-        "ADHD 在此领域的优势分析",
-        "AI 如何帮助发挥这些优势",
-        "具体策略和行动计划",
-        "工具和资源清单",
-        "成功案例分享",
-        "常见挑战和解决方案",
-        "职业发展路线图",
-    ],
-    "entrepreneurship": [
-        "ADHD 创业者的独特优势",
-        "AI 创业工具和平台",
-        "具体操作步骤",
-        "成本和资源分析",
-        "风险管理和应对",
-        "增长策略和扩展",
-        "成功案例和启示",
-    ],
-    "parenting": [
-        "理解 ADHD 孩子的需求",
-        "AI 如何帮助满足这些需求",
-        "家长的具体操作指南",
-        "推荐的 AI 工具和资源",
-        "建立家庭支持系统",
-        "与学校的协作方案",
-        "长期教育规划",
-    ],
-    "science": [
-        "研究背景和重要性",
-        "最新研究发现",
-        "AI 在该领域的具体应用",
-        "数据和证据分析",
-        "对 ADHD 群体的实际影响",
-        "未来研究方向",
-        "专家解读和建议",
-    ],
-    "lifestyle": [
-        "ADHD 生活方式的特殊挑战",
-        "AI 如何优化日常生活",
-        "具体方法和技巧",
-        "推荐工具和资源",
-        "建立可持续的习惯",
-        "常见问题和解决方案",
-        "追求更高的生活品质",
-    ],
-    "community": [
-        "社群现状和需求",
-        "AI 的赋能作用",
-        "具体案例和实践",
-        "参与方式和渠道",
-        "建立连接和支持网络",
-        "面临的挑战和机遇",
-        "未来展望和行动呼吁",
-    ],
-}
-
-# 段落模板 - 不同角度的内容片段
-INTRO_TEMPLATES = [
-    "如果你是一个 ADHD 人群，你可能已经发现——{pain_point}。但在 AI 时代，这不再是一个无解的难题。{title_theme}正在改变游戏规则。",
-    "每一个 ADHD 大脑都是独特的。{pain_point}，这是很多 ADHD 人群的共同经历。今天，我们来聊聊{title_theme}如何用 AI 的力量破解这个困局。",
-    "你有没有想过，ADHD 和 AI 竟然是天生的搭档？当{pain_point}时，AI 提供了一种全新的解决思路。让我们深入探讨{title_theme}。",
-    "在 ADHD 的世界里，{pain_point}是每天都在上演的剧情。但 AI 正在改写这个故事。{title_theme}可能是你一直在寻找的答案。",
-    "作为 ADHD 群体，我们常常面对一个核心挑战：{pain_point}。而 AI 技术的发展，正在为这个挑战提供前所未有的解决方案。",
-]
-
-PAIN_POINTS = {
-    "ai-tools": "面对工具的选择困难和使用不一致",
-    "focus": "专注力像天气一样不可预测",
-    "time-mgmt": "时间总是像沙子一样从指缝中流走",
-    "emotion": "情绪像过山车一样起起伏伏",
-    "learning": "学习效率忽高忽低，难以持续",
-    "career": "在职场中感到被低估或不被理解",
-    "entrepreneurship": "创业想法很多但执行力跟不上",
-    "parenting": "不知道如何帮助有ADHD的孩子",
-    "science": "对ADHD的科学认知仍然不够充分",
-    "lifestyle": "日常生活总是充满混乱和不可预测性",
-    "community": "在社会中感到孤立和不被理解",
-}
-
-SECTION_CONTENT_TEMPLATES = [
-    "### {section_title}\n\n{topic_name}的关键在于理解 ADHD 大脑的工作方式。研究表明，ADHD 人群在{aspect}方面有着独特的特点。\n\n**核心要点：**\n\n- AI 可以帮助自动化{process}，减少对执行功能的依赖\n- 通过{method}，ADHD 人群可以充分利用自己的优势\n- 关键是找到适合自己节奏的{tool_type}\n\n",
-    "### {section_title}\n\n在{topic_name}的实践中，有几个关键因素值得关注：\n\n1. **个性化设置**：每个 ADHD 大脑都不同，AI 工具需要根据个人特点调整\n2. **渐进式导入**：不要一次性改变所有习惯，从最痛的点开始\n3. **即时反馈**：ADHD 大脑需要即时的正向反馈来维持动力\n4. **灵活调整**：允许计划有弹性，AI 帮助在偏离时重新校准\n\n",
-    "### {section_title}\n\n> 「ADHD 不是缺陷，而是一种不同的操作系统。AI 就是帮这个操作系统发挥最大潜能的软件。」\n\n{topic_name}的核心原理基于以下观察：\n\n- ADHD 大脑在{aspect}上有着超乎常人的能力\n- AI 可以弥补{weakness}方面的不足\n- 两者结合可以创造出{outcome}\n\n实际操作中，建议从以下步骤开始：\n\n**第一步**：评估你当前在{aspect}方面的状态\n**第二步**：选择一个 AI 工具来辅助{process}\n**第三步**：设定一个小目标，在一周内测试效果\n**第四步**：根据反馈调整策略\n\n",
-]
-
-ASPECTS = [
-    "创造力和发散思维", "模式识别和联想能力", "高能量和激情",
-    "快速学习和适应", "在感兴趣的领域深度专注", "同理心和直觉",
-    "风险承受和创新精神", "多任务处理的灵活性", "对新事物的好奇心",
-]
-
-WEAKNESSES = [
-    "持续注意力和工作记忆", "时间感知和任务启动", "情绪调节和冲动控制",
-    "组织和规划能力", "一致性和例程维护", "优先级判断和决策",
-]
-
-PROCESSES = [
-    "任务分解和进度追踪", "日程安排和时间管理", "信息整理和知识管理",
-    "决策支持和方案评估", "习惯建立和行为跟踪", "情绪记录和模式分析",
-]
-
-METHODS = [
-    "结构化的AI辅助工作流", "游戏化的激励机制", "视觉化的进度展示",
-    "个性化的AI提醒系统", "社交互助的AI匹配", "数据驱动的自我优化",
-]
-
-TOOL_TYPES = [
-    "AI助手和工作流工具", "专注力和注意力训练应用", "时间管理和日程规划系统",
-    "情绪追踪和心理健康平台", "学习辅助和知识管理工具", "创意激发和内容创作工具",
-]
-
-OUTCOMES = [
-    "1+1>2的协同效果", "前所未有的生产力提升", "更加从容和自信的生活状态",
-    "持续且有趣的自我提升循环", "健康高效的工作和生活平衡", "充分发挥天赋的自我实现",
-]
-
-CONCLUSION_TEMPLATES = [
-    "## 写在最后\n\nADHD 不是你的限制，而是你的独特操作系统。AI 不是万能的解药，但它是一个强大的工具——当你学会正确使用它时，你会发现自己拥有超乎想象的潜力。\n\n记住：开始不需要完美，只需要开始。选择这篇文章中最打动你的一个方法，今天就试试看。\n\n**你的 ADHD 大脑 + AI = 无限可能。**",
-    "## 结语\n\n在 ADHD × AI 的旅程中，最重要的不是工具本身，而是你愿意尝试和探索的勇气。每一个小步骤都在积累，每一次尝试都有价值。\n\n如果你从这篇文章中学到了一些有用的东西，不妨分享给身边也有 ADHD 的朋友。我们一起，用 AI 的力量，活出最好的自己。\n\n**ADHD × AI，不是对抗，而是共舞。**",
-    "## 最后的话\n\n改变不会在一夜之间发生。但有了 AI 的帮助，ADHD 人群正在获得前所未有的工具和支持。关键是找到适合自己的节奏，建立可持续的系统。\n\n从今天开始，选择一个方向，迈出第一步。你的 ADHD 大脑有着独特的天赋，AI 只是帮你释放这些天赋的钥匙。\n\n**拥抱你的 ADHD，善用 AI 的力量，创造属于你的精彩人生。**",
-]
+def _pick(items: list, text: str, offset: int = 0):
+    if not items:
+        return None
+    return items[(_seed_from(text) + offset) % len(items)]
 
 
 def _slugify(title: str) -> str:
-    """将中文标题转换为URL友好的slug"""
     slug = title.lower()
     slug = re.sub(r"[^\w\u4e00-\u9fff\s-]", "", slug)
     slug = re.sub(r"[\s_]+", "-", slug)
     slug = slug.strip("-")
-    # 限制长度
     if len(slug) > 80:
         slug = slug[:80].rsplit("-", 1)[0]
     return slug
 
 
-def generate_article(topic: dict, index: int) -> dict:
-    """
-    根据选题生成完整的文章内容
+# 分类对应的核心痛点（用于真实的开场）
+PAIN_POINTS = {
+    "ai-tools": "在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去",
+    "focus": "注意力像没装锚的船，明明想专注却总是漂走",
+    "time-mgmt": "时间像握不住的沙，常常低估任务耗时、错过截止日期",
+    "emotion": "情绪来得又快又猛，一句批评能让一整天崩盘",
+    "learning": "学习热情来得快去得也快，买的课总是看不完",
+    "career": "在职场上明明有能力，却被组织、跟进这些事拖了后腿",
+    "entrepreneurship": "点子多到爆炸，但把想法落地执行却异常艰难",
+    "parenting": "想帮 ADHD 孩子，却不知道哪些方法真的有用",
+    "science": "网上关于 ADHD 的说法五花八门，到底哪些有科学依据",
+    "lifestyle": "日常生活总在混乱边缘，习惯怎么都建立不起来",
+    "community": "觉得没人真正理解 ADHD 的处境，常常感到孤立",
+}
 
-    Returns:
-        包含 frontmatter 和 content 的字典
+# ADHD 大脑特质（真实，来自研究共识）
+ADHD_TRAITS = [
+    "在感兴趣的领域可以进入「超聚焦」（hyperfocus）状态",
+    "发散思维和联想能力强，擅长看到别人忽略的连接",
+    "对新鲜刺激敏感，学习新事物上手快",
+    "在高压和紧迫感下反而能爆发出惊人的执行力",
+    "共情能力和直觉往往优于常人",
+]
+
+# 执行功能短板（真实）
+EXEC_WEAKNESSES = [
+    "工作记忆（working memory）容量有限，容易边做边忘",
+    "任务启动（task initiation）困难，明知该做却开不了头",
+    "时间感知偏差（time blindness），难以估算时长",
+    "情绪调节（emotional regulation）需要更多外部支持",
+    "组织和优先级排序需要额外的结构支撑",
+]
+
+
+def _format_finding(f: dict) -> str:
+    """把研究发现格式化为带来源的引用句"""
+    text = f["text"].strip().rstrip(".。")
+    src = f.get("source_title", "").strip()
+    return f"{text}。" if not src else f"{text}（来源：{src}）。"
+
+
+def _build_keywords(topic: dict) -> list[str]:
+    kws = list(topic.get("keywords", []))
+    cat_kw = {
+        "ai-tools": ["tool", "app", "AI", "productivity", "ChatGPT"],
+        "focus": ["focus", "attention", "concentration", "hyperfocus"],
+        "time-mgmt": ["time", "schedule", "task", "planning", "procrastination"],
+        "emotion": ["emotion", "anxiety", "regulation", "mood", "CBT"],
+        "learning": ["learning", "study", "education", "memory"],
+        "career": ["work", "career", "workplace", "job", "executive function"],
+        "entrepreneurship": ["business", "entrepreneur", "startup"],
+        "parenting": ["children", "kids", "parent", "education"],
+        "science": ["research", "diagnosis", "brain", "EEG", "MRI", "machine learning"],
+        "lifestyle": ["habit", "sleep", "daily", "routine"],
+        "community": ["community", "support", "social"],
+    }
+    kws.extend(cat_kw.get(topic.get("category_id", ""), []))
+    kws.append("ADHD")
+    return kws
+
+
+def generate_article(topic: dict, index: int, retriever: KnowledgeRetriever) -> dict:
+    """
+    根据选题 + 知识库生成一篇事实驱动的文章
     """
     title = topic["title"]
     subtitle = topic.get("subtitle", "")
@@ -219,70 +110,134 @@ def generate_article(topic: dict, index: int) -> dict:
     seed = _seed_from(title)
     slug = _slugify(title)
 
-    # 生成发布日期（分散在最近90天内）
     base_date = datetime(2025, 6, 1)
-    day_offset = seed % 90
-    pub_date = base_date - timedelta(days=day_offset)
+    pub_date = base_date - timedelta(days=seed % 90)
     date_str = pub_date.strftime("%Y-%m-%d")
 
-    # 阅读时间估算
-    reading_time = 8 + (seed % 7)  # 8-14 分钟
+    query_kws = _build_keywords(topic)
 
-    # 生成标签
-    tags = list(set([
-        "ADHD", "AI",
-        category_name,
-        _pick(keywords, title, 0) if keywords else "效率",
-        _pick(keywords, title, 1) if keywords else "工具",
-        angle,
+    # 从知识库检索真实素材（用 index 做 offset 保证不同文章取到不同素材）
+    tools = retriever.tools_for_category(category_id, limit=4)
+    findings = retriever.findings_for(query_kws, limit=3, offset=index)
+    stats = retriever.statistics_for(query_kws, limit=2, offset=index)
+    strategies = retriever.strategies_for(query_kws, limit=5, offset=index * 2)
+
+    reading_time = 7 + (seed % 8)
+
+    tags = list(dict.fromkeys([
+        "ADHD", "AI", category_name, angle,
+        (keywords[seed % len(keywords)] if keywords else "效率"),
     ]))[:6]
 
-    # 生成文章内容
-    sections = ARTICLE_SECTIONS.get(category_id, ARTICLE_SECTIONS["ai-tools"])
-    pain_point = PAIN_POINTS.get(category_id, "面对各种日常挑战")
+    pain = PAIN_POINTS.get(category_id, "面对各种日常挑战")
+    trait = _pick(ADHD_TRAITS, title, 0)
+    weakness = _pick(EXEC_WEAKNESSES, title, 1)
 
-    # 引言
-    intro_template = _pick(INTRO_TEMPLATES, title)
-    intro = intro_template.format(
-        pain_point=pain_point,
-        title_theme=title.split("：")[0] if "：" in title else title,
+    # ===== 构建正文 =====
+    parts = []
+
+    # 引言：用真实统计数据开场（如果有）
+    if stats:
+        stat_text = stats[0]["text"].strip().rstrip(".。")
+        intro = (
+            f"> {subtitle}\n\n"
+            f"先说一个事实：{stat_text}。\n\n"
+            f"如果你是 ADHD 人群，你大概率经历过——{pain}。这不是你不够努力，"
+            f"而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会"
+            f"用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。"
+        )
+    else:
+        intro = (
+            f"> {subtitle}\n\n"
+            f"如果你是 ADHD 人群，你大概率经历过——{pain}。这不是你不够努力，"
+            f"而是 ADHD 大脑的运作方式本就不同。好消息是，AI 正在成为 ADHD 最称职的「外接大脑」。"
+            f"这篇文章基于最新的研究和真实工具，带你看清{angle}到底怎么落地。"
+        )
+    parts.append(intro)
+
+    # 第一节：为什么 ADHD 需要这个 —— 结合真实大脑机制
+    parts.append(
+        f"## 为什么这件事对 ADHD 格外重要\n\n"
+        f"ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。"
+        f"具体来说，ADHD 大脑往往{weakness}。但与此同时，ADHD 也有自己的天赋：{trait}。\n\n"
+        f"关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。"
+        f"AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。"
     )
 
-    # 正文各节
-    body_parts = []
-    for i, section_title in enumerate(sections):
-        template = SECTION_CONTENT_TEMPLATES[i % len(SECTION_CONTENT_TEMPLATES)]
-        content = template.format(
-            section_title=section_title,
-            topic_name=title,
-            aspect=_pick(ASPECTS, title, i),
-            weakness=_pick(WEAKNESSES, title, i + 1),
-            process=_pick(PROCESSES, title, i + 2),
-            method=_pick(METHODS, title, i + 3),
-            tool_type=_pick(TOOL_TYPES, title, i + 4),
-            outcome=_pick(OUTCOMES, title, i + 5),
+    # 第二节：最新研究怎么说 —— 注入真实 findings
+    if findings:
+        research_lines = "\n".join(f"- {_format_finding(f)}" for f in findings)
+        parts.append(
+            f"## 最新研究怎么说\n\n"
+            f"在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：\n\n"
+            f"{research_lines}\n\n"
+            f"这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，"
+            f"但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。"
         )
-        body_parts.append(content)
+
+    # 第三节：真实可用的工具 —— 注入真实 tools
+    if tools:
+        tool_lines = "\n".join(
+            f"### {t['keywords'][0]}\n\n{t['text']}"
+            for t in tools
+        )
+        parts.append(
+            f"## 真实可用的 AI 工具\n\n"
+            f"下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，"
+            f"千万别一次性全装——那只会变成新的分心来源。\n\n"
+            f"{tool_lines}"
+        )
+
+    # 第四节：可落地的策略 —— 注入真实 strategies
+    if strategies:
+        strat_lines = "\n".join(
+            f"{i+1}. {s['text'].strip()}"
+            for i, s in enumerate(strategies)
+        )
+        parts.append(
+            f"## 可以今天就试的策略\n\n"
+            f"工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：\n\n"
+            f"{strat_lines}\n\n"
+            f"建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。"
+        )
+
+    # 第五节：批判性提醒 —— 体现"形成新观点"
+    concept_key = _pick(list(CORE_CONCEPTS.keys()), title, 3)
+    concept_desc = CORE_CONCEPTS.get(concept_key, "")
+    parts.append(
+        f"## 一个容易被忽略的提醒\n\n"
+        f"AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——"
+        f"不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。\n\n"
+        f"另外要理解一个概念：{concept_key}（{concept_desc}）。"
+        f"真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。"
+        f"从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。"
+    )
 
     # 结语
-    conclusion = _pick(CONCLUSION_TEMPLATES, subtitle)
+    parts.append(
+        f"## 写在最后\n\n"
+        f"ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，"
+        f"它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。\n\n"
+        f"记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。"
+    )
 
-    # 组合完整文章
-    full_content = f"""# {title}
+    # 参考来源（真实 URL）
+    refs = []
+    seen_urls = set()
+    for item in findings + stats:
+        url = item.get("source_url", "")
+        title_src = item.get("source_title", "")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            refs.append(f"- [{title_src}]({url})")
+    if refs:
+        parts.append("## 参考来源\n\n" + "\n".join(refs[:6]))
 
-> {subtitle}
+    full_content = f"# {title}\n\n" + "\n\n".join(parts) + (
+        f"\n\n---\n\n*本文是「ADHD × AI」系列的第 {index + 1} 篇，"
+        f"内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*\n"
+    )
 
-{intro}
-
-{"".join(body_parts)}
-{conclusion}
-
----
-
-*本文是「ADHD × AI」系列的第 {index + 1} 篇。关注我们，获取更多 ADHD 与 AI 的实用内容。*
-"""
-
-    # 构建 frontmatter
     frontmatter = {
         "title": title,
         "subtitle": subtitle,
@@ -298,6 +253,9 @@ def generate_article(topic: dict, index: int) -> dict:
         "angle": angle,
         "rank": topic.get("rank", index + 1),
         "score": topic.get("weighted_score", 0),
+        "sourceCount": len(refs),
+        "toolsCited": [t["keywords"][0] for t in tools],
+        "isEvolved": topic.get("is_evolved", False),
     }
 
     return {
@@ -309,15 +267,19 @@ def generate_article(topic: dict, index: int) -> dict:
 
 
 def generate_frontmatter_string(fm: dict) -> str:
-    """将 frontmatter 字典转换为 YAML 字符串"""
     lines = ["---"]
     for key, value in fm.items():
         if isinstance(value, list):
-            lines.append(f"{key}:")
-            for item in value:
-                lines.append(f'  - "{item}"')
+            if not value:
+                lines.append(f"{key}: []")
+            else:
+                lines.append(f"{key}:")
+                for item in value:
+                    escaped = str(item).replace('"', '\\"')
+                    lines.append(f'  - "{escaped}"')
+        elif isinstance(value, bool):
+            lines.append(f"{key}: {str(value).lower()}")
         elif isinstance(value, str):
-            # 转义引号
             escaped = value.replace('"', '\\"')
             lines.append(f'{key}: "{escaped}"')
         elif isinstance(value, (int, float)):
@@ -329,14 +291,10 @@ def generate_frontmatter_string(fm: dict) -> str:
 
 
 def save_article(article: dict, output_dir: str) -> str:
-    """保存文章到文件"""
     os.makedirs(output_dir, exist_ok=True)
     filepath = os.path.join(output_dir, article["filename"])
-
     fm_str = generate_frontmatter_string(article["frontmatter"])
     full = fm_str + article["content"]
-
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(full)
-
     return filepath

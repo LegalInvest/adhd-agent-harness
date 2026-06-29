@@ -2,8 +2,9 @@
 interface Props {
   totalArticles: number;
   totalCategories: number;
+  researchSources?: number;
 }
-const { totalArticles, totalCategories } = Astro.props;
+const { totalArticles, totalCategories, researchSources = 37 } = Astro.props;
 ---
 
 <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 px-4 py-20 sm:py-28">
@@ -31,7 +32,7 @@ const { totalArticles, totalCategories } = Astro.props;
       <p class="mx-auto mt-6 max-w-2xl text-lg text-purple-100/80 sm:text-xl">
         用 AI 的力量赋能每一个独特的 ADHD 大脑
         <br />
-        <span class="text-purple-200/60">{totalCategories} 大核心分类 &middot; {totalArticles} 篇深度文章 &middot; 持续进化优化</span>
+        <span class="text-purple-200/60">全网情报驱动 &middot; {researchSources} 篇真实研究为基 &middot; 证据驱动持续进化</span>
       </p>
     </div>
 
@@ -64,8 +65,8 @@ const { totalArticles, totalCategories } = Astro.props;
         <div class="mt-1 text-sm text-purple-200/60">核心分类</div>
       </div>
       <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-        <div class="text-3xl font-bold text-white">6</div>
-        <div class="mt-1 text-sm text-purple-200/60">评分维度</div>
+        <div class="text-3xl font-bold text-white">{researchSources}</div>
+        <div class="mt-1 text-sm text-purple-200/60">真实研究来源</div>
       </div>
     </div>
   </div>
