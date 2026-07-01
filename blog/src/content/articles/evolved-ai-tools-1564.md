@@ -25,7 +25,7 @@ toolsCited:
   - "Lex"
   - "Motion"
   - "Tiimo"
-thesis: "ADHD大脑与LLM同构：两者都是强大的生成核心但缺乏执行调度层，因此Goblin Tools的任务分解与LLM agent的function calling本质上是同一套harness思路——通过外部工具补偿内部执行功能缺陷。"
+thesis: "ADHD 大脑与 LLM/agent 是同一类「高产但缺执行调度层的生成核心」：Goblin Tools 的任务分解和 agent 的 function calling 本质都是通过外部 harness 补偿内部调度缺陷，两者同构。"
 problem: "为什么用 Goblin Tools 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？"
 spine: "工具使用与认知卸载"
 spineKind: ""
@@ -36,37 +36,47 @@ llmGenerated: true
 
 > Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么ADHD的“任务启动困难”和LLM agent的“function calling”是同一回事？
+## 问题：为什么任务启动这么难？
 
-如果你是一个ADHD患者，你一定经历过这种场景：脑子里有一堆想做的事，但就是无法开始——任务像一座大山压在面前，启动焦虑让你瘫在沙发上刷手机。如果你是一个在做Agentic Harness工程的AI工程师，你一定也见过这种场景：你的LLM agent明明有强大的生成能力，但面对复杂任务时，它要么跑偏，要么卡在第一步，需要你手动拆解指令、设计工具调用。
+如果你是一个 ADHD 患者，你一定熟悉这种场景：明明知道该做什么，但就是无法开始。大脑像是一台高性能引擎，却缺少点火装置。同样，如果你是一个在做 Agentic Harness 工程的开发者，你可能也遇到过：LLM 模型本身能力强大，但一旦需要执行多步任务、调用外部工具，它就卡住了——要么忘记上下文，要么在第一步就偏离轨道。
 
-这两个场景看似风马牛不相及，但背后共享同一个结构性问题：**一个高产但缺乏执行调度层的生成核心**。ADHD大脑是一个创造力爆棚的生成器，但执行功能（计划、组织、工作记忆）不稳定（来源：ADHD 的 AI 工具全景）。LLM也是一个强大的生成器，但同样缺乏内置的规划循环和工具管理能力，需要外部harness来编排（来源：What is an agent harness in the context of large-language models?）。
+这两个问题看起来毫不相关，但本质上是一回事：**生成核心（ADHD 大脑或 LLM）本身高产，但缺乏执行调度层**。ADHD 大脑的「执行功能」缺陷（工作记忆不足、时间盲、任务启动困难）与 LLM 的「上下文控制」缺陷（冷启动、上下文膨胀、时序推理弱）一一对应（来源：ADHD 大脑与 LLM 的同构）。而解决方案也惊人地相似：给核心套上一个外部 harness（脚手架）。
 
-Goblin Tools的Magic ToDo功能，能把“整理房间”自动分解成“捡起地板上的衣服”“擦桌子”等小步骤（来源：Goblin Tools）。这听起来是不是很像LLM agent通过function calling把“写一封邮件”拆解成“调用邮件API”“生成正文”“检查语法”等子任务？两者都在做同一件事：**将模糊的高层意图转化为可执行的原子步骤，从而降低启动门槛**。
+## 同构一：任务分解 vs. function calling
 
-## 同构证据：ADHD侧与LLM侧的真实对应
+ADHD 侧最直接的痛点是任务启动困难。传统规划方法往往失效：「Planners and sticky notes worked for a week before falling apart.」（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。Goblin Tools 的 Magic ToDo 功能正是为此而生：它通过 AI 将模糊的大任务（如「整理房间」）自动分解为具体的小步骤（「捡起地板上的衣服」「擦桌子」等），从而降低启动门槛（来源：Goblin Tools）。用户反馈称它「将压倒性的事情变成一系列不压倒性的事情」（来源：The Best AI-Powered ADHD Productivity Tools in 2026）。
 
-### ADHD侧：任务分解与认知卸载
+LLM/agent 侧呢？一个 LLM agent 要完成复杂任务，同样需要将目标拆解为一系列工具调用（function calling）。Harness 工程正是设计这种脚手架——定义工具接口、管理上下文、处理错误（来源：What is an agent harness in the context of large-language models?）。Goblin Tools 的任务分解模式，本质上是为 ADHD 大脑提供了一种「多步推理+工具调用」的脚本，与 agent 的 function calling 完全同构。
 
-ADHD患者的核心困难之一是任务启动障碍，源于工作记忆容量有限和时间盲（来源：规划循环与任务分解）。传统规划方法往往失效，因为“大多数规划建议不是为我们设计的”（来源：ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)）。Goblin Tools通过AI将压倒性的任务变成一系列不压倒性的步骤（来源：The Best AI-Powered ADHD Productivity Tools in 2026），用户反馈“它在这方面很棒”（来源：“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT）。Saner.AI通过知识回忆减少搜索循环，直接补偿工作记忆不足（来源：Saner.AI）。Lex则允许用户通过单一指令触发多步骤任务，减少决策负担（来源：Lex）。这些工具的共同点是：它们作为**外部执行功能层**，接管了ADHD大脑不擅长的精确调度工作（来源：工具使用与认知卸载）。
+**关键判断**：两者都在做同一件事——将「模糊意图」转化为「可执行的原子步骤」。ADHD 大脑的「任务分解困难」和 LLM 的「冷启动问题」，根源都是生成核心缺乏内置的规划循环。外部 harness 通过显式分解来补偿。
 
-### LLM/Agent侧：Harness与Function Calling
+## 同构二：认知卸载 vs. 外部记忆
 
-LLM agent要完成复杂任务，必须依赖harness提供上下文、工具接口和规划工件（来源：Building AI Coding Agents for the Terminal）。Harness工程强调工具设计的“agent UX”——命名、模式、错误处理等接口质量（来源：GitHub - ai-boost/awesome-harness-engineering）。现代agent系统通过“组合多个模型、检索器和工具”来达成SOTA结果，而非依赖单一模型调用（来源：Building AI Coding Agents for the Terminal）。这恰好对应ADHD工具的设计原则：工具应“与现有工具集成，不增加认知开销”（来源：Best AI Tools for ADHD Productivity in 2026）。无论是ADHD用户还是LLM agent，都需要一个**低摩擦、高内聚的工具层**来弥补内在的调度缺陷。
+ADHD 的工作记忆容量保留但控制弱，易被干扰；LLM 同样有强记忆容量但弱上下文控制（来源：工作记忆）。因此，外部记忆系统成为关键。Saner.AI 通过知识回忆功能，帮助用户快速找回信息，减少搜索循环和标签切换（来源：Saner.AI）。这相当于为 ADHD 大脑提供了持久化上下文。
 
-### 核心判断：脚手架而非拐杖
+在 agent 工程中，外部记忆（如向量数据库、对话历史管理）同样是标准做法。现代 agent 系统通过「组合多个模型、检索器和工具」来达成 SOTA 结果（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。两者都在将「需要记住的东西」卸载到外部系统，以释放生成核心的认知带宽。
 
-这里必须诚实指出争议。当前ADHD AI工具的证据主要来自用户评价和综述，缺乏随机对照试验（来源：矛盾与存疑）。同样，ADHD大脑与LLM同构的命题也主要基于概念类比和工具案例，缺乏大规模实证（来源：矛盾与存疑）。因此，我的核心观点是：**这种同构是有效的工程隐喻，但不应被过度引申为神经科学事实**。它告诉我们如何设计更好的工具——无论是为ADHD大脑还是为LLM agent——但我们必须警惕过度依赖。工具应该是可逐步撤除的脚手架，而不是永久拐杖（来源：拐杖与脚手架）。目前多数工具（如Goblin Tools、Saner.AI）设计为长期使用，未提及撤除机制（来源：矛盾与存疑），这是未来需要改进的方向。
+## 同构三：自适应规划 vs. 动态调度
+
+ADHD 的时间盲（time blindness）导致传统计划器失效：「Traditional planners never solved time blindness.」（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。自适应规划工具如 Motion 和 Tiimo 通过动态调整来应对：「Adaptive planners like Motion and Tiimo go further, reshuffling the day when it collapses.」（来源：规划循环与任务分解）。Lex 则允许用户通过单一指令触发多步骤序列，实时适应大脑工作方式（来源：Lex）。
+
+在 agent 领域，动态调度同样重要。Harness 需要根据中间结果调整后续步骤，处理异常情况。这种「规划-执行-调整」的循环，与 ADHD 工具的自适应规划异曲同工。两者都承认：静态计划注定失败，必须实时反馈和调整。
+
+## 脚手架 vs. 拐杖：诚实面对局限
+
+同构视角还揭示了「脚手架与拐杖」的辩证关系。AI 工具应作为脚手架促进能力发展，而非永久拐杖（来源：拐杖与脚手架）。例如，Otter.ai 减轻笔记负担，但过度依赖可能削弱主动记笔记的能力。同样，Goblin Tools 的任务分解如果长期使用，可能让用户失去自己分解任务的能力。
+
+当前证据主要来自用户报告，缺乏大规模对照实验（来源：矛盾与存疑）。个体差异也很大：有些用户觉得 Goblin Tools 的分解太细，有些人觉得不够细。工具设计者声称是「脚手架」，但实际使用中可能沦为「拐杖」。作为用户和工程师，我们需要保持批判：工具是辅助，不是替代。
 
 ## 今天就能试的行动
 
-1. **ADHD读者**：打开Goblin Tools的Magic ToDo，输入一个你拖延已久的任务（比如“写周报”），观察AI如何分解它。然后只做第一步，感受启动门槛的降低。
-2. **工程师读者**：检查你的agent harness设计。是否像Goblin Tools那样，让LLM通过一次function call就能完成子任务？还是需要手动编写多步提示？尝试将复杂工具链封装成单一“魔法函数”。
-3. **两者通用**：记录你（或你的agent）在任务启动时的“卡点”。是分解不够细？还是工具接口太复杂？然后对比Goblin Tools和function calling的解决方案，你会发现它们都遵循同一原则：**把模糊变具体，把复杂变简单**。
+1. **ADHD 用户**：打开 Goblin Tools 的 Magic ToDo，输入一个你拖延已久的任务（比如「写报告」），观察它分解出的步骤。对比你自己写待办清单的方式——注意启动焦虑的变化。
+2. **Agent 工程师**：检查你当前 agent 的 function calling 设计。是否像 Goblin Tools 一样，把每个工具调用当作「最小可执行步骤」？尝试将复杂任务拆解为 3-5 个原子工具，减少 LLM 的决策负担。
+3. **双方通用**：记录一次「任务启动失败」的场景。问自己：如果有一个外部 harness 帮我分解第一步，我能开始吗？然后尝试用任何工具（Goblin Tools、Lex、甚至 ChatGPT）做一次分解。观察结果。
 
-## 局限与未来
+## 结论
 
-本文的论证基于概念对齐和工具案例，而非临床对照试验。ADHD的异质性极高，单一工具难以覆盖所有亚型（来源：ADHD 的 AI 工具全景）。此外，多巴胺干预的有效性仍存争议（来源：矛盾与存疑）。但无论如何，**工具使用与认知卸载**这一框架，为ADHD和AI工程提供了可迁移的交叉视角。未来，如果ADHD工具能像agent harness一样设计“可撤除的脚手架”，而agent harness能像ADHD工具一样关注“用户（模型）体验”，两者将互相启发，走向更人性化的智能系统。
+Goblin Tools 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用，本质是同一件事：**为高产但缺调度层的生成核心，套上一个外部执行 harness**。这个视角不仅解释了为什么这些工具对 ADHD 有效，也为 agent 工程提供了设计原则——工具即用户界面，接口要简单、无认知开销。同时，它提醒我们：脚手架和拐杖只有一线之隔，保持觉察才能让工具真正成为能力的延伸，而非依赖的陷阱。
 
 ## 参考来源
 

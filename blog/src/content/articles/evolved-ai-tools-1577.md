@@ -24,7 +24,11 @@ toolsCited:
   - "Goblin Tools"
   - "Saner.AI"
   - "Lex"
-thesis: "ADHD的任务启动困难与LLM的function calling调用失败，本质都是生成核心缺乏可靠执行调度层，而Reflect这类工具正是通过外部harness结构同时解决这两个问题，证明了『脚手架』而非『拐杖』的设计原则。"
+  - "ChatGPT"
+  - "Claude"
+  - "Mem"
+  - "Otter.ai"
+thesis: "ADHD 大脑与 LLM/agent 在本质上都是高产但缺执行调度层的生成核心，因此用 Reflect 治 ADHD 的任务启动困难与给 agent 套 function calling 工具调用是同一类『为生成核心加 harness』的操作，区别仅在脚手架与拐杖的边界。"
 problem: "为什么用 Reflect 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？"
 spine: "工具使用与认知卸载"
 spineKind: ""
@@ -35,51 +39,42 @@ llmGenerated: true
 
 > Reflect 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么我脑子里有方案，手却动不了？
+你盯着空白的待办清单，大脑像一台高性能 GPU 却找不到驱动——想法汹涌，但“开始”这个动作比登天还难。另一边，你的 LLM agent 明明有强大的生成能力，却总在第一个 API 调用前卡住，像一台没有操作系统的裸机。
 
-你是一位ADHD程序员。凌晨3点，你构思了一个绝妙的算法优化，但直到天亮，你依然躺在沙发上刷手机，任务没有启动。你也是一位Agent工程师。你给LLM配了10个function calling工具，但模型总是在第一步就调用错误，或者干脆拒绝调用。两个场景，同一个痛点：**生成能力强，执行调度弱**。
+这两件事，本质上是同一个问题。
 
-ADHD大脑与LLM在结构上同构：两者都是高产但缺乏可靠执行调度层的生成核心（来源：ADHD 大脑与 LLM 的同构）。ADHD的“任务启动困难”本质是执行功能故障——工作记忆易丢失、时间盲、多巴胺不足导致动机缺失；而LLM的function calling失败本质是模型缺乏内置调度——它不知道何时调用哪个工具，也不知道如何维护调用上下文。两者都需要一个外部“harness”来提供调度、记忆和上下文管理。
+## 问题：为什么“启动”这么难？
 
-## 同构解剖：从任务启动到工具调用
+ADHD 的任务启动困难，根源在于执行功能缺陷——工作记忆容量保留但控制弱，任务集切换不灵活，抑制自动化反应困难（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。简言之，大脑的“调度层”失灵了：想法（生成核心）不缺，但无法将想法转化为有序行动。
 
-| ADHD大脑 | LLM + Harness |
-|----------|---------------|
-| 高产但缺乏执行调度层的生成核心 | 高生成能力但需外部调度的LLM |
-| 工作记忆易丢失上下文 | LLM无状态，需外部记忆管理 |
-| 需要AI助手减少决策、保留上下文 | Harness负责上下文工程和决策路由 |
-| 外部工具（如Goblin Tools）作为执行功能支架 | Harness中的模型连接器、工具调用等 |
-| 多巴胺驱动任务启动困难 | 缺乏内在奖励机制，需外部提示 |
+LLM/agent 的“冷启动”问题与此高度同构。LLM 本身是强大的生成核心，但缺乏内置的调度与执行控制。构建 agent 时需要“agent harness”——包裹 LLM 的软件基础设施，处理模型之外的一切（来源：What is an agent harness in the context of large-language models?）。没有 harness，LLM 就像 ADHD 大脑：能生成，但无法可靠地执行多步骤任务。
 
-（来源：ADHD 大脑与 LLM 的同构）
+## 答案：同一套 harness 思路
 
-ADHD患者使用Goblin Tools的Magic ToDo功能将“整理房间”分解为“捡起地板上的衣服”“擦桌子”等步骤，从而降低启动门槛（来源：Goblin Tools）。这本质上是在做任务分解——类似于Agent工程中将一个复杂查询拆解为多个function calling步骤。Saner.AI通过本地记忆减少搜索循环（来源：Saner.AI），相当于为LLM提供了持久化的上下文存储。Lex允许用户通过单一指令触发多步骤流程（来源：Lex），这正是Agent harness中的工作流编排。
+Reflect 这类工具的核心机制，正是为 ADHD 大脑提供外部调度层。它通过结构化提问、分解任务、管理上下文，将“启动”这个模糊动作拆解为可执行的步骤。这本质上与 agent 的 function calling 工具调用是同一回事：两者都通过外部接口，将“下一步做什么”的决策从核心生成器（大脑或 LLM）中剥离，交给一个更可靠的调度系统。
 
-## Reflect的实测：同一套harness思路
+ADHD 侧的真实证据：Goblin Tools 的 Magic ToDo 功能自动将复杂任务分解为小步骤，用户报告称启动焦虑降低（来源：Harnessing Artificial Intelligence to Live Better with ADHD - CHADD）。Lex 通过单一指令触发多步骤序列，减少决策疲劳（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。Saner.AI 通过增强知识回忆减少标签切换，降低认知负荷（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。这些工具的共同点：它们都是外部执行功能层，补偿内在的调度缺陷。
 
-Reflect是一款笔记工具，但其核心机制与Agent harness高度同构：它通过自动保存上下文、提供快速检索、以及“每日回顾”功能，帮助用户减少决策负担、保持工作记忆连续性。实测中，ADHD用户反馈：“Reflect让我不用再记住刚才的想法，它自动帮我保存了上下文”（来源：ADHD 的 AI 工具全景）。这直接对应LLM harness中的上下文保护——在Agent系统中，harness负责在每次调用前后保存和恢复对话历史，防止模型丢失状态。
+LLM/agent 侧的真实证据：在构建 AI agent 时，复合 AI 系统通过“每个工作流可绑定不同 LLM”的架构分配任务（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。Function calling 工具调用允许 LLM 将具体操作（如“发送邮件”“查询数据库”）委托给外部函数，从而避免在生成过程中迷失。这与 ADHD 用户使用 Reflect 将“写报告”分解为“打开文档→写标题→写第一段”是同一逻辑。
 
-更关键的是，Reflect的“回顾”功能类似于harness中的“重试机制”：当ADHD用户忘记任务时，Reflect会主动推送之前记录的要点，帮助重新启动。这相当于Agent在function calling失败后，harness会自动重试或调整参数。两者都通过外部系统补偿了核心的调度缺陷。
+## 核心判断：脚手架，不是拐杖
 
-## 脚手架 vs 拐杖：必须明确的边界
+同构视角揭示了关键边界：工具应作为脚手架促进能力发展，而非永久拐杖（来源：拐杖与脚手架）。ADHD 用户使用 Reflect 时，如果只是被动依赖分解，可能削弱内在时间感知和任务规划能力（来源：矛盾与存疑）。同样，agent 过度依赖 function calling 可能导致生成核心退化——LLM 不再学习如何自主推理步骤，而是简单地将决策外包。
 
-然而，同构并不意味着无脑照搬。ADHD工具与Agent harness最大的区别在于**可撤除性**。Agent harness是永久性的基础设施，而ADHD工具应设计为可逐步撤除的“脚手架”，否则会阻碍内在执行功能的发展（来源：矛盾与存疑）。例如，长期依赖Goblin Tools的任务分解可能导致用户丧失自主分解能力。Reflect的设计更接近脚手架：它记录上下文但不替代用户决策，用户仍需要主动回顾和选择下一步。相比之下，完全自动化的调度工具（如某些AI日程助手）可能成为拐杖。
+好的 harness 是“可拆卸”的：它提供结构，但允许用户/agent 逐步内化。例如，Goblin Tools 的分解结果可以逐渐减少细节，让用户自己填充步骤。Reflect 的结构化提问可以随着用户熟练度提高而简化。对应到 agent，function calling 应该只在必要时触发，而不是每次推理都依赖外部工具。
 
-目前，多数工具未提供撤除机制，这是行业短板（来源：矛盾与存疑）。此外，ADHD大脑与LLM同构命题本身缺乏大规模实证（来源：矛盾与存疑），主要基于概念类比和工具案例。因此，同构视角应作为启发式框架，而非绝对真理。
+## 局限与争议
 
-## 今天就能试的4件事
+必须诚实指出：AI 工具作为外部执行功能层的有效性证据主要来自用户报告和概念类比，缺乏大规模对照实验（来源：矛盾与存疑）。过度依赖可能削弱内在能力，且个体差异导致效果不一（来源：矛盾与存疑）。同构视角虽解释力强，但本质是理论模型，需要更多实证检验。
 
-1. **用Reflect记录一次任务启动失败**：写下你当时想做什么、为什么没启动。第二天回顾，观察模式。这相当于为ADHD大脑建立“失败日志”，类似Agent的调试日志。
+## 今天就能试的行动
 
-2. **用Goblin Tools分解一个你拖延已久的任务**：输入“写周报”，看AI输出的步骤。对比你自己分解的版本，感受认知卸载的效果。
+1. **用 Reflect 的“下一步行动”模板**：每次任务启动困难时，让 Reflect 将任务拆成 3-5 个可执行步骤。这相当于为大脑添加了 function calling 接口。
+2. **给 LLM agent 加一个“启动脚本”**：在 agent 的 function calling 中，强制第一步调用“get_context()”或“break_down_task()”，类似于 Goblin Tools 的魔法开关。
+3. **对比使用前后**：记录一周内任务启动的耗时和完成率。ADHD 侧可以用计时器，agent 侧可以记录 API 调用次数和成功执行率。
+4. **逐步减少依赖**：使用 Reflect 时，每周尝试少用一个分解步骤，看自己能否独立完成。对应 agent，逐步减少 function calling 频率，观察生成质量变化。
 
-3. **在LLM调用中显式添加“上下文保护”**：写一个system prompt，要求模型在每次回答前先总结当前对话的关键信息。这模仿了harness的上下文保存。
-
-4. **设计一个“可撤除”的实验**：使用Reflect一周后，停用一天，观察自己是否仍能独立启动任务。如果完全依赖，说明工具已成拐杖，需要调整使用方式。
-
-## 结论
-
-ADHD的任务启动困难与LLM的function calling失败，本质是同一类问题：生成核心强大，调度层薄弱。Reflect、Goblin Tools、Lex等工具通过提供外部harness结构，同时缓解了两边的痛点。但必须警惕过度依赖，好的脚手架应能逐步撤除。同构视角给了我们一个统一的工程框架，但最终，ADHD用户需要的不是永久拐杖，而是可内化的能力。
+ADHD 大脑与 LLM 是同一类“高产但缺执行调度层的生成核心”（来源：ADHD 大脑与 LLM 的同构）。理解这一点，你就不再需要两套方法论——同一套 harness 思路，两边都成立。区别只在于：对大脑，它是脚手架；对 agent，它是工具调用。而边界，由你亲手划定。
 
 ## 参考来源
 

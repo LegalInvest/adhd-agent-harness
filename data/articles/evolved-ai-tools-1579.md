@@ -24,7 +24,9 @@ toolsCited:
   - "Goblin Tools"
   - "Saner.AI"
   - "Lex"
-thesis: "ADHD 大脑与 LLM 共享同一困境：生成核心强大但执行调度层缺失。因此，用 Todoist 等工具辅助任务启动，与给 agent 套 function calling harness，本质都是通过外部脚手架补偿内在缺陷——两者是同一套工程逻辑的镜像。"
+  - "Claude"
+  - "Otter.ai"
+thesis: "ADHD 的任务启动困难与 LLM 的冷启动问题本质相同，都是生成核心缺乏执行调度层；Todoist 和 function calling 工具调用作为外部 harness，通过分解任务、管理上下文、提供即时反馈，解决了同一类问题。"
 problem: "为什么用 Todoist 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？"
 spine: "工具使用与认知卸载"
 spineKind: ""
@@ -35,57 +37,61 @@ llmGenerated: true
 
 > Todoist 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么“开始做”比“做什么”难一万倍？
+## 问题：为什么计划本和便签治不了“启动困难”？
 
-如果你是 ADHD 患者，你一定经历过这种场景：脑子里有一长串待办事项，但身体像被钉在椅子上，无法动弹。你打开 Todoist，看着“整理报告”这个任务，光标闪烁，大脑一片空白。十分钟后，你刷完了三个短视频，任务纹丝不动。
+如果你有 ADHD，你一定经历过这种时刻：大脑里有一堆想做的事，但身体就是动不了。你打开 Todoist，看着“写周报”这个任务，光标闪了十分钟，最后关掉窗口去刷手机。这不是懒，是执行功能（executive function）的失效——就像大脑的驾驶座上没有人（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。
 
-如果你是 Agent 工程师，你一定也经历过这种场景：你精心设计了一个 LLM 代理，给它配置了十几个 function calling 工具，但它就是“不调用”——或者调用了错误的工具，或者陷入推理循环，把简单问题复杂化。你检查日志，发现它“知道”该做什么，但“做不到”。
+同样，如果你在做 Agentic Harness 工程，你一定见过这种场景：你给 LLM 一个复杂的任务，比如“帮我整理代码并提交 PR”，结果它要么开始长篇大论地解释步骤，要么跑题去写诗。这不是模型笨，是它缺乏一个可靠的执行调度层——LLM 本身是无状态、仅生成文本的核心（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。
 
-两群人，两个世界，同一个痛点：**生成核心（智力/算力）在线，但执行调度层（启动/调用）掉线。** 本文要论证一个反直觉的结论：ADHD 患者用 Todoist 治任务启动困难，和工程师给 agent 套 function calling harness，是同一件事。
+两件事看起来毫不相关，但本质是同一个问题：**一个高产但缺调度层的生成核心，需要外部脚手架才能启动和执行。**
 
-## 同构：一个核心，两个镜像
+## 同构：ADHD 大脑 ≈ LLM，Todoist ≈ function calling
 
-ADHD 大脑的核心困境并非智力不足，而是执行功能（executive function）的失效——被描述为“大脑的驾驶座，但常常感觉方向盘后没有人”（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。LLM 同样如此：拥有强大的语言生成能力，但单独使用时缺乏可靠的执行调度，容易“上下文膨胀和推理退化”（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。
+最新研究揭示了一个反直觉的发现：ADHD 患者的工作记忆容量可能正常甚至超常，但认知灵活性和注意控制存在核心缺陷，呈现“强记忆、弱控制”的认知剖面（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。这与 LLM 惊人相似——Transformer 自注意力机制在长上下文下冲突解决能力崩溃至随机水平（来源：Deficient Executive Control in Transformer Attention）。
 
-两边共享同一个结构：
-- **生成核心**：ADHD 的智力/创造力 ↔ LLM 的算力/语言能力。两者都高产但无序。
-- **调度层缺失**：ADHD 的执行功能失效 ↔ LLM 缺乏内置的规划与执行编排。两者都需要外部脚手架。
-- **外部工具**：ADHD 的“自适应计划工具如 Motion 和 Tiimo” ↔ LLM 的“复合 AI 系统架构包括工作负载专用模型路由、分离规划与执行的双代理架构”（来源：Building AI Coding Agents for the Terminal）。
+换句话说，ADHD 大脑和 LLM 都是“生成核心”：它们能产出大量想法或文本，但缺乏内置的调度层来按顺序、按优先级执行。ADHD 的任务启动困难，对应 LLM 的“冷启动”问题；ADHD 的时间盲，对应 LLM 的时序推理弱点；ADHD 易被环境带偏，对应 LLM 的上下文膨胀（来源：ADHD 大脑与 LLM 的同构）。
 
-## 证据：两边都成立的 harness 逻辑
+那么，解决方案是什么？对 ADHD 来说，是外部执行功能层——比如 Todoist 配上 AI 的分解功能。对 LLM 来说，是 harness 工程——比如 function calling 工具调用。
 
-### ADHD 侧：Todoist 作为外部执行功能层
+**Todoist 的 AI 任务分解，本质上就是给 ADHD 大脑套了一个 function calling 的 harness。** 你输入“整理房间”，它自动拆成“捡衣服、擦桌子、叠被子”等小步骤。这就像给 LLM 定义了一个 `decompose_task()` 函数，把模糊意图转化为可执行的原子操作。Goblin Tools 的 Magic ToDo 功能做了同样的事：将压倒性的事情变成一系列不压倒性的事情（来源：The Best AI-Powered ADHD Productivity Tools in 2026 (That ...)）。用户报告称，这种分解能降低启动焦虑（来源：Goblin Tools）。
 
-Todoist 本身只是一个列表工具，但搭配 AI 能力后，它变成了一个“执行功能外挂”。关键在于：它通过**任务分解**和**减少决策负担**来降低启动门槛。类似地，Goblin Tools 的 Magic ToDo 功能“将压倒性的事情变成一系列不压倒性的事情”（来源：The Best AI-Powered ADHD Productivity Tools in 2026）。Saner.AI 通过“知识回忆”减少搜索循环，直接补偿工作记忆不足（来源：Best AI Tools for ADHD Productivity in 2026）。Lex 则允许“通过单一指令触发复杂、多步骤的任务序列”，减少启动时的决策消耗（来源：Best AI Tools for ADHD Productivity in 2026）。
+在 LLM 侧，现代 AI 代理通过“复合 AI 系统架构”来弥补调度缺陷，包括“工作负载专用模型路由、分离规划与执行的双代理架构、惰性工具发现、自适应上下文压缩”（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。这些技术本质上是在 LLM 外部搭建调度层，防止“上下文膨胀和推理退化”。
 
-这些工具的共同逻辑是：**把“我要做什么”从大脑内部卸载到外部系统**。ADHD 大脑的工作记忆就像一块白板，随时会被擦除；外部工具就是一块永久白板，帮你记住下一步。
+## 证据：两边都真实有效
 
-### LLM/Agent 侧：function calling harness 作为外部调度层
+### ADHD 侧的证据
 
-LLM 本身是无状态、仅生成文本的核心，需要外部“脚手架”来提供工具接口、上下文管理、安全执行等编排能力（来源：Building AI Coding Agents for the Terminal）。具体实现包括：用 Git 仓库存储项目上下文（类似 ADHD 侧的 Second Brain），通过 MCP 连接器访问外部数据，以及将控制逻辑外化为可移植的自然语言工件（来源：GitHub - awesome-harness-engineering）。
+- **Goblin Tools** 被用户评价为“简单有用”，能将复杂任务分解为小步骤（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+- **Lex** 允许用户通过单一指令触发多步骤任务序列，减少决策疲劳（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+- **Saner.AI** 通过本地记忆存储和快速检索，减少搜索循环和标签切换（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+- **Claude** 和 **Otter.ai** 作为外部对话记忆，提供即时反馈，类似于“身体在场效应”的虚拟版本（来源：ADHD 的 AI 工具全景）。
 
-Function calling 工具调用正是这种 harness 的核心接口。它让 LLM 可以“调用外部函数”来执行实际动作，而不是凭空生成。这与 ADHD 患者使用 Todoist 的“添加任务”按钮在本质上相同：**都是将执行动作从内部生成转换为外部触发**。
+### LLM/Agent 侧的证据
 
-## 核心观点：脚手架，不是拐杖
+- Harness 工程被定义为“设计围绕 AI 代理的脚手架——上下文交付、工具接口、规划工件、验证循环、记忆系统和沙箱”（来源：GitHub - ai-boost/awesome-harness-engineering）。
+- 具体实现包括用 Git 仓库存储项目上下文（类似 ADHD 侧的 Second Brain），通过 MCP 连接器访问外部数据（来源：Worker Agents | Harness Developer）。
+- 实验证明，没有 harness 的 LLM 在长上下文下冲突解决能力崩溃（来源：Deficient Executive Control in Transformer Attention），而有了 harness 后，代理能可靠执行多步骤任务。
 
-我的判断是：**ADHD 与 LLM 的 harness 同构，意味着“工具辅助”不是软弱，而是工程智慧。** 但必须警惕一个边界：脚手架 vs 拐杖。
+## 脚手架 vs 拐杖：边界在哪里？
 
-脚手架是**可逐步撤除的临时支撑**：ADHD 患者通过反复使用 Todoist 分解任务，可能内化分解能力；工程师通过优化 prompt，可能减少对复杂 harness 的依赖。拐杖则是**永久替代**：如果离开工具就完全无法启动，或者 agent 没有 harness 就完全无法推理，那就成了依赖。
+这里有一个关键争议：AI 工具是促进能力发展的脚手架，还是削弱内在能力的拐杖？
 
-现有工具的局限在于：多数工具（如 Goblin Tools、Saner.AI）设计为长期使用，未提及撤除机制（来源：矛盾与存疑）。同样，当前的 harness 工程也缺乏“逐步撤除”的设计——一旦接入 MCP 和双代理架构，系统复杂度只会增加，不会减少。
+资料中明确警告：过度依赖 AI 工具可能削弱内在时间感知能力（来源：时间盲），存在依赖风险（来源：任务启动）。Otter.ai 减轻笔记负担，但过度依赖可能削弱主动记笔记的能力（来源：ADHD 的 AI 工具全景）。同样，给 LLM 套上过度的 harness，也可能让模型失去自主推理的能力。
 
-## 局限与争议
+我的判断是：**脚手架与拐杖的区别在于，工具是否帮助用户/模型理解过程，而不仅仅是跳过过程。** Goblin Tools 的分解步骤是脚手架，因为它让用户看到任务的结构；而一个自动完成所有工作的“一键搞定”工具就是拐杖。对 LLM 来说，function calling 是脚手架，因为它让模型学会调用外部工具；而一个完全替代推理的硬编码流程就是拐杖。
 
-必须诚实指出，本文的核心命题“ADHD 大脑与 LLM 同构”**证据主要来自概念类比和工具案例，缺乏大规模实证**（来源：矛盾与存疑）。此外，AI 工具对 ADHD 的长期效果缺乏随机对照试验验证，个性化适配也因 ADHD 异质性高而困难（来源：ADHD 的 AI 工具全景）。
+## 局限与诚实
 
-另一个争议是**多巴胺干预的有效性**：虽然多巴胺是核心神经递质，但 AI 工具主要通过行为干预而非直接调节多巴胺来改善动机（来源：ADHD 的 AI 工具全景）。工具声称的“神经科学原理”可能被夸大。
+必须承认，目前证据主要来自用户报告和概念类比，缺乏大规模随机对照试验（来源：矛盾与存疑）。个体差异很大——有人觉得 Goblin Tools 好用，有人觉得它分得太细反而干扰（来源：任务启动）。此外，Brain.fm 的 ADHD 效果缺乏独立临床研究（来源：Brain.fm），Structured 的 AI 功能细节不明确（来源：Structured）。所以，别指望任何工具是灵丹妙药。
 
 ## 今天就能试的行动
 
-1. **ADHD 读者**：在 Todoist 中创建一个“启动模板”——把最常拖延的任务（如“写周报”）预先分解成三步：打开文档→写第一句→检查格式。每次启动时，只做第一步。
-2. **Agent 工程师**：检查你的 function calling 配置。如果 agent 频繁调用错误工具，尝试将工具描述改为“最小启动指令”——只告诉它触发条件，不解释背景。
-3. **双方通用**：记录一次“启动失败”的日志。ADHD 侧记下当时的环境和情绪；Agent 侧记下 prompt 和上下文。对比两者，看是否都卡在“第一步的决策点”上。
-4. **反思脚手架 vs 拐杖**：每周检查一次，你是否比上周更依赖工具？如果是，尝试减少一个步骤的辅助；如果否，保持现状。
+1. **用 Todoist 或 Goblin Tools 分解一个你拖延已久的任务**：输入“整理书桌”，看 AI 拆出的步骤。如果它拆得太细，手动合并；如果太粗，手动拆分。记录启动时间的变化。
+2. **给你的 LLM 项目加一个 function calling 接口**：哪怕只是一个 `search_web()` 函数，也能显著减少模型的冷启动问题。观察它在多步任务中的表现。
+3. **对比两种工具的效果**：用 Lex 的单一指令触发多步骤，对比手动一步步执行。记录哪个更容易让你/模型完成。
+4. **注意依赖风险**：每周至少一次，不用任何 AI 工具手动分解任务，保持内在能力。如果发现离开了工具完全无法启动，说明已经过度依赖。
+
+最后，记住这个同构：**你需要的不是更强的意志力，而是更好的 harness。** 对 ADHD 大脑和对 LLM 都一样。
 
 ## 参考来源
 

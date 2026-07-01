@@ -5,147 +5,195 @@
       "type": "concept",
       "slug": "执行功能",
       "path": "concepts/执行功能.md",
-      "summary": "执行功能是大脑的驾驶系统，负责计划、组织、工作记忆等认知控制；ADHD 患者常存在执行功能缺陷，AI 工具可提供个性化支持。",
+      "summary": "执行功能是大脑的“驾驶座”，负责调控注意力、计划、组织、工作记忆、冲动控制等高级认知过程。ADHD 患者存在执行功能缺陷，而 AI 工具可作为外部执行功能层提供补偿。最新研究揭示了 ADHD 与 LLM 在执行功能缺陷上的深层同构。",
       "cross_links": [
         "工作记忆",
         "时间盲",
         "身体在场效应",
         "多巴胺",
         "任务启动",
-        "拒绝敏感性焦虑",
+        "ADHD 大脑与 LLM 的同构",
+        "外部执行功能层",
+        "生成核心与调度层",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
-        "Reclaim.ai",
-        "Tiimo"
+        "Reclaim.ai"
       ],
       "sources": [
         {
-          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
-          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+          "title": "Deficient Executive Control in Transformer Attention",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.22.634394v1.full.pdf"
         },
         {
-          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
-          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+          "title": "Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs",
+          "url": "https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf"
         },
         {
-          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
-          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+          "title": "TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS",
+          "url": "https://openreview.net/pdf?id=CN2bmVVpOh"
         },
         {
-          "title": "AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors",
-          "url": "https://thembatutors.com/ai-for-adhd-tools-and-apps/"
+          "title": "\"A little bit of a life raft\" – Exploring the Use and Experiences of ChatGPT as a Support Tool among Adults with ADHD",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3764687.3764713"
         },
         {
-          "title": "11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog",
-          "url": "https://blog.rivva.app/p/11-best-adhd-productivity-apps-for"
+          "title": "Executive Dysfunction by Design: A Cognitive Accessibility Analysis of AI Support vs. Healthcare Barriers",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3663547.3749831"
         },
         {
-          "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
-          "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
+          "title": "Toward Neurodivergent-Aware Productivity: A Systems and AI-Based Human-in-the-Loop Framework for ADHD-Affected Professionals",
+          "url": "https://arxiv.org/pdf/2507.06864"
         },
         {
-          "title": "“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT",
-          "url": "https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39"
+          "title": "Confabulation: The Surprising Value of Large Language Model Hallucinations",
+          "url": "https://preview.aclanthology.org/navbar-space/2024.acl-long.770.pdf"
+        },
+        {
+          "title": "Artificial Neuropsychology: Are Large Language Models Developing Executive Functions?",
+          "url": "https://arxiv.org/pdf/2305.04134"
         }
       ],
       "ingested_source_hashes": [
-        "f2beccdde6c5",
-        "f261bbd70590",
-        "c510e3178d72",
-        "5efe17a535c1",
-        "83be1a65969e",
-        "9ee686cb6103",
-        "67da9f000d71",
-        "a10ea55b469a",
-        "e61b03d96795",
-        "d5ad6a3f2bad",
+        "03f07ee8a6dd",
+        "0522a919f0d2",
         "0d31138584d9",
+        "14496d783837",
+        "1f77f9cc4466",
+        "2a8c00b7495a",
+        "4d2ab968c874",
+        "57f8b28afff3",
+        "58b3f7c3f02b",
+        "5efe17a535c1",
+        "67da9f000d71",
         "717b5230a8c7",
+        "83be1a65969e",
+        "94518eea2f5a",
+        "9ee686cb6103",
+        "a10ea55b469a",
+        "a59f8c6247f5",
+        "ad5be47fab8c",
+        "aef1b2c6befc",
+        "b19ed2517364",
         "b732232ee64f",
-        "a59f8c6247f5"
+        "b8d8ef86470b",
+        "bcf5712df1ac",
+        "c510e3178d72",
+        "c5d9347a6151",
+        "c611a4c89ba9",
+        "d5ad6a3f2bad",
+        "d8b2f64b295b",
+        "e61b03d96795",
+        "f261bbd70590",
+        "f2beccdde6c5",
+        "f2e16cfd1b07"
       ],
-      "updated_at": "2026-06-29T09:15:21.951837+00:00"
+      "updated_at": "2026-07-01T08:19:34.781661+00:00"
     },
     "concept:工作记忆": {
       "name": "工作记忆",
       "type": "concept",
       "slug": "工作记忆",
       "path": "concepts/工作记忆.md",
-      "summary": "工作记忆是ADHD核心执行功能缺陷之一，AI工具可作为数字工作记忆来弥补这一短板。",
+      "summary": "工作记忆是ADHD的核心执行功能缺陷之一，新研究揭示LLM与ADHD在工作记忆上的深层同构：强记忆容量但弱控制，注意力分散是共同机制。",
       "cross_links": [
         "执行功能",
         "时间盲",
-        "身体在场效应",
-        "多巴胺",
         "任务启动",
-        "拒绝敏感性焦虑",
+        "ADHD 大脑与 LLM 的同构",
+        "外部执行功能层",
+        "生成核心与调度层",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
-        "Reclaim.ai",
-        "Tiimo"
+        "Reclaim.ai"
       ],
       "sources": [
         {
-          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
-          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+          "title": "Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs",
+          "url": "https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf"
         },
         {
-          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
-          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+          "title": "Self-Attention Limits Working Memory Capacity of Transformer-Based Models",
+          "url": "https://arxiv.org/pdf/2409.10715"
         },
         {
-          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
-          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
+          "title": "Human-like Working Memory Interference in Large Language Models",
+          "url": "https://arxiv.org/pdf/2604.09670"
         },
         {
-          "title": "ADHD, Executive Functions, and AI: A New Era in Treatment | Psychology Today",
-          "url": "https://www.psychologytoday.com/us/blog/screen-play/202502/adhd-executive-functions-and-ai-a-new-era-in-treatment"
+          "title": "Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length",
+          "url": "https://arxiv.org/pdf/2506.08184"
         },
         {
-          "title": "Outsourcing Executive Function with AI — Hacking Your ADHD",
-          "url": "https://www.hackingyouradhd.com/podcast/outsourcing-executive-function-with-ai"
+          "title": "Working Memory Identifies Reasoning Limits in Language Models",
+          "url": "https://aclanthology.org/2024.emnlp-main.938.pdf"
+        },
+        {
+          "title": "TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS",
+          "url": "https://openreview.net/pdf?id=CN2bmVVpOh"
         }
       ],
       "ingested_source_hashes": [
-        "1187c589ca19",
-        "c510e3178d72",
-        "67da9f000d71",
-        "1263bc47ad31",
-        "7fcd0c429536",
-        "9ce808a8f59d",
-        "e9651fac7e7b",
-        "daf7a73952fc",
-        "c4dd4bea2423",
-        "f0baababbf15",
+        "041c1d1c6b91",
         "09a86ab04387",
-        "dc6865b954ad",
+        "1187c589ca19",
+        "1263bc47ad31",
+        "14496d783837",
+        "1b961290ce56",
+        "429e8f30fe17",
+        "48e21d9d9e79",
+        "4a7688e2e60f",
+        "4d2ab968c874",
+        "67da9f000d71",
+        "7093817bb1c2",
+        "7596e20f4d94",
+        "7738efc45850",
+        "7f825b333fe7",
+        "7fcd0c429536",
+        "8d4933dca497",
+        "8ef501e4b360",
+        "9ce808a8f59d",
+        "aef1b2c6befc",
+        "c4dd4bea2423",
+        "c50b89271ed8",
+        "c510e3178d72",
+        "c60187e258f1",
+        "c611a4c89ba9",
+        "cc605a353bee",
         "cc9d0769543d",
-        "c60187e258f1"
+        "daf7a73952fc",
+        "dc6865b954ad",
+        "e9651fac7e7b",
+        "f0baababbf15"
       ],
-      "updated_at": "2026-06-29T09:15:45.698815+00:00"
+      "updated_at": "2026-07-01T08:19:47.352961+00:00"
     },
     "concept:时间盲": {
       "name": "时间盲",
       "type": "concept",
       "slug": "时间盲",
       "path": "concepts/时间盲.md",
-      "summary": "时间盲是ADHD的核心特征之一，指难以感知和估计时间流逝，导致计划、准时和任务管理困难。",
+      "summary": "时间盲是ADHD的典型特征，表现为难以感知时间流逝和估算任务耗时，AI工具通过视觉化、智能调度和外部提醒等方式提供支持，但有效性证据多来自用户报告，且过度依赖可能削弱内在时间感知能力。",
       "cross_links": [
         "执行功能",
         "工作记忆",
         "身体在场效应",
         "多巴胺",
         "任务启动",
-        "拒绝敏感性焦虑",
+        "ADHD 大脑与 LLM 的同构",
+        "外部执行功能层",
+        "生成核心与调度层",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
-        "Reclaim.ai",
-        "Tiimo"
+        "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "Toward Neurodivergent-Aware Productivity: A Systems and AI-Based Human-in-the-Loop Framework for ADHD-Affected Professionals",
+          "url": "https://arxiv.org/pdf/2507.06864"
+        },
         {
           "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
           "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
@@ -172,18 +220,19 @@
         }
       ],
       "ingested_source_hashes": [
-        "92faded39507",
-        "de069279f55c",
-        "5a6f1ed8c815",
-        "af35b9c04390",
-        "3f289e95266d",
-        "efc1d790c7b4",
+        "03f07ee8a6dd",
         "124f05c1a601",
-        "f0bd9784ffcb",
+        "3f289e95266d",
+        "5a6f1ed8c815",
         "82456081037d",
+        "92faded39507",
+        "af35b9c04390",
+        "de069279f55c",
+        "efc1d790c7b4",
+        "f0bd9784ffcb",
         "f3632dcfaae3"
       ],
-      "updated_at": "2026-06-29T09:16:12.102618+00:00"
+      "updated_at": "2026-07-01T08:19:56.050022+00:00"
     },
     "concept:身体在场效应": {
       "name": "身体在场效应",
@@ -279,46 +328,65 @@
       "type": "concept",
       "slug": "任务启动",
       "path": "concepts/任务启动.md",
-      "summary": "任务启动是ADHD核心执行功能缺陷之一，指难以开始一项任务，常伴随拖延和启动焦虑。AI工具通过分解步骤、设置提醒和降低认知负荷来辅助任务启动。",
+      "summary": "任务启动是ADHD核心执行功能缺陷之一，AI工具通过分解任务、智能提醒、视觉化时间等方式辅助启动，但效果因人而异，且存在依赖风险。",
       "cross_links": [
         "执行功能",
         "工作记忆",
         "时间盲",
         "身体在场效应",
         "多巴胺",
-        "拒绝敏感性焦虑",
-        "Goblin Tools",
-        "Saner.AI",
-        "Motion",
-        "Reclaim.ai",
-        "Tiimo"
-      ],
-      "sources": [
-        {
-          "title": "AI Tools for Kids with ADHD: A Complete Guide for Parents...",
-          "url": "https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026"
-        }
-      ],
-      "ingested_source_hashes": [
-        "300e09f0b57c"
-      ],
-      "updated_at": "2026-06-29T09:17:23.470881+00:00"
-    },
-    "concept:超聚焦": {
-      "name": "超聚焦",
-      "type": "concept",
-      "slug": "超聚焦",
-      "path": "concepts/超聚焦.md",
-      "summary": "超聚焦（Hyperfocus）是一种高度沉浸于任务的状态，常见于ADHD个体，常伴随时间盲和任务切换困难。AI工具可帮助引导超聚焦于优先事项并管理其副作用。",
-      "cross_links": [
-        "执行功能",
-        "时间盲",
+        "ADHD 大脑与 LLM 的同构",
+        "外部执行功能层",
+        "生成核心与调度层",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "\"A little bit of a life raft\" – Exploring the Use and Experiences of ChatGPT as a Support Tool among Adults with ADHD",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3764687.3764713"
+        },
+        {
+          "title": "AI Tools for Kids with ADHD: A Complete Guide for Parents...",
+          "url": "https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026"
+        }
+      ],
+      "ingested_source_hashes": [
+        "1f77f9cc4466",
+        "300e09f0b57c"
+      ],
+      "updated_at": "2026-07-01T08:20:05.017487+00:00"
+    },
+    "concept:超聚焦": {
+      "name": "超聚焦",
+      "type": "concept",
+      "slug": "超聚焦",
+      "path": "concepts/超聚焦.md",
+      "summary": "超聚焦（Hyperfocus）是一种完全沉浸于任务、忽略外部刺激的状态，在ADHD中表现为注意资源的极端分配，与时间盲和执行功能障碍密切相关。AI工具可适应并引导超聚焦，同时神经科学和AI研究揭示了其计算同构性与神经机制。",
+      "cross_links": [
+        "执行功能",
+        "时间盲",
+        "ADHD 大脑与 LLM 的同构",
+        "Goblin Tools",
+        "Saner.AI",
+        "Motion",
+        "Reclaim.ai"
+      ],
+      "sources": [
+        {
+          "title": "¡Hacia una IA neurodivergente! (迈向神经多样性AI)",
+          "url": "https://ddd.uab.cat/pub/uabdivulga/uabdivulga_a2026m1/uabdivulga_a2026m1a4iSPA.pdf"
+        },
+        {
+          "title": "Monotropic Artificial Intelligence: Toward a Cognitive Taxonomy of Domain-Specialized Language Models",
+          "url": "https://arxiv.org/pdf/2603.00350v1"
+        },
+        {
+          "title": "Transient Frontal Fracturing: A Theoretical Account of Hyperfocus",
+          "url": "https://watermark02.silverchair.com/jocn.a.2428.pdf"
+        },
         {
           "title": "The Best AI-Powered ADHD Productivity Tools in 2026 (That ...",
           "url": "https://nexasphere.io/blog/ai-adhd-productivity-tools-2026"
@@ -341,11 +409,19 @@
         }
       ],
       "ingested_source_hashes": [
+        "08300ea2c1f0",
+        "0e4127a35c32",
         "124f05c1a601",
+        "12c1d06dfd34",
         "1542c5b41822",
+        "1dd16d2ea7e0",
+        "235f1680ae24",
+        "2b873d6e4a91",
         "2ef90cc8fa4c",
         "46728109fd8d",
+        "48a6819cd405",
         "4af80a22b6ff",
+        "4c82edc88643",
         "59d5b59a6925",
         "5d72a443fcbc",
         "726f1eb69542",
@@ -353,26 +429,35 @@
         "a5092699f939",
         "aab3a09c7107",
         "ced45f945b24",
+        "dc0dab998bc8",
         "e0cf388c8c1e",
-        "ed39f4cc146c"
+        "ed39f4cc146c",
+        "f7da5ca13130",
+        "f8098fd1b8ef"
       ],
-      "updated_at": "2026-06-30T02:55:16.487682+00:00"
+      "updated_at": "2026-07-01T08:20:17.012794+00:00"
     },
     "concept:认知负荷": {
       "name": "认知负荷",
       "type": "concept",
       "slug": "认知负荷",
       "path": "concepts/认知负荷.md",
-      "summary": "认知负荷是工作记忆处理信息时的心理努力总量，ADHD个体因执行功能缺陷更易超载。AI工具通过外化思维、自动决策等方式降低认知负荷，但设计不当的工具可能适得其反。",
+      "summary": "认知负荷是工作记忆处理信息时的心理努力总量，ADHD个体因执行功能缺陷易超载；AI可通过外化认知负担来降低负荷，但工具设计不当可能适得其反。",
       "cross_links": [
         "执行功能",
         "工作记忆",
+        "外部执行功能层",
+        "ADHD 大脑与 LLM 的同构",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "Deficient Executive Control in Transformer Attention",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.22.634394v1.full.pdf"
+        },
         {
           "title": "Harnessing Artificial Intelligence to Live Better with ADHD - CHADD",
           "url": "https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/"
@@ -400,16 +485,13 @@
         {
           "title": "Systematic review of the neural basis of social cognition in patients with mood disorders",
           "url": "https://doi.org/10.1503/jpn.100179"
-        },
-        {
-          "title": "Cognitive functions in young adults with generalized anxiety disorder",
-          "url": "https://doi.org/10.1016/j.eurpsy.2018.10.008"
         }
       ],
       "ingested_source_hashes": [
         "09fd316448a7",
         "10a9dcdc896b",
         "22fb374ba327",
+        "2a8c00b7495a",
         "477afdc25a1d",
         "64e68e110c75",
         "6d81d998017d",
@@ -422,19 +504,19 @@
         "f33580fd19c6",
         "f7c2aa64c266"
       ],
-      "updated_at": "2026-06-30T02:56:11.464489+00:00"
+      "updated_at": "2026-07-01T08:16:06.813650+00:00"
     },
     "concept:情绪失调": {
       "name": "情绪失调",
       "type": "concept",
       "slug": "情绪失调",
       "path": "concepts/情绪失调.md",
-      "summary": "情绪失调是ADHD的核心特征之一，与执行功能缺陷和多巴胺系统异常相关，AI工具可辅助情绪管理，但干预效果需更多验证。",
+      "summary": "情绪失调是ADHD核心特征之一，表现为情绪波动剧烈、易怒等，与执行功能缺陷密切相关。AI工具可辅助情绪管理，但干预效果需更多验证。",
       "cross_links": [
         "执行功能",
         "工作记忆",
-        "多巴胺",
         "时间盲",
+        "多巴胺",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
@@ -488,6 +570,7 @@
         "2d6267e9cd6e",
         "313234a5617e",
         "46e783f63bfc",
+        "4713e8025bc6",
         "604ebb9e31f3",
         "6d62fef25ad0",
         "81e494dc1aa1",
@@ -498,14 +581,14 @@
         "e9eafa1a8518",
         "fc6d532a021e"
       ],
-      "updated_at": "2026-06-30T02:58:00.549440+00:00"
+      "updated_at": "2026-07-01T08:20:26.514732+00:00"
     },
     "concept:执行功能障碍": {
       "name": "执行功能障碍",
       "type": "concept",
       "slug": "执行功能障碍",
       "path": "concepts/执行功能障碍.md",
-      "summary": "执行功能障碍（Executive Dysfunction）是ADHD的核心特征之一，表现为计划、组织、时间管理等执行功能困难。AI工具可作为外部执行功能辅助，但现有证据多来自非临床来源，存在争议。",
+      "summary": "执行功能障碍是ADHD的核心特征，指计划、组织、时间管理等执行功能困难。AI工具可作为外部执行功能辅助，但需注意证据局限。",
       "cross_links": [
         "执行功能",
         "工作记忆",
@@ -521,6 +604,22 @@
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "Deficient Executive Control in Transformer Attention",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.22.634394v1.full.pdf"
+        },
+        {
+          "title": "Executive Dysfunction by Design: A Cognitive Accessibility Analysis of AI Support vs. Healthcare Barriers",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3663547.3749831"
+        },
+        {
+          "title": "Toward Neurodivergent-Aware Productivity: A Systems and AI-Based Human-in-the-Loop Framework for ADHD-Affected Professionals",
+          "url": "https://arxiv.org/pdf/2507.06864"
+        },
+        {
+          "title": "Confabulation: The Surprising Value of Large Language Model Hallucinations",
+          "url": "https://preview.aclanthology.org/navbar-space/2024.acl-long.770.pdf"
+        },
         {
           "title": "Artificial Intelligence Identifies Adults with ADHD Using EEG Features",
           "url": "https://advances.massgeneral.org/neuro/journal.aspx?id=1593"
@@ -544,25 +643,10 @@
         {
           "title": "Profiles of Everyday Executive Function in Acquired and Developmental Disorders",
           "url": "https://doi.org/10.1076/chin.8.2.121.8727"
-        },
-        {
-          "title": "Multiple deficits in ADHD: executive dysfunction, delay aversion, reaction time variability, and emotional deficits",
-          "url": "https://doi.org/10.1111/jcpp.12006"
-        },
-        {
-          "title": "Evidence for a pure time perception deficit in children with ADHD",
-          "url": "https://doi.org/10.1111/1469-7610.00043"
-        },
-        {
-          "title": "Dissociation in performance of children with ADHD and high-functioning autism on a task of sustained attention",
-          "url": "https://doi.org/10.1016/j.neuropsychologia.2007.02.019"
-        },
-        {
-          "title": "Meta‐analysis of neuropsychological measures of executive functioning in children and adolescents with high‐functioning autism spectrum disorder",
-          "url": "https://doi.org/10.1002/aur.1723"
         }
       ],
       "ingested_source_hashes": [
+        "03f07ee8a6dd",
         "1f8e14319420",
         "4b4e5991dea4",
         "4e7cdac3e282",
@@ -573,12 +657,16 @@
         "6d1b578d441d",
         "73388433e2c3",
         "7fffad25bf30",
+        "834c81ce4194",
+        "94518eea2f5a",
         "af76e9a21e21",
+        "c5d9347a6151",
         "cd3cbee5fd0c",
+        "d8b2f64b295b",
         "de5256111dd8",
         "fa3bc17cfb10"
       ],
-      "updated_at": "2026-06-30T02:58:55.481087+00:00"
+      "updated_at": "2026-07-01T08:20:38.005160+00:00"
     },
     "tool:Goblin Tools": {
       "name": "Goblin Tools",
@@ -1027,7 +1115,7 @@
       "type": "tool",
       "slug": "mem",
       "path": "tools/mem.md",
-      "summary": "Mem 是一款 AI 第二大脑工具，通过持久记忆和项目上下文保持，帮助 ADHD 用户减少工作记忆负担和搜索循环。",
+      "summary": "Mem 是一款以“AI 第二大脑”为定位的生产力工具，通过持久记忆和可复用工作流帮助 ADHD 用户应对工作记忆不足，但初始设置门槛较高。",
       "cross_links": [
         "Goblin Tools",
         "Saner.AI",
@@ -1042,54 +1130,81 @@
       ],
       "sources": [
         {
+          "title": "Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs",
+          "url": "https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf"
+        },
+        {
+          "title": "Self-Attention Limits Working Memory Capacity of Transformer-Based Models",
+          "url": "https://arxiv.org/pdf/2409.10715"
+        },
+        {
+          "title": "Human-like Working Memory Interference in Large Language Models",
+          "url": "https://arxiv.org/pdf/2604.09670"
+        },
+        {
+          "title": "Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length",
+          "url": "https://arxiv.org/pdf/2506.08184"
+        },
+        {
+          "title": "Working Memory Identifies Reasoning Limits in Language Models",
+          "url": "https://aclanthology.org/2024.emnlp-main.938.pdf"
+        },
+        {
+          "title": "TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS",
+          "url": "https://openreview.net/pdf?id=CN2bmVVpOh"
+        },
+        {
           "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
           "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
-        },
-        {
-          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
-          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
-        },
-        {
-          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
-          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
-        },
-        {
-          "title": "6 ways AI can help you manage ADHD symptoms - Understood.org",
-          "url": "https://www.understood.org/en/articles/adhd-ai-tools"
         }
       ],
       "ingested_source_hashes": [
-        "1cb8059f9dde",
-        "4ead2855c60c",
+        "041c1d1c6b91",
         "1187c589ca19",
-        "b2513cbb1ccb",
-        "497a18a193a5",
-        "dd46d261a703",
+        "1263bc47ad31",
+        "1cb8059f9dde",
         "36bb8fce8123",
-        "85614339362b",
-        "c510e3178d72",
+        "429e8f30fe17",
+        "497a18a193a5",
+        "4ead2855c60c",
         "4ebe8d256d94",
-        "d75a972eef16",
-        "9ee686cb6103",
         "67da9f000d71",
-        "1263bc47ad31"
+        "7738efc45850",
+        "85614339362b",
+        "8d4933dca497",
+        "9ee686cb6103",
+        "b2513cbb1ccb",
+        "bcf5712df1ac",
+        "c510e3178d72",
+        "cc605a353bee",
+        "d75a972eef16",
+        "dd46d261a703"
       ],
-      "updated_at": "2026-06-29T09:22:57.319257+00:00"
+      "updated_at": "2026-07-01T08:22:26.507016+00:00"
     },
     "tool:ChatGPT": {
       "name": "ChatGPT",
       "type": "tool",
       "slug": "chatgpt",
       "path": "tools/chatgpt.md",
-      "summary": "ChatGPT 是 OpenAI 开发的对话式 AI 助手，被 ADHD 群体用作执行功能工具、创意出口和沟通辅助。",
+      "summary": "ChatGPT 是 OpenAI 开发的对话式 AI 模型，ADHD 用户将其作为外部执行功能工具，弥补工作记忆、任务启动等缺陷，但需注意注意力分散风险。",
       "cross_links": [
         "Goblin Tools",
+        "Saner.AI",
         "执行功能",
         "工作记忆",
         "时间盲",
         "多巴胺"
       ],
       "sources": [
+        {
+          "title": "Large Language Models as simulative agents for neurodivergent adult psychometric profiles",
+          "url": "https://www.arxiv.org/pdf/2601.15319"
+        },
+        {
+          "title": "\"A little bit of a life raft\" – Exploring the Use and Experiences of ChatGPT as a Support Tool among Adults with ADHD",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3764687.3764713"
+        },
         {
           "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
           "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
@@ -1104,22 +1219,26 @@
         }
       ],
       "ingested_source_hashes": [
-        "f2a206ac1d6c",
-        "b79cae2950e3",
-        "fb5244d5d0b5",
-        "92bc314dae8c",
-        "b732232ee64f",
+        "0eaf3d448baa",
+        "1800ce7925c3",
         "1efc3e2dbb75",
+        "1f77f9cc4466",
+        "20e5305bba8b",
+        "21fedcfd8c63",
+        "5dbc2d0bd18f",
+        "8780fb3a222d",
+        "92bc314dae8c",
         "a59f8c6247f5",
         "a833c5b796a0",
+        "b65c6d7df6f2",
+        "b732232ee64f",
+        "b79cae2950e3",
+        "b8d8ef86470b",
         "c44756c920e0",
-        "20e5305bba8b",
-        "5dbc2d0bd18f",
-        "0eaf3d448baa",
-        "8780fb3a222d",
-        "b65c6d7df6f2"
+        "f2a206ac1d6c",
+        "fb5244d5d0b5"
       ],
-      "updated_at": "2026-06-29T09:23:21.724177+00:00"
+      "updated_at": "2026-07-01T08:22:35.970501+00:00"
     },
     "tool:Claude": {
       "name": "Claude",
@@ -1433,7 +1552,7 @@
       "type": "topic",
       "slug": "adhd-的-ai-工具全景",
       "path": "topics/adhd-的-ai-工具全景.md",
-      "summary": "ADHD大脑与LLM在结构上同构，都是高产生成核心但缺乏可靠执行调度层。当前AI工具通过提供外部执行功能层（如任务分解、记忆辅助、上下文管理）来弥补这一缺陷，形成“给生成核心套harness”的核心范式。证据支持工具在任务启动、工作记忆、时间盲等维度的有效性，但长期依赖、个性化适配及多巴胺干预的争议仍需关注。",
+      "summary": "本文综述了ADHD的AI工具全景，以ADHD大脑与LLM同构为脊柱命题，提出核心论点：AI工具作为外部执行功能层，本质上是为生成核心套上harness。文章梳理了工具类型、证据脉络及争议点。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1458,14 +1577,14 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.878852+00:00"
+      "updated_at": "2026-07-01T08:22:54.286757+00:00"
     },
     "topic:AI 与 ADHD 的专注力": {
       "name": "AI 与 ADHD 的专注力",
       "type": "topic",
       "slug": "ai-与-adhd-的专注力",
       "path": "topics/ai-与-adhd-的专注力.md",
-      "summary": "本综述以「ADHD 大脑与 LLM 同构」为核心命题，论证 AI 工具作为外部执行功能层，通过补偿工作记忆、时间盲、任务启动等缺陷来提升 ADHD 专注力。当前证据主要来自工具机制与 ADHD 理论的对齐，但缺乏独立临床研究。争议焦点在于脚手架是否阻碍内在能力发展，以及多巴胺干预的有效性。",
+      "summary": "本文综述了AI工具如何通过外部执行功能层补偿ADHD的专注力缺陷，基于ADHD大脑与LLM同构的核心命题，分析了现有工具的证据与争议。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1487,15 +1606,20 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.880944+00:00"
+      "updated_at": "2026-07-01T08:23:04.596590+00:00"
     },
     "topic:AI 与 ADHD 的时间管理": {
       "name": "AI 与 ADHD 的时间管理",
       "type": "topic",
       "slug": "ai-与-adhd-的时间管理",
       "path": "topics/ai-与-adhd-的时间管理.md",
-      "summary": "本文基于ADHD大脑与LLM同构的核心命题，综述AI工具在时间管理中的应用，指出其本质是为生成核心套上外部调度层。当前证据支持AI通过外部记忆、上下文工程和任务分解弥补执行功能缺陷，但存在过度依赖、个体差异及长期效果不明等争议。",
+      "summary": "本文综述了AI工具在ADHD时间管理中的应用，核心论点是ADHD大脑与LLM同构——都是缺乏可靠执行调度层的生成核心，因此AI工具的本质是给生成核心套上外部执行功能层（harness）。文章从同构视角出发，梳理了Motion、Reclaim.ai、Tiimo等工具的证据脉络，并指出过度依赖、个体差异等争议与证据不足。",
       "cross_links": [
+        "Motion",
+        "Reclaim.ai",
+        "Tiimo",
+        "Structured",
+        "Todoist",
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
         "生成核心与调度层",
@@ -1507,23 +1631,18 @@
         "时间盲",
         "身体在场效应",
         "多巴胺",
-        "任务启动",
-        "Motion",
-        "Reclaim.ai",
-        "Tiimo",
-        "Structured",
-        "Todoist"
+        "任务启动"
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.884281+00:00"
+      "updated_at": "2026-07-01T08:23:16.105868+00:00"
     },
     "topic:AI 与 ADHD 的情绪调节": {
       "name": "AI 与 ADHD 的情绪调节",
       "type": "topic",
       "slug": "ai-与-adhd-的情绪调节",
       "path": "topics/ai-与-adhd-的情绪调节.md",
-      "summary": "本文以「ADHD 大脑与 LLM 同构」为脊柱，探讨 AI 工具如何通过外部脚手架帮助 ADHD 患者调节情绪。核心论点是：AI 作为外部执行功能层，能补偿工作记忆、任务启动和时间盲等缺陷，但情绪调节的个性化与长期效果仍需更多证据。",
+      "summary": "本文基于ADHD大脑与LLM的同构命题，探讨AI在ADHD情绪调节中的作用。核心论点：AI工具作为外部执行功能层，通过补偿工作记忆、任务启动和时间感知缺陷，间接改善情绪调节，但需警惕依赖风险。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1541,14 +1660,14 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.886670+00:00"
+      "updated_at": "2026-07-01T08:23:25.898528+00:00"
     },
     "topic:AI 与 ADHD 的学习方式": {
       "name": "AI 与 ADHD 的学习方式",
       "type": "topic",
       "slug": "ai-与-adhd-的学习方式",
       "path": "topics/ai-与-adhd-的学习方式.md",
-      "summary": "本文基于ADHD大脑与LLM同构的脊柱命题，系统论述了AI如何通过提供外部执行功能层、上下文管理和任务脚手架来辅助ADHD学习，同时指出了当前证据的局限和争议。",
+      "summary": "本文基于「ADHD 大脑与 LLM 同构」的脊柱命题，综述了 AI 工具如何作为外部执行功能层辅助 ADHD 学习。核心论点是：AI 本质上是为 ADHD 大脑这一「高产但缺调度层的生成核心」套上 harness，通过分解任务、管理上下文、补偿工作记忆等方式降低启动门槛、维持注意力。证据主要来自用户报告和概念类比，但缺乏大规模对照实验，且存在依赖风险。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1566,14 +1685,14 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.888826+00:00"
+      "updated_at": "2026-07-01T08:23:35.009810+00:00"
     },
     "topic:AI 与 ADHD 的职业发展": {
       "name": "AI 与 ADHD 的职业发展",
       "type": "topic",
       "slug": "ai-与-adhd-的职业发展",
       "path": "topics/ai-与-adhd-的职业发展.md",
-      "summary": "本综述以「ADHD大脑与LLM同构」为脊柱，论证AI辅助ADHD职业发展的本质是给高产生成核心套上外部执行调度层。核心论点：ADHD的认知优势（发散、创新）在AI脚手架下可转化为职业生产力，但需警惕过度依赖和证据不足。",
+      "summary": "本综述以「ADHD 大脑与 LLM 同构」为脊柱，论证 AI 辅助 ADHD 职业发展的本质是为生成核心套上执行功能 harness。核心论点：AI 工具作为外部执行功能层，可补偿 ADHD 在任务启动、时间管理、工作记忆等方面的缺陷，但需警惕依赖风险。证据主要来自用户报告和概念类比，缺乏大规模实证。争议焦点包括过度依赖削弱内在能力、个体差异大、AI 工具泛化性不足等。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1590,14 +1709,14 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.891232+00:00"
+      "updated_at": "2026-07-01T08:23:49.657538+00:00"
     },
     "topic:ADHD × AI 的科学与研究前沿": {
       "name": "ADHD × AI 的科学与研究前沿",
       "type": "topic",
       "slug": "adhd-ai-的科学与研究前沿",
       "path": "topics/adhd-ai-的科学与研究前沿.md",
-      "summary": "本综述以「ADHD大脑与LLM同构」为核心命题，梳理了当前科学证据与研究前沿，指出AI辅助ADHD的本质是为高产生成核心提供外部调度层。文章从同构视角出发，整合了执行功能、工作记忆、时间盲等概念，并讨论了脚手架设计、多巴胺干预等争议点。",
+      "summary": "本文综述ADHD与AI交叉领域的最新研究，基于ADHD大脑与LLM同构的脊柱命题，探讨AI作为外部执行功能层的科学证据与争议。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1614,15 +1733,16 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.893300+00:00"
+      "updated_at": "2026-07-01T08:24:02.412491+00:00"
     },
     "topic:AI 与 ADHD 的日常生活": {
       "name": "AI 与 ADHD 的日常生活",
       "type": "topic",
       "slug": "ai-与-adhd-的日常生活",
       "path": "topics/ai-与-adhd-的日常生活.md",
-      "summary": "本综述以「ADHD 大脑与 LLM 同构」为脊柱，论证 AI 辅助 ADHD 的本质是为高产生成核心套上外部执行调度层。当前核心论点是：AI 工具通过提供外部记忆、上下文管理、任务启动提示等脚手架，弥补 ADHD 的执行功能缺陷，但需警惕过度依赖。证据主要来自概念类比和工具案例，缺乏大规模实证。争议集中在脚手架的可撤除性、多巴胺干预的有效性及个体差异。",
+      "summary": "本文以ADHD大脑与LLM同构为脊柱，综述AI如何作为外部执行功能层辅助ADHD日常生活，涵盖工具、策略及争议。",
       "cross_links": [
+        "Routinery",
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
         "生成核心与调度层",
@@ -1634,12 +1754,11 @@
         "时间盲",
         "身体在场效应",
         "多巴胺",
-        "任务启动",
-        "Routinery"
+        "任务启动"
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-01T07:26:49.895390+00:00"
+      "updated_at": "2026-07-01T08:24:10.556660+00:00"
     },
     "concept:神经可塑性": {
       "name": "神经可塑性",
@@ -1708,7 +1827,7 @@
       "type": "concept",
       "slug": "adhd-大脑与-llm-的同构",
       "path": "concepts/adhd-大脑与-llm-的同构.md",
-      "summary": "ADHD大脑与LLM在结构上同构：两者都是高产生成核心，但缺乏可靠的执行调度层，因此都需要外部脚手架来管理上下文、减少决策并引导下一步行动。",
+      "summary": "ADHD大脑与LLM在结构上同为“高产但缺乏可靠执行调度层的生成核心”，因此给LLM搭建harness（脚手架）与为ADHD搭建执行功能支架是同一类工程。",
       "cross_links": [
         "外部执行功能层",
         "生成核心与调度层",
@@ -1728,8 +1847,16 @@
       ],
       "sources": [
         {
-          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
-          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+          "title": "The Wanderer's Algorithm: Controlled Distraction as a Catalyst for Machine Creativity",
+          "url": "https://www.techrxiv.org/users/950560/articles/1356399/master/file/data/wanderers_algorithm_paper_independent%203/wanderers_algorithm_paper_independent%203.pdf"
+        },
+        {
+          "title": "Deficient Executive Control in Transformer Attention",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.22.634394v1.full.pdf"
+        },
+        {
+          "title": "Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs",
+          "url": "https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf"
         },
         {
           "title": "Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned",
@@ -1745,31 +1872,46 @@
         }
       ],
       "ingested_source_hashes": [
-        "8472c2b722d1",
-        "ed2655a70b3a",
-        "97912eb9eba1",
-        "9ad56476a8a9",
+        "1187c589ca19",
         "1302cac7e59a",
         "1cb8059f9dde",
-        "1187c589ca19",
-        "bf5ab3d10878",
-        "be551aa137c7",
-        "e6c6bcedc70b",
-        "f40461613268",
-        "93b0c2395843",
+        "2a8c00b7495a",
+        "2bc0f5588c31",
+        "4d2ab968c874",
+        "58b3f7c3f02b",
         "59e4c5eacf28",
+        "64418428e6ac",
         "6ec3a3efda2e",
+        "785d55ea44e2",
+        "7f825b333fe7",
+        "82aa04f3ab10",
+        "8472c2b722d1",
+        "93b0c2395843",
+        "97912eb9eba1",
+        "9ad56476a8a9",
+        "aef1b2c6befc",
+        "bcf5712df1ac",
+        "be551aa137c7",
+        "bf5ab3d10878",
+        "c611a4c89ba9",
+        "c6cdfa3f6cce",
+        "d7760c461941",
+        "d8b2f64b295b",
         "e3b856d2d79c",
-        "2bc0f5588c31"
+        "e6c6bcedc70b",
+        "ed2655a70b3a",
+        "f0457d664dd4",
+        "f2e16cfd1b07",
+        "f40461613268"
       ],
-      "updated_at": "2026-06-30T03:00:17.098701+00:00"
+      "updated_at": "2026-07-01T08:20:49.706880+00:00"
     },
     "concept:外部执行功能层": {
       "name": "外部执行功能层",
       "type": "concept",
       "slug": "外部执行功能层",
       "path": "concepts/外部执行功能层.md",
-      "summary": "ADHD 大脑缺乏稳定的执行功能层（工作记忆、任务启动、上下文保持），与 LLM 缺少外部编排层（harness/scaffolding）在结构上同构：两者都是高产但不可靠的生成核心，依赖外部系统来提供记忆、调度和安全约束。",
+      "summary": "ADHD 大脑与 LLM 在核心执行功能上呈现同构缺陷：工作记忆容量相对保留，但注意控制、认知灵活性和冲突解决能力显著不足，因此都需要外部执行功能层（脚手架/harness）来补偿。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "生成核心与调度层",
@@ -1789,12 +1931,20 @@
       ],
       "sources": [
         {
-          "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
-          "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
+          "title": "Deficient Executive Control in Transformer Attention",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.22.634394v1.full.pdf"
         },
         {
-          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
-          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+          "title": "Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs",
+          "url": "https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf"
+        },
+        {
+          "title": "Self-Attention Limits Working Memory Capacity of Transformer-Based Models",
+          "url": "https://arxiv.org/pdf/2409.10715"
+        },
+        {
+          "title": "Human-like Working Memory Interference in Large Language Models",
+          "url": "https://arxiv.org/pdf/2604.09670"
         },
         {
           "title": "Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned",
@@ -1814,31 +1964,39 @@
         }
       ],
       "ingested_source_hashes": [
-        "1cb8059f9dde",
         "1187c589ca19",
-        "b2513cbb1ccb",
-        "dd46d261a703",
+        "1cb8059f9dde",
+        "429e8f30fe17",
         "495efa960022",
+        "4a7688e2e60f",
+        "57fa98af5c8d",
+        "7093817bb1c2",
+        "80aabf353df1",
+        "88649c698707",
+        "89e3f6cc389b",
+        "8d4933dca497",
+        "8e7cad0ab4fc",
         "a5f3da7238b1",
+        "aebef0bd7a80",
+        "aef1b2c6befc",
+        "b2513cbb1ccb",
+        "b34926cf5e6b",
+        "bcf5712df1ac",
+        "c611a4c89ba9",
+        "d8b2f64b295b",
+        "dd46d261a703",
         "deba1713c0d2",
         "f2beccdde6c5",
-        "f38617c831ee",
-        "89e3f6cc389b",
-        "57fa98af5c8d",
-        "88649c698707",
-        "b34926cf5e6b",
-        "aebef0bd7a80",
-        "80aabf353df1",
-        "8e7cad0ab4fc"
+        "f38617c831ee"
       ],
-      "updated_at": "2026-06-30T03:01:02.256464+00:00"
+      "updated_at": "2026-07-01T08:21:03.041932+00:00"
     },
     "concept:生成核心与调度层": {
       "name": "生成核心与调度层",
       "type": "concept",
       "slug": "生成核心与调度层",
       "path": "concepts/生成核心与调度层.md",
-      "summary": "ADHD大脑与LLM在结构上同构：两者都拥有强大的生成核心（智力/算力），但缺乏可靠的执行调度层（执行功能/编排），因此都需要外部脚手架来弥补调度缺陷。",
+      "summary": "ADHD大脑与LLM在结构上同构：两者都是高产但缺乏可靠执行调度层的生成核心。ADHD的执行功能失效与LLM的上下文控制缺陷对应，外部脚手架是共同解决方案。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1858,12 +2016,24 @@
       ],
       "sources": [
         {
-          "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
-          "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
+          "title": "The Wanderer's Algorithm: Controlled Distraction as a Catalyst for Machine Creativity",
+          "url": "https://www.techrxiv.org/users/950560/articles/1356399/master/file/data/wanderers_algorithm_paper_independent%203/wanderers_algorithm_paper_independent%203.pdf"
         },
         {
-          "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
-          "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
+          "title": "Deficient Executive Control in Transformer Attention",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.22.634394v1.full.pdf"
+        },
+        {
+          "title": "Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs",
+          "url": "https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf"
+        },
+        {
+          "title": "Working Memory Identifies Reasoning Limits in Language Models",
+          "url": "https://aclanthology.org/2024.emnlp-main.938.pdf"
+        },
+        {
+          "title": "TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS",
+          "url": "https://openreview.net/pdf?id=CN2bmVVpOh"
         },
         {
           "title": "Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned",
@@ -1871,31 +2041,39 @@
         }
       ],
       "ingested_source_hashes": [
-        "f2beccdde6c5",
-        "f261bbd70590",
-        "57e5a587d329",
-        "de069279f55c",
         "061645ecce76",
-        "c510e3178d72",
-        "5efe17a535c1",
-        "83be1a65969e",
-        "1da7995f48d7",
         "07591914b837",
+        "14496d783837",
+        "1da7995f48d7",
+        "232d893b1ecf",
+        "3fd8ec3ad064",
+        "493b2c50a08d",
+        "57e5a587d329",
+        "5efe17a535c1",
         "756d86e8cb99",
+        "83be1a65969e",
         "927e92703a05",
         "a261e1d0d347",
-        "493b2c50a08d",
-        "3fd8ec3ad064",
-        "be551aa137c7"
+        "aef1b2c6befc",
+        "bcf5712df1ac",
+        "be551aa137c7",
+        "c510e3178d72",
+        "c611a4c89ba9",
+        "cc605a353bee",
+        "d7760c461941",
+        "d8b2f64b295b",
+        "de069279f55c",
+        "f261bbd70590",
+        "f2beccdde6c5"
       ],
-      "updated_at": "2026-06-30T03:01:47.325951+00:00"
+      "updated_at": "2026-07-01T08:21:16.296572+00:00"
     },
     "concept:拐杖与脚手架": {
       "name": "拐杖与脚手架",
       "type": "concept",
       "slug": "拐杖与脚手架",
       "path": "concepts/拐杖与脚手架.md",
-      "summary": "ADHD 大脑与 LLM 都需要外部脚手架来弥补执行调度缺陷，但过度依赖会阻碍内在能力发展，因此脚手架应设计为可逐步撤除的临时支撑。",
+      "summary": "ADHD 大脑与 LLM 在结构上同构：都是缺乏可靠执行调度层的生成核心，因此为 LLM 搭建 harness（脚手架）与为 ADHD 搭建执行功能支架属于同一类工程——关键在于避免成为永久拐杖。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -1915,24 +2093,32 @@
       ],
       "sources": [
         {
+          "title": "Human-like Working Memory Interference in Large Language Models",
+          "url": "https://arxiv.org/pdf/2604.09670"
+        },
+        {
+          "title": "Working Memory Identifies Reasoning Limits in Language Models",
+          "url": "https://aclanthology.org/2024.emnlp-main.938.pdf"
+        },
+        {
+          "title": "TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS",
+          "url": "https://openreview.net/pdf?id=CN2bmVVpOh"
+        },
+        {
+          "title": "Executive Dysfunction by Design: A Cognitive Accessibility Analysis of AI Support vs. Healthcare Barriers",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3663547.3749831"
+        },
+        {
+          "title": "Automatic Minds: Cognitive Parallels Between Hypnotic States and Large Language Model Processing",
+          "url": "https://arxiv.org/abs/2511.01363"
+        },
+        {
+          "title": "Artificial Neuropsychology: Are Large Language Models Developing Executive Functions?",
+          "url": "https://arxiv.org/pdf/2305.04134"
+        },
+        {
           "title": "AI Tools for ADHD: Boosting Productivity and Reducing Burnout",
           "url": "https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/"
-        },
-        {
-          "title": "Frontiers | Artificial intelligence in ADHD assessment: a comprehensive review of research progress from early screening to precise differential diagnosis",
-          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1624485/full"
-        },
-        {
-          "title": "Harnessing Artificial Intelligence to Live Better with ADHD - CHADD",
-          "url": "https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/"
-        },
-        {
-          "title": "Harnessing neuroplasticity for clinical applications",
-          "url": "https://doi.org/10.1093/brain/awr039"
-        },
-        {
-          "title": "Diagnosis and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
-          "url": "https://doi.org/10.1001/jama.279.14.1100"
         },
         {
           "title": "Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned",
@@ -1960,24 +2146,31 @@
         }
       ],
       "ingested_source_hashes": [
-        "deba1713c0d2",
-        "2f2348ae8aa6",
-        "2951769683e8",
-        "61f20f647535",
+        "022c5c0fe91b",
+        "14496d783837",
         "17b2116368ef",
-        "64e68e110c75",
-        "d2256ed86db6",
+        "2951769683e8",
+        "2f2348ae8aa6",
+        "33ab62c3d4ca",
         "3c0429579acd",
-        "f38617c831ee",
-        "89e3f6cc389b",
-        "57fa98af5c8d",
-        "88649c698707",
-        "aebef0bd7a80",
+        "42ecd2f29e42",
         "4e27a65983dd",
+        "57fa98af5c8d",
+        "61f20f647535",
+        "64e68e110c75",
+        "88649c698707",
+        "89e3f6cc389b",
+        "ad5be47fab8c",
+        "aebef0bd7a80",
+        "c50b89271ed8",
+        "d2256ed86db6",
+        "deba1713c0d2",
         "e4f03995caef",
+        "f0786846eef0",
+        "f38617c831ee",
         "fd5bc18a3c78"
       ],
-      "updated_at": "2026-06-30T03:02:33.361941+00:00"
+      "updated_at": "2026-07-01T08:21:39.361106+00:00"
     },
     "concept:无状态与外部记忆": {
       "name": "无状态与外部记忆",
@@ -2061,7 +2254,7 @@
       "type": "concept",
       "slug": "上下文工程",
       "path": "concepts/上下文工程.md",
-      "summary": "ADHD大脑与LLM在上下文管理上同构：都容易因信息过载或环境干扰而丢失焦点，需要主动的上下文工程来维持任务连贯性。",
+      "summary": "ADHD大脑与LLM agent在上下文管理上面临同构挑战：都易被环境带偏或上下文膨胀导致推理退化，都需要主动设计'当下注意什么'的工程方案。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -2080,6 +2273,10 @@
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "Toward Neurodivergent-Aware Productivity: A Systems and AI-Based Human-in-the-Loop Framework for ADHD-Affected Professionals",
+          "url": "https://arxiv.org/pdf/2507.06864"
+        },
         {
           "title": "Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar",
           "url": "https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026"
@@ -2106,31 +2303,32 @@
         }
       ],
       "ingested_source_hashes": [
-        "ff81e67fe176",
-        "3e601133578d",
-        "ad5d44917a7b",
-        "95ce2cf38559",
         "29389d1c646f",
-        "a58fc1d0a2a6",
-        "f8be9567f27f",
-        "d167d6430ea4",
-        "f38617c831ee",
-        "a261e1d0d347",
-        "8fc0b94c12a8",
-        "89e3f6cc389b",
+        "3d1a4b91c327",
+        "3e601133578d",
+        "4c2d6bf5103d",
         "631978e00c9e",
-        "ea444b6708f0",
+        "89e3f6cc389b",
+        "8fc0b94c12a8",
+        "95ce2cf38559",
+        "a261e1d0d347",
+        "a58fc1d0a2a6",
+        "ad5d44917a7b",
+        "d167d6430ea4",
         "dbe2309cef01",
-        "4c2d6bf5103d"
+        "ea444b6708f0",
+        "f38617c831ee",
+        "f8be9567f27f",
+        "ff81e67fe176"
       ],
-      "updated_at": "2026-06-30T03:04:07.559201+00:00"
+      "updated_at": "2026-07-01T08:21:51.117441+00:00"
     },
     "concept:幻觉与验证循环": {
       "name": "幻觉与验证循环",
       "type": "concept",
       "slug": "幻觉与验证循环",
       "path": "concepts/幻觉与验证循环.md",
-      "summary": "ADHD大脑与LLM在缺乏可靠验证机制时都会产生大量“幻觉”（冲动/想当然 vs 自信错误），而外部验证循环——无论是行为核对清单还是agent harness的验证步骤——是两者共同的兜底工程。",
+      "summary": "ADHD大脑的冲动行为与LLM的自信幻觉都源于缺乏内部验证，需要外部核对循环来校正，形成结构同构。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
@@ -2149,6 +2347,10 @@
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "Confabulation: The Surprising Value of Large Language Model Hallucinations",
+          "url": "https://preview.aclanthology.org/navbar-space/2024.acl-long.770.pdf"
+        },
         {
           "title": "ADHAPT: An AI Tool for Emotional Regulation",
           "url": "https://www.csai.io/adhapt-an-ai-tool-for-emotional-regulation/"
@@ -2191,22 +2393,23 @@
         }
       ],
       "ingested_source_hashes": [
-        "a3c19a102317",
-        "2569f558f8ef",
-        "acbaa655c7ee",
-        "36ae2b40aab7",
-        "78933b47a3b8",
-        "1811fc190e05",
-        "57fa98af5c8d",
-        "1a5050d5071b",
         "0cac1254925b",
-        "b3a3d4ded64a",
-        "59b70f2eb93c",
-        "abd3887f82a5",
+        "1811fc190e05",
+        "1a5050d5071b",
+        "2007a67777be",
+        "2569f558f8ef",
         "34659c29e0ad",
-        "2007a67777be"
+        "35cc08f59068",
+        "36ae2b40aab7",
+        "57fa98af5c8d",
+        "59b70f2eb93c",
+        "78933b47a3b8",
+        "a3c19a102317",
+        "abd3887f82a5",
+        "acbaa655c7ee",
+        "b3a3d4ded64a"
       ],
-      "updated_at": "2026-06-30T03:04:58.044005+00:00"
+      "updated_at": "2026-07-01T08:22:02.179343+00:00"
     },
     "concept:采样温度与表现波动": {
       "name": "采样温度与表现波动",
@@ -2510,21 +2713,25 @@
       "type": "concept",
       "slug": "人在回路与身体在场",
       "path": "concepts/人在回路与身体在场.md",
-      "summary": "ADHD 的身体在场效应（body doubling）与 LLM 的 human-in-the-loop 监督在结构上同构：两者都是为高产出但不可靠的生成核心提供外部执行调度与安全护栏，本质是同一类工程——为缺乏可靠调度层的系统搭建外部执行功能支架。",
+      "summary": "ADHD 大脑的身体在场效应（body doubling）与 LLM 代理的 human-in-the-loop 监督在结构上同构：两者均为高产出但不可靠的生成核心提供外部执行调度与安全护栏。",
       "cross_links": [
         "ADHD 大脑与 LLM 的同构",
         "外部执行功能层",
         "生成核心与调度层",
         "拐杖与脚手架",
-        "执行功能",
         "身体在场效应",
         "任务启动",
+        "Focusmate",
         "Goblin Tools",
         "Saner.AI",
         "Motion",
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "Toward Neurodivergent-Aware Productivity: A Systems and AI-Based Human-in-the-Loop Framework for ADHD-Affected Professionals",
+          "url": "https://arxiv.org/pdf/2507.06864"
+        },
         {
           "title": "ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)",
           "url": "https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO"
@@ -2567,24 +2774,25 @@
         }
       ],
       "ingested_source_hashes": [
-        "a904bb703052",
-        "944a1f3859d2",
+        "03e9d69e0f88",
+        "09efd329650a",
+        "0ca3785b3f6c",
+        "0e3d739fc495",
+        "1258a043fc90",
+        "2904ab2dccf4",
+        "361afe6462e8",
+        "4c0c0975ac84",
         "4d5a30f569f5",
         "6702e8674100",
-        "c6e3ca785805",
-        "2904ab2dccf4",
-        "1258a043fc90",
-        "717b5230a8c7",
-        "0ca3785b3f6c",
-        "361afe6462e8",
-        "03e9d69e0f88",
-        "4c0c0975ac84",
         "707c936b14f5",
+        "717b5230a8c7",
         "90c413be42fc",
-        "09efd329650a",
-        "0e3d739fc495"
+        "944a1f3859d2",
+        "a904bb703052",
+        "c6e3ca785805",
+        "ea7d07c780a2"
       ],
-      "updated_at": "2026-06-30T03:08:49.325574+00:00"
+      "updated_at": "2026-07-01T08:22:12.068717+00:00"
     },
     "tool:Inflow": {
       "name": "Inflow",
@@ -2733,15 +2941,15 @@
     }
   },
   "meta": {
-    "overview_summary": "本知识库的核心论点是：ADHD 大脑与 LLM 在结构上同构——两者都是高产生成核心，但缺乏可靠的执行调度层。因此，AI 辅助 ADHD 的本质是给这个生成核心套上外部执行功能层（harness/scaffolding）。这一脊柱命题贯穿所有概念、工具和主题页面，为理解 ADHD 与 AI 的交互提供了统一框架。",
-    "contradictions_summary": "ADHD × AI 领域存在多处矛盾与夸大说法，主要集中在：1）多巴胺干预的有效性争议；2）AI 工具作为外部执行功能层的长期效果与依赖风险；3）ADHD 大脑与 LLM 同构命题的证据强度；4）部分工具声称的神经科学原理缺乏独立验证。",
-    "source_articles": 8092,
+    "overview_summary": "本知识库以『ADHD 大脑与 LLM 同构——都是高产但缺执行调度层的生成核心，所以「AI 帮 ADHD」本质是「给生成核心套 harness」』为脊柱命题，系统梳理了 ADHD 与 AI 交叉领域的工具、概念与研究前沿。核心论点：ADHD 的执行功能缺陷与 LLM 的上下文控制缺陷在结构上同构，因此 AI 工具作为外部执行功能层（harness/脚手架），可补偿工作记忆、任务启动、时间管理等方面的不足。证据主要来自用户报告和概念类比，缺乏大规模对照实验，且存在过度依赖、个体差异等争议。阅读地图：从 [[ADHD 大脑与 LLM 的同构]] 出发，深入 [[生成核心与调度层]]、[[外部执行功能层]]、[[拐杖与脚手架]] 等概念，再通过 [[ADHD 的 AI 工具全景]] 了解工具分类，最后浏览各具体工具和主题页面。",
+    "contradictions_summary": "本页面整理了 ADHD × AI 领域中存在的矛盾、夸大或存疑的说法，包括：AI 工具作为外部执行功能层的有效性证据不足、过度依赖可能削弱内在能力、个体差异大、以及某些工具（如 Brain.fm）缺乏独立临床研究支持。此外，ADHD 大脑与 LLM 同构的命题虽具启发性，但缺乏直接实验证据。",
+    "source_articles": 8220,
     "concept_pages": 23,
     "tool_pages": 21,
     "topic_pages": 8,
     "llm_model": "kimi-latest",
-    "built_at": "2026-07-01T07:26:49.900931+00:00",
-    "source_adhd": 4037,
+    "built_at": "2026-07-01T08:24:37.547763+00:00",
+    "source_adhd": 4165,
     "source_harness": 4055,
     "spine_pages": 12
   }

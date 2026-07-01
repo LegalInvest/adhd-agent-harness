@@ -15,6 +15,8 @@ from engine.categories import CATEGORIES, get_all_topics
 from engine.research import run_research
 from engine.problems import generate_problem_pool
 from engine import academic
+from engine import isomorphism
+from engine import harness_figures
 from engine.knowledge import (
     build_knowledge_base,
     save_knowledge_base,
@@ -75,8 +77,14 @@ def run_pipeline(
         academic.as_articles(academic_all, domain="adhd", limit=academic_wiki_per_domain)
         + academic.as_articles(academic_all, domain="harness", limit=academic_wiki_per_domain)
     )
-    kb_corpus = research_articles + academic_kb_articles
-    wiki_corpus = research_articles + academic_wiki_articles
+    # 同构脊柱证据（直接论证 ADHD↔LLM 同构的真实论文）——最高优先级，置于语料最前
+    iso_articles = isomorphism.as_articles()
+    print(f"   同构脊柱证据: {len(iso_articles)} 篇直接论证 ADHD↔LLM 同构的真实论文")
+    # 名人 harness 案例（人类侧「外挂执行功能层」的活教材）——次高优先级
+    figure_articles = harness_figures.as_articles()
+    print(f"   名人 harness 案例: {len(figure_articles)} 位 ADHD 特质人物的自我管理系统")
+    kb_corpus = iso_articles + figure_articles + research_articles + academic_kb_articles
+    wiki_corpus = iso_articles + figure_articles + research_articles + academic_wiki_articles
 
     # 2. 知识萃取（双域：网页深抓 + 学术摘要）
     print("\n🧠 步骤 2/7: 知识萃取（双域语料）...")
