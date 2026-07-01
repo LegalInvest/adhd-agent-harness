@@ -13,6 +13,8 @@ import os
 
 from engine.categories import CATEGORIES, get_all_topics
 from engine.research import run_research
+from engine.problems import generate_problem_pool
+from engine import academic
 from engine.knowledge import (
     build_knowledge_base,
     save_knowledge_base,
@@ -38,6 +40,8 @@ def run_pipeline(
     target_count: int = 400,
     use_llm: bool = True,
     limit: int | None = None,
+    academic_kb_per_domain: int = 1200,
+    academic_wiki_per_domain: int = 4000,
 ) -> None:
     """执行完整的研究驱动 + LLM Wiki 内容引擎流程"""
     print("=" * 60)
@@ -51,14 +55,32 @@ def run_pipeline(
     elif use_llm:
         print("   LLM: 未配置凭证，降级为确定性模板生成")
 
-    # 1. 全网检索情报
+    # 1. 全网检索情报（网页深抓 + 大规模学术语料）
     print("\n🌐 步骤 1/7: 全网检索最新情报...")
     research_articles = run_research(use_cache=True, force_refresh=refresh_research)
-    print(f"   情报库: {len(research_articles)} 篇真实文章")
+    print(f"   网页情报库: {len(research_articles)} 篇真实深抓文章")
 
-    # 2. 知识萃取
-    print("\n🧠 步骤 2/7: 知识萃取...")
-    kb = build_knowledge_base(research_articles)
+    academic_all = academic.load_academic()
+    academic_stats = academic.stats(academic_all)
+    print(f"   学术语料库: {academic_stats['total']} 篇论文摘要 "
+          f"(ADHD {academic_stats['by_domain'].get('adhd', 0)} / "
+          f"harness {academic_stats['by_domain'].get('harness', 0)})")
+    # 给知识萃取（评分燃料）用有上限的高影响力子集，控制检索性能
+    academic_kb_articles = (
+        academic.as_articles(academic_all, domain="adhd", limit=academic_kb_per_domain)
+        + academic.as_articles(academic_all, domain="harness", limit=academic_kb_per_domain)
+    )
+    # 给 wiki 取材用更大的子集，提升萃取深度
+    academic_wiki_articles = (
+        academic.as_articles(academic_all, domain="adhd", limit=academic_wiki_per_domain)
+        + academic.as_articles(academic_all, domain="harness", limit=academic_wiki_per_domain)
+    )
+    kb_corpus = research_articles + academic_kb_articles
+    wiki_corpus = research_articles + academic_wiki_articles
+
+    # 2. 知识萃取（双域：网页深抓 + 学术摘要）
+    print("\n🧠 步骤 2/7: 知识萃取（双域语料）...")
+    kb = build_knowledge_base(kb_corpus)
     save_knowledge_base(kb)
     print(f"   萃取结果: {kb['meta']['tools']} 个工具 / "
           f"{kb['meta']['findings']} 条研究发现 / "
@@ -70,7 +92,7 @@ def run_pipeline(
     wiki_retriever = None
     if llm is not None:
         print("\n📚 步骤 3/7: LLM Wiki 增量构建（持久互链 + 矛盾标记）...")
-        wiki_store = build_wiki(research_articles, llm, verbose=True)
+        wiki_store = build_wiki(wiki_corpus, llm, verbose=True)
         wiki_retriever = WikiRetriever(wiki_store)
         wm = wiki_store.index["meta"]
         print(f"   wiki: {wm.get('concept_pages',0)} 概念页 / "
@@ -78,12 +100,14 @@ def run_pipeline(
     else:
         print("\n📚 步骤 3/7: 跳过 LLM Wiki（未启用 LLM）")
 
-    # 3. 证据驱动评分
-    print("\n📊 步骤 4/7: 证据驱动评分...")
-    all_topics = get_all_topics()
-    ranked = rank_topics(all_topics, retriever=retriever)
-    print(f"   候选选题: {len(ranked)} 个")
-    print("   Top 5 选题:")
+    # 3. 证据驱动评分（问题驱动 + 双受众张力）
+    print("\n📊 步骤 4/7: 证据驱动评分（问题驱动选题池）...")
+    problem_pool = generate_problem_pool()
+    print(f"   问题驱动候选池: {len(problem_pool)} 条（双受众 + 同构脊柱标注）")
+    ranked = rank_topics(problem_pool, retriever=retriever)
+    # 取分数最高的 target_count 作为进化起始池，其余作为挑战者参与滚动替换
+    seed = ranked[:target_count]
+    print(f"   起始 Top {len(seed)} 选题:")
     for t in ranked[:5]:
         print(f"   #{t['rank']} [{t['weighted_score']}] {t['title']}")
 
@@ -96,7 +120,7 @@ def run_pipeline(
         elite_ratio=0.15,
     )
     evolution = TopicEvolution(config, retriever=retriever)
-    optimized = evolution.evolve(ranked, categories=CATEGORIES)
+    optimized = evolution.evolve(seed, categories=CATEGORIES)
     print(f"   最终选题池: {len(optimized)} 篇")
     total_replaced = len(evolution.replacement_log)
     print(f"   累计用最新情报替换: {total_replaced} 个低分选题")
@@ -153,25 +177,51 @@ def run_pipeline(
             if fn.endswith(".md"):
                 os.remove(os.path.join(d, fn))
 
+    use_llm = bool(llm and wiki_retriever and wiki_retriever.available)
+    workers = max(1, int(os.environ.get("GEN_WORKERS", "6"))) if use_llm else 1
+
+    def _gen_llm(i_topic):
+        """仅做 LLM 生成（I/O 密集，可并发）；失败返回 None 交主线程回退。"""
+        i, topic = i_topic
+        try:
+            return i, generate_article_llm(topic, i, wiki_retriever, llm)
+        except Exception as e:  # noqa: BLE001 - 单篇失败不应中断整批
+            return i, e
+
     llm_ok, fallback = 0, 0
-    for i, topic in enumerate(targets):
-        article = None
-        if llm and wiki_retriever and wiki_retriever.available:
-            try:
-                article = generate_article_llm(topic, i, wiki_retriever, llm)
-                llm_ok += 1
-            except Exception as e:  # noqa: BLE001 - 单篇失败不应中断整批
-                print(f"   ⚠️ 第{i+1}篇 LLM 生成失败，回退模板: {e}")
-                article = None
-        if article is None:
+
+    def _finalize(i: int, res) -> None:
+        """拿到单篇结果后立即落盘（崩溃不丢成果）。"""
+        nonlocal llm_ok, fallback
+        topic = targets[i]
+        if isinstance(res, dict):
+            article = res
+            llm_ok += 1
+        else:
+            if use_llm:
+                print(f"   ⚠️ 第{i+1}篇 LLM 生成失败，回退模板: {res}")
             article = generate_article(topic, i, retriever)
             fallback += 1
         save_article(article, ARTICLES_DIR)
         save_article(article, BLOG_CONTENT_DIR)
-        if (i + 1) % 25 == 0:
-            print(f"   已生成 {i + 1}/{len(targets)} 篇（LLM {llm_ok} / 回退 {fallback}）...")
 
-    print(f"   ✅ 全部 {len(targets)} 篇文章生成完成! (LLM {llm_ok} / 回退 {fallback})")
+    if workers > 1:
+        import concurrent.futures
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+            for done, (i, res) in enumerate(
+                ex.map(_gen_llm, list(enumerate(targets))), 1
+            ):
+                _finalize(i, res)
+                if done % 25 == 0:
+                    print(f"   已生成 {done}/{len(targets)} 篇（LLM {llm_ok} / 回退 {fallback}）...")
+    else:
+        for i, topic in enumerate(targets):
+            res = _gen_llm((i, topic))[1] if use_llm else None
+            _finalize(i, res)
+            if (i + 1) % 25 == 0:
+                print(f"   已生成 {i + 1}/{len(targets)} 篇（LLM {llm_ok} / 回退 {fallback}）...")
+
+    print(f"   ✅ 全部 {len(targets)} 篇文章生成完成! (LLM {llm_ok} / 回退 {fallback}, 并发 {workers})")
 
     print("\n" + "=" * 60)
     print("🎉 研究驱动内容引擎运行完成!")

@@ -255,6 +255,9 @@ def generate_article(topic: dict, index: int, retriever: KnowledgeRetriever) -> 
         "score": topic.get("weighted_score", 0),
         "sourceCount": len(refs),
         "toolsCited": [t["keywords"][0] for t in tools],
+        "problem": topic.get("problem", title),
+        "spine": topic.get("spine", ""),
+        "spineKind": topic.get("spine_kind", ""),
         "isEvolved": topic.get("is_evolved", False),
     }
 
@@ -315,6 +318,12 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
     angle = topic.get("angle", "")
     keywords = topic.get("keywords", [])
     topic_id = topic.get("id", f"article-{index:03d}")
+    problem = topic.get("problem", title)
+    spine = topic.get("spine", "")
+    spine_kind = topic.get("spine_kind", "")
+    spine_mirror = topic.get("spine_mirror", "")
+    adhd_pain = topic.get("adhd_pain", "")
+    harness_parallel = topic.get("harness_parallel", "")
 
     seed = _seed_from(title)
     slug = _slugify(title)
@@ -324,20 +333,37 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
     context_block = _wiki_context_block(ctx)
     wiki_sources = _collect_wiki_sources(ctx)
 
+    spine_block = ""
+    if spine:
+        spine_block = (
+            f"\n=== 同构脊柱（本文的思想主线，必须贯穿全文）===\n"
+            f"核心概念：{spine}\n"
+            + (f"ADHD 侧痛点：{adhd_pain}\n" if adhd_pain else "")
+            + (f"LLM/Agent 侧对应：{harness_parallel or spine_mirror}\n" if (harness_parallel or spine_mirror) else "")
+            + "论证要求：ADHD 大脑与 LLM/agent 是同一类「高产但缺执行调度层的生成核心」，"
+              "两边的解法（harness/脚手架）结构同构。必须**同时给出 ADHD 侧与 LLM/agent 侧的真实证据**，"
+              "不要做空洞类比；并点明『脚手架 vs 拐杖』的边界。\n=== 脊柱结束 ===\n"
+        )
+
     user = (
-        f"请基于以下 wiki 资料，写一篇面向中文 ADHD 读者的文章。\n\n"
-        f"选题标题：{title}\n副标题：{subtitle}\n分类：{category_name}\n切入角度：{angle}\n\n"
+        f"请基于以下 wiki 资料，写一篇**问题驱动**、面向中文读者的文章。\n"
+        f"它要同时打动两类人：被 {adhd_pain or 'ADHD 困扰'} 折磨的 ADHD 人群，"
+        f"以及在做 Agentic Harness 工程（{harness_parallel or 'agent/LLM 编排'}）的工程师。\n\n"
+        f"要回答的核心问题：{problem}\n"
+        f"标题：{title}\n副标题：{subtitle}\n分类：{category_name}\n切入角度：{angle}\n"
+        f"{spine_block}\n"
         f"=== wiki 资料（你唯一可用的事实来源）===\n{context_block}\n=== 资料结束 ===\n\n"
         "写作要求：\n"
-        "- 1200-1800 字，markdown，用 ## 小节组织；\n"
-        "- 必须整合上面 wiki 资料里的真实工具、概念与研究，关键论断后用「（来源：标题）」标注；\n"
+        "- 1200-1800 字，markdown，用 ## 小节组织；从「问题」切入，用同构脊柱给出答案；\n"
+        "- 必须整合 wiki 资料里的真实工具、概念与研究，关键论断后用「（来源：标题）」标注；\n"
+        "- 必须**同时**给出 ADHD 侧与 LLM/agent 侧的真实证据，让两类读者都觉得「这说的就是我」；\n"
         "- 必须提出一个**鲜明的核心观点/判断**（不要只罗列工具），并结合『矛盾与存疑』诚实指出局限；\n"
         "- 给出 2-4 条「今天就能试」的具体行动；\n"
         "- 不要写 H1 大标题（标题会另行添加），从引言直接开始；\n"
         "- 不得编造 wiki 资料中不存在的工具、数据或来源。\n\n"
         "严格输出 JSON：\n"
         '{\n'
-        '  "thesis": "一句话概括本文的核心观点",\n'
+        '  "thesis": "一句话概括本文的核心观点（点明 ADHD↔LLM 同构）",\n'
         '  "tools_cited": ["文中真实引用到的工具名", ...],\n'
         '  "body": "markdown 正文（不含 H1 标题）"\n'
         "}"
@@ -348,7 +374,7 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
             {"role": "user", "content": user},
         ],
         temperature=0.65,
-        max_tokens=3000,
+        max_tokens=4000,
     )
     if not isinstance(data, dict) or "body" not in data:
         raise ValueError(f"文章 {title} 返回结构异常")
@@ -395,6 +421,9 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
         "sourceCount": len(refs),
         "toolsCited": tools_cited,
         "thesis": thesis,
+        "problem": problem,
+        "spine": spine,
+        "spineKind": spine_kind,
         "isEvolved": topic.get("is_evolved", False),
         "llmGenerated": True,
     }

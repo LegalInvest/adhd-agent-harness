@@ -87,7 +87,10 @@ class LLMClient:
 
     def _client_for(self, p: Provider):
         if p.name not in self._clients:
-            self._clients[p.name] = OpenAI(api_key=p.api_key, base_url=p.base_url, timeout=120.0)
+            timeout = float(os.environ.get("LLM_TIMEOUT", "60"))
+            self._clients[p.name] = OpenAI(
+                api_key=p.api_key, base_url=p.base_url, timeout=timeout, max_retries=0
+            )
         return self._clients[p.name]
 
     @staticmethod
@@ -130,17 +133,19 @@ class LLMClient:
             return cached
 
         last_err: Exception | None = None
-        for p in self.providers:
-            client = self._client_for(p)
-            kwargs: dict = {
-                "model": p.model,
-                "messages": messages,
-                "temperature": temperature,
-                "max_tokens": max_tokens,
-            }
-            if json_mode:
-                kwargs["response_format"] = {"type": "json_object"}
-            for attempt in range(self.max_retries):
+        # 每一轮把所有 provider 各试一次：主模型挂起/超时即刻降级到备用，
+        # 而不是在主模型上耗尽全部重试（避免单页卡几分钟）。
+        for attempt in range(self.max_retries):
+            for p in self.providers:
+                client = self._client_for(p)
+                kwargs: dict = {
+                    "model": p.model,
+                    "messages": messages,
+                    "temperature": temperature,
+                    "max_tokens": max_tokens,
+                }
+                if json_mode:
+                    kwargs["response_format"] = {"type": "json_object"}
                 try:
                     resp = client.chat.completions.create(**kwargs)
                     content = (resp.choices[0].message.content or "").strip()
@@ -148,11 +153,10 @@ class LLMClient:
                         raise LLMError("空响应")
                     self._cache_put(cache_key, content, p.model)
                     return content
-                except Exception as e:  # noqa: BLE001 - 需要捕获所有 provider 错误以便降级/重试
+                except Exception as e:  # noqa: BLE001 - 捕获所有错误以便降级/重试
                     last_err = e
-                    wait = min(2 ** attempt, 20)
-                    time.sleep(wait)
-            # 当前 provider 多次失败 → 尝试下一个 provider
+            # 本轮所有 provider 都失败 → 退避后重试
+            time.sleep(min(2 ** attempt, 20))
         raise LLMError(f"所有 provider 调用失败: {last_err}")
 
     def chat_json(
@@ -173,19 +177,61 @@ def _parse_json(raw: str):
         if raw.lstrip().startswith("json"):
             raw = raw.lstrip()[4:]
     raw = raw.strip()
+    # strict=False 容忍字符串里出现未转义的换行/控制符（模型常把 markdown 正文直接塞进字段）
     try:
-        return json.loads(raw)
+        return json.loads(raw, strict=False)
     except json.JSONDecodeError:
-        # 尝试截取首个 { ... } 或 [ ... ]
-        for opener, closer in (("{", "}"), ("[", "]")):
-            start = raw.find(opener)
-            end = raw.rfind(closer)
-            if start != -1 and end != -1 and end > start:
-                try:
-                    return json.loads(raw[start : end + 1])
-                except json.JSONDecodeError:
-                    continue
-        raise
+        pass
+    # 若以 { 开头（最常见），优先按对象救援被截断的 JSON，避免误抓内部数组
+    if raw.lstrip().startswith("{"):
+        salvaged = _salvage_truncated_json(raw)
+        if salvaged is not None:
+            return salvaged
+    # 尝试截取首个 { ... } 或 [ ... ]
+    for opener, closer in (("{", "}"), ("[", "]")):
+        start = raw.find(opener)
+        end = raw.rfind(closer)
+        if start != -1 and end != -1 and end > start:
+            try:
+                return json.loads(raw[start : end + 1], strict=False)
+            except json.JSONDecodeError:
+                continue
+    salvaged = _salvage_truncated_json(raw)
+    if salvaged is not None:
+        return salvaged
+    raise json.JSONDecodeError("无法解析模型 JSON", raw, 0)
+
+
+def _salvage_truncated_json(raw: str):
+    """模型输出被 max_tokens 截断时，尝试补上收尾的引号与括号，挽救一次解析。"""
+    start = raw.find("{")
+    if start == -1:
+        return None
+    s = raw[start:]
+    # 统计是否处于字符串内（未转义的引号计数为奇数）
+    in_str = False
+    esc = False
+    for ch in s:
+        if esc:
+            esc = False
+        elif ch == "\\":
+            esc = True
+        elif ch == '"':
+            in_str = not in_str
+    tail = ""
+    if in_str:
+        tail += '"'
+    # 补齐未闭合的大括号/方括号
+    opens = s.count("{") - s.count("}")
+    open_sq = s.count("[") - s.count("]")
+    tail += "]" * max(0, open_sq)
+    tail += "}" * max(0, opens)
+    for candidate in (s + tail, s.rstrip().rstrip(",") + tail):
+        try:
+            return json.loads(candidate, strict=False)
+        except json.JSONDecodeError:
+            continue
+    return None
 
 
 def is_llm_available() -> bool:

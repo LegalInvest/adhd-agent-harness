@@ -20,10 +20,10 @@ Structured 被描述为“AI Daily Planner for ADHD”（来源：The Best AI-Po
 
 - Structured 目前仅限 iOS 平台，限制了跨设备使用。
 - 其 AI 能力在素材中未明确，可能不如 [[Saner.AI]]、[[Motion]] 或 [[Reclaim.ai]] 等工具具备高级调度功能。
-- 与 [[Tiimo]] 类似，Structured 侧重于视觉日程，但缺乏对多巴胺激励机制的深度整合。
+- 与 [[Tiimo]] 类似，Structured 侧重于视觉日程，但缺乏对 [[多巴胺]] 激励机制的深度整合。
 
 ## 来源
 
 - 11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog
-- The Best AI-Powered ADHD Productivity Tools in 2026 (That ...）
+- The Best AI-Powered ADHD Productivity Tools in 2026 (That ...)
 - Best AI Tools for ADHD Students in 2025 | Smarter Learning

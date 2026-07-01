@@ -174,6 +174,132 @@ CORE_CONCEPTS = {
 }
 
 
+# ────────────────────────────────────────────────────────────────────
+# 同构脊柱（Spine）：「ADHD 大脑 ↔ LLM」同构论的核心概念页。
+# 分两类：
+#   - bridge：跨域综合概念，terms 同时命中 ADHD 域与 harness 域素材，
+#             由 LLM 从两端真实摘录里合成「同构」论点。
+#   - llm   ：LLM/agent harness 侧概念，与某个 ADHD 执行功能缺陷结构对应。
+# 这些概念页会与 CORE_CONCEPTS、工具页交叉互链，构成 400 篇选题的脊柱。
+# ────────────────────────────────────────────────────────────────────
+SPINE_CONCEPTS = [
+    {
+        "name": "ADHD 大脑与 LLM 的同构",
+        "kind": "bridge",
+        "terms": [
+            "analogy", "large language model", "llm", "adhd", "brain",
+            "executive function", "cognitive", "同构", "执行功能",
+        ],
+        "mirror": "总纲：高产生成核心 + 缺失的执行调度层",
+    },
+    {
+        "name": "外部执行功能层",
+        "kind": "bridge",
+        "terms": [
+            "executive function", "external", "externalize", "外化", "外部",
+            "执行功能", "cognitive prosthesis", "second brain", "scaffold",
+            "working memory", "工作记忆", "agent memory",
+        ],
+        "mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    },
+    {
+        "name": "生成核心与调度层",
+        "kind": "bridge",
+        "terms": [
+            "generative", "orchestration", "agent", "executive", "调度",
+            "core model", "reasoning", "planner", "执行功能",
+        ],
+        "mirror": "把'智力/算力'与'编排/执行'解耦——两边瓶颈都在后者",
+    },
+    {
+        "name": "拐杖与脚手架",
+        "kind": "bridge",
+        "terms": [
+            "scaffold", "scaffolding", "training wheels", "dependence",
+            "dependency", "over-reliance", "拐杖", "依赖", "脚手架",
+        ],
+        "mirror": "过度依赖风险：harness/工具应是会褪去的脚手架而非永久拐杖",
+    },
+    {
+        "name": "无状态与外部记忆",
+        "kind": "llm",
+        "terms": [
+            "stateless", "statelessness", "session memory", "scratchpad",
+            "agent memory", "persistent memory", "vector store",
+            "external memory", "second brain", "retrieval",
+        ],
+        "mirror": "工作记忆缺陷 ↔ LLM 无跨会话状态：都靠外部记忆补偿",
+    },
+    {
+        "name": "上下文工程",
+        "kind": "llm",
+        "terms": [
+            "context engineering", "context window", "context management",
+            "retrieval augmented", "rag", "prompt", "summarization",
+        ],
+        "mirror": "易被环境带偏 ↔ 上下文窗口管理：都需主动管理'当下注意什么'",
+    },
+    {
+        "name": "幻觉与验证循环",
+        "kind": "llm",
+        "terms": [
+            "hallucination", "grounding", "verification", "self-critique",
+            "self-consistency", "fact check", "critique loop",
+        ],
+        "mirror": "冲动/想当然 ↔ LLM 自信幻觉：都靠核对与验证循环兜底",
+    },
+    {
+        "name": "采样温度与表现波动",
+        "kind": "llm",
+        "terms": [
+            "temperature", "sampling", "variance", "deterministic",
+            "determinism", "output variability",
+        ],
+        "mirror": "ADHD 表现日内波动 ↔ LLM 采样随机性：都靠结构约束稳定输出",
+    },
+    {
+        "name": "工具使用与认知卸载",
+        "kind": "llm",
+        "terms": [
+            "function calling", "tool use", "tools", "offload", "offloading",
+            "external tool", "calculator", "code execution",
+        ],
+        "mirror": "把不擅长的精确状态外包 ↔ agent function calling",
+    },
+    {
+        "name": "规划循环与任务分解",
+        "kind": "llm",
+        "terms": [
+            "planning", "planner", "task decomposition", "decompose",
+            "agentic workflow", "executor", "react", "subtask", "step by step",
+        ],
+        "mirror": "任务启动/拆解困难 ↔ agent planner-executor 循环",
+    },
+    {
+        "name": "重锚定与目标漂移",
+        "kind": "llm",
+        "terms": [
+            "re-grounding", "goal drift", "system prompt", "long horizon",
+            "drift", "stay on task", "reminder",
+        ],
+        "mirror": "分心/超聚焦跑偏 ↔ agent 长程目标漂移：都靠重锚定目标",
+    },
+    {
+        "name": "人在回路与身体在场",
+        "kind": "llm",
+        "terms": [
+            "human in the loop", "human-in-the-loop", "oversight",
+            "guardrails", "supervision", "body doubling", "accountability",
+        ],
+        "mirror": "身体在场效应(body doubling) ↔ human-in-the-loop 监督",
+    },
+]
+
+
+def spine_concept_names() -> list[str]:
+    return [c["name"] for c in SPINE_CONCEPTS]
+
+
 @dataclass
 class KnowledgeItem:
     kind: str           # tool | finding | statistic | strategy | concept
@@ -348,11 +474,47 @@ class KnowledgeRetriever:
         self.strategies = kb.get("strategies", [])
         self.concepts = kb.get("concepts", {})
         self.sources = kb.get("sources", [])
+        # 预计算小写文本，避免每次检索都重复 .lower()（大规模学术语料下是性能关键）
+        for coll in (self.findings, self.statistics, self.strategies):
+            for item in coll:
+                if "_low" not in item:
+                    item["_low"] = item.get("text", "").lower()
+        self._query_cache: dict = {}
 
     @staticmethod
     def _relevance(text: str, keywords: list[str]) -> int:
         low = text.lower()
         return sum(1 for kw in keywords if kw.lower() in low)
+
+    @staticmethod
+    def _rel_low(low: str, kw_low: list[str]) -> int:
+        return sum(1 for kw in kw_low if kw in low)
+
+    def _ranked(self, coll_name: str, keywords: list[str], limit: int,
+                offset: int, require_relevant: bool) -> list[dict]:
+        """带缓存的相关性排序检索（关键词常在同类选题间复用，缓存命中率高）。"""
+        kw_low = tuple(sorted(k.lower() for k in keywords))
+        key = (coll_name, kw_low, limit, offset, require_relevant)
+        cached = self._query_cache.get(key)
+        if cached is not None:
+            return cached
+        coll = getattr(self, coll_name)
+        kw_list = list(kw_low)
+        scored = sorted(
+            coll, key=lambda it: self._rel_low(it["_low"], kw_list), reverse=True
+        )
+        if require_relevant:
+            relevant = [it for it in scored if self._rel_low(it["_low"], kw_list) > 0]
+            pool = relevant if relevant else scored
+        else:
+            pool = scored
+        if not pool:
+            self._query_cache[key] = []
+            return []
+        start = offset % max(len(pool), 1)
+        result = (pool[start:] + pool[:start])[:limit]
+        self._query_cache[key] = result
+        return result
 
     def tools_for_category(self, category_id: str, limit: int = 4) -> list[dict]:
         matched = [t for t in self.tools if t.get("category") == category_id]
@@ -360,42 +522,10 @@ class KnowledgeRetriever:
         return (matched + others)[:limit]
 
     def findings_for(self, keywords: list[str], limit: int = 3, offset: int = 0) -> list[dict]:
-        scored = sorted(
-            self.findings,
-            key=lambda f: self._relevance(f["text"], keywords),
-            reverse=True,
-        )
-        relevant = [f for f in scored if self._relevance(f["text"], keywords) > 0]
-        pool = relevant if relevant else scored
-        if not pool:
-            return []
-        start = offset % max(len(pool), 1)
-        rotated = pool[start:] + pool[:start]
-        return rotated[:limit]
+        return self._ranked("findings", keywords, limit, offset, require_relevant=True)
 
     def statistics_for(self, keywords: list[str], limit: int = 2, offset: int = 0) -> list[dict]:
-        scored = sorted(
-            self.statistics,
-            key=lambda s: self._relevance(s["text"], keywords),
-            reverse=True,
-        )
-        pool = scored if scored else self.statistics
-        if not pool:
-            return []
-        start = offset % max(len(pool), 1)
-        rotated = pool[start:] + pool[:start]
-        return rotated[:limit]
+        return self._ranked("statistics", keywords, limit, offset, require_relevant=False)
 
     def strategies_for(self, keywords: list[str], limit: int = 4, offset: int = 0) -> list[dict]:
-        scored = sorted(
-            self.strategies,
-            key=lambda s: self._relevance(s["text"], keywords),
-            reverse=True,
-        )
-        relevant = [s for s in scored if self._relevance(s["text"], keywords) > 0]
-        pool = relevant if relevant else scored
-        if not pool:
-            return []
-        start = offset % max(len(pool), 1)
-        rotated = pool[start:] + pool[:start]
-        return rotated[:limit]
+        return self._ranked("strategies", keywords, limit, offset, require_relevant=True)

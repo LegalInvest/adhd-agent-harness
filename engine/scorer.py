@@ -15,33 +15,68 @@ from engine.knowledge import KnowledgeRetriever
 
 @dataclass
 class ScoreDimensions:
-    seo_potential: float        # SEO潜力 (1-10)
-    cross_platform: float       # 跨平台吸引力 (1-10)
-    evidence_strength: float    # 证据强度：有多少真实研究/数据支撑 (1-10)
-    practical_value: float      # 实用价值 (1-10)
-    emotional_resonance: float  # 情感共鸣 (1-10)
-    share_potential: float      # 分享潜力 (1-10)
+    seo_potential: float          # SEO潜力 (1-10)
+    cross_platform: float         # 跨平台吸引力 (1-10)
+    evidence_strength: float      # 证据强度：有多少真实研究/数据支撑 (1-10)
+    isomorphism_alignment: float  # 同构脊柱契合度：是否engage ADHD↔LLM同构 + 双域证据 (1-10)
+    practical_value: float        # 实用价值 (1-10)
+    emotional_resonance: float    # 情感共鸣 (1-10)
+    share_potential: float        # 分享潜力 (1-10)
 
     def to_dict(self) -> dict:
         return {
             "seo_potential": round(self.seo_potential, 2),
             "cross_platform": round(self.cross_platform, 2),
             "evidence_strength": round(self.evidence_strength, 2),
+            "isomorphism_alignment": round(self.isomorphism_alignment, 2),
             "practical_value": round(self.practical_value, 2),
             "emotional_resonance": round(self.emotional_resonance, 2),
             "share_potential": round(self.share_potential, 2),
         }
 
 
-# 评分权重：证据强度被赋予最高权重，体现"事实驱动"理念
+# 评分权重：证据强度 + 同构脊柱契合度并列为最高权重，
+# 体现"事实驱动 + 以 ADHD↔LLM 同构为脊柱"的双重理念。
 DEFAULT_WEIGHTS = {
-    "seo_potential": 0.18,
-    "cross_platform": 0.17,
-    "evidence_strength": 0.25,
-    "practical_value": 0.18,
-    "emotional_resonance": 0.10,
-    "share_potential": 0.12,
+    "seo_potential": 0.14,
+    "cross_platform": 0.13,
+    "evidence_strength": 0.22,
+    "isomorphism_alignment": 0.22,
+    "practical_value": 0.13,
+    "emotional_resonance": 0.08,
+    "share_potential": 0.08,
 }
+
+# 同构脊柱信号词：标题/副标题命中越多，说明越贴合「ADHD↔LLM 同构」脊柱
+ISOMORPHISM_SIGNALS = [
+    "同构", "harness", "脚手架", "拐杖", "外部记忆", "第二大脑", "执行功能",
+    "调度", "生成核心", "agent", "llm", "大语言模型", "上下文", "幻觉",
+    "验证", "采样", "temperature", "目标漂移", "重锚定", "任务分解",
+    "human-in-the-loop", "body doubling", "认知卸载", "外化", "外接",
+]
+# 双受众张力：最有张力的选题必须**同时**命中两端——
+# ADHD 人群一端（痛点/身份）+ Agentic Harness 工程师一端（LLM/agent 工程）。
+ADHD_AUDIENCE_SIGNALS = [
+    "adhd", "拖延", "分心", "走神", "专注", "注意力", "时间盲", "多巴胺",
+    "工作记忆", "执行功能", "情绪", "超聚焦", "第二大脑", "拐杖", "习惯",
+]
+ENGINEER_AUDIENCE_SIGNALS = [
+    "llm", "agent", "harness", "大语言模型", "gpt", "orchestration", "调度",
+    "上下文", "context", "幻觉", "hallucination", "采样", "temperature",
+    "function calling", "rag", "向量", "prompt", "human-in-the-loop", "生成核心",
+]
+# 社媒病毒性框架信号（好奇缺口 / 反直觉 / 身份认同 / 数字清单 / 行动召唤）
+VIRAL_HOOK_SIGNALS = [
+    "为什么", "其实", "真的", "竟然", "停止", "别再", "原来", "一文",
+    "30 天", "我把", "3 个", "5 个", "7 个", "10 个", "同一", "正在偷偷",
+    "重写", "彻底", "？", "??",
+]
+# harness 工程域关键词（用于统计"双域证据"是否两端都有支撑）
+HARNESS_QUERY_KEYWORDS = [
+    "agent", "llm", "memory", "context", "hallucination", "verification",
+    "planning", "tool", "retrieval", "rag", "temperature", "prompt",
+    "stateless", "scaffold", "orchestration", "human in the loop",
+]
 
 # 高搜索量关键词（基于真实搜索热度）
 HIGH_SEO_KEYWORDS = {
@@ -129,7 +164,10 @@ def score_topic(topic: dict, retriever: KnowledgeRetriever | None = None) -> Sco
     subtitle = topic.get("subtitle", "")
     angle = topic.get("angle", "")
     category_id = topic.get("category_id", "")
+    spine = topic.get("spine", "")
+    spine_mirror = topic.get("spine_mirror", "")
     full_text = f"{title} {subtitle} {angle}"
+    iso_text = f"{title} {subtitle} {angle} {spine} {spine_mirror}".lower()
 
     # 1. SEO潜力：真实关键词覆盖
     seo_score = 5.0
@@ -167,6 +205,41 @@ def score_topic(topic: dict, retriever: KnowledgeRetriever | None = None) -> Sco
             + len(tools) * 0.3
         )
 
+    # 3.5 同构脊柱契合度（含双受众张力 + 社媒病毒性 + 双域证据）
+    # 核心约束：最有张力的 400 篇必须**同时**勾住 ADHD 人群与 Harness 工程师两端。
+    iso_score = 2.0
+    sig_hits = sum(1 for s in ISOMORPHISM_SIGNALS if s.lower() in iso_text)
+    iso_score += min(sig_hits, 6) * 0.4
+
+    has_adhd = any(s in iso_text for s in ADHD_AUDIENCE_SIGNALS)
+    has_eng = any(s in iso_text for s in ENGINEER_AUDIENCE_SIGNALS)
+    if has_adhd and has_eng:
+        iso_score += 2.5  # 双受众都被勾住——这才是「最有张力」的选题
+    elif has_adhd or has_eng:
+        iso_score += 0.3  # 只勾住一端，张力不足
+    else:
+        iso_score -= 1.0  # 两端都没勾住，几乎没有同构张力
+
+    viral_hits = sum(1 for s in VIRAL_HOOK_SIGNALS if s.lower() in iso_text)
+    iso_score += min(viral_hits, 4) * 0.35  # 社媒病毒性框架加成
+
+    if spine:
+        iso_score += 1.0  # 显式锚定到某条脊柱
+    if topic.get("is_problem_driven"):
+        iso_score += 0.4  # 问题驱动
+
+    if retriever is not None:
+        adhd_find = retriever.findings_for(_build_query_keywords(topic), limit=4)
+        harness_find = retriever.findings_for(HARNESS_QUERY_KEYWORDS, limit=4)
+        rel_harness = sum(
+            1 for f in harness_find if retriever._relevance(f["text"], HARNESS_QUERY_KEYWORDS) > 0
+        )
+        if adhd_find and rel_harness:
+            iso_score += 1.2  # 两端都有真实证据（真正的双域）
+        elif rel_harness:
+            iso_score += 0.4
+    iso_score = max(0.0, min(10.0, iso_score))
+
     # 4. 实用价值
     practical_base = 5.5
     practical_markers = ["方法", "策略", "技巧", "指南", "方案", "系统",
@@ -194,6 +267,7 @@ def score_topic(topic: dict, retriever: KnowledgeRetriever | None = None) -> Sco
         seo_potential=round(seo_score, 2),
         cross_platform=round(cross_score, 2),
         evidence_strength=round(evidence_score, 2),
+        isomorphism_alignment=round(iso_score, 2),
         practical_value=round(practical_score, 2),
         emotional_resonance=round(emotion_score, 2),
         share_potential=round(share_score, 2),
@@ -206,6 +280,7 @@ def compute_weighted_score(dimensions: ScoreDimensions, weights: dict | None = N
         dimensions.seo_potential * w["seo_potential"]
         + dimensions.cross_platform * w["cross_platform"]
         + dimensions.evidence_strength * w["evidence_strength"]
+        + dimensions.isomorphism_alignment * w["isomorphism_alignment"]
         + dimensions.practical_value * w["practical_value"]
         + dimensions.emotional_resonance * w["emotional_resonance"]
         + dimensions.share_potential * w["share_potential"]

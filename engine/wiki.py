@@ -24,7 +24,12 @@ import os
 import re
 from datetime import datetime, timezone
 
-from engine.knowledge import KNOWN_TOOLS, CORE_CONCEPTS, _split_sentences
+from engine.knowledge import (
+    KNOWN_TOOLS,
+    CORE_CONCEPTS,
+    SPINE_CONCEPTS,
+    _split_sentences,
+)
 from engine.llm import LLMClient
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
@@ -77,10 +82,26 @@ def gather_excerpts(
                 if key in seen:
                     continue
                 seen.add(key)
-                excerpts.append({"source_title": title, "source_url": url, "text": sent})
+                excerpts.append({
+                    "source_title": title,
+                    "source_url": url,
+                    "text": sent,
+                    "domain": a.get("domain", "adhd"),
+                })
                 if len(excerpts) >= max_excerpts:
                     return excerpts
     return excerpts
+
+
+def gather_excerpts_balanced(
+    articles: list[dict], terms: list[str], per_domain: int = 8
+) -> list[dict]:
+    """跨域收集摘录：ADHD 域与 harness 域各取若干，供同构脊柱页双端对照。"""
+    adhd = [a for a in articles if a.get("domain", "adhd") != "harness"]
+    harness = [a for a in articles if a.get("domain") == "harness"]
+    ex_a = gather_excerpts(adhd, terms, max_excerpts=per_domain)
+    ex_h = gather_excerpts(harness, terms, max_excerpts=per_domain)
+    return ex_a + ex_h
 
 
 # ───────────────────────── Wiki Store ─────────────────────────
@@ -192,6 +213,49 @@ def _excerpts_block(excerpts: list[dict]) -> str:
     return "\n".join(lines)
 
 
+SPINE_SYS = (
+    "你是一个跨学科的知识库维护者，正在论证一个核心命题："
+    "ADHD 大脑与大语言模型（LLM）在结构上是同构的——都是「高产但缺乏可靠执行调度层的生成核心」，"
+    "因此给 LLM 套 harness（脚手架）和给 ADHD 搭执行功能支架，是同一类工程。"
+    "你只能基于给定的真实摘录写作，区分 [ADHD] 与 [harness] 两端，把对应关系讲清楚，"
+    "既要点明结构相似，也要诚实标注'类比在哪里会失效'。语言精炼、专业、面向中文读者。"
+)
+
+
+def _spine_excerpts_block(excerpts: list[dict]) -> str:
+    lines = []
+    for i, e in enumerate(excerpts, 1):
+        tag = "harness" if e.get("domain") == "harness" else "ADHD"
+        lines.append(f"[{i}][{tag}]（来源：{e['source_title']}）{e['text']}")
+    return "\n".join(lines)
+
+
+def _spine_json_instructions(
+    name: str, kind: str, mirror: str, related: list[str]
+) -> str:
+    related_str = "、".join(related) if related else "（暂无）"
+    return (
+        f"请为同构脊柱概念「{name}」撰写/维护 wiki 页面。\n"
+        f"对应关系提示：{mirror}\n"
+        f"可交叉引用的其它页面（用 [[页面名]] 链接）：{related_str}。\n\n"
+        "严格输出 JSON 对象：\n"
+        '{\n'
+        '  "summary": "1-2 句话点明这个同构对应关系",\n'
+        '  "cross_links": ["正文引用到的其它页面名", ...],\n'
+        '  "body": "markdown 正文"\n'
+        "}\n\n"
+        "正文 body 要求：\n"
+        "- 用 ## 小节组织，必须包含：『ADHD 一侧』『LLM/harness 一侧』『同构对应』"
+        "『工程启示（可迁移的做法）』『类比的边界与反例』；\n"
+        "- 关键论断后用「（来源：标题）」标注，只能引用给定摘录里的来源，"
+        "并尽量让 ADHD 侧引 [ADHD] 摘录、harness 侧引 [harness] 摘录；\n"
+        "- 用 [[页面名]] 交叉引用相关 ADHD 概念页、工具页或其它脊柱页；\n"
+        "- 摘录冲突或类比过度时，用 `> ⚠️ 矛盾：…` 显式标注，不要抹平；\n"
+        "- 末尾加 `## 来源` 小节列出用到的来源标题；\n"
+        "- 不得编造摘录中不存在的数据或来源。"
+    )
+
+
 def _json_instructions(page_kind: str, name: str, related: list[str]) -> str:
     related_str = "、".join(related) if related else "（暂无）"
     return (
@@ -300,6 +364,82 @@ class WikiBuilder:
         )
         return True
 
+    def build_spine_page(
+        self,
+        concept: dict,
+        articles: list[dict],
+        related: list[str],
+    ) -> bool:
+        """构建/增量更新一个同构脊柱概念页（跨域双端对照）。返回是否调用了 LLM。"""
+        name = concept["name"]
+        excerpts = gather_excerpts_balanced(articles, concept["terms"])
+        if not excerpts:
+            return False
+        hashes = [_source_hash(e["text"]) for e in excerpts]
+        existing = self.store.get_page("concept", name)
+        if existing:
+            already = set(existing.get("ingested_source_hashes", []))
+            if not [h for h in hashes if h not in already]:
+                return False  # 无新素材，复利跳过
+            new_excerpts = [e for e, h in zip(excerpts, hashes) if h not in already]
+            existing_body = self.store.read_body(existing)
+            data = self._synthesize_spine_page(
+                concept, new_excerpts, related, existing_body
+            )
+            merged_hashes = sorted(already | set(hashes))
+        else:
+            data = self._synthesize_spine_page(concept, excerpts, related, None)
+            merged_hashes = hashes
+
+        sources, seen_urls = [], set()
+        for e in excerpts:
+            if e["source_url"] and e["source_url"] not in seen_urls:
+                seen_urls.add(e["source_url"])
+                sources.append({"title": e["source_title"], "url": e["source_url"]})
+        self.store.write_page(
+            page_type="concept",
+            name=name,
+            body=data["body"],
+            summary=data.get("summary", ""),
+            cross_links=data.get("cross_links", []),
+            ingested_hashes=merged_hashes,
+            sources=sources,
+        )
+        return True
+
+    def _synthesize_spine_page(
+        self,
+        concept: dict,
+        excerpts: list[dict],
+        related: list[str],
+        existing_body: str | None,
+    ) -> dict:
+        kind = concept.get("kind", "bridge")
+        mirror = concept.get("mirror", "")
+        prior = (
+            f"这是「{concept['name']}」页面的**现有内容**，请把新摘录的信息整合进去、"
+            f"保留仍成立的旧内容、发现冲突时显式标注：\n\n{existing_body}\n\n"
+            if existing_body else ""
+        )
+        instruction = _spine_json_instructions(concept["name"], kind, mirror, related)
+        user = (
+            f"{prior}以下是来自**两个领域**的真实素材摘录——`[ADHD]` 来自 ADHD/神经科学，"
+            f"`[harness]` 来自 LLM/agent 工程。请基于它们维护同构脊柱页「{concept['name']}」，"
+            f"用结构类比把两端对应起来：\n\n{_spine_excerpts_block(excerpts)}\n\n"
+            + instruction
+        )
+        data = self.llm.chat_json(
+            [
+                {"role": "system", "content": SPINE_SYS},
+                {"role": "user", "content": user},
+            ],
+            temperature=0.45,
+            max_tokens=2800,
+        )
+        if not isinstance(data, dict) or "body" not in data:
+            raise ValueError(f"脊柱页 {concept['name']} 返回结构异常: {type(data)}")
+        return data
+
     def build_topic_page(
         self, category_id: str, name: str, articles: list[dict]
     ) -> bool:
@@ -309,20 +449,26 @@ class WikiBuilder:
             for p in self.store.pages_of_type("tool")
             if KNOWN_TOOLS.get(p["name"], {}).get("category") == category_id
         ]
-        concept_summaries = [
-            f"- [[{p['name']}]]：{p['summary']}" for p in self.store.pages_of_type("concept")
-        ][:8]
+        spine_set = {c["name"] for c in SPINE_CONCEPTS}
+        concept_pages = self.store.pages_of_type("concept")
+        # 优先放入同构脊柱页，让每个主题综述都从「ADHD↔LLM 同构」脊柱长出来
+        spine_pages = [p for p in concept_pages if p["name"] in spine_set]
+        other_concepts = [p for p in concept_pages if p["name"] not in spine_set]
+        chosen = spine_pages[:6] + other_concepts[:6]
+        concept_summaries = [f"- [[{p['name']}]]：{p['summary']}" for p in chosen]
         if not tool_summaries and not concept_summaries:
             return False
         user = (
             f"请撰写主题综述页「{name}」。下面是本 wiki 已有的相关页面摘要，"
-            f"请把它们编织成一个有观点、有逻辑的综述，提出一个「当前最站得住脚的核心论点」，"
-            f"并指出仍存争议或证据不足之处。\n\n"
+            f"请把它们编织成一个有观点、有逻辑的综述。\n"
+            f"贯穿全篇的脊柱命题：ADHD 大脑与 LLM 同构——都是「高产但缺执行调度层的生成核心」，"
+            f"所以本主题下'AI 帮 ADHD'本质上是'给生成核心套 harness'。请围绕这条脊柱提出"
+            f"「当前最站得住脚的核心论点」，并指出仍存争议或证据不足之处。\n\n"
             f"相关工具页：\n{chr(10).join(tool_summaries) or '（无）'}\n\n"
-            f"相关概念页：\n{chr(10).join(concept_summaries) or '（无）'}\n\n"
+            f"相关概念页（含同构脊柱页）：\n{chr(10).join(concept_summaries) or '（无）'}\n\n"
             "严格输出 JSON：{\"summary\": \"...\", \"cross_links\": [...], \"body\": \"markdown\"}。\n"
-            "body 用 ## 小节组织，包含「核心论点」「证据脉络」「仍存争议」三部分，"
-            "用 [[页面名]] 交叉引用上面的页面，不得编造事实。"
+            "body 用 ## 小节组织，包含「核心论点」「同构视角」「证据脉络」「仍存争议」四部分，"
+            "用 [[页面名]] 交叉引用上面的页面（包括同构脊柱页），不得编造事实。"
         )
         data = self.llm.chat_json(
             [
@@ -361,8 +507,10 @@ class WikiBuilder:
                     "role": "user",
                     "content": (
                         "这是 ADHD × AI wiki 的全部页面摘要：\n\n" + block + "\n\n"
-                        "请写一个全局综述页 _overview，提出整个知识库当前的「核心论点」"
-                        "（AI 对 ADHD 究竟意味着什么），并给出阅读地图（用 [[页面名]] 链接关键页面）。\n"
+                        "请写一个全局综述页 _overview，提出整个知识库当前的「核心论点」。"
+                        "请把『ADHD 大脑与 LLM 同构——都是高产但缺执行调度层的生成核心，"
+                        "所以「AI 帮 ADHD」本质是「给生成核心套 harness」』作为统领全局的脊柱命题，"
+                        "并给出阅读地图（用 [[页面名]] 链接关键页面，尤其是同构脊柱页）。\n"
                         '严格输出 JSON：{"summary":"...","cross_links":[...],"body":"markdown"}'
                     ),
                 },
@@ -414,19 +562,44 @@ def build_wiki(articles: list[dict], llm: LLMClient, verbose: bool = True) -> Wi
 
     concept_names = list(CORE_CONCEPTS.keys())
     all_tool_names = list(KNOWN_TOOLS.keys())
+    core_zh_names = [CORE_CONCEPTS[c].split("（")[0] for c in concept_names]
+    spine_names = [c["name"] for c in SPINE_CONCEPTS]
 
-    # 1. 概念页
+    def _safe(label: str, fn):
+        """单页 LLM 合成失败时跳过该页（保留旧版本），不让整次构建崩溃。"""
+        try:
+            return fn()
+        except Exception as e:  # noqa: BLE001 - 单页失败应被隔离
+            if verbose:
+                print(f"   [skip] {label} 合成失败，保留旧页：{e}")
+            return False
+
+    # 1. ADHD 核心概念页（交叉引用里加入脊柱页，让同构脊柱与基础概念双向互链）
     calls = 0
     for cn_en in concept_names:
         zh = CORE_CONCEPTS[cn_en]
         name = zh.split("（")[0]
         terms = [cn_en, name]
-        related = [CORE_CONCEPTS[c].split("（")[0] for c in concept_names if c != cn_en][:6]
-        related += all_tool_names[:5]
-        if builder.build_entity_page("concept", name, "ADHD 核心概念", terms, articles, related):
+        related = [c for c in core_zh_names if c != name][:5]
+        related += spine_names[:3]
+        related += all_tool_names[:4]
+        if _safe(f"concept/{name}",
+                 lambda: builder.build_entity_page("concept", name, "ADHD 核心概念", terms, articles, related)):
             calls += 1
             if verbose:
                 print(f"   [concept] {name} ✓")
+        store.save_index()
+
+    # 1b. 同构脊柱概念页（ADHD ↔ LLM/harness 跨域对照）
+    for concept in SPINE_CONCEPTS:
+        related = [n for n in spine_names if n != concept["name"]][:5]
+        related += core_zh_names[:6]
+        related += all_tool_names[:4]
+        if _safe(f"spine/{concept['name']}",
+                 lambda: builder.build_spine_page(concept, articles, related)):
+            calls += 1
+            if verbose:
+                print(f"   [spine/{concept['kind']}] {concept['name']} ✓")
         store.save_index()
 
     # 2. 工具页
@@ -434,7 +607,8 @@ def build_wiki(articles: list[dict], llm: LLMClient, verbose: bool = True) -> Wi
         terms = [tool_name] + info.get("aliases", [])
         related = [t for t in all_tool_names if t != tool_name][:5]
         related += [CORE_CONCEPTS[c].split("（")[0] for c in concept_names][:5]
-        if builder.build_entity_page("tool", tool_name, "AI 工具", terms, articles, related):
+        if _safe(f"tool/{tool_name}",
+                 lambda: builder.build_entity_page("tool", tool_name, "AI 工具", terms, articles, related)):
             calls += 1
             if verbose:
                 print(f"   [tool] {tool_name} ✓")
@@ -442,20 +616,28 @@ def build_wiki(articles: list[dict], llm: LLMClient, verbose: bool = True) -> Wi
 
     # 3. 主题综述页
     for cat_id, name in TOPIC_PAGES.items():
-        if builder.build_topic_page(cat_id, name, articles):
+        if _safe(f"topic/{name}",
+                 lambda: builder.build_topic_page(cat_id, name, articles)):
             calls += 1
             if verbose:
                 print(f"   [topic] {name} ✓")
         store.save_index()
 
     # 4. 全局综述 + 矛盾页
-    builder.build_overview_and_contradictions()
+    _safe("overview+contradictions", builder.build_overview_and_contradictions)
     store.save_index()
 
+    spine_set = {c["name"] for c in SPINE_CONCEPTS}
+    n_harness = sum(1 for a in articles if a.get("domain") == "harness")
     store.index["meta"].update(
         {
             "source_articles": len(articles),
+            "source_adhd": len(articles) - n_harness,
+            "source_harness": n_harness,
             "concept_pages": len(store.pages_of_type("concept")),
+            "spine_pages": sum(
+                1 for p in store.pages_of_type("concept") if p["name"] in spine_set
+            ),
             "tool_pages": len(store.pages_of_type("tool")),
             "topic_pages": len(store.pages_of_type("topic")),
             "llm_model": llm.active_model,
