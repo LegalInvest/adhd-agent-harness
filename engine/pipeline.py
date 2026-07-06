@@ -19,6 +19,10 @@ from engine import isomorphism
 from engine import harness_figures
 from engine.case_studies import CaseStudyRetriever
 from engine import intelligence_assets
+from engine import lbd as lbd_mod
+from engine import burst as burst_mod
+from engine import storm as storm_mod
+from engine import graphrag
 from engine.knowledge import (
     build_knowledge_base,
     save_knowledge_base,
@@ -89,8 +93,24 @@ def run_pipeline(
     print(f"   人物案例钩子: 名人 {len(case_retriever.figures)} / 创业者·投资人 {len(case_retriever.entrepreneurs)} / 相关性统计 {len(case_retriever.correlation_stats)}")
     intel_articles = intelligence_assets.as_articles()
     print(f"   情报资产: {len(intel_articles)} 篇一手研究资产（创作者情报库/深度研究/策略报告）")
-    kb_corpus = iso_articles + figure_articles + intel_articles + research_articles + academic_kb_articles
-    wiki_corpus = iso_articles + figure_articles + intel_articles + research_articles + academic_wiki_articles
+    # 文献计量层：LBD 同构对 / 突发检测 / 概念图谱 / STORM 视角轮（均带磁盘缓存）
+    lbd_pairs = lbd_mod.load_pairs()
+    if not lbd_pairs:
+        lbd_pairs = lbd_mod.mine_pairs()
+        lbd_mod.save_pairs(lbd_pairs)
+    lbd_articles = lbd_mod.as_articles(lbd_pairs)
+    bursts = burst_mod.load()
+    if not bursts:
+        bursts = burst_mod.detect()
+        burst_mod.save(bursts)
+    if not os.path.exists(graphrag.OUT_PATH):
+        graphrag.save(graphrag.build_graph())
+    if llm is not None:
+        from engine.problems import SPINE_PROBLEM_SPECS
+        storm_mod.generate(llm, SPINE_PROBLEM_SPECS)
+    print(f"   文献计量层: LBD 同构对 {len(lbd_pairs)} 组 / 突发概念 {sum(1 for b in bursts if b.get('is_bursting'))} 个 / STORM 问题 {sum(len(v) for v in storm_mod.load().values())} 条")
+    kb_corpus = iso_articles + lbd_articles + figure_articles + intel_articles + research_articles + academic_kb_articles
+    wiki_corpus = iso_articles + lbd_articles + figure_articles + intel_articles + research_articles + academic_wiki_articles
 
     # 2. 知识萃取（双域：网页深抓 + 学术摘要）
     print("\n🧠 步骤 2/7: 知识萃取（双域语料）...")

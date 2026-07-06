@@ -1,8 +1,10 @@
 # Focusmate
 
+# Focusmate
+
 ## 是什么
 
-Focusmate 是一种基于虚拟身体在场（[[身体在场效应]]）的在线问责服务。用户预约时段后，平台会匹配一位伙伴，通过视频会议共同工作，彼此监督进度。
+Focusmate 是一种基于虚拟身体在场（[[身体在场效应]]）的在线问责服务。用户预约时段后，平台会匹配一位伙伴，通过视频会议共同工作，彼此监督进度。在 ADHD 科技行业研究中，这种模式被归类为“身体加倍（Body Doubling）”，即与他人同时在线工作，代表产品包括 Focusmate 与虚拟 coworking（来源：ADHD科技行业深度研究）。
 
 ## 与 ADHD 的关系
 
@@ -17,6 +19,7 @@ Focusmate 并非传统 AI 工具，但使用算法进行日程匹配和用户配
 - 被列为“11 Best ADHD Productivity Apps”之一，强调其虚拟身体在场功能（来源：11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog）。
 - 被推荐为儿童 ADHD 的“Accountability Sessions”工具，帮助保持专注（来源：AI Tools for Kids with ADHD: A Complete Guide for Parents...）。
 - 在 AI 助手管理 ADHD 的综述中被提及，特点为身体在场、会话问责，平台覆盖 Web 和 iOS，提供免费/付费版本（来源：Revolutionizing ADHD Management with AI Assistants）。
+- 在 ADHD 科技行业深度研究中被列为“身体加倍（Body Doubling）”的代表产品，与虚拟 coworking 并列（来源：ADHD科技行业深度研究）。
 
 ## 局限与争议
 
@@ -30,3 +33,4 @@ Focusmate 并非传统 AI 工具，但使用算法进行日程匹配和用户配
 - The Best AI-Powered ADHD Productivity Tools in 2026 (That ...)
 - AI Tools for Kids with ADHD: A Complete Guide for Parents...
 - Revolutionizing ADHD Management with AI Assistants
+- ADHD科技行业深度研究

@@ -1,35 +1,35 @@
 {
   "total": 400,
   "evidence_driven": true,
-  "research_sources": 2630,
+  "research_sources": 2681,
   "knowledge_meta": {
-    "source_articles": 2630,
-    "total_source_chars": 6371190,
-    "tools": 19,
-    "findings": 8318,
-    "statistics": 327,
-    "strategies": 6804
+    "source_articles": 2681,
+    "total_source_chars": 6540235,
+    "tools": 20,
+    "findings": 8623,
+    "statistics": 359,
+    "strategies": 6951
   },
   "categories": {
     "ai-tools": {
       "name": "AI工具实战",
-      "count": 124,
-      "avg_score": 7.73
+      "count": 115,
+      "avg_score": 7.75
     },
     "focus": {
       "name": "专注力管理",
-      "count": 83,
-      "avg_score": 7.78
+      "count": 88,
+      "avg_score": 7.77
     },
     "time-mgmt": {
       "name": "时间管理",
-      "count": 42,
-      "avg_score": 7.77
+      "count": 53,
+      "avg_score": 7.79
     },
     "emotion": {
       "name": "情绪调节",
-      "count": 38,
-      "avg_score": 7.72
+      "count": 22,
+      "avg_score": 7.82
     },
     "learning": {
       "name": "学习方法",
@@ -38,8 +38,8 @@
     },
     "career": {
       "name": "职场发展",
-      "count": 8,
-      "avg_score": 7.81
+      "count": 9,
+      "avg_score": 7.8
     },
     "entrepreneurship": {
       "name": "创业创新",
@@ -53,69 +53,69 @@
     },
     "science": {
       "name": "科学研究",
-      "count": 84,
-      "avg_score": 7.79
+      "count": 90,
+      "avg_score": 7.8
     },
     "lifestyle": {
       "name": "生活方式",
-      "count": 6,
-      "avg_score": 7.81
+      "count": 7,
+      "avg_score": 7.82
     },
     "community": {
       "name": "社群与文化",
-      "count": 7,
-      "avg_score": 7.83
+      "count": 8,
+      "avg_score": 7.81
     }
   },
   "evolution_history": [
     {
       "generation": 1,
       "pool_size": 400,
-      "avg_score": 7.75,
-      "max_score": 8.37,
-      "min_score": 7.63,
-      "median_score": 7.7,
-      "candidates_available": 1817,
+      "avg_score": 7.77,
+      "max_score": 8.45,
+      "min_score": 7.65,
+      "median_score": 7.71,
+      "candidates_available": 2300,
       "replaced": 32
     },
     {
       "generation": 2,
       "pool_size": 400,
-      "avg_score": 7.76,
-      "max_score": 8.37,
-      "min_score": 7.65,
-      "median_score": 7.71,
-      "candidates_available": 1785,
-      "replaced": 32
+      "avg_score": 7.78,
+      "max_score": 8.45,
+      "min_score": 7.66,
+      "median_score": 7.72,
+      "candidates_available": 2268,
+      "replaced": 1
     },
     {
       "generation": 3,
       "pool_size": 400,
-      "avg_score": 7.76,
-      "max_score": 8.37,
-      "min_score": 7.65,
-      "median_score": 7.71,
-      "candidates_available": 1753,
-      "replaced": 5
+      "avg_score": 7.78,
+      "max_score": 8.45,
+      "min_score": 7.66,
+      "median_score": 7.72,
+      "candidates_available": 2267,
+      "replaced": 0
     },
     {
       "generation": 4,
       "pool_size": 400,
-      "avg_score": 7.76,
-      "max_score": 8.37,
-      "min_score": 7.65,
-      "median_score": 7.71,
-      "candidates_available": 1748,
+      "avg_score": 7.78,
+      "max_score": 8.45,
+      "min_score": 7.66,
+      "median_score": 7.72,
+      "candidates_available": 2267,
       "replaced": 0
     },
     {
       "generation": 5,
       "pool_size": 400,
-      "avg_score": 7.76,
-      "max_score": 8.37,
-      "min_score": 7.65,
-      "median_score": 7.71,
-      "candidates_available": 1748,
+      "avg_score": 7.78,
+      "max_score": 8.45,
+      "min_score": 7.66,
+      "median_score": 7.72,
+      "candidates_available": 2267,
       "replaced": 0
     }
   ],
@@ -123,8 +123,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 职场人视角：为什么「治好 ADHD 的独自做事缺乏问责、容易放弃」和「让 LLM 不跑飞」其实是同一道工程题？",
-        "score": 7.65
+        "title": "ADHD 家长如何用「给生成核心套 harness」的思路应对陪伴 ADHD 孩子里的怕过度依赖工具、又怕没有支撑就崩？",
+        "score": 7.66
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
@@ -134,8 +134,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 创业者视角：为什么「治好 ADHD 的独自做事缺乏问责、容易放弃」和「让 LLM 不跑飞」其实是同一道工程题？",
-        "score": 7.65
+        "title": "ADHD 创业者如何用「给生成核心套 harness」的思路应对把想法落地执行里的怕过度依赖工具、又怕没有支撑就崩？",
+        "score": 7.66
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
@@ -145,7 +145,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 职场人视角：为什么「治好 ADHD 的有想法有能力，却卡在执行与落地」和「让 LLM 不跑飞」其实是同一道工程题？",
+        "title": "两个互不引用的领域都在研究「执行功能」——ADHD 文献和 LLM harness 文献为什么得出了同一个结论？",
         "score": 7.65
       },
       "in": {
@@ -156,7 +156,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 创业者视角：为什么「治好 ADHD 的有想法有能力，却卡在执行与落地」和「让 LLM 不跑飞」其实是同一道工程题？",
+        "title": "LLM 的无状态是精确的、确定的（只要不共享上下文），而 ADHD 的工作记忆波动受情绪、动机、药物等多因素影响，远非线性。这种“无状态”的类比是否忽略了生物系统的复杂性？比如 ADHD 患者有时能超聚焦，LLM 可不会“偶尔爆发”。",
         "score": 7.65
       },
       "in": {
@@ -167,7 +167,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 学生如何用「给生成核心套 harness」的思路应对考试与作业里的想理解自己的大脑到底是怎么回事？",
+        "title": "Agentic harness 的 planner 失败可以通过 prompt 重写、模型升级或增加工具调用修复；ADHD 的规划困难需要药物、环境改造、认知行为疗法。如果同构类比让产品经理以为‘给 ADHD 用户一个智能 todo 列表就够了’，它是否会替代真正有效的干预，成为一种有害的简化？",
         "score": 7.65
       },
       "in": {
@@ -178,7 +178,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 职场人如何用「给生成核心套 harness」的思路应对项目推进与汇报里的想理解自己的大脑到底是怎么回事？",
+        "title": "为什么「治好 ADHD 的不擅长精确、重复、状态维护类任务」和「让 LLM 不跑飞」其实是同一道工程题？",
         "score": 7.65
       },
       "in": {
@@ -189,7 +189,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 家长如何用「给生成核心套 harness」的思路应对陪伴 ADHD 孩子里的想理解自己的大脑到底是怎么回事？",
+        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的幻觉与验证循环？",
         "score": 7.65
       },
       "in": {
@@ -200,7 +200,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 创业者如何用「给生成核心套 harness」的思路应对把想法落地执行里的想理解自己的大脑到底是怎么回事？",
+        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的幻觉与验证循环？",
         "score": 7.65
       },
       "in": {
@@ -211,8 +211,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的上下文工程？",
-        "score": 7.64
+        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的幻觉与验证循环？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Claude 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
@@ -222,8 +222,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的上下文工程？",
-        "score": 7.64
+        "title": "用 Goblin Tools 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的卡在执行与落地，和给 agent 套 外部编排调度层 是一回事？",
@@ -233,8 +233,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的上下文工程？",
-        "score": 7.64
+        "title": "用 Saner.AI 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的想法落地难，和给 agent 套 外部编排调度层 是一回事？",
@@ -244,8 +244,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Goblin Tools 给 ADHD 补上工具使用与认知卸载，是脚手架还是拐杖？",
-        "score": 7.64
+        "title": "用 Motion 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的日常混乱不稳定，和给 agent 套 调低采样温度 是一回事？",
@@ -255,8 +255,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的工具使用与认知卸载？",
-        "score": 7.64
+        "title": "用 Reclaim.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的感到孤立缺问责，和给 agent 套 human-in-the-loop 监督 是一回事？",
@@ -266,8 +266,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Motion 给 ADHD 补上工具使用与认知卸载，是脚手架还是拐杖？",
-        "score": 7.64
+        "title": "用 Tiimo 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Claude 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
@@ -277,8 +277,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的工具使用与认知卸载？",
-        "score": 7.64
+        "title": "用 Brain.fm 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Claude 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
@@ -288,8 +288,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Perplexity 给 ADHD 补上工具使用与认知卸载，是脚手架还是拐杖？",
-        "score": 7.64
+        "title": "用 Focusmate 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Claude 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
@@ -299,8 +299,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的工具使用与认知卸载？",
-        "score": 7.64
+        "title": "用 Structured 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Goblin Tools 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
@@ -310,8 +310,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的规划循环与任务分解？",
-        "score": 7.64
+        "title": "用 Lex 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Motion 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
@@ -321,8 +321,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的规划循环与任务分解？",
-        "score": 7.64
+        "title": "用 Mem 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Perplexity 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
@@ -332,8 +332,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的规划循环与任务分解？",
-        "score": 7.64
+        "title": "用 Otter.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Goblin Tools 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
@@ -343,8 +343,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Goblin Tools 之于 ADHD，就像 self-critique 验证循环 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "用 Reflect 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Motion 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
@@ -354,8 +354,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Motion 之于 ADHD，就像 self-critique 验证循环 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "用 Routinery 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Perplexity 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
@@ -365,8 +365,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 想把冲动下结论、想当然外包给 ChatGPT，该怎么设计这套「人 + AI」的回路？",
-        "score": 7.63
+        "title": "用 Todoist 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Claude 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？",
@@ -376,8 +376,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "ChatGPT 解决了 ADHD 的冲动下结论、想当然，代价是什么？",
-        "score": 7.63
+        "title": "用 Inflow 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Claude 治 ADHD 的想理解自己的大脑，和给 agent 套 生成核心 + 缺失的执行层 是一回事？",
@@ -387,8 +387,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Perplexity 之于 ADHD，就像 self-critique 验证循环 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "用 Endel 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Goblin Tools 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
@@ -398,8 +398,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Claude 之于 ADHD，就像 调低采样温度 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "用 Forest 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Motion 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
@@ -409,8 +409,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Claude 能不能当它的采样温度与表现波动？",
-        "score": 7.63
+        "title": "用 RescueTime 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Perplexity 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
@@ -420,8 +420,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Goblin Tools 之于 ADHD，就像 human-in-the-loop 监督 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "用 Habitica 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Goblin Tools 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
@@ -431,8 +431,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Motion 之于 ADHD，就像 human-in-the-loop 监督 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "用 Perplexity 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Motion 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
@@ -442,8 +442,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Claude 能不能当它的人在回路与身体在场？",
-        "score": 7.63
+        "title": "用 Speechify 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
@@ -453,8 +453,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Perplexity 之于 ADHD，就像 human-in-the-loop 监督 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的拐杖与脚手架？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Goblin Tools 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
@@ -464,8 +464,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Goblin Tools 之于 ADHD，就像 agent 的编排层 之于 LLM——但有人用错了",
-        "score": 7.63
+        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的拐杖与脚手架？",
+        "score": 7.65
       },
       "in": {
         "title": "为什么用 Motion 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
@@ -475,321 +475,134 @@
     {
       "generation": 2,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的幻觉与验证循环？",
-        "score": 7.65
+        "title": "如果把 ADHD 大脑当成生成核心，Forest 能不能当它的无状态与外部记忆？",
+        "score": 7.66
       },
       "in": {
         "title": "为什么用 Perplexity 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
         "score": 7.68
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Goblin Tools 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Saner.AI 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Saner.AI 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Reclaim.ai 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Motion 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Tiimo 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Reclaim.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Brain.fm 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Tiimo 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Focusmate 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Brain.fm 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Structured 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Focusmate 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Lex 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Structured 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Mem 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Lex 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Otter.ai 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Mem 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Reflect 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Otter.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Routinery 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Reflect 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Todoist 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Routinery 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Inflow 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Todoist 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Endel 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Inflow 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Forest 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Endel 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 RescueTime 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
-      }
-    },
-    {
-      "generation": 2,
-      "out": {
-        "title": "用 Forest 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
-        "score": 7.65
-      },
-      "in": {
-        "title": "为什么用 Habitica 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-        "score": 7.65
       }
     }
   ],
   "top_20": [
     {
       "rank": 1,
+      "title": "当 agent 把‘写周报’拆成 5 个子任务时，我看到的不是 5 个可执行步骤，而是 5 次需要重新克服焦虑的上下文切换。有没有双域证据表明，分解粒度越细，对 ADHD 的执行启动反而可能越有害？",
+      "score": 8.45,
+      "evidence": 10.0
+    },
+    {
+      "rank": 2,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 执行功能（计划/组织/启动）先天偏弱的理解",
       "score": 8.37,
       "evidence": 10.0
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 分心走神或超聚焦跑偏，丢失目标的理解",
       "score": 8.28,
       "evidence": 10.0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "ChatGPT 之于 ADHD，就像 重锚定 system prompt 之于 LLM——但有人用错了",
       "score": 8.25,
       "evidence": 10.0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 不擅长精确、重复、状态维护类任务的理解",
       "score": 8.24,
       "evidence": 10.0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 冲动下结论、想当然的理解",
       "score": 8.2,
       "evidence": 10.0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 任务启动困难、不会拆解的理解",
       "score": 8.19,
       "evidence": 10.0
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "title": "为什么把任务交给 AI Agent，会触发比拖延更深的委托焦虑？",
+      "score": 8.17,
+      "evidence": 10.0
+    },
+    {
+      "rank": 9,
+      "title": "ADHD 患者的外部记忆使用常伴随执行功能缺陷（如组织策略差），而 LLM 的检索增强（RAG）有精心设计的索引和检索逻辑。这种“使用能力”的差异是否反而凸显了同构的脆弱性？有没有证据表明 ADHD 大脑的“外部记忆系统”效率也低于神经典型者？",
+      "score": 8.16,
+      "evidence": 10.0
+    },
+    {
+      "rank": 10,
       "title": "ChatGPT 之于 ADHD，就像 function calling 工具调用 之于 LLM——但有人用错了",
       "score": 8.16,
       "evidence": 10.0
     },
     {
-      "rank": 8,
+      "rank": 11,
       "title": "ChatGPT 之于 ADHD，就像 planner-executor 任务分解 之于 LLM——但有人用错了",
       "score": 8.16,
       "evidence": 10.0
     },
     {
-      "rank": 9,
+      "rank": 12,
       "title": "如果把 ADHD 大脑当成生成核心，ChatGPT 能不能当它的外部执行功能层？",
       "score": 8.15,
       "evidence": 10.0
     },
     {
-      "rank": 10,
+      "rank": 13,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 怕过度依赖工具、又怕没有支撑就崩的理解",
       "score": 8.13,
       "evidence": 10.0
     },
     {
-      "rank": 11,
+      "rank": 14,
       "title": "用 ChatGPT 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
       "score": 8.11,
       "evidence": 10.0
     },
     {
-      "rank": 12,
+      "rank": 15,
       "title": "为什么用 ChatGPT 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
       "score": 8.11,
       "evidence": 10.0
     },
     {
-      "rank": 13,
+      "rank": 16,
+      "title": "LLM 的 planner 没有情绪、没有睡眠债、没有‘今天就是不想做’的动机低谷。把 ADHD 的启动困难简化为‘缺少一个好的 planner-executor loop’，是否把一种神经发育差异降级成了软件架构问题，从而忽视了执行功能背后的情感与生理维度？",
+      "score": 8.1,
+      "evidence": 10.0
+    },
+    {
+      "rank": 17,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 工作记忆容量小、边做边忘的理解",
       "score": 8.1,
       "evidence": 10.0
     },
     {
-      "rank": 14,
+      "rank": 18,
       "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 注意力容易被环境带偏的理解",
       "score": 8.1,
       "evidence": 10.0
     },
     {
-      "rank": 15,
-      "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 独自做事缺乏问责、容易放弃的理解",
-      "score": 8.08,
-      "evidence": 10.0
-    },
-    {
-      "rank": 16,
-      "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 想理解自己的大脑到底是怎么回事的理解",
-      "score": 8.08,
-      "evidence": 10.0
-    },
-    {
-      "rank": 17,
-      "title": "ChatGPT 之于 ADHD，就像 会褪去的脚手架 之于 LLM——但有人用错了",
-      "score": 8.08,
-      "evidence": 10.0
-    },
-    {
-      "rank": 18,
-      "title": "ChatGPT 之于 ADHD，就像 外部记忆/向量库 之于 LLM——但有人用错了",
-      "score": 8.07,
-      "evidence": 10.0
-    },
-    {
       "rank": 19,
-      "title": "ChatGPT 之于 ADHD，就像 上下文工程 之于 LLM——但有人用错了",
-      "score": 8.07,
+      "title": "为什么一个焦虑孩子、一个愧疚家长、一个赶时间医生，会让实验室里的高准确率瞬间失真？",
+      "score": 8.08,
       "evidence": 10.0
     },
     {
       "rank": 20,
-      "title": "用 ChatGPT 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
-      "score": 8.02,
+      "title": "ADHD 的执行功能缺陷表现为“知道该做什么但做不了”，类似于 LLM 的 agent 在规划后执行时容易出错或中断，我们如何从 ADHD 的补偿策略（如分块、番茄钟）中提取可复用的 agent 调度模式？",
+      "score": 8.08,
       "evidence": 10.0
     }
   ]

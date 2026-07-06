@@ -289,6 +289,23 @@ def generate_problem_pool() -> list[dict]:
             parallel=parallel,
         )
 
+    # 0.5 文献计量候选：LBD 同构对 / 突发概念 / STORM 多视角问题
+    from engine import lbd, burst, storm
+    default_spec = SPINE_PROBLEM_SPECS[0]
+    spec_by_spine = {s["spine"]: s for s in SPINE_PROBLEM_SPECS}
+
+    def add_mined(cand, angle):
+        spec = spec_by_spine.get(cand.get("spine", ""), default_spec)
+        add(cand["title"], cand["subtitle"], angle,
+            spec["category_id"], spec["spine"], spec["pain"], spec["parallel"])
+
+    for cand in lbd.topic_candidates():
+        add_mined(cand, "LBD同构发现")
+    for cand in burst.topic_candidates():
+        add_mined(cand, "突发概念雷达")
+    for cand in storm.topic_candidates():
+        add_mined(cand, "STORM视角轮")
+
     # 1. 脊柱锚定的核心问题（高质量、人工策划）
     for spec in SPINE_PROBLEM_SPECS:
         for q in spec["questions"]:

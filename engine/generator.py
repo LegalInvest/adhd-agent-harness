@@ -11,6 +11,7 @@ import re
 from datetime import datetime, timedelta
 
 from engine.knowledge import KnowledgeRetriever, CORE_CONCEPTS
+from engine.grade import label as grade_label
 
 
 def _seed_from(text: str) -> int:
@@ -229,7 +230,7 @@ def generate_article(topic: dict, index: int, retriever: KnowledgeRetriever) -> 
         title_src = item.get("source_title", "")
         if url and url not in seen_urls:
             seen_urls.add(url)
-            refs.append(f"- [{title_src}]({url})")
+            refs.append(f"- [{title_src}]({url}) — {grade_label(title_src, url)}")
     if refs:
         parts.append("## 参考来源\n\n" + "\n".join(refs[:6]))
 
@@ -414,7 +415,10 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm, case_retr
         (keywords[seed % len(keywords)] if keywords else "效率"),
     ]))[:6]
 
-    refs = [f"- [{s['title']}]({s['url']})" for s in wiki_sources[:6]]
+    refs = [
+        f"- [{s['title']}]({s['url']}) — {grade_label(s['title'], s['url'])}"
+        for s in wiki_sources[:6]
+    ]
     refs_block = ("\n\n## 参考来源\n\n" + "\n".join(refs)) if refs else ""
 
     full_content = (

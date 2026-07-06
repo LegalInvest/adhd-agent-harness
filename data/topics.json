@@ -1,6 +1,42 @@
 [
   {
-    "id": "prob-0059",
+    "id": "prob-0428",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "当 agent 把‘写周报’拆成 5 个子任务时，我看到的不是 5 个可执行步骤，而是 5 次需要重新克服焦虑的上下文切换。有没有双域证据表明，分解粒度越细，对 ADHD 的执行启动反而可能越有害？",
+    "subtitle": "分解粒度与启动成本的非线性关系",
+    "angle": "STORM视角轮",
+    "problem": "当 agent 把‘写周报’拆成 5 个子任务时，我看到的不是 5 个可执行步骤，而是 5 次需要重新克服焦虑的上下文切换。有没有双域证据表明，分解粒度越细，对 ADHD 的执行启动反而可能越有害？",
+    "spine": "规划循环与任务分解",
+    "spine_kind": "llm",
+    "spine_mirror": "任务启动/拆解困难 ↔ agent planner-executor 循环",
+    "adhd_pain": "任务启动困难、不会拆解",
+    "harness_parallel": "agent 用 planner-executor 循环分解长任务",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.47,
+      "cross_platform": 8.88,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.35,
+      "emotional_resonance": 9.36,
+      "share_potential": 6.24
+    },
+    "weighted_score": 8.45,
+    "rank": 1
+  },
+  {
+    "id": "prob-0542",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -33,10 +69,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.37,
-    "rank": 1
+    "rank": 2
   },
   {
-    "id": "prob-0055",
+    "id": "prob-0538",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -69,10 +105,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.28,
-    "rank": 2
+    "rank": 3
   },
   {
-    "id": "prob-1000",
+    "id": "prob-1483",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -105,10 +141,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.25,
-    "rank": 3
+    "rank": 4
   },
   {
-    "id": "prob-0051",
+    "id": "prob-0534",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -141,10 +177,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.24,
-    "rank": 4
+    "rank": 5
   },
   {
-    "id": "prob-0047",
+    "id": "prob-0530",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -177,10 +213,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.2,
-    "rank": 5
+    "rank": 6
   },
   {
-    "id": "prob-0053",
+    "id": "prob-0536",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -213,10 +249,82 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.19,
-    "rank": 6
+    "rank": 7
   },
   {
-    "id": "prob-0724",
+    "id": "prob-0316",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么把任务交给 AI Agent，会触发比拖延更深的委托焦虑？",
+    "subtitle": "《问题354》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么把任务交给 AI Agent，会触发比拖延更深的委托焦虑？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 9.1,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.0,
+      "emotional_resonance": 7.8,
+      "share_potential": 5.2
+    },
+    "weighted_score": 8.17,
+    "rank": 8
+  },
+  {
+    "id": "prob-0390",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "ADHD 患者的外部记忆使用常伴随执行功能缺陷（如组织策略差），而 LLM 的检索增强（RAG）有精心设计的索引和检索逻辑。这种“使用能力”的差异是否反而凸显了同构的脆弱性？有没有证据表明 ADHD 大脑的“外部记忆系统”效率也低于神经典型者？",
+    "subtitle": "使用效率的差异可能破坏类比",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 患者的外部记忆使用常伴随执行功能缺陷（如组织策略差），而 LLM 的检索增强（RAG）有精心设计的索引和检索逻辑。这种“使用能力”的差异是否反而凸显了同构的脆弱性？有没有证据表明 ADHD 大脑的“外部记忆系统”效率也低于神经典型者？",
+    "spine": "无状态与外部记忆",
+    "spine_kind": "llm",
+    "spine_mirror": "工作记忆缺陷 ↔ LLM 无跨会话状态：都靠外部记忆补偿",
+    "adhd_pain": "工作记忆容量小、边做边忘",
+    "harness_parallel": "LLM 无跨会话状态，靠外部记忆/向量库续命",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 8.45,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.05,
+      "practical_value": 6.7,
+      "emotional_resonance": 5.2,
+      "share_potential": 7.49
+    },
+    "weighted_score": 8.16,
+    "rank": 9
+  },
+  {
+    "id": "prob-1207",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -249,10 +357,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.16,
-    "rank": 7
+    "rank": 10
   },
   {
-    "id": "prob-0862",
+    "id": "prob-1345",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -285,10 +393,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.16,
-    "rank": 8
+    "rank": 11
   },
   {
-    "id": "prob-1280",
+    "id": "prob-1763",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -321,10 +429,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.15,
-    "rank": 9
+    "rank": 12
   },
   {
-    "id": "prob-0063",
+    "id": "prob-0546",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -357,10 +465,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.13,
-    "rank": 10
+    "rank": 13
   },
   {
-    "id": "prob-1277",
+    "id": "prob-1760",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -393,10 +501,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 8.11,
-    "rank": 11
+    "rank": 14
   },
   {
-    "id": "evolved-emotion-1643",
+    "id": "evolved-emotion-2126",
     "title": "为什么用 ChatGPT 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -426,10 +534,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.11,
-    "rank": 12
+    "rank": 15
   },
   {
-    "id": "prob-0041",
+    "id": "prob-0433",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "LLM 的 planner 没有情绪、没有睡眠债、没有‘今天就是不想做’的动机低谷。把 ADHD 的启动困难简化为‘缺少一个好的 planner-executor loop’，是否把一种神经发育差异降级成了软件架构问题，从而忽视了执行功能背后的情感与生理维度？",
+    "subtitle": "情感与身体维度在类比中消失了吗",
+    "angle": "STORM视角轮",
+    "problem": "LLM 的 planner 没有情绪、没有睡眠债、没有‘今天就是不想做’的动机低谷。把 ADHD 的启动困难简化为‘缺少一个好的 planner-executor loop’，是否把一种神经发育差异降级成了软件架构问题，从而忽视了执行功能背后的情感与生理维度？",
+    "spine": "规划循环与任务分解",
+    "spine_kind": "llm",
+    "spine_mirror": "任务启动/拆解困难 ↔ agent planner-executor 循环",
+    "adhd_pain": "任务启动困难、不会拆解",
+    "harness_parallel": "agent 用 planner-executor 循环分解长任务",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 10.0,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.05,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 8.1,
+    "rank": 16
+  },
+  {
+    "id": "prob-0524",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -462,10 +606,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.1,
-    "rank": 13
+    "rank": 17
   },
   {
-    "id": "prob-0045",
+    "id": "prob-0528",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -498,10 +642,82 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.1,
-    "rank": 14
+    "rank": 18
   },
   {
-    "id": "prob-0057",
+    "id": "prob-0245",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么一个焦虑孩子、一个愧疚家长、一个赶时间医生，会让实验室里的高准确率瞬间失真？",
+    "subtitle": "《问题283》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么一个焦虑孩子、一个愧疚家长、一个赶时间医生，会让实验室里的高准确率瞬间失真？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 8.45,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.0,
+      "emotional_resonance": 7.8,
+      "share_potential": 5.2
+    },
+    "weighted_score": 8.08,
+    "rank": 19
+  },
+  {
+    "id": "prob-0456",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "ADHD 的执行功能缺陷表现为“知道该做什么但做不了”，类似于 LLM 的 agent 在规划后执行时容易出错或中断，我们如何从 ADHD 的补偿策略（如分块、番茄钟）中提取可复用的 agent 调度模式？",
+    "subtitle": "人类补偿策略的算法化：ADHD 的分块技巧如何转化为 agent 的步骤分解？",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的执行功能缺陷表现为“知道该做什么但做不了”，类似于 LLM 的 agent 在规划后执行时容易出错或中断，我们如何从 ADHD 的补偿策略（如分块、番茄钟）中提取可复用的 agent 调度模式？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.8,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.45,
+      "practical_value": 6.55,
+      "emotional_resonance": 5.2,
+      "share_potential": 8.11
+    },
+    "weighted_score": 8.08,
+    "rank": 20
+  },
+  {
+    "id": "prob-0540",
     "category_id": "community",
     "category_name": "社群与文化",
     "category_name_en": "Community & Culture",
@@ -534,10 +750,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.08,
-    "rank": 15
+    "rank": 21
   },
   {
-    "id": "prob-0065",
+    "id": "prob-0548",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -570,10 +786,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 8.08,
-    "rank": 16
+    "rank": 22
   },
   {
-    "id": "prob-1552",
+    "id": "prob-2035",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -606,10 +822,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.08,
-    "rank": 17
+    "rank": 23
   },
   {
-    "id": "prob-0146",
+    "id": "prob-0103",
+    "category_id": "emotion",
+    "category_name": "情绪调节",
+    "category_name_en": "Emotional Regulation",
+    "category_icon": "💚",
+    "category_color": "#10B981",
+    "keywords": [
+      "情绪管理",
+      "焦虑",
+      "自我接纳",
+      "心理健康",
+      "压力管理"
+    ],
+    "title": "为什么青年律师的焦虑，其实是大脑在做风险尽调？",
+    "subtitle": "你不是想太多，是没有把风险从情绪翻译成清单",
+    "angle": "问题XXX精修",
+    "problem": "为什么青年律师的焦虑，其实是大脑在做风险尽调？",
+    "spine": "采样温度与表现波动",
+    "spine_kind": "llm",
+    "spine_mirror": "ADHD 表现日内波动 ↔ LLM 采样随机性：都靠结构约束稳定输出",
+    "adhd_pain": "状态日内大幅波动、不稳定",
+    "harness_parallel": "LLM 采样温度带来输出随机性，靠结构约束稳定",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 8.45,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.95,
+      "practical_value": 5.85,
+      "emotional_resonance": 7.8,
+      "share_potential": 6.76
+    },
+    "weighted_score": 8.07,
+    "rank": 24
+  },
+  {
+    "id": "prob-0629",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -642,10 +894,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.07,
-    "rank": 18
+    "rank": 25
   },
   {
-    "id": "prob-0310",
+    "id": "prob-0793",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -678,10 +930,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.07,
-    "rank": 19
+    "rank": 26
   },
   {
-    "id": "prob-1278",
+    "id": "prob-1761",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -714,10 +966,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.02,
-    "rank": 20
+    "rank": 27
   },
   {
-    "id": "prob-0150",
+    "id": "prob-0633",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -750,10 +1002,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 8.01,
-    "rank": 21
+    "rank": 28
   },
   {
-    "id": "prob-0152",
+    "id": "prob-0635",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -786,10 +1038,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.01,
-    "rank": 22
+    "rank": 29
   },
   {
-    "id": "prob-1004",
+    "id": "prob-1487",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -822,10 +1074,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.01,
-    "rank": 23
+    "rank": 30
   },
   {
-    "id": "evolved-ai-tools-1574",
+    "id": "prob-0426",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "ADHD 患者常因情绪因素（如焦虑）而无法启动任务，LLM 没有情绪，这种类比是否忽略了动机和情感的核心作用？",
+    "subtitle": "情绪缺失 vs 纯粹计算",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 患者常因情绪因素（如焦虑）而无法启动任务，LLM 没有情绪，这种类比是否忽略了动机和情感的核心作用？",
+    "spine": "工具使用与认知卸载",
+    "spine_kind": "llm",
+    "spine_mirror": "把不擅长的精确状态外包 ↔ agent function calling",
+    "adhd_pain": "不擅长精确、重复、状态维护类任务",
+    "harness_parallel": "agent 通过 function calling 把精确计算外包给工具",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 8.45,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.65,
+      "practical_value": 6.0,
+      "emotional_resonance": 7.8,
+      "share_potential": 5.2
+    },
+    "weighted_score": 8.0,
+    "rank": 31
+  },
+  {
+    "id": "evolved-ai-tools-2057",
     "title": "为什么用 ChatGPT 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -855,10 +1143,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 8.0,
-    "rank": 24
+    "rank": 32
   },
   {
-    "id": "prob-0061",
+    "id": "prob-0544",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -891,10 +1179,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 7.99,
-    "rank": 25
+    "rank": 33
   },
   {
-    "id": "prob-0448",
+    "id": "prob-0931",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -927,10 +1215,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.99,
-    "rank": 26
+    "rank": 34
   },
   {
-    "id": "prob-1138",
+    "id": "prob-1621",
     "category_id": "community",
     "category_name": "社群与文化",
     "category_name_en": "Community & Culture",
@@ -963,10 +1251,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.99,
-    "rank": 27
+    "rank": 35
   },
   {
-    "id": "prob-1276",
+    "id": "prob-1759",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -999,10 +1287,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.99,
-    "rank": 28
+    "rank": 36
   },
   {
-    "id": "prob-1414",
+    "id": "prob-1897",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -1035,10 +1323,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.99,
-    "rank": 29
+    "rank": 37
   },
   {
-    "id": "prob-1690",
+    "id": "prob-2173",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1071,10 +1359,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.99,
-    "rank": 30
+    "rank": 38
   },
   {
-    "id": "prob-1006",
+    "id": "prob-1489",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -1107,10 +1395,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.97,
-    "rank": 31
+    "rank": 39
   },
   {
-    "id": "prob-1911",
+    "id": "prob-2394",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1143,10 +1431,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.97,
-    "rank": 32
+    "rank": 40
   },
   {
-    "id": "prob-1915",
+    "id": "prob-2398",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1179,10 +1467,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.97,
-    "rank": 33
+    "rank": 41
   },
   {
-    "id": "prob-1001",
+    "id": "prob-1484",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -1215,10 +1503,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.96,
-    "rank": 34
+    "rank": 42
   },
   {
-    "id": "evolved-focus-1597",
+    "id": "evolved-focus-2080",
     "title": "为什么用 ChatGPT 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -1248,10 +1536,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.96,
-    "rank": 35
+    "rank": 43
   },
   {
-    "id": "evolved-time-mgmt-1620",
+    "id": "evolved-time-mgmt-2103",
     "title": "为什么用 ChatGPT 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -1281,10 +1569,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.96,
-    "rank": 36
+    "rank": 44
   },
   {
-    "id": "evolved-learning-1666",
+    "id": "evolved-learning-2149",
     "title": "为什么用 ChatGPT 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -1314,10 +1602,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.96,
-    "rank": 37
+    "rank": 45
   },
   {
-    "id": "prob-1279",
+    "id": "prob-1762",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1350,10 +1638,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.94,
-    "rank": 38
+    "rank": 46
   },
   {
-    "id": "prob-1281",
+    "id": "prob-1764",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1386,10 +1674,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.94,
-    "rank": 39
+    "rank": 47
   },
   {
-    "id": "prob-1908",
+    "id": "prob-2391",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1422,10 +1710,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.94,
-    "rank": 40
+    "rank": 48
   },
   {
-    "id": "prob-1910",
+    "id": "prob-2393",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1458,10 +1746,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.94,
-    "rank": 41
+    "rank": 49
   },
   {
-    "id": "prob-1912",
+    "id": "prob-2395",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1494,10 +1782,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.94,
-    "rank": 42
+    "rank": 50
   },
   {
-    "id": "prob-1914",
+    "id": "prob-2397",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1530,10 +1818,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.94,
-    "rank": 43
+    "rank": 51
   },
   {
-    "id": "prob-0452",
+    "id": "prob-0457",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "ADHD 的执行功能缺陷是神经发育性的，涉及多巴胺系统，而 LLM 的 agent 只是软件架构，二者在底层机制上完全不同，这种同构类比是否只是比喻的滥用？",
+    "subtitle": "生物硬件 vs 硅基软件：执行功能缺陷的病因与 agent 的架构缺陷有可比性吗？",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的执行功能缺陷是神经发育性的，涉及多巴胺系统，而 LLM 的 agent 只是软件架构，二者在底层机制上完全不同，这种同构类比是否只是比喻的滥用？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 8.45,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.45,
+      "practical_value": 5.85,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.93,
+    "rank": 52
+  },
+  {
+    "id": "prob-0935",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -1566,10 +1890,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.93,
-    "rank": 44
+    "rank": 53
   },
   {
-    "id": "prob-1556",
+    "id": "prob-2039",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -1602,10 +1926,82 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.93,
-    "rank": 45
+    "rank": 54
   },
   {
-    "id": "prob-0314",
+    "id": "prob-0077",
+    "category_id": "lifestyle",
+    "category_name": "生活方式",
+    "category_name_en": "Lifestyle",
+    "category_icon": "🌟",
+    "category_color": "#A855F7",
+    "keywords": [
+      "生活方式",
+      "健康",
+      "人际关系",
+      "自我成长",
+      "幸福感"
+    ],
+    "title": "为什么ADHD的超聚焦是高浓度的多巴胺极化，不是意志力胜利？",
+    "subtitle": "你不是终于自律了，是系统被单一信号劫持了",
+    "angle": "问题XXX精修",
+    "problem": "为什么ADHD的超聚焦是高浓度的多巴胺极化，不是意志力胜利？",
+    "spine": "重锚定与目标漂移",
+    "spine_kind": "llm",
+    "spine_mirror": "分心/超聚焦跑偏 ↔ agent 长程目标漂移：都靠重锚定目标",
+    "adhd_pain": "分心走神或超聚焦跑偏，丢失目标",
+    "harness_parallel": "长程任务里 agent 会目标漂移，需要重锚定 system prompt",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 9.1,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 5.85,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.92,
+    "rank": 55
+  },
+  {
+    "id": "prob-0098",
+    "category_id": "emotion",
+    "category_name": "情绪调节",
+    "category_name_en": "Emotional Regulation",
+    "category_icon": "💚",
+    "category_color": "#10B981",
+    "keywords": [
+      "情绪管理",
+      "焦虑",
+      "自我接纳",
+      "心理健康",
+      "压力管理"
+    ],
+    "title": "为什么青年律师最需要的不是自律，而是一个外部前额叶？",
+    "subtitle": "你缺的不是努力，是案件、任务和情绪同时排队的调度系统",
+    "angle": "问题XXX精修",
+    "problem": "为什么青年律师最需要的不是自律，而是一个外部前额叶？",
+    "spine": "采样温度与表现波动",
+    "spine_kind": "llm",
+    "spine_mirror": "ADHD 表现日内波动 ↔ LLM 采样随机性：都靠结构约束稳定输出",
+    "adhd_pain": "状态日内大幅波动、不稳定",
+    "harness_parallel": "LLM 采样温度带来输出随机性，靠结构约束稳定",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 9.1,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 5.85,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.92,
+    "rank": 56
+  },
+  {
+    "id": "prob-0797",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -1638,10 +2034,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.92,
-    "rank": 46
+    "rank": 57
   },
   {
-    "id": "prob-0725",
+    "id": "prob-1208",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -1674,10 +2070,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.92,
-    "rank": 47
+    "rank": 58
   },
   {
-    "id": "prob-0728",
+    "id": "prob-1211",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -1710,10 +2106,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.92,
-    "rank": 48
+    "rank": 59
   },
   {
-    "id": "prob-0866",
+    "id": "prob-1349",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -1746,10 +2142,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.92,
-    "rank": 49
+    "rank": 60
   },
   {
-    "id": "evolved-parenting-1758",
+    "id": "evolved-parenting-2241",
     "title": "为什么用 ChatGPT 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -1779,10 +2175,10 @@
       "share_potential": 6.24
     },
     "weighted_score": 7.92,
-    "rank": 50
+    "rank": 61
   },
   {
-    "id": "evolved-science-1689",
+    "id": "evolved-science-2172",
     "title": "为什么用 ChatGPT 治 ADHD 的想理解自己的大脑，和给 agent 套 生成核心 + 缺失的执行层 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -1812,10 +2208,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.91,
-    "rank": 51
+    "rank": 62
   },
   {
-    "id": "prob-0049",
+    "id": "prob-0299",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "ChatGPT 是我的工作记忆，Notion 是我的执行功能，那我本人是什么",
+    "subtitle": "《问题337》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "ChatGPT 是我的工作记忆，Notion 是我的执行功能，那我本人是什么",
+    "spine": "无状态与外部记忆",
+    "spine_kind": "llm",
+    "spine_mirror": "工作记忆缺陷 ↔ LLM 无跨会话状态：都靠外部记忆补偿",
+    "adhd_pain": "工作记忆容量小、边做边忘",
+    "harness_parallel": "LLM 无跨会话状态，靠外部记忆/向量库续命",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 10.0,
+      "cross_platform": 6.6,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.3,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.9,
+    "rank": 63
+  },
+  {
+    "id": "prob-0532",
     "category_id": "lifestyle",
     "category_name": "生活方式",
     "category_name_en": "Lifestyle",
@@ -1848,10 +2280,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 7.9,
-    "rank": 52
+    "rank": 64
   },
   {
-    "id": "prob-0586",
+    "id": "prob-1069",
     "category_id": "lifestyle",
     "category_name": "生活方式",
     "category_name_en": "Lifestyle",
@@ -1884,10 +2316,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.9,
-    "rank": 53
+    "rank": 65
   },
   {
-    "id": "prob-0730",
+    "id": "prob-1213",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -1920,10 +2352,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.89,
-    "rank": 54
+    "rank": 66
   },
   {
-    "id": "prob-0868",
+    "id": "prob-1351",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -1956,10 +2388,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.89,
-    "rank": 55
+    "rank": 67
   },
   {
-    "id": "prob-0940",
+    "id": "prob-1423",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -1992,10 +2424,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.88,
-    "rank": 56
+    "rank": 68
   },
   {
-    "id": "prob-0952",
+    "id": "prob-1435",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -2028,10 +2460,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.88,
-    "rank": 57
+    "rank": 69
   },
   {
-    "id": "prob-1066",
+    "id": "prob-1549",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -2064,10 +2496,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.88,
-    "rank": 58
+    "rank": 70
   },
   {
-    "id": "prob-1286",
+    "id": "prob-1769",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2100,10 +2532,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.88,
-    "rank": 59
+    "rank": 71
   },
   {
-    "id": "prob-1691",
+    "id": "prob-2174",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2136,10 +2568,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.88,
-    "rank": 60
+    "rank": 72
   },
   {
-    "id": "prob-0148",
+    "id": "prob-0631",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2172,10 +2604,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.87,
-    "rank": 61
+    "rank": 73
   },
   {
-    "id": "prob-0149",
+    "id": "prob-0632",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2208,10 +2640,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.87,
-    "rank": 62
+    "rank": 74
   },
   {
-    "id": "prob-0863",
+    "id": "prob-1346",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -2244,10 +2676,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.87,
-    "rank": 63
+    "rank": 75
   },
   {
-    "id": "prob-1002",
+    "id": "prob-1485",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -2280,10 +2712,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.87,
-    "rank": 64
+    "rank": 76
   },
   {
-    "id": "prob-1855",
+    "id": "prob-2338",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2316,10 +2748,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.86,
-    "rank": 65
+    "rank": 77
   },
   {
-    "id": "prob-1859",
+    "id": "prob-2342",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2352,10 +2784,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.86,
-    "rank": 66
+    "rank": 78
   },
   {
-    "id": "prob-0590",
+    "id": "prob-0469",
+    "category_id": "emotion",
+    "category_name": "情绪调节",
+    "category_name_en": "Emotional Regulation",
+    "category_icon": "💚",
+    "category_color": "#10B981",
+    "keywords": [
+      "情绪管理",
+      "焦虑",
+      "自我接纳",
+      "心理健康",
+      "压力管理"
+    ],
+    "title": "ADHD 的前额叶执行功能缺陷与多巴胺奖赏通路、工作记忆容量有关，而有效的教育脚手架通常落在“最近发展区”内并随能力内化而逐步撤销。LLM harness 的提示压缩、动态权限和工具调用频率，能否对应到神经可塑性层面的“逐步撤除”指标，而不是简单减少 token 输出？",
+    "subtitle": "神经机制如何映射到脚手架的淡出算法",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的前额叶执行功能缺陷与多巴胺奖赏通路、工作记忆容量有关，而有效的教育脚手架通常落在“最近发展区”内并随能力内化而逐步撤销。LLM harness 的提示压缩、动态权限和工具调用频率，能否对应到神经可塑性层面的“逐步撤除”指标，而不是简单减少 token 输出？",
+    "spine": "拐杖与脚手架",
+    "spine_kind": "bridge",
+    "spine_mirror": "过度依赖风险：harness/工具应是会褪去的脚手架而非永久拐杖",
+    "adhd_pain": "怕过度依赖工具、又怕没有支撑就崩",
+    "harness_parallel": "harness 应是会褪去的脚手架，而非永久拐杖",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 8.45,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.45,
+      "practical_value": 5.85,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.85,
+    "rank": 79
+  },
+  {
+    "id": "prob-1073",
     "category_id": "lifestyle",
     "category_name": "生活方式",
     "category_name_en": "Lifestyle",
@@ -2388,10 +2856,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.84,
-    "rank": 67
+    "rank": 80
   },
   {
-    "id": "prob-1142",
+    "id": "prob-1625",
     "category_id": "community",
     "category_name": "社群与文化",
     "category_name_en": "Community & Culture",
@@ -2424,10 +2892,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.84,
-    "rank": 68
+    "rank": 81
   },
   {
-    "id": "prob-1283",
+    "id": "prob-1766",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2460,10 +2928,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.84,
-    "rank": 69
+    "rank": 82
   },
   {
-    "id": "prob-1694",
+    "id": "prob-2177",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2496,10 +2964,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.84,
-    "rank": 70
+    "rank": 83
   },
   {
-    "id": "prob-1852",
+    "id": "prob-0441",
+    "category_id": "focus",
+    "category_name": "专注力管理",
+    "category_name_en": "Focus Management",
+    "category_icon": "🎯",
+    "category_color": "#8B5CF6",
+    "keywords": [
+      "专注力",
+      "注意力",
+      "深度工作",
+      "心流",
+      "分心管理"
+    ],
+    "title": "ADHD 的‘目标漂移’是执行功能缺陷，而 LLM 的‘漂移’是概率生成的自然结果。把病理现象类比为系统特性，是否在美化 ADHD 或过度简化 AI 问题？",
+    "subtitle": "缺陷 vs 特性：病理类比是否不尊重患者？",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的‘目标漂移’是执行功能缺陷，而 LLM 的‘漂移’是概率生成的自然结果。把病理现象类比为系统特性，是否在美化 ADHD 或过度简化 AI 问题？",
+    "spine": "重锚定与目标漂移",
+    "spine_kind": "llm",
+    "spine_mirror": "分心/超聚焦跑偏 ↔ agent 长程目标漂移：都靠重锚定目标",
+    "adhd_pain": "分心走神或超聚焦跑偏，丢失目标",
+    "harness_parallel": "长程任务里 agent 会目标漂移，需要重锚定 system prompt",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.45,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.83,
+    "rank": 84
+  },
+  {
+    "id": "prob-2335",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2532,10 +3036,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.83,
-    "rank": 71
+    "rank": 85
   },
   {
-    "id": "prob-1854",
+    "id": "prob-2337",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2568,10 +3072,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.83,
-    "rank": 72
+    "rank": 86
   },
   {
-    "id": "prob-1856",
+    "id": "prob-2339",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2604,10 +3108,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.83,
-    "rank": 73
+    "rank": 87
   },
   {
-    "id": "prob-1858",
+    "id": "prob-2341",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2640,10 +3144,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.83,
-    "rank": 74
+    "rank": 88
   },
   {
-    "id": "evolved-emotion-1644",
+    "id": "evolved-emotion-2127",
     "title": "为什么用 Claude 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -2673,10 +3177,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.83,
-    "rank": 75
+    "rank": 89
   },
   {
-    "id": "prob-0007",
+    "id": "prob-0451",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "当我的执行功能崩溃时，比如无法启动一项任务，agent 的编排系统是如何模拟这种状态并尝试干预的？",
+    "subtitle": "从内部瘫痪到外部编排：ADHD 的启动障碍如何映射到 LLM 的 agent 调度层？",
+    "angle": "STORM视角轮",
+    "problem": "当我的执行功能崩溃时，比如无法启动一项任务，agent 的编排系统是如何模拟这种状态并尝试干预的？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.45,
+      "practical_value": 5.85,
+      "emotional_resonance": 7.28,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.82,
+    "rank": 90
+  },
+  {
+    "id": "prob-0490",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2709,10 +3249,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.82,
-    "rank": 76
+    "rank": 91
   },
   {
-    "id": "prob-1775",
+    "id": "prob-2258",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2745,10 +3285,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 77
+    "rank": 92
   },
   {
-    "id": "prob-1787",
+    "id": "prob-2270",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -2781,10 +3321,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 78
+    "rank": 93
   },
   {
-    "id": "prob-1813",
+    "id": "prob-2296",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -2817,10 +3357,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 79
+    "rank": 94
   },
   {
-    "id": "prob-1817",
+    "id": "prob-2300",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -2853,10 +3393,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 80
+    "rank": 95
   },
   {
-    "id": "prob-1827",
+    "id": "prob-2310",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2889,10 +3429,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 81
+    "rank": 96
   },
   {
-    "id": "prob-1831",
+    "id": "prob-2314",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -2925,10 +3465,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 82
+    "rank": 97
   },
   {
-    "id": "prob-1869",
+    "id": "prob-2352",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -2961,10 +3501,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 83
+    "rank": 98
   },
   {
-    "id": "prob-1873",
+    "id": "prob-2356",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -2997,10 +3537,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 84
+    "rank": 99
   },
   {
-    "id": "prob-1883",
+    "id": "prob-2366",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3033,10 +3573,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 85
+    "rank": 100
   },
   {
-    "id": "prob-1887",
+    "id": "prob-2370",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3069,10 +3609,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.82,
-    "rank": 86
+    "rank": 101
   },
   {
-    "id": "prob-0029",
+    "id": "prob-0512",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -3105,10 +3645,10 @@
       "share_potential": 8.11
     },
     "weighted_score": 7.81,
-    "rank": 87
+    "rank": 102
   },
   {
-    "id": "prob-1558",
+    "id": "prob-2041",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -3141,10 +3681,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.81,
-    "rank": 88
+    "rank": 103
   },
   {
-    "id": "prob-0154",
+    "id": "prob-0637",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3177,10 +3717,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 89
+    "rank": 104
   },
   {
-    "id": "prob-0158",
+    "id": "prob-0641",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3213,10 +3753,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.8,
-    "rank": 90
+    "rank": 105
   },
   {
-    "id": "prob-0160",
+    "id": "prob-0643",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3249,10 +3789,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 91
+    "rank": 106
   },
   {
-    "id": "prob-0316",
+    "id": "prob-0799",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3285,10 +3825,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 92
+    "rank": 107
   },
   {
-    "id": "prob-0664",
+    "id": "prob-1147",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3321,10 +3861,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 93
+    "rank": 108
   },
   {
-    "id": "prob-0676",
+    "id": "prob-1159",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3357,10 +3897,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 94
+    "rank": 109
   },
   {
-    "id": "prob-0790",
+    "id": "prob-1273",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3393,10 +3933,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 95
+    "rank": 110
   },
   {
-    "id": "prob-0802",
+    "id": "prob-1285",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -3429,10 +3969,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 96
+    "rank": 111
   },
   {
-    "id": "prob-0814",
+    "id": "prob-1297",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -3465,10 +4005,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 97
+    "rank": 112
   },
   {
-    "id": "prob-0928",
+    "id": "prob-1411",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -3501,10 +4041,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 98
+    "rank": 113
   },
   {
-    "id": "prob-1003",
+    "id": "prob-1486",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3537,10 +4077,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 99
+    "rank": 114
   },
   {
-    "id": "prob-1005",
+    "id": "prob-1488",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3573,10 +4113,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 100
+    "rank": 115
   },
   {
-    "id": "prob-1010",
+    "id": "prob-1493",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3609,10 +4149,118 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.8,
-    "rank": 101
+    "rank": 116
   },
   {
-    "id": "prob-0147",
+    "id": "prob-0421",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "ADHD 前额叶执行功能缺陷与 LLM 的规划模块之间，是否存在可量化的功能同构？比如任务分解的层级数量或错误率模式？",
+    "subtitle": "功能同构的量化指标",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 前额叶执行功能缺陷与 LLM 的规划模块之间，是否存在可量化的功能同构？比如任务分解的层级数量或错误率模式？",
+    "spine": "工具使用与认知卸载",
+    "spine_kind": "llm",
+    "spine_mirror": "把不擅长的精确状态外包 ↔ agent function calling",
+    "adhd_pain": "不擅长精确、重复、状态维护类任务",
+    "harness_parallel": "agent 通过 function calling 把精确计算外包给工具",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.85,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.79,
+    "rank": 117
+  },
+  {
+    "id": "prob-0473",
+    "category_id": "emotion",
+    "category_name": "情绪调节",
+    "category_name_en": "Emotional Regulation",
+    "category_icon": "💚",
+    "category_color": "#10B981",
+    "keywords": [
+      "情绪管理",
+      "焦虑",
+      "自我接纳",
+      "心理健康",
+      "压力管理"
+    ],
+    "title": "ADHD 是异质性神经发育障碍，很多支持性策略实际上是终身性的；而 LLM harness 作为商业软件，底层激励通常是用户留存和交互频次。如果“拐杖”比“脚手架”更能赚钱，你们凭什么认为技术系统会主动选择让自己褪色？",
+    "subtitle": "商业激励与技术架构是否注定制造永久拐杖",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 是异质性神经发育障碍，很多支持性策略实际上是终身性的；而 LLM harness 作为商业软件，底层激励通常是用户留存和交互频次。如果“拐杖”比“脚手架”更能赚钱，你们凭什么认为技术系统会主动选择让自己褪色？",
+    "spine": "拐杖与脚手架",
+    "spine_kind": "bridge",
+    "spine_mirror": "过度依赖风险：harness/工具应是会褪去的脚手架而非永久拐杖",
+    "adhd_pain": "怕过度依赖工具、又怕没有支撑就崩",
+    "harness_parallel": "harness 应是会褪去的脚手架，而非永久拐杖",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.0,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.05,
+      "practical_value": 6.2,
+      "emotional_resonance": 5.2,
+      "share_potential": 7.49
+    },
+    "weighted_score": 7.79,
+    "rank": 118
+  },
+  {
+    "id": "prob-0479",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "如果ADHD大脑是缺调度层的LLM，那么我能否设计一个类似ReAct或Plan-and-Execute的外部编排系统，为ADHD用户提供实时任务分解与提醒？这比现有ADHD管理工具有何优势？",
+    "subtitle": "构建外部调度层辅助ADHD执行功能",
+    "angle": "STORM视角轮",
+    "problem": "如果ADHD大脑是缺调度层的LLM，那么我能否设计一个类似ReAct或Plan-and-Execute的外部编排系统，为ADHD用户提供实时任务分解与提醒？这比现有ADHD管理工具有何优势？",
+    "spine": "ADHD 大脑与 LLM 的同构",
+    "spine_kind": "bridge",
+    "spine_mirror": "总纲：高产生成核心 + 缺失的执行调度层",
+    "adhd_pain": "想理解自己的大脑到底是怎么回事",
+    "harness_parallel": "LLM 是「高产但缺执行调度层的生成核心」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.85,
+      "practical_value": 6.2,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.79,
+    "rank": 119
+  },
+  {
+    "id": "prob-0630",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -3645,10 +4293,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 102
+    "rank": 120
   },
   {
-    "id": "prob-0311",
+    "id": "prob-0794",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3681,10 +4329,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.79,
-    "rank": 103
+    "rank": 121
   },
   {
-    "id": "prob-0449",
+    "id": "prob-0932",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -3717,10 +4365,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.79,
-    "rank": 104
+    "rank": 122
   },
   {
-    "id": "prob-0450",
+    "id": "prob-0933",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -3753,10 +4401,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 105
+    "rank": 123
   },
   {
-    "id": "prob-0946",
+    "id": "prob-1429",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3789,10 +4437,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 106
+    "rank": 124
   },
   {
-    "id": "prob-0958",
+    "id": "prob-1441",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3825,10 +4473,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 107
+    "rank": 125
   },
   {
-    "id": "prob-0964",
+    "id": "prob-1447",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3861,10 +4509,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 108
+    "rank": 126
   },
   {
-    "id": "prob-0970",
+    "id": "prob-1453",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3897,10 +4545,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 109
+    "rank": 127
   },
   {
-    "id": "prob-0976",
+    "id": "prob-1459",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3933,10 +4581,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 110
+    "rank": 128
   },
   {
-    "id": "prob-0982",
+    "id": "prob-1465",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -3969,10 +4617,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 111
+    "rank": 129
   },
   {
-    "id": "prob-0988",
+    "id": "prob-1471",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4005,10 +4653,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 112
+    "rank": 130
   },
   {
-    "id": "prob-0994",
+    "id": "prob-1477",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4041,10 +4689,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 113
+    "rank": 131
   },
   {
-    "id": "prob-1012",
+    "id": "prob-1495",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4077,10 +4725,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 114
+    "rank": 132
   },
   {
-    "id": "prob-1018",
+    "id": "prob-1501",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4113,10 +4761,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 115
+    "rank": 133
   },
   {
-    "id": "prob-1024",
+    "id": "prob-1507",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4149,10 +4797,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 116
+    "rank": 134
   },
   {
-    "id": "prob-1030",
+    "id": "prob-1513",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4185,10 +4833,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 117
+    "rank": 135
   },
   {
-    "id": "prob-1036",
+    "id": "prob-1519",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4221,10 +4869,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 118
+    "rank": 136
   },
   {
-    "id": "prob-1042",
+    "id": "prob-1525",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4257,10 +4905,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 119
+    "rank": 137
   },
   {
-    "id": "prob-1048",
+    "id": "prob-1531",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4293,10 +4941,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 120
+    "rank": 138
   },
   {
-    "id": "prob-1054",
+    "id": "prob-1537",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4329,10 +4977,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 121
+    "rank": 139
   },
   {
-    "id": "prob-1060",
+    "id": "prob-1543",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4365,10 +5013,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 122
+    "rank": 140
   },
   {
-    "id": "prob-1072",
+    "id": "prob-1555",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4401,10 +5049,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 123
+    "rank": 141
   },
   {
-    "id": "prob-1220",
+    "id": "prob-1703",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -4437,10 +5085,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 124
+    "rank": 142
   },
   {
-    "id": "prob-1232",
+    "id": "prob-1715",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -4473,10 +5121,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 125
+    "rank": 143
   },
   {
-    "id": "prob-1346",
+    "id": "prob-1829",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -4509,10 +5157,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 126
+    "rank": 144
   },
   {
-    "id": "prob-1554",
+    "id": "prob-2037",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -4545,10 +5193,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 127
+    "rank": 145
   },
   {
-    "id": "prob-1692",
+    "id": "prob-2175",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -4581,10 +5229,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 128
+    "rank": 146
   },
   {
-    "id": "prob-1866",
+    "id": "prob-2349",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -4617,10 +5265,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 129
+    "rank": 147
   },
   {
-    "id": "prob-1868",
+    "id": "prob-2351",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -4653,10 +5301,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 130
+    "rank": 148
   },
   {
-    "id": "prob-1870",
+    "id": "prob-2353",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -4689,10 +5337,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 131
+    "rank": 149
   },
   {
-    "id": "prob-1872",
+    "id": "prob-2355",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -4725,10 +5373,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 132
+    "rank": 150
   },
   {
-    "id": "prob-1880",
+    "id": "prob-2363",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4761,10 +5409,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 133
+    "rank": 151
   },
   {
-    "id": "prob-1882",
+    "id": "prob-2365",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4797,10 +5445,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 134
+    "rank": 152
   },
   {
-    "id": "prob-1884",
+    "id": "prob-2367",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4833,10 +5481,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 135
+    "rank": 153
   },
   {
-    "id": "prob-1886",
+    "id": "prob-2369",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -4869,10 +5517,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 136
+    "rank": 154
   },
   {
-    "id": "evolved-ai-tools-1575",
+    "id": "evolved-ai-tools-2058",
     "title": "为什么用 Claude 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -4902,10 +5550,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 137
+    "rank": 155
   },
   {
-    "id": "evolved-career-1712",
+    "id": "evolved-career-2195",
     "title": "为什么用 ChatGPT 治 ADHD 的卡在执行与落地，和给 agent 套 外部编排调度层 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -4935,10 +5583,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 138
+    "rank": 156
   },
   {
-    "id": "evolved-entrepreneurship-1735",
+    "id": "evolved-entrepreneurship-2218",
     "title": "为什么用 ChatGPT 治 ADHD 的想法落地难，和给 agent 套 外部编排调度层 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -4968,10 +5616,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 139
+    "rank": 157
   },
   {
-    "id": "evolved-lifestyle-1781",
+    "id": "evolved-lifestyle-2264",
     "title": "为什么用 ChatGPT 治 ADHD 的日常混乱不稳定，和给 agent 套 调低采样温度 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5001,10 +5649,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 140
+    "rank": 158
   },
   {
-    "id": "evolved-community-1804",
+    "id": "evolved-community-2287",
     "title": "为什么用 ChatGPT 治 ADHD 的感到孤立缺问责，和给 agent 套 human-in-the-loop 监督 是一回事？",
     "subtitle": "ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5034,10 +5682,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.79,
-    "rank": 141
+    "rank": 159
   },
   {
-    "id": "prob-0312",
+    "id": "prob-0394",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "ADHD 的外部记忆（如清单）需要主动维护和回顾，而 LLM 的向量库可以自动索引和被动检索。这种“主动 vs 被动”的差异是否意味着同构只是表面相似，实际解决路径完全不同？你们怎么回应“ADHD 缺的不是记忆，而是执行功能”这个反例？",
+    "subtitle": "被动检索 vs 主动维护是根本分歧",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的外部记忆（如清单）需要主动维护和回顾，而 LLM 的向量库可以自动索引和被动检索。这种“主动 vs 被动”的差异是否意味着同构只是表面相似，实际解决路径完全不同？你们怎么回应“ADHD 缺的不是记忆，而是执行功能”这个反例？",
+    "spine": "无状态与外部记忆",
+    "spine_kind": "llm",
+    "spine_mirror": "工作记忆缺陷 ↔ LLM 无跨会话状态：都靠外部记忆补偿",
+    "adhd_pain": "工作记忆容量小、边做边忘",
+    "harness_parallel": "LLM 无跨会话状态，靠外部记忆/向量库续命",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.05,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.76
+    },
+    "weighted_score": 7.78,
+    "rank": 160
+  },
+  {
+    "id": "prob-0795",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -5070,10 +5754,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 142
+    "rank": 161
   },
   {
-    "id": "prob-0726",
+    "id": "prob-1209",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -5106,10 +5790,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 143
+    "rank": 162
   },
   {
-    "id": "prob-0864",
+    "id": "prob-1347",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -5142,10 +5826,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 144
+    "rank": 163
   },
   {
-    "id": "prob-1824",
+    "id": "prob-2307",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5178,10 +5862,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 145
+    "rank": 164
   },
   {
-    "id": "prob-1826",
+    "id": "prob-2309",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5214,10 +5898,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 146
+    "rank": 165
   },
   {
-    "id": "prob-1828",
+    "id": "prob-2311",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5250,10 +5934,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 147
+    "rank": 166
   },
   {
-    "id": "prob-1830",
+    "id": "prob-2313",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5286,10 +5970,82 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.78,
-    "rank": 148
+    "rank": 167
   },
   {
-    "id": "prob-1953",
+    "id": "prob-0117",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "为什么你的旧法律粉丝不是包袱，而是第一批高压执行功能用户？",
+    "subtitle": "他们只是还没用 ADHD 命名自己的崩溃",
+    "angle": "问题XXX精修",
+    "problem": "为什么你的旧法律粉丝不是包袱，而是第一批高压执行功能用户？",
+    "spine": "ADHD 大脑与 LLM 的同构",
+    "spine_kind": "bridge",
+    "spine_mirror": "总纲：高产生成核心 + 缺失的执行调度层",
+    "adhd_pain": "想理解自己的大脑到底是怎么回事",
+    "harness_parallel": "LLM 是「高产但缺执行调度层的生成核心」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.8,
+      "practical_value": 5.5,
+      "emotional_resonance": 7.28,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.77,
+    "rank": 168
+  },
+  {
+    "id": "prob-0459",
+    "category_id": "career",
+    "category_name": "职场发展",
+    "category_name_en": "Career Development",
+    "category_icon": "💼",
+    "category_color": "#6366F1",
+    "keywords": [
+      "职场",
+      "求职",
+      "晋升",
+      "领导力",
+      "远程工作"
+    ],
+    "title": "你说 ADHD 大脑和 LLM 都需要外部编排，那我用各种待办清单、日程工具，为什么总是坚持不下来，而你们说的 agentic harness 就能让 LLM 持续执行长任务？",
+    "subtitle": "个人工具失效 vs. 系统编排有效",
+    "angle": "STORM视角轮",
+    "problem": "你说 ADHD 大脑和 LLM 都需要外部编排，那我用各种待办清单、日程工具，为什么总是坚持不下来，而你们说的 agentic harness 就能让 LLM 持续执行长任务？",
+    "spine": "生成核心与调度层",
+    "spine_kind": "bridge",
+    "spine_mirror": "把'智力/算力'与'编排/执行'解耦——两边瓶颈都在后者",
+    "adhd_pain": "有想法有能力，却卡在执行与落地",
+    "harness_parallel": "LLM 智力强但需要外部编排才能完成长任务",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 5.0,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.8,
+      "practical_value": 6.55,
+      "emotional_resonance": 5.2,
+      "share_potential": 8.11
+    },
+    "weighted_score": 7.77,
+    "rank": 169
+  },
+  {
+    "id": "prob-2436",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5322,10 +6078,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.77,
-    "rank": 149
+    "rank": 170
   },
   {
-    "id": "prob-1957",
+    "id": "prob-2440",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5358,10 +6114,82 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.77,
-    "rank": 150
+    "rank": 171
   },
   {
-    "id": "prob-1007",
+    "id": "prob-0095",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么ADHD最危险的不是拖延，而是把搭系统误认为推进——你以为自己在铺路，其实一直在修停车场",
+    "subtitle": "《问题096》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么ADHD最危险的不是拖延，而是把搭系统误认为推进——你以为自己在铺路，其实一直在修停车场",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.0,
+      "cross_platform": 6.6,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.76,
+    "rank": 172
+  },
+  {
+    "id": "prob-0432",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "Agentic harness 中的 reward signal 来自工具反馈或人工标注，而 ADHD 的行为维持依赖多巴胺奖赏。如果要设计一个 ADHD 可用的 planner-executor 循环，是否必须把每个子任务完成都变成可感知的即时奖励事件，又该如何避免 gamification 的耐受性？",
+    "subtitle": "奖励信号的工程化与神经科学对接",
+    "angle": "STORM视角轮",
+    "problem": "Agentic harness 中的 reward signal 来自工具反馈或人工标注，而 ADHD 的行为维持依赖多巴胺奖赏。如果要设计一个 ADHD 可用的 planner-executor 循环，是否必须把每个子任务完成都变成可感知的即时奖励事件，又该如何避免 gamification 的耐受性？",
+    "spine": "规划循环与任务分解",
+    "spine_kind": "llm",
+    "spine_mirror": "任务启动/拆解困难 ↔ agent planner-executor 循环",
+    "adhd_pain": "任务启动困难、不会拆解",
+    "harness_parallel": "agent 用 planner-executor 循环分解长任务",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.8,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.65,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.75,
+    "rank": 173
+  },
+  {
+    "id": "prob-1490",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -5394,10 +6222,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.75,
-    "rank": 151
+    "rank": 174
   },
   {
-    "id": "prob-1284",
+    "id": "prob-1767",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5430,10 +6258,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 152
+    "rank": 175
   },
   {
-    "id": "prob-1418",
+    "id": "prob-1901",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -5466,10 +6294,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 153
+    "rank": 176
   },
   {
-    "id": "prob-1693",
+    "id": "prob-2176",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5502,10 +6330,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 154
+    "rank": 177
   },
   {
-    "id": "prob-1695",
+    "id": "prob-2178",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5538,10 +6366,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 155
+    "rank": 178
   },
   {
-    "id": "evolved-focus-1598",
+    "id": "evolved-focus-2081",
     "title": "为什么用 Claude 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5571,10 +6399,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 156
+    "rank": 179
   },
   {
-    "id": "evolved-time-mgmt-1621",
+    "id": "evolved-time-mgmt-2104",
     "title": "为什么用 Claude 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5604,10 +6432,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 157
+    "rank": 180
   },
   {
-    "id": "evolved-learning-1667",
+    "id": "evolved-learning-2150",
     "title": "为什么用 Claude 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5637,10 +6465,46 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.75,
-    "rank": 158
+    "rank": 181
   },
   {
-    "id": "prob-1217",
+    "id": "prob-0130",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么正常人的时间管理会伤害 ADHD？",
+    "subtitle": "它假设你有稳定的内置时钟",
+    "angle": "问题XXX精修",
+    "problem": "为什么正常人的时间管理会伤害 ADHD？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.74,
+    "rank": 182
+  },
+  {
+    "id": "prob-1700",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5673,10 +6537,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.74,
-    "rank": 159
+    "rank": 183
   },
   {
-    "id": "prob-1229",
+    "id": "prob-1712",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5709,10 +6573,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.74,
-    "rank": 160
+    "rank": 184
   },
   {
-    "id": "prob-1343",
+    "id": "prob-1826",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -5745,10 +6609,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.74,
-    "rank": 161
+    "rank": 185
   },
   {
-    "id": "evolved-emotion-1633",
+    "id": "evolved-emotion-2116",
     "title": "为什么用 Goblin Tools 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
     "subtitle": "Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5778,10 +6642,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.74,
-    "rank": 162
+    "rank": 186
   },
   {
-    "id": "evolved-emotion-1635",
+    "id": "evolved-emotion-2118",
     "title": "为什么用 Motion 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
     "subtitle": "Motion 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5811,10 +6675,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.74,
-    "rank": 163
+    "rank": 187
   },
   {
-    "id": "evolved-emotion-1654",
+    "id": "evolved-emotion-2137",
     "title": "为什么用 Perplexity 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
     "subtitle": "Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -5844,10 +6708,82 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.74,
-    "rank": 164
+    "rank": 188
   },
   {
-    "id": "prob-0070",
+    "id": "prob-0270",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "为什么“焦虑/抑郁”常常是女性 ADHD 被误读后的表面标签？",
+    "subtitle": "《问题308》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么“焦虑/抑郁”常常是女性 ADHD 被误读后的表面标签？",
+    "spine": "ADHD 大脑与 LLM 的同构",
+    "spine_kind": "bridge",
+    "spine_mirror": "总纲：高产生成核心 + 缺失的执行调度层",
+    "adhd_pain": "想理解自己的大脑到底是怎么回事",
+    "harness_parallel": "LLM 是「高产但缺执行调度层的生成核心」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.4,
+      "practical_value": 5.5,
+      "emotional_resonance": 7.8,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.73,
+    "rank": 189
+  },
+  {
+    "id": "prob-0395",
+    "category_id": "focus",
+    "category_name": "专注力管理",
+    "category_name_en": "Focus Management",
+    "category_icon": "🎯",
+    "category_color": "#8B5CF6",
+    "keywords": [
+      "专注力",
+      "注意力",
+      "深度工作",
+      "心流",
+      "分心管理"
+    ],
+    "title": "如果我的 ADHD 大脑就像 LLM 的上下文窗口，为什么我的「系统提示」（睡眠、药物、环境设置）有时会被一个随机通知 token 劫持？这对 LLM harness 安全意味着什么：高优先级的系统指令是否应该有一个不可被覆盖的 attention mask 或保护头？",
+    "subtitle": "当低优先级 token 覆盖系统提示时",
+    "angle": "STORM视角轮",
+    "problem": "如果我的 ADHD 大脑就像 LLM 的上下文窗口，为什么我的「系统提示」（睡眠、药物、环境设置）有时会被一个随机通知 token 劫持？这对 LLM harness 安全意味着什么：高优先级的系统指令是否应该有一个不可被覆盖的 attention mask 或保护头？",
+    "spine": "上下文工程",
+    "spine_kind": "llm",
+    "spine_mirror": "易被环境带偏 ↔ 上下文窗口管理：都需主动管理'当下注意什么'",
+    "adhd_pain": "注意力容易被环境带偏",
+    "harness_parallel": "LLM 受上下文窗口内容左右，需要上下文工程",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.73,
+    "rank": 190
+  },
+  {
+    "id": "prob-0553",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -5880,10 +6816,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.73,
-    "rank": 165
+    "rank": 191
   },
   {
-    "id": "prob-0072",
+    "id": "prob-0555",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -5916,10 +6852,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.73,
-    "rank": 166
+    "rank": 192
   },
   {
-    "id": "prob-0086",
+    "id": "prob-0569",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -5952,10 +6888,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.73,
-    "rank": 167
+    "rank": 193
   },
   {
-    "id": "prob-0088",
+    "id": "prob-0571",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -5988,10 +6924,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.73,
-    "rank": 168
+    "rank": 194
   },
   {
-    "id": "prob-0238",
+    "id": "prob-0721",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6024,10 +6960,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.73,
-    "rank": 169
+    "rank": 195
   },
   {
-    "id": "prob-0240",
+    "id": "prob-0723",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6060,10 +6996,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.73,
-    "rank": 170
+    "rank": 196
   },
   {
-    "id": "prob-0944",
+    "id": "prob-1427",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6096,10 +7032,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.73,
-    "rank": 171
+    "rank": 197
   },
   {
-    "id": "prob-0956",
+    "id": "prob-1439",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6132,10 +7068,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.73,
-    "rank": 172
+    "rank": 198
   },
   {
-    "id": "prob-1070",
+    "id": "prob-1553",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6168,10 +7104,82 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.73,
-    "rank": 173
+    "rank": 199
   },
   {
-    "id": "prob-0454",
+    "id": "prob-0053",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么ADHD的\"拖延清单\"比\"待办清单\"更诚实——你逃避的事才是你的真需求",
+    "subtitle": "《问题054》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么ADHD的\"拖延清单\"比\"待办清单\"更诚实——你逃避的事才是你的真需求",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.0,
+      "cross_platform": 6.6,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.65,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.76
+    },
+    "weighted_score": 7.72,
+    "rank": 200
+  },
+  {
+    "id": "prob-0082",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "为什么ADHD的反复确认不是焦虑，是工作记忆校验和？",
+    "subtitle": "你不是不信任自己，是缓存太容易掉线",
+    "angle": "问题XXX精修",
+    "problem": "为什么ADHD的反复确认不是焦虑，是工作记忆校验和？",
+    "spine": "无状态与外部记忆",
+    "spine_kind": "llm",
+    "spine_mirror": "工作记忆缺陷 ↔ LLM 无跨会话状态：都靠外部记忆补偿",
+    "adhd_pain": "工作记忆容量小、边做边忘",
+    "harness_parallel": "LLM 无跨会话状态，靠外部记忆/向量库续命",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.6,
+      "practical_value": 6.0,
+      "emotional_resonance": 7.8,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.72,
+    "rank": 201
+  },
+  {
+    "id": "prob-0937",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -6204,10 +7212,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 174
+    "rank": 202
   },
   {
-    "id": "prob-0458",
+    "id": "prob-0941",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -6240,10 +7248,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 175
+    "rank": 203
   },
   {
-    "id": "prob-1144",
+    "id": "prob-1627",
     "category_id": "community",
     "category_name": "社群与文化",
     "category_name_en": "Community & Culture",
@@ -6276,10 +7284,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 176
+    "rank": 204
   },
   {
-    "id": "prob-1282",
+    "id": "prob-1765",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -6312,10 +7320,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 177
+    "rank": 205
   },
   {
-    "id": "prob-1420",
+    "id": "prob-1903",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -6348,10 +7356,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 178
+    "rank": 206
   },
   {
-    "id": "prob-1562",
+    "id": "prob-2045",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -6384,10 +7392,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 179
+    "rank": 207
   },
   {
-    "id": "prob-1696",
+    "id": "prob-2179",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -6420,10 +7428,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 180
+    "rank": 208
   },
   {
-    "id": "evolved-ai-tools-1564",
+    "id": "evolved-ai-tools-2047",
     "title": "为什么用 Goblin Tools 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
     "subtitle": "Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -6453,10 +7461,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 181
+    "rank": 209
   },
   {
-    "id": "evolved-ai-tools-1566",
+    "id": "evolved-ai-tools-2049",
     "title": "为什么用 Motion 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
     "subtitle": "Motion 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -6486,10 +7494,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 182
+    "rank": 210
   },
   {
-    "id": "evolved-ai-tools-1585",
+    "id": "evolved-ai-tools-2068",
     "title": "为什么用 Perplexity 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
     "subtitle": "Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -6519,10 +7527,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.72,
-    "rank": 183
+    "rank": 211
   },
   {
-    "id": "prob-0066",
+    "id": "prob-0549",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6555,10 +7563,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 184
+    "rank": 212
   },
   {
-    "id": "prob-0082",
+    "id": "prob-0565",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6591,10 +7599,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 185
+    "rank": 213
   },
   {
-    "id": "prob-0151",
+    "id": "prob-0634",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6627,10 +7635,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 186
+    "rank": 214
   },
   {
-    "id": "prob-0153",
+    "id": "prob-0636",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6663,10 +7671,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 187
+    "rank": 215
   },
   {
-    "id": "prob-0234",
+    "id": "prob-0717",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6699,10 +7707,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 188
+    "rank": 216
   },
   {
-    "id": "prob-0250",
+    "id": "prob-0733",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6735,10 +7743,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 189
+    "rank": 217
   },
   {
-    "id": "prob-0262",
+    "id": "prob-0745",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6771,10 +7779,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 190
+    "rank": 218
   },
   {
-    "id": "prob-0320",
+    "id": "prob-0803",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6807,10 +7815,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 191
+    "rank": 219
   },
   {
-    "id": "prob-0376",
+    "id": "prob-0859",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -6843,10 +7851,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 192
+    "rank": 220
   },
   {
-    "id": "prob-0587",
+    "id": "prob-1070",
     "category_id": "lifestyle",
     "category_name": "生活方式",
     "category_name_en": "Lifestyle",
@@ -6879,10 +7887,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.71,
-    "rank": 193
+    "rank": 221
   },
   {
-    "id": "prob-0727",
+    "id": "prob-1210",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6915,10 +7923,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 194
+    "rank": 222
   },
   {
-    "id": "prob-0729",
+    "id": "prob-1212",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6951,10 +7959,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 195
+    "rank": 223
   },
   {
-    "id": "prob-0731",
+    "id": "prob-1214",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -6987,10 +7995,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.71,
-    "rank": 196
+    "rank": 224
   },
   {
-    "id": "prob-0734",
+    "id": "prob-1217",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7023,10 +8031,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 197
+    "rank": 225
   },
   {
-    "id": "prob-0865",
+    "id": "prob-1348",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -7059,10 +8067,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 198
+    "rank": 226
   },
   {
-    "id": "prob-0867",
+    "id": "prob-1350",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -7095,10 +8103,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 199
+    "rank": 227
   },
   {
-    "id": "prob-0872",
+    "id": "prob-1355",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -7131,10 +8139,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 200
+    "rank": 228
   },
   {
-    "id": "prob-1139",
+    "id": "prob-1622",
     "category_id": "community",
     "category_name": "社群与文化",
     "category_name_en": "Community & Culture",
@@ -7167,10 +8175,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.71,
-    "rank": 201
+    "rank": 229
   },
   {
-    "id": "prob-1415",
+    "id": "prob-1898",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -7203,10 +8211,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.71,
-    "rank": 202
+    "rank": 230
   },
   {
-    "id": "prob-1492",
+    "id": "prob-1975",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -7239,10 +8247,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 203
+    "rank": 231
   },
   {
-    "id": "prob-1504",
+    "id": "prob-1987",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -7275,10 +8283,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 204
+    "rank": 232
   },
   {
-    "id": "prob-1618",
+    "id": "prob-2101",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -7311,10 +8319,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.71,
-    "rank": 205
+    "rank": 233
   },
   {
-    "id": "evolved-parenting-1759",
+    "id": "evolved-parenting-2242",
     "title": "为什么用 Claude 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -7344,10 +8352,82 @@
       "share_potential": 6.24
     },
     "weighted_score": 7.71,
-    "rank": 206
+    "rank": 234
   },
   {
-    "id": "prob-0058",
+    "id": "prob-0431",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "LLM agents 常出现 plan collapse（中间步骤偏离目标）和 looping（重复调用同一工具），这与 ADHD 的‘目标漂移’和‘反复打开同一标签页’高度相似。我们能否把 agent 的 recovery 策略（重规划、反射、降级）直接迁移为 ADHD 辅助工具的设计模式？",
+    "subtitle": "失败模式的对齐与可迁移干预",
+    "angle": "STORM视角轮",
+    "problem": "LLM agents 常出现 plan collapse（中间步骤偏离目标）和 looping（重复调用同一工具），这与 ADHD 的‘目标漂移’和‘反复打开同一标签页’高度相似。我们能否把 agent 的 recovery 策略（重规划、反射、降级）直接迁移为 ADHD 辅助工具的设计模式？",
+    "spine": "规划循环与任务分解",
+    "spine_kind": "llm",
+    "spine_mirror": "任务启动/拆解困难 ↔ agent planner-executor 循环",
+    "adhd_pain": "任务启动困难、不会拆解",
+    "harness_parallel": "agent 用 planner-executor 循环分解长任务",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 5.0,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.4,
+      "practical_value": 7.05,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.7,
+    "rank": 235
+  },
+  {
+    "id": "prob-0437",
+    "category_id": "focus",
+    "category_name": "专注力管理",
+    "category_name_en": "Focus Management",
+    "category_icon": "🎯",
+    "category_color": "#8B5CF6",
+    "keywords": [
+      "专注力",
+      "注意力",
+      "深度工作",
+      "心流",
+      "分心管理"
+    ],
+    "title": "ADHD 的‘目标漂移’涉及前额叶-纹状体环路多巴胺失调，LLM 的‘漂移’本质是 Transformer 注意力分布变化。这两个机制是否只是表面相似，而非真正的同构？",
+    "subtitle": "机制鸿沟：神经递质 vs 注意力权重，同构是否成立？",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的‘目标漂移’涉及前额叶-纹状体环路多巴胺失调，LLM 的‘漂移’本质是 Transformer 注意力分布变化。这两个机制是否只是表面相似，而非真正的同构？",
+    "spine": "重锚定与目标漂移",
+    "spine_kind": "llm",
+    "spine_mirror": "分心/超聚焦跑偏 ↔ agent 长程目标漂移：都靠重锚定目标",
+    "adhd_pain": "分心走神或超聚焦跑偏，丢失目标",
+    "harness_parallel": "长程任务里 agent 会目标漂移，需要重锚定 system prompt",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.45,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.7,
+    "rank": 236
+  },
+  {
+    "id": "prob-0541",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -7380,10 +8460,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 207
+    "rank": 237
   },
   {
-    "id": "prob-0588",
+    "id": "prob-1071",
     "category_id": "lifestyle",
     "category_name": "生活方式",
     "category_name_en": "Lifestyle",
@@ -7416,10 +8496,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 208
+    "rank": 238
   },
   {
-    "id": "prob-0670",
+    "id": "prob-1153",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7452,10 +8532,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 209
+    "rank": 239
   },
   {
-    "id": "prob-0682",
+    "id": "prob-1165",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7488,10 +8568,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 210
+    "rank": 240
   },
   {
-    "id": "prob-0688",
+    "id": "prob-1171",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7524,10 +8604,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 211
+    "rank": 241
   },
   {
-    "id": "prob-0694",
+    "id": "prob-1177",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7560,10 +8640,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 212
+    "rank": 242
   },
   {
-    "id": "prob-0700",
+    "id": "prob-1183",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7596,10 +8676,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 213
+    "rank": 243
   },
   {
-    "id": "prob-0706",
+    "id": "prob-1189",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7632,10 +8712,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 214
+    "rank": 244
   },
   {
-    "id": "prob-0712",
+    "id": "prob-1195",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7668,10 +8748,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 215
+    "rank": 245
   },
   {
-    "id": "prob-0718",
+    "id": "prob-1201",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7704,10 +8784,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 216
+    "rank": 246
   },
   {
-    "id": "prob-0736",
+    "id": "prob-1219",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7740,10 +8820,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 217
+    "rank": 247
   },
   {
-    "id": "prob-0742",
+    "id": "prob-1225",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7776,10 +8856,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 218
+    "rank": 248
   },
   {
-    "id": "prob-0748",
+    "id": "prob-1231",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7812,10 +8892,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 219
+    "rank": 249
   },
   {
-    "id": "prob-0754",
+    "id": "prob-1237",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7848,10 +8928,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 220
+    "rank": 250
   },
   {
-    "id": "prob-0760",
+    "id": "prob-1243",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7884,10 +8964,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 221
+    "rank": 251
   },
   {
-    "id": "prob-0766",
+    "id": "prob-1249",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7920,10 +9000,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 222
+    "rank": 252
   },
   {
-    "id": "prob-0772",
+    "id": "prob-1255",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7956,10 +9036,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 223
+    "rank": 253
   },
   {
-    "id": "prob-0778",
+    "id": "prob-1261",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -7992,10 +9072,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 224
+    "rank": 254
   },
   {
-    "id": "prob-0784",
+    "id": "prob-1267",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -8028,10 +9108,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 225
+    "rank": 255
   },
   {
-    "id": "prob-0796",
+    "id": "prob-1279",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -8064,10 +9144,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 226
+    "rank": 256
   },
   {
-    "id": "prob-0808",
+    "id": "prob-1291",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8100,10 +9180,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 227
+    "rank": 257
   },
   {
-    "id": "prob-0820",
+    "id": "prob-1303",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8136,10 +9216,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 228
+    "rank": 258
   },
   {
-    "id": "prob-0826",
+    "id": "prob-1309",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8172,10 +9252,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 229
+    "rank": 259
   },
   {
-    "id": "prob-0832",
+    "id": "prob-1315",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8208,10 +9288,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 230
+    "rank": 260
   },
   {
-    "id": "prob-0838",
+    "id": "prob-1321",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8244,10 +9324,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 231
+    "rank": 261
   },
   {
-    "id": "prob-0844",
+    "id": "prob-1327",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8280,10 +9360,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 232
+    "rank": 262
   },
   {
-    "id": "prob-0850",
+    "id": "prob-1333",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8316,10 +9396,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 233
+    "rank": 263
   },
   {
-    "id": "prob-0856",
+    "id": "prob-1339",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8352,10 +9432,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 234
+    "rank": 264
   },
   {
-    "id": "prob-0874",
+    "id": "prob-1357",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8388,10 +9468,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 235
+    "rank": 265
   },
   {
-    "id": "prob-0880",
+    "id": "prob-1363",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8424,10 +9504,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 236
+    "rank": 266
   },
   {
-    "id": "prob-0886",
+    "id": "prob-1369",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8460,10 +9540,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 237
+    "rank": 267
   },
   {
-    "id": "prob-0892",
+    "id": "prob-1375",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8496,10 +9576,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 238
+    "rank": 268
   },
   {
-    "id": "prob-0898",
+    "id": "prob-1381",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8532,10 +9612,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 239
+    "rank": 269
   },
   {
-    "id": "prob-0904",
+    "id": "prob-1387",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8568,10 +9648,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 240
+    "rank": 270
   },
   {
-    "id": "prob-0910",
+    "id": "prob-1393",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8604,10 +9684,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 241
+    "rank": 271
   },
   {
-    "id": "prob-0916",
+    "id": "prob-1399",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8640,10 +9720,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 242
+    "rank": 272
   },
   {
-    "id": "prob-0922",
+    "id": "prob-1405",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8676,10 +9756,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 243
+    "rank": 273
   },
   {
-    "id": "prob-0934",
+    "id": "prob-1417",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -8712,10 +9792,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 244
+    "rank": 274
   },
   {
-    "id": "prob-1140",
+    "id": "prob-1623",
     "category_id": "community",
     "category_name": "社群与文化",
     "category_name_en": "Community & Culture",
@@ -8748,10 +9828,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 245
+    "rank": 275
   },
   {
-    "id": "prob-1226",
+    "id": "prob-1709",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -8784,10 +9864,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 246
+    "rank": 276
   },
   {
-    "id": "prob-1238",
+    "id": "prob-1721",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -8820,10 +9900,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 247
+    "rank": 277
   },
   {
-    "id": "prob-1244",
+    "id": "prob-1727",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -8856,10 +9936,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 248
+    "rank": 278
   },
   {
-    "id": "prob-1250",
+    "id": "prob-1733",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -8892,10 +9972,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 249
+    "rank": 279
   },
   {
-    "id": "prob-1256",
+    "id": "prob-1739",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -8928,10 +10008,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 250
+    "rank": 280
   },
   {
-    "id": "prob-1262",
+    "id": "prob-1745",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -8964,10 +10044,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 251
+    "rank": 281
   },
   {
-    "id": "prob-1268",
+    "id": "prob-1751",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9000,10 +10080,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 252
+    "rank": 282
   },
   {
-    "id": "prob-1274",
+    "id": "prob-1757",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9036,10 +10116,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 253
+    "rank": 283
   },
   {
-    "id": "prob-1292",
+    "id": "prob-1775",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9072,10 +10152,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 254
+    "rank": 284
   },
   {
-    "id": "prob-1298",
+    "id": "prob-1781",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9108,10 +10188,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 255
+    "rank": 285
   },
   {
-    "id": "prob-1304",
+    "id": "prob-1787",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9144,10 +10224,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 256
+    "rank": 286
   },
   {
-    "id": "prob-1310",
+    "id": "prob-1793",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9180,10 +10260,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 257
+    "rank": 287
   },
   {
-    "id": "prob-1316",
+    "id": "prob-1799",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9216,10 +10296,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 258
+    "rank": 288
   },
   {
-    "id": "prob-1322",
+    "id": "prob-1805",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9252,10 +10332,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 259
+    "rank": 289
   },
   {
-    "id": "prob-1328",
+    "id": "prob-1811",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9288,10 +10368,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 260
+    "rank": 290
   },
   {
-    "id": "prob-1334",
+    "id": "prob-1817",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9324,10 +10404,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 261
+    "rank": 291
   },
   {
-    "id": "prob-1340",
+    "id": "prob-1823",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9360,10 +10440,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 262
+    "rank": 292
   },
   {
-    "id": "prob-1352",
+    "id": "prob-1835",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9396,10 +10476,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 263
+    "rank": 293
   },
   {
-    "id": "prob-1416",
+    "id": "prob-1899",
     "category_id": "career",
     "category_name": "职场发展",
     "category_name_en": "Career Development",
@@ -9432,10 +10512,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 264
+    "rank": 294
   },
   {
-    "id": "prob-1768",
+    "id": "prob-2251",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -9468,10 +10548,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 265
+    "rank": 295
   },
   {
-    "id": "prob-1774",
+    "id": "prob-2257",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -9504,10 +10584,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 266
+    "rank": 296
   },
   {
-    "id": "prob-1776",
+    "id": "prob-2259",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -9540,10 +10620,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 267
+    "rank": 297
   },
   {
-    "id": "prob-1780",
+    "id": "prob-2263",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -9576,10 +10656,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 268
+    "rank": 298
   },
   {
-    "id": "prob-1786",
+    "id": "prob-2269",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -9612,10 +10692,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 269
+    "rank": 299
   },
   {
-    "id": "prob-1788",
+    "id": "prob-2271",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -9648,10 +10728,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 270
+    "rank": 300
   },
   {
-    "id": "prob-1810",
+    "id": "prob-2293",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -9684,10 +10764,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 271
+    "rank": 301
   },
   {
-    "id": "prob-1812",
+    "id": "prob-2295",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -9720,10 +10800,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 272
+    "rank": 302
   },
   {
-    "id": "prob-1814",
+    "id": "prob-2297",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -9756,10 +10836,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 273
+    "rank": 303
   },
   {
-    "id": "prob-1816",
+    "id": "prob-2299",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -9792,10 +10872,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 274
+    "rank": 304
   },
   {
-    "id": "prob-1909",
+    "id": "prob-2392",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9828,10 +10908,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 275
+    "rank": 305
   },
   {
-    "id": "prob-1913",
+    "id": "prob-2396",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9864,10 +10944,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 276
+    "rank": 306
   },
   {
-    "id": "prob-1917",
+    "id": "prob-2400",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9900,10 +10980,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 277
+    "rank": 307
   },
   {
-    "id": "prob-1919",
+    "id": "prob-2402",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9936,10 +11016,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 278
+    "rank": 308
   },
   {
-    "id": "prob-1921",
+    "id": "prob-2404",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -9972,10 +11052,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 279
+    "rank": 309
   },
   {
-    "id": "prob-1939",
+    "id": "prob-2422",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -10008,10 +11088,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 280
+    "rank": 310
   },
   {
-    "id": "prob-1943",
+    "id": "prob-2426",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -10044,10 +11124,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 281
+    "rank": 311
   },
   {
-    "id": "evolved-science-1690",
+    "id": "evolved-science-2173",
     "title": "为什么用 Claude 治 ADHD 的想理解自己的大脑，和给 agent 套 生成核心 + 缺失的执行层 是一回事？",
     "subtitle": "Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10077,10 +11157,154 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.7,
-    "rank": 282
+    "rank": 312
   },
   {
-    "id": "prob-0941",
+    "id": "prob-0319",
+    "category_id": "ai-tools",
+    "category_name": "AI工具实战",
+    "category_name_en": "AI Tools in Practice",
+    "category_icon": "🛠️",
+    "category_color": "#3B82F6",
+    "keywords": [
+      "AI工具",
+      "效率工具",
+      "ADHD辅助",
+      "智能助手",
+      "自动化"
+    ],
+    "title": "为什么一个人管理多个 AI Agent，本身就是一项执行功能任务？",
+    "subtitle": "《问题357》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么一个人管理多个 AI Agent，本身就是一项执行功能任务？",
+    "spine": "生成核心与调度层",
+    "spine_kind": "bridge",
+    "spine_mirror": "把'智力/算力'与'编排/执行'解耦——两边瓶颈都在后者",
+    "adhd_pain": "有想法有能力，却卡在执行与落地",
+    "harness_parallel": "LLM 智力强但需要外部编排才能完成长任务",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.4,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.69,
+    "rank": 313
+  },
+  {
+    "id": "prob-0342",
+    "category_id": "science",
+    "category_name": "科学研究",
+    "category_name_en": "Scientific Research",
+    "category_icon": "🔬",
+    "category_color": "#EF4444",
+    "keywords": [
+      "脑科学",
+      "研究",
+      "诊断",
+      "治疗",
+      "神经科学"
+    ],
+    "title": "为什么“认知卸载”一旦习惯化，就可能变成不可逆的依赖？",
+    "subtitle": "《问题380》人工精修选题，双域证据作答。",
+    "angle": "问题XXX精修",
+    "problem": "为什么“认知卸载”一旦习惯化，就可能变成不可逆的依赖？",
+    "spine": "ADHD 大脑与 LLM 的同构",
+    "spine_kind": "bridge",
+    "spine_mirror": "总纲：高产生成核心 + 缺失的执行调度层",
+    "adhd_pain": "想理解自己的大脑到底是怎么回事",
+    "harness_parallel": "LLM 是「高产但缺执行调度层的生成核心」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.0,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.8,
+      "practical_value": 5.5,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.68,
+    "rank": 314
+  },
+  {
+    "id": "prob-0399",
+    "category_id": "focus",
+    "category_name": "专注力管理",
+    "category_name_en": "Focus Management",
+    "category_icon": "🎯",
+    "category_color": "#8B5CF6",
+    "keywords": [
+      "专注力",
+      "注意力",
+      "深度工作",
+      "心流",
+      "分心管理"
+    ],
+    "title": "我们用系统提示、RAG 和工具循环来让 LLM 保持任务；能否把这些反向映射为 ADHD 脚手架：系统提示 → 晨间意图仪式，RAG → 可检索笔记/物理 token，工具循环 → 身体 doubling/清单？当人类「注意力分配器」不可微时，失败模式会是什么？",
+    "subtitle": "把 LLM 上下文控制工程化到日常生活",
+    "angle": "STORM视角轮",
+    "problem": "我们用系统提示、RAG 和工具循环来让 LLM 保持任务；能否把这些反向映射为 ADHD 脚手架：系统提示 → 晨间意图仪式，RAG → 可检索笔记/物理 token，工具循环 → 身体 doubling/清单？当人类「注意力分配器」不可微时，失败模式会是什么？",
+    "spine": "上下文工程",
+    "spine_kind": "llm",
+    "spine_mirror": "易被环境带偏 ↔ 上下文窗口管理：都需主动管理'当下注意什么'",
+    "adhd_pain": "注意力容易被环境带偏",
+    "harness_parallel": "LLM 受上下文窗口内容左右，需要上下文工程",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 5.0,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 8.65,
+      "practical_value": 7.05,
+      "emotional_resonance": 5.2,
+      "share_potential": 8.11
+    },
+    "weighted_score": 7.68,
+    "rank": 315
+  },
+  {
+    "id": "prob-0445",
+    "category_id": "community",
+    "category_name": "社群与文化",
+    "category_name_en": "Community & Culture",
+    "category_icon": "🌍",
+    "category_color": "#84CC16",
+    "keywords": [
+      "社群",
+      "文化",
+      "去污名化",
+      "代言",
+      "多元共融"
+    ],
+    "title": "ADHD 的外部支架通过纹状体的多巴胺信号增强任务显著性；身边有人确实会改变神经增益。但 LLM 没有神经调质系统，human-in-the-loop 真的能产生同质的“增益信号”，还是这个类比只能停留在行为层面？",
+    "subtitle": "外部在场是否产生可比的神经增益信号",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 的外部支架通过纹状体的多巴胺信号增强任务显著性；身边有人确实会改变神经增益。但 LLM 没有神经调质系统，human-in-the-loop 真的能产生同质的“增益信号”，还是这个类比只能停留在行为层面？",
+    "spine": "人在回路与身体在场",
+    "spine_kind": "llm",
+    "spine_mirror": "身体在场效应(body doubling) ↔ human-in-the-loop 监督",
+    "adhd_pain": "独自做事缺乏问责、容易放弃",
+    "harness_parallel": "高风险 agent 需要 human-in-the-loop 监督",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.5,
+      "cross_platform": 6.1,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 5.85,
+      "emotional_resonance": 6.76,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.68,
+    "rank": 316
+  },
+  {
+    "id": "prob-1424",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -10113,10 +11337,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.68,
-    "rank": 283
+    "rank": 317
   },
   {
-    "id": "prob-0953",
+    "id": "prob-1436",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -10149,10 +11373,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.68,
-    "rank": 284
+    "rank": 318
   },
   {
-    "id": "prob-1067",
+    "id": "prob-1550",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -10185,10 +11409,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.68,
-    "rank": 285
+    "rank": 319
   },
   {
-    "id": "evolved-focus-1587",
+    "id": "evolved-focus-2070",
     "title": "为什么用 Goblin Tools 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
     "subtitle": "Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10218,10 +11442,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 286
+    "rank": 320
   },
   {
-    "id": "evolved-focus-1589",
+    "id": "evolved-focus-2072",
     "title": "为什么用 Motion 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
     "subtitle": "Motion 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10251,10 +11475,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 287
+    "rank": 321
   },
   {
-    "id": "evolved-focus-1608",
+    "id": "evolved-focus-2091",
     "title": "为什么用 Perplexity 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
     "subtitle": "Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10284,10 +11508,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 288
+    "rank": 322
   },
   {
-    "id": "evolved-time-mgmt-1610",
+    "id": "evolved-time-mgmt-2093",
     "title": "为什么用 Goblin Tools 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
     "subtitle": "Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10317,10 +11541,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 289
+    "rank": 323
   },
   {
-    "id": "evolved-time-mgmt-1612",
+    "id": "evolved-time-mgmt-2095",
     "title": "为什么用 Motion 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
     "subtitle": "Motion 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10350,10 +11574,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 290
+    "rank": 324
   },
   {
-    "id": "evolved-time-mgmt-1631",
+    "id": "evolved-time-mgmt-2114",
     "title": "为什么用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
     "subtitle": "Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10383,10 +11607,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 291
+    "rank": 325
   },
   {
-    "id": "evolved-learning-1656",
+    "id": "evolved-learning-2139",
     "title": "为什么用 Goblin Tools 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
     "subtitle": "Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10416,10 +11640,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 292
+    "rank": 326
   },
   {
-    "id": "evolved-learning-1658",
+    "id": "evolved-learning-2141",
     "title": "为什么用 Motion 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
     "subtitle": "Motion 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10449,10 +11673,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 293
+    "rank": 327
   },
   {
-    "id": "evolved-learning-1677",
+    "id": "evolved-learning-2160",
     "title": "为什么用 Perplexity 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
     "subtitle": "Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
     "angle": "反直觉同构",
@@ -10482,10 +11706,82 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.68,
-    "rank": 294
+    "rank": 328
   },
   {
-    "id": "prob-1285",
+    "id": "prob-0076",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么ADHD的完成恐惧比拖延更深一层？",
+    "subtitle": "你不是怕开始，是怕作品进入现实被审判",
+    "angle": "问题XXX精修",
+    "problem": "为什么ADHD的完成恐惧比拖延更深一层？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 7.0,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.0,
+      "emotional_resonance": 5.2,
+      "share_potential": 5.2
+    },
+    "weighted_score": 7.67,
+    "rank": 329
+  },
+  {
+    "id": "prob-0442",
+    "category_id": "focus",
+    "category_name": "专注力管理",
+    "category_name_en": "Focus Management",
+    "category_icon": "🎯",
+    "category_color": "#8B5CF6",
+    "keywords": [
+      "专注力",
+      "注意力",
+      "深度工作",
+      "心流",
+      "分心管理"
+    ],
+    "title": "ADHD 患者用‘重锚定’策略（如番茄钟）成功率有限，而 LLM 的 prompt 重锚几乎总是有效。这个类比是否忽略了人类意志力的脆弱性，让工程师低估了真实世界的难度？",
+    "subtitle": "有效性差距：prompt 重锚几乎完美，人类重锚为何屡败？",
+    "angle": "STORM视角轮",
+    "problem": "ADHD 患者用‘重锚定’策略（如番茄钟）成功率有限，而 LLM 的 prompt 重锚几乎总是有效。这个类比是否忽略了人类意志力的脆弱性，让工程师低估了真实世界的难度？",
+    "spine": "重锚定与目标漂移",
+    "spine_kind": "llm",
+    "spine_mirror": "分心/超聚焦跑偏 ↔ agent 长程目标漂移：都靠重锚定目标",
+    "adhd_pain": "分心走神或超聚焦跑偏，丢失目标",
+    "harness_parallel": "长程任务里 agent 会目标漂移，需要重锚定 system prompt",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 6.0,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.05,
+      "practical_value": 6.35,
+      "emotional_resonance": 5.2,
+      "share_potential": 6.24
+    },
+    "weighted_score": 7.67,
+    "rank": 330
+  },
+  {
+    "id": "prob-1768",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10518,10 +11814,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.67,
-    "rank": 295
+    "rank": 331
   },
   {
-    "id": "prob-1287",
+    "id": "prob-1770",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10554,10 +11850,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.67,
-    "rank": 296
+    "rank": 332
   },
   {
-    "id": "prob-1697",
+    "id": "prob-2180",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10590,10 +11886,46 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.67,
-    "rank": 297
+    "rank": 333
   },
   {
-    "id": "prob-0024",
+    "id": "prob-0086",
+    "category_id": "time-mgmt",
+    "category_name": "时间管理",
+    "category_name_en": "Time Management",
+    "category_icon": "⏰",
+    "category_color": "#F59E0B",
+    "keywords": [
+      "时间管理",
+      "任务规划",
+      "日程安排",
+      "拖延",
+      "优先级"
+    ],
+    "title": "为什么ADHD截止日期前才动是延迟最大化期望效用的理性策略？",
+    "subtitle": "你不是只会拖，是系统在等足够强的启动信号",
+    "angle": "问题XXX精修",
+    "problem": "为什么ADHD截止日期前才动是延迟最大化期望效用的理性策略？",
+    "spine": "外部执行功能层",
+    "spine_kind": "bridge",
+    "spine_mirror": "执行功能 / 工作记忆 ↔ agent 的外部记忆与编排层",
+    "adhd_pain": "执行功能（计划/组织/启动）先天偏弱",
+    "harness_parallel": "agent 的编排/记忆/工具层就是「外部执行功能」",
+    "is_problem_driven": true,
+    "scores": {
+      "seo_potential": 5.0,
+      "cross_platform": 6.9,
+      "evidence_strength": 10.0,
+      "isomorphism_alignment": 9.0,
+      "practical_value": 6.7,
+      "emotional_resonance": 5.2,
+      "share_potential": 7.49
+    },
+    "weighted_score": 7.66,
+    "rank": 334
+  },
+  {
+    "id": "prob-0507",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10626,10 +11958,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 298
+    "rank": 335
   },
   {
-    "id": "prob-0025",
+    "id": "prob-0508",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10662,10 +11994,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 299
+    "rank": 336
   },
   {
-    "id": "prob-0026",
+    "id": "prob-0509",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10698,10 +12030,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 300
+    "rank": 337
   },
   {
-    "id": "prob-0034",
+    "id": "prob-0517",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -10734,10 +12066,10 @@
       "share_potential": 6.24
     },
     "weighted_score": 7.66,
-    "rank": 301
+    "rank": 338
   },
   {
-    "id": "prob-0078",
+    "id": "prob-0561",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10770,10 +12102,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 302
+    "rank": 339
   },
   {
-    "id": "prob-0080",
+    "id": "prob-0563",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10806,10 +12138,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 303
+    "rank": 340
   },
   {
-    "id": "prob-0094",
+    "id": "prob-0577",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10842,10 +12174,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 304
+    "rank": 341
   },
   {
-    "id": "prob-0096",
+    "id": "prob-0579",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10878,10 +12210,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 305
+    "rank": 342
   },
   {
-    "id": "prob-0102",
+    "id": "prob-0585",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10914,10 +12246,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 306
+    "rank": 343
   },
   {
-    "id": "prob-0104",
+    "id": "prob-0587",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10950,10 +12282,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 307
+    "rank": 344
   },
   {
-    "id": "prob-0110",
+    "id": "prob-0593",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -10986,10 +12318,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 308
+    "rank": 345
   },
   {
-    "id": "prob-0112",
+    "id": "prob-0595",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11022,10 +12354,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 309
+    "rank": 346
   },
   {
-    "id": "prob-0118",
+    "id": "prob-0601",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11058,10 +12390,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 310
+    "rank": 347
   },
   {
-    "id": "prob-0120",
+    "id": "prob-0603",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11094,10 +12426,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 311
+    "rank": 348
   },
   {
-    "id": "prob-0126",
+    "id": "prob-0609",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11130,10 +12462,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 312
+    "rank": 349
   },
   {
-    "id": "prob-0128",
+    "id": "prob-0611",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11166,10 +12498,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 313
+    "rank": 350
   },
   {
-    "id": "prob-0134",
+    "id": "prob-0617",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11202,10 +12534,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 314
+    "rank": 351
   },
   {
-    "id": "prob-0136",
+    "id": "prob-0619",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11238,10 +12570,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 315
+    "rank": 352
   },
   {
-    "id": "prob-0142",
+    "id": "prob-0625",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11274,10 +12606,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 316
+    "rank": 353
   },
   {
-    "id": "prob-0144",
+    "id": "prob-0627",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11310,10 +12642,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 317
+    "rank": 354
   },
   {
-    "id": "prob-0156",
+    "id": "prob-0639",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11346,10 +12678,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 318
+    "rank": 355
   },
   {
-    "id": "prob-0157",
+    "id": "prob-0640",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11382,10 +12714,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 319
+    "rank": 356
   },
   {
-    "id": "prob-0166",
+    "id": "prob-0649",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11418,10 +12750,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 320
+    "rank": 357
   },
   {
-    "id": "prob-0168",
+    "id": "prob-0651",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11454,10 +12786,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 321
+    "rank": 358
   },
   {
-    "id": "prob-0174",
+    "id": "prob-0657",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11490,10 +12822,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 322
+    "rank": 359
   },
   {
-    "id": "prob-0176",
+    "id": "prob-0659",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11526,10 +12858,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 323
+    "rank": 360
   },
   {
-    "id": "prob-0182",
+    "id": "prob-0665",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11562,10 +12894,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 324
+    "rank": 361
   },
   {
-    "id": "prob-0184",
+    "id": "prob-0667",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11598,10 +12930,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 325
+    "rank": 362
   },
   {
-    "id": "prob-0190",
+    "id": "prob-0673",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11634,10 +12966,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 326
+    "rank": 363
   },
   {
-    "id": "prob-0192",
+    "id": "prob-0675",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11670,10 +13002,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 327
+    "rank": 364
   },
   {
-    "id": "prob-0198",
+    "id": "prob-0681",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11706,10 +13038,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 328
+    "rank": 365
   },
   {
-    "id": "prob-0200",
+    "id": "prob-0683",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11742,10 +13074,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 329
+    "rank": 366
   },
   {
-    "id": "prob-0206",
+    "id": "prob-0689",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11778,10 +13110,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 330
+    "rank": 367
   },
   {
-    "id": "prob-0208",
+    "id": "prob-0691",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11814,10 +13146,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 331
+    "rank": 368
   },
   {
-    "id": "prob-0214",
+    "id": "prob-0697",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11850,46 +13182,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 332
+    "rank": 369
   },
   {
-    "id": "prob-0216",
-    "category_id": "ai-tools",
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "category_icon": "🛠️",
-    "category_color": "#3B82F6",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "title": "如果把 ADHD 大脑当成生成核心，Forest 能不能当它的无状态与外部记忆？",
-    "subtitle": "用 agent 工程的思路重新理解 Forest 对 ADHD 的真正价值。",
-    "angle": "工具×同构",
-    "problem": "如果把 ADHD 大脑当成生成核心，Forest 能不能当它的无状态与外部记忆？",
-    "spine": "无状态与外部记忆",
-    "spine_kind": "llm",
-    "spine_mirror": "工作记忆缺陷 ↔ LLM 无跨会话状态：都靠外部记忆补偿",
-    "adhd_pain": "工作记忆容量小、边做边忘",
-    "harness_parallel": "LLM 无跨会话状态，靠外部记忆/向量库续命",
-    "is_problem_driven": true,
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 9.45,
-      "practical_value": 6.35,
-      "emotional_resonance": 6.76,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.66,
-    "rank": 333
-  },
-  {
-    "id": "prob-0222",
+    "id": "prob-0705",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11922,10 +13218,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 334
+    "rank": 370
   },
   {
-    "id": "prob-0224",
+    "id": "prob-0707",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11958,10 +13254,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 335
+    "rank": 371
   },
   {
-    "id": "prob-0230",
+    "id": "prob-0713",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -11994,10 +13290,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 336
+    "rank": 372
   },
   {
-    "id": "prob-0232",
+    "id": "prob-0715",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -12030,10 +13326,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 337
+    "rank": 373
   },
   {
-    "id": "prob-0246",
+    "id": "prob-0729",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -12066,10 +13362,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 338
+    "rank": 374
   },
   {
-    "id": "prob-0248",
+    "id": "prob-0731",
     "category_id": "ai-tools",
     "category_name": "AI工具实战",
     "category_name_en": "AI Tools in Practice",
@@ -12102,10 +13398,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 339
+    "rank": 375
   },
   {
-    "id": "prob-0869",
+    "id": "prob-1352",
     "category_id": "time-mgmt",
     "category_name": "时间管理",
     "category_name_en": "Time Management",
@@ -12138,10 +13434,10 @@
       "share_potential": 6.76
     },
     "weighted_score": 7.66,
-    "rank": 340
+    "rank": 376
   },
   {
-    "id": "prob-0950",
+    "id": "prob-1433",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12174,10 +13470,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 341
+    "rank": 377
   },
   {
-    "id": "prob-0962",
+    "id": "prob-1445",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12210,10 +13506,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 342
+    "rank": 378
   },
   {
-    "id": "prob-0968",
+    "id": "prob-1451",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12246,10 +13542,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 343
+    "rank": 379
   },
   {
-    "id": "prob-0974",
+    "id": "prob-1457",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12282,10 +13578,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 344
+    "rank": 380
   },
   {
-    "id": "prob-0980",
+    "id": "prob-1463",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12318,10 +13614,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 345
+    "rank": 381
   },
   {
-    "id": "prob-0986",
+    "id": "prob-1469",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12354,10 +13650,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 346
+    "rank": 382
   },
   {
-    "id": "prob-0992",
+    "id": "prob-1475",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12390,10 +13686,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 347
+    "rank": 383
   },
   {
-    "id": "prob-0998",
+    "id": "prob-1481",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12426,10 +13722,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 348
+    "rank": 384
   },
   {
-    "id": "prob-1008",
+    "id": "prob-1491",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12462,10 +13758,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 349
+    "rank": 385
   },
   {
-    "id": "prob-1016",
+    "id": "prob-1499",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12498,10 +13794,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 350
+    "rank": 386
   },
   {
-    "id": "prob-1022",
+    "id": "prob-1505",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12534,10 +13830,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 351
+    "rank": 387
   },
   {
-    "id": "prob-1028",
+    "id": "prob-1511",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12570,10 +13866,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 352
+    "rank": 388
   },
   {
-    "id": "prob-1034",
+    "id": "prob-1517",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12606,10 +13902,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 353
+    "rank": 389
   },
   {
-    "id": "prob-1040",
+    "id": "prob-1523",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12642,10 +13938,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 354
+    "rank": 390
   },
   {
-    "id": "prob-1046",
+    "id": "prob-1529",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12678,10 +13974,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 355
+    "rank": 391
   },
   {
-    "id": "prob-1052",
+    "id": "prob-1535",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12714,10 +14010,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 356
+    "rank": 392
   },
   {
-    "id": "prob-1058",
+    "id": "prob-1541",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12750,10 +14046,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 357
+    "rank": 393
   },
   {
-    "id": "prob-1064",
+    "id": "prob-1547",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12786,10 +14082,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 358
+    "rank": 394
   },
   {
-    "id": "prob-1076",
+    "id": "prob-1559",
     "category_id": "focus",
     "category_name": "专注力管理",
     "category_name_en": "Focus Management",
@@ -12822,10 +14118,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 359
+    "rank": 395
   },
   {
-    "id": "prob-1916",
+    "id": "prob-2399",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -12858,10 +14154,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 360
+    "rank": 396
   },
   {
-    "id": "prob-1918",
+    "id": "prob-2401",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -12894,10 +14190,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 361
+    "rank": 397
   },
   {
-    "id": "prob-1920",
+    "id": "prob-2403",
     "category_id": "science",
     "category_name": "科学研究",
     "category_name_en": "Scientific Research",
@@ -12930,10 +14226,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 362
+    "rank": 398
   },
   {
-    "id": "prob-1936",
+    "id": "prob-2419",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -12966,10 +14262,10 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 363
+    "rank": 399
   },
   {
-    "id": "prob-1938",
+    "id": "prob-2421",
     "category_id": "emotion",
     "category_name": "情绪调节",
     "category_name_en": "Emotional Regulation",
@@ -13002,1206 +14298,6 @@
       "share_potential": 5.2
     },
     "weighted_score": 7.66,
-    "rank": 364
-  },
-  {
-    "id": "prob-1940",
-    "category_id": "emotion",
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "category_icon": "💚",
-    "category_color": "#10B981",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "title": "ADHD 家长如何用「给生成核心套 harness」的思路应对陪伴 ADHD 孩子里的怕过度依赖工具、又怕没有支撑就崩？",
-    "subtitle": "把 LLM 工程里的「harness 应是会褪去的脚手架，而非永久拐杖」迁移到ADHD 家长的陪伴 ADHD 孩子场景，双域证据作答。",
-    "angle": "人群×同构",
-    "problem": "ADHD 家长如何用「给生成核心套 harness」的思路应对陪伴 ADHD 孩子里的怕过度依赖工具、又怕没有支撑就崩？",
-    "spine": "拐杖与脚手架",
-    "spine_kind": "bridge",
-    "spine_mirror": "过度依赖风险：harness/工具应是会褪去的脚手架而非永久拐杖",
-    "adhd_pain": "怕过度依赖工具、又怕没有支撑就崩",
-    "harness_parallel": "harness 应是会褪去的脚手架，而非永久拐杖",
-    "is_problem_driven": true,
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 9.85,
-      "practical_value": 5.85,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.66,
-    "rank": 365
-  },
-  {
-    "id": "prob-1942",
-    "category_id": "emotion",
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "category_icon": "💚",
-    "category_color": "#10B981",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "title": "ADHD 创业者如何用「给生成核心套 harness」的思路应对把想法落地执行里的怕过度依赖工具、又怕没有支撑就崩？",
-    "subtitle": "把 LLM 工程里的「harness 应是会褪去的脚手架，而非永久拐杖」迁移到ADHD 创业者的把想法落地执行场景，双域证据作答。",
-    "angle": "人群×同构",
-    "problem": "ADHD 创业者如何用「给生成核心套 harness」的思路应对把想法落地执行里的怕过度依赖工具、又怕没有支撑就崩？",
-    "spine": "拐杖与脚手架",
-    "spine_kind": "bridge",
-    "spine_mirror": "过度依赖风险：harness/工具应是会褪去的脚手架而非永久拐杖",
-    "adhd_pain": "怕过度依赖工具、又怕没有支撑就崩",
-    "harness_parallel": "harness 应是会褪去的脚手架，而非永久拐杖",
-    "is_problem_driven": true,
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 9.85,
-      "practical_value": 5.85,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.66,
-    "rank": 366
-  },
-  {
-    "id": "prob-0050",
-    "category_id": "ai-tools",
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "category_icon": "🛠️",
-    "category_color": "#3B82F6",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "title": "为什么「治好 ADHD 的不擅长精确、重复、状态维护类任务」和「让 LLM 不跑飞」其实是同一道工程题？",
-    "subtitle": "agent 通过 function calling 把精确计算外包给工具——同一套 harness 思路，两边都成立。",
-    "angle": "反直觉同构",
-    "problem": "为什么「治好 ADHD 的不擅长精确、重复、状态维护类任务」和「让 LLM 不跑飞」其实是同一道工程题？",
-    "spine": "工具使用与认知卸载",
-    "spine_kind": "llm",
-    "spine_mirror": "把不擅长的精确状态外包 ↔ agent function calling",
-    "adhd_pain": "不擅长精确、重复、状态维护类任务",
-    "harness_parallel": "agent 通过 function calling 把精确计算外包给工具",
-    "is_problem_driven": true,
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 367
-  },
-  {
-    "id": "prob-0392",
-    "category_id": "science",
-    "category_name": "科学研究",
-    "category_name_en": "Scientific Research",
-    "category_icon": "🔬",
-    "category_color": "#EF4444",
-    "keywords": [
-      "脑科学",
-      "研究",
-      "诊断",
-      "治疗",
-      "神经科学"
-    ],
-    "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的幻觉与验证循环？",
-    "subtitle": "用 agent 工程的思路重新理解 Goblin Tools 对 ADHD 的真正价值。",
-    "angle": "工具×同构",
-    "problem": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的幻觉与验证循环？",
-    "spine": "幻觉与验证循环",
-    "spine_kind": "llm",
-    "spine_mirror": "冲动/想当然 ↔ LLM 自信幻觉：都靠核对与验证循环兜底",
-    "adhd_pain": "冲动下结论、想当然",
-    "harness_parallel": "LLM 自信地编造（幻觉），靠验证与自我批判兜底",
-    "is_problem_driven": true,
-    "scores": {
-      "seo_potential": 5.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 9.85,
-      "practical_value": 5.85,
-      "emotional_resonance": 6.76,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 368
-  },
-  {
-    "id": "evolved-emotion-1650",
-    "title": "为什么用 Endel 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Endel 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Endel 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 369
-  },
-  {
-    "id": "evolved-emotion-1651",
-    "title": "为什么用 Forest 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Forest 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Forest 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 370
-  },
-  {
-    "id": "evolved-emotion-1652",
-    "title": "为什么用 RescueTime 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "RescueTime 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 RescueTime 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 371
-  },
-  {
-    "id": "evolved-emotion-1653",
-    "title": "为什么用 Habitica 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Habitica 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Habitica 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 372
-  },
-  {
-    "id": "evolved-emotion-1655",
-    "title": "为什么用 Speechify 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Speechify 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Speechify 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 373
-  },
-  {
-    "id": "evolved-ai-tools-1570",
-    "title": "为什么用 Focusmate 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Focusmate 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Focusmate 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 374
-  },
-  {
-    "id": "evolved-ai-tools-1571",
-    "title": "为什么用 Structured 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Structured 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Structured 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 375
-  },
-  {
-    "id": "evolved-ai-tools-1572",
-    "title": "为什么用 Lex 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Lex 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Lex 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 376
-  },
-  {
-    "id": "evolved-ai-tools-1573",
-    "title": "为什么用 Mem 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Mem 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Mem 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 377
-  },
-  {
-    "id": "evolved-ai-tools-1576",
-    "title": "为什么用 Otter.ai 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Otter.ai 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Otter.ai 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 378
-  },
-  {
-    "id": "evolved-ai-tools-1577",
-    "title": "为什么用 Reflect 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Reflect 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Reflect 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 379
-  },
-  {
-    "id": "evolved-ai-tools-1578",
-    "title": "为什么用 Routinery 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Routinery 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Routinery 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 380
-  },
-  {
-    "id": "evolved-ai-tools-1579",
-    "title": "为什么用 Todoist 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Todoist 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Todoist 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 381
-  },
-  {
-    "id": "evolved-ai-tools-1580",
-    "title": "为什么用 Inflow 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Inflow 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Inflow 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 382
-  },
-  {
-    "id": "evolved-ai-tools-1581",
-    "title": "为什么用 Endel 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Endel 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Endel 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 383
-  },
-  {
-    "id": "evolved-ai-tools-1582",
-    "title": "为什么用 Forest 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Forest 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Forest 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 384
-  },
-  {
-    "id": "evolved-ai-tools-1583",
-    "title": "为什么用 RescueTime 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "RescueTime 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 RescueTime 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 385
-  },
-  {
-    "id": "evolved-ai-tools-1584",
-    "title": "为什么用 Habitica 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Habitica 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Habitica 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 386
-  },
-  {
-    "id": "evolved-ai-tools-1586",
-    "title": "为什么用 Speechify 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "subtitle": "Speechify 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "ai-tools",
-    "problem": "为什么用 Speechify 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
-    "spine": "工具使用与认知卸载",
-    "adhd_pain": "任务启动困难",
-    "harness_parallel": "function calling 工具调用",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "AI工具实战",
-    "category_name_en": "AI Tools in Practice",
-    "keywords": [
-      "AI工具",
-      "效率工具",
-      "ADHD辅助",
-      "智能助手",
-      "自动化"
-    ],
-    "scores": {
-      "seo_potential": 5.0,
-      "cross_platform": 6.9,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 6.35,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 387
-  },
-  {
-    "id": "evolved-emotion-1634",
-    "title": "为什么用 Saner.AI 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Saner.AI 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Saner.AI 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 388
-  },
-  {
-    "id": "evolved-emotion-1636",
-    "title": "为什么用 Reclaim.ai 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Reclaim.ai 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Reclaim.ai 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 389
-  },
-  {
-    "id": "evolved-emotion-1637",
-    "title": "为什么用 Tiimo 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Tiimo 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Tiimo 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 390
-  },
-  {
-    "id": "evolved-emotion-1638",
-    "title": "为什么用 Brain.fm 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Brain.fm 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Brain.fm 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 391
-  },
-  {
-    "id": "evolved-emotion-1639",
-    "title": "为什么用 Focusmate 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Focusmate 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Focusmate 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 392
-  },
-  {
-    "id": "evolved-emotion-1640",
-    "title": "为什么用 Structured 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Structured 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Structured 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 393
-  },
-  {
-    "id": "evolved-emotion-1641",
-    "title": "为什么用 Lex 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Lex 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Lex 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 394
-  },
-  {
-    "id": "evolved-emotion-1642",
-    "title": "为什么用 Mem 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Mem 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Mem 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 395
-  },
-  {
-    "id": "evolved-emotion-1645",
-    "title": "为什么用 Otter.ai 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Otter.ai 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Otter.ai 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 396
-  },
-  {
-    "id": "evolved-emotion-1646",
-    "title": "为什么用 Reflect 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Reflect 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Reflect 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 397
-  },
-  {
-    "id": "evolved-emotion-1647",
-    "title": "为什么用 Routinery 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Routinery 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Routinery 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 398
-  },
-  {
-    "id": "evolved-emotion-1648",
-    "title": "为什么用 Todoist 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Todoist 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Todoist 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
-    "rank": 399
-  },
-  {
-    "id": "evolved-emotion-1649",
-    "title": "为什么用 Inflow 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "subtitle": "Inflow 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。",
-    "angle": "反直觉同构",
-    "category_id": "emotion",
-    "problem": "为什么用 Inflow 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
-    "spine": "拐杖与脚手架",
-    "adhd_pain": "情绪失调",
-    "harness_parallel": "会褪去的脚手架",
-    "is_problem_driven": true,
-    "is_evolved": true,
-    "category_name": "情绪调节",
-    "category_name_en": "Emotional Regulation",
-    "keywords": [
-      "情绪管理",
-      "焦虑",
-      "自我接纳",
-      "心理健康",
-      "压力管理"
-    ],
-    "scores": {
-      "seo_potential": 6.5,
-      "cross_platform": 6.1,
-      "evidence_strength": 10.0,
-      "isomorphism_alignment": 10.0,
-      "practical_value": 5.5,
-      "emotional_resonance": 5.2,
-      "share_potential": 5.2
-    },
-    "weighted_score": 7.65,
     "rank": 400
   }
 ]
