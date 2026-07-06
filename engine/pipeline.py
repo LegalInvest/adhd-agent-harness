@@ -17,6 +17,8 @@ from engine.problems import generate_problem_pool
 from engine import academic
 from engine import isomorphism
 from engine import harness_figures
+from engine.case_studies import CaseStudyRetriever
+from engine import intelligence_assets
 from engine.knowledge import (
     build_knowledge_base,
     save_knowledge_base,
@@ -83,8 +85,12 @@ def run_pipeline(
     # 名人 harness 案例（人类侧「外挂执行功能层」的活教材）——次高优先级
     figure_articles = harness_figures.as_articles()
     print(f"   名人 harness 案例: {len(figure_articles)} 位 ADHD 特质人物的自我管理系统")
-    kb_corpus = iso_articles + figure_articles + research_articles + academic_kb_articles
-    wiki_corpus = iso_articles + figure_articles + research_articles + academic_wiki_articles
+    case_retriever = CaseStudyRetriever()
+    print(f"   人物案例钩子: 名人 {len(case_retriever.figures)} / 创业者·投资人 {len(case_retriever.entrepreneurs)} / 相关性统计 {len(case_retriever.correlation_stats)}")
+    intel_articles = intelligence_assets.as_articles()
+    print(f"   情报资产: {len(intel_articles)} 篇一手研究资产（创作者情报库/深度研究/策略报告）")
+    kb_corpus = iso_articles + figure_articles + intel_articles + research_articles + academic_kb_articles
+    wiki_corpus = iso_articles + figure_articles + intel_articles + research_articles + academic_wiki_articles
 
     # 2. 知识萃取（双域：网页深抓 + 学术摘要）
     print("\n🧠 步骤 2/7: 知识萃取（双域语料）...")
@@ -192,7 +198,7 @@ def run_pipeline(
         """仅做 LLM 生成（I/O 密集，可并发）；失败返回 None 交主线程回退。"""
         i, topic = i_topic
         try:
-            return i, generate_article_llm(topic, i, wiki_retriever, llm)
+            return i, generate_article_llm(topic, i, wiki_retriever, llm, case_retriever)
         except Exception as e:  # noqa: BLE001 - 单篇失败不应中断整批
             return i, e
 

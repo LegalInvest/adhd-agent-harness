@@ -20,67 +20,83 @@ rank: 291
 score: 7.68
 sourceCount: 6
 toolsCited:
+  - "Perplexity"
   - "Motion"
   - "Reclaim.ai"
   - "Tiimo"
   - "Todoist"
-  - "Perplexity"
-thesis: "ADHD 大脑与 LLM 在结构上同构——都是“高产但缺乏可靠执行调度层的生成核心”，因此用 Perplexity 等 AI 工具治时间盲，与给 agent 套 planner-executor 任务分解，本质是同一套 harness 思路：通过外部脚手架补偿调度层缺陷。"
+  - "Obsidian"
+thesis: "ADHD 大脑与 LLM 是同一类高产生成核心，都缺乏内置执行调度层，因此用 Perplexity 等 AI 工具辅助时间管理，本质上和给 agent 套 planner-executor 任务分解结构是同一种工程——都是为生成核心搭建外部脚手架。"
 problem: "为什么用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？"
 spine: "规划循环与任务分解"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "孔子"
+  - "辛弃疾"
+  - "Jordan York"
 ---
 # 为什么用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？
 
 > Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么你的大脑和你的 agent 都卡在“下一步”？
+## 一个反直觉的问题：为什么用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解是一回事？
 
-如果你有 ADHD，你一定熟悉这种体验：脑子里有无数想法，但一到执行就卡住——不是不知道要做什么，而是不知道“现在”该先做哪一步。时间像流沙，你看不见它，只能感觉它从指缝漏走。这就是**时间盲**：ADHD 大脑对时间流逝的感知是模糊的，缺乏内在的“执行调度层”来将目标拆解为有序步骤并按时推进（来源：AI 与 ADHD 的时间管理）。
+如果你既被时间盲折磨，又做过 Agentic Harness 工程，你可能会觉得这两个世界毫不相关。但一个反直觉的同构正在浮现：ADHD 大脑与大型语言模型（LLM）在结构上高度相似——二者都是高产生成核心，却缺乏可靠的内置执行调度层（来源：AI 与 ADHD 的时间管理）。这意味着，你为 ADHD 搭建的“执行功能支架”和你为 LLM 设计的“planner-executor 任务分解”，本质上是同一类工程。
 
-如果你是做 Agentic Harness 的工程师，你也会熟悉另一种卡住：LLM 能生成惊艳的文本、推理链条，但一旦要求它“按顺序完成多步骤任务”，它就开始胡言乱语、丢失上下文、或者死循环。你需要给 LLM 套一个 planner-executor 架构，把“做什么”和“怎么做”分开，用外部逻辑控制执行流。
+### 时间盲与无状态：同构的起点
 
-这两个问题，看似一个在神经科学，一个在计算机科学，但它们的结构完全相同：**一个高产但缺乏可靠执行调度层的生成核心，需要一个外部脚手架来补偿调度缺陷。** 这就是本文要论证的同构：用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解，是一回事。
+ADHD 的典型痛点是时间盲——无法感知时间流逝，难以预估任务时长，常常陷入“现在几点了？我刚才在干什么？”的困境。这对应 LLM 的“无状态”缺陷：标准 LLM 调用每次对话独立，模型不保留跨会话记忆（来源：无状态与外部记忆）。没有外部记忆的 LLM 只是一个无状态的 API 调用（来源：无状态与外部记忆）。同样，没有外部支架的 ADHD 大脑，也只是一个高产生成核心——创意、联想、高兴趣驱动，但缺乏调度。
 
-## 同构：ADHD 大脑与 LLM 都是“无状态生成器”
+研究进一步揭示了深层平行：ADHD 患者在工作记忆任务中易受干扰，而 LLM 同样表现出类似人类的干扰特征——随着记忆负荷增加表现下降，受近因效应影响（来源：拐杖与脚手架）。认知神经科学发现，执行功能依赖前额叶-纹状体机制进行选择性门控，而 Transformer 在训练后，自注意力机制发展出模仿该门控的操作，证明了计算同构性（来源：拐杖与脚手架）。
 
-从认知架构看，ADHD 大脑的工作记忆容量有限且不稳定，导致跨会话任务难以持续——典型表现是每天需要重新回忆项目上下文，否则容易偏离轨道（来源：无状态与外部记忆）。这与 LLM 的无状态性完全对应：标准的 LLM 调用是无状态的，每次对话独立，模型不保留跨会话记忆（来源：无状态与外部记忆）。没有外部记忆的 LLM 只是一个无状态的 API 调用；没有外部脚手架（如日程工具、任务列表）的 ADHD 大脑，也是一个无状态的生成器。
+### 解决方案同构：外部调度层
 
-更深的证据来自认知神经科学：Transformer 的自注意力机制在训练后，发展出模仿前额叶-纹状体门控的操作——这正是执行功能的关键神经机制（来源：拐杖与脚手架）。ADHD 患者在前额叶-纹状体门控上存在缺陷，而 LLM 在无外部结构时也难以自主发现最佳问题解决模式（来源：拐杖与脚手架）。两者共享同一个计算瓶颈：**缺乏可靠的执行调度层来将生成能力转化为有序行动。**
+ADHD 的解法是搭建外部执行功能层：用 AI 工具把“现在该做什么、做多久、何时切换”显式化。例如 Motion 的自动排程与动态调整（来源：Motion），Reclaim.ai 的智能时间块保护（来源：Reclaim.ai），Tiimo 的视觉化时间线（来源：Tiimo），Todoist 的 AI 建议与动态重排——这些都是通过外部界面补偿调度缺口。
 
-## 解法：外部执行功能层 = planner-executor harness
+LLM/Agent 的解法完全平行：给无状态的生成核心套一个 planner-executor 任务分解结构。planner 负责将复杂目标分解为可执行的子任务，executor 负责执行并反馈结果，外部记忆负责存储上下文。这正是“外部执行功能层”在 agent 侧的对应。
 
-ADHD 侧的工具，如 Motion、Reclaim.ai、Tiimo，本质上都是外部执行功能层：它们将时间可视化、自动排程、动态调整日程，从而补偿时间盲和工作记忆缺陷。Motion 通过持续评估任务优先级、截止日期和可用时间，实时重建日程，减少用户的手动规划压力（来源：Motion）。Reclaim.ai 则通过创建深度工作、习惯和专注时间的智能块，自动防御会议侵占（来源：Reclaim.ai）。Tiimo 将时间转化为可见元素，直接应对时间盲（来源：Tiimo）。这些工具的共同模式是：**将“规划”从大脑中卸载到外部系统，让生成核心只负责执行。**
+### 人物案例：辛弃疾的 harness 与 LLM harness 的同构
 
-LLM/Agent 侧的对应物是 planner-executor 任务分解架构。生产级 agent 系统通过外部记忆（如向量数据库）解决无状态问题，并组合使用会话内上下文记忆、长期检索向量库和结构化知识库（来源：无状态与外部记忆）。检索增强和工具调用将决策锚定在外部证据和持久状态上（来源：无状态与外部记忆）。这正是 ADHD 工具在做的事：**用外部脚手架补偿内部调度缺陷。**
+辛弃疾是 ADHD 特质的典型：21 岁起义，带 50 人冲几万人敌营抓叛徒；一辈子想北伐，坐不住，爱喝酒爱交朋友，冲动敢干；被罢官后闲居 20 年，把所有精力注入写词。他的专属 harness 是：以词和剑为核心，闲居时练剑写词，把报国无门的愤懑全部注入词里；用儒家的家国天下作为精神支柱。
 
-## 核心观点：脚手架 vs 拐杖，边界在于“建造”还是“替代”
+这个 harness 与 LLM harness 的结构同构非常清晰：
+- **日课（练剑写词）↔ 定时 re-grounding**：辛弃疾通过每日固定的练剑写词，将高能量引导到产出上。对应 LLM agent 的定时 re-grounding——定期从外部记忆拉取上下文，防止漂移。
+- **儒家精神支柱 ↔ 系统提示（system prompt）**：辛弃疾用“家国天下”作为行为边界和优先级过滤器。对应 LLM agent 的系统提示，定义目标、约束和决策原则。
+- **词与剑作为输出通道 ↔ 工具调用（tool calling）**：辛弃疾将冲动和能量注入词与剑，形成具体输出。对应 LLM agent 通过工具调用（如搜索、计算、写文件）产生可验证的结果。
 
-这里必须诚实指出争议。现有证据主要来自用户报告和概念类比，缺乏大规模对照实验（来源：矛盾与存疑）。过度依赖 AI 工具可能削弱内在时间感知能力（来源：矛盾与存疑）。真正的脚手架应帮助使用者“建造”，但使用者仍需自己“攀登”（来源：拐杖与脚手架）。如果工具替代了治疗或自我管理，可能造成依赖（来源：拐杖与脚手架）。
+辛弃疾的成就——词中之龙，南宋豪放派代表——证明了这个外部支架的有效性。同样，一个设计良好的 LLM harness 也能让无状态的生成核心产出可靠结果。
 
-我的判断是：**脚手架与拐杖的边界在于，工具是否保留了用户的选择权和元认知参与。** Motion 自动排程，但用户仍需输入所有任务和截止日期——这保留了“建造”的第一步。Reclaim.ai 保护时间块，但用户需主动设定优先级。Tiimo 提供视觉结构，但用户需选择颜色和惯例。这些工具在补偿缺陷的同时，要求用户参与规划过程。反之，如果工具完全接管决策（例如自动决定“你该做什么”且用户无法干预），就沦为拐杖。
+### 核心观点：脚手架，不是拐杖
 
-## 今天就能试的行动
+本文的核心判断是：AI 工具和 agent harness 都应该被理解为“脚手架”，而非“拐杖”。脚手架帮助使用者“建造”，但使用者仍需自己“攀登”（来源：拐杖与脚手架）。真正的风险在于过度依赖：若工具替代了治疗或自我管理，可能造成依赖（来源：拐杖与脚手架）。
 
-1. **用 Perplexity 替代“下一步该做什么”的决策**：当你卡在时间盲中，打开 Perplexity，输入“我当前有 [任务列表]，时间是 [当前时间]，请帮我按优先级和可用时间生成一个今日计划”。Perplexity 会像 Motion 一样输出一个结构化日程——这就是 planner-executor 的第一步。
-2. **给 LLM 套一个“外部记忆”**：如果你在调试 agent，尝试用向量数据库存储会话历史，或使用工具调用（function calling）让 LLM 查询外部日历。这相当于给 LLM 装上 Tiimo 的视觉时间线。
-3. **手动做一次任务分解**：ADHD 用户可尝试将一个大任务（如“写报告”）拆成 5 个步骤，每个步骤对应一个 Perplexity 查询。工程师可尝试将 agent 任务拆成 plan → execute → verify 三阶段。两者本质相同：用外部结构补偿内部调度。
-4. **警惕“一键完成”的工具**：优先选择那些让你参与规划（如手动输入任务、设置优先级）的工具，而非完全自动化的黑箱。保持元认知参与，才能避免拐杖依赖。
+这个边界在 ADHD 侧和 LLM 侧同时成立。对 ADHD 用户，AI 工具应补偿执行功能，而非替代自我觉察。对 LLM agent，harness 应提供结构和记忆，而非替代模型本身的推理能力。
 
-## 局限与展望
+### 争议与局限
 
-同构理论仍属理论类比，神经科学和计算机科学的交叉验证不足（来源：AI 与 ADHD 的时间管理）。个体差异大：ADHD 亚型（注意力缺陷 vs. 多动冲动）对工具响应不同（来源：矛盾与存疑）。现有证据多基于用户自我报告，缺乏随机对照试验（来源：AI 与 ADHD 的时间管理）。但正因如此，这个领域才值得探索：如果 ADHD 大脑与 LLM 真的共享同一套架构，那么为一方开发的 harness 方法，可能直接迁移到另一方。这不仅是工具设计，更是认知科学的交叉前沿。
+必须诚实指出，ADHD 大脑与 LLM 同构的论点目前多为类比推理，缺乏神经科学或计算机科学的直接证据（来源：矛盾与存疑）。此外，AI 工具对任务启动的长期效果未知（来源：矛盾与存疑），且学习使用 AI 工具本身可能增加认知负荷（来源：矛盾与存疑）。个体差异巨大——部分 ADHD 用户反馈强行打断（如番茄钟）有效，而柔性引导可能不够强力（来源：矛盾与存疑）。
+
+### 今天就能试的行动
+
+1. **用 Perplexity 做“外部工作记忆”**：每天开始工作前，在 Perplexity 中新建一个对话，写下你当前的项目上下文、待办和优先级。每次中断后，先回到这个对话刷新记忆，而不是直接开新窗口。
+2. **给任务套“planner-executor”分解**：用 Todoist 或 Motion 创建一个主任务（planner），然后手动或让 AI 分解为 3-5 个可执行的子任务（executor），每个子任务标明预计时长。
+3. **设置定时 re-grounding 闹钟**：每 45 分钟响一次，问自己三个问题：我现在在做什么？这应该是我在做的事吗？下一步是什么？把答案写在 Obsidian 或便签上。
+4. **观察你的“系统提示”**：写下你当前生活的核心目标或原则（如辛弃疾的“家国天下”），贴在显眼处。当面临选择时，用它作为过滤器。
+
+### 结语
+
+ADHD 的时间盲和 LLM 的无状态，本质是同一个问题：一个高产生成核心缺少调度层。解法也同构：搭建外部脚手架。下次你被时间盲困住时，想想你正在为你的大脑设计 harness——就像工程师为 agent 设计 planner-executor 一样。你不是在对抗缺陷，你是在做工程。
 
 ## 参考来源
 
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [6 ways AI can help you manage ADHD symptoms - Understood.org](https://www.understood.org/en/articles/adhd-ai-tools)
-- [The Role of Artificial Intelligence in ADHD Diagnosis and Treatment: A New Frontier in Neurotechnology | IntechOpen](https://www.intechopen.com/online-first/1220045)
-- [Artificial Intelligence Identifies Adults with ADHD Using EEG Features](https://advances.massgeneral.org/neuro/journal.aspx?id=1593)
-- [AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors](https://thembatutors.com/ai-for-adhd-tools-and-apps/)
+- [The 12 Best AI Tools for 2026 (That People Actually Use)](https://www.synthesia.io/post/ai-tools)
+- [The AI Powered SuperApp for Work | Motion](https://www.usemotion.com/)
 - [11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog](https://blog.rivva.app/p/11-best-adhd-productivity-apps-for)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [The 12 Best Apps for ADHD in 2026: A Guide to Finding What ...](https://www.getinflow.io/post/best-apps-for-adhd)
 
 ---
 

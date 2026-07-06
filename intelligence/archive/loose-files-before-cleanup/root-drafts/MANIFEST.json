@@ -1,0 +1,1059 @@
+{
+  "archived_at": "2026-06-03",
+  "reason": "Root draft files were copied into verified content-packs before cleanup; archived, not deleted.",
+  "moved_count": 263,
+  "moved": [
+    {
+      "from": "问题001_为什么226个ADHD名人证明你不是孤例_你不是个案你只是还没看见同类星系.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题001_为什么226个ADHD名人证明你不是孤例_你不是个案你只是还没看见同类星系.md"
+    },
+    {
+      "from": "问题002_AI_Agent是不是ADHD等了20年的接口_你的外部前额叶终于有了可调用形态.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题002_AI_Agent是不是ADHD等了20年的接口_你的外部前额叶终于有了可调用形态.md"
+    },
+    {
+      "from": "问题003_AI把所有人拉到80分为什么ADHD的140分更值钱了_平均能力被抬高后高方差才开始溢价.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题003_AI把所有人拉到80分为什么ADHD的140分更值钱了_平均能力被抬高后高方差才开始溢价.md"
+    },
+    {
+      "from": "问题004_AI能模拟ADHD的超聚焦吗_模型可以持续计算但未必会被世界刺穿.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题004_AI能模拟ADHD的超聚焦吗_模型可以持续计算但未必会被世界刺穿.md"
+    },
+    {
+      "from": "问题005_为什么ADHD需要反应堆工作流而不是流水线_你不是产能不稳定你是能量形态不同.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题005_为什么ADHD需要反应堆工作流而不是流水线_你不是产能不稳定你是能量形态不同.md"
+    },
+    {
+      "from": "问题006_ADHD的六种变现接口是什么_你的放电需要不同插座而不是一个完美职业.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题006_ADHD的六种变现接口是什么_你的放电需要不同插座而不是一个完美职业.md"
+    },
+    {
+      "from": "问题007_为什么ADHD天生是话术大师却需要Agent才能真的思考_你说得快不等于想得完.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题007_为什么ADHD天生是话术大师却需要Agent才能真的思考_你说得快不等于想得完.md"
+    },
+    {
+      "from": "问题008_为什么团队维护我放电才是ADHD的正确输出姿势_你不需要一个人维护所有接口.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题008_为什么团队维护我放电才是ADHD的正确输出姿势_你不需要一个人维护所有接口.md"
+    },
+    {
+      "from": "问题009_当AI帮你写作你的反应堆语流会不会被模板化杀死_最危险的不是写得差是写得太顺.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题009_当AI帮你写作你的反应堆语流会不会被模板化杀死_最危险的不是写得差是写得太顺.md"
+    },
+    {
+      "from": "问题010_为什么轻度抑郁反而加速了ADHD的自我认知_低电量时你第一次看见了自己的系统错误.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题010_为什么轻度抑郁反而加速了ADHD的自我认知_低电量时你第一次看见了自己的系统错误.md"
+    },
+    {
+      "from": "问题011_ADHD如何用Agent完成从信息到洞察到选题的完整链路.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题011_ADHD如何用Agent完成从信息到洞察到选题的完整链路.md"
+    },
+    {
+      "from": "问题012_ADHD和LLM都是时间盲_Agent如何同时治愈两个大脑.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题012_ADHD和LLM都是时间盲_Agent如何同时治愈两个大脑.md"
+    },
+    {
+      "from": "问题013_ADHD如何构建一个永远不会断更的选题系统_不是靠自律而是靠反应堆供料.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题013_ADHD如何构建一个永远不会断更的选题系统_不是靠自律而是靠反应堆供料.md"
+    },
+    {
+      "from": "问题014_为什么ADHD最懂LLM的幻觉_你不是总被骗是太熟悉脑内生成的真实感.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题014_为什么ADHD最懂LLM的幻觉_你不是总被骗是太熟悉脑内生成的真实感.md"
+    },
+    {
+      "from": "问题015_为什么ADHD和LLM都需要Harness_不是限制想象力而是给高能系统装轨道.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题015_为什么ADHD和LLM都需要Harness_不是限制想象力而是给高能系统装轨道.md"
+    },
+    {
+      "from": "问题016_为什么从我想做到Agent帮我做了是ADHD的救赎_启动不是意愿问题是接口问题.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题016_为什么从我想做到Agent帮我做了是ADHD的救赎_启动不是意愿问题是接口问题.md"
+    },
+    {
+      "from": "问题017_为什么ADHD的情绪风暴和LLM的温度参数是同构的_温度太高时世界会变得太有意义.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题017_为什么ADHD的情绪风暴和LLM的温度参数是同构的_温度太高时世界会变得太有意义.md"
+    },
+    {
+      "from": "问题018_为什么ADHD的身体不安分遇到AI反而成了优势_你动来动去的大脑终于有了外接执行器.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题018_为什么ADHD的身体不安分遇到AI反而成了优势_你动来动去的大脑终于有了外接执行器.md"
+    },
+    {
+      "from": "问题019_为什么80%的成人ADHD从未被诊断_不是他们没有症状是他们太会代偿.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题019_为什么80%的成人ADHD从未被诊断_不是他们没有症状是他们太会代偿.md"
+    },
+    {
+      "from": "问题020_为什么ADHD在聚会上是焦点回家却想死_你的社交高光其实是一场能量透支.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题020_为什么ADHD在聚会上是焦点回家却想死_你的社交高光其实是一场能量透支.md"
+    },
+    {
+      "from": "问题021_为什么Agent正在成为ADHD新的多巴胺来源_危险不在工具好用而在回路太顺.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题021_为什么Agent正在成为ADHD新的多巴胺来源_危险不在工具好用而在回路太顺.md"
+    },
+    {
+      "from": "问题022_为什么ADHD是应试教育的最极端受害者_你不是不聪明是被迫用最低带宽证明最高能力.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题022_为什么ADHD是应试教育的最极端受害者_你不是不聪明是被迫用最低带宽证明最高能力.md"
+    },
+    {
+      "from": "问题023_为什么ADHD在职场中总是聊起来聪明做起来糊涂_你不是能力差是执行接口掉包了.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题023_为什么ADHD在职场中总是聊起来聪明做起来糊涂_你不是能力差是执行接口掉包了.md"
+    },
+    {
+      "from": "问题024_为什么ADHD的能量在冬天消失却在春天爆发_你不是懒惰是节律系统对光和新鲜感太敏感.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题024_为什么ADHD的能量在冬天消失却在春天爆发_你不是懒惰是节律系统对光和新鲜感太敏感.md"
+    },
+    {
+      "from": "问题025_为什么ADHD是文明的隐藏引擎_稳定系统负责延续高方差大脑负责突变.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题025_为什么ADHD是文明的隐藏引擎_稳定系统负责延续高方差大脑负责突变.md"
+    },
+    {
+      "from": "问题026_为什么不是ADHD像AI而是AI像ADHD_高发散系统终于成了时代默认界面.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题026_为什么不是ADHD像AI而是AI像ADHD_高发散系统终于成了时代默认界面.md"
+    },
+    {
+      "from": "问题027_为什么ADHD是你的大脑在拒绝过拟合_你不是不适应规则是看见了规则之外的变量.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题027_为什么ADHD是你的大脑在拒绝过拟合_你不是不适应规则是看见了规则之外的变量.md"
+    },
+    {
+      "from": "问题028_为什么ADHD与弱联系是你最大的创新资产_你的价值不在深耕一个圈子而在让远处的信号相遇.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题028_为什么ADHD与弱联系是你最大的创新资产_你的价值不在深耕一个圈子而在让远处的信号相遇.md"
+    },
+    {
+      "from": "问题029_为什么ADHD创始人将在AI时代统治世界_不是因为他们更稳定而是因为他们更会和混乱共生.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题029_为什么ADHD创始人将在AI时代统治世界_不是因为他们更稳定而是因为他们更会和混乱共生.md"
+    },
+    {
+      "from": "问题030_如果2028年AI比ADHD更会发散我们还剩什么_剩下的不是发散而是痛感位置和真实赌注.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题030_如果2028年AI比ADHD更会发散我们还剩什么_剩下的不是发散而是痛感位置和真实赌注.md"
+    },
+    {
+      "from": "问题031_为什么你的大脑就是MoE_你不是分心是专家太多但路由器还没训练好.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题031_为什么你的大脑就是MoE_你不是分心是专家太多但路由器还没训练好.md"
+    },
+    {
+      "from": "问题032_为什么ADHD的时间贴现率是普通人的3倍_你不是短视是未来奖励在大脑里打了折.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题032_为什么ADHD的时间贴现率是普通人的3倍_你不是短视是未来奖励在大脑里打了折.md"
+    },
+    {
+      "from": "问题033_为什么ADHD的情绪波动就是市场波动_你的内在价格发现比你想象得更早.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题033_为什么ADHD的情绪波动就是市场波动_你的内在价格发现比你想象得更早.md"
+    },
+    {
+      "from": "问题034_为什么一个P8外卖高管的MoE有四种放电模式_你不是人格分裂是专家路由太多.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题034_为什么一个P8外卖高管的MoE有四种放电模式_你不是人格分裂是专家路由太多.md"
+    },
+    {
+      "from": "问题035_为什么辩论队是ADHD的反应堆预科学校_你以为你在练表达其实在练高速路由.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题035_为什么辩论队是ADHD的反应堆预科学校_你以为你在练表达其实在练高速路由.md"
+    },
+    {
+      "from": "问题036_为什么ADHD的出版策展就是知识做空_你不是在选书是在判断哪些知识会重新定价.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题036_为什么ADHD的出版策展就是知识做空_你不是在选书是在判断哪些知识会重新定价.md"
+    },
+    {
+      "from": "问题037_为什么ADHD是县域经济研究员的理想大脑_你的扫描雷达天然适合看见地方系统的暗线.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题037_为什么ADHD是县域经济研究员的理想大脑_你的扫描雷达天然适合看见地方系统的暗线.md"
+    },
+    {
+      "from": "问题038_当外部前额叶突然消失ADHD的大脑会经历什么_不是账号丢了是认知义肢断了.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题038_当外部前额叶突然消失ADHD的大脑会经历什么_不是账号丢了是认知义肢断了.md"
+    },
+    {
+      "from": "问题039_ADHD是听觉动物_为什么阅读是酷刑而听书是多巴胺输液.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题039_ADHD是听觉动物_为什么阅读是酷刑而听书是多巴胺输液.md"
+    },
+    {
+      "from": "问题040_为什么ADHD的整理欲是一种神力陷阱_你修炼了半天释放了吗.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题040_为什么ADHD的整理欲是一种神力陷阱_你修炼了半天释放了吗.md"
+    },
+    {
+      "from": "问题041_为什么ADHD是天生的做空者_你的悲观本能正在帮你赚钱.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题041_为什么ADHD是天生的做空者_你的悲观本能正在帮你赚钱.md"
+    },
+    {
+      "from": "问题042_为什么ADHD律师的对抗性质询是天生的法律武器.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题042_为什么ADHD律师的对抗性质询是天生的法律武器.md"
+    },
+    {
+      "from": "问题043_为什么ADHD的遗忘是大脑的LoRA_你的遗忘不是在丢失信息是在微调模型.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题043_为什么ADHD的遗忘是大脑的LoRA_你的遗忘不是在丢失信息是在微调模型.md"
+    },
+    {
+      "from": "问题044_为什么中国学霸ADHD是最隐蔽的群体_你的高分正在掩盖你的挣扎.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题044_为什么中国学霸ADHD是最隐蔽的群体_你的高分正在掩盖你的挣扎.md"
+    },
+    {
+      "from": "问题045_为什么ADHD的多巴胺周期就是你的投资K线_你的情绪起伏正在泄露市场信号.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题045_为什么ADHD的多巴胺周期就是你的投资K线_你的情绪起伏正在泄露市场信号.md"
+    },
+    {
+      "from": "问题046_为什么ADHD的多巴胺周期与投资周期是同构的_你的大脑比美联储更懂周期.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题046_为什么ADHD的多巴胺周期与投资周期是同构的_你的大脑比美联储更懂周期.md"
+    },
+    {
+      "from": "问题047_为什么200个Skill不是数字囤积而是MoE专家库_你的囤积癖正在搭建认知基础设施.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题047_为什么200个Skill不是数字囤积而是MoE专家库_你的囤积癖正在搭建认知基础设施.md"
+    },
+    {
+      "from": "问题048_为什么中年ADHD需要第二次确诊_你的代偿系统正在中年崩溃.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题048_为什么中年ADHD需要第二次确诊_你的代偿系统正在中年崩溃.md"
+    },
+    {
+      "from": "问题049_为什么当所有ADHD都用同一个Agent模板_高方差优势会被抹平.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题049_为什么当所有ADHD都用同一个Agent模板_高方差优势会被抹平.md"
+    },
+    {
+      "from": "问题050_为什么ADHD的伴侣需要一个关系Agent_你们之间缺的不是爱是外部前额叶.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题050_为什么ADHD的伴侣需要一个关系Agent_你们之间缺的不是爱是外部前额叶.md"
+    },
+    {
+      "from": "问题051_为什么ADHD的准备行为是最贵的认知税_你在用装修拖延开火.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题051_为什么ADHD的准备行为是最贵的认知税_你在用装修拖延开火.md"
+    },
+    {
+      "from": "问题052_为什么ADHD的微信已读不回不是冷漠_是决策瘫痪.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题052_为什么ADHD的微信已读不回不是冷漠_是决策瘫痪.md"
+    },
+    {
+      "from": "问题053_为什么ADHD的冲动消费其实是情绪套利_你的购物车是情绪K线的反向指标.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题053_为什么ADHD的冲动消费其实是情绪套利_你的购物车是情绪K线的反向指标.md"
+    },
+    {
+      "from": "问题054_为什么ADHD的拖延清单比待办清单更诚实_你逃避的事才是你的真需求.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题054_为什么ADHD的拖延清单比待办清单更诚实_你逃避的事才是你的真需求.md"
+    },
+    {
+      "from": "问题055_为什么ADHD的凌晨三点灵感是大脑的盘后交易_你的潜意识在收盘后做市.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题055_为什么ADHD的凌晨三点灵感是大脑的盘后交易_你的潜意识在收盘后做市.md"
+    },
+    {
+      "from": "问题056_为什么ADHD在AI时代不需要专注需要切换_你的多线程是时代红利.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题056_为什么ADHD在AI时代不需要专注需要切换_你的多线程是时代红利.md"
+    },
+    {
+      "from": "问题057_为什么ADHD的社交电池充电比放电快十倍.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题057_为什么ADHD的社交电池充电比放电快十倍.md"
+    },
+    {
+      "from": "问题058_为什么ADHD的未完成情结是创业的原力_你的烂尾楼是未来的城市天际线.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题058_为什么ADHD的未完成情结是创业的原力_你的烂尾楼是未来的城市天际线.md"
+    },
+    {
+      "from": "问题059_为什么ADHD的多线程崩溃需要单线程Agent来救_你的并行处理器需要一根外部主线程.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题059_为什么ADHD的多线程崩溃需要单线程Agent来救_你的并行处理器需要一根外部主线程.md"
+    },
+    {
+      "from": "问题060_为什么ADHD的情绪过山车是最高频的市场信号处理器_你的剧烈波动是别人的领先指标.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题060_为什么ADHD的情绪过山车是最高频的市场信号处理器_你的剧烈波动是别人的领先指标.md"
+    },
+    {
+      "from": "问题061_为什么ADHD的注意力残留是跨领域创新的秘密通道_你的串味不是缺陷是杂交优势.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题061_为什么ADHD的注意力残留是跨领域创新的秘密通道_你的串味不是缺陷是杂交优势.md"
+    },
+    {
+      "from": "问题062_为什么ADHD需要负罪感焚烧炉而不是自律打卡表_你的内疚不是动力是债务陷阱.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题062_为什么ADHD需要负罪感焚烧炉而不是自律打卡表_你的内疚不是动力是债务陷阱.md"
+    },
+    {
+      "from": "问题063_为什么ADHD的过度解释是大脑的防御性DDOS_你不是在沟通是在让对方无法反驳.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题063_为什么ADHD的过度解释是大脑的防御性DDOS_你不是在沟通是在让对方无法反驳.md"
+    },
+    {
+      "from": "问题064_为什么ADHD在AI时代应该放弃终身学习拥抱终身卸载_你的大脑不是硬盘是缓存.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题064_为什么ADHD在AI时代应该放弃终身学习拥抱终身卸载_你的大脑不是硬盘是缓存.md"
+    },
+    {
+      "from": "问题065_为什么ADHD的人设疲劳需要Agent来做社交面具管理_你不是装的太累是切的太频.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题065_为什么ADHD的人设疲劳需要Agent来做社交面具管理_你不是装的太累是切的太频.md"
+    },
+    {
+      "from": "问题066_为什么ADHD的睡眠相位延迟是进化遗留的夜间哨兵模式_你不是失眠你在站岗.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题066_为什么ADHD的睡眠相位延迟是进化遗留的夜间哨兵模式_你不是失眠你在站岗.md"
+    },
+    {
+      "from": "问题067_为什么ADHD的灾难化思维是大脑的蒙特卡洛模拟_你不是悲观你在跑情景分析.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题067_为什么ADHD的灾难化思维是大脑的蒙特卡洛模拟_你不是悲观你在跑情景分析.md"
+    },
+    {
+      "from": "问题068_为什么ADHD的并行阅读不是注意力缺陷是知识套利_你同时开十本书是在做组合配置.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题068_为什么ADHD的并行阅读不是注意力缺陷是知识套利_你同时开十本书是在做组合配置.md"
+    },
+    {
+      "from": "问题069_为什么ADHD需要反生产力的空白时间才能真正生产力_你最忙的那一天产出最低.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题069_为什么ADHD需要反生产力的空白时间才能真正生产力_你最忙的那一天产出最低.md"
+    },
+    {
+      "from": "问题070_为什么ADHD的高敏感HSP叠加是信号放大器的过载与校准_你不是玻璃心是高增益接收机.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题070_为什么ADHD的高敏感HSP叠加是信号放大器的过载与校准_你不是玻璃心是高增益接收机.md"
+    },
+    {
+      "from": "问题071_为什么ADHD的冲动辞职是对系统性错配的最终止损_你不是逃避是熔断.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题071_为什么ADHD的冲动辞职是对系统性错配的最终止损_你不是逃避是熔断.md"
+    },
+    {
+      "from": "问题072_为什么ADHD的单曲循环是大脑的频率锁定与状态锚定_你不是听腻不了是在保护工位.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题072_为什么ADHD的单曲循环是大脑的频率锁定与状态锚定_你不是听腻不了是在保护工位.md"
+    },
+    {
+      "from": "问题073_为什么ADHD的过度道歉是社交带宽的leaky_abstraction_你不是软弱是接口失血.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题073_为什么ADHD的过度道歉是社交带宽的leaky_abstraction_你不是软弱是接口失血.md"
+    },
+    {
+      "from": "问题074_为什么ADHD的空间混乱是物理环境的哈希表_你不是邋遢是用空间做索引.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题074_为什么ADHD的空间混乱是物理环境的哈希表_你不是邋遢是用空间做索引.md"
+    },
+    {
+      "from": "问题075_为什么ADHD需要仪式感作为状态切换的外部中断向量_你不是矫情是在装启动键.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题075_为什么ADHD需要仪式感作为状态切换的外部中断向量_你不是矫情是在装启动键.md"
+    },
+    {
+      "from": "问题076_为什么ADHD的心算困难是大脑把工作记忆让位给了发散网络_你不是数学差是缓存被联想占满了.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题076_为什么ADHD的心算困难是大脑把工作记忆让位给了发散网络_你不是数学差是缓存被联想占满了.md"
+    },
+    {
+      "from": "问题077_为什么ADHD的完成恐惧比拖延更深一层_你不是怕开始是怕作品进入现实被审判.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题077_为什么ADHD的完成恐惧比拖延更深一层_你不是怕开始是怕作品进入现实被审判.md"
+    },
+    {
+      "from": "问题078_为什么ADHD的超聚焦是高浓度的多巴胺极化不是意志力胜利_你不是终于自律了是系统被单一信号劫持了.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题078_为什么ADHD的超聚焦是高浓度的多巴胺极化不是意志力胜利_你不是终于自律了是系统被单一信号劫持了.md"
+    },
+    {
+      "from": "问题079_为什么ADHD被打断后回不来是栈指针丢失不是性格脆弱_你断掉的不是心情是任务现场.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题079_为什么ADHD被打断后回不来是栈指针丢失不是性格脆弱_你断掉的不是心情是任务现场.md"
+    },
+    {
+      "from": "问题080_为什么ADHD的过度共情是镜像系统的无门控泄洪_你不是太敏感是别人的情绪没有边界地进来了.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题080_为什么ADHD的过度共情是镜像系统的无门控泄洪_你不是太敏感是别人的情绪没有边界地进来了.md"
+    },
+    {
+      "from": "问题081_为什么ADHD的决策疲劳在下午三点比午饭前更可预测_你不是突然废了是前额叶带宽被上午花光了.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题081_为什么ADHD的决策疲劳在下午三点比午饭前更可预测_你不是突然废了是前额叶带宽被上午花光了.md"
+    },
+    {
+      "from": "问题082_为什么ADHD需要任务的物理化身才能真正记得_你的大脑不是不重视是看不见就等于不存在.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题082_为什么ADHD需要任务的物理化身才能真正记得_你的大脑不是不重视是看不见就等于不存在.md"
+    },
+    {
+      "from": "问题083_为什么ADHD的反复确认不是焦虑是工作记忆校验和_你不是不信任自己是缓存太容易掉线.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题083_为什么ADHD的反复确认不是焦虑是工作记忆校验和_你不是不信任自己是缓存太容易掉线.md"
+    },
+    {
+      "from": "问题084_为什么ADHD读不完非虚构书恰恰是因为太懂这本书的核心_你不是没耐心是已经抓到主干后不想陪它走完证明.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题084_为什么ADHD读不完非虚构书恰恰是因为太懂这本书的核心_你不是没耐心是已经抓到主干后不想陪它走完证明.md"
+    },
+    {
+      "from": "问题085_为什么ADHD的反复重启项目是迭代而不是循环_你不是总在从头开始是每次都带回了新参数.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题085_为什么ADHD的反复重启项目是迭代而不是循环_你不是总在从头开始是每次都带回了新参数.md"
+    },
+    {
+      "from": "问题086_为什么ADHD会议中突然走神是大脑在帮你识别真正的关键句_你不是没听而是在等信号出现.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题086_为什么ADHD会议中突然走神是大脑在帮你识别真正的关键句_你不是没听而是在等信号出现.md"
+    },
+    {
+      "from": "问题087_为什么ADHD截止日期前才动是延迟最大化期望效用的理性策略_你不是只会拖是系统在等足够强的启动信号.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题087_为什么ADHD截止日期前才动是延迟最大化期望效用的理性策略_你不是只会拖是系统在等足够强的启动信号.md"
+    },
+    {
+      "from": "问题088_为什么ADHD反复刷同一个信息流是低成本的多巴胺取暖_你不是堕落是大脑在找最低门槛的火源.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题088_为什么ADHD反复刷同一个信息流是低成本的多巴胺取暖_你不是堕落是大脑在找最低门槛的火源.md"
+    },
+    {
+      "from": "问题089_为什么ADHD无法决定吃什么是选择维度过载不是优柔寡断_你不是没主见是每个选项都打开了太多后台.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题089_为什么ADHD无法决定吃什么是选择维度过载不是优柔寡断_你不是没主见是每个选项都打开了太多后台.md"
+    },
+    {
+      "from": "问题090_为什么ADHD工作时听书做菜同时进行是有意的认知节流_你不是混乱是给大脑加背景负载防止系统掉线.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题090_为什么ADHD工作时听书做菜同时进行是有意的认知节流_你不是混乱是给大脑加背景负载防止系统掉线.md"
+    },
+    {
+      "from": "问题091_为什么ADHD最需要的不是待办软件而是今日唯一动作_你不是不会规划是同时背了太多开机任务.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题091_为什么ADHD最需要的不是待办软件而是今日唯一动作_你不是不会规划是同时背了太多开机任务.md"
+    },
+    {
+      "from": "问题092_为什么ADHD的AI工作流必须有降级手动入口_你的外部前额叶不能只有豪华模式还要有断电模式.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题092_为什么ADHD的AI工作流必须有降级手动入口_你的外部前额叶不能只有豪华模式还要有断电模式.md"
+    },
+    {
+      "from": "问题093_为什么ADHD的好想法死在没有反馈回流_你缺的不是灵感是让现实回话的回路.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题093_为什么ADHD的好想法死在没有反馈回流_你缺的不是灵感是让现实回话的回路.md"
+    },
+    {
+      "from": "问题094_为什么ADHD的内容创业不能靠日更而要靠脉冲式发布_你不是流水线作者你是高压电容.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题094_为什么ADHD的内容创业不能靠日更而要靠脉冲式发布_你不是流水线作者你是高压电容.md"
+    },
+    {
+      "from": "问题095_为什么ADHD的个人品牌不是定位出来的是从反复失控里长出来的_你的辨识度藏在你总忍不住反复谈的伤口里.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题095_为什么ADHD的个人品牌不是定位出来的是从反复失控里长出来的_你的辨识度藏在你总忍不住反复谈的伤口里.md"
+    },
+    {
+      "from": "问题096_为什么ADHD最危险的不是拖延而是把搭系统误认为推进_你以为自己在铺路其实一直在修停车场.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题096_为什么ADHD最危险的不是拖延而是把搭系统误认为推进_你以为自己在铺路其实一直在修停车场.md"
+    },
+    {
+      "from": "问题097_为什么ADHD需要一个烂尾项目复活清单_你不是总在放弃你是在没有复活协议的世界里反复断线.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题097_为什么ADHD需要一个烂尾项目复活清单_你不是总在放弃你是在没有复活协议的世界里反复断线.md"
+    },
+    {
+      "from": "问题098_为什么ADHD的现金流要从外部反馈开始而不是从完美产品开始_先让世界回你一句话再谈规模化.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题098_为什么ADHD的现金流要从外部反馈开始而不是从完美产品开始_先让世界回你一句话再谈规模化.md"
+    },
+    {
+      "from": "问题099_为什么青年律师最需要的不是自律而是一个外部前额叶_你缺的不是努力是案件任务和情绪同时排队的调度系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题099_为什么青年律师最需要的不是自律而是一个外部前额叶_你缺的不是努力是案件任务和情绪同时排队的调度系统.md"
+    },
+    {
+      "from": "问题100_为什么法学生写不出论文不是因为懒而是启动系统坏了_你缺的不是资料是从巨大题目进入第一段的坡道.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题100_为什么法学生写不出论文不是因为懒而是启动系统坏了_你缺的不是资料是从巨大题目进入第一段的坡道.md"
+    },
+    {
+      "from": "问题101_为什么实习律师最容易死在我先整理一下资料_你不是在准备是把启动伪装成秩序.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题101_为什么实习律师最容易死在我先整理一下资料_你不是在准备是把启动伪装成秩序.md"
+    },
+    {
+      "from": "问题102_为什么律师的微信已读不回本质是决策瘫痪_你不是冷漠是每条消息都携带隐形法律后果.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题102_为什么律师的微信已读不回本质是决策瘫痪_你不是冷漠是每条消息都携带隐形法律后果.md"
+    },
+    {
+      "from": "问题103_为什么法律人最该训练的不是专注力而是切换力_你的一天不是深度工作而是高频上下文迁移.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题103_为什么法律人最该训练的不是专注力而是切换力_你的一天不是深度工作而是高频上下文迁移.md"
+    },
+    {
+      "from": "问题104_为什么青年律师的焦虑其实是大脑在做风险尽调_你不是想太多是没有把风险从情绪翻译成清单.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题104_为什么青年律师的焦虑其实是大脑在做风险尽调_你不是想太多是没有把风险从情绪翻译成清单.md"
+    },
+    {
+      "from": "问题105_为什么法律人的知识管理越做越复杂反而越不产出_你不是缺库是把搭系统误认为办案和写作.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题105_为什么法律人的知识管理越做越复杂反而越不产出_你不是缺库是把搭系统误认为办案和写作.md"
+    },
+    {
+      "from": "问题106_为什么AI_Agent是青年律师从助理到主理人的认知外骨骼_它不是替你做律师而是放大你的判断半径.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题106_为什么AI_Agent是青年律师从助理到主理人的认知外骨骼_它不是替你做律师而是放大你的判断半径.md"
+    },
+    {
+      "from": "问题107_为什么法学生需要今日唯一动作而不是一张完美学习计划_你不是不想学是被整个人生计划压到无法翻页.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题107_为什么法学生需要今日唯一动作而不是一张完美学习计划_你不是不想学是被整个人生计划压到无法翻页.md"
+    },
+    {
+      "from": "问题108_为什么律师成长最危险的不是不会学而是不会卸载_你不是知识不够是旧任务旧身份旧焦虑占满了系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题108_为什么律师成长最危险的不是不会学而是不会卸载_你不是知识不够是旧任务旧身份旧焦虑占满了系统.md"
+    },
+    {
+      "from": "问题109_为什么ADHDxAI博主最稀缺的位置不是老师而是制图者_你的价值不是教人用工具而是画出地形.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题109_为什么ADHDxAI博主最稀缺的位置不是老师而是制图者_你的价值不是教人用工具而是画出地形.md"
+    },
+    {
+      "from": "问题110_为什么AI内容越同质化ADHD创作者越应该保留不完美真实痕迹是算法时代的信任资产.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题110_为什么AI内容越同质化ADHD创作者越应该保留不完美真实痕迹是算法时代的信任资产.md"
+    },
+    {
+      "from": "问题111_为什么ADHD做内容不该追热点而要做危险区域标注员_别人封神时你负责标雷.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题111_为什么ADHD做内容不该追热点而要做危险区域标注员_别人封神时你负责标雷.md"
+    },
+    {
+      "from": "问题112_为什么双A博主的护城河不是粉丝数而是工具实测数据库你的每次失败都是地图坐标.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题112_为什么双A博主的护城河不是粉丝数而是工具实测数据库你的每次失败都是地图坐标.md"
+    },
+    {
+      "from": "问题113_为什么外包日记比AI教程更适合ADHD个人品牌用户想看你怎么把脑子接上系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题113_为什么外包日记比AI教程更适合ADHD个人品牌用户想看你怎么把脑子接上系统.md"
+    },
+    {
+      "from": "问题114_为什么ADHD创作者要从说的人升级成绘图的人情绪共鸣不够还要给路.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题114_为什么ADHD创作者要从说的人升级成绘图的人情绪共鸣不够还要给路.md"
+    },
+    {
+      "from": "问题115_为什么C级小博主才是AI生态的基因多样性库大号被算法驯化小号还会变异.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题115_为什么C级小博主才是AI生态的基因多样性库大号被算法驯化小号还会变异.md"
+    },
+    {
+      "from": "问题116_为什么纳米博主是ADHDxAI最好的冷启动阶段1到5万粉不是过渡而是信任黄金区.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题116_为什么纳米博主是ADHDxAI最好的冷启动阶段1到5万粉不是过渡而是信任黄金区.md"
+    },
+    {
+      "from": "问题117_为什么ADHD内容创业的第一资产不是人设而是读者坐标系你要知道他们困在哪个地图格.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题117_为什么ADHD内容创业的第一资产不是人设而是读者坐标系你要知道他们困在哪个地图格.md"
+    },
+    {
+      "from": "问题118_为什么你的旧法律粉丝不是包袱而是第一批高压执行功能用户他们只是还没用ADHD命名自己的崩溃.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题118_为什么你的旧法律粉丝不是包袱而是第一批高压执行功能用户他们只是还没用ADHD命名自己的崩溃.md"
+    },
+    {
+      "from": "问题119_为什么AI自媒体的不眠之夜越来越像情绪预制菜你以为看到新闻其实吃到的是统一调料.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题119_为什么AI自媒体的不眠之夜越来越像情绪预制菜你以为看到新闻其实吃到的是统一调料.md"
+    },
+    {
+      "from": "问题120_为什么AI热点发生14天后全网会变成同一篇文章同质化不是慢慢发生而是瞬间收敛.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题120_为什么AI热点发生14天后全网会变成同一篇文章同质化不是慢慢发生而是瞬间收敛.md"
+    },
+    {
+      "from": "问题121_为什么你越复制爆款公式越会被算法识别成廉价内容爆款模板正在变成集体降权信号.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题121_为什么你越复制爆款公式越会被算法识别成廉价内容爆款模板正在变成集体降权信号.md"
+    },
+    {
+      "from": "问题122_为什么Agent是AI内容里的暗线之王_参数竞赛热闹但最后一公里才赚钱.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题122_为什么Agent是AI内容里的暗线之王_参数竞赛热闹但最后一公里才赚钱.md"
+    },
+    {
+      "from": "问题123_为什么L2_5博主比情绪标题党更值钱比原发源更易懂比媒体更快.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题123_为什么L2_5博主比情绪标题党更值钱比原发源更易懂比媒体更快.md"
+    },
+    {
+      "from": "问题124_为什么公众号正在短视频化而小红书正在搜索引擎化平台不是渠道是不同的大脑.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题124_为什么公众号正在短视频化而小红书正在搜索引擎化平台不是渠道是不同的大脑.md"
+    },
+    {
+      "from": "问题125_为什么跨平台一鱼多吃会变成算法自杀不是分发越多越好而是原生度越高越好.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题125_为什么跨平台一鱼多吃会变成算法自杀不是分发越多越好而是原生度越高越好.md"
+    },
+    {
+      "from": "问题126_为什么AI内容需要内容对冲机制热点越热越要留20_冷内容.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题126_为什么AI内容需要内容对冲机制热点越热越要留20_冷内容.md"
+    },
+    {
+      "from": "问题127_为什么邀请码经济学能让AI产品自己长腿稀缺不是访问限制而是社交货币.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题127_为什么邀请码经济学能让AI产品自己长腿稀缺不是访问限制而是社交货币.md"
+    },
+    {
+      "from": "问题128_为什么春节长假和凌晨才是AI传播真正的隐藏按钮注意力不是均匀分布的.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题128_为什么春节长假和凌晨才是AI传播真正的隐藏按钮注意力不是均匀分布的.md"
+    },
+    {
+      "from": "问题129_为什么ADHD不是超能力也不是缺陷而是尖峰轮廓_环境决定它像外挂还是伤口.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题129_为什么ADHD不是超能力也不是缺陷而是尖峰轮廓_环境决定它像外挂还是伤口.md"
+    },
+    {
+      "from": "问题130_为什么ADHD的超聚焦需要日志而不是崇拜你要记录它的入口代价和坠落时间.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题130_为什么ADHD的超聚焦需要日志而不是崇拜你要记录它的入口代价和坠落时间.md"
+    },
+    {
+      "from": "问题131_为什么正常人的时间管理会伤害ADHD它假设你有稳定的内置时钟.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题131_为什么正常人的时间管理会伤害ADHD它假设你有稳定的内置时钟.md"
+    },
+    {
+      "from": "问题132_为什么ADHD真正需要的是兴趣驱动操作系统不是任务重要就能启动而是信号够亮才会启动.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题132_为什么ADHD真正需要的是兴趣驱动操作系统不是任务重要就能启动而是信号够亮才会启动.md"
+    },
+    {
+      "from": "问题133_为什么ADHD的晚睡需要关机SOP而不是自责你不是不睡是系统没有收到降噪信号.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题133_为什么ADHD的晚睡需要关机SOP而不是自责你不是不睡是系统没有收到降噪信号.md"
+    },
+    {
+      "from": "问题134_为什么ADHD女性最容易把症状误认为性格缺陷她们不是没症状是太会遮住症状.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题134_为什么ADHD女性最容易把症状误认为性格缺陷她们不是没症状是太会遮住症状.md"
+    },
+    {
+      "from": "问题135_为什么ADHD完成一件事只爽几秒_因为你的大脑没有成就结算系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题135_为什么ADHD完成一件事只爽几秒_因为你的大脑没有成就结算系统.md"
+    },
+    {
+      "from": "问题136_为什么AIbodydouble可能是ADHD的下一代陪跑者你缺的不是监督是一个不评判的同在.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题136_为什么AIbodydouble可能是ADHD的下一代陪跑者你缺的不是监督是一个不评判的同在.md"
+    },
+    {
+      "from": "问题137_为什么游戏化对ADHD有效但也最容易变成新成瘾多巴胺按钮不能没有刹车.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题137_为什么游戏化对ADHD有效但也最容易变成新成瘾多巴胺按钮不能没有刹车.md"
+    },
+    {
+      "from": "问题138_为什么ADHD的创意优势必须被环境解锁而不是被鸡血激活错误环境会把天赋磨成症状.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题138_为什么ADHD的创意优势必须被环境解锁而不是被鸡血激活错误环境会把天赋磨成症状.md"
+    },
+    {
+      "from": "问题139_为什么药物只能打开门而不能替你走完工作流专注力回来后系统仍然要有人搭.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题139_为什么药物只能打开门而不能替你走完工作流专注力回来后系统仍然要有人搭.md"
+    },
+    {
+      "from": "问题140_为什么ADHD的冲动不是敌人而是需要刹车系统的发动机能量不该被骂死应该被接线.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题140_为什么ADHD的冲动不是敌人而是需要刹车系统的发动机能量不该被骂死应该被接线.md"
+    },
+    {
+      "from": "问题141_为什么AI不是ADHD的效率工具而是认知外包操作系统_这不是提效是重建大脑架构.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题141_为什么AI不是ADHD的效率工具而是认知外包操作系统_这不是提效是重建大脑架构.md"
+    },
+    {
+      "from": "问题142_为什么每找到一个AI能替你做的事你就扩容了一次大脑外包不是偷懒是认知增生.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题142_为什么每找到一个AI能替你做的事你就扩容了一次大脑外包不是偷懒是认知增生.md"
+    },
+    {
+      "from": "问题143_为什么ADHD需要一张认知功能外包矩阵_你不能只问用什么工具要问替代哪个脑区.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题143_为什么ADHD需要一张认知功能外包矩阵_你不能只问用什么工具要问替代哪个脑区.md"
+    },
+    {
+      "from": "问题144_为什么外部前额叶最怕单点故障账号没了系统不能跟着塌.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题144_为什么外部前额叶最怕单点故障账号没了系统不能跟着塌.md"
+    },
+    {
+      "from": "问题145_为什么ADHD产品的核心不是待办而是启动坡道任务清单只告诉你山在哪不帮你上第一步.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题145_为什么ADHD产品的核心不是待办而是启动坡道任务清单只告诉你山在哪不帮你上第一步.md"
+    },
+    {
+      "from": "问题146_为什么危险区域标注可以做成ADHDAI工具测评的标准栏目好工具也可能用错人.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题146_为什么危险区域标注可以做成ADHDAI工具测评的标准栏目好工具也可能用错人.md"
+    },
+    {
+      "from": "问题147_为什么ADHD用户愿意为少自责付费而不是为更自律付费_真正的需求是减轻内耗.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题147_为什么ADHD用户愿意为少自责付费而不是为更自律付费_真正的需求是减轻内耗.md"
+    },
+    {
+      "from": "问题148_为什么负罪感焚烧炉应该从文章变成每日入口_内疚不是动力是每天要倒掉的垃圾.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题148_为什么负罪感焚烧炉应该从文章变成每日入口_内疚不是动力是每天要倒掉的垃圾.md"
+    },
+    {
+      "from": "问题149_为什么烂尾项目复活清单可以变成一个小产品你不是没有资产是没有复活协议.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题149_为什么烂尾项目复活清单可以变成一个小产品你不是没有资产是没有复活协议.md"
+    },
+    {
+      "from": "问题150_为什么ADHD的AI工作流需要能量档位而不是统一流程低电量时还用高配流程就是自毁.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题150_为什么ADHD的AI工作流需要能量档位而不是统一流程低电量时还用高配流程就是自毁.md"
+    },
+    {
+      "from": "问题151_为什么读者投稿坐标是双A社群的最小启动机制社群不是聊天群是一张共同绘制的地图.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题151_为什么读者投稿坐标是双A社群的最小启动机制社群不是聊天群是一张共同绘制的地图.md"
+    },
+    {
+      "from": "问题152_为什么ADHDxAI的变现应该先卖地图再卖课程课程要求服从地图允许导航.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题152_为什么ADHDxAI的变现应该先卖地图再卖课程课程要求服从地图允许导航.md"
+    },
+    {
+      "from": "问题153_为什么ADHD不适合日更但适合双周地图栏目_你不是流水线作者而是周期性制图者.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题153_为什么ADHD不适合日更但适合双周地图栏目_你不是流水线作者而是周期性制图者.md"
+    },
+    {
+      "from": "问题154_为什么ADHD内容生产应该按能量分工而不是按时间表分工高能写作低能整理中能互动.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题154_为什么ADHD内容生产应该按能量分工而不是按时间表分工高能写作低能整理中能互动.md"
+    },
+    {
+      "from": "问题155_为什么母版内容不是长文而是一个可变形的证据包平台吃的是不同物种不是同一盘菜.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题155_为什么母版内容不是长文而是一个可变形的证据包平台吃的是不同物种不是同一盘菜.md"
+    },
+    {
+      "from": "问题156_为什么小红书要写痛点步骤公众号要写框架证据同一选题要换语言不是换标题.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题156_为什么小红书要写痛点步骤公众号要写框架证据同一选题要换语言不是换标题.md"
+    },
+    {
+      "from": "问题157_为什么首发内容必须带评论区提问而不是只求点赞_点赞是情绪评论才是需求.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题157_为什么首发内容必须带评论区提问而不是只求点赞_点赞是情绪评论才是需求.md"
+    },
+    {
+      "from": "问题158_为什么发布后48小时比写作前48小时更重要内容真正开始工作是在读者回话以后.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题158_为什么发布后48小时比写作前48小时更重要内容真正开始工作是在读者回话以后.md"
+    },
+    {
+      "from": "问题159_为什么真实回流才是ADHD内容宇宙的燃料棒_没有反馈的灵感只是脑内烟花.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题159_为什么真实回流才是ADHD内容宇宙的燃料棒_没有反馈的灵感只是脑内烟花.md"
+    },
+    {
+      "from": "问题160_为什么你的选题池应该按反馈热度排序而不是按灵感顺序现实的回话比脑内兴奋更可靠.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题160_为什么你的选题池应该按反馈热度排序而不是按灵感顺序现实的回话比脑内兴奋更可靠.md"
+    },
+    {
+      "from": "问题161_为什么青年律师其实是最典型的外部前额叶需求人群案件客户情绪和截止日期同时排队.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题161_为什么青年律师其实是最典型的外部前额叶需求人群案件客户情绪和截止日期同时排队.md"
+    },
+    {
+      "from": "问题162_为什么法学生的论文痛苦和ADHD启动困难是同一个接口问题不是没资料是没有第一段坡道.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题162_为什么法学生的论文痛苦和ADHD启动困难是同一个接口问题不是没资料是没有第一段坡道.md"
+    },
+    {
+      "from": "问题163_为什么律师AI不是替代律师而是替代那些吞噬判断力的碎任务真正值钱的是判断不是搬砖.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题163_为什么律师AI不是替代律师而是替代那些吞噬判断力的碎任务真正值钱的是判断不是搬砖.md"
+    },
+    {
+      "from": "问题164_为什么从法律内容切到ADHDxAI不是背叛而是上游化你不再只讲职业成长而是讲认知系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题164_为什么从法律内容切到ADHDxAI不是背叛而是上游化你不再只讲职业成长而是讲认知系统.md"
+    },
+    {
+      "from": "问题165_为什么高压职业人群需要认知卸载而不是更多学习资料资料越多工作记忆越堵.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题165_为什么高压职业人群需要认知卸载而不是更多学习资料资料越多工作记忆越堵.md"
+    },
+    {
+      "from": "问题166_为什么法律人最该先用Agent做错题本而不是知识库知识库越大越容易变成新墓地.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题166_为什么法律人最该先用Agent做错题本而不是知识库知识库越大越容易变成新墓地.md"
+    },
+    {
+      "from": "问题167_为什么你的老粉迁移不靠解释转型而靠解决他们的当下崩溃_不要说你变了直接救他们一次.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题167_为什么你的老粉迁移不靠解释转型而靠解决他们的当下崩溃_不要说你变了直接救他们一次.md"
+    },
+    {
+      "from": "问题168_为什么从律师成长到双A制图者是一次人群扩大而不是换赛道你从一个职业走向一种大脑困境.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题168_为什么从律师成长到双A制图者是一次人群扩大而不是换赛道你从一个职业走向一种大脑困境.md"
+    },
+    {
+      "from": "问题169_为什么ADHD需要done_list而不是更多待办_你的大脑缺的不是任务是已完成证据.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题169_为什么ADHD需要done_list而不是更多待办_你的大脑缺的不是任务是已完成证据.md"
+    },
+    {
+      "from": "问题170_为什么ADHD的自尊需要证据墙不是鸡血鼓励而是可复查的完成记录.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题170_为什么ADHD的自尊需要证据墙不是鸡血鼓励而是可复查的完成记录.md"
+    },
+    {
+      "from": "问题171_为什么ADHD的复盘不能只问哪里没做好你需要先让大脑看见已经做成了什么.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题171_为什么ADHD的复盘不能只问哪里没做好你需要先让大脑看见已经做成了什么.md"
+    },
+    {
+      "from": "问题172_为什么ADHD需要成就回放而不是年终总结年终总结太远回放要按周发生.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题172_为什么ADHD需要成就回放而不是年终总结年终总结太远回放要按周发生.md"
+    },
+    {
+      "from": "问题173_为什么ADHD的完成感需要外部见证一个人偷偷做成很快会被大脑删档.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题173_为什么ADHD的完成感需要外部见证一个人偷偷做成很快会被大脑删档.md"
+    },
+    {
+      "from": "问题174_为什么ADHD的文件夹也应该会夸你项目状态页不是文档是外部自尊系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题174_为什么ADHD的文件夹也应该会夸你项目状态页不是文档是外部自尊系统.md"
+    },
+    {
+      "from": "问题175_为什么ADHD的内容选题要问谁会因此行动_只让人点头的文章还没开始赚钱.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题175_为什么ADHD的内容选题要问谁会因此行动_只让人点头的文章还没开始赚钱.md"
+    },
+    {
+      "from": "问题176_为什么ADHD的爆款不一定值钱_真正值钱的是能暴露付费痛点的评论.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题176_为什么ADHD的爆款不一定值钱_真正值钱的是能暴露付费痛点的评论.md"
+    },
+    {
+      "from": "问题177_为什么ADHD创作者要少写观点多写入口入口才会把读者带到下一步.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题177_为什么ADHD创作者要少写观点多写入口入口才会把读者带到下一步.md"
+    },
+    {
+      "from": "问题178_为什么旧法律粉丝不是要被说服而是要被重新命名他们的问题一直是认知负荷过载.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题178_为什么旧法律粉丝不是要被说服而是要被重新命名他们的问题一直是认知负荷过载.md"
+    },
+    {
+      "from": "问题179_为什么从法律人成长到ADHDxAI不是逃离专业而是看见了更底层的问题.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题179_为什么从法律人成长到ADHDxAI不是逃离专业而是看见了更底层的问题.md"
+    },
+    {
+      "from": "问题180_为什么这个选题池不该再追求数量_下一阶段要让每个S级题目长出正文发布包和产品入口.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题180_为什么这个选题池不该再追求数量_下一阶段要让每个S级题目长出正文发布包和产品入口.md"
+    },
+    {
+      "from": "问题181_为什么一篇ADHD文章不能只写正文还必须同时生成发布包_正文只是内容发布包才是投放接口.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题181_为什么一篇ADHD文章不能只写正文还必须同时生成发布包_正文只是内容发布包才是投放接口.md"
+    },
+    {
+      "from": "问题182_为什么ADHD作者最怕的不是写不出来而是写完之后不会发_发布不是收尾是第二次创作.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题182_为什么ADHD作者最怕的不是写不出来而是写完之后不会发_发布不是收尾是第二次创作.md"
+    },
+    {
+      "from": "问题183_为什么评论区不是互动区而是ADHD产品经理的需求访谈室_读者每一句我也是都是未命名需求.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题183_为什么评论区不是互动区而是ADHD产品经理的需求访谈室_读者每一句我也是都是未命名需求.md"
+    },
+    {
+      "from": "问题184_为什么每篇文章都应该带一个可复制的小模板_ADHD读者需要的不是感动是立刻少背一点.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题184_为什么每篇文章都应该带一个可复制的小模板_ADHD读者需要的不是感动是立刻少背一点.md"
+    },
+    {
+      "from": "问题185_为什么ADHD的知识付费不该从大课开始而该从一个9.9元模板开始_完成一次比听懂十次更重要.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题185_为什么ADHD的知识付费不该从大课开始而该从一个9.9元模板开始_完成一次比听懂十次更重要.md"
+    },
+    {
+      "from": "问题186_为什么选题越多越要建立冻结池_不是每个好题都该马上写.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题186_为什么选题越多越要建立冻结池_不是每个好题都该马上写.md"
+    },
+    {
+      "from": "问题187_为什么S级选题必须按正文-发布-回流-模板四步走_只写正文是在浪费最高势能.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题187_为什么S级选题必须按正文-发布-回流-模板四步走_只写正文是在浪费最高势能.md"
+    },
+    {
+      "from": "问题188_为什么AI代写最容易杀死ADHD文章里的痛感位置_顺滑不是高级带电才是资产.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题188_为什么AI代写最容易杀死ADHD文章里的痛感位置_顺滑不是高级带电才是资产.md"
+    },
+    {
+      "from": "问题189_为什么ADHD文章里的铁证不能只靠论文还要靠生活证据_读者相信的是被击中的经验.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题189_为什么ADHD文章里的铁证不能只靠论文还要靠生活证据_读者相信的是被击中的经验.md"
+    },
+    {
+      "from": "问题190_为什么ADHD的个人案例库比名人案例更值钱_名人证明可能性普通人证明可复制路径.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题190_为什么ADHD的个人案例库比名人案例更值钱_名人证明可能性普通人证明可复制路径.md"
+    },
+    {
+      "from": "问题191_为什么ADHD社群不该先建聊天群而该先建坐标库_没有地图的群聊只会变成情绪水池.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题191_为什么ADHD社群不该先建聊天群而该先建坐标库_没有地图的群聊只会变成情绪水池.md"
+    },
+    {
+      "from": "问题192_为什么我也是不够必须追问你卡在哪一步_共鸣是入口卡点才是产品.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题192_为什么我也是不够必须追问你卡在哪一步_共鸣是入口卡点才是产品.md"
+    },
+    {
+      "from": "问题193_为什么ADHDxAI工具测评不能只讲好用而要讲反噬场景_最危险的工具往往一开始最爽.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题193_为什么ADHDxAI工具测评不能只讲好用而要讲反噬场景_最危险的工具往往一开始最爽.md"
+    },
+    {
+      "from": "问题194_为什么低摩擦比功能强大更适合ADHD产品_入口多一步系统就可能死一次.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题194_为什么低摩擦比功能强大更适合ADHD产品_入口多一步系统就可能死一次.md"
+    },
+    {
+      "from": "问题195_为什么ADHD工具必须有退出机制_没有刹车的多巴胺工具不是外骨骼是捕兽夹.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题195_为什么ADHD工具必须有退出机制_没有刹车的多巴胺工具不是外骨骼是捕兽夹.md"
+    },
+    {
+      "from": "问题196_为什么旧法律粉丝最容易接受认知负荷而不是ADHD标签_先救场再命名.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题196_为什么旧法律粉丝最容易接受认知负荷而不是ADHD标签_先救场再命名.md"
+    },
+    {
+      "from": "问题197_为什么律师内容不是旧赛道包袱而是ADHDxAI的压力测试场_法律人只是认知负荷的极端样本.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题197_为什么律师内容不是旧赛道包袱而是ADHDxAI的压力测试场_法律人只是认知负荷的极端样本.md"
+    },
+    {
+      "from": "问题198_为什么法学生的论文启动困难是ADHD启动坡道最好的教学案例_空白页比诊断名更容易让人懂.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题198_为什么法学生的论文启动困难是ADHD启动坡道最好的教学案例_空白页比诊断名更容易让人懂.md"
+    },
+    {
+      "from": "问题199_为什么donelist最适合做ADHDxAI的第一个小产品_它不要求改变你只负责证明你做过.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题199_为什么donelist最适合做ADHDxAI的第一个小产品_它不要求改变你只负责证明你做过.md"
+    },
+    {
+      "from": "问题200_为什么负罪感焚烧炉比番茄钟更像ADHD刚需_番茄钟催你工作焚烧炉帮你清债.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题200_为什么负罪感焚烧炉比番茄钟更像ADHD刚需_番茄钟催你工作焚烧炉帮你清债.md"
+    },
+    {
+      "from": "问题201_为什么今日唯一动作可以成为ADHD内容宇宙的入口产品_它把所有宏大愿望压缩成一个可执行动作.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题201_为什么今日唯一动作可以成为ADHD内容宇宙的入口产品_它把所有宏大愿望压缩成一个可执行动作.md"
+    },
+    {
+      "from": "问题202_为什么烂尾项目复活清单应该先做成资产盘点而不是励志文章_你需要知道哪些废墟还能发电.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题202_为什么烂尾项目复活清单应该先做成资产盘点而不是励志文章_你需要知道哪些废墟还能发电.md"
+    },
+    {
+      "from": "问题203_为什么100篇文章之后最重要的是做主题地图而不是继续写第101篇_读者需要入口不需要仓库.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题203_为什么100篇文章之后最重要的是做主题地图而不是继续写第101篇_读者需要入口不需要仓库.md"
+    },
+    {
+      "from": "问题204_为什么ADHDxAI的文章应该按症状-工具-产品入口重排_时间顺序不是读者路径.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题204_为什么ADHDxAI的文章应该按症状-工具-产品入口重排_时间顺序不是读者路径.md"
+    },
+    {
+      "from": "问题205_为什么每篇文章都应该有一个二次变形记录_同一颗燃料棒可以供公众号小红书和模板三次燃烧.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题205_为什么每篇文章都应该有一个二次变形记录_同一颗燃料棒可以供公众号小红书和模板三次燃烧.md"
+    },
+    {
+      "from": "问题206_为什么ADHD内容变现要先卖一次人工服务再做自动化产品_先听见真实钱声再写系统.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题206_为什么ADHD内容变现要先卖一次人工服务再做自动化产品_先听见真实钱声再写系统.md"
+    },
+    {
+      "from": "问题207_为什么有人愿意把资料发给你整理比点赞更重要_真实托付才是产品需求信号.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题207_为什么有人愿意把资料发给你整理比点赞更重要_真实托付才是产品需求信号.md"
+    },
+    {
+      "from": "问题208_为什么ADHD产品的第一批用户不该追求规模而要追求高痛感样本_样本越痛反馈越清楚.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题208_为什么ADHD产品的第一批用户不该追求规模而要追求高痛感样本_样本越痛反馈越清楚.md"
+    },
+    {
+      "from": "问题209_为什么ADHD创作者需要冲刺周和回流周交替而不是每天都生产_大脑不是工厂是潮汐.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题209_为什么ADHD创作者需要冲刺周和回流周交替而不是每天都生产_大脑不是工厂是潮汐.md"
+    },
+    {
+      "from": "问题210_为什么低能量周不该停更而该只做证据搬运_你不必每周都发明新宇宙.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题210_为什么低能量周不该停更而该只做证据搬运_你不必每周都发明新宇宙.md"
+    },
+    {
+      "from": "问题211_为什么KimiAgent资料包不能躺在sources里吃灰_资料不是仓库是下一批选题的矿脉.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题211_为什么KimiAgent资料包不能躺在sources里吃灰_资料不是仓库是下一批选题的矿脉.md"
+    },
+    {
+      "from": "问题212_为什么论文证据应该进入证据库而不是散落在每篇文章里_可复用证据才会形成护城河.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题212_为什么论文证据应该进入证据库而不是散落在每篇文章里_可复用证据才会形成护城河.md"
+    },
+    {
+      "from": "问题213_为什么ADHD创作者不需要完美人设而需要可验证的失控记录_信任来自你真的在那里摔过.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题213_为什么ADHD创作者不需要完美人设而需要可验证的失控记录_信任来自你真的在那里摔过.md"
+    },
+    {
+      "from": "问题214_为什么我也还在修系统比我教你变自律更有力量_ADHD读者不需要导师需要同行制图者.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题214_为什么我也还在修系统比我教你变自律更有力量_ADHD读者不需要导师需要同行制图者.md"
+    },
+    {
+      "from": "问题215_为什么问题XXX的主线不是ADHD也不是AI而是高方差大脑如何外接现实_这才是账号护城河.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题215_为什么问题XXX的主线不是ADHD也不是AI而是高方差大脑如何外接现实_这才是账号护城河.md"
+    },
+    {
+      "from": "问题216_为什么法的投资人最适合讲认知系统而不是只讲职业成长_法律训练给了你风险语言ADHD给了你痛感位置.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题216_为什么法的投资人最适合讲认知系统而不是只讲职业成长_法律训练给了你风险语言ADHD给了你痛感位置.md"
+    },
+    {
+      "from": "问题217_为什么220个选题之后必须停一次_继续扩题可能是在把推进伪装成供料.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题217_为什么220个选题之后必须停一次_继续扩题可能是在把推进伪装成供料.md"
+    },
+    {
+      "from": "问题218_为什么选题池需要删除权_不能删除的系统迟早变成ADHD的新墓地.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题218_为什么选题池需要删除权_不能删除的系统迟早变成ADHD的新墓地.md"
+    },
+    {
+      "from": "问题219_为什么每个选题都要问它连接哪个产品入口_没有入口的好文章会变成漂亮孤岛.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题219_为什么每个选题都要问它连接哪个产品入口_没有入口的好文章会变成漂亮孤岛.md"
+    },
+    {
+      "from": "问题220_为什么这个项目真正要开发的不是文章库而是一套ADHDxAI的认知外包操作系统_100篇只是训练数据不是终点.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题220_为什么这个项目真正要开发的不是文章库而是一套ADHDxAI的认知外包操作系统_100篇只是训练数据不是终点.md"
+    },
+    {
+      "from": "问题221_为什么ADHD是古希腊掌管remix的神_你的大脑网络不是分心是在串台重组.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题221_为什么ADHD是古希腊掌管remix的神_你的大脑网络不是分心是在串台重组.md"
+    },
+    {
+      "from": "问题222_为什么ADHD自嗨很容易商业化很难_你不是缺商业头脑是缺多巴胺税制.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题222_为什么ADHD自嗨很容易商业化很难_你不是缺商业头脑是缺多巴胺税制.md"
+    },
+    {
+      "from": "问题223_为什么ADHD的想法库存需要折旧而不是永远珍藏_你不是灵感富豪是资产负债表混乱.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题223_为什么ADHD的想法库存需要折旧而不是永远珍藏_你不是灵感富豪是资产负债表混乱.md"
+    },
+    {
+      "from": "问题224_为什么ADHD的模板不是偷懒而是把启动成本证券化_你买的不是表格是下一次启动的坡道.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题224_为什么ADHD的模板不是偷懒而是把启动成本证券化_你买的不是表格是下一次启动的坡道.md"
+    },
+    {
+      "from": "问题225_为什么ADHD内容产品第一步不是课程而是领取后能用一次的表格_完成一次比听懂一套课更重要.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题225_为什么ADHD内容产品第一步不是课程而是领取后能用一次的表格_完成一次比听懂一套课更重要.md"
+    },
+    {
+      "from": "问题226_为什么ADHD的评论区关键词应该变成需求期货而不是情绪烟花_反复出现的词就是未来产品的价格信号.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题226_为什么ADHD的评论区关键词应该变成需求期货而不是情绪烟花_反复出现的词就是未来产品的价格信号.md"
+    },
+    {
+      "from": "问题227_为什么ADHD创作者需要反拖延报价单_别人愿意付钱的地方往往是你最想逃的地方.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题227_为什么ADHD创作者需要反拖延报价单_别人愿意付钱的地方往往是你最想逃的地方.md"
+    },
+    {
+      "from": "问题228_为什么ADHD的Agent不能只做助手还要做现实催化剂_它必须把每个想法逼到一个外部动作.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题228_为什么ADHD的Agent不能只做助手还要做现实催化剂_它必须把每个想法逼到一个外部动作.md"
+    },
+    {
+      "from": "问题229_为什么ADHD的知识库越大越需要墓地管理员_不是收藏更多而是定期判死刑.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题229_为什么ADHD的知识库越大越需要墓地管理员_不是收藏更多而是定期判死刑.md"
+    },
+    {
+      "from": "问题230_为什么ADHD的个人品牌需要失败现场栏目_可验证的修复比完美教程更可信.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题230_为什么ADHD的个人品牌需要失败现场栏目_可验证的修复比完美教程更可信.md"
+    },
+    {
+      "from": "问题231_为什么ADHD的产品定价要从少自责开始而不是提高效率_真正付费的是减轻内耗.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题231_为什么ADHD的产品定价要从少自责开始而不是提高效率_真正付费的是减轻内耗.md"
+    },
+    {
+      "from": "问题232_为什么ADHD的小红书内容要先问能不能收藏后立刻用_平台不是阅读场是即时工具箱.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题232_为什么ADHD的小红书内容要先问能不能收藏后立刻用_平台不是阅读场是即时工具箱.md"
+    },
+    {
+      "from": "问题233_为什么ADHD的公众号长文要有读者自测入口_没有自测宏大框架很难变成自己.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题233_为什么ADHD的公众号长文要有读者自测入口_没有自测宏大框架很难变成自己.md"
+    },
+    {
+      "from": "问题234_为什么ADHD的短视频前三秒必须说痛点不要说概念_滑走发生在大脑还没认同你之前.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题234_为什么ADHD的短视频前三秒必须说痛点不要说概念_滑走发生在大脑还没认同你之前.md"
+    },
+    {
+      "from": "问题235_为什么ADHD的社群需要沉默成员入口_最痛的人未必最会发言.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题235_为什么ADHD的社群需要沉默成员入口_最痛的人未必最会发言.md"
+    },
+    {
+      "from": "问题236_为什么ADHD的私域不是朋友圈卖货而是高痛感样本实验室_真正的价值是看见问题怎么复发.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题236_为什么ADHD的私域不是朋友圈卖货而是高痛感样本实验室_真正的价值是看见问题怎么复发.md"
+    },
+    {
+      "from": "问题237_为什么ADHD的产品验证要看复用率不是看领取数_模板被第二次打开才算活.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题237_为什么ADHD的产品验证要看复用率不是看领取数_模板被第二次打开才算活.md"
+    },
+    {
+      "from": "问题238_为什么ADHD的AI工具推荐必须写弃用理由_退出机制比种草更建立信任.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题238_为什么ADHD的AI工具推荐必须写弃用理由_退出机制比种草更建立信任.md"
+    },
+    {
+      "from": "问题239_为什么ADHD的高压职业用户需要任务清债服务_他们不是缺软件是欠债感太重.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题239_为什么ADHD的高压职业用户需要任务清债服务_他们不是缺软件是欠债感太重.md"
+    },
+    {
+      "from": "问题240_为什么ADHD的法律旧粉迁移可以从案件压力表开始而不是从ADHD科普开始_先救场再换地图.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题240_为什么ADHD的法律旧粉迁移可以从案件压力表开始而不是从ADHD科普开始_先救场再换地图.md"
+    },
+    {
+      "from": "问题241_为什么ADHD的创意要分成梗题模板产品四级_不分级就会全都变成新坑.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题241_为什么ADHD的创意要分成梗题模板产品四级_不分级就会全都变成新坑.md"
+    },
+    {
+      "from": "问题242_为什么ADHD需要15分钟现实税而不是年度商业计划_现实只接受小额连续缴纳.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题242_为什么ADHD需要15分钟现实税而不是年度商业计划_现实只接受小额连续缴纳.md"
+    },
+    {
+      "from": "问题243_为什么ADHD的donelist应该带证据链接_没有链接的完成感会被情绪推翻.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题243_为什么ADHD的donelist应该带证据链接_没有链接的完成感会被情绪推翻.md"
+    },
+    {
+      "from": "问题244_为什么ADHD的负罪感焚烧炉要保留灰烬_被烧掉的不是任务而是错误责任.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题244_为什么ADHD的负罪感焚烧炉要保留灰烬_被烧掉的不是任务而是错误责任.md"
+    },
+    {
+      "from": "问题245_为什么ADHD的今日唯一动作不能完全由自己选_你会选最亮的不一定选最该做的.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题245_为什么ADHD的今日唯一动作不能完全由自己选_你会选最亮的不一定选最该做的.md"
+    },
+    {
+      "from": "问题246_为什么ADHD的读者案例要匿名结构化_故事不沉淀成变量就只能感动一次.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题246_为什么ADHD的读者案例要匿名结构化_故事不沉淀成变量就只能感动一次.md"
+    },
+    {
+      "from": "问题247_为什么ADHD的文章需要反对意见段落_信任不是来自全对而是来自知道边界.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题247_为什么ADHD的文章需要反对意见段落_信任不是来自全对而是来自知道边界.md"
+    },
+    {
+      "from": "问题248_为什么ADHDxAI不能被做成纯效率账号_效率太窄认知外包才是底层市场.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题248_为什么ADHDxAI不能被做成纯效率账号_效率太窄认知外包才是底层市场.md"
+    },
+    {
+      "from": "问题249_为什么ADHD的付费产品要有低能量版本_用户最需要你时往往没有力气使用你.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题249_为什么ADHD的付费产品要有低能量版本_用户最需要你时往往没有力气使用你.md"
+    },
+    {
+      "from": "问题250_为什么ADHD的模板包要有空白太少原则_空白越多启动越难.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题250_为什么ADHD的模板包要有空白太少原则_空白越多启动越难.md"
+    },
+    {
+      "from": "问题251_为什么ADHD的Agent工作流必须写失败时怎么办_正常运行不是产品失败恢复才是.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题251_为什么ADHD的Agent工作流必须写失败时怎么办_正常运行不是产品失败恢复才是.md"
+    },
+    {
+      "from": "问题252_为什么ADHD的内容地图要按崩溃场景排序而不是按理论分类_读者是带着火来的不是带着目录来的.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题252_为什么ADHD的内容地图要按崩溃场景排序而不是按理论分类_读者是带着火来的不是带着目录来的.md"
+    },
+    {
+      "from": "问题253_为什么ADHD的商业化第一批用户应来自主动托付而不是泛粉丝_愿意交材料的人已经越过了点赞.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题253_为什么ADHD的商业化第一批用户应来自主动托付而不是泛粉丝_愿意交材料的人已经越过了点赞.md"
+    },
+    {
+      "from": "问题254_为什么ADHD的复购来自连续减负而不是一次性顿悟_用户要回来的是被持续接住的感觉.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题254_为什么ADHD的复购来自连续减负而不是一次性顿悟_用户要回来的是被持续接住的感觉.md"
+    },
+    {
+      "from": "问题255_为什么ADHD的AI应用要先做本地文件夹再做云端账号_外部前额叶不能再丢一次.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题255_为什么ADHD的AI应用要先做本地文件夹再做云端账号_外部前额叶不能再丢一次.md"
+    },
+    {
+      "from": "问题256_为什么ADHD的项目管理需要停更保护机制_断更不可怕断档才可怕.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题256_为什么ADHD的项目管理需要停更保护机制_断更不可怕断档才可怕.md"
+    },
+    {
+      "from": "问题257_为什么ADHD创作者的最大资产是持续被自己击中_麻木才是内容死亡.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题257_为什么ADHD创作者的最大资产是持续被自己击中_麻木才是内容死亡.md"
+    },
+    {
+      "from": "问题258_为什么ADHD的工具站应该先做静态目录而不是复杂后台_先让读者找到入口.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题258_为什么ADHD的工具站应该先做静态目录而不是复杂后台_先让读者找到入口.md"
+    },
+    {
+      "from": "问题259_为什么ADHD的产品说明不能太完整_说明越长启动越晚.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题259_为什么ADHD的产品说明不能太完整_说明越长启动越晚.md"
+    },
+    {
+      "from": "问题260_为什么ADHDxAI的下一阶段不是更多文章而是十个可复用入口_内容宇宙要开始长器官.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题260_为什么ADHDxAI的下一阶段不是更多文章而是十个可复用入口_内容宇宙要开始长器官.md"
+    },
+    {
+      "from": "问题261_为什么ADHD会天然迷恋杠铃策略_你不是只想赌是受不了中间态.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题261_为什么ADHD会天然迷恋杠铃策略_你不是只想赌是受不了中间态.md"
+    },
+    {
+      "from": "问题262_为什么ADHD真正需要的是Harness工程_特性不是成果接上线才是成果.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题262_为什么ADHD真正需要的是Harness工程_特性不是成果接上线才是成果.md"
+    },
+    {
+      "from": "问题361_为什么越用AI的人越容易觉得自己没用_AI让我效率翻倍也让我失去生产体感.md",
+      "to": "archive/loose-files-before-cleanup/root-drafts/问题361_为什么越用AI的人越容易觉得自己没用_AI让我效率翻倍也让我失去生产体感.md"
+    }
+  ]
+}

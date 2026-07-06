@@ -1,0 +1,37 @@
+{
+  "version": "2026-05-23-strongfill-v1",
+  "total_topics": 1000,
+  "rules": {
+    "topic_id": "Q001-Q1000",
+    "execution_tier": "L1=1-200,L2=201-600,L3=601-1000",
+    "status": "existing=1-262,planned=263-1000",
+    "planned_anchor_cycle": ["Q135","Q169","Q181","Q221","Q222","Q227","Q237","Q249","Q261","Q262"],
+    "planned_decision": "same_axis_upgrade except every 7th planned row => new_topic"
+  },
+  "mappings": [
+    {
+      "topic_id": "Q001",
+      "status": "existing",
+      "dedup_anchor": "Q001",
+      "decision": "keep_existing",
+      "reason": "既有题保留并继续补闭环",
+      "confidence": 0.68
+    },
+    {
+      "topic_id": "Q002",
+      "status": "existing",
+      "dedup_anchor": "Q002",
+      "decision": "keep_existing",
+      "reason": "既有题保留并继续补闭环",
+      "confidence": 0.81
+    },
+    {
+      "topic_id": "Q003",
+      "status": "existing",
+      "dedup_anchor": "Q003",
+      "decision": "keep_existing",
+      "reason": "既有题保留并继续补闭环",
+      "confidence": 0.56
+    }
+  ]
+}

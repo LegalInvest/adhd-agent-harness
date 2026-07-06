@@ -1,0 +1,37 @@
+{
+  "id": "问题037",
+  "number": 37,
+  "title": "问题037_为什么ADHD是县域经济研究员的理想大脑——你的扫描雷达天然适合看见地方系统的暗线",
+  "priority": "B",
+  "status": "closed_loop_ready",
+  "draft": true,
+  "publish_packet": true,
+  "xhs": true,
+  "zhihu": true,
+  "short_video": true,
+  "comment_question": true,
+  "feedback_sheet": true,
+  "template_entry": true,
+  "closed_loop_ready": true,
+  "updated_at": "2026-06-03",
+  "quality_audited": true,
+  "quality_score": "upgraded_2026-06-03",
+  "ignition_rewritten": true,
+  "ignition_rewritten_at": "2026-06-03",
+  "current_scores": {
+    "desire": 6,
+    "thought": 6,
+    "action": 6,
+    "total": 18,
+    "target_total": 27
+  },
+  "current_upgrade_principle": "S级不只观点锋利；读者第3段自我识别，中段重写解释，结尾立刻行动。",
+  "current_scoring_method": "触动内容版：先列所欲/所思/所行具体触动内容，再根据文本证据和行动摩擦综合评分。",
+  "current_trigger_profile": {
+    "category": "self",
+    "desire_trigger": "不再把聪明和失控撕裂地活着，而是想知道自己的高方差大脑怎样接上现实。",
+    "thought_trigger": "把“我就是废/懒/怪”改写成“我的启动、排序、反馈、能量或环境接口错配了”。",
+    "action_trigger": "打开备忘录写下当前最卡的一件事，让 AI 拆成一个五分钟动作和一个现实反馈信号。"
+  },
+  "rescored_at": "2026-06-03"
+}

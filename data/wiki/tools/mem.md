@@ -4,7 +4,7 @@
 
 ## 是什么
 
-Mem 是一款以“AI 第二大脑”为定位的生产力工具，专注于跨会话保持项目上下文、偏好和过往工作，减少用户重复陈述和搜索开销（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。它通过持久记忆和可复用工作流，帮助用户在执行多步骤任务时保持连贯性。
+Mem 是一款以“AI 第二大脑”为定位的生产力工具，专注于跨会话保持项目上下文、偏好和过往工作，减少用户重复陈述和搜索开销（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。它通过持久记忆和可复用工作流，帮助用户在执行多步骤任务时保持连贯性。从架构上看，Mem 属于“工具使用型单智能体”，其核心是围绕 LLM 构建的模块化系统，包含记忆、工具和决策逻辑（来源：Agent Scaffolding: Architecture and Design Patterns for Agentic AI）。
 
 ## 与 ADHD 的关系
 
@@ -19,7 +19,7 @@ Mem 的 AI 核心功能包括：
 - **项目上下文保持**：将项目相关信息置于助手可复用的位置，减少搜索循环和标签切换（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
 - **多步骤工作流执行**：用户给出指令后，AI 自动执行多步流程，并根据用户标准检查质量（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
 
-这些特性与 [[Saner.AI]] 等工具相似，但 Mem 更强调围绕文件、规则和可复用工作流构建的“第二大脑”架构（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。
+这些特性与 [[Saner.AI]] 等工具相似，但 Mem 更强调围绕文件、规则和可复用工作流构建的“第二大脑”架构（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。从智能体架构角度看，Mem 通过“智能体脚手架”将 LLM 置于控制循环中，使其能够观察环境、调用工具、更新记忆并迭代直至目标达成（来源：Agent Scaffolding: Architecture and Design Patterns for Agentic AI）。
 
 然而，从认知科学角度看，LLM 的工作记忆机制与人类有相似之处：它们都受容量限制和干扰影响（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs；Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length）。甚至，Transformer 机制在训练于人类工作记忆任务时，会模仿前额叶-纹状体门控操作（来源：TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS）。这意味着 Mem 的 AI 可能并非完美记忆，其工作记忆限制可能影响长期上下文保持的可靠性。
 
@@ -47,3 +47,4 @@ Mem 的 AI 核心功能包括：
 - Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length
 - Working Memory Identifies Reasoning Limits in Language Models
 - TRANSFORMER MECHANISMS MIMIC FRONTOSTRIATAL GATING OPERATIONS WHEN TRAINED ON HUMAN WORKING MEMORY TASKS
+- Agent Scaffolding: Architecture and Design Patterns for Agentic AI

@@ -305,7 +305,26 @@ def _collect_wiki_sources(ctx: dict) -> list[dict]:
     return sources
 
 
-def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
+def _case_block(topic: dict, index: int, case_retriever, cases=None) -> str:
+    if cases is None:
+        if case_retriever is None or not case_retriever.available:
+            return ""
+        cases = case_retriever.cases_for_topic(topic, offset=index)
+    if not cases:
+        return ""
+    lines = "\n".join(f"- [{c['kind']}] {c['text']}" for c in cases)
+    stat = case_retriever.stat_for_topic(topic)
+    stat_line = f"\n\u76f8\u5173\u6027\u7edf\u8ba1\uff08\u771f\u5b9e\u6765\u6e90\uff09\uff1a{stat}" if stat else ""
+    return (
+        "\n=== \u4eba\u7269\u6848\u4f8b\uff08\u771f\u5b9e\u4eba\u7269\u7684 harness \u81ea\u6211\u7ba1\u7406\u7cfb\u7edf\uff0c\u53ef\u4f5c\u4e3a\u672c\u6587\u6848\u4f8b\u7d20\u6750\uff09===\n"
+        f"{lines}{stat_line}\n"
+        "\u4f7f\u7528\u8981\u6c42\uff1a\u4ece\u4e2d\u9009 1-2 \u4f4d\u4e0e\u672c\u6587\u95ee\u9898\u6700\u5951\u5408\u7684\u4eba\u7269\uff0c\u5728\u6b63\u6587\u91cc\u7528\u4e00\u5c0f\u6bb5\u8bb2\u6e05\u4ed6/\u5979\u7684 ADHD \u7279\u8d28\u4e0e harness \u7cfb\u7edf\uff0c"
+        "\u5e76\u70b9\u660e\u5b83\u4e0e LLM/agent harness \u7684\u540c\u6784\u5bf9\u5e94\uff08\u5982\u300c\u65e5\u8bfe\u2194\u5b9a\u65f6 re-grounding\u300d\u300c\u79d8\u4e66\u2194\u5916\u90e8\u8c03\u5ea6\u5668\u300d\uff09\u3002"
+        "\u4e0d\u8981\u7f57\u5217\u5168\u90e8\u6848\u4f8b\uff0c\u4e0d\u5f97\u7f16\u9020\u6848\u4f8b\u4e2d\u6ca1\u6709\u7684\u7ec6\u8282\u3002\n=== \u6848\u4f8b\u7ed3\u675f ===\n"
+    )
+
+
+def generate_article_llm(topic: dict, index: int, wiki_retriever, llm, case_retriever=None) -> dict:
     """
     研究驱动 + LLM Wiki 版文章生成：
     从 LLM 维护的互链 wiki 中取材，由大模型整合成有观点、可溯源的文章。
@@ -332,6 +351,11 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
     ctx = wiki_retriever.context_for_topic(topic, offset=index)
     context_block = _wiki_context_block(ctx)
     wiki_sources = _collect_wiki_sources(ctx)
+    cases = (
+        case_retriever.cases_for_topic(topic, offset=index)
+        if (case_retriever is not None and case_retriever.available) else []
+    )
+    case_block = _case_block(topic, index, case_retriever, cases)
 
     spine_block = ""
     if spine:
@@ -351,12 +375,13 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
         f"以及在做 Agentic Harness 工程（{harness_parallel or 'agent/LLM 编排'}）的工程师。\n\n"
         f"要回答的核心问题：{problem}\n"
         f"标题：{title}\n副标题：{subtitle}\n分类：{category_name}\n切入角度：{angle}\n"
-        f"{spine_block}\n"
+        f"{spine_block}{case_block}\n"
         f"=== wiki 资料（你唯一可用的事实来源）===\n{context_block}\n=== 资料结束 ===\n\n"
         "写作要求：\n"
         "- 1200-1800 字，markdown，用 ## 小节组织；从「问题」切入，用同构脊柱给出答案；\n"
         "- 必须整合 wiki 资料里的真实工具、概念与研究，关键论断后用「（来源：标题）」标注；\n"
-        "- 必须**同时**给出 ADHD 侧与 LLM/agent 侧的真实证据，让两类读者都觉得「这说的就是我」；\n"
+        + ("- 必须织入「人物案例」中 1-2 位真实人物的 harness 系统作为论据，并点明其与 LLM harness 的同构对应；\n" if case_block else "")
+        + "- 必须**同时**给出 ADHD 侧与 LLM/agent 侧的真实证据，让两类读者都觉得「这说的就是我」；\n"
         "- 必须提出一个**鲜明的核心观点/判断**（不要只罗列工具），并结合『矛盾与存疑』诚实指出局限；\n"
         "- 给出 2-4 条「今天就能试」的具体行动；\n"
         "- 不要写 H1 大标题（标题会另行添加），从引言直接开始；\n"
@@ -426,6 +451,7 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm) -> dict:
         "spineKind": spine_kind,
         "isEvolved": topic.get("is_evolved", False),
         "llmGenerated": True,
+        "caseStudies": [c["name"] for c in cases],
     }
     return {
         "frontmatter": frontmatter,

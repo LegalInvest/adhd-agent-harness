@@ -24,86 +24,81 @@ toolsCited:
   - "Goblin Tools"
   - "Saner.AI"
   - "Tiimo"
-  - "Motion"
-  - "Reclaim.ai"
-thesis: "ADHD 大脑与 LLM 同为“高产但缺调度层”的生成核心，因此给 ADHD 套外部脚手架（如 Routinery、Goblin Tools）与给 agent 调低采样温度，本质是同一类 harness 工程——都通过约束输出空间来补偿执行功能缺陷。"
+thesis: "ADHD 大脑与 LLM 是同一类「高产但缺执行调度层的生成核心」，两者的解法——外部脚手架与调低采样温度——在结构上同构，都是通过约束生成空间来换取稳定输出。"
 problem: "为什么用 ChatGPT 治 ADHD 的日常混乱不稳定，和给 agent 套 调低采样温度 是一回事？"
 spine: "采样温度与表现波动"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "孔子"
+  - "文天祥"
+  - "王晶"
 ---
 # 为什么用 ChatGPT 治 ADHD 的日常混乱不稳定，和给 agent 套 调低采样温度 是一回事？
 
 > ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么你的大脑像一台失控的生成器？
+你坐在电脑前，打开 ChatGPT，想写一封邮件。五分钟后，你发现自己在查“为什么猫会踩奶”。另一边，你部署的 agent 正在生成客户回复，但输出忽而热情洋溢，忽而冷若冰霜，像换了个人格。这两个场景，看似无关，底层却是同一个问题：**生成核心太强，调度层太弱**。
 
-你坐在电脑前，打开 ChatGPT，想让它帮你写一封邮件。它开始输出，但越往后越离谱——从正经商务突然拐到冷笑话，最后甚至开始编造事实。你叹了口气，把采样温度调低到 0.3，世界安静了。
+## 同构：ADHD 大脑与 LLM 的底层困境
 
-另一边，你自己的生活也是一样。早上起来有一堆事要做，但大脑像开了随机种子：明明要刷牙，却走到厨房打开冰箱；明明约了三点开会，两点五十还在刷手机，等回过神已经迟了十分钟。你试过各种待办清单，但要么忘记看，要么看了也启动不了。
+ADHD 大脑被描述为“高产但缺执行调度层的生成核心”（来源：AI 与 ADHD 的日常生活）。它创意爆棚、模式识别敏锐，但工作记忆是瓶颈——明尼苏达大学测试 LLM 的执行功能，发现“强记忆、弱控制”剖面：工作记忆容量甚至超过常人，但认知灵活性与注意控制存在核心缺陷（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。这直接对应 ADHD 的经典神经心理模式：不是记不住，是调不动。
 
-这两个场景，表面上是人和机器的不同问题，但底层逻辑完全同构。
+LLM 也一样。自注意力机制本身导致工作记忆容量限制：随任务复杂度增加，注意力分数熵增、注意力弥散，表现下降（来源：Self-Attention Limits Working Memory Capacity of Transformer-Based Models）。这就是 LLM 版的“注意力漂移”。
 
-## 同构脊柱：生成核心 vs. 调度层
+两者的共同解法，不是提升算力或智商，而是**给生成核心套一个外部调度层**。对 ADHD 来说，这个调度层是执行功能脚手架；对 LLM 来说，是 agent scaffolding 和采样温度控制。
 
-ADHD 大脑与 LLM 在结构上同为“高产但缺乏可靠执行调度层的生成核心”（来源：AI 与 ADHD 的日常生活）。LLM 有巨大的参数空间和联想能力，但如果没有采样温度控制、系统提示和上下文工程，它就会发散、重复、跑题。ADHD 大脑同样有丰富的想法和冲动，但缺乏执行功能来抑制无关刺激、维持目标导向行为。
+## 温度与混乱：同一个旋钮
 
-明尼苏达大学的一项研究测试了 LLM 的执行功能，发现其剖面是“强记忆、弱控制”——工作记忆容量甚至超过常人，但认知灵活性与注意控制存在核心缺陷，无法灵活切换任务集、无法抑制自动化反应，这正是 ADHD 的经典神经心理模式（来源：工作记忆）。耶鲁大学进一步发现，自注意力机制本身导致工作记忆容量限制：随任务难度增加，注意力分数熵增、注意力弥散、表现下降，与人类注意分散机制同源（来源：工作记忆）。
+“调低采样温度”是工程师控制 LLM 输出稳定性的标准操作。温度越低，模型越倾向于选择概率最高的 token，输出更保守、更可预测。温度越高，模型越敢探索低概率路径，输出更多样但也更随机。
 
-这意味着，ADHD 大脑和 LLM 的瓶颈都不在“算力”或“容量”，而在 orchestration 层——那个负责调度、抑制、切换的指挥中心。
+ADHD 的“日常混乱不稳定”，本质上就是大脑的“采样温度”过高。执行功能无法有效抑制干扰、锚定目标，导致行为输出方差极大——今天能超专注三小时，明天连刷牙都要挣扎半小时。
 
-## 解法同构：调低采样温度 vs. 套上外部脚手架
+而外部脚手架，就是那个“调低温度”的旋钮。
 
-给 LLM agent 调低采样温度，本质上是在约束输出分布，减少随机性，让模型更倾向于高概率的、可预测的 token 序列。这不是削弱模型的能力，而是给生成过程加一个“安全护栏”，确保输出落在任务需要的范围内。
+## 从孔子到 Routinery：脚手架的历史与当下
 
-对应到 ADHD 场景，外部脚手架工具做的正是同一件事。
+孔子是历史上最成功的“ADHD 脚手架用户”之一。他精力旺盛、冲动爱骂人、思维跳跃——《论语》全是场景化语录，无系统著作。他的解法是“克己复礼”：用外在的“礼”作为行为边界，每日反省（“吾日三省吾身”），70 岁才做到从心所欲不逾矩。
 
-**Routinery** 把早晨流程分解成固定步骤序列，用可视化倒计时和过渡提示引导用户一步步完成（来源：Routinery）。这相当于给大脑设了一个“低采样温度”的生成路径——不是禁止创意，而是确保在刷牙时你不会突然决定去擦窗户。
+这个系统与 LLM 的 agent harness 结构同构：**礼 = 约束条件（temperature 设置），日课 = 定时 re-grounding（context window 刷新），弟子 = 外部调度器（orchestrator）**。孔子不是没有创造力（生成核心极强），而是通过外部规则系统把创造力导向了目标行为。
 
-**Goblin Tools** 的 Magic ToDo 功能，自动将模糊任务（如“整理房间”）分解为具体步骤（“捡起地板上的衣服”“擦桌子”），降低启动门槛（来源：Goblin Tools）。这相当于把一个大 prompt 拆成多个小 prompt，每个的输出空间更窄，更可控。
+今天的工具在做同样的事。Routinery 用可视化倒计时和过渡提示，把“该做什么、现在做哪一步”从大脑内部搬到外部系统（来源：Routinery）。Goblin Tools 的 Magic ToDo 接受模糊任务（如“清理厨房”），自动分解为具体子步骤，用户可调节“辣度”控制分解粒度（来源：Goblin Tools）。Saner.AI 通过本地记忆和快速检索，减少搜索循环和标签切换（来源：Saner.AI）。
 
-**Saner.AI** 通过本地记忆和快速检索减少搜索循环和标签切换（来源：Saner.AI），相当于给 LLM 加了一个外部知识库，避免每次对话都从零开始——这正是 ADHD 工作记忆缺陷的镜像：需要外部记忆来保持连续性（来源：工作记忆）。
+这些工具都不是在替用户思考，而是在**降低大脑的“采样温度”**——通过减少选择、提供时间锚点、分解任务，让行为输出更稳定。
 
-这些工具不是替代你的大脑，而是充当外部调度层，补偿注意控制、认知灵活性等缺陷（来源：AI 与 ADHD 的日常生活）。
+## 证据：两边都有数据
 
-## 脚手架 vs. 拐杖：边界在哪里？
+ADHD 侧：创业概率在 ADHD 组是 6.25 倍于对照组（来源：Journal of Attention Disorders 2019）。这印证了“高产生成核心”的特质——但前提是找到合适的脚手架。
 
-但这里有一个危险：过度依赖外部脚手架可能削弱内在执行功能，工具从“脚手架”沦为“永久拐杖”（来源：矛盾与存疑）。
+LLM 侧：耶鲁大学发现，自注意力机制的工作记忆限制与人类注意分散机制同源，“注意力资源的弥散分配”正是 ADHD 注意缺陷的计算本质（来源：Self-Attention Limits Working Memory Capacity of Transformer-Based Models）。这意味着，LLM 的“温度问题”不是 bug，是架构特性。
 
-调低采样温度也有类似风险。如果永远用 0.1 的温度，模型会变得机械、缺乏创造力，失去生成新颖内容的能力。同样，如果 ADHD 用户完全依赖工具来分解任务、提醒时间、管理记忆，内在的执行功能可能进一步萎缩。
+## 脚手架 vs 拐杖：边界在哪里？
 
-关键在于：脚手架是“使用时辅助，撤掉后仍可独立站立”，拐杖是“没有它就无法行动”。好的工具设计应该逐步降低依赖——比如 Routinery 允许用户自定义流程，而不是强制固定；Goblin Tools 的分解结果可以编辑，而不是黑箱输出。但目前的工具大多缺乏“渐进式撤除”机制，用户可能陷入长期依赖。
+这里必须诚实指出争议。AI 工具是“外部执行功能层”还是“拐杖”？过度依赖可能导致能力退化（来源：矛盾与存疑）。孔子用了大半辈子“礼”的脚手架，到 70 岁才内化。文天祥以《正气歌》为 scaffold，每日读圣贤书，最终在生死关头完成了自主决策。
 
-## 证据的局限与争议
+关键在于：**脚手架的目标是最终可以拆除，拐杖的目标是永远不拆。** 好的 ADHD 工具应该像训练轮，而不是轮椅——它在你最摇晃的时候提供支撑，但允许你逐渐内化那些结构。
 
-必须诚实指出：当前 AI 工具对 ADHD 的有效性证据主要来自用户报告和小样本研究，缺乏大规模随机对照试验（来源：矛盾与存疑）。例如，Routinery 的有效性基于社区反馈和专家推荐，没有临床数据（来源：Routinery）。Goblin Tools 被评价为“简单有用”，但同样缺乏独立 RCT（来源：Goblin Tools）。
+## 今天就能试的 3 件事
 
-此外，个体差异巨大。ADHD 症状异质性高，同一工具对甲有效，对乙可能完全无用（来源：矛盾与存疑）。时间盲的 AI 干预效果也多来自用户报告（来源：时间盲）。多巴胺相关的干预（如视网膜检测）尚未成熟，临床意义存疑（来源：多巴胺）。
-
-所以，本文的同构论点是一个有力的概念框架，但不应被当作临床处方。它更像一个工程思路：无论你是 ADHD 患者还是 agent 开发者，你都在面对同一个问题——如何让一个强大的生成核心可靠地执行任务。
-
-## 今天就能试的 4 件事
-
-1. **给大脑调低温度**：下次做一件小事（比如写一封邮件），先写一个极简的步骤清单（不超过 5 步），然后严格按顺序执行，跳过任何中间冒出的想法。这相当于手动降低采样温度。
-2. **试用 Goblin Tools 的 Magic ToDo**：把一个让你拖延的任务（比如“报税”）输入进去，看它分解成什么。然后只做第一步。
-3. **设置 Routinery 晨间流程**：花 10 分钟创建起床后 30 分钟的步骤序列，打开可视化倒计时。观察启动阻力是否下降。
-4. **给 ChatGPT 加系统提示**：如果你用 AI 做任务，在 prompt 开头加上“请保持输出简洁、结构化，不要发散”。这就是你的“调温”操作。
+1. **给 ChatGPT 写一个“温度指令”**：在对话开头加一句“请用简洁、保守的语气回复，避免发散”。你会发现输出稳定性明显提升——这就是在调低 LLM 的采样温度。
+2. **用 Goblin Tools 分解一个你拖延的任务**：输入“整理书桌”，看它如何拆成 5-8 个小步骤。把“辣度”调到 3-4，找到最适合你的粒度。
+3. **给自己设一个“礼”**：选一个你容易失控的场景（如刷手机），设定一个外部规则（“手机必须放在另一个房间才能工作”）。这就是你的 temperature=0.3。
 
 ## 结语
 
-ADHD 大脑和 LLM 是同一类机器：强大的生成器，脆弱的调度器。给 agent 调低采样温度，和给自己套上 Routinery，都是给生成核心加一个 harness。不是压制能力，而是让能力被有序释放。
+ADHD 大脑和 LLM 共享同一个困境：生成能力远超调度能力。解法也共享同一个思路：**通过外部结构降低系统温度**。孔子用礼，工程师用 temperature 参数，你用 Routinery 或 Goblin Tools——本质都是给一个躁动的生成核心套上 harness。
 
-但 harness 不能永远不拆。真正的目标不是依赖工具，而是通过工具学会如何自己调度——哪怕只是把温度从 0.8 降到 0.6。
+这不是把人变成机器，而是让机器和人都能更稳定地成为自己。
 
 ## 参考来源
 
 - [AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors](https://thembatutors.com/ai-for-adhd-tools-and-apps/)
 - [11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog](https://blog.rivva.app/p/11-best-adhd-productivity-apps-for)
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs](https://preview.aclanthology.org/evt-to-venues/2026.eacl-long.281.pdf)
+- [Self-Attention Limits Working Memory Capacity of Transformer-Based Models](https://arxiv.org/pdf/2409.10715)
 
 ---
 

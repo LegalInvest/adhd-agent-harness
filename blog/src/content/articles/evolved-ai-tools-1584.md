@@ -22,87 +22,64 @@ sourceCount: 6
 toolsCited:
   - "Habitica"
   - "Goblin Tools"
-  - "Saner.AI"
   - "Lex"
-thesis: "ADHD大脑与LLM都是高产但缺执行调度层的生成核心，两者解决任务启动困难与function calling工具调用的本质同一：通过外部harness（脚手架）为生成核心提供启动脚本与验证循环，而非永久拐杖。"
+  - "Saner.AI"
+  - "ChatGPT"
+  - "Claude"
+thesis: "ADHD 大脑与 LLM 都是高产生成核心但缺乏稳定调度层，Habitica 为 ADHD 提供的任务分解与外部结构，与 agent 工程中的 function calling 工具调用在本质上是同一类 harness 设计：将不可控的生成能力约束到可执行的轨道上。"
 problem: "为什么用 Habitica 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？"
 spine: "工具使用与认知卸载"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "孔子"
+  - "辛弃疾"
+  - "凌斌"
 ---
 # 为什么用 Habitica 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？
 
 > Habitica 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么我脑子里有100个想法，却连起床都做不到？
+## 问题：为什么你明明想动，却就是动不了？
 
-如果你是ADHD成年人，你一定经历过这种场景：明明知道该写报告，大脑却像卡死的搜索引擎，光标闪烁，任务像一座大山压过来。你打开Habitica，给任务设了经验值、金币、甚至死亡惩罚——但第二天，你依然选择刷手机。问题不在你懒，而在于你的大脑缺少一个关键层：**执行调度**。
+ADHD 人群最熟悉的困境是“任务启动困难”——大脑里有一百个念头在飞，但身体像被钉在椅子上。你打开 Habitica，给自己设了一个任务“写报告”，然后盯着屏幕发呆，连点一下“开始”的力气都没有。另一边，AI 工程师在调试 agent，发现它明明有强大的生成能力，却总是在 tool call 时卡住：模型输出了完美的 JSON，但函数就是不执行，或者执行了错误参数。两边的痛感惊人地相似——**核心都在，但调度层掉了**。
 
-同样，如果你在开发AI agent，你一定遇到过：LLM能写诗、能编程、能规划旅行，但让它“帮我发邮件并检查日历”时，它要么编造工具，要么卡在第一步。你给它套上function calling，定义好工具，设定验证循环——然后它终于动起来了。问题也不在模型，而在于它缺少一个关键层：**工具调用与验证**。
+## 同构：高产核心 + 缺失的调度层
 
-这两个问题，本质上是同一回事。ADHD大脑与LLM是同一类“高产但缺执行调度层的生成核心”（来源：ADHD的AI工具全景）。Habitica治ADHD的任务启动困难，和给agent套function calling工具调用，共享同一套harness思路。
+ADHD 大脑常被描述为一个高产的“生成核心”——想法丰富、联想活跃，但缺少稳定、可靠的调度层来筛选、组织、启动和坚持任务（来源：ADHD 的 AI 工具全景）。大语言模型（LLM）同样如此：它能在一次推理中生成数千字的文本，却在长程上下文保持、目标维持和执行调度上存在天然缺陷。两者都需要外部脚手架：ADHD 需要 Habitica 这样的游戏化任务列表，LLM 需要 function calling 这样的工具调用接口。
 
-## 同构解剖：生成核心 vs 执行调度
+Habitica 的核心机制是：将复杂任务分解为可管理的子任务（如“写报告”拆成“打开文档”“写第一段”“写第二段”），每个子任务提供即时反馈（经验值、金币）。这本质上是一个**外部执行调度器**，把大脑的生成冲动（“我想写报告”）转化为可执行的原子步骤。LLM 的 function calling 同理：模型不能直接“写数据库”，它必须通过预定义的 function schema 来调用外部工具。每个 tool call 都是一个原子步骤，由 harness 负责执行、验证和返回结果。两者都在做同一件事：**用外部结构补偿内部调度缺陷**。
 
-### ADHD侧：任务启动困难 = 冷启动问题
+## 证据：两边都有真实数据
 
-ADHD大脑的生成核心（默认模式网络）极其活跃，能产生无数创意、计划和担忧。但执行功能层（前额叶）像信号不好的遥控器，无法可靠地将“想”转为“做”。任务启动困难，本质上是“冷启动”——大脑有资源，但缺乏启动脚本。Goblin Tools的Magic ToDo功能正是通过“魔法开关”将大任务拆为小步骤，降低启动门槛（来源：Goblin Tools）。用户反馈称“将压倒性的事情变成一系列不压倒性的事情”（来源：Goblin Tools）。Lex更进一步，允许单一指令触发多步骤任务序列，相当于为大脑提供预定义的启动脚本（来源：Lex）。
+ADHD 侧：Goblin Tools 的 Magic ToDo 功能能自动将模糊任务（如“清理厨房”）分解为具体子任务，用户可调节“辣度”控制粒度（来源：Goblin Tools）。Lex 允许通过单一指令触发多步骤任务序列，降低启动门槛（来源：Lex）。这些工具被成人 ADHD 用户广泛用于“外部执行功能”（来源：ChatGPT 被用作外部执行功能工具）。LLM 侧：agent harness 工程的核心组件包括“验证与 CI 集成”“结构化工作流和规划”，要求将复杂任务分解为子任务并在每一步进行验证（来源：幻觉与验证循环）。缺乏这些验证会导致“更多幻觉和重复工作”（来源：Loop Engineering for AI Agents: Memory-First Design）。
 
-### LLM侧：冷启动问题 = 工具调用缺失
+历史人物同样提供了证据。孔子一生精力旺盛、冲动易怒、思维跳跃，他的 harness 是“克己复礼”——用外在的“礼”作为行为边界，每日反省（“吾日三省吾身”）。这与 LLM harness 的“定时 re-grounding”完全对应：agent 需要定期检查自己是否偏离目标，孔子则需要每日检查言行是否合礼。辛弃疾 21 岁带 50 人冲几万人敌营抓叛徒，闲居 20 年把所有精力注入写词。他的 harness 是以词和剑为核心，用儒家的家国天下作为精神支柱——这相当于 LLM 的“系统提示”和“目标函数”，把生成能力约束在特定轨道上。
 
-LLM作为生成核心，同样擅长产出但缺乏执行调度。纯对话系统常因幻觉、缺乏接地和无法执行/验证行动而失败（来源：幻觉与验证循环）。Harness工程的核心就是解决这个问题：它提供上下文传递、工具接口、规划工件、验证循环、记忆系统和沙盒（来源：幻觉与验证循环）。function calling本质上是给LLM一个“启动脚本”——定义好可用的工具、输入输出格式、验证步骤，让模型按流程执行。复杂的harness不会盲目执行工具，而是实现验证步骤，例如检查输出格式或对模型编写的代码运行测试用例（来源：幻觉与验证循环）。
+## 判断：脚手架不是拐杖
 
-### 同构对应：脚手架 vs 拐杖
+一个常见的争议是：AI 工具是“外部执行功能层”还是“拐杖”？过度依赖是否导致能力退化？（来源：矛盾与存疑）我的判断是：**关键不在于用不用外部工具，而在于工具是否可内化**。Habitica 的任务分解习惯可以逐渐内化为大脑的自动流程，就像孔子最终“从心所欲不逾矩”——70 岁才做到，但做到了。同样，agent harness 的 function calling 接口可以被模型学会，最终在推理时自动规划工具调用序列。好的 harness 是脚手架，不是拐杖：它提供结构，但允许使用者逐渐接管。
 
-| ADHD侧 | LLM/harness侧 |
-|--------|--------------|
-| 任务启动困难 | 冷启动/工具调用缺失 |
-| Goblin Tools任务分解 | 预定义工具接口与规划 |
-| Lex单指令多步骤 | 结构化工作流与规划 |
-| 验证循环（如检查是否完成） | 结果验证与CI集成 |
+## 局限与诚实
 
-但这里有一个关键边界：**脚手架 vs 拐杖**。AI工具应作为脚手架促进能力发展，而非永久拐杖（来源：ADHD的AI工具全景）。Habitica如果让你永远依赖外部奖励，而不内化任务分解能力，它就是拐杖。同样，harness如果让LLM永远无法自主规划，它就是限制。好的harness应该逐步减少干预，让生成核心学会自我调度。
-
-## 真实证据：两边都成立
-
-### ADHD侧证据
-
-- **Goblin Tools**：用户报告称启动焦虑降低，任务分解“简单有用”（来源：Goblin Tools）。
-- **Lex**：单一指令触发复杂流程，减少决策疲劳，适合ADHD对即时反馈的需求（来源：Lex）。
-- **Saner.AI**：通过增强知识回忆减少搜索循环，补偿工作记忆不足（来源：Saner.AI）。
-
-但证据以定性为主，缺乏大规模对照试验（来源：矛盾与存疑）。个体差异大，部分用户可能发现分解步骤过于机械。
-
-### LLM侧证据
-
-- Harness工程实践中，验证循环显著减少幻觉和重复工作（来源：幻觉与验证循环）。
-- 确定性状态转换和“计划-执行”分离模式强制单向控制流，提升可靠性（来源：采样温度与表现波动）。
-- 缺乏验证的纯对话系统常因幻觉失败（来源：幻觉与验证循环）。
-
-但非确定性（采样温度、工具故障）使可重复性复杂化（来源：采样温度与表现波动），且过度结构化可能抑制模型的创造性。
-
-## 核心观点：Harness的本质是“外部执行功能层”
-
-我的判断是：**Habitica和function calling共享同一本质——它们都是为生成核心提供外部执行功能层的harness**。ADHD大脑和LLM都不缺生成能力，缺的是可靠的调度与验证。Habitica通过游戏化奖励提供外部启动信号，function calling通过预定义接口提供外部执行路径。两者都依赖“分解任务+验证循环”的结构。
-
-但必须诚实指出局限：过度依赖AI工具可能削弱内在能力（来源：矛盾与存疑）。例如，Otter.ai减轻笔记负担，但过度依赖可能削弱主动记笔记的能力（来源：ADHD的AI工具全景）。同样，如果LLM永远依赖预定义工具，它学不会自主探索。关键在于设计“可退出的脚手架”——随着能力提升，逐步减少外部支持。
+必须承认，ADHD 大脑与 LLM 的同构目前主要是类比推理，缺乏神经科学或计算机科学的直接证据（来源：矛盾与存疑）。此外，个体差异巨大：有的 ADHD 用户觉得 Habitica 的 gamification 是救星，有的觉得是噪音；有的 agent 需要严格的确定性状态机，有的可以容忍随机性（来源：采样温度与表现波动）。长期效果也未知——短期有效不代表能持续改善。
 
 ## 今天就能试的行动
 
-1. **ADHD读者**：用Goblin Tools的Magic ToDo将你最拖延的一个任务（比如“整理房间”）拆成5步以下的小步骤，每完成一步给自己一个即时奖励（如一颗糖）。观察启动焦虑是否降低。
-2. **工程师读者**：为你的agent添加一个简单的验证循环——在function call后检查输出格式，如果不符合则重新调用。对比添加前后的幻觉率。
-3. **跨界尝试**：将Habitica的“任务-奖励”逻辑映射到agent设计：为每个工具调用设定“经验值”（如成功次数），当经验值累积到阈值时，允许agent跳过某些验证步骤。这既是脚手架，也是逐步赋权。
-4. **反思边界**：每周检查一次，你或你的agent是否在没有工具的情况下也能完成类似任务。如果完全不能，说明harness已成拐杖——需要设计退出机制。
+1. **ADHD 侧**：在 Habitica 中创建一个“启动困难”任务，将其分解为 3 个原子步骤（如“打开电脑”“打开文档”“写第一句话”），每个步骤完成后给自己一个小奖励（经验值或实物）。
+2. **LLM 侧**：为你的 agent 添加一个“验证循环”——在每个 function call 之后检查返回结果是否符合预期，如果失败则重试或回退（来源：幻觉与验证循环）。
+3. **双人实验**：如果你是 ADHD 且会编程，试着用 Habitica 的 API 写一个自定义脚本，让 agent 在完成任务后自动在 Habitica 中打勾——把两边 harness 连起来。
+4. **反思**：记录一周内使用外部工具（如 Habitica、Goblin Tools）的频率，以及你是否感觉这些工具在“帮”你还是在“替”你做决定。如果感觉被替代，尝试减少粒度——让工具只提示，不执行。
 
 ## 参考来源
 
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
-- [Harnessing Artificial Intelligence to Live Better with ADHD - CHADD](https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/)
-- [AI Tools for Kids with ADHD: A Complete Guide for Parents...](https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [The 12 Best AI Tools for 2026 (That People Actually Use)](https://www.synthesia.io/post/ai-tools)
+- [Agent Scaffolding: Architecture and Design Patterns for Agentic AI](https://zbrain.ai/agent-scaffolding/)
+- [Best productivity apps for Mac you need to try](https://macpaw.com/reviews/best-productivity-apps-for-mac)
+- [Building AI Coding Agents for the Terminal: Scaffolding, Harness ...](https://arxiv.org/html/2603.05344v1)
 
 ---
 

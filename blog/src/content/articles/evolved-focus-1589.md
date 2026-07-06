@@ -24,76 +24,68 @@ toolsCited:
   - "Focusmate"
   - "RescueTime"
   - "Brain.fm"
-thesis: "ADHD 大脑与 LLM 在结构上同构——都是高产但缺乏执行调度层的生成核心，因此为 ADHD 设计的专注力工具（如 Motion）与为 LLM/agent 搭建的上下文工程（harness）本质是同一套思路：通过外部结构补偿内部调度缺陷。"
+thesis: "ADHD 大脑与 LLM 是同一类“高产但缺执行调度层的生成核心”，因此 Motion 治 ADHD 的注意力涣散与给 agent 套上下文工程本质相同——都是通过外部 harness 补偿调度缺陷，而非修复核心。"
 problem: "为什么用 Motion 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？"
 spine: "上下文工程"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "曾国藩"
+  - "释迦牟尼"
+  - "Robert Pearson"
 ---
 # 为什么用 Motion 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？
 
 > Motion 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-你打开 Motion，设定“深度工作两小时”，它自动把日历上的会议挪开、把任务拆成 25 分钟块、还弹窗催你开始。另一边，工程师正给 LLM agent 套上“上下文工程”——把系统提示写成“你只回答技术问题，忽略闲聊”，外加向量数据库记忆、任务队列调度。
+## 问题：为什么你越需要“专注”，就越专注不了？
 
-两件事听起来毫不相干。但如果你同时是 ADHD 患者和 agent 工程师，你会觉得脊背发凉：Motion 治 ADHD 注意力涣散的方式，和给 agent 套上下文工程，根本是同一套方案。
+如果你有 ADHD，一定熟悉这个场景：打开电脑，准备写报告，然后——刷了半小时社交媒体，又去查了“如何提高专注力”，最后发现自己坐在桌前，什么都没干。这不是意志力问题，是你的大脑天生缺了一个“调度层”。
 
-## 问题：高产但失控的生成核心
+如果你是 LLM/Agent 工程师，也一定熟悉这个场景：给 agent 一个复杂任务，它开始自由发挥，上下文越滚越长，最终输出偏离轨道，或者陷入循环。你不是没给模型，而是没给“上下文工程”。
 
-ADHD 大脑的核心特征是什么？不是“注意力缺陷”，而是“高产但无序”。它能同时冒出十个创意，却无法选一个执行。神经心理学研究显示，ADHD 个体的工作记忆容量甚至超过常人，但认知灵活性与注意控制存在核心缺陷——无法灵活切换任务集、无法抑制自动化反应（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。
+这两个问题，本质上是同一个问题。ADHD 大脑与 LLM 在结构上同构：两者都是**高产但缺乏可靠执行调度层的生成核心**（来源：AI 与 ADHD 的专注力）。因此，用 Motion 治 ADHD 的注意力涣散，和给 agent 套上下文工程，是一回事。
 
-LLM 也一样。GPT-4 能写诗、写代码、写论文，但你给它一个开放问题“帮我规划下周工作”，它可能输出 2000 字的废话。因为 LLM 本身没有内置的调度层——它不知道“当前该关注什么”，只会根据上下文概率生成下一个 token。
+## 同构：生成核心 vs 调度层
 
-两边的问题同构：**都拥有强大的生成核心，但缺乏可靠的执行调度层**（来源：ADHD 大脑与 LLM 的同构）。ADHD 需要外部工具来“减少决策、保留上下文、让下一步行动显而易见”（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）；LLM/agent 则需要“agent harness”——包裹模型本身之外的一切软件基础设施，处理调度、记忆、工具调用（来源：What is an agent harness in the context of large-language models?）。
+ADHD 大脑的典型特征是：创意发散、联想丰富、能进入超专注，但缺乏执行功能——计划、启动、维持、切换。LLM 的典型特征是：能生成流畅文本、能处理复杂推理，但缺乏上下文控制——容易跑偏、遗忘、被无关信息干扰。
 
-## 答案：上下文工程即 harness
+两者都需要一个“外部调度层”来接管执行控制。对于 ADHD，这个调度层叫“harness”（脚手架），比如 Focusmate 的实时问责、RescueTime 的时间记录、Motion 的自动排程。对于 LLM/Agent，这个调度层叫“上下文工程”，比如 prompt 结构设计、外部记忆注入、re-grounding 机制。
 
-Motion 做的，本质上就是上下文工程。它为你做了什么？
-- **限制上下文范围**：把“今天要做的所有事”压缩成“接下来 25 分钟只做这一件事”。
-- **提供外部记忆**：自动记录你花在每个任务上的时间，弥补工作记忆缺陷（来源：RescueTime 通过自动记录减轻工作记忆负担）。
-- **强制启动信号**：弹窗提醒、日历锁定，相当于给大脑一个“系统提示”。
+## 证据：两边都成立
 
-对应到 LLM agent 的上下文工程：
-- **限制上下文窗口**：系统提示里写“你只回答技术问题，忽略闲聊”，防止模型被无关输入带偏。
-- **外部记忆**：向量数据库存储历史对话，避免模型“忘记”前文（LLM 的无状态性与 ADHD 的工作记忆缺陷同构，来源：ADHD 大脑与 LLM 的同构）。
-- **调度层**：agent harness 里的“模型连接器”和“工作流绑定”决定哪个模型何时执行什么任务（来源：Building AI Coding Agents for the Terminal）。
+**ADHD 侧：** Focusmate 利用虚拟身体在场效应，通过实时同伴问责提供外部结构，弥补内在多巴胺调节不足，显著提升任务启动和维持（来源：Focusmate）。RescueTime 通过自动时间追踪，减轻工作记忆负担，帮助用户对抗时间盲（来源：RescueTime）。Motion 通过 AI 自动排程，帮助用户克服任务启动困难（来源：Motion）。这些工具的核心机制都是“外部执行功能层”——给生成核心套上 harness。
 
-证据在哪里？Focusmate 是另一个例子。它通过实时同伴问责提供外部结构和社会压力，弥补内在多巴胺调节不足（来源：Focusmate）。这对应 LLM 的“人类反馈”或“验证器”——一个外部裁判来检查输出是否跑偏。RescueTime 自动记录时间使用，帮助用户识别注意力漂移模式（来源：RescueTime 通过自动记录减轻工作记忆负担），对应 LLM 的“日志系统”和“监控告警”。
+**LLM/Agent 侧：** 上下文工程的核心是“给模型一个稳定的工作环境”。比如，用结构化 prompt 定义角色和步骤，用向量数据库存储外部记忆，用定时 re-grounding 防止上下文膨胀。这与 ADHD 的 harness 完全同构：日课十二条（曾国藩）↔ 定时 re-grounding；秘书/助理 ↔ 外部调度器；番茄钟 ↔ 上下文窗口限制。
 
-## 脚手架 vs 拐杖：同构的边界
+**历史人物案例：** 曾国藩是典型的 ADHD 特质——30 岁前浮躁坐不住，读书慢，“他人目下二三行，余或疾读不能终一行”，一辈子严重银屑病，情绪不稳定（来源：人物案例）。他的 harness 是“日课十二条”：黎明即起、读书不二、谨言、写日记反省。这套系统本质是“外部执行功能层”——用固定的行为模板替代内在调度，用每日反省对抗注意力漂移。这和给 LLM 写一个“每日 prompt 模板”来保持输出一致性，是同构的。
 
-但这里有一个危险：同构是隐喻，不是等价。LLM 的“注意力机制”与人类注意力存在本质差异（来源：ADHD 大脑与 LLM 的同构）。更关键的是，给 LLM 套 harness 不会让模型变“懒”，但给 ADHD 大脑套外部执行功能层，长期使用可能导致内在能力退化。
+## 核心观点：脚手架，不是拐杖
 
-这就是“脚手架 vs 拐杖”的边界。资料指出：AI 工具作为外部执行功能层，长期使用是否会导致 ADHD 患者内在执行功能进一步退化？拐杖与脚手架的边界尚不明确（来源：矛盾与存疑）。Motion 如果只是替你做所有调度决策，你永远学不会自己安排时间；但如果它像 Focusmate 一样只提供“在场感”而不替代决策，它就是脚手架。
+这里必须划一条界限：harness 是脚手架，不是拐杖。脚手架帮助建造能力，拐杖替代能力。对于 ADHD，长期依赖外部调度可能导致内在执行功能退化（来源：矛盾与存疑）。对于 LLM，过度依赖 prompt 工程可能掩盖模型本身的缺陷。因此，好的 harness 应该具备“可消退性”——随着能力提升逐渐撤除。
 
-我的判断是：**有效的 harness 必须保留用户的“调度参与感”**。Motion 的“自动排程”功能如果完全黑箱，就是拐杖；如果它让你手动确认每个时间块（类似 Focusmate 的预约时段），就是脚手架。同样，给 agent 的上下文工程如果完全写死系统提示而不允许模型“思考”是否偏离，就是过度限制；如果只提供约束框架而让模型自行推理，才是好的 harness。
+Motion 的问题是：它自动排程，用户只需执行。这降低了启动门槛，但也可能让用户失去练习时间管理的机会。Focusmate 更好一些：它提供结构但不替代决策，用户仍需自己选择做什么。RescueTime 介于两者之间：它记录时间但不直接干预，用户需要自己解读数据。
 
 ## 局限与争议
 
-必须诚实：现有证据主要来自用户报告和概念类比，缺乏大规模对照实验（来源：矛盾与存疑）。Brain.fm 宣称通过神经锁相技术帮助专注，但针对 ADHD 的独立临床研究缺乏（来源：Brain.fm）。Focusmate 效果高度依赖配对伙伴的可靠性（来源：Focusmate）。Motion 的 AI 调度是否真的优于手动安排，也没有严格验证。
-
-此外，个体差异巨大。ADHD 的异质性使得同一工具对不同亚型效果迥异（来源：矛盾与存疑）。你可能是“注意力分散型”，Motion 的强制锁定有用；但如果你是“过度专注型”，它反而打断你。
+同构是隐喻，不是严格等价。LLM 的“注意力机制”与人类注意力有本质差异——人类有情绪、有生理节律、有社会压力。Brain.fm 的神经锁相技术在 ADHD 中的独立临床证据仍有限（来源：Brain.fm）。此外，个体差异巨大：有的 ADHD 用户需要强力打断（如番茄钟），有的需要柔性引导（如超聚焦保护）（来源：矛盾与存疑）。
 
 ## 今天就能试的行动
 
-1. **给 Motion 加一条“手动确认”规则**：每次它自动排好日程后，花 30 秒手动调整一个时间块。这保留你的调度参与感，避免沦为拐杖。
-2. **用 RescueTime 的“聚焦时段”替代 Motion 的自动锁屏**：先观察自己何时容易分心（RescueTime 的模式识别），再手动设置专注时段，而不是让工具替你决定。
-3. **尝试 Focusmate 的“AI 匹配”**：预约一个时段，体会“外部在场”如何启动任务。之后对比 Motion 的自动提醒——哪个让你更有“调度感”？
-4. **给 LLM agent 写一条“反跑偏”系统提示**：例如“如果用户问非技术问题，回复‘我专注于技术问题，请重述’”。观察它是否比无限制时输出更稳定。
-
-## 结语
-
-Motion 和上下文工程是一回事，因为它们解决的是同一个问题：**给高产但失控的生成核心套上外部调度层**。区别只在于，LLM 不会抱怨你管太多，而 ADHD 大脑需要你管得刚刚好——不多不少，恰好是脚手架，不是拐杖。
+1. **ADHD 用户：** 用 Focusmate 预约一个 25 分钟的工作时段，体验外部问责的力量。不要用 Motion 自动排程，先手动选择一项任务。
+2. **工程师：** 给你的 agent 加一个“re-grounding 提示”——每 5 轮对话后，重新注入原始任务目标和关键约束。观察输出稳定性变化。
+3. **两者通用：** 用 RescueTime 记录一周的时间去向，找出注意力漂移的模式。然后设计一个简单的“上下文工程”方案：比如每天固定时间处理同一类任务。
+4. **反思：** 问自己——这个工具是在帮我建脚手架，还是让我更依赖它？如果是后者，考虑逐步减少使用频率。
 
 ## 参考来源
 
-- [11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog](https://blog.rivva.app/p/11-best-adhd-productivity-apps-for)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
 - [Meta-Analysis of fMRI Studies of Disruptive Behavior Disorders](https://doi.org/10.1176/appi.ajp.2016.15081089)
 - [Nonlinear Complexity Analysis of Brain fMRI Signals in Schizophrenia](https://doi.org/10.1371/journal.pone.0095146)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [AI Tools for Kids with ADHD: A Complete Guide for Parents...](https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
+- [Revolutionizing ADHD Management with AI Assistants](https://neurolaunch.com/adhd-ai-assistant/)
+- [The 12 Best Apps for ADHD in 2026: A Guide to Finding What ...](https://www.getinflow.io/post/best-apps-for-adhd)
+- [Social Functioning and Emotional Regulation in the Attention Deficit Hyperactivity Disorder Subtypes](https://doi.org/10.1207/s15374424jccp2901_4)
 
 ---
 

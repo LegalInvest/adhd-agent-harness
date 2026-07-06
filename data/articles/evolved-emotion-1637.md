@@ -25,69 +25,76 @@ toolsCited:
   - "Goblin Tools"
   - "Saner.AI"
   - "Focusmate"
-  - "Brain.fm"
-thesis: "ADHD 的情绪失调与 LLM agent 的目标漂移本质相同——都是高产生成核心缺乏可靠执行调度层的表现，因此 Tiimo 等工具与 agent harness（会褪去的脚手架）是同一种外部调度结构，而非永久拐杖。"
+thesis: "ADHD 的情绪失调与 LLM/agent 的不可靠输出源于同一类问题——生成核心过强但调度层缺失，因此 Tiimo 等外部执行功能工具与 agent harness（会褪去的脚手架）在结构上同构，都是通过外部调度层补偿内在缺陷，且必须警惕从‘脚手架’滑向‘永久拐杖’的风险。"
 problem: "为什么用 Tiimo 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？"
 spine: "拐杖与脚手架"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "释迦牟尼"
+  - "张旭"
+  - "李明"
 ---
 # 为什么用 Tiimo 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？
 
 > Tiimo 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：当情绪像脱缰的 LLM
+你打开 Tiimo，屏幕上是一天的时间轴，每个色块代表一个任务。你告诉自己：今天要写报告。但你的大脑像一台没有调度器的生成模型——想法喷涌，却无法按顺序执行。三分钟后，你点开了另一个标签页；十分钟后，你在查“如何用 AI 管理 ADHD”；半小时后，你开始焦虑为什么还没开始。
 
-你是否有过这样的经历：明明只是一个小挫折——比如打翻水杯、错过一条消息——却突然情绪崩盘，愤怒或沮丧持续数小时，理性完全离线？ADHD 群体的情绪失调，就像 LLM 在长程任务中突然开始“忘记系统提示”（来源：Building an AI Coding Agent for the Terminal），输出变得不可控。两者共享同一个底层问题：**一个高产的生成核心，配了一个不可靠的执行调度层**。
+这不是意志力问题。这是执行功能缺陷。而另一边，工程师正在调试一个 LLM agent：模型输出了完美的代码片段，但 agent 却陷入了无限循环，或者调用了不该调的工具。模型本身没问题——问题在于它缺少一个可靠的调度层。
 
-ADHD 大脑的生成核心（发散思维、创意、多任务并行）产出极高，但执行功能（工作记忆、任务启动、抑制冲动）薄弱（来源：AI 与 ADHD 的情绪调节）。LLM 同样能快速生成复杂文本，但缺乏可靠的执行调度，容易偏离目标、陷入循环或产生危险行为（来源：人在回路与身体在场）。情绪失调，就是 ADHD 大脑的“上下文失控”——当工作记忆过载或注意力被干扰时，情绪反应如同 LLM 的幻觉，脱离理性轨道（来源：AI 与 ADHD 的情绪调节）。
+这两件事是同一件事。
 
-## 同构解法：Tiimo 与 agent harness 是一回事
+## 同构：高产但缺调度层的生成核心
 
-Tiimo 是一款专为 ADHD 设计的视觉化时间管理工具，它通过时间轴、计时器和提醒，帮助用户“客观化情绪体验”（来源：AI 与 ADHD 的情绪调节）。当情绪来袭，Tiimo 的计时器告诉你“这个感觉只会持续 x 分钟”，对抗时间盲导致的“情绪永远持续”的错觉。它的本质是**外部执行调度层**：接管时间感知和任务切换，让生成核心（你的大脑）可以安心产出，不必分心管理执行。
+ADHD 大脑的情绪失调，根源往往不是情绪本身，而是执行功能缺陷。工作记忆不稳定让你记不住刚才为什么生气；时间盲让你觉得 deadline 还很远；任务启动困难让你在焦虑中拖延，直到情绪爆发。这就像 LLM 的生成能力：它能写出莎士比亚，但如果你不给它护栏和调度，它会跑题、重复、甚至编造事实。
 
-而 agent harness（脚手架）是 LLM 的“外部执行调度层”。它通过事件驱动的系统提醒、token 预算、人工检查点等护栏，防止模型在长程任务中目标漂移（来源：重锚定与目标漂移）。Harness 的核心是“形式化规划与护栏，使代理输出真正有用且正确”（来源：人在回路与身体在场）。模型本身强大，可靠性来自架构+护栏（来源：人在回路与身体在场）。
+AI 工具在这里的角色，就是那个缺失的调度层。Tiimo 把一天切成可视化的色块，让你不需要靠工作记忆去“记得”下一步该做什么；Inflow 用 CBT 结构化程序教你在情绪上来时做认知重构（来源：Inflow）；Goblin Tools 的 Magic ToDo 把“清理厨房”分解成 12 个步骤，降低启动门槛（来源：Goblin Tools）。这些工具都在做同一件事：**把执行功能外包给外部系统**。
 
-**两者结构完全同构**：都是给一个强大的生成核心套上外部调度系统，让核心专注于生成，调度交给外部层。Tiimo 的提醒就是 agent harness 的“系统提醒”，Tiimo 的时间轴就是 harness 的“任务分解与进度跟踪”。区别仅在于：ADHD 侧的核心是生物大脑，LLM 侧的核心是神经网络。
+而在 LLM 侧，agent harness 做的是同样的事。Harness 设置 token 预算、工具调用次数上限、人工检查点，防止 agent 无限循环或偏离目标（来源：Building an AI Agent Harness from Scratch: The Architecture Between LLM and Agent - DEV Community）。它引入人在回路治理，让模型在关键步骤暂停并等待确认。模型本身强大，可靠性来自架构+护栏（来源：AI Agents in 2026: Tools, Memory, Evals, and Guardrails）。
 
-## 真实证据：两边都成立
+## 人物案例：张旭的 harness 与 agent 的脚手架
 
-ADHD 侧：工作记忆缺陷与情绪调节困难高度相关（来源：AI 与 ADHD 的情绪调节）。Tiimo 通过视觉化时间工具“帮助客观化情绪体验”，用户报告显示它能减少情绪波动（来源：AI 与 ADHD 的情绪调节）。Inflow 通过训练背外侧前额叶皮层（工作记忆的关键脑区）来改善执行功能（来源：Inflow）。Goblin Tools 将“压倒性的事情变成一系列不压倒性的事情”（来源：Goblin Tools），降低任务启动焦虑，间接调节情绪。Focusmate 通过虚拟身体搭档提供外部问责，绕过执行功能屏障（来源：人在回路与身体在场）。
+唐朝草圣张旭，每次喝醉后号呼狂走，以头濡墨作书，醒了自视以为神。他多相睡眠，灵感来了不管场合就写字，对草书超专注，其他事一概不关心。这是典型的 ADHD 特质：高度创造性，但缺乏常规的执行调度。他的 harness 是什么？酒和草书。喝酒进入超专注状态，把所有情绪注入草书；看公孙大娘舞剑悟笔法，从自然中找灵感。这套系统让他成为草圣，但也让他无法做其他任何事。
 
-LLM 侧：Agent harness 通过 human-in-the-loop 监督、护栏和提醒，将 LLM 的可靠率从不可控提升到可用水平（来源：人在回路与身体在场）。例如，在编码 agent 中，harness 会“在关键决策点暂停并询问用户”，防止模型自行其是（来源：Building an AI Coding Agent for the Terminal）。这与 Tiimo 在情绪爆发时提醒“暂停并呼吸”是同一种机制。
+张旭的 harness 和 LLM agent 的脚手架在结构上完全同构：酒是“进入超专注的 prompt”，草书是“输出通道”，公孙大娘舞剑是“外部灵感源”。而 agent harness 里的“定时 re-grounding”对应张旭每天必须喝酒才能创作的习惯，“外部调度器”对应他的书童帮他准备纸墨。但张旭的 harness 有一个致命问题：它没有“会褪去”的设计。他终身依赖酒，一旦离开这个脚手架，他就无法创作。
 
-## 核心观点：脚手架，不是拐杖
+## 会褪去的脚手架 vs 永久拐杖
 
-这里的边界至关重要。**脚手架（scaffolding）是会褪去的**——它在你需要时提供支撑，但目标是你最终能独立行走。**拐杖（crutch）则是永久替代**，让你越来越依赖。Tiimo 和 agent harness 都应该是脚手架，而不是拐杖。
+这正是核心争议：AI 工具到底是脚手架，还是拐杖？
 
-然而，现有证据表明，过度依赖 AI 工具可能削弱内在时间感知能力和情绪调节能力（来源：矛盾与存疑）。多个页面警告“需警惕依赖风险”（来源：矛盾与存疑）。工具设计者声称是“补偿”而非“替代”，但缺乏如何避免依赖的具体指导（来源：矛盾与存疑）。这种矛盾暗示：工具可能在实际使用中沦为拐杖。
+脚手架是暂时的，它帮你建起大楼，然后拆除，让你自己站立。拐杖是永久的，你依赖它才能走路。ADHD 工具如果被长期无节制使用，可能成为永久拐杖，阻碍内在能力的发展（来源：拐杖与脚手架）。目前缺乏长期追踪研究来验证适度使用的边界（来源：矛盾与存疑）。
 
-我的判断是：**关键在于“褪去”的设计**。好的脚手架应该有明确的退出机制：比如 Tiimo 的计时器可以逐渐减少提醒频率，harness 的 human-in-the-loop 可以逐步转为自动授权。如果工具没有“褪去”计划，它就是在培养依赖。
+举个例子：Tiimo 的时间色块。如果你用它来替代你缺失的时间感知，但从不练习在无工具的情况下估算时间，那么你的时间盲不会改善。同样，Inflow 的 CBT 程序如果只是被动跟随，而不内化认知重构技能，那么离开 app 后情绪失调依旧。
 
-## 局限与争议
+LLM agent 的 harness 也面临同样问题。如果 harness 过于 rigid，agent 永远学不会自主规划；如果 harness 过于 loose，agent 会频繁出错。好的 harness 设计是“会褪去的”——随着 agent 能力提升，逐步减少人工干预。这叫做“scaffolding that fades”。
 
-必须诚实指出，当前证据主要来自用户报告和概念类比，缺乏大规模对照实验（来源：矛盾与存疑）。Tiimo 等工具的效果尚未得到严格验证，存在夸大宣传的可能（来源：矛盾与存疑）。个体差异也很大：ADHD 亚型不同（注意缺陷型 vs. 多动冲动型），对工具的反应差异大（来源：AI 与 ADHD 的情绪调节）。Brain.fm 针对 ADHD 的效果甚至“缺乏独立临床研究支持”（来源：矛盾与存疑）。此外，基于多巴胺的干预（如游戏化反馈）可能强化成瘾行为（来源：AI 与 ADHD 的情绪调节）。
+## 证据与局限
+
+当前证据支持 AI 工具作为外部执行功能层的有效性。Inflow 基于 CBT 的模块化设计，临床研究显示用户情绪稳定性提升（来源：Inflow）。Focusmate 利用社会问责与 AI 排程创造身体在场效应，降低任务焦虑（来源：人在回路与身体在场）。但这些证据主要来自短期研究，且样本量小。
+
+更关键的是，ADHD 亚型（注意力不集中型 vs. 冲动型）对工具的反应不同，现有结论难以泛化（来源：矛盾与存疑）。而且，AI 工具擅长处理结构化情绪问题（如任务焦虑），但对深层情绪（如创伤、自我否定）的干预效果证据不足（来源：AI 与 ADHD 的情绪调节）。
 
 ## 今天就能试的行动
 
-1. **用 Tiimo 的计时器对抗情绪时间盲**：下次情绪爆发时，设置一个 5 分钟计时器。告诉大脑：“这个感觉会在 5 分钟后消退。”观察情绪曲线是否真的下降。
-2. **用 Goblin Tools 分解一个让你焦虑的任务**：输入“整理房间”或“写报告”，让 AI 拆成 5 个小步骤。每完成一步打勾，体验“小步骤即时反馈”对情绪的安抚作用（来源：Goblin Tools）。
-3. **用 Focusmate 或类似工具做一次身体在场**：找一个虚拟搭档一起工作 25 分钟。观察启动焦虑是否降低（来源：人在回路与身体在场）。
-4. **给 LLM 套一个“会褪去的脚手架”**：在提示词中加入“每 5 轮对话后，请总结当前进展并询问是否需要调整方向”。体验外部调度如何防止目标漂移。
+1. **用 Tiimo 的“时间色块”替代待办清单**：每天早晨花 3 分钟，把今天要做的 3 件事拖进时间轴，每件事设一个色块。色块就是你的外部调度层。
+2. **用 Goblin Tools 的 Magic ToDo 分解一个让你焦虑的任务**：输入“写周报”，调节辣度到 3，看它分解成 8 步。选第一步开始做，做完就停。
+3. **设置一个“会褪去的提醒”**：用手机闹钟每周提醒一次“今天不用 Tiimo，自己估算时间”。记录误差，逐步减少提醒频率。
+4. **如果你是工程师，在 agent harness 中加入一个“fade schedule”**：定义 agent 在连续 N 次正确执行后，自动减少一次人工检查点。让脚手架自己褪去。
 
 ## 结语
 
-ADHD 的情绪失调和 LLM 的目标漂移，本质都是生成核心与执行调度层的脱节。Tiimo 和 agent harness 是同一类解：外部调度层，让核心自由生成。但记住，它们是脚手架，不是拐杖。好的工具会教你如何最终移除它——而这，才是真正的治愈。
+Tiimo 和 agent harness 是同一类东西：外部调度层。它们不是拐杖，而是脚手架——前提是你记得拆掉它们。张旭没有拆掉他的酒，所以他是草圣，但也是酒鬼。你可以在成为高产者的同时，保持内在能力的生长。关键在于：脚手架要会褪去。
 
 ## 参考来源
 
+- [The 12 Best Apps for ADHD in 2026: A Guide to Finding What ...](https://www.getinflow.io/post/best-apps-for-adhd)
 - [Dynamic causal brain circuits during working memory and their functional controllability](https://doi.org/10.1038/s41467-021-23509-x)
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
-- [Harnessing Artificial Intelligence to Live Better with ADHD - CHADD](https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [DeepSeek - AI Assistant - Apps on Google Play](https://play.google.com/store/apps/details?id=com.deepseek.chat)
+- [AI Assistant for ADHD: Finally, a Productivity Tool That Requires Less...](https://get-alfred.ai/blog/ai-assistant-for-adhd)
 
 ---
 

@@ -1,8 +1,13 @@
-# ADHD × AI 内容引擎 & 博客系统
+# ADHD × AI 内容宇宙（自动化引擎 + 人工发布资产）
 
 一个**研究驱动**的 ADHD × AI 主题内容引擎：用 AI 智能体全网检索最新情报，
 萃取真实事实/工具/研究，按证据强度评分，用最新发现进化替换低质选题，
 最终生成 400 篇可溯源、有据可查的文章并发布到博客。
+
+同时承载《问题XXX》系列的**人工发布资产**（由 adhd-ai-creator-intelligence 仓库合并而来）：
+- `publishing/content-packs/` — 400 个闭环发布资产包（正文/发布包/小红书/知乎/短视频口播/48h回流表）
+- `intelligence/` — 一手研究资产（创作者情报库/考古报告/策略报告/研究数据），已接入引擎语料层
+- 人工精修的 400 个选题标题已并入问题池（engine/curated_topics.py），与自动候选同台滚动竞争
 
 ## 项目架构
 
@@ -22,6 +27,8 @@ ABCoding/
 │   ├── topics.json      # 选题池
 │   ├── rankings.json    # 当前排名 + 进化历史
 │   └── articles/        # 生成的 Markdown 文章
+├── publishing/          # 人工发布资产（content-packs 400 包 / indexes / templates / delivery / feedback）
+├── intelligence/        # 一手研究资产（research / root-assets / docs / sources / archive）
 ├── blog/                # Astro 博客网站
 │   ├── src/
 │   │   ├── content/     # 文章内容 (MDX)

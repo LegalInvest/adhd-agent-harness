@@ -1,0 +1,37 @@
+{
+  "id": "问题061",
+  "number": 61,
+  "title": "问题061_为什么ADHD的\"注意力残留\"是跨领域创新的秘密通道——你的\"串味\"不是缺陷是杂交优势",
+  "priority": "B",
+  "status": "closed_loop_ready",
+  "draft": true,
+  "publish_packet": true,
+  "xhs": true,
+  "zhihu": true,
+  "short_video": true,
+  "comment_question": true,
+  "feedback_sheet": true,
+  "template_entry": true,
+  "closed_loop_ready": true,
+  "updated_at": "2026-06-03",
+  "quality_audited": true,
+  "quality_score": "upgraded_2026-06-03",
+  "ignition_rewritten": true,
+  "ignition_rewritten_at": "2026-06-03",
+  "current_scores": {
+    "desire": 6,
+    "thought": 6,
+    "action": 6,
+    "total": 18,
+    "target_total": 27
+  },
+  "current_upgrade_principle": "S级不只观点锋利；读者第3段自我识别，中段重写解释，结尾立刻行动。",
+  "current_scoring_method": "触动内容版：先列所欲/所思/所行具体触动内容，再根据文本证据和行动摩擦综合评分。",
+  "current_trigger_profile": {
+    "category": "attention",
+    "desire_trigger": "从被平台、短视频、AI 顺滑输出牵着走，变成重新夺回一点注意力、时间感和现实动作。",
+    "thought_trigger": "把“我不自律”改写成“注意力被竞价、时间感被工具改写、深度工作被浅层动作伪装”。",
+    "action_trigger": "做一次 15 分钟注意力审计：刚才谁拿走了我的注意力，它换回了什么现实结果。"
+  },
+  "rescored_at": "2026-06-03"
+}

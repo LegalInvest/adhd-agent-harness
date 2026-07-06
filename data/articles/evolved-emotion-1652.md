@@ -24,75 +24,66 @@ toolsCited:
   - "Inflow"
   - "Goblin Tools"
   - "Saner.AI"
-  - "Motion"
-  - "Reclaim.ai"
+  - "Focusmate"
   - "Tiimo"
-thesis: "ADHD 的情绪失调与 LLM 的上下文失控是同一类问题——两者都是高产但缺乏可靠执行调度层的生成核心，而 RescueTime 这类外部监控工具与 agent 的「会褪去的脚手架」在结构上同构：它们都通过外部化调度来补偿执行缺陷，且必须设计为可褪去的脚手架而非永久拐杖。"
+thesis: "ADHD 的情绪失调与 LLM/agent 的失控同源——两者都是高产生成核心缺乏调度层，RescueTime 这类外部 harness 不是永久拐杖，而是会褪去的脚手架，其价值在于训练调度层，而非替代它。"
 problem: "为什么用 RescueTime 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？"
 spine: "拐杖与脚手架"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "释迦牟尼"
+  - "曾国藩"
+  - "贾桂荣"
 ---
 # 为什么用 RescueTime 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？
 
 > RescueTime 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：情绪失调的根源不是情绪本身，而是执行调度崩溃
+## 问题：为什么 RescueTime 能治 ADHD 的情绪失调？
 
-ADHD 的情绪失调常被误解为“脾气差”或“太敏感”。但神经心理学证据表明，其根源在于执行功能缺陷：工作记忆容量有限导致情绪信息无法被有效加工，时间盲引发对情绪持续时间的误判，任务启动困难加剧挫败感（来源：AI 与 ADHD 的情绪调节）。换句话说，情绪失调不是情绪系统本身坏了，而是负责调度注意、记忆和行动的执行层崩溃了。
+你设过无数个番茄钟，下载过十几款专注 app，但每次情绪爆发时，它们都像不存在。ADHD 的情绪失调不是“心情不好”，而是执行功能缺陷的直接后果：工作记忆不稳定让你记不住刚才为什么生气，时间盲让你觉得“才过五分钟”实际已过一小时，任务启动困难堆积成山，最终引爆挫败感（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。RescueTime 这类工具——自动记录时间使用、给出可视化报告——看似平淡无奇，却在 ADHD 社群中被反复提及。为什么？
 
-当工作记忆过载时，ADHD 大脑就像一台内存不足的电脑——任何一个未预期的中断（比如一条让人焦虑的消息）都会让整个系统卡死，情绪反应如同 LLM 的幻觉，脱离理性轨道（来源：AI 与 ADHD 的情绪调节）。
+## 同构：ADHD 大脑与 LLM/agent 共享同一缺陷
 
-## 同构：ADHD 大脑与 LLM 共享同一个核心缺陷
+ADHD 大脑的本质是一个“高产但缺执行调度层的生成核心”：情绪生成系统（杏仁核）反应强烈，但前额叶（执行功能中枢）调控不足，类似 LLM 生成能力强但缺乏输出控制（来源：AI 与 ADHD 的情绪调节）。LLM/agent 在没有外部脚手架时，同样会陷入上下文膨胀、任务漂移、输出失控。两者都需要一个外部调度层来补偿。
 
-明尼苏达大学的系统测试发现，LLM 表现出“强记忆、弱控制”的剖面——工作记忆容量甚至超过常人，但认知灵活性与注意控制存在核心缺陷，无法灵活切换任务集、无法抑制自动化反应（来源：工作记忆）。这正是 ADHD 的经典神经心理模式。耶鲁大学进一步发现，自注意力机制本身导致工作记忆容量限制：随记忆负荷增加，注意力分数熵增、注意力弥散，与人类注意分散机制同源（来源：工作记忆）。
+这正是 RescueTime 的角色。它不打断你，不强迫你，只是默默地记录、可视化、提供反馈——像一个不会说话的身体加倍伙伴。这种“外部执行功能层”在 ADHD 侧补偿时间盲和任务启动困难，在 LLM 侧则是 agent scaffolding 的核心：定时 re-grounding、上下文裁剪、行为日志。
 
-这意味着，ADHD 大脑与 LLM 是同一类“高产但缺执行调度层的生成核心”。两者都不缺生成能力（想法、语言），但都缺乏一个可靠的调度层来管理上下文、抑制干扰、有序执行。
+## 证据：两边都成立的 harness 思路
 
-## 解法同构：RescueTime 与“会褪去的脚手架”
+**ADHD 侧**：身体在场效应被描述为“最有效的 ADHD 策略之一”（来源：11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog）。RescueTime 的数字身体在场通过可视化时间消耗，提供隐性问责，降低分心阈值。Goblin Tools 的 Magic ToDo 将模糊任务分解为可执行步骤，直接降低启动门槛（来源：12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)）。Inflow 基于 CBT 的结构化程序训练认知控制，临床研究显示用户情绪稳定性提升（来源：AI 与 ADHD 的情绪调节）。这些工具的共同点：它们不是永久拐杖，而是可褪去的脚手架。
 
-RescueTime 这类工具的工作原理是：自动记录时间使用、生成报告、设置提醒，从而为 ADHD 大脑提供一个外部的、客观的时间感知锚点。这本质上是一种“上下文工程”——通过主动设计注意焦点，利用外部记忆记录行为模式，实现注意力的可预测性（来源：AI 与 ADHD 的情绪调节）。
+**LLM/agent 侧**：在 agent 工程中，“会褪去的脚手架”指那些在训练或调试阶段使用、但最终会被移除或简化的外部结构——比如硬编码的规则链、人工提示模板、外部记忆检索。RescueTime 对于 ADHD 就像这些脚手架：它提供外部时间锚点，帮助大脑逐渐内化时间感知。当用户学会“感觉”到 45 分钟过去时，RescueTime 的提醒频率可以降低，最终只作为偶尔校准。
 
-在 LLM/Agent 工程中，类似的思路被称为“会褪去的脚手架”（Agentic Harness）：给模型套上外部记忆、任务分解、状态追踪等结构，让它在执行复杂任务时不崩溃，然后在训练或使用中逐步撤除这些支撑，让模型内化能力。
-
-两边的结构完全同构：
-- **外部记忆**：RescueTime 的时间日志 ↔ Agent 的向量数据库
-- **任务分解**：Goblin Tools 的 Magic ToDo 将“整理房间”拆成小步骤 ↔ Agent 的 step-by-step 规划（来源：Goblin Tools）
-- **时间锚点**：Tiimo 的视觉时间表 ↔ Agent 的 deadline 约束（来源：时间盲）
-- **状态监控**：RescueTime 的实时反馈 ↔ Agent 的日志和异常检测
-
-关键区别在于“褪去”的设计。RescueTime 如果永远不撤，用户会形成依赖，内在时间感知能力可能进一步削弱（来源：矛盾与存疑）。同样，Agent 的脚手架如果永远不褪，模型就无法真正学会自主调度。
-
-## 证据：两边都成立，但都有局限
-
-在 ADHD 侧，Inflow 通过训练背外侧前额叶皮层（因果流入中枢）来提升工作记忆，其神经科学依据明确（来源：Inflow）。但缺乏直接针对工具的随机对照试验，效果主要来自用户报告（来源：矛盾与存疑）。Saner.AI 通过本地记忆减少搜索循环，直接补偿工作记忆缺陷（来源：Saner.AI）。但同样缺乏独立验证。
-
-在 LLM 侧，明尼苏达和耶鲁的研究提供了硬证据：LLM 的工作记忆干扰特征与人类高度一致，包括近因偏差、刺激统计偏差等（来源：工作记忆）。这为“脚手架”的必要性提供了架构层面的解释。
-
-争议在于：过度依赖 AI 工具可能削弱内在能力（来源：矛盾与存疑）。工具设计者声称是“脚手架”，但实际使用中可能沦为“拐杖”。目前没有研究明确给出“何时撤除”的指南。
+**人物案例：曾国藩的“日课十二条”**——一个经典的 ADHD harness。曾国藩 30 岁前浮躁坐不住，日记里天天骂自己“无恒”“浮躁”。他的解法是日课十二条：黎明即起、读书不二、谨言、写日记反省。这本质上是一套外部调度规则，像 LLM 的 prompt 模板和定时 re-grounding。他一生坚持，但晚年日记中坦言“每日仍须检点”，说明脚手架并未完全褪去，而是成了习惯的一部分。这正是“会褪去的脚手架”的真实边界：它不会完全消失，但会从外部强制变为内部自动。
 
 ## 核心观点：脚手架 vs 拐杖的边界在于“褪去设计”
 
-我的判断是：RescueTime 和 Agentic Harness 的有效性取决于它们是否被设计为“可褪去的”。如果工具永远不打算让用户/模型脱离它，那就是拐杖；如果工具提供了逐步撤除的路径（比如 RescueTime 的“目标模式”逐渐减少提醒频率），那就是脚手架。
+AI 工具若被长期无节制使用，可能成为“永久拐杖”，阻碍 ADHD 个体发展内在情绪调节能力（来源：AI 与 ADHD 的情绪调节）。但 RescueTime 这类工具的设计天然具备“褪去”属性：它的目标是让你不再需要它。就像 agent 的脚手架最终要简化到只保留核心调度，ADHD 的大脑也需要逐渐减少对外部提示的依赖。
 
-遗憾的是，目前多数工具（包括 RescueTime、Goblin Tools、Motion）都没有内置“褪去机制”。用户需要自己意识到：工具的目的是补偿，不是替代。
+**关键判断**：一个好的 ADHD 工具，应该像 agent 的 scaffolding 一样，设计时就想好如何退出。RescueTime 的可视化报告让你看到自己的时间模式，从而内化时间感知；Focusmate 的身体加倍会议让你体验问责感，之后即使独自工作也能模拟这种状态。而 Goblin Tools 的“辣度”调节（控制任务分解粒度）正是脚手架褪去的接口：用户从最细的步骤开始，逐渐适应后调低粒度。
+
+**争议与局限**：目前缺乏长期追踪研究验证适度使用的边界（来源：AI 与 ADHD 的情绪调节）。ADHD 亚型对工具的反应不同，且工具对深层情绪（如创伤、自我否定）的干预效果证据不足。同构命题目前是理论类比，缺乏神经科学或计算机科学的直接证据（来源：AI 与 ADHD 的情绪调节）。此外，部分用户反映学习使用 AI 工具本身增加认知负荷（来源：AI 与 ADHD 的情绪调节）。
 
 ## 今天就能试的行动
 
-1. **设置 RescueTime 的“目标模式”**：每周减少 10% 的提醒频率，观察自己的时间感知是否改善。
-2. **用 Goblin Tools 分解一个让你焦虑的任务**：输入“准备会议报告”，把输出步骤抄下来，然后关掉工具，尝试自己回忆步骤顺序。
-3. **记录情绪触发模式**：用 Saner.AI 的本地记忆功能，每次情绪波动时记下“触发事件 + 工作记忆负荷”，一周后分析模式。
-4. **给 AI 助手加“褪去提示”**：使用 ChatGPT 时，在提示词末尾加上“请逐步减少对我的提示，让我自己完成最后两步”。
+1. **设置 RescueTime 的“聚焦时间”**：每天选一个 25 分钟时段，让 RescueTime 自动屏蔽干扰网站。完成后查看报告，记录你的情绪变化。
+2. **用 Goblin Tools 的 Magic ToDo 分解一个让你焦虑的任务**：从“辣度 5”开始，完成后逐步降低辣度，观察任务启动难度的变化。
+3. **尝试一次虚拟身体加倍**：使用 Focusmate 或找一个朋友视频连线，各自工作 25 分钟。记录专注度和情绪稳定性。
+4. **写一条“日课”**：模仿曾国藩，每天选一个固定动作（如“晨间 5 分钟情绪标签”），坚持一周。用 RescueTime 跟踪执行情况。
+
+RescueTime 治 ADHD 情绪失调，和给 agent 套脚手架，本质是一回事：它们都是外部调度层，补偿核心的调度缺陷。但真正的智慧不在于使用它们，而在于设计它们如何褪去。
 
 ## 参考来源
 
+- [The 12 Best Apps for ADHD in 2026: A Guide to Finding What ...](https://www.getinflow.io/post/best-apps-for-adhd)
 - [Dynamic causal brain circuits during working memory and their functional controllability](https://doi.org/10.1038/s41467-021-23509-x)
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
-- [Harnessing Artificial Intelligence to Live Better with ADHD - CHADD](https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [Toward Neurodivergent-Aware Productivity: A Systems and AI-Based Human-in-the-Loop Framework for ADHD-Affected Professionals](https://arxiv.org/pdf/2507.06864)
+- [Using an AI Assistant to Manage ADHD: A Practical Guide](https://www.lobsterfarm.ai/guides/ai-for-adhd/)
 
 ---
 

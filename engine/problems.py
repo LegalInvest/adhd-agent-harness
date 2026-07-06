@@ -274,6 +274,21 @@ def generate_problem_pool() -> list[dict]:
             "is_problem_driven": True,
         })
 
+    # 0. 《问题XXX》系列人工精修选题（作者手工打磨 + 点火改写过的 400 条）
+    from engine.curated_topics import load_curated
+    spine_pain = {s["spine"]: (s["pain"], s["parallel"]) for s in SPINE_PROBLEM_SPECS}
+    for cu in load_curated():
+        pain, parallel = spine_pain.get(cu["spine"], ("ADHD 困扰", "agent/LLM 编排"))
+        add(
+            title=cu["title"],
+            subtitle=cu["subtitle"] or f"《问题{cu['number']:03d}》人工精修选题，双域证据作答。",
+            angle="问题XXX精修",
+            category_id=cu["category_id"],
+            spine=cu["spine"],
+            pain=pain,
+            parallel=parallel,
+        )
+
     # 1. 脊柱锚定的核心问题（高质量、人工策划）
     for spec in SPINE_PROBLEM_SPECS:
         for q in spec["questions"]:

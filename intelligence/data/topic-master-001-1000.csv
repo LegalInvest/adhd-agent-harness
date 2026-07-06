@@ -1,0 +1,6 @@
+topic_id,title,domain_class,cluster_code,pain_point,mechanism_thesis,scenario,entry_type,target_action,validation_signal,execution_tier,entry_level,feedback_level,status,dedup_anchor,decision,priority_score,notes
+Q001,问题001_existing,A,C01,启动困难,外部前额叶补足执行带宽,高压工作日,template,完成一个最小动作,是否出现真实回流,L1,E1,R1,existing,Q001,keep_existing,47,既有资产保留并待闭环升级
+Q002,问题002_existing,B,C02,时间盲,Agent承担拆解与提醒,内容生产,tool,把想法转成任务队列,是否形成发布包,L1,E2,R2,existing,Q002,keep_existing,54,既有资产保留并待闭环升级
+Q003,问题003_existing,C,C03,注意力残留,高方差认知需要流程护栏,写作发布,service,完成一次平台改写,是否出现评论信号,L1,E3,R3,existing,Q003,keep_existing,61,既有资产保留并待闭环升级
+Q004,问题004_existing,D,C04,自嗨过载,商业化需要外部验证,商业化实验,template,定义一个付费入口,是否出现支付意愿,L1,E1,R1,existing,Q004,keep_existing,68,既有资产保留并待闭环升级
+Q005,问题005_existing,E,C05,项目烂尾,模板复用提升交付稳定性,模板复用,template,复用一个已有模板,是否节省切换成本,L1,E2,R2,existing,Q005,keep_existing,75,既有资产保留并待闭环升级

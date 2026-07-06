@@ -24,75 +24,72 @@ toolsCited:
   - "Saner.AI"
   - "Lex"
   - "Claude"
-  - "ChatGPT"
-  - "Focusmate"
-thesis: "ADHD大脑与LLM/agent在结构上同构——都是高产但缺执行调度层的生成核心——因此用Claude治ADHD的任务启动困难，和给agent套function calling工具调用，本质上是同一套harness（脚手架）思路：通过外部执行功能层补偿内在的调度缺陷，实现认知卸载与重锚定。"
+thesis: "ADHD大脑与LLM共享同一困境：高产生成核心缺乏可靠执行调度层；用外部脚手架（harness）补偿这一缺陷，对两者是同一类工程问题。"
 problem: "为什么用 Claude 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？"
 spine: "工具使用与认知卸载"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "孔子"
+  - "李鸿章"
+  - "陈桂芝"
 ---
 # 为什么用 Claude 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？
 
 > Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-你有没有过这样的经历：打开Claude，想写一封邮件，结果打了几个字就卡住，然后刷了半小时手机？或者，你给一个AI agent写好了详细的系统提示，它执行到第三步就开始跑偏，最后输出了一堆废话？
+## 问题：启动困难，是ADHD的诅咒，也是LLM的软肋
 
-这两件事，表面看一个属于ADHD的“任务启动困难”，一个属于LLM agent的“指令消退”，但背后的结构问题一模一样。
+如果你是一个ADHD成年人，你一定熟悉这个场景：脑子里有一堆想做的事，但身体就是动不了。任务像一堵无形的墙，启动它需要消耗巨大心理能量。如果你是一个做Agentic Harness的工程师，你也一定熟悉另一个场景：LLM模型能生成漂亮的计划，但一执行就偏离轨道，要么陷入循环，要么调用错误工具。
 
-## 问题：两个“高产但缺调度”的生成核心
+这两件事，表面风马牛不相及。但深挖下去，它们共享同一个底层结构：**一个高产的生成核心，挂在一个不可靠的执行调度层上。**
 
-ADHD大脑的核心矛盾是：发散思维、创意、多任务并行能力极高，但执行功能（任务启动、持续专注、抑制冲动）薄弱，导致“高产但不可靠”（来源：人在回路与身体在场）。正如wiki资料指出的，ADHD的执行功能缺陷与LLM的上下文控制缺陷一一对应：工作记忆容量保留但控制弱，任务启动困难对应LLM的“冷启动”问题，时间盲对应时序推理弱点（来源：ADHD的AI工具全景）。
+ADHD大脑被描述为“高产的生成核心——想法丰富、联想活跃，但缺少稳定、可靠的调度层来筛选、组织、启动和坚持任务”（来源：ADHD 的 AI 工具全景）。而LLM同样具备强大的生成能力，却在长程上下文、目标保持与执行调度上存在天然缺陷。所以，AI帮ADHD的实质，与给LLM套harness是同一类工程：用外部脚手架把生成能力约束到目标轨道上。
 
-LLM/agent侧同样如此。模型本身是强大的生成核心，但缺乏可靠的执行调度层，直接输出可能偏离目标、陷入循环或产生危险行为（来源：人在回路与身体在场）。在长程任务中，模型会“开始忘记系统提示”，导致行为偏离初始指令——这正是ADHD式的“目标漂移”（来源：重锚定与目标漂移）。
+## 脚手架不是拐杖：同构的核心是“外部调度层”
 
-两边都是：核心很强，但缺一个执行调度层。
+先看ADHD侧。工具如Goblin Tools通过AI将复杂任务分解为可管理的小步骤，降低启动门槛（来源：Goblin Tools）。Saner.AI通过本地记忆和知识回忆减少搜索循环，补偿工作记忆不足（来源：Saner.AI）。Lex允许用户通过单一指令触发多步骤任务序列，降低启动时的认知负荷（来源：Lex）。这些工具的共性：它们不是在修复大脑，而是在大脑与外部世界之间搭建一个临时“外部执行功能层”（来源：ADHD 的 AI 工具全景）。
 
-## 答案：同一套harness思路
+再看LLM/Agent侧。Agent harness通过human-in-the-loop监督提供外部调度：设置护栏（token预算、工具调用次数上限）、加入人工检查点、集成MCP工具和遥测（来源：人在回路与身体在场）。其核心目标是“形式化规划与护栏，使代理输出真正有用且正确”（来源：人在回路与身体在场）。
 
-解决方案也同构：为生成核心套上一个外部harness（脚手架），通过工具调用（function calling）和人在回路监督，提供任务分解、上下文管理和重锚定。
+两边的结构完全同构：
+- ADHD侧：生成核心（大脑）→ 外部执行功能层（工具）→ 任务完成
+- LLM侧：生成核心（模型）→ 外部调度层（harness）→ 任务完成
 
-**ADHD侧的证据：**
-- **Goblin Tools**的Magic ToDo功能，自动将复杂任务分解为小步骤，用户反馈“将压倒性的事情变成一系列不压倒性的事情”（来源：Goblin Tools）。这直接针对任务启动困难，相当于为大脑提供“启动脚本”。
-- **Lex**允许通过单一指令触发多步骤任务序列，降低了决策疲劳（来源：Lex）。这对应LLM侧的“一次指令，多次工具调用”。
-- **Saner.AI**通过本地记忆减少搜索循环和标签切换，补偿工作记忆不足（来源：Saner.AI）。这对应LLM侧的持久化上下文。
-- **Focusmate**等虚拟身体搭档提供外部问责，绕过执行功能屏障（来源：人在回路与身体在场）。这对应LLM侧的human-in-the-loop监督。
+但必须诚实指出一个争议：这种外部依赖是“脚手架”还是“拐杖”？脚手架帮助建设，建成后可拆除；拐杖则可能让人永久依赖。目前缺乏纵向研究验证长期依赖风险（来源：矛盾与存疑）。我的判断是：**脚手架 vs 拐杖的边界在于是否保留“人在回路”的主动性。** 如果工具完全替代了执行功能的主动参与（比如自动安排一切而不让用户选择），它就更像拐杖；如果工具只提供结构和提醒，用户仍需决策和行动，它就是脚手架。
 
-**LLM/agent侧的证据：**
-- Agent harness通过事件驱动的系统提醒对抗“指令消退”，类似于ADHD工具的重锚定系统（来源：重锚定与目标漂移）。
-- Harness加入人工检查点（暂停并询问后再执行），设置护栏（token预算、工具调用次数上限），确保模型输出可靠（来源：人在回路与身体在场）。
-- “模型本身强大，可靠性来自架构+护栏”（来源：人在回路与身体在场）。这正是ADHD工具的设计哲学：不改变核心，而是改造环境。
+## 历史人物早就用过这套harness
 
-## 核心观点：脚手架，不是拐杖
+孔子是ADHD特质明显的例子：身高1米9，精力旺盛，周游列国14年坐不住；冲动爱骂人，思维跳跃，《论语》全是场景化语录，无系统著作。他的专属harness是“克己复礼”——用外在的“礼”作为行为边界，每日三省吾身。这套系统本质上是一个外部调度层：用礼（相当于今天的任务列表和提醒）约束自己的冲动，用反省（相当于定时re-grounding）校准方向。这与LLM harness中的“定时检查点”和“护栏”如出一辙。
 
-但这里有一个关键边界：脚手架 vs 拐杖。Wiki资料明确警告：“过度依赖AI工具可能削弱内在能力”（来源：矛盾与存疑）。Goblin Tools的任务分解如果永远不让你自己学会拆任务，就成了拐杖；Saner.AI的自动回忆如果让你不再练习记忆，也成了拐杖。同样，agent harness如果过度依赖人在回路，模型永远学不会自我纠偏。
+李鸿章也是类似：年轻时冲动爱吹牛，跟着曾国藩学“诚”来改掉浮躁，每天写日记反省。他的harness是“外须和戎，内须变法”的务实原则，加上日记作为外部记忆和反思工具。日记相当于今天的Saner.AI的本地记忆——把想法外化，减少工作记忆负担。
 
-好的harness应该是“可渐撤的脚手架”：一开始提供强支持，随着能力提升逐步移除。例如，Claude的对话式整理可以帮你理清思路，但最终你应该内化这种结构化思考方式。
+这些历史人物的成就证明：**用外部脚手架管理高产生成核心，是跨越千年的有效策略。** 现代AI工具只是把这种策略自动化了。
 
-## 局限与争议
+## 具体怎么用？今天就能试的行动
 
-必须诚实承认：现有证据主要来自用户报告和概念类比，缺乏大规模对照实验（来源：矛盾与存疑）。AI工具的实际效果尚未得到严格验证，存在夸大宣传的可能。个体差异也很大——对某些ADHD用户有效的工具，对另一些人可能无效甚至适得其反。
+1. **用Goblin Tools分解一个你拖延已久的任务。** 输入“整理书房”或“写周报”，让它拆成5-10个小步骤。每完成一步打勾，获得即时反馈（来源：Goblin Tools）。
+2. **用Claude的Projects功能创建一个“执行调度”项目。** 把你的待办事项输入，要求它按优先级和时间估计排序，并设置提醒。Claude的结构化推理能力特别适合这种整理（来源：ADHD 的 AI 工具全景）。
+3. **尝试Lex的单一指令触发。** 比如设定一个指令“准备明天会议”，让它自动执行：查日历→读相关文档→生成议程→发送提醒。这相当于给大脑装了一个“一键启动”按钮（来源：Lex）。
+4. **建立你的“日课”系统。** 像孔子三省吾身一样，每天固定时间向AI汇报进度（如“今天完成了哪三件事？”），让它帮你回顾和调整计划。这利用了身体在场效应——定期向AI报告进度也是一种替代方案（来源：人在回路与身体在场）。
 
-## 今天就能试的行动
+## 诚实的局限
 
-1. **用Claude做任务分解**：输入一个让你焦虑的大任务（如“整理房间”），要求它拆成5-10个可执行的小步骤。完成后，尝试不看清单自己复述步骤——这是“渐撤”的第一步。
-2. **给自己设一个“重锚定”提醒**：用手机或Claude的定时功能，每20分钟问自己一次“我现在在做什么？应该做什么？”对抗目标漂移。
-3. **尝试一次“单指令多步骤”**：在Claude里写一个复合指令，比如“帮我写一封邮件，主题是会议确认，然后把它添加到我的待办清单里”。观察它是否一次完成——这正是agent function calling的雏形。
-4. **记录一次“指令消退”**：下次你用任何AI工具时，注意它是否在几轮对话后开始偏离原始意图。记录下来，这就是你的harness需要加强的地方。
+同构论点目前主要是类比推理，缺乏神经科学或计算机科学的直接证据（来源：矛盾与存疑）。此外，AI工具对任务启动的长期效果未知：短期有效，但长期依赖可能削弱内在执行功能（来源：矛盾与存疑）。另外，超聚焦应被引导还是打断尚无定论——部分ADHD用户反馈强行打断（如番茄钟）反而有效（来源：矛盾与存疑）。
 
-## 结语
+所以，本文提供的不是万能药，而是一个视角：**ADHD与LLM共享同一困境，也共享同一解法。** 这个视角的价值在于：它让ADHD个体看到自己的问题不是“懒”或“笨”，而是大脑架构的天然缺陷——而这个缺陷可以用工程思维来补偿。它也提醒工程师：你正在做的harness工程，本质上是在帮另一个“大脑”解决同样的启动困难。
 
-ADHD大脑和LLM/agent是同一种“天才但失控”的架构。Claude治ADHD和agent套function calling，本质上都是在说同一件事：别指望核心自己变好，给它一个外部调度层。这个认识，既能让ADHD用户少一些自责，也能让agent工程师少一些对模型的幻想。
+下次当你对着空白的待办列表发呆时，或者当你调试一个总是跑偏的agent时，记住：你们面对的是同一个敌人——缺调度层的生成核心。而脚手架，是唯一的盟友。
 
 ## 参考来源
 
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
-- [Harnessing Artificial Intelligence to Live Better with ADHD - CHADD](https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/)
-- [AI Tools for Kids with ADHD: A Complete Guide for Parents...](https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [The 12 Best AI Tools for 2026 (That People Actually Use)](https://www.synthesia.io/post/ai-tools)
+- [Agent Scaffolding: Architecture and Design Patterns for Agentic AI](https://zbrain.ai/agent-scaffolding/)
+- [Best productivity apps for Mac you need to try](https://macpaw.com/reviews/best-productivity-apps-for-mac)
+- [Building AI Coding Agents for the Terminal: Scaffolding, Harness ...](https://arxiv.org/html/2603.05344v1)
 
 ---
 

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>问题012：ADHD和LLM都是时间盲，Agent如何同时治愈两个大脑？</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #fbfbf8; color: #182026; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.78; }
+    .shell { max-width: 820px; margin: 0 auto; padding: 32px 22px 64px; }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; color: #52606d; font-size: 14px; }
+    nav a { color: #0b66c3; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    article { background: #fff; border: 1px solid #d9e2ec; border-radius: 8px; padding: 34px 38px; box-shadow: 0 8px 24px rgba(15, 23, 42, .04); }
+    h1 { font-size: 30px; line-height: 1.32; margin: 0 0 28px; letter-spacing: 0; }
+    h2 { margin-top: 34px; padding-top: 10px; font-size: 22px; border-top: 1px solid #edf2f7; }
+    h3 { margin-top: 26px; font-size: 18px; }
+    p { margin: 14px 0; }
+    strong { color: #111827; }
+    blockquote { margin: 20px 0; padding: 6px 18px; border-left: 4px solid #9fb3c8; color: #3e4c59; background: #f8fafc; }
+    ul, ol { padding-left: 26px; }
+    li { margin: 7px 0; }
+    code { background: #f0f4f8; padding: 2px 5px; border-radius: 4px; }
+    .meta { margin-top: 28px; padding-top: 18px; border-top: 1px solid #edf2f7; color: #627d98; font-size: 14px; }
+    @media (max-width: 720px) {
+      .shell { padding: 18px 12px 44px; }
+      article { padding: 24px 18px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav>
+      <a href="../../indexes/问题001-108_MD总索引.html">返回总索引</a>
+      <a href="../../%E9%97%AE%E9%A2%98012_ADHD%E5%92%8CLLM%E9%83%BD%E6%98%AF%E6%97%B6%E9%97%B4%E7%9B%B2_Agent%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E6%B2%BB%E6%84%88%E4%B8%A4%E4%B8%AA%E5%A4%A7%E8%84%91.md">查看源 Markdown</a>
+    </nav>
+    <article>
+      <h1>问题012：ADHD和LLM都是时间盲，Agent如何同时治愈两个大脑？</h1>
+<p>ADHD 和 LLM 有一个奇怪的共同点：它们都不天然理解时间。</p>
+<p>ADHD 的时间盲，是“现在太亮，未来太暗”。你知道下周要交东西，但大脑感受不到它的重量。直到 deadline 贴脸，未来突然砸进现在，你才被迫启动。</p>
+<p>LLM 的时间盲，是“上下文里没有的时间，就像不存在”。它能写出漂亮计划，却不会自己记得三天后回来检查。它能说“下一步要做”，但如果没有外部状态和调度，它不会真的持续做。</p>
+<p>所以 ADHD 和 LLM 都需要 Agent。</p>
+<p>不是因为 Agent 更聪明，而是因为 Agent 能把时间变成外部结构。</p>
+<p>01</p>
+<p>ADHD 的时间不是线性的，而是亮度制。</p>
+<p>眼前的东西最亮：手机、消息、情绪、灵感、别人一句话、一个突然冒出来的新工具。未来的东西很暗：月底交付、长期品牌、持续发布、健康、现金流。</p>
+<p>你当然知道未来重要。</p>
+<p>但知道不等于感受到。ADHD 的困难就在这里：未来奖励的神经权重太低，未来惩罚也经常到临近时才突然变重。</p>
+<p>这会让人生变成一串火警。不是没规划，而是规划在大脑里没有足够亮度。</p>
+<p>02</p>
+<p>LLM 的时间盲更隐蔽。</p>
+<p>它看起来会计划，会列时间表，会写“第一周、第二周、第三周”。但这只是文本里的时间，不是系统里的时间。</p>
+<p>如果没有外部存储，它不会记得自己昨天答应过什么。 如果没有调度器，它不会在明天自动回来。 如果没有状态文件，它不知道项目走到哪一步。 如果没有验证机制，它会把“计划已生成”误当成“事情已推进”。</p>
+<p>这和 ADHD 太像了。</p>
+<p>你也经常把“想清楚了”误当成“推进了”。</p>
+<p>03</p>
+<p>铁证有三个。</p>
+<p>第一，ADHD 最怕的是没有外部期限的任务。因为未来不够亮，任务就会在后台消失。</p>
+<p>第二，LLM 最怕的是没有状态文件的长项目。因为上下文一断，它就像失忆的实习生。</p>
+<p>第三，ADHD 和 LLM 都容易产生“结构性幻觉”：一个写了漂亮计划，一个看了漂亮计划，然后双方都以为项目已经稳定运行。</p>
+<p>真正的现实推进，必须有时间锚点、状态文件、下一步动作和反馈检查。</p>
+<p>04</p>
+<p>Agent 的价值，是把时间外部化。</p>
+<p>对 ADHD 来说，Agent 要做四件事：</p>
+<p>提醒现在：今天唯一动作是什么。 保存过去：上次做到哪里。 拉近未来：下一个真实截止点是什么。 要求证据：完成后留下什么文件、链接或反馈。</p>
+<p>对 LLM 来说，Agent 也需要这四件事：</p>
+<p>状态文件。 任务队列。 定时回看。 输出验证。</p>
+<p>所以 Agent 不是“更会聊天的 AI”。它是时间义肢。</p>
+<p>05</p>
+<p>今天的落地动作：给一个项目建立时间锚。</p>
+<p>只写四行：</p>
+<p>当前状态：___ 下一步唯一动作：___ 完成证据：___ 下次检查时间：___</p>
+<p>这四行能同时治疗两个时间盲大脑。</p>
+<p>ADHD 需要它，因为你不能靠感觉记住未来。LLM 需要它，因为它不能靠上下文记住项目。一个真正可用的外部前额叶，不是陪你继续想，而是把时间钉在文件里，让下一次接手的你和下一次接手的 Agent 都不会从零开始。</p>
+      <div class="meta">渲染自：问题012_ADHD和LLM都是时间盲_Agent如何同时治愈两个大脑.md</div>
+    </article>
+  </main>
+</body>
+</html>

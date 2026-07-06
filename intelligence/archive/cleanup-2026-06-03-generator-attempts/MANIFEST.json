@@ -1,0 +1,34 @@
+{
+  "archived_at": "2026-06-03",
+  "reason": "Superseded failed/manual generator attempts after Python-generated 400 content-packs were verified. Files archived, not deleted.",
+  "moved": [
+    {
+      "from": "生成400闭环资产包.bat",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/生成400闭环资产包.bat"
+    },
+    {
+      "from": "run_build_400_content_packs.bat",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/run_build_400_content_packs.bat"
+    },
+    {
+      "from": "run_build_400_content_packs_ascii.bat",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/run_build_400_content_packs_ascii.bat"
+    },
+    {
+      "from": "build_400_content_packs.log",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/build_400_content_packs.log"
+    },
+    {
+      "from": "build_400_content_packs_ascii.log",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/build_400_content_packs_ascii.log"
+    },
+    {
+      "from": "src/build_400_content_packs.ps1",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/build_400_content_packs.ps1"
+    },
+    {
+      "from": "src/build_400_content_packs_ascii.ps1",
+      "to": "archive/cleanup-2026-06-03-generator-attempts/build_400_content_packs_ascii.ps1"
+    }
+  ]
+}

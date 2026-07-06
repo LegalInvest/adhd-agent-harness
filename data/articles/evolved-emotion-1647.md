@@ -24,70 +24,78 @@ toolsCited:
   - "Inflow"
   - "Goblin Tools"
   - "Saner.AI"
-  - "Motion"
-  - "Tiimo"
-thesis: "ADHD 的情绪失调与 LLM 的上下文失控共享同一底层缺陷：高产但缺乏可靠执行调度层的生成核心。Routinery 通过结构化重复（外部执行层）补偿 ADHD 的调度缺陷，而 agent 的“会褪去的脚手架”通过临时约束补偿 LLM 的上下文漂移——两者本质都是给生成核心套上可渐撤的 harness，而非永久拐杖。"
+thesis: "ADHD 的情绪失调与 LLM agent 的不可靠输出，根源相同——都是“高产但缺执行调度层的生成核心”；用 Routinery 这类工具搭建的“会褪去的脚手架”，与给 agent 套的 scaffolding 是同一种工程思路：先外挂调度层，再逐步撤退，而非永久依赖。"
 problem: "为什么用 Routinery 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？"
 spine: "拐杖与脚手架"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "释迦牟尼"
+  - "王阳明"
+  - "张春梅"
 ---
 # 为什么用 Routinery 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？
 
 > Routinery 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：情绪怎么就成了那个“失控的 agent”？
+## 问题：为什么你的情绪和你的 agent 一样不可控？
 
-如果你有 ADHD，你一定经历过这种时刻：明明只是被一句评论刺到，情绪却像脱缰的 agent 一样横冲直撞，理性提示“冷静”完全无效。你事后分析，发现触发点很小，但当时的你就像被一个没有上下文约束的 LLM 劫持——输出完全偏离轨道。
+你是一个 ADHD 成人。早上醒来，计划写一份报告，结果刷了三小时短视频，然后因为自责陷入情绪低谷。下午开会，同事一句无心批评让你瞬间暴怒，事后又后悔不已。你觉得自己像个失控的机器——明明有强大的思考能力，却总是被情绪和冲动劫持。
 
-如果你在做 agentic harness 工程，你也一定见过这种场面：一个精心设计的 agent 在简单任务上表现完美，但一旦上下文窗口被污染或指令模糊，它就开始“幻觉”——生成看似合理但完全脱离目标的输出。
+你是一个 Agentic Harness 工程师。你精心设计的 LLM agent，在简单任务上表现惊艳，但一旦上下文变长、认知负荷增加，它就开始胡言乱语、忘记指令、陷入重复循环。你发现，无论怎么调 prompt，它都缺乏一个可靠的“执行调度层”来稳定输出。
 
-这两件事，在结构上是同一件事。ADHD 大脑与 LLM 是同一类“高产但缺执行调度层的生成核心”（来源：ADHD 大脑与 LLM 的同构）。情绪失调，就是 ADHD 大脑的“上下文失控”——当工作记忆过载或注意力被干扰时，情绪反应如同 LLM 的幻觉，脱离理性轨道（来源：AI 与 ADHD 的情绪调节）。而解法，也共享同一套逻辑：给生成核心套上一个会褪去的脚手架。
+这两个问题，看似分属心理学和工程学，但底层是同一个结构：**一个高产但缺乏执行调度层的生成核心**。ADHD 大脑的情绪生成系统（杏仁核）反应强烈，但前额叶（执行功能中枢）调控不足（来源：AI 与 ADHD 的情绪调节）。LLM 的生成能力极强，但缺乏内置的执行控制层，在认知负荷增加时，注意力控制、干扰抑制全面崩溃（来源：认知负荷）。
 
-## 同构：Routinery 与“会褪去的脚手架”
+## 解法同构：会褪去的脚手架
 
-Routinery 是一款基于结构化重复的 ADHD 辅助工具。它的核心机制是：把每天必须完成的任务（如起床、刷牙、吃药）编排成固定序列，通过重复执行降低启动阻力。对 ADHD 用户来说，Routinery 就像一个外部执行调度器——它接管了“什么时候做什么”的决策，让大脑的生成核心（创造力、冲动、情绪）有了可预测的轨道。
+两边的解法也惊人一致：**外挂一个临时的调度层，然后逐步撤退**。
 
-这恰恰是 agentic harness 工程中“会褪去的脚手架”的镜像。在 LLM agent 开发中，常需要给模型套上临时约束：固定输出格式、限定上下文窗口、提供 few-shot 示例。这些约束不是永久的——一旦 agent 学会在目标范围内稳定输出，脚手架就可以逐步撤掉。Routinery 的“重复序列”也是同样的逻辑：它不是让你永远依赖它，而是通过重复训练，让大脑的内隐记忆逐渐接管（来源：拐杖与脚手架）。
+对 ADHD 来说，这个外挂就是 Routinery 这类“日程脚手架”工具。Routinery 不是让你永远依赖它，而是通过固定的日课结构（比如“起床→冥想→规划→工作”），把执行功能外包出去，降低认知负荷，稳定情绪。当习惯内化后，你可以逐步减少对工具的依赖——就像释迦牟尼用“八正道”作为行为脚手架，但最终目标是“自依止法依止”，不依赖权威（来源：人物案例）。王阳明用“静坐反省”作为日课，在军旅中也坚持讲学，通过“事上练”将良知内化为自动的决策标准（来源：人物案例）。这些历史人物的 harness 系统，本质上就是一套“会褪去的脚手架”：先用外部规则稳定行为，再通过练习让规则内化。
 
-但关键在于：脚手架 vs 拐杖的边界在哪里？Wiki 资料明确指出，过度依赖 AI 工具可能削弱内在情绪调节能力（来源：矛盾与存疑）。Routinery 如果被用成“没有它我就无法启动”的拐杖，那就违背了脚手架的设计初衷。真正的脚手架，应该在能力增长后自然褪去——就像训练 agent 时，最终目标是让它在无约束下也能稳定输出。
+对 LLM agent 来说，这个外挂就是 agent scaffolding（脚手架）。工程师给 agent 套上任务分解（类似 Goblin Tools 的 Magic ToDo）、外部记忆（类似 Saner.AI 的知识回忆）、定时 re-grounding（类似 Routinery 的日课提醒）等结构。这些脚手架不是永久性的——当 agent 在某个领域表现稳定后，工程师会逐步减少干预，就像训练一个新员工。
 
-## 证据：两边的真实案例
+## 真实证据：两边都成立
 
-**ADHD 侧**：Inflow 通过训练工作记忆来改善执行功能，其神经科学依据是背外侧前额叶皮层作为因果流入中枢（来源：Inflow）。但用户报告显示，效果因人而异（来源：矛盾与存疑）。Goblin Tools 的 Magic ToDo 功能将复杂任务分解为小步骤，降低启动门槛（来源：Goblin Tools）。用户反馈称“它把压倒性的事情变成一系列不压倒性的事情”（来源：Goblin Tools）。Saner.AI 通过知识回忆减少搜索循环（来源：Saner.AI），这直接针对 ADHD 的工作记忆缺陷——但同样缺乏独立 RCT（来源：矛盾与存疑）。
+### ADHD 侧：工具即脚手架
 
-**LLM/agent 侧**：在 agent 工程中，会褪去的脚手架通常表现为：初期提供 strict schema 和 step-by-step 提示，后期逐步放宽。例如，一个用于客户支持的 agent，最初被约束为“只能回答预设 FAQ”，随着训练数据积累，约束被替换为“参考知识库后自由回答”。这与 ADHD 工具的逻辑完全平行：Routinery 提供固定序列（约束），Motion 和 Tiimo 通过 AI 自动规划日程（动态约束），但最终目标都是让用户/agent 内化调度能力。
+- **Inflow** 的 CBT 程序：通过结构化模块训练工作记忆和认知控制，临床研究显示用户情绪稳定性提升（来源：Inflow）。它教用户建立技能，而不是永远依赖应用。
+- **Goblin Tools** 的 Magic ToDo：将模糊任务自动分解为可管理步骤，降低启动门槛，减少因任务瘫痪引发的挫败感（来源：Goblin Tools）。用户可调节“辣度”控制分解粒度，这正是“会褪去”的体现——随着能力提升，可以降低分解粒度。
+- **Saner.AI** 的外部记忆：通过本地记忆存储减少搜索循环和认知负荷（来源：Saner.AI）。当用户习惯了信息组织方式，可以逐步减少对工具的依赖。
 
-## 核心判断：脚手架必须包含“褪去机制”
+### LLM/Agent 侧：同样的工程
 
-我在这里提出一个鲜明的观点：**任何声称帮助 ADHD 的工具，如果缺乏“渐撤计划”，本质上都是拐杖。** 现有的 ADHD 工具，包括 Routinery、Inflow、Goblin Tools，都强调“补偿”而非“训练”。Wiki 资料也承认，AI 工具作为外部执行功能层的有效性证据不足（来源：矛盾与存疑），且存在依赖风险。这让我怀疑：这些工具是否真的在构建脚手架？还是只是在卖拐杖？
+- 经典 Stroop 冲突任务测试 Transformer 注意力：短上下文中表现正常，但随序列变长（认知负荷增加），模型在冲突试次上骤降到随机水平——无法抑制优势反应、无法解决认知冲突。这与 ADHD 执行功能缺陷的核心标志一一对应（来源：认知负荷）。
+- 工程师的解法：给 agent 套上“上下文工程”——用外部提示词聚焦当前任务，用记忆模块提供跨会话的上下文，用定时 re-grounding 重置注意力。这些脚手架与 ADHD 的 Routinery 日课、Inflow 的 CBT 步骤、Goblin Tools 的任务分解，结构完全同构。
 
-一个合格的脚手架，应该内置“褪去机制”：比如 Routinery 可以设置“每执行 30 天后减少一次提示”；Inflow 可以在工作记忆提升后自动降低训练强度。但目前的工具几乎都没有这个功能。这或许是因为，商业上“永久依赖”比“成功褪去”更有利可图——但这对用户是不负责任的。
+## 核心观点：脚手架 vs 拐杖的边界
+
+关键不是用不用工具，而是**工具是否被设计为可褪去的**。
+
+Routinery 这样的工具，如果被设计为“永久依赖”，就成了拐杖——用户永远无法发展内在的情绪调节能力。但如果它被设计为“先外挂，再内化”，就是脚手架。同样，agent scaffolding 如果永远不撤退，agent 就永远无法自主决策。
+
+目前缺乏长期追踪研究验证适度使用的边界（来源：矛盾与存疑）。部分用户反映学习使用 AI 工具本身增加认知负荷（来源：矛盾与存疑），说明脚手架的设计必须极其轻量。
 
 ## 局限与争议
 
-必须诚实指出：本文的同构论证主要基于概念类比，而非严格的神经科学或工程研究。ADHD 的情绪失调与 LLM 的上下文失控在生物学机制上完全不同，只是功能层面相似。另外，ADHD 亚型不同（注意缺陷型 vs. 多动冲动型）对工具的反应差异大（来源：矛盾与存疑），而 agent 的“上下文失控”也有技术原因（如 token 限制、注意力机制缺陷）。这些差异意味着，同构不能简单映射为“同一个解决方案”。
+1. **过度依赖风险**：AI 工具若被长期无节制使用，可能成为“永久拐杖”，阻碍 ADHD 个体发展内在情绪调节能力（来源：矛盾与存疑）。
+2. **个体差异显著**：ADHD 亚型对工具的反应不同，现有研究样本量小，结论难以泛化（来源：AI 与 ADHD 的情绪调节）。
+3. **同构命题的实证缺口**：ADHD 大脑与 LLM 的同构目前是理论类比，缺乏神经科学或计算机科学的直接证据（来源：矛盾与存疑）。
 
 ## 今天就能试的行动
 
-1. **测试你的“脚手架褪去阈值”**：如果你在用 Routinery，尝试每周减少一次序列中的提示步骤，观察自己的启动能力是否仍然稳定。记录下“褪去”后表现不变的那一天——那就是你的脚手架该撤掉的时刻。
-2. **给 agent 设置“约束衰减”实验**：如果你在开发 agent，在测试阶段加入“约束逐步放宽”的脚本。例如，前 10 次交互提供 5 个示例，后 10 次只提供 2 个，观察输出质量变化。这能帮你找到“最小必要约束”。
-3. **用 Goblin Tools 分解一个情绪触发任务**：下次情绪波动时，用 Magic ToDo 把“冷静下来”分解为具体步骤（如“深呼吸 3 次”“喝一口水”“写下三个事实”）。这种外部脚手架能打断情绪失控的循环（来源：Goblin Tools）。
-4. **建立“情绪日志”作为外部记忆**：利用 Saner.AI 的知识回忆功能，记录每次情绪失调的触发模式和持续时间（来源：Saner.AI）。这相当于给 ADHD 大脑增加了一个“上下文缓存”——就像 agent 的 memory 模块，防止下次被同样的 trigger 劫持。
-
-## 结语
-
-Routinery 治 ADHD 的情绪失调，和给 agent 套会褪去的脚手架，本质都是同一个工程问题：如何让一个强大的生成核心在缺乏可靠调度层时，通过外部约束稳定输出，并最终内化这些约束。但请记住：真正的脚手架，最终是要拆掉的。如果你发现自己或你的 agent 离开了工具就崩溃，那说明你还没有完成“褪去”这一步。而这一步，恰恰是工程中最容易被忽略，也最重要的环节。
+1. **ADHD 读者**：下载 Routinery（或任何日课类 app），设计一个最小可行日课（3 个步骤：起床→喝水→规划）。坚持一周，观察情绪稳定性变化。如果有效，第二周减少一个步骤，看是否能内化。
+2. **Agent 工程师**：为你的 LLM agent 添加一个“定时 re-grounding”模块——每 5 轮对话后，用外部提示词重置上下文。对比添加前后的任务成功率。
+3. **两者都适用**：阅读释迦牟尼或王阳明的传记，分析他们的“脚手架”系统，思考如何将“先外挂，再内化”原则应用到自己的场景。
 
 ## 参考来源
 
+- [The 12 Best Apps for ADHD in 2026: A Guide to Finding What ...](https://www.getinflow.io/post/best-apps-for-adhd)
 - [Dynamic causal brain circuits during working memory and their functional controllability](https://doi.org/10.1038/s41467-021-23509-x)
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
-- [Harnessing Artificial Intelligence to Live Better with ADHD - CHADD](https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [¡Hacia una IA neurodivergente! (迈向神经多样性AI)](https://ddd.uab.cat/pub/uabdivulga/uabdivulga_a2026m1/uabdivulga_a2026m1a4iSPA.pdf)
+- [Monotropic Artificial Intelligence: Toward a Cognitive Taxonomy of Domain-Specialized Language Models](https://arxiv.org/pdf/2603.00350v1)
 
 ---
 

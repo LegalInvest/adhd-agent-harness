@@ -1,0 +1,54 @@
+{
+  "updated_at": "2026-07-03",
+  "project": "400篇ADHD✖️AI滚动池",
+  "local_path": "C:\\项目库\\400篇ADHD✖️AI滚动池",
+  "github_repo": "https://github.com/LegalInvest/adhd-ai-creator-intelligence",
+  "branch": "main",
+  "latest_known_commit": "see git log --oneline -1",
+  "primary_goal": "将400个ADHD x AI闭环资产包推进到真实发布、真实回流和产品化验证",
+  "asset_pack_count": 400,
+  "asset_pack_status": {
+    "standard_pack_dirs": 400,
+    "drafts_available": 400,
+    "draft_gap": 0,
+    "closed_loop_ready": 400,
+    "required_files_per_pack": 9
+  },
+  "creator_research_v4": {
+    "total_actionable_rows": 527,
+    "people_or_team_accounts": 444,
+    "discovery_or_community_sources": 83,
+    "strong_confirmed_samples": 59,
+    "high_value_leads": 29,
+    "cross_scan_candidates": 356,
+    "csv": "research/ADHDxAI_全网创作者候选池_v4_2026-07-03.csv",
+    "latest_csv": "research/ADHDxAI_全网创作者候选池_latest.csv",
+    "report": "ADHDxAI创作者情报库_v4_2026-07-03.md",
+    "optimization_log": "research/ADHDxAI_100轮优化日志_v4_2026-07-03.md"
+  },
+  "next_agent_entry": [
+    "HANDOFF_FOR_NEXT_AGENT.md",
+    "SESSION_LIFECYCLE_POLICY.md",
+    "handoff/00_README_NEXT_AGENT.md",
+    "handoff/01_PROJECT_STATE_2026-07-03.md",
+    "handoff/02_EXECUTION_QUEUE_2026-07-03.md",
+    "handoff/03_RESEARCH_HANDOFF_ADHD_AI_CREATORS_2026-07-03.md",
+    "handoff/04_GITHUB_RECOVERY_AND_SYNC_2026-07-03.md",
+    "handoff/05_DEVELOPMENT_TASKS_FOR_NEXT_AGENT.md",
+    "handoff/06_RESEARCH_V4_HANDOFF_2026-07-03.md"
+  ],
+  "highest_priority_next_action": "从indexes/400真实欲望校准后电流倒序总表.md选择一个S/A级资产包，完成发布前真实欲望校准，推进真实发布并回填07_48小时回流表.md",
+  "session_lifecycle_policy": {
+    "principle": "每条session都是一次性可报废Agent工具人",
+    "context_window_limit": "约50%",
+    "completion_standard": "只要留下资产增量、状态记录、交接说明、Git commit或GitHub同步，就可以删除或归档",
+    "policy_file": "SESSION_LIFECYCLE_POLICY.md"
+  },
+  "do_not": [
+    "不要直接扩到401篇",
+    "不要把AI候选博主默认称为ADHD博主",
+    "不要用待填回流表冒充真实反馈",
+    "不要提交.env、token、cookie、账号密码或浏览器登录数据",
+    "不要把复杂系统开发伪装成发布进展"
+  ]
+}

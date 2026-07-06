@@ -24,70 +24,95 @@ toolsCited:
   - "Focusmate"
   - "RescueTime"
   - "Brain.fm"
-thesis: "ADHD大脑与LLM/agent在结构上同构——都是高产但缺乏可靠执行调度层的生成核心——因此Goblin Tools治ADHD注意力涣散与给agent套上下文工程本质相同，都是通过外部harness（脚手架）补偿调度缺陷，但需警惕工具沦为永久拐杖。"
+  - "Forest"
+thesis: "ADHD 大脑与 LLM 在结构上同构——都是高产但缺乏可靠执行调度层的生成核心，因此两者都需要上下文工程（harness）来稳定输出，Goblin Tools 等 ADHD 工具本质上是给大脑套上外部执行功能层，与给 agent 做上下文工程是同一套思路。"
 problem: "为什么用 Goblin Tools 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？"
 spine: "上下文工程"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "曾国藩"
+  - "孔子"
+  - "李芳"
 ---
 # 为什么用 Goblin Tools 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？
 
 > Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 同一个问题：生成核心，但调度层缺失
+你有没有过这样的体验：打开电脑准备写报告，结果半小时后发现自己刷了 20 个网页、打开 3 个文档、脑子里同时跑着 5 个念头，但报告一个字没动。这不是意志力差，是你的大脑里有个“高产但缺调度层”的生成核心——ADHD 大脑。
 
-你打开Goblin Tools，把一团乱麻的待办事项丢进去，AI帮你拆成“倒垃圾”“回邮件”“写报告”这样的小步骤。你松了一口气——不是因为AI聪明，而是因为它接管了你大脑里那个总在罢工的“调度员”。
+同样，如果你做过 agent 开发，一定遇到过：给 LLM 的上下文越长，它越容易跑偏，最后输出一堆看似相关实则无用的内容。你需要“上下文工程”——精心设计 prompt、分割上下文、加 re-grounding 机制——才能让 agent 稳定产出。
 
-另一边，你在给LLM agent写prompt，发现它总在上下文膨胀后跑偏：聊了十轮，它忘了初始目标，开始编造无关细节。你不得不把关键指令重新塞进system prompt，或者用向量数据库做外部记忆。
+这两件事，本质上是同一个问题。
 
-这两件事，本质上是同一个问题。ADHD大脑与LLM/agent在结构上同构：两者都是**高产但缺乏可靠执行调度层的生成核心**（来源：AI 与 ADHD 的专注力）。ADHD的创意发散需要外部脚手架来聚焦；LLM的文本生成需要上下文工程来约束。Goblin Tools治ADHD注意力涣散，和给agent套上下文工程，是一体两面。
+## 同构：ADHD 大脑与 LLM 是同一类“生成核心”
 
-## 同构的证据：执行功能 vs 上下文控制
+ADHD 大脑与 LLM 的深层同构体现在多个层面（来源：AI 与 ADHD 的专注力）：
+- **生成核心与调度层**：两者都拥有强大的生成能力（ADHD 的创意发散、LLM 的文本生成），但缺乏可靠的执行调度层（ADHD 的执行功能、LLM 的上下文控制），导致输出不稳定。
+- **无状态与外部记忆**：ADHD 的工作记忆缺陷与 LLM 的无状态性同构，都需要外部记忆系统（如第二大脑、向量数据库）来维持连续性。
+- **上下文工程**：ADHD 易被环境带偏，LLM 易被上下文膨胀干扰，都需要主动设计“当下注意什么”的工程方案。
 
-ADHD的核心缺陷是执行功能障碍——计划、组织、任务启动、时间管理这些“调度功能”效率低下（来源：执行功能障碍）。这不是懒，而是大脑的执行系统像一台没有操作系统的服务器：计算能力很强，但不知道先跑哪个进程。
+最新研究提供了硬证据：用经典 Stroop 冲突任务测试 Transformer 注意力，发现短上下文中表现正常，但随序列变长（认知负荷增加），模型在冲突试次上骤降到随机水平——无法抑制优势反应、无法解决认知冲突。这与 ADHD 执行功能缺陷的核心标志一一对应：注意控制不足、干扰抑制缺陷、随认知负荷增加而崩溃（来源：认知负荷）。
 
-LLM/agent也有类似的“执行功能”问题。它没有真正的注意力机制（人类注意力是资源有限的主动选择，LLM的“注意力”是数学上的加权平均），但它的输出质量高度依赖上下文工程——你必须在prompt里明确“当前注意什么”“忽略什么”，否则它会被无关信息带偏。
+## 历史人物的 harness：曾国藩与孔子的“上下文工程”
 
-具体证据：
-- **工作记忆 vs 无状态性**：ADHD的工作记忆容量小，容易忘事；LLM天然无状态，每次调用都是独立会话。两者的解法都是外部记忆——ADHD用待办清单、第二大脑；LLM用向量数据库、对话历史摘要。
-- **时间盲 vs 上下文膨胀**：ADHD患者常有时间盲，难以感知时间流逝（来源：执行功能障碍）；LLM在长上下文里会“迷失”，早期信息被后期内容稀释。两者的解法都是主动设计“时间锚点”——ADHD用RescueTime自动记录时间（来源：RescueTime），LLM用滑动窗口或关键信息重述。
-- **任务启动 vs prompt冷启动**：ADHD启动任务困难，需要外部推动（如Focusmate的实时问责，来源：Focusmate）；LLM agent启动新任务时，如果prompt写得模糊，输出就会随机游走。两者的解法都是结构化提示——Goblin Tools把大任务拆成小步骤，就像给agent写chain-of-thought prompt。
+曾国藩是典型的注意力不集中型 ADHD：30 岁前浮躁坐不住，天天串门喝酒看杀人，日记里天天骂自己“无恒”“浮躁”；读书慢，“他人目下二三行，余或疾读不能终一行”；一辈子严重银屑病，情绪不稳定，打败仗就跳水自杀。他的专属 harness 是“日课十二条”：黎明即起、读书不二、谨言、写日记反省等；“结硬寨打呆仗”，用最笨最稳的方法抵消自己的冲动（来源：人物案例）。
 
-## 核心判断：脚手架 vs 拐杖的边界
+孔子同样有 ADHD 特质：身高 1 米 9，精力旺盛，周游列国 14 年坐不住；冲动爱骂人，见南子急得对天发誓，骂宰予朽木不可雕；对音乐超专注到三月不知肉味，对种地等俗事零耐心。他的 harness 是“克己复礼”——用外在的“礼”作为行为边界，每日反省，“吾日三省吾身”（来源：人物案例）。
 
-我的核心观点是：**Goblin Tools这类AI工具，本质是给ADHD大脑套上一层外部harness，就像上下文工程给LLM套上约束。但这个harness必须是脚手架，而不是拐杖。**
+这些 harness 与 LLM/agent 的上下文工程惊人同构：
+- **日课 ↔ 定时 re-grounding**：曾国藩每日固定时间做固定事，相当于给大脑设置定时重定向指令，防止上下文漂移。
+- **“礼” ↔ 系统 prompt**：孔子用“礼”作为行为边界，相当于给 agent 设定系统级约束，防止输出越界。
+- **日记反省 ↔ 日志与评估**：曾国藩写日记自我反省，相当于 agent 的日志记录与自我评估机制，用于检测并纠正偏差。
 
-脚手架是临时结构，帮你建起内在能力后可以拆除；拐杖是永久替代，拿走你就瘫了。当前工具的争议在于：它们到底是脚手架还是拐杖？
+## Goblin Tools：给大脑套上外部执行功能层
 
-从证据看，多数工具（Focusmate、RescueTime、Goblin Tools）的效果主要来自用户报告，缺乏大规模对照实验（来源：矛盾与存疑）。Brain.fm的神经锁相技术有理论支撑，但针对ADHD的独立临床研究缺失（来源：Brain.fm）。更重要的是，过度依赖AI工具可能削弱内在执行功能——比如长期用RescueTime自动追踪，你可能会丧失手动估算时间的能力（来源：矛盾与存疑）。
+Goblin Tools 是一款专为 ADHD 设计的 AI 工具，其核心功能包括：
+- **魔法待办（Magic ToDo）**：将模糊任务自动分解为可执行的小步骤，降低任务启动门槛。
+- **调味剂（The Chef）**：根据剩余食材生成菜谱，减少决策认知负荷。
+- **法官（The Judge）**：评估邮件语气，帮助避免冲动回复。
 
-因此，正确的使用姿势是：**把AI工具当作训练辅助，而不是替代品。** 像用Focusmate时，逐渐减少配对频率，练习独立启动；像用Goblin Tools时，尝试自己先拆解任务，再用AI验证。
+这些功能本质上是在做“上下文工程”：将大任务分割成小上下文（微任务），降低单次认知负荷；提供外部决策锚点（如菜谱），减少大脑的调度压力；增加情绪调节层（如语气评估），防止情绪失调导致的输出失控。
 
-## 给两类读者的行动建议
+同样，为 LLM 做上下文工程时，我们会：
+- 将长上下文分割成 chunk，每次只给 agent 一小段信息。
+- 加 re-grounding prompt，定期让 agent 回顾核心目标。
+- 加输出格式约束，防止 agent 跑偏。
 
-### 如果你有ADHD：
-1. **用Goblin Tools做任务分解，但每周至少一次手动拆解**：先自己写步骤，再对比AI的输出，训练你的执行功能。
-2. **设置“无工具时段”**：比如每天30分钟，关掉所有AI辅助，练习纯靠大脑维持注意力。
+## 工具证据：哪些工具在做什么？
 
-### 如果你在做agent工程：
-1. **把ADHD的应对策略当作灵感**：比如用“身体在场效应”（Focusmate的原理）设计agent的实时反馈机制——让agent定期“汇报进度”，避免跑偏。
-2. **警惕上下文膨胀的“时间盲”**：在prompt里显式设定“每5轮重述一次核心目标”，就像ADHD患者用RescueTime提醒自己时间流逝。
+- **Focusmate**：基于虚拟身体在场的在线问责服务，通过实时同伴问责提供外部结构和社会压力，弥补内在多巴胺调节不足。其核心机制是“AI-Matched Body Doubling”（来源：Focusmate）。这相当于给 agent 加了一个外部监督器，定期检查进度。
+- **RescueTime**：自动化时间追踪与生产力分析工具，自动记录时间使用，揭示真实的时间去向，帮助用户识别注意力漂移（来源：RescueTime）。这相当于给 agent 加日志系统，记录每一步耗时。
+- **Brain.fm**：利用 AI 生成音乐，通过神经锁相技术影响大脑处理信息的方式，帮助进入专注状态（来源：Brain.fm）。这相当于给 agent 加了一个注意力锚点，减少上下文干扰。
 
-## 诚实面对局限
+## 争议与局限：脚手架还是拐杖？
 
-这种同构是隐喻，不是严格等价（来源：AI 与 ADHD 的专注力）。人类注意力涉及情绪、多巴胺、身体状态，远比LLM的权重计算复杂。而且ADHD个体差异巨大——有人对Focusmate效果显著，有人觉得社交压力更大（来源：Focusmate）。未来需要更多个性化研究和随机对照试验，才能确认哪些工具对哪些亚型有效。
+核心争议在于：AI 工具是“外部执行功能层”还是“拐杖”？长期使用是否会导致 ADHD 患者内在执行功能进一步退化？目前缺乏纵向研究，尚无定论（来源：矛盾与存疑）。
 
-但至少，这个视角给了我们一个有用的框架：**无论你是ADHD患者还是agent工程师，你面对的都是同一个挑战——如何让一个强大的生成核心，拥有可靠的调度层。** 解法也相通：外部harness，但别让它成为拐杖。
+同样，agent 的上下文工程也存在风险：过度依赖外部 prompt 和 re-grounding，可能导致 agent 失去自主调度能力。两者都需要找到“脚手架 vs 拐杖”的平衡——脚手架是暂时的、可拆除的辅助结构，拐杖是永久依赖。
+
+另一个争议是：超聚焦应被引导还是打断？部分 ADHD 用户反馈强行打断（如番茄钟）有效，而柔性引导可能不够强力。这对应 agent 的“中断机制”：是硬性超时打断，还是软性提醒后让 agent 自己决定？缺乏对比研究。
+
+## 今天就能试的行动
+
+1. **用 Goblin Tools 的 Magic ToDo 分解一个让你拖延的任务**：比如“写周报”拆成“打开文档→列出本周工作→写第一段→检查格式→发送”。每次只关注一个小步骤，降低启动阻力。
+2. **设置一个外部监督器**：用 Focusmate 预约一个 25 分钟工作时段，或找一个朋友视频一起工作。这相当于给大脑加一个“实时 re-grounding”机制。
+3. **记录时间流向**：用 RescueTime 或 Forest 追踪一天的时间使用，识别注意力漂移模式。这相当于给大脑加日志系统，让“时间盲”变可见。
+4. **设计你的“日课”**：像曾国藩一样，每天固定时间做固定事（如早起后先做最重要的一件事）。用手机提醒或日历事件作为“定时 re-grounding”。
+
+## 结论
+
+ADHD 大脑与 LLM 是同构的生成核心，都需要上下文工程来稳定输出。Goblin Tools 等 ADHD 工具本质上是在给大脑套上外部执行功能层，与给 agent 做 prompt 工程、分割上下文、加 re-grounding 是同一套思路。理解这一点，你就能从“我意志力不行”的自责中解脱出来——问题不在你，在于你的大脑缺了一个调度层。而解决方案，工程师们早就知道了。
 
 ## 参考来源
 
-- [11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog](https://blog.rivva.app/p/11-best-adhd-productivity-apps-for)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
 - [Meta-Analysis of fMRI Studies of Disruptive Behavior Disorders](https://doi.org/10.1176/appi.ajp.2016.15081089)
 - [Nonlinear Complexity Analysis of Brain fMRI Signals in Schizophrenia](https://doi.org/10.1371/journal.pone.0095146)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [AI Tools for Kids with ADHD: A Complete Guide for Parents...](https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
+- [Revolutionizing ADHD Management with AI Assistants](https://neurolaunch.com/adhd-ai-assistant/)
+- [Getting Started with AI for ADHD for ADHD: AI Tools... | Blue Orchid](https://www.blueorchid.world/adhd/guides/getting-started-with-ai-for-adhd)
+- [An ADHD ChatGPT Guide: Helpful Prompts & ADHD Hacks - I'm Busy Being Awesome](https://imbusybeingawesome.com/chatgpt-adhd/)
 
 ---
 

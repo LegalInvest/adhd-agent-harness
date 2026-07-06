@@ -22,62 +22,72 @@ toolsCited:
   - "Goblin Tools"
   - "Saner.AI"
   - "Motion"
-  - "Focusmate"
-  - "Brain.fm"
-thesis: "ADHD大脑与LLM agent共享同一困境：生成核心强大但执行调度层缺失，因此两者的解法——人在回路的脚手架——在结构上完全同构。"
+thesis: "ADHD 大脑与 LLM agent 本质上是同构的：两者都是高产生成核心但缺乏可靠执行调度层，因此有效的解决方案——对 ADHD 是外部脚手架，对 LLM 是 human-in-the-loop harness——在结构上完全对应，且都面临‘拐杖 vs 脚手架’的边界争议。"
 problem: "为什么用 Claude 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？"
 spine: "人在回路与身体在场"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "张謇"
+  - "孔子"
+  - "Denise Stanley"
 ---
 # 为什么用 Claude 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？
 
 > Claude 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么“不知哪些方法有用”成了ADHD与AI agent的共同死穴？
+你打开 Claude，想让它帮你制定一个每日计划。你输入“帮我安排今天的工作”，它立刻输出一个漂亮的清单。但第二天，你发现它忘了你的截止日期，把重要会议排到了午餐时间。你叹了口气，觉得 AI 还是“不够懂你”。
 
-ADHD人群最熟悉的挫败感，不是“做不到”，而是“不知道哪个方法有用”。今天试了番茄钟，明天觉得Goblin Tools不错，后天又切换到Motion——然后所有工具都在两周后吃灰。这种“方法流浪”的根源，不是工具不好，而是大脑缺少一个**可靠的执行调度层**。
+与此同时，你作为 ADHD 患者，每天也在经历类似的事：你的大脑像一台创意永动机，但执行功能——任务启动、时间管理、抑制冲动——总是掉链子。你试过无数方法：番茄钟、待办清单、身体在场，但总觉得“不知哪些方法有用”。
 
-同样的困境正在LLM agent上重演。开发者发现，即使是最强的模型（Claude、GPT-4），在长程任务中也会“开始忘记系统提示”（来源：Building an AI Coding Agent for the Terminal），行为逐渐漂移。工程师们拼命给agent套上human-in-the-loop监督、护栏、检查点——而这套东西，和ADHD群体需要的“外部脚手架”在结构上**一模一样**。
+这两个问题，其实是同一个问题。
 
-## 同构脊柱：高产但缺执行调度层的生成核心
+## 同构的困境：高产但不可靠的生成核心
 
-### ADHD侧：生成核心过剩，执行功能不足
+ADHD 大脑与 LLM 共享一个核心特征：生成能力极强，但缺乏可靠的执行调度层。ADHD 个体在发散思维、创意、多任务并行上表现突出，但执行功能（任务启动、持续专注、抑制冲动）薄弱，导致“高产但不可靠”（来源：人在回路与身体在场）。LLM 同样如此：它能生成流畅的文本、代码、计划，但直接输出可能偏离目标、陷入循环或产生危险行为（来源：人在回路与身体在场）。
 
-ADHD大脑的生成核心（发散思维、创意、多任务并行）产出极高，但执行功能（任务启动、持续专注、抑制冲动）薄弱，导致“高产但不可靠”（来源：人在回路与身体在场）。当大脑无法自动调度注意力时，外部工具就不得不扮演调度员的角色：Goblin Tools将“整理房间”分解成“捡起地板上的衣服”“擦桌子”等小步骤（来源：Goblin Tools），降低启动门槛；Motion自动排程并动态调整，消除“下一步该做什么”的决策负担（来源：Motion）；Saner.AI通过知识回忆减少搜索循环（来源：Saner.AI）。这些工具本质上都在做同一件事：**提供一个外部执行层**，对抗目标漂移。
+这意味着，对于 ADHD 和 LLM，解决方案不是“更强的生成能力”，而是“更好的外部调度”。
 
-### LLM/agent侧：生成核心强大，但指令消退
+## 外部调度层：从 Goblin Tools 到 Agent Harness
 
-LLM本身是强大的生成核心，但缺乏可靠的执行调度层。在长程交互中，模型会因“指令消退”而偏离初始目标（来源：重锚定与目标漂移）。Agent harness通过事件驱动的系统提醒、token预算、工具调用次数上限和人工检查点来对抗这种漂移（来源：人在回路与身体在场）。Harness的核心是“形式化规划与护栏，使代理输出真正有用且正确”（来源：人在回路与身体在场）。模型本身强大，可靠性来自架构+护栏（来源：人在回路与身体在场）。
+ADHD 一侧的典型工具是 Goblin Tools 的 Magic ToDo：它将模糊任务（如“清理厨房”）分解为具体、可执行的子步骤，用户可调节“辣度”控制粒度（来源：Goblin Tools）。这降低了启动门槛，提供了即时反馈。Saner.AI 则通过增强知识回忆，减少搜索循环和标签切换（来源：Saner.AI）。Motion 更进一步，自动根据任务、会议和截止日期创建并动态调整每日计划，消除“下一步该做什么”的决策负担（来源：Motion）。
 
-### 同构的解法：人在回路与身体在场
+这些工具构成一个外部执行功能层：它们补偿了 ADHD 内在的执行功能缺陷，但有一个关键缺陷——传统提醒系统要求你主动设置提醒，而这本身就是一个执行功能任务（来源：重锚定与目标漂移）。
 
-ADHD侧最有效的策略之一是身体在场效应：有另一个人在场时，执行功能障碍被绕过（来源：人在回路与身体在场）。Focusmate通过AI匹配虚拟身体搭档提供外部问责（来源：人在回路与身体在场）。LLM侧则对应human-in-the-loop监督：在关键决策点暂停并询问人类（来源：人在回路与身体在场）。两者都是**引入一个外部监督者**，弥补内在调度层的缺失。
+LLM/agent 一侧的对应方案是 agent harness（脚手架）。Harness 通过 human-in-the-loop 监督提供外部调度：设置护栏（token 预算、工具调用次数上限）、加入人工检查点（暂停并询问后再执行）（来源：人在回路与身体在场）。其核心是“形式化规划与护栏，使代理输出真正有用且正确”（来源：人在回路与身体在场）。
 
-## 脚手架 vs 拐杖：同构解法的边界
+## 历史人物的 Harness：张謇与孔子
 
-这里必须诚实指出一个争议：外部执行层如果设计不当，会从“脚手架”变成“拐杖”。多个wiki页面警告“过度依赖可能削弱内在能力”（来源：矛盾与存疑）。例如，Brain.fm的ADHD效果缺乏独立临床研究（来源：矛盾与存疑）；Goblin Tools的证据主要来自用户评价，缺乏随机对照试验（来源：Goblin Tools）。同一个harness，如果剥夺了人类的主动判断，就变成了拐杖；如果保留人类在回路中的决策权，才是真正的脚手架。
+张謇（清末状元实业家）是 ADHD 特质的典型：41 岁中状元后辞官不做实业，冲动敢干，一生创办 20 多家企业、300 多所学校。他的专属 harness 是“父教育母实业”——用实业和教育救国，每天写日记反省，严格管理企业。这对应 LLM harness 中的“日课↔定时 re-grounding”和“秘书↔外部调度器”。
 
-## 核心观点：ADHD与LLM agent的解法是同一类工程
+孔子同样如此：精力旺盛，周游列国 14 年，冲动爱骂人，思维跳跃，《论语》全是场景化语录。他的 harness 是“克己复礼”——用外在的“礼”作为行为边界，每日反省。70 岁才做到从心所欲不逾矩，一辈子和自己的冲动做斗争。
 
-我的判断是：**ADHD大脑与LLM agent是同一类“高产但缺执行调度层的生成核心”，两边的解法（harness/脚手架）结构同构。** 这意味着，如果你是一个正在为ADHD方法流浪而痛苦的人，你可以用agent harness的思维来设计自己的外部系统：不是寻找一个万能工具，而是搭建一个包含**重锚定、人在回路、护栏**的脚手架。如果你是一个在给agent做harness的工程师，你可以从ADHD群体的策略中学到更人性化的监督节奏——比如身体在场效应对应的“轻量级检查点”，而不是每次都在关键步骤打断用户。
+他们的 harness 系统与 LLM agent harness 同构：都是通过外部规则和检查点来约束和引导一个强大的生成核心。
+
+## 脚手架 vs 拐杖：争议与边界
+
+但这里有一个关键争议：AI 工具是“外部执行功能层”还是“拐杖”？过度依赖可能导致能力退化（来源：矛盾与存疑）。同样，LLM harness 如果过度约束，会扼杀模型的创造性；如果约束不足，又会导致输出失控。
+
+我的判断是：脚手架与拐杖的边界在于**是否促进能力内化**。张謇的日课和孔子的“礼”最终内化为习惯；而单纯的提醒工具如果永远不减少使用频率，就可能成为拐杖。LLM harness 的设计也应如此：检查点应逐步减少频率，让模型学会自我校验。
 
 ## 今天就能试的行动
 
-1. **用Goblin Tools的Magic ToDo分解一个让你拖延的任务**，观察分解后启动门槛的变化。如果觉得好用，记录下“分解到什么粒度最有效”——这就是你的“任务分解护栏”。
-2. **在Claude或ChatGPT中设置一个“检查点提示”**：每次对话超过5轮后，自动要求AI总结当前进度并询问“是否继续”。这模拟了agent harness中的人工检查点。
-3. **尝试一次Focusmate或类似的身体搭档**，体验“外部监督者”如何绕过执行功能屏障。记录下被监督时与独自工作时效率的差异。
-4. **警惕拐杖化**：任何工具使用两周后，问自己“如果明天这个工具消失，我还能完成同样的任务吗？”如果答案是否定的，说明你需要调整脚手架的设计，而不是依赖工具本身。
+1. **用 Goblin Tools 分解一个你拖延的任务**：输入“写周报”，调节辣度到 3，执行第一步“打开文档”。
+2. **给 Claude 设置一个“人工检查点”**：在关键步骤前要求它输出“确认继续？”，避免它直接执行。
+3. **模仿张謇的日课**：每天固定时间向 AI 报告进度（来源：人在回路与身体在场），作为外部 accountability。
+4. **反思你的工具是脚手架还是拐杖**：如果离开它你完全无法启动任务，尝试逐步减少使用频率。
+
+ADHD 大脑和 LLM agent 的困境，本质上是同一个设计问题：如何让一个强大的生成核心变得可靠？答案不是压制生成，而是构建外部调度层。这个层可以是 Goblin Tools、Motion，也可以是 agent harness。关键在于，它必须是一个**可内化的脚手架**，而非永久的拐杖。
 
 ## 参考来源
 
-- [Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar](https://www.iwoszapar.com/p/best-ai-tools-adhd-productivity-2026)
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [The Best AI-Powered ADHD Productivity Tools in 2026 (That ...](https://nexasphere.io/blog/ai-adhd-productivity-tools-2026)
-- [“A Cognitive Collaborator:” How Adults with ADHD Are Using ChatGPT](https://www.additudemag.com/how-to-use-chatgpt-executive-function-adhd/?srsltid=AfmBOoq-REuSO0UJC656kbLBAd5u3CDNmGeVNrZ79iouVqrFlN919a39)
-- [Harnessing Artificial Intelligence to Live Better with ADHD - CHADD](https://chadd.org/attention-article/harnessing-artificial-intelligence-to-live-better-with-adhd/)
-- [AI Tools for Kids with ADHD: A Complete Guide for Parents...](https://www.kidsaitools.com/en/articles/ai-tools-kids-adhd-complete-guide-2026)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [The 12 Best AI Tools for 2026 (That People Actually Use)](https://www.synthesia.io/post/ai-tools)
+- [The AI Powered SuperApp for Work | Motion](https://www.usemotion.com/)
+- [DeepSeek - AI Assistant - Apps on Google Play](https://play.google.com/store/apps/details?id=com.deepseek.chat)
+- [AI Assistant for ADHD: Finally, a Productivity Tool That Requires Less...](https://get-alfred.ai/blog/ai-assistant-for-adhd)
 
 ---
 

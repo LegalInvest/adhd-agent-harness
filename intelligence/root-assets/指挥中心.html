@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《问题XXX》指挥中心</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: #0a0e1a;
+            color: #e0e6ed;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #1a2332;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 32px;
+            background: linear-gradient(90deg, #00d4aa, #00a8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .header .subtitle { color: #6b7b8f; font-size: 14px; }
+        .header .update-time { color: #4a5568; font-size: 12px; margin-top: 8px; }
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-card .number { font-size: 36px; font-weight: 700; color: #00d4aa; }
+        .stat-card .label { font-size: 13px; color: #6b7b8f; margin-top: 5px; }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .column {
+            background: #111827;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            min-height: 400px;
+        }
+        .column-header {
+            padding: 15px;
+            border-bottom: 1px solid #1f2937;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .column-header .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot-idea { background: #f59e0b; }
+        .dot-ferment { background: #8b5cf6; }
+        .dot-draft { background: #00a8e8; }
+        .dot-published { background: #00d4aa; }
+        .column-count {
+            margin-left: auto;
+            background: #1f2937;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+        .card-list { padding: 10px; }
+        .card {
+            background: #1a2332;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+        .card:hover { background: #243447; transform: translateX(3px); }
+        .card-title { font-size: 13px; font-weight: 500; line-height: 1.4; margin-bottom: 6px; }
+        .card-meta { display: flex; gap: 8px; font-size: 11px; color: #6b7b8f; }
+        .tag { padding: 2px 6px; border-radius: 4px; font-size: 10px; }
+        .tag-hot { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .tag-new { background: rgba(0, 168, 232, 0.15); color: #00a8e8; }
+        .tag-personal { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; }
+        .tag-theory { background: rgba(0, 212, 170, 0.15); color: #00d4aa; }
+        .action-bar {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 50px;
+            padding: 12px 24px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+        .action-bar button {
+            background: linear-gradient(90deg, #00d4aa, #00a8e8);
+            border: none;
+            color: #0a0e1a;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .action-bar button.secondary { background: #1f2937; color: #e0e6ed; }
+        .recent-panel {
+            background: #111827;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .recent-panel h3 { font-size: 14px; margin-bottom: 15px; color: #6b7b8f; }
+        .recent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .recent-item {
+            background: #1a2332;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .recent-item .num { font-size: 18px; font-weight: 700; color: #00d4aa; }
+        @media (max-width: 768px) {
+            .board { grid-template-columns: 1fr; }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>《问题XXX》指挥中心</h1>
+        <div class="subtitle">ADHD × AI 内容系列 · 实时作战仪表盘</div>
+        <div class="update-time">数据更新时间：2026-05-07（真实文件扫描 · 27篇已识别）</div>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="number">27</div>
+            <div class="label">总文章数</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">20</div>
+            <div class="label">已发布</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">7</div>
+            <div class="label">草稿待发布</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">7</div>
+            <div class="label">选题池</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">0</div>
+            <div class="label">今日交付</div>
+        </div>
+    </div>
+
+    <div class="recent-panel">
+        <h3>最近交付（按编号倒序）</h3>
+        <div class="recent-grid">
+            <div class="recent-item"><div class="num">038</div><div>多账户被封创伤</div></div>
+            <div class="recent-item"><div class="num">037</div><div>县域经济研究员</div></div>
+            <div class="recent-item"><div class="num">036</div><div>出版策展知识做空</div></div>
+            <div class="recent-item"><div class="num">035</div><div>辩论队反应堆预科</div></div>
+            <div class="recent-item"><div class="num">034</div><div>四种放电模式</div></div>
+            <div class="recent-item"><div class="num">033</div><div>情绪波动市场波动</div></div>
+            <div class="recent-item"><div class="num">032</div><div>时间贴现率3倍</div></div>
+            <div class="recent-item"><div class="num">031</div><div>大脑就是MoE</div></div>
+            <div class="recent-item"><div class="num">030</div><div>AI更会发散</div></div>
+            <div class="recent-item"><div class="num">029</div><div>ADHD创始人统治</div></div>
+            <div class="recent-item"><div class="num">028</div><div>弱联系创新资产</div></div>
+            <div class="recent-item"><div class="num">027</div><div>拒绝过拟合</div></div>
+        </div>
+    </div>
+
+    <div class="board">
+        <div class="column">
+            <div class="column-header">
+                <span class="dot dot-idea"></span>
+                选题池（点子刚丢入）
+                <span class="column-count">4</span>
+            </div>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-title">ADHD的"多巴胺周期"与投资周期的同构</div>
+                    <div class="card-meta"><span class="tag tag-hot">理论/金融</span><span>今天</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">为什么ADHD是天生的"做空者"</div>
+                    <div class="card-meta"><span class="tag tag-new">理论/金融</span><span>2天前</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">ADHD律师的"对抗性质询"接口设计</div>
+                    <div class="card-meta"><span class="tag tag-personal">个人/职业</span><span>3天前</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">200个Skill是数字囤积还是MoE专家库</div>
+                    <div class="card-meta"><span class="tag tag-theory">个人/系统</span><span>5天前</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="column-header">
+                <span class="dot dot-ferment"></span>
+                发酵中（有框架待验证）
+                <span class="column-count">3</span>
+            </div>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-title">ADHD的"遗忘"是大脑的LoRA</div>
+                    <div class="card-meta"><span class="tag tag-theory">理论/AI</span><span>框架已建</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">中年ADHD的"第二次确诊"</div>
+                    <div class="card-meta"><span class="tag tag-personal">个人/生命周期</span><span>待验证</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">为什么中国学霸ADHD是最隐蔽的群体</div>
+                    <div class="card-meta"><span class="tag tag-hot">社会/中国</span><span>数据收集中</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="column-header">
+                <span class="dot dot-draft"></span>
+                草稿（可交付待排版）
+                <span class="column-count">7</span>
+            </div>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-title">038 ADHD的多账户被封创伤 当你的外部前额叶突然消失你的大脑会经历什么</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">037 为什么ADHD是县域经济研究员的理想大脑 urban_research是你的扫描雷达</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">036 ADHD的出版策展就是知识做空 为什么你不该写书你该选书</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">035 为什么辩论队是ADHD的 反应堆预科学校 而AI辩论稿正在杀死辩论</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">034 祝韬的四种放电模式 一个P8外卖高管的MoE解剖</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">033 ADHD的情绪波动就是市场波动 为什么你的情绪仪表盘比任何人都敏感</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">032 ADHD的时间贴现率是普通人的3倍 这不是缺陷是进化策略</div>
+                    <div class="card-meta"><span class="tag tag-new">新完成</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="column-header">
+                <span class="dot dot-published"></span>
+                已发布（微信公众号）
+                <span class="column-count">20</span>
+            </div>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-title">031 你的大脑就是MoE 为什么ADHD的分神是最前沿的AI架构</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">030 如果2028年AI比ADHD更会发散我们还有什么</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">029 为什么ADHD创始人将在AI时代统治世界</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">028 ADHD与弱联系 你最不想维持的关系恰恰是你最大的创新资产</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">027 ADHD是你的大脑在拒绝过拟合 为什么社会需要你这份噪声</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">026 不是ADHD像AI是AI像ADHD LLM被训练得像ADHD</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">025 为什么ADHD是文明的隐藏引擎</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">024 ADHD的季节性情绪波动 为什么你的能量在冬天消失在春天爆发</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">023 ADHD在职场中为什么总是聊起来聪明做起来糊涂 Agent如何设计你的职业接口</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+                <div class="card">
+                    <div class="card-title">022 为什么ADHD是应试教育的最极端受害者 而AI个性化学习是第一次真正公平的战场</div>
+                    <div class="card-meta"><span class="tag tag-theory">已发布</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-bar">
+        <button class="secondary" onclick="alert('用 Agent 丢入选题池：直接发消息给 Agent，说 选题：你的点子')">丢入选题池</button>
+        <button onclick="alert('让 Agent 继续创作：直接说 下一篇 或 继续')">继续创作</button>
+    </div>
+</body>
+</html>

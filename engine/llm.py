@@ -141,7 +141,8 @@ class LLMClient:
                 kwargs: dict = {
                     "model": p.model,
                     "messages": messages,
-                    "temperature": temperature,
+                    # Kimi coding 端点只接受 temperature=1
+                    "temperature": 1 if "api.kimi.com/coding" in p.base_url else temperature,
                     "max_tokens": max_tokens,
                 }
                 if json_mode:

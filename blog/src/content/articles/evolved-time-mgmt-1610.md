@@ -25,77 +25,81 @@ toolsCited:
   - "Reclaim.ai"
   - "Tiimo"
   - "Todoist"
-thesis: "ADHD大脑与LLM在结构上同构——都是“高产但缺乏可靠执行调度层的生成核心”，因此Goblin Tools等AI工具通过planner-executor任务分解来补偿时间盲，本质上与给agent套harness是同一套思路。"
+thesis: "ADHD 的时间盲与 LLM 的调度缺陷本质同构，Goblin Tools 的任务分解和 agent 的 planner-executor 脚手架都是为高产生成核心套上外部执行层，两者共享同一套工程逻辑。"
 problem: "为什么用 Goblin Tools 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？"
 spine: "规划循环与任务分解"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "孔子"
+  - "张旭"
+  - "邹秀云"
 ---
 # 为什么用 Goblin Tools 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？
 
 > Goblin Tools 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-你打开Goblin Tools，把“准备下周的汇报”丢进去，它立刻吐出：打开电脑、整理数据、做PPT、预演。你照着做，居然没拖延。另一边，一个工程师在调试AI agent，把“写一个爬虫”分解成：安装库、写请求函数、解析HTML、存结果。agent一步步执行，没跑偏。
+## 同一个问题：生成核心没有调度层
 
-这两件事，本质是一回事。
+如果你是一个被“时间盲”折磨的 ADHD 患者，你一定经历过这种时刻：打开一个任务，感觉它像一团迷雾，不知道从哪下手，也不知道做多久。于是你刷手机、发呆、焦虑，直到截止日期把你逼进超聚焦。
 
-## 同一个问题：生成核心缺少调度层
+如果你是一个在做 Agentic Harness 的工程师，你一定遇到过这种崩溃：LLM 接到一个复杂指令，输出洋洋洒洒几千字，但中间跑偏了、忘了上下文、或者卡在循环里出不来。
 
-ADHD大脑的核心困境不是笨，而是执行功能（executive function）失效——大脑的“驾驶座”常常感觉方向盘后没有人（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。具体到时间管理，就是“时间盲”：你无法感知时间流逝，半小时和两小时对你来说一样模糊。计划本和便签用了一周就崩溃了（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。
+这两个问题，本质上是一个问题。
 
-LLM也一样。GPT-4能写诗、编程、回答问题，但单独使用时，它不知道什么时候该停，不知道任务要拆几步，不知道上下文太长会“走神”。实验证明，Transformer自注意力机制在长上下文下冲突解决能力崩溃至随机水平——这正是ADHD执行功能障碍的核心神经机制（来源：Deficient Executive Control in Transformer Attention）。
+最新研究揭示了一个反直觉的同构：ADHD 大脑与 LLM 都是“强记忆、弱控制”的生成核心（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。ADHD 患者的工作记忆容量可能正常甚至超常，但认知灵活性和注意控制存在核心缺陷；LLM 同样能生成高质量文本，但缺乏可靠的状态保持和真实规划能力。两者都缺一个内置的执行调度层。
 
-两者都是“高产但缺乏可靠执行调度层的生成核心”。ADHD大脑有想法、有动力（有时），但缺一个调度器来把想法变成有序动作。LLM有知识、有生成能力，但缺一个外部编排层来防止它跑偏。
+所以，用 Goblin Tools 把“写报告”分解成“打开电脑→新建文档→写标题→写第一段”这种微步骤，和给 LLM 套一个 planner-executor 双代理架构（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned），是同一套工程思路——在生成核心外面搭一个外部调度层。
 
-## 同一套解法：planner-executor 任务分解
+## 两边的证据：从神经机制到工程实践
 
-Goblin Tools的核心功能是“任务分解”。你把一个模糊目标扔进去，它用AI帮你拆成可执行的子步骤。这不就是planner-executor架构吗？
+### ADHD 侧：时间盲与外部执行功能层
 
-- **Planner**（规划器）：Goblin Tools的AI分析任务，生成步骤列表。
-- **Executor**（执行器）：你照着步骤做，每做完一步打勾。
+ADHD 的核心困境不是智力不足，而是执行功能失效——大脑的“驾驶座”常常没人（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。时间盲是最典型的症状：无法感知时间流逝，无法预估任务时长。传统工具（计划本、便签）往往用了一周就崩溃（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。
 
-现代AI编码代理（如OpenDev）用的正是“分离规划与执行的双代理架构”（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。一个agent负责规划，另一个负责执行，中间有上下文管理、工具接口、验证循环。这就是给LLM套的harness。
+Goblin Tools 的“魔法待办”功能，正是通过 AI 将模糊任务自动分解成可执行的小步骤，把“下一步该做什么”的决策负担从大脑卸载到外部。类似地，Motion 通过自动排程与动态调整，持续评估优先级和截止时间，实时重建日程（来源：Motion 页）；Reclaim.ai 用智能时间块保护深度工作，防御会议侵占（来源：Reclaim.ai 页）；Tiimo 将时间转化为视觉元素，直接应对时间盲（来源：Tiimo 页）。这些工具的本质都是**外部执行功能层**——把调度、排序、提醒、抑制外包给 AI。
 
-Motion和Reclaim.ai也是同样的逻辑。Motion自动根据截止日期和可用时间动态调整日程，消除“下一步该做什么”的决策负担（来源：11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog）。Reclaim.ai保护深度工作时间块，防止会议侵占（来源：11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog）。它们都在外部搭建调度层，把“规划”从用户脑中抽出来，交给AI。
+### LLM 侧：无状态核心与 agent scaffolding
 
-Tiimo则把时间变成可见元素，直接补偿时间盲（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。这相当于给LLM加时间戳或进度条，让它感知时间约束。
+LLM 本身是无状态、仅生成文本的核心，需要外部脚手架提供工具接口、上下文管理、规划工件、验证循环和记忆系统（来源：GitHub - ai-boost/awesome-harness-engineering）。现代 AI 编码代理（如 OpenDev）采用“分离规划与执行的双代理架构”，其中一个代理负责分解任务、制定计划，另一个负责执行具体步骤（来源：Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned）。这恰好对应了 Goblin Tools 的“任务分解→执行”流程。
 
-## 脚手架，不是拐杖
+更关键的是，LLM 在长上下文下注意力分数熵增加，冲突解决能力崩溃至随机水平（来源：Deficient Executive Control in Transformer Attention），这与 ADHD 执行功能障碍的神经机制惊人一致。所以，给 LLM 套 planner-executor 架构，本质上是在对抗“注意力分散”这一自注意力架构的固有属性。
 
-但这里有一条红线：这些工具是脚手架，还是拐杖？
+## 历史案例：孔子与张旭的“手工 harness”
 
-脚手架帮你建房子，建完可以拆。拐杖你永远离不开。
+如果你觉得“外部调度层”只是现代科技产物，那不妨看看古人。
 
-现有证据主要来自用户报告，缺乏对照研究（来源：AI 与 ADHD 的时间管理）。过度依赖AI工具可能削弱内在的时间感知和规划能力（来源：时间盲）。你越依赖Goblin Tools帮你分解任务，你自己分解任务的能力就越退化。
+孔子是典型的 ADHD 大脑：身高1米9，精力旺盛到周游列国14年坐不住；冲动爱骂人，见南子急得对天发誓，骂宰予“朽木不可雕”；对音乐超专注到三月不知肉味，对种地等俗事零耐心。他的 harness 系统是“克己复礼”——用外在的“礼”作为行为边界，每日反省（“吾日三省吾身”），70岁才做到“从心所欲不逾矩”。这套系统本质上就是**外部调度层**：“礼”相当于任务优先级规则，“三省”相当于定时 re-grounding 检查点。
 
-同样，给agent套harness如果过度，agent本身永远学不会规划。但agent的“学会”和人的“学会”不同：agent可以永久依赖harness，因为它的目标是执行准确，不是自我成长。人不同，人需要最终内化这些技能。
+草圣张旭更极致：每次喝醉后号呼狂走，以头濡墨作书，醒了自视以为神。他的 harness 是“酒+草书”：用酒精进入超专注状态，把所有情绪注入草书。这相当于一个**专用调度器**——把生成核心（艺术灵感）通过仪式化的方式引导到单一产出通道。
 
-所以关键在于：工具设计者声称是“脚手架”，但实际使用中可能沦为“拐杖”（来源：矛盾与存疑）。你需要有意识地使用——比如先用Goblin Tools分解，然后尝试自己分解类似任务，对比差异。
+这两个案例清晰地展示了：ADHD 大脑需要的外部 harness，与 LLM 需要的 agent scaffolding，在结构上完全同构——都是**在生成核心外面搭一个执行调度层**。
 
-## 争议与局限
+## 脚手架 vs 拐杖：一个必须点明的边界
 
-- **证据不足**：多数工具的有效性基于用户自我报告，缺乏随机对照试验（来源：AI 与 ADHD 的时间管理）。Motion、Reclaim.ai、Tiimo都没有独立临床研究。
-- **个体差异**：ADHD亚型（注意力缺陷vs多动冲动）对工具响应不同，现有工具多面向注意力缺陷型（来源：AI 与 ADHD 的时间管理）。
-- **同构理论仍属类比**：ADHD大脑与LLM的同构缺乏神经科学和计算机科学的交叉验证（来源：AI 与 ADHD 的时间管理）。
-- **算法黑箱**：Todoist的优先级排序算法透明度低（来源：AI 与 ADHD 的时间管理），用户不知道AI为什么这么安排。
+这里有一个诚实争议：AI 工具到底是“外部执行功能层”（脚手架），还是“永久拐杖”？
 
-## 今天就能试的3件事
+支持“脚手架”的一方认为，AI 补偿了执行功能缺陷，让用户能发挥生成核心的优势（来源：外部执行功能层页）。但存疑在于：过度依赖可能导致能力退化，长期效果缺乏实证（来源：矛盾与存疑页）。
 
-1. **用Goblin Tools分解一个拖延任务**：选一个你拖了两周的任务，扔进Goblin Tools，按步骤执行。对比你自己分解时的感受。
-2. **给Motion或Reclaim.ai一周试用**：让AI替你规划日程，观察决策疲劳是否减少。注意记录初始设置成本——如果你连输入任务都觉得难，那这个工具可能不适合你。
-3. **做一次“无工具”规划**：用纸笔分解一个简单任务（比如“做晚饭”），然后对比Goblin Tools的分解。看看AI的分解是否比你更细？你是否能从中学会更细的粒度？
+我的判断是：**边界在于是否保留用户的“调度意识”**。Goblin Tools 的任务分解是脚手架——它把大任务拆成小步骤，但用户仍然需要判断先做哪一步。Motion 的自动排程则更接近拐杖——如果用户完全放弃对日程的感知，时间盲可能加剧。理想的 harness 应该像孔子的“三省”——在外部调度的同时，定期让用户 re-ground 自己的时间感。
 
-ADHD大脑和LLM，两个生成核心，共享同一个困境：有才华，缺调度。Goblin Tools和agent harness，两个看似无关的领域，给出同一个答案：在外部搭建planner-executor层。这不是巧合，这是同构的必然。
+## 今天就能试的 3 个行动
+
+1. **用 Goblin Tools 分解一个你拖延的任务**：把“整理房间”丢进去，看它拆成什么。然后只做第一步。
+2. **给自己的 LLM 项目加一个 planner-executor 分离**：用一个 prompt 先让模型输出步骤计划，再用另一个 prompt 逐步执行，中间加入上下文摘要。
+3. **设置一个“三省”提醒**：每天三个固定时间，问自己“我现在在做什么？应该做什么？”——这是最古老的 re-grounding 机制。
+
+ADHD 大脑和 LLM 都不是坏掉的机器，它们只是缺少一层调度。好消息是，这层调度可以搭在外面——用 Goblin Tools，用 agent scaffolding，用“克己复礼”。你不需要修复核心，你只需要给它一个 harness。
 
 ## 参考来源
 
-- [AI Tools for ADHD: Boosting Productivity and Reducing Burnout](https://www.vktr.com/ai-platforms/ai-tools-for-adhd-boosting-productivity-and-reducing-burnout/)
-- [6 ways AI can help you manage ADHD symptoms - Understood.org](https://www.understood.org/en/articles/adhd-ai-tools)
-- [The Role of Artificial Intelligence in ADHD Diagnosis and Treatment: A New Frontier in Neurotechnology | IntechOpen](https://www.intechopen.com/online-first/1220045)
-- [Artificial Intelligence Identifies Adults with ADHD Using EEG Features](https://advances.massgeneral.org/neuro/journal.aspx?id=1593)
-- [AI for ADHD: Best Tools, Apps, and Strategies - Themba Tutors](https://thembatutors.com/ai-for-adhd-tools-and-apps/)
+- [The 12 Best AI Tools for 2026 (That People Actually Use)](https://www.synthesia.io/post/ai-tools)
+- [The AI Powered SuperApp for Work | Motion](https://www.usemotion.com/)
 - [11 Best ADHD Productivity Apps for Fluctuating Energy - rivva blog](https://blog.rivva.app/p/11-best-adhd-productivity-apps-for)
+- [ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026](https://blog.saner.ai/best-adhd-apps/)
+- [12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)](https://www.usecarly.com/blog/best-ai-personal-assistant-adhd/)
+- [The 12 Best Apps for ADHD in 2026: A Guide to Finding What ...](https://www.getinflow.io/post/best-apps-for-adhd)
 
 ---
 

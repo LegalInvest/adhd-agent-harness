@@ -1,14 +1,14 @@
 {
   "total": 400,
   "evidence_driven": true,
-  "research_sources": 2620,
+  "research_sources": 2630,
   "knowledge_meta": {
-    "source_articles": 2620,
-    "total_source_chars": 6110758,
-    "tools": 20,
-    "findings": 8244,
-    "statistics": 317,
-    "strategies": 6812
+    "source_articles": 2630,
+    "total_source_chars": 6371190,
+    "tools": 19,
+    "findings": 8318,
+    "statistics": 327,
+    "strategies": 6804
   },
   "categories": {
     "ai-tools": {

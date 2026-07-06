@@ -24,90 +24,80 @@ toolsCited:
   - "Perplexity"
   - "Goblin Tools"
   - "Saner.AI"
-  - "Motion"
-  - "Tiimo"
-thesis: "ADHD 大脑与 LLM 共享「强生成、弱调度」的同构缺陷，两者都需要外部记忆/脚手架来补偿工作记忆与执行控制，因此用 ChatGPT 治 ADHD 的学习半途而废，和给 agent 套向量库本质是同一套 harness 工程。"
+thesis: "ADHD 大脑与 LLM/agent 都是「高产生成核心 + 缺失稳定执行调度层」的系统，用 ChatGPT 治学习半途而废，本质上和给 agent 加外部记忆/向量库一样，是在外部补一个 harness，让意图可持续地转化为行动。"
 problem: "为什么用 ChatGPT 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？"
 spine: "无状态与外部记忆"
 spineKind: ""
 isEvolved: true
 llmGenerated: true
+caseStudies:
+  - "孔子"
+  - "于谦"
+  - "赵坤"
 ---
 # 为什么用 ChatGPT 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？
 
 > ChatGPT 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
 
-## 问题：为什么我学东西总是半途而废？
+## 问题：为什么学习半途而废不是意志力问题
 
-你开始学习一个新领域，前三天充满热情，收集了无数资料，甚至用 ChatGPT 生成了详细的学习计划。但一周后，你发现自己同时打开了 15 个标签页，笔记散落在三个应用里，完全忘记了上次学到哪里。你开始怀疑自己：是我不够聪明？还是我根本不适合自学？
+ADHD 人群最常见的挫败之一，是「明明懂、想做，却启动不了、做到一半就散」。这通常被误读为懒或意志力薄弱，但 wiki 资料里的核心论点更精确：ADHD 大脑不是缺乏生成想法与知识的能力，而是缺乏一个可靠的「执行调度层」——工作记忆、注意力调控、任务启动、时间感知等过程失稳，导致意图无法转化为可管理的行动序列（来源：AI 与 ADHD 的学习方式）。
 
-这不是你的错。你的大脑和当前最先进的 AI 模型有着惊人的同构缺陷——都是高产但缺调度层的生成核心。
+LLM 与 agent 的处境惊人地相似：ChatGPT 能生成、能推理，但它是无状态的，跨会话后上下文会丢失；一个孤零零的 LLM 也没有稳定的执行调度层，因此 agent 工程必须靠外部记忆、向量库、工具调用与决策控制循环来补位（来源：Agent Scaffolding: Architecture and Design Patterns for Agentic AI）。
 
-## 同构：ADHD 大脑与 LLM 共享的「强记忆、弱控制」
+所以，用 ChatGPT 治 ADHD 的学习半途而废，和给 agent 套外部记忆/向量库，其实是同一类工程：不是替代生成能力，而是补一个外部化的执行功能层。
 
-ADHD 的核心不是注意力不足，而是执行功能失效——工作记忆容量未必差，但“自上而下的控制和调节能力不足”（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。你脑子里想法很多，但无法灵活切换任务、抑制无关干扰。你的大脑就像一台没有操作系统的超级计算机：硬件强劲，但没人调度进程，于是不断死机。
+## 同构：高产但无状态的生成核心
 
-LLM 也面临同样的问题：Transformer 自注意力机制在长上下文下冲突解决能力崩溃至随机水平（来源：Self-Attention Limits Working Memory Capacity of Transformer-Based Models）。GPT-4 能写出漂亮的代码，但如果你不给它明确的指令和分段输入，它会忘记上下文、胡编乱造。
+ADHD 一侧的真实证据是「强记忆、弱控制」。研究显示，ADHD 的工作记忆容量甚至可超过常人，但认知灵活性与注意控制存在核心缺陷：无法灵活切换任务集、无法抑制自动化反应，注意力资源呈弥散分配（来源：Strong Memory, Weak Control: An Empirical Study of Executive Functioning in LLMs）。这解释了为什么 ADHD 大脑能爆发出创意，却很难把创意一路执行到终点。
 
-所以，ADHD 大脑和 LLM 是同一类引擎：**生成能力强，但缺乏内置的执行调度层**。
+LLM 一侧的对应证据来自对 Transformer 注意力机制的执行功能测试。研究者用经典的 Stroop 冲突任务评估 LLM，发现短上下文里表现正常，但随着序列变长，模型在冲突试次上骤降到随机水平——它无法抑制优势反应、无法解决认知冲突（来源：ADHD 大脑与 LLM 的同构）。这与 ADHD 执行功能缺陷的核心标志一一对应。
 
-## 解法：外部记忆与脚手架——同一套 harness 工程
+两边都是高产生成核心，但都缺一个稳定调度层。 ADHD 的「第二大脑」和 agent 的「向量库」，本质上都是同一类补偿：把容易丢失的上下文外化，让下一步行动显而易见。
 
-对于 LLM，工程师们已经找到了标准解法：**agent harness**——包裹 LLM 的软件基础设施，处理模型本身之外的一切（来源：What is an agent harness in the context of large-language models?）。具体做法包括：
-- **外部记忆**：用向量数据库存储上下文，避免模型遗忘。
-- **任务分解**：通过“复合 AI 系统架构”将大任务拆分为子任务，每个子任务绑定不同模型（来源：Building AI Coding Agents for the Terminal）。
-- **上下文压缩**：主动管理上下文窗口，防止膨胀导致推理退化。
+## 外部记忆/向量库：同一套 harness 的两种落地
 
-这些技术本质上是在 LLM 外部搭建调度层，补偿其无状态性。
+对 ADHD 学习者，ChatGPT 常被当作「AI 第二大脑」：在自身工作记忆丢失时携带上下文，记住项目上下文，从而减少决策、保留脉络（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。具体工具如：
 
-对于 ADHD 大脑，解法完全同构：**你需要外部脚手架来补偿工作记忆和执行调度**。工具如 [[Goblin Tools]] 的 Magic ToDo 功能能自动将“整理房间”分解为“捡起衣服、擦桌子”等小步骤（来源：AI Tools for Kids with ADHD）。[[Perplexity]] 可将“规划 2025 年项目”分解为可管理步骤（来源：ADHD Productivity Hack: Plan 2025 Using AI）。[[Saner.AI]] 通过本地记忆存储减少搜索循环（来源：Best AI Tools for ADHD Productivity in 2026）。这些工具扮演的就是 agent harness 的角色——它们不是替代你的大脑，而是提供外部记忆和调度。
+- **Perplexity**：把宏大目标（如「规划 2025 年项目」）分解为可管理的步骤，降低执行功能负担（来源：ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)）。
+- **Goblin Tools**：Magic ToDo 把模糊任务（如「清理厨房」）拆成具体子任务，用户还能调节粒度，帮助任务启动（来源：12 AI Personal Assistants Built for ADHD Brains (2026 Rankings)）。
+- **Saner.AI**：强化本地记忆与知识回忆，用通用收件箱从邮件、文档、日历提取待办，自动组织任务，减少搜索循环与标签切换（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。
 
-## 关键判断：脚手架，不是拐杖
+在 agent 工程中，这些功能对应的是：向量数据库存储长期记忆，检索增强生成（RAG）唤回相关上下文，任务规划器把目标拆成子任务，工具调用与决策控制循环维持目标导向行为（来源：Agent Scaffolding: Architecture and Design Patterns for Agentic AI）。 ADHD 侧是「外部执行功能层」，LLM 侧是「agent scaffolding」，结构同构。
 
-这里有一个必须明确的边界：**脚手架 vs 拐杖**。脚手架是你可以逐步撤除的支架，拐杖是你永远离不开的依赖。
+## 人物案例：孔子与于谦的 harness 系统
 
-目前多数 AI 工具被设计为“补偿”而非“替代”，但实际使用中很容易沦为拐杖（来源：矛盾与存疑）。例如，过度依赖 [[Goblin Tools]] 的任务分解可能让你失去主动规划的能力；依赖 [[Saner.AI]] 的记忆检索可能削弱你自身的回忆能力。
+孔子常被形容为 ADHD 式人格：身高一米九、精力旺盛、周游列国十四年坐不住；冲动、爱骂人、思维跳跃，《论语》全是场景化语录而无一部系统著作。他的 harness 不是压抑自己，而是「克己复礼」——把外在的「礼」作为行为边界，每日「吾日三省吾身」，通过反省持续 re-ground。他七十岁才做到「从心所欲不逾矩」，说明这套外部脚手架用了一辈子（来源：名人 harness 孔子）。
 
-证据显示，AI 工具对 ADHD 的有效性主要来自用户报告，缺乏大规模对照实验（来源：矛盾与存疑）。更关键的是，个体差异极大——部分用户因多巴胺调节差异而无效（来源：矛盾与存疑）。
+这对 agent 设计的同构是：「礼」= system prompt 与行为边界；「日省」= 定时 re-grounding 或状态检查；七十年的内化过程 = 从外部脚手架逐步过渡到半自动化的执行习惯。另一个案例是明代于谦：性格刚直、冲动敢言，土木堡之变后力排众议死守北京。他的 harness 是以儒家气节为核心价值，严格操练军队、日夜准备防务，并以《石灰吟》明志（来源：名人 harness 于谦）。这对应于 agent 的「价值对齐 + 持续监控/演练」：系统不仅要有目标，还要有一套仪式化的日常检查，确保在压力和高冲突情境下不偏离目标。
 
-所以，我的核心判断是：**不要追求“完美工具”，而要主动设计自己的 harness 系统**。一个好的 harness 应该满足：
-1. **无状态补偿**：自动记录上次进度（如 [[Saner.AI]] 的本地记忆）。
-2. **任务分解**：将模糊目标拆为可执行步骤（如 [[Goblin Tools]]）。
-3. **上下文管理**：主动控制当前注意焦点（如 [[Perplexity]] 的分步计划）。
-4. **可撤除性**：每过一段时间，尝试减少一个工具，看自己能否独立运行。
+两人的共同点都说明：生成核心越强、越容易漂移，就越需要一个外部 harness 来把能量导向可持续的成果。
+
+## 核心判断：harness 是脚手架，不是拐杖
+
+我的判断是：ADHD 与 LLM 的同构不只是修辞类比，而是工程化的可借鉴结构。 ADHD 侧可用 agent 工程的思路来设计自己的学习系统：外部记忆、任务分解、定时 re-grounding、问责机制。工程师侧也能从 ADHD 研究里学到：真正的智能系统需要的不是更大的模型，而是更可靠的执行功能层——记忆、调度、启动、抑制与上下文管理。
+
+但这根「同构脊柱」必须架在诚实的边界上。wiki 资料也明确列出争议：该论点目前多为类比推理，缺乏神经科学或计算机科学的直接证据；AI 工具的长期效果未知；对部分人而言，学习使用 AI 工具本身反而增加认知负荷；过度依赖可能让脚手架变成永久拐杖（来源：全局矛盾与存疑）。
+
+神经可塑性提供了另一层希望：训练诱导的抑制控制脑可塑性表明，基于训练的方法有助于正常化抑制控制能力及其底层脑网络（来源：Training-induced behavioral and brain plasticity in inhibitory control）。这意味着 harness 的目标不只是替大脑做事，而是让大脑在外部支架的帮助下，逐步重建自己的执行功能。
 
 ## 今天就能试的 4 个行动
 
-1. **用 ChatGPT 做任务分解**：下次面对一个学习目标，输入“请将 [目标] 分解为 5 个可执行的小步骤，每步不超过 15 分钟”。对比自己分解和 AI 分解的差异，记录哪种更容易启动。
+1. **把最卡的学习任务拆到下一步只需 5 分钟**：用 ChatGPT、Perplexity 或 Goblin Tools 的 Magic ToDo，把「学完 Python」拆成「打开 IDE，运行一个 print 示例」。
+2. **建立外部记忆锚点**：每次学习前把目标、当前步骤、已完成的上下文写进 Saner.AI、Obsidian 或一个固定笔记，启动时先读它，而不是凭回忆。
+3. **给 ChatGPT 写一条 system prompt**：定义它的角色（学习教练）、你的目标、当前进度、输出约束。让它像「礼」一样，成为你对话里的外部边界。
+4. **每周做一次 re-grounding**：检查目标是否还值得做、当前上下文是否漂移。这和 agent 的「状态同步」一样，是防止半途而废的关键控制循环。
 
-2. **建立外部记忆系统**：选择 [[Saner.AI]] 或 [[Obsidian]]，每次学习结束时记录“当前进度、下一步行动、关键问题”。下次开始前先读这个笔记，而不是从头开始。
-
-3. **设置上下文锚点**：学习时在桌面上放一张便签，写着“我现在在学 [主题]，目标是 [具体产出]”。每当你走神，先看便签再继续。这是最简陋的上下文工程。
-
-4. **每周做一次“撤除测试”**：选一天完全不用任何 AI 工具，只靠纸笔和大脑完成任务。记录哪些环节最困难——那就是你需要重点训练的调度能力。
-
-## 诚实面对局限
-
-我必须承认，这篇文章的核心论点——ADHD 与 LLM 同构——目前仍是一个理论类比，缺乏神经科学上的直接证据。用户报告虽然一致，但可能存在幸存者偏差：那些用不好 AI 工具的人，可能早已放弃。
-
-另外，AI 工具的效果高度依赖个人认知风格。对于严重时间盲的用户，[[Tiimo]] 或 [[Motion]] 可能比任务分解工具更有效（来源：Perplexity 局限与争议）。没有一种工具适合所有人。
-
-最后，警惕“工具崇拜”。真正的 scaffold 是你自己设计的系统，而不是某个 app 的付费订阅。
-
-## 总结
-
-ADHD 的学习半途而废，和 LLM 的上下文遗忘，本质是同一个问题：**强生成核心 + 弱调度层**。解法也相同：**外部记忆 + 任务分解 + 上下文管理**。你不需要“治好”自己，你只需要给自己装一个 harness。
-
-下次当你又打开 15 个标签页时，告诉自己：这不是我的错，这是我的架构。然后，打开你的外部记忆笔记，问自己：“我上次学到哪里了？”
+ChatGPT 与向量库，一个看起来是治疗工具，一个是基础设施，但它们解决的是同一种失稳：生成核心很强，执行调度层很弱。给 ADHD 的大脑加 harness，和给 LLM 加 agent scaffolding，最终指向同一个工程问题——如何让高产的智慧，稳定地走到终点。
 
 ## 参考来源
 
-- [ADHD Productivity Hack: Plan 2025 Using AI (Step-by-Step)](https://itsadhdfriendly.com/adhd-planning-ai/?srsltid=AfmBOopWM33vDoQ5CXbZOcASVbyJxH-B5DgotoNC5yKThyvZ5F4O0TIO)
 - [Can ChatGPT be Your Personal Medical Assistant?](http://arxiv.org/abs/2312.12006v1)
 - [One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling](http://arxiv.org/abs/1312.3005v3)
 - [Activation Sparsity Opportunities for Compressing General Large Language Models](http://arxiv.org/abs/2412.12178v2)
 - [YouZhi: Towards High-Concurrency Financial LLMs via Adaptive GQA-to-MLA Transition](http://arxiv.org/abs/2606.05868v1)
 - [FBI-LLM: Scaling Up Fully Binarized LLMs from Scratch via Autoregressive Distillation](http://arxiv.org/abs/2407.07093v1)
+- [Prompt Injection Attack to Tool Selection in LLM Agents](http://arxiv.org/abs/2504.19793v3)
 
 ---
 
