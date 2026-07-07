@@ -7,7 +7,7 @@
       "max_score": 8.45,
       "min_score": 7.65,
       "median_score": 7.71,
-      "candidates_available": 2300,
+      "candidates_available": 2465,
       "replaced": 32
     },
     {
@@ -16,8 +16,8 @@
       "avg_score": 7.78,
       "max_score": 8.45,
       "min_score": 7.66,
-      "median_score": 7.72,
-      "candidates_available": 2268,
+      "median_score": 7.73,
+      "candidates_available": 2433,
       "replaced": 1
     },
     {
@@ -26,8 +26,8 @@
       "avg_score": 7.78,
       "max_score": 8.45,
       "min_score": 7.66,
-      "median_score": 7.72,
-      "candidates_available": 2267,
+      "median_score": 7.73,
+      "candidates_available": 2432,
       "replaced": 0
     },
     {
@@ -36,8 +36,8 @@
       "avg_score": 7.78,
       "max_score": 8.45,
       "min_score": 7.66,
-      "median_score": 7.72,
-      "candidates_available": 2267,
+      "median_score": 7.73,
+      "candidates_available": 2432,
       "replaced": 0
     },
     {
@@ -46,8 +46,8 @@
       "avg_score": 7.78,
       "max_score": 8.45,
       "min_score": 7.66,
-      "median_score": 7.72,
-      "candidates_available": 2267,
+      "median_score": 7.73,
+      "candidates_available": 2432,
       "replaced": 0
     }
   ],
@@ -55,7 +55,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 家长如何用「给生成核心套 harness」的思路应对陪伴 ADHD 孩子里的怕过度依赖工具、又怕没有支撑就崩？",
+        "title": "ADHD 程序员如何用「给生成核心套 harness」的思路应对在 IDE 与 agent 之间切换里的执行功能（计划/组织/启动）先天偏弱？",
         "score": 7.66
       },
       "in": {
@@ -66,7 +66,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "ADHD 创业者如何用「给生成核心套 harness」的思路应对把想法落地执行里的怕过度依赖工具、又怕没有支撑就崩？",
+        "title": "ADHD 学生如何用「给生成核心套 harness」的思路应对考试与作业里的怕过度依赖工具、又怕没有支撑就崩？",
         "score": 7.66
       },
       "in": {
@@ -77,8 +77,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "两个互不引用的领域都在研究「执行功能」——ADHD 文献和 LLM harness 文献为什么得出了同一个结论？",
-        "score": 7.65
+        "title": "ADHD 职场人如何用「给生成核心套 harness」的思路应对项目推进与汇报里的怕过度依赖工具、又怕没有支撑就崩？",
+        "score": 7.66
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
@@ -88,8 +88,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "LLM 的无状态是精确的、确定的（只要不共享上下文），而 ADHD 的工作记忆波动受情绪、动机、药物等多因素影响，远非线性。这种“无状态”的类比是否忽略了生物系统的复杂性？比如 ADHD 患者有时能超聚焦，LLM 可不会“偶尔爆发”。",
-        "score": 7.65
+        "title": "ADHD 家长如何用「给生成核心套 harness」的思路应对陪伴 ADHD 孩子里的怕过度依赖工具、又怕没有支撑就崩？",
+        "score": 7.66
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
@@ -99,8 +99,8 @@
     {
       "generation": 1,
       "out": {
-        "title": "Agentic harness 的 planner 失败可以通过 prompt 重写、模型升级或增加工具调用修复；ADHD 的规划困难需要药物、环境改造、认知行为疗法。如果同构类比让产品经理以为‘给 ADHD 用户一个智能 todo 列表就够了’，它是否会替代真正有效的干预，成为一种有害的简化？",
-        "score": 7.65
+        "title": "ADHD 创业者如何用「给生成核心套 harness」的思路应对把想法落地执行里的怕过度依赖工具、又怕没有支撑就崩？",
+        "score": 7.66
       },
       "in": {
         "title": "为什么用 ChatGPT 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
@@ -110,7 +110,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "为什么「治好 ADHD 的不擅长精确、重复、状态维护类任务」和「让 LLM 不跑飞」其实是同一道工程题？",
+        "title": "两个互不引用的领域都在研究「执行功能」——ADHD 文献和 LLM harness 文献为什么得出了同一个结论？",
         "score": 7.65
       },
       "in": {
@@ -121,7 +121,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的幻觉与验证循环？",
+        "title": "LLM 的无状态是精确的、确定的（只要不共享上下文），而 ADHD 的工作记忆波动受情绪、动机、药物等多因素影响，远非线性。这种“无状态”的类比是否忽略了生物系统的复杂性？比如 ADHD 患者有时能超聚焦，LLM 可不会“偶尔爆发”。",
         "score": 7.65
       },
       "in": {
@@ -132,7 +132,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的幻觉与验证循环？",
+        "title": "Agentic harness 的 planner 失败可以通过 prompt 重写、模型升级或增加工具调用修复；ADHD 的规划困难需要药物、环境改造、认知行为疗法。如果同构类比让产品经理以为‘给 ADHD 用户一个智能 todo 列表就够了’，它是否会替代真正有效的干预，成为一种有害的简化？",
         "score": 7.65
       },
       "in": {
@@ -143,7 +143,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的幻觉与验证循环？",
+        "title": "ADHD 的反馈困难嵌套在情绪调节、自我概念和社会评价之中，而 LLM 的 credit assignment 只是优化策略分布的统计问题。把两者称为‘同构’是否过度拟合了‘反馈’这个词，而忽视了人类主体性与模型优化之间不可还原的差异？",
         "score": 7.65
       },
       "in": {
@@ -154,7 +154,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Goblin Tools 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
+        "title": "为什么「治好 ADHD 的不擅长精确、重复、状态维护类任务」和「让 LLM 不跑飞」其实是同一道工程题？",
         "score": 7.65
       },
       "in": {
@@ -165,7 +165,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Saner.AI 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的幻觉与验证循环？",
         "score": 7.65
       },
       "in": {
@@ -176,7 +176,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Motion 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
+        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的幻觉与验证循环？",
         "score": 7.65
       },
       "in": {
@@ -187,7 +187,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Reclaim.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "如果把 ADHD 大脑当成生成核心，Perplexity 能不能当它的幻觉与验证循环？",
         "score": 7.65
       },
       "in": {
@@ -198,7 +198,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Tiimo 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Goblin Tools 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
         "score": 7.65
       },
       "in": {
@@ -209,7 +209,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Brain.fm 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Saner.AI 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -220,7 +220,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Focusmate 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Motion 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
         "score": 7.65
       },
       "in": {
@@ -231,7 +231,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Structured 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Reclaim.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -242,7 +242,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Lex 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Tiimo 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -253,7 +253,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Mem 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Brain.fm 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -264,7 +264,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Otter.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Focusmate 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -275,7 +275,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Reflect 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Structured 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -286,7 +286,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Routinery 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Lex 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -297,7 +297,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Todoist 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Mem 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -308,7 +308,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Inflow 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Otter.ai 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -319,7 +319,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Endel 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Reflect 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -330,7 +330,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Forest 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Routinery 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -341,7 +341,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 RescueTime 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Todoist 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -352,7 +352,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Habitica 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Inflow 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -363,7 +363,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Perplexity 给 ADHD 补上外部执行功能层，真的能像 agent 那样工作吗？",
+        "title": "用 Endel 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -374,7 +374,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "用 Speechify 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
+        "title": "用 Forest 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -385,7 +385,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Goblin Tools 能不能当它的拐杖与脚手架？",
+        "title": "用 RescueTime 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -396,7 +396,7 @@
     {
       "generation": 1,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Motion 能不能当它的拐杖与脚手架？",
+        "title": "用 Habitica 给 ADHD 补上外部执行功能层，是脚手架还是拐杖？",
         "score": 7.65
       },
       "in": {
@@ -407,7 +407,7 @@
     {
       "generation": 2,
       "out": {
-        "title": "如果把 ADHD 大脑当成生成核心，Forest 能不能当它的无状态与外部记忆？",
+        "title": "如果把 ADHD 大脑当成生成核心，Endel 能不能当它的无状态与外部记忆？",
         "score": 7.66
       },
       "in": {

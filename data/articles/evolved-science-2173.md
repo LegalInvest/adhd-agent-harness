@@ -16,7 +16,7 @@ readingTime: 9
 slug: "为什么用-claude-治-adhd-的想理解自己的大脑和给-agent-套-生成核心-缺失的执行层-是一回事"
 topicId: "evolved-science-2173"
 angle: "反直觉同构"
-rank: 312
+rank: 314
 score: 7.7
 sourceCount: 6
 toolsCited:

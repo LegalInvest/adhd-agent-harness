@@ -16,7 +16,7 @@ readingTime: 12
 slug: "为什么用-motion-治-adhd-的时间盲和给-agent-套-planner-executor-任务分解-是一回事"
 topicId: "evolved-time-mgmt-2095"
 angle: "反直觉同构"
-rank: 324
+rank: 326
 score: 7.68
 sourceCount: 6
 toolsCited:

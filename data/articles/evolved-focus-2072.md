@@ -16,7 +16,7 @@ readingTime: 12
 slug: "为什么用-motion-治-adhd-的注意力涣散和给-agent-套-上下文工程-是一回事"
 topicId: "evolved-focus-2072"
 angle: "反直觉同构"
-rank: 321
+rank: 323
 score: 7.68
 sourceCount: 6
 toolsCited:

@@ -16,7 +16,7 @@ readingTime: 13
 slug: "为什么用-chatgpt-治-adhd-的卡在执行与落地和给-agent-套-外部编排调度层-是一回事"
 topicId: "evolved-career-2195"
 angle: "反直觉同构"
-rank: 156
+rank: 158
 score: 7.79
 sourceCount: 6
 toolsCited:

@@ -16,7 +16,7 @@ readingTime: 13
 slug: "为什么用-goblin-tools-治-adhd-的情绪失调和给-agent-套-会褪去的脚手架-是一回事"
 topicId: "evolved-emotion-2116"
 angle: "反直觉同构"
-rank: 186
+rank: 188
 score: 7.74
 sourceCount: 6
 toolsCited:

@@ -16,7 +16,7 @@ readingTime: 9
 slug: "为什么用-perplexity-治-adhd-的时间盲和给-agent-套-planner-executor-任务分解-是一回事"
 topicId: "evolved-time-mgmt-2114"
 angle: "反直觉同构"
-rank: 325
+rank: 327
 score: 7.68
 sourceCount: 6
 toolsCited:

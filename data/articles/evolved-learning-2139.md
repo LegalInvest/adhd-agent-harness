@@ -15,7 +15,7 @@ readingTime: 9
 slug: "为什么用-goblin-tools-治-adhd-的学习半途而废和给-agent-套-外部记忆向量库-是一回事"
 topicId: "evolved-learning-2139"
 angle: "反直觉同构"
-rank: 326
+rank: 328
 score: 7.68
 sourceCount: 6
 toolsCited:

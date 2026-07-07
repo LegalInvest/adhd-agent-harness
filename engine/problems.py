@@ -161,6 +161,18 @@ SPINE_PROBLEM_SPECS = [
             "这个同构在哪里会失效？把人脑类比成 LLM 的风险和边界是什么？",
         ],
     },
+    {
+        "spine": "反馈信用分配",
+        "category_id": "science",
+        "pain": "被批评却不知道错在哪一步，反馈延迟就失去动力",
+        "parallel": "agent 拿到 episode 末尾的标量 reward，却不知该强化哪个动作（credit assignment）",
+        "mirror": "reward shaping 与 credit assignment",
+        "questions": [
+            "「加更多反馈」为什么对 ADHD 和 LLM agent 都常常无效？真正的瓶颈是不是信用分配？",
+            "ADHD 被批评却不知道错在哪一步，和 agent 学不会稀疏 reward，是同一种失败吗？",
+            "如何给 ADHD 设计像 process reward model 那样的「步骤级反馈」，而不是只有结果打分？",
+        ],
+    },
 ]
 
 

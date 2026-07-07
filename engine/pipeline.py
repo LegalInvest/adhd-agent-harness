@@ -8,8 +8,11 @@
 萃取真实事实，形成新选题与新观点，好的留下、差的被最新发现替换。
 """
 
+import hashlib
 import json
 import os
+import re
+import shutil
 
 from engine.categories import CATEGORIES, get_all_topics
 from engine.research import run_research
@@ -36,6 +39,40 @@ from engine.wiki import build_wiki, WikiRetriever
 from engine.llm import is_llm_available, get_client
 
 
+def _index_existing_articles(articles_dir: str) -> dict:
+    """扫描已生成文章，返回 {标题: 文件路径}（标题是选题的稳定身份）。"""
+    index = {}
+    if not os.path.isdir(articles_dir):
+        return index
+    for fn in os.listdir(articles_dir):
+        if not fn.endswith(".md"):
+            continue
+        path = os.path.join(articles_dir, fn)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                head = f.read(4000)
+            m = re.search(r'^title: "(.*)"$', head, re.M)
+            if m:
+                index[m.group(1).replace('\\"', '"')] = path
+        except OSError:
+            continue
+    return index
+
+
+def _refresh_article_ranking(path: str, topic: dict) -> None:
+    """复用旧文章时，只刷新 frontmatter 里的排名与分数。"""
+    with open(path, "r", encoding="utf-8") as f:
+        text = f.read()
+    text = re.sub(r"^rank: .*$", f"rank: {topic.get('rank', 0)}", text, count=1, flags=re.M)
+    text = re.sub(r"^score: .*$", f"score: {topic.get('weighted_score', 0)}", text, count=1, flags=re.M)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+
+def _stable_id(title: str) -> str:
+    return "prob-" + hashlib.md5(title.encode("utf-8")).hexdigest()[:10]
+
+
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 ARTICLES_DIR = os.path.join(DATA_DIR, "articles")
 BLOG_CONTENT_DIR = os.path.join(
@@ -50,6 +87,7 @@ def run_pipeline(
     limit: int | None = None,
     academic_kb_per_domain: int = 1200,
     academic_wiki_per_domain: int = 4000,
+    full_regen: bool = False,
 ) -> None:
     """执行完整的研究驱动 + LLM Wiki 内容引擎流程"""
     print("=" * 60)
@@ -199,17 +237,45 @@ def run_pipeline(
     evolution.save_history(os.path.join(DATA_DIR, "evolution_history.json"))
 
     # 6. 生成文章（优先 LLM 从 wiki 取材，失败回退确定性模板）
-    targets = optimized if limit is None else optimized[:limit]
-    mode = "LLM Wiki 取材" if (llm and wiki_retriever and wiki_retriever.available) else "确定性模板"
-    print(f"\n✍️  步骤 7/7: 生成 {len(targets)} 篇文章（{mode}）...")
+    # 增量模式（默认）：只为新晋入 Top 400 的选题生成文章，已有的按标题复用（更新排名），
+    # 被挤出榜单的下架。full_regen=True 时回到全量重生成。
+    pool = optimized if limit is None else optimized[:limit]
     os.makedirs(ARTICLES_DIR, exist_ok=True)
     os.makedirs(BLOG_CONTENT_DIR, exist_ok=True)
 
-    # 清空旧文章，避免新旧混杂
-    for d in (ARTICLES_DIR, BLOG_CONTENT_DIR):
-        for fn in os.listdir(d):
-            if fn.endswith(".md"):
-                os.remove(os.path.join(d, fn))
+    if full_regen:
+        for d in (ARTICLES_DIR, BLOG_CONTENT_DIR):
+            for fn in os.listdir(d):
+                if fn.endswith(".md"):
+                    os.remove(os.path.join(d, fn))
+        targets = pool
+    else:
+        existing = _index_existing_articles(ARTICLES_DIR)
+        keep_titles = {t["title"] for t in pool}
+        removed = 0
+        for title, path in list(existing.items()):
+            if title not in keep_titles:
+                for d in (ARTICLES_DIR, BLOG_CONTENT_DIR):
+                    p = os.path.join(d, os.path.basename(path))
+                    if os.path.exists(p):
+                        os.remove(p)
+                existing.pop(title)
+                removed += 1
+        targets = []
+        for t in pool:
+            path = existing.get(t["title"])
+            if path is None:
+                # 避免位置式 id 与复用文章的文件名碰撞，新文章用标题哈希 id
+                t = dict(t, id=_stable_id(t["title"]))
+                targets.append(t)
+            else:
+                _refresh_article_ranking(path, t)
+                blog_path = os.path.join(BLOG_CONTENT_DIR, os.path.basename(path))
+                shutil.copyfile(path, blog_path)
+        print(f"\n♻️  增量模式: 复用 {len(pool) - len(targets)} 篇 / 下架 {removed} 篇 / 新生成 {len(targets)} 篇")
+
+    mode = "LLM Wiki 取材" if (llm and wiki_retriever and wiki_retriever.available) else "确定性模板"
+    print(f"\n✍️  步骤 7/7: 生成 {len(targets)} 篇文章（{mode}）...")
 
     use_llm = bool(llm and wiki_retriever and wiki_retriever.available)
     workers = max(1, int(os.environ.get("GEN_WORKERS", "6"))) if use_llm else 1
@@ -272,10 +338,12 @@ if __name__ == "__main__":
     parser.add_argument("--refresh", action="store_true", help="强制全网重新检索情报")
     parser.add_argument("--no-llm", action="store_true", help="关闭 LLM，使用确定性模板")
     parser.add_argument("--limit", type=int, default=None, help="只生成前 N 篇（用于测试）")
+    parser.add_argument("--full", action="store_true", help="全量重生成（默认增量：只生成新晋选题）")
     args = parser.parse_args()
 
     run_pipeline(
         refresh_research=args.refresh,
         use_llm=not args.no_llm,
         limit=args.limit,
+        full_regen=args.full,
     )

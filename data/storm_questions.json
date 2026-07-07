@@ -502,5 +502,47 @@
    "question": "LLM的“注意力机制”是数学上的加权求和，而ADHD的注意力是动态的、受情绪和兴趣驱动的生理过程。这种同构是否只是借用术语的修辞游戏，而非真正的机制对应？",
    "subtitle": "数学注意力 vs 生理注意力的鸿沟"
   }
+ ],
+ "反馈信用分配": [
+  {
+   "perspective": "确诊多年的成人 ADHD 患者",
+   "question": "在职场上，如果老板只在季度末给出一个笼统的‘表现不佳’，我根本无法知道是邮件回复、任务拆分还是优先级判断哪一步出了问题；这种‘末端标量反馈’是不是和 LLM agent 在整条 episode 结束后才拿到 +1/-1 reward，却无法定位哪个 tool call 该被强化或抑制的困境是同一结构？",
+   "subtitle": "把日常反馈迷雾翻译成 agent 的 reward 归因问题"
+  },
+  {
+   "perspective": "确诊多年的成人 ADHD 患者",
+   "question": "为什么我在反馈迟到一周后就会彻底失去动力继续调整，而 LLM agent 在慢速 human-in-the-loop reward 下也会停止探索？有没有既适合 ADHD 又适合 agent 的‘中间检查点’机制，能把远端反馈变成当下可执行的下一步？",
+   "subtitle": "延迟反馈如何同时杀死 ADHD 动力和 agent 的探索梯度"
+  },
+  {
+   "perspective": "认知神经科学家",
+   "question": "ADHD 的多巴胺预测误差和奖励处理噪音，是否可以直接映射到 RL 中 temporal-difference error 或 value baseline 的方差？如果这一映射成立，我们应该能从神经影像或药物干预实验中推导出哪些可被 agent 训练借鉴的定量约束，而非停留在比喻层面？",
+   "subtitle": "神经机制与 RL 误差之间的可证伪边界"
+  },
+  {
+   "perspective": "认知神经科学家",
+   "question": "前额-纹状体环路的动态性决定了 ADHD 对即时反馈和延迟结果的敏感度差异，而 LLM agent 的注意力/权重更新遵循的是完全可微的反向传播。这两个系统一个是近似采样、一个是确定梯度，我们在说‘同构’时有没有混淆‘现象相似’和‘机制等价’？",
+   "subtitle": "区分大脑与 transformer 的因果机制"
+  },
+  {
+   "perspective": "agentic harness 工程师",
+   "question": "在 LLM agent 的 multi-turn 工作流中，如果最终 reward 只告诉你任务成败，我们如何用 Hindsight Experience Replay、reward decomposition 或 process reward model 把末端标量拆成每一步的 credit？这套方法反过来能给 ADHD 的‘任务拆解+即时自检’工具设计带来什么可迁移结构？",
+   "subtitle": "把末端奖励切成可分配的过程信号"
+  },
+  {
+   "perspective": "agentic harness 工程师",
+   "question": "当 evaluator 是人类或异步 harness 时，agent 会经历 reward starvation，类似 ADHD 的延迟厌恶。我们可以用 shaped reward、subgoal generator 或 LLM-as-critic 来维持探索；但这些中间奖励一旦设计偏差，会不会让 agent 像 ADHD 患者追逐短期正反馈一样陷入局部最优？",
+   "subtitle": "中间奖励是把双刃剑：维持梯度还是制造短视"
+  },
+  {
+   "perspective": "怀疑论者",
+   "question": "ADHD 的反馈困难嵌套在情绪调节、自我概念和社会评价之中，而 LLM 的 credit assignment 只是优化策略分布的统计问题。把两者称为‘同构’是否过度拟合了‘反馈’这个词，而忽视了人类主体性与模型优化之间不可还原的差异？",
+   "subtitle": "挑战同构：人类痛苦 vs 模型优化"
+  },
+  {
+   "perspective": "怀疑论者",
+   "question": "在 agent 中，只要记录整条 trajectory 并通过反向传播或蒙特卡洛搜索，就能精确或近似地回溯 credit；ADHD 大脑却没有这样的 clean gradient 和 replay buffer。这种‘可精确归因性’是否让 LLM 的 credit assignment 成为一个技术上可解的问题，而 ADHD 的困难则是不可同日而语的现象？",
+   "subtitle": "精确梯度与可重放记忆是否让类比失效"
+  }
  ]
 }

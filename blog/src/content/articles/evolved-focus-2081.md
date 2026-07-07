@@ -16,7 +16,7 @@ readingTime: 10
 slug: "为什么用-claude-治-adhd-的注意力涣散和给-agent-套-上下文工程-是一回事"
 topicId: "evolved-focus-2081"
 angle: "反直觉同构"
-rank: 179
+rank: 181
 score: 7.75
 sourceCount: 6
 toolsCited:

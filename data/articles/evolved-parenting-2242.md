@@ -15,7 +15,7 @@ readingTime: 11
 slug: "为什么用-claude-治-adhd-的不知哪些方法有用和给-agent-套-human-in-the-loop-监督-是一回事"
 topicId: "evolved-parenting-2242"
 angle: "反直觉同构"
-rank: 234
+rank: 236
 score: 7.71
 sourceCount: 6
 toolsCited:
