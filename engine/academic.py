@@ -54,6 +54,14 @@ ADHD_QUERIES = [
     "ADHD children academic intervention",
     "ADHD machine learning diagnosis EEG",
     "ADHD neurofeedback treatment",
+    "ADHD reward feedback delay discounting",
+    "ADHD credit assignment causal learning",
+    "ADHD cognitive load working memory capacity",
+    "ADHD reinforcement learning behavior",
+    "ADHD goal setting motivation feedback",
+    "ADHD error monitoring performance feedback",
+    "ADHD delay aversion reward timing",
+    "ADHD metacognition self-monitoring",
 ]
 
 HARNESS_QUERIES = [
@@ -96,6 +104,14 @@ HARNESS_QUERIES = [
     "scratchpad intermediate reasoning steps",
     "self-reflection error correction LLM",
     "task planning robot language model",
+    "credit assignment reinforcement learning agent",
+    "reward shaping sparse reward agent",
+    "process reward model step-level feedback",
+    "cognitive load context length degradation LLM",
+    "delayed reward long horizon credit assignment",
+    "feedback loop self-improving agent",
+    "agent evaluation reward hacking alignment",
+    "temporal credit assignment sequence learning",
 ]
 
 ARXIV_QUERIES = [
@@ -134,6 +150,12 @@ ARXIV_QUERIES = [
     "world model planning agent",
     "self-consistency majority voting reasoning",
     "graph of thoughts reasoning",
+    "credit assignment reinforcement learning",
+    "reward shaping sparse reward",
+    "process reward model step verification",
+    "reward hacking specification gaming",
+    "temporal credit assignment",
+    "long horizon agent reward",
 ]
 
 
