@@ -73,6 +73,76 @@ def _stable_id(title: str) -> str:
     return "prob-" + hashlib.md5(title.encode("utf-8")).hexdigest()[:10]
 
 
+def _existing_ranks(articles_dir: str) -> dict:
+    """读取已生成文章的 {标题: 上一轮排名}，用于滚动台账对比。"""
+    ranks = {}
+    if not os.path.isdir(articles_dir):
+        return ranks
+    for fn in os.listdir(articles_dir):
+        if not fn.endswith(".md"):
+            continue
+        try:
+            with open(os.path.join(articles_dir, fn), "r", encoding="utf-8") as f:
+                head = f.read(4000)
+            mt = re.search(r'^title: "(.*)"$', head, re.M)
+            mr = re.search(r"^rank: (\d+)", head, re.M)
+            if mt and mr:
+                ranks[mt.group(1).replace('\\"', '"')] = int(mr.group(1))
+        except OSError:
+            continue
+    return ranks
+
+
+def _append_rolling_log(pool: list, prev_ranks: dict, data_dir: str) -> None:
+    """每轮滚动后记录台账：新上榜 / 下架 / 排名升降，追加到 data/rolling_log.json。"""
+    import datetime
+
+    cur = {t["title"]: t for t in pool}
+    promoted = [
+        {"title": t["title"], "rank": t.get("rank"), "score": t.get("weighted_score"),
+         "spine": t.get("spine", "")}
+        for t in pool if t["title"] not in prev_ranks
+    ]
+    demoted = [
+        {"title": title, "prev_rank": rank}
+        for title, rank in sorted(prev_ranks.items(), key=lambda x: x[1])
+        if title not in cur
+    ]
+    moves = []
+    for title, prev_rank in prev_ranks.items():
+        t = cur.get(title)
+        if t is None:
+            continue
+        delta = prev_rank - t.get("rank", prev_rank)
+        if delta != 0:
+            moves.append({"title": title, "prev_rank": prev_rank,
+                          "rank": t.get("rank"), "delta": delta})
+    moves.sort(key=lambda m: abs(m["delta"]), reverse=True)
+
+    entry = {
+        "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "pool_size": len(pool),
+        "promoted_count": len(promoted),
+        "demoted_count": len(demoted),
+        "moved_count": len(moves),
+        "promoted": promoted,
+        "demoted": demoted,
+        "top_moves": moves[:50],
+    }
+    log_path = os.path.join(data_dir, "rolling_log.json")
+    log = []
+    if os.path.exists(log_path):
+        try:
+            with open(log_path, "r", encoding="utf-8") as f:
+                log = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            log = []
+    log.append(entry)
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+    print(f"   📒 滚动台账已记录: 新上榜 {len(promoted)} / 下架 {len(demoted)} / 排名变动 {len(moves)} → data/rolling_log.json")
+
+
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 ARTICLES_DIR = os.path.join(DATA_DIR, "articles")
 BLOG_CONTENT_DIR = os.path.join(
@@ -242,6 +312,10 @@ def run_pipeline(
     pool = optimized if limit is None else optimized[:limit]
     os.makedirs(ARTICLES_DIR, exist_ok=True)
     os.makedirs(BLOG_CONTENT_DIR, exist_ok=True)
+
+    prev_ranks = _existing_ranks(ARTICLES_DIR)
+    if prev_ranks:
+        _append_rolling_log(pool, prev_ranks, DATA_DIR)
 
     if full_regen:
         for d in (ARTICLES_DIR, BLOG_CONTENT_DIR):
