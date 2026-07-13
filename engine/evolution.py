@@ -10,7 +10,7 @@ import os
 from dataclasses import dataclass
 
 from engine.scorer import rank_topics
-from engine.knowledge import KnowledgeRetriever, KNOWN_TOOLS
+from engine.knowledge import KnowledgeRetriever, KNOWN_TOOLS, SPINE_CONCEPTS
 
 
 @dataclass
@@ -21,58 +21,31 @@ class EvolutionConfig:
     elite_ratio: float = 0.15       # 精英保护比例
 
 
-# 基于真实工具/研究角度的新选题模板（用于进化时生成候选）
-# 这些模板会和知识库中发现的真实工具组合，产生全新选题
-CANDIDATE_TEMPLATES = {
-    "ai-tools": [
-        ("用 {tool} 解决 ADHD 的{pain}", "实测 {tool} 如何弥补 ADHD 的执行功能缺口", "工具实测"),
-        ("{tool} 深度评测：ADHD 用户值得用吗", "从 ADHD 视角全面测评 {tool} 的真实体验", "工具评测"),
-        ("ADHD 工作流：把 {tool} 接入你的第二大脑", "用 {tool} 搭建不会遗漏的任务系统", "工作流"),
-    ],
-    "focus": [
-        ("用 {tool} 进入 ADHD 的专注状态", "{tool} 如何帮 ADHD 大脑维持注意力", "专注工具"),
-        ("身体在场效应 + {tool}：ADHD 的抗分心组合", "用 {tool} 实践 body doubling 对抗拖延", "方法实践"),
-    ],
-    "time-mgmt": [
-        ("用 {tool} 治好 ADHD 的时间盲", "{tool} 如何让 ADHD「看见」并掌控时间", "时间工具"),
-        ("ADHD 自动排程：让 {tool} 替你规划每一天", "{tool} 的 AI 排程如何解决过度承诺", "自动排程"),
-    ],
-    "emotion": [
-        ("用 {tool} 管理 ADHD 的情绪过山车", "{tool} 如何辅助 ADHD 的情绪调节", "情绪工具"),
-        ("ADHD 的拒绝敏感性：{tool} 的认知重构辅助", "用 {tool} 练习 CBT 应对 RSD", "心理辅助"),
-    ],
-    "learning": [
-        ("用 {tool} 重塑 ADHD 的学习方式", "{tool} 如何匹配 ADHD 的学习节奏", "学习工具"),
-        ("ADHD 的听觉学习法：用 {tool} 把读变成听", "{tool} 如何利用 ADHD 的感官偏好", "学习方法"),
-    ],
-    "science": [
-        ("AI 如何用 EEG 客观诊断 ADHD：最新研究解读", "深度学习模型在 ADHD 诊断上的真实进展", "研究解读"),
-        ("AI 眼底/影像识别 ADHD：突破还是炒作", "拆解 ADHD AI 诊断研究的方法学真相", "研究批判"),
-        ("从 342 篇论文看 AI×ADHD 研究全景", "全球 AI×ADHD 研究热点、趋势与临床应用", "研究综述"),
-    ],
-    "career": [
-        ("用 {tool} 放大 ADHD 在职场的优势", "{tool} 如何让 ADHD 的特质成为职场资产", "职场工具"),
-    ],
-    "entrepreneurship": [
-        ("ADHD 创业者用 {tool} 补齐执行短板", "{tool} 如何成为 ADHD 创业者的运营外挂", "创业工具"),
-    ],
-    "parenting": [
-        ("用 {tool} 支持 ADHD 孩子的学习", "家长如何用 {tool} 为 ADHD 孩子搭建支持系统", "育儿工具"),
-    ],
-    "lifestyle": [
-        ("用 {tool} 建立 ADHD 友好的日常例程", "{tool} 如何把混乱的日常变成可执行系统", "生活工具"),
-    ],
-    "community": [
-        ("用 {tool} 连接 ADHD 互助社区", "{tool} 如何帮 ADHD 找到同伴支持", "社区工具"),
-    ],
-}
+# 进化挑战者（challenger）模板：问题驱动 + 双受众张力。
+# 每个挑战者都把一个（可能新发现的）工具，包进一条「ADHD↔LLM 同构」的病毒钩子里，
+# 让它能和种子问题池公平竞争——只有真正同时勾住两端的，才挤得进 Top 400。
+CHALLENGER_TEMPLATES = [
+    ("{tool} 之于 ADHD，就像 {parallel} 之于 LLM——但有人用错了",
+     "从同构视角实测 {tool}：它到底补上了哪一层执行功能？", "工具×同构"),
+    ("我把 {tool} 当作 ADHD 大脑的「外部 harness」用了 30 天",
+     "{tool} 解决{pain}的真实收益与「拐杖化」代价。", "亲历实测"),
+    ("为什么用 {tool} 治 ADHD 的{pain}，和给 agent 套 {parallel} 是一回事？",
+     "{tool} 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。", "反直觉同构"),
+]
 
-PAIN_BY_CATEGORY = {
-    "ai-tools": "任务启动困难",
-    "focus": "注意力涣散",
-    "time-mgmt": "时间盲",
-    "emotion": "情绪失调",
-    "learning": "学习半途而废",
+# 分类 → 默认脊柱 + ADHD 痛点 + harness 对应（给挑战者打 spine 标签）
+CATEGORY_SPINE = {
+    "ai-tools": ("工具使用与认知卸载", "任务启动困难", "function calling 工具调用"),
+    "focus": ("上下文工程", "注意力涣散", "上下文工程"),
+    "time-mgmt": ("规划循环与任务分解", "时间盲", "planner-executor 任务分解"),
+    "emotion": ("拐杖与脚手架", "情绪失调", "会褪去的脚手架"),
+    "learning": ("无状态与外部记忆", "学习半途而废", "外部记忆/向量库"),
+    "science": ("ADHD 大脑与 LLM 的同构", "想理解自己的大脑", "生成核心 + 缺失的执行层"),
+    "career": ("生成核心与调度层", "卡在执行与落地", "外部编排调度层"),
+    "entrepreneurship": ("生成核心与调度层", "想法落地难", "外部编排调度层"),
+    "parenting": ("人在回路与身体在场", "不知哪些方法有用", "human-in-the-loop 监督"),
+    "lifestyle": ("采样温度与表现波动", "日常混乱不稳定", "调低采样温度"),
+    "community": ("人在回路与身体在场", "感到孤立缺问责", "human-in-the-loop 监督"),
 }
 
 
@@ -87,34 +60,49 @@ class TopicEvolution:
 
     def _generate_candidates(self, existing_titles: set[str]) -> list[dict]:
         """
-        从知识库中发现的真实工具 + 研究角度生成新选题候选
-        这是"涌入新发现"的核心：候选完全来自全网最新情报
-        """
-        candidates = []
-        # 按分类用真实工具填充模板
-        tools_by_cat: dict[str, list[str]] = {}
-        for name, info in KNOWN_TOOLS.items():
-            tools_by_cat.setdefault(info["category"], []).append(name)
+        生成问题驱动 + 双受众张力的挑战者候选池。
 
-        for cat_id, templates in CANDIDATE_TEMPLATES.items():
-            tools = tools_by_cat.get(cat_id, list(KNOWN_TOOLS.keys())[:3])
-            for tmpl_title, tmpl_sub, angle in templates:
-                for tool in tools:
-                    if "{tool}" in tmpl_title:
-                        title = tmpl_title.format(tool=tool, pain=PAIN_BY_CATEGORY.get(cat_id, "日常挑战"))
-                        subtitle = tmpl_sub.format(tool=tool)
-                    else:
-                        title = tmpl_title
-                        subtitle = tmpl_sub
+        两个来源：
+        1. 问题池（problems.generate_problem_pool）——成千上万条「同时勾住 ADHD 人群
+           和 Agentic Harness 工程师」的问题驱动选题，每条带 spine 同构脊柱标注。
+        2. 工具 × 同构钩子（CHALLENGER_TEMPLATES）——把（可能新发现的）真实工具包进
+           「ADHD↔LLM 同构」病毒钩子，让新工具也能公平竞争 Top 400。
+
+        只有真正同时勾住两端、且有双域证据支撑的，才在评分中挤得进 Top 400。
+        """
+        from engine.problems import generate_problem_pool
+
+        candidates: list[dict] = []
+
+        # 1. 问题驱动的大候选池（数千条）
+        for p in generate_problem_pool():
+            if p["title"] in existing_titles:
+                continue
+            existing_titles.add(p["title"])
+            c = dict(p)
+            c["is_evolved"] = True
+            candidates.append(c)
+
+        # 2. 工具 × 同构钩子挑战者（让真实工具进入竞争）
+        tools = list(KNOWN_TOOLS.keys())
+        for cat_id, (spine, pain, parallel) in CATEGORY_SPINE.items():
+            for tool in tools:
+                for tmpl_title, tmpl_sub, angle in CHALLENGER_TEMPLATES:
+                    title = tmpl_title.format(tool=tool, pain=pain, parallel=parallel)
                     if title in existing_titles:
                         continue
                     existing_titles.add(title)
                     candidates.append({
-                        "id": f"evolved-{cat_id}-{len(candidates):03d}",
+                        "id": f"evolved-{cat_id}-{len(candidates):04d}",
                         "title": title,
-                        "subtitle": subtitle,
+                        "subtitle": tmpl_sub.format(tool=tool, pain=pain, parallel=parallel),
                         "angle": angle,
                         "category_id": cat_id,
+                        "problem": title,
+                        "spine": spine,
+                        "adhd_pain": pain,
+                        "harness_parallel": parallel,
+                        "is_problem_driven": True,
                         "is_evolved": True,
                     })
         return candidates

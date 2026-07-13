@@ -5,3 +5,12 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+
+# LLM 调用磁盘缓存（可重生成，不入库）
+data/llm_cache/
+
+# 大规模学术语料（99MB，可由 academic.py 重新抓取，不入库）
+data/academic_corpus.json
+
+# 运行日志
+*.log

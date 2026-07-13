@@ -1,0 +1,218 @@
+[
+ {
+  "term": "context engineering",
+  "term_zh": "上下文工程",
+  "base_count": 0,
+  "burst_count": 35,
+  "burst_ratio": 999.0,
+  "is_bursting": true
+ },
+ {
+  "term": "cognitive offloading",
+  "term_zh": "认知卸载",
+  "base_count": 0,
+  "burst_count": 11,
+  "burst_ratio": 999.0,
+  "is_bursting": true
+ },
+ {
+  "term": "time blindness",
+  "term_zh": "时间盲",
+  "base_count": 0,
+  "burst_count": 9,
+  "burst_ratio": 999.0,
+  "is_bursting": true
+ },
+ {
+  "term": "agentic",
+  "term_zh": "agentic 智能体",
+  "base_count": 11,
+  "burst_count": 1601,
+  "burst_ratio": 133.23,
+  "is_bursting": true
+ },
+ {
+  "term": "agent memory",
+  "term_zh": "智能体记忆",
+  "base_count": 1,
+  "burst_count": 145,
+  "burst_ratio": 132.73,
+  "is_bursting": true
+ },
+ {
+  "term": "function calling",
+  "term_zh": "函数调用",
+  "base_count": 4,
+  "burst_count": 98,
+  "burst_ratio": 22.43,
+  "is_bursting": true
+ },
+ {
+  "term": "guardrail",
+  "term_zh": "护栏",
+  "base_count": 14,
+  "burst_count": 329,
+  "burst_ratio": 21.51,
+  "is_bursting": true
+ },
+ {
+  "term": "reasoning model",
+  "term_zh": "推理模型",
+  "base_count": 32,
+  "burst_count": 553,
+  "burst_ratio": 15.82,
+  "is_bursting": true
+ },
+ {
+  "term": "tool use",
+  "term_zh": "工具使用",
+  "base_count": 34,
+  "burst_count": 369,
+  "burst_ratio": 9.93,
+  "is_bursting": true
+ },
+ {
+  "term": "chain-of-thought",
+  "term_zh": "思维链",
+  "base_count": 163,
+  "burst_count": 1533,
+  "burst_ratio": 8.61,
+  "is_bursting": true
+ },
+ {
+  "term": "long-horizon",
+  "term_zh": "长程任务",
+  "base_count": 137,
+  "burst_count": 1114,
+  "burst_ratio": 7.44,
+  "is_bursting": true
+ },
+ {
+  "term": "large language model",
+  "term_zh": "大语言模型",
+  "base_count": 1368,
+  "burst_count": 11089,
+  "burst_ratio": 7.42,
+  "is_bursting": true
+ },
+ {
+  "term": "computer use",
+  "term_zh": "计算机操作智能体",
+  "base_count": 4,
+  "burst_count": 32,
+  "burst_ratio": 7.32,
+  "is_bursting": true
+ },
+ {
+  "term": "hallucination",
+  "term_zh": "幻觉",
+  "base_count": 217,
+  "burst_count": 1701,
+  "burst_ratio": 7.18,
+  "is_bursting": true
+ },
+ {
+  "term": "self-reflection",
+  "term_zh": "自我反思",
+  "base_count": 27,
+  "burst_count": 195,
+  "burst_ratio": 6.61,
+  "is_bursting": true
+ },
+ {
+  "term": "orchestration",
+  "term_zh": "编排",
+  "base_count": 96,
+  "burst_count": 518,
+  "burst_ratio": 4.94,
+  "is_bursting": true
+ },
+ {
+  "term": "scaffold",
+  "term_zh": "脚手架",
+  "base_count": 98,
+  "burst_count": 253,
+  "burst_ratio": 2.36,
+  "is_bursting": true
+ },
+ {
+  "term": "multi-agent",
+  "term_zh": "多智能体",
+  "base_count": 872,
+  "burst_count": 2138,
+  "burst_ratio": 2.24,
+  "is_bursting": true
+ },
+ {
+  "term": "hyperfocus",
+  "term_zh": "超聚焦",
+  "base_count": 44,
+  "burst_count": 91,
+  "burst_ratio": 1.89,
+  "is_bursting": false
+ },
+ {
+  "term": "human-in-the-loop",
+  "term_zh": "人在回路",
+  "base_count": 100,
+  "burst_count": 199,
+  "burst_ratio": 1.82,
+  "is_bursting": false
+ },
+ {
+  "term": "medication adherence",
+  "term_zh": "服药依从",
+  "base_count": 25,
+  "burst_count": 31,
+  "burst_ratio": 1.14,
+  "is_bursting": false
+ },
+ {
+  "term": "digital phenotyping",
+  "term_zh": "数字表型",
+  "base_count": 18,
+  "burst_count": 22,
+  "burst_ratio": 1.12,
+  "is_bursting": false
+ },
+ {
+  "term": "wearable",
+  "term_zh": "可穿戴监测",
+  "base_count": 151,
+  "burst_count": 179,
+  "burst_ratio": 1.09,
+  "is_bursting": false
+ },
+ {
+  "term": "emotion dysregulation",
+  "term_zh": "情绪失调",
+  "base_count": 120,
+  "burst_count": 130,
+  "burst_ratio": 0.99,
+  "is_bursting": false
+ },
+ {
+  "term": "digital therapeutic",
+  "term_zh": "数字疗法",
+  "base_count": 77,
+  "burst_count": 73,
+  "burst_ratio": 0.87,
+  "is_bursting": false
+ },
+ {
+  "term": "telehealth",
+  "term_zh": "远程医疗",
+  "base_count": 50,
+  "burst_count": 47,
+  "burst_ratio": 0.86,
+  "is_bursting": false
+ },
+ {
+  "term": "executive function",
+  "term_zh": "执行功能",
+  "base_count": 1321,
+  "burst_count": 998,
+  "burst_ratio": 0.69,
+  "is_bursting": false
+ }
+]

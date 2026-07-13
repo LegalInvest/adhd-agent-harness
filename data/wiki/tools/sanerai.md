@@ -1,0 +1,34 @@
+# Saner.AI
+
+# Saner.AI
+
+## 是什么
+
+Saner.AI 是一款 AI 驱动的任务管理器，专注于知识回忆（knowledge recall）和本地记忆（local memory），旨在减少搜索循环和标签切换（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。它被归类为与 OneTask、Todoist AI 等类似的 ADHD 生产力工具（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。在 2026 年的 ADHD 应用评测中，Saner.AI 被列为最佳 ADHD 应用之一，与 Finch、Forest、Brain.fm 等并列（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。同一评测还将其与 Obsidian、Todoist、Sunsama、Finch、Goblin.tools、Forest、Headspace、Tiimo 一同列为最佳 ADHD 应用（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。
+
+## 与 ADHD 的关系
+
+ADHD 患者常面临[[执行功能]]障碍，尤其是[[工作记忆]]不足，导致频繁的搜索循环和标签切换。Saner.AI 通过增强知识回忆，帮助用户快速找回信息，减少认知负荷。它被描述为“专为对抗执行功能障碍、任务瘫痪和认知超载而设计的全能 ADHD 友好型 AI 生产力和知识助手”（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。
+
+## AI 如何介入
+
+Saner.AI 利用 AI 实现本地记忆存储和快速检索，用户无需在多个标签页或应用间切换即可获取所需信息。其功能包括：AI 笔记捕获、自动组织任务、脑暴工作流、每日规划，并提供免费版和付费版（约 $8–16/月）（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。此外，Saner.AI 拥有通用收件箱（Universal Inbox），可从链接的邮件、文档或日历中提取待办事项，并利用内部助手检查截止日期、将大型项目分解为小里程碑（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。用户反馈称，Saner.AI 能基于用户自己的知识回答问题（通过 Skai），并希望它能保存所有遇到的信息，充当个人秘书（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。
+
+新素材进一步指出，Saner AI 专为 ADHD 设计，其 Personal AI Skai 可自动组织和标记笔记，支持语义搜索和语音捕获（来源：Saner AI Review: AI Productivity Assistant for ADHD Users）。在 5 款 ADHD AI 应用对比中，Saner.AI 与 ChatGPT、Perplexity、Goblin Tools、Pi.ai 一同被评估（来源：adhd_ai_cross_literature）。
+
+## 证据
+
+在一篇 2026 年的评测中，Saner.AI 被列为最佳 ADHD 生产力 AI 工具之一，其知识回忆功能被特别强调（来源：Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar）。另一篇文章指出，AI 驱动的任务管理器（包括 Saner.AI）正在改变 ADHD 患者的生产力游戏（来源：AI Tools for ADHD: Boosting Productivity and Reducing Burnout）。此外，Understood.org 将 Saner.ai 列为帮助管理 ADHD 症状的 AI 选项之一（来源：6 ways AI can help you manage ADHD symptoms - Understood.org）。在 44 款应用的测试中，Saner.AI 被评为最佳 ADHD 应用之一，其 ADHD 友好型组织、AI 笔记捕获和自动组织任务等功能受到好评（来源：ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026）。
+
+## 局限与争议
+
+目前缺乏针对 Saner.AI 的独立随机对照试验，其效果主要基于用户反馈和评测。与其他工具如 [[Goblin Tools]]、[[Motion]]、[[Reclaim.ai]]、[[Tiimo]]、[[Brain.fm]] 相比，Saner.AI 的独特卖点是知识回忆，但可能无法覆盖所有 ADHD 症状（如[[时间盲]]或[[多巴胺]]调节）。
+
+## 来源
+
+- Best AI Tools for ADHD Productivity in 2026 (Honest Review) - Iwo Szapar
+- AI Tools for ADHD: Boosting Productivity and Reducing Burnout
+- 6 ways AI can help you manage ADHD symptoms - Understood.org
+- ADHD Apps: We tested 44 Apps and Here're the Best 9 in 2026
+- Saner AI Review: AI Productivity Assistant for ADHD Users
+- adhd_ai_cross_literature

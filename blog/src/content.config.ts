@@ -21,6 +21,11 @@ const articles = defineCollection({
     sourceCount: z.number().optional(),
     toolsCited: z.array(z.string()).optional(),
     isEvolved: z.boolean().optional(),
+    thesis: z.string().optional(),
+    problem: z.string().optional(),
+    spine: z.string().optional(),
+    spineKind: z.string().optional(),
+    llmGenerated: z.boolean().optional(),
   }),
 });
 

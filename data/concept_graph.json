@@ -1,0 +1,2080 @@
+{
+ "nodes": [
+  {
+   "concept": "reward",
+   "zh": "奖赏系统",
+   "count": 6302,
+   "adhd": 1577,
+   "harness": 4725
+  },
+  {
+   "concept": "reinforcement learning",
+   "zh": "强化学习",
+   "count": 6133,
+   "adhd": 199,
+   "harness": 5934
+  },
+  {
+   "concept": "feedback",
+   "zh": "反馈回路",
+   "count": 5010,
+   "adhd": 1573,
+   "harness": 3437
+  },
+  {
+   "concept": "retrieval",
+   "zh": "检索增强",
+   "count": 4958,
+   "adhd": 110,
+   "harness": 4848
+  },
+  {
+   "concept": "goal",
+   "zh": "目标管理",
+   "count": 4582,
+   "adhd": 1510,
+   "harness": 3072
+  },
+  {
+   "concept": "planning",
+   "zh": "规划",
+   "count": 4161,
+   "adhd": 851,
+   "harness": 3310
+  },
+  {
+   "concept": "multi-agent",
+   "zh": "多智能体",
+   "count": 3097,
+   "adhd": 3,
+   "harness": 3094
+  },
+  {
+   "concept": "executive function",
+   "zh": "执行功能",
+   "count": 3049,
+   "adhd": 3031,
+   "harness": 18
+  },
+  {
+   "concept": "working memory",
+   "zh": "工作记忆",
+   "count": 2781,
+   "adhd": 2489,
+   "harness": 292
+  },
+  {
+   "concept": "impulsivity",
+   "zh": "冲动性",
+   "count": 2310,
+   "adhd": 2298,
+   "harness": 12
+  },
+  {
+   "concept": "hallucination",
+   "zh": "幻觉",
+   "count": 1924,
+   "adhd": 42,
+   "harness": 1882
+  },
+  {
+   "concept": "medication",
+   "zh": "药物治疗",
+   "count": 1899,
+   "adhd": 1852,
+   "harness": 47
+  },
+  {
+   "concept": "inhibition",
+   "zh": "抑制控制",
+   "count": 1837,
+   "adhd": 1728,
+   "harness": 109
+  },
+  {
+   "concept": "chain-of-thought",
+   "zh": "思维链",
+   "count": 1696,
+   "adhd": 0,
+   "harness": 1696
+  },
+  {
+   "concept": "dopamine",
+   "zh": "多巴胺",
+   "count": 1607,
+   "adhd": 1440,
+   "harness": 167
+  },
+  {
+   "concept": "error correction",
+   "zh": "错误纠正",
+   "count": 1340,
+   "adhd": 10,
+   "harness": 1330
+  },
+  {
+   "concept": "sleep",
+   "zh": "睡眠",
+   "count": 1084,
+   "adhd": 1025,
+   "harness": 59
+  },
+  {
+   "concept": "comorbidity",
+   "zh": "共病",
+   "count": 854,
+   "adhd": 848,
+   "harness": 6
+  },
+  {
+   "concept": "self-regulation",
+   "zh": "自我调节",
+   "count": 685,
+   "adhd": 627,
+   "harness": 58
+  },
+  {
+   "concept": "emotion regulation",
+   "zh": "情绪调节",
+   "count": 632,
+   "adhd": 621,
+   "harness": 11
+  },
+  {
+   "concept": "orchestration",
+   "zh": "编排",
+   "count": 627,
+   "adhd": 2,
+   "harness": 625
+  },
+  {
+   "concept": "attention mechanism",
+   "zh": "注意力机制",
+   "count": 497,
+   "adhd": 25,
+   "harness": 472
+  },
+  {
+   "concept": "tool use",
+   "zh": "工具使用",
+   "count": 406,
+   "adhd": 13,
+   "harness": 393
+  },
+  {
+   "concept": "context window",
+   "zh": "上下文窗口",
+   "count": 404,
+   "adhd": 0,
+   "harness": 404
+  },
+  {
+   "concept": "guardrail",
+   "zh": "护栏",
+   "count": 343,
+   "adhd": 3,
+   "harness": 340
+  },
+  {
+   "concept": "wearable",
+   "zh": "可穿戴",
+   "count": 334,
+   "adhd": 228,
+   "harness": 106
+  },
+  {
+   "concept": "human-in-the-loop",
+   "zh": "人在回路",
+   "count": 301,
+   "adhd": 6,
+   "harness": 295
+  },
+  {
+   "concept": "cognitive load",
+   "zh": "认知负荷",
+   "count": 277,
+   "adhd": 144,
+   "harness": 133
+  },
+  {
+   "concept": "self-reflection",
+   "zh": "自我反思",
+   "count": 223,
+   "adhd": 20,
+   "harness": 203
+  },
+  {
+   "concept": "digital therapeutic",
+   "zh": "数字疗法",
+   "count": 150,
+   "adhd": 150,
+   "harness": 0
+  },
+  {
+   "concept": "task decomposition",
+   "zh": "任务分解",
+   "count": 150,
+   "adhd": 0,
+   "harness": 150
+  },
+  {
+   "concept": "hyperfocus",
+   "zh": "超聚焦",
+   "count": 137,
+   "adhd": 137,
+   "harness": 0
+  },
+  {
+   "concept": "procrastination",
+   "zh": "拖延",
+   "count": 98,
+   "adhd": 95,
+   "harness": 3
+  },
+  {
+   "concept": "mind wandering",
+   "zh": "走神",
+   "count": 94,
+   "adhd": 91,
+   "harness": 3
+  },
+  {
+   "concept": "time perception",
+   "zh": "时间感知",
+   "count": 71,
+   "adhd": 64,
+   "harness": 7
+  },
+  {
+   "concept": "memory augmentation",
+   "zh": "记忆增强",
+   "count": 28,
+   "adhd": 0,
+   "harness": 28
+  }
+ ],
+ "edges": [
+  {
+   "source": "reinforcement learning",
+   "target": "reward",
+   "weight": 3072
+  },
+  {
+   "source": "feedback",
+   "target": "reward",
+   "weight": 1202
+  },
+  {
+   "source": "feedback",
+   "target": "reinforcement learning",
+   "weight": 1167
+  },
+  {
+   "source": "multi-agent",
+   "target": "reinforcement learning",
+   "weight": 1000
+  },
+  {
+   "source": "executive function",
+   "target": "working memory",
+   "weight": 946
+  },
+  {
+   "source": "goal",
+   "target": "reward",
+   "weight": 762
+  },
+  {
+   "source": "goal",
+   "target": "planning",
+   "weight": 744
+  },
+  {
+   "source": "goal",
+   "target": "reinforcement learning",
+   "weight": 741
+  },
+  {
+   "source": "executive function",
+   "target": "inhibition",
+   "weight": 646
+  },
+  {
+   "source": "multi-agent",
+   "target": "planning",
+   "weight": 609
+  },
+  {
+   "source": "planning",
+   "target": "reinforcement learning",
+   "weight": 599
+  },
+  {
+   "source": "inhibition",
+   "target": "working memory",
+   "weight": 589
+  },
+  {
+   "source": "dopamine",
+   "target": "reward",
+   "weight": 556
+  },
+  {
+   "source": "multi-agent",
+   "target": "reward",
+   "weight": 516
+  },
+  {
+   "source": "hallucination",
+   "target": "retrieval",
+   "weight": 496
+  },
+  {
+   "source": "planning",
+   "target": "reward",
+   "weight": 436
+  },
+  {
+   "source": "feedback",
+   "target": "goal",
+   "weight": 432
+  },
+  {
+   "source": "executive function",
+   "target": "impulsivity",
+   "weight": 340
+  },
+  {
+   "source": "impulsivity",
+   "target": "inhibition",
+   "weight": 334
+  },
+  {
+   "source": "executive function",
+   "target": "planning",
+   "weight": 330
+  },
+  {
+   "source": "feedback",
+   "target": "planning",
+   "weight": 321
+  },
+  {
+   "source": "goal",
+   "target": "multi-agent",
+   "weight": 306
+  },
+  {
+   "source": "impulsivity",
+   "target": "reward",
+   "weight": 286
+  },
+  {
+   "source": "multi-agent",
+   "target": "retrieval",
+   "weight": 265
+  },
+  {
+   "source": "impulsivity",
+   "target": "medication",
+   "weight": 259
+  },
+  {
+   "source": "feedback",
+   "target": "multi-agent",
+   "weight": 251
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "reinforcement learning",
+   "weight": 246
+  },
+  {
+   "source": "planning",
+   "target": "working memory",
+   "weight": 244
+  },
+  {
+   "source": "feedback",
+   "target": "retrieval",
+   "weight": 243
+  },
+  {
+   "source": "planning",
+   "target": "retrieval",
+   "weight": 229
+  },
+  {
+   "source": "dopamine",
+   "target": "impulsivity",
+   "weight": 227
+  },
+  {
+   "source": "executive function",
+   "target": "goal",
+   "weight": 224
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "reward",
+   "weight": 224
+  },
+  {
+   "source": "multi-agent",
+   "target": "orchestration",
+   "weight": 221
+  },
+  {
+   "source": "executive function",
+   "target": "medication",
+   "weight": 207
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "retrieval",
+   "weight": 203
+  },
+  {
+   "source": "inhibition",
+   "target": "planning",
+   "weight": 198
+  },
+  {
+   "source": "inhibition",
+   "target": "reward",
+   "weight": 198
+  },
+  {
+   "source": "impulsivity",
+   "target": "working memory",
+   "weight": 190
+  },
+  {
+   "source": "goal",
+   "target": "working memory",
+   "weight": 182
+  },
+  {
+   "source": "goal",
+   "target": "retrieval",
+   "weight": 182
+  },
+  {
+   "source": "retrieval",
+   "target": "reward",
+   "weight": 181
+  },
+  {
+   "source": "feedback",
+   "target": "working memory",
+   "weight": 163
+  },
+  {
+   "source": "feedback",
+   "target": "medication",
+   "weight": 162
+  },
+  {
+   "source": "dopamine",
+   "target": "inhibition",
+   "weight": 161
+  },
+  {
+   "source": "context window",
+   "target": "retrieval",
+   "weight": 161
+  },
+  {
+   "source": "executive function",
+   "target": "self-regulation",
+   "weight": 154
+  },
+  {
+   "source": "medication",
+   "target": "working memory",
+   "weight": 150
+  },
+  {
+   "source": "dopamine",
+   "target": "medication",
+   "weight": 149
+  },
+  {
+   "source": "executive function",
+   "target": "feedback",
+   "weight": 143
+  },
+  {
+   "source": "goal",
+   "target": "inhibition",
+   "weight": 143
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "retrieval",
+   "weight": 142
+  },
+  {
+   "source": "dopamine",
+   "target": "working memory",
+   "weight": 141
+  },
+  {
+   "source": "feedback",
+   "target": "inhibition",
+   "weight": 134
+  },
+  {
+   "source": "feedback",
+   "target": "self-regulation",
+   "weight": 134
+  },
+  {
+   "source": "executive function",
+   "target": "reward",
+   "weight": 132
+  },
+  {
+   "source": "medication",
+   "target": "sleep",
+   "weight": 129
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "planning",
+   "weight": 128
+  },
+  {
+   "source": "comorbidity",
+   "target": "executive function",
+   "weight": 126
+  },
+  {
+   "source": "comorbidity",
+   "target": "impulsivity",
+   "weight": 125
+  },
+  {
+   "source": "reward",
+   "target": "working memory",
+   "weight": 125
+  },
+  {
+   "source": "impulsivity",
+   "target": "planning",
+   "weight": 125
+  },
+  {
+   "source": "inhibition",
+   "target": "medication",
+   "weight": 124
+  },
+  {
+   "source": "feedback",
+   "target": "impulsivity",
+   "weight": 124
+  },
+  {
+   "source": "comorbidity",
+   "target": "medication",
+   "weight": 120
+  },
+  {
+   "source": "feedback",
+   "target": "hallucination",
+   "weight": 120
+  },
+  {
+   "source": "hallucination",
+   "target": "reward",
+   "weight": 118
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "hallucination",
+   "weight": 116
+  },
+  {
+   "source": "medication",
+   "target": "reward",
+   "weight": 115
+  },
+  {
+   "source": "dopamine",
+   "target": "goal",
+   "weight": 115
+  },
+  {
+   "source": "emotion regulation",
+   "target": "executive function",
+   "weight": 113
+  },
+  {
+   "source": "goal",
+   "target": "impulsivity",
+   "weight": 110
+  },
+  {
+   "source": "emotion regulation",
+   "target": "impulsivity",
+   "weight": 110
+  },
+  {
+   "source": "hallucination",
+   "target": "reinforcement learning",
+   "weight": 110
+  },
+  {
+   "source": "hallucination",
+   "target": "multi-agent",
+   "weight": 104
+  },
+  {
+   "source": "dopamine",
+   "target": "reinforcement learning",
+   "weight": 103
+  },
+  {
+   "source": "feedback",
+   "target": "human-in-the-loop",
+   "weight": 103
+  },
+  {
+   "source": "executive function",
+   "target": "sleep",
+   "weight": 100
+  },
+  {
+   "source": "hallucination",
+   "target": "planning",
+   "weight": 100
+  },
+  {
+   "source": "dopamine",
+   "target": "executive function",
+   "weight": 99
+  },
+  {
+   "source": "planning",
+   "target": "tool use",
+   "weight": 94
+  },
+  {
+   "source": "orchestration",
+   "target": "planning",
+   "weight": 93
+  },
+  {
+   "source": "goal",
+   "target": "medication",
+   "weight": 91
+  },
+  {
+   "source": "dopamine",
+   "target": "feedback",
+   "weight": 88
+  },
+  {
+   "source": "goal",
+   "target": "self-regulation",
+   "weight": 85
+  },
+  {
+   "source": "orchestration",
+   "target": "retrieval",
+   "weight": 85
+  },
+  {
+   "source": "retrieval",
+   "target": "working memory",
+   "weight": 80
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "tool use",
+   "weight": 77
+  },
+  {
+   "source": "feedback",
+   "target": "sleep",
+   "weight": 76
+  },
+  {
+   "source": "impulsivity",
+   "target": "sleep",
+   "weight": 74
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "feedback",
+   "weight": 73
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "multi-agent",
+   "weight": 71
+  },
+  {
+   "source": "medication",
+   "target": "planning",
+   "weight": 68
+  },
+  {
+   "source": "self-regulation",
+   "target": "working memory",
+   "weight": 68
+  },
+  {
+   "source": "comorbidity",
+   "target": "working memory",
+   "weight": 68
+  },
+  {
+   "source": "goal",
+   "target": "hallucination",
+   "weight": 65
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "goal",
+   "weight": 65
+  },
+  {
+   "source": "error correction",
+   "target": "feedback",
+   "weight": 65
+  },
+  {
+   "source": "inhibition",
+   "target": "self-regulation",
+   "weight": 62
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "reinforcement learning",
+   "weight": 62
+  },
+  {
+   "source": "impulsivity",
+   "target": "self-regulation",
+   "weight": 61
+  },
+  {
+   "source": "sleep",
+   "target": "working memory",
+   "weight": 61
+  },
+  {
+   "source": "attention mechanism",
+   "target": "reinforcement learning",
+   "weight": 61
+  },
+  {
+   "source": "planning",
+   "target": "self-regulation",
+   "weight": 60
+  },
+  {
+   "source": "reward",
+   "target": "tool use",
+   "weight": 60
+  },
+  {
+   "source": "orchestration",
+   "target": "reinforcement learning",
+   "weight": 60
+  },
+  {
+   "source": "multi-agent",
+   "target": "task decomposition",
+   "weight": 59
+  },
+  {
+   "source": "comorbidity",
+   "target": "inhibition",
+   "weight": 57
+  },
+  {
+   "source": "multi-agent",
+   "target": "tool use",
+   "weight": 57
+  },
+  {
+   "source": "comorbidity",
+   "target": "sleep",
+   "weight": 56
+  },
+  {
+   "source": "cognitive load",
+   "target": "working memory",
+   "weight": 56
+  },
+  {
+   "source": "emotion regulation",
+   "target": "working memory",
+   "weight": 54
+  },
+  {
+   "source": "planning",
+   "target": "task decomposition",
+   "weight": 54
+  },
+  {
+   "source": "feedback",
+   "target": "self-reflection",
+   "weight": 53
+  },
+  {
+   "source": "attention mechanism",
+   "target": "retrieval",
+   "weight": 53
+  },
+  {
+   "source": "emotion regulation",
+   "target": "goal",
+   "weight": 52
+  },
+  {
+   "source": "retrieval",
+   "target": "tool use",
+   "weight": 52
+  },
+  {
+   "source": "emotion regulation",
+   "target": "inhibition",
+   "weight": 50
+  },
+  {
+   "source": "comorbidity",
+   "target": "reward",
+   "weight": 48
+  },
+  {
+   "source": "sleep",
+   "target": "wearable",
+   "weight": 48
+  },
+  {
+   "source": "goal",
+   "target": "orchestration",
+   "weight": 48
+  },
+  {
+   "source": "feedback",
+   "target": "wearable",
+   "weight": 47
+  },
+  {
+   "source": "reward",
+   "target": "self-regulation",
+   "weight": 45
+  },
+  {
+   "source": "goal",
+   "target": "sleep",
+   "weight": 43
+  },
+  {
+   "source": "dopamine",
+   "target": "sleep",
+   "weight": 42
+  },
+  {
+   "source": "planning",
+   "target": "self-reflection",
+   "weight": 42
+  },
+  {
+   "source": "emotion regulation",
+   "target": "self-regulation",
+   "weight": 41
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "working memory",
+   "weight": 40
+  },
+  {
+   "source": "comorbidity",
+   "target": "dopamine",
+   "weight": 39
+  },
+  {
+   "source": "reward",
+   "target": "sleep",
+   "weight": 39
+  },
+  {
+   "source": "comorbidity",
+   "target": "goal",
+   "weight": 38
+  },
+  {
+   "source": "comorbidity",
+   "target": "emotion regulation",
+   "weight": 38
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "reward",
+   "weight": 38
+  },
+  {
+   "source": "medication",
+   "target": "self-regulation",
+   "weight": 37
+  },
+  {
+   "source": "feedback",
+   "target": "tool use",
+   "weight": 37
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "self-reflection",
+   "weight": 37
+  },
+  {
+   "source": "orchestration",
+   "target": "reward",
+   "weight": 36
+  },
+  {
+   "source": "feedback",
+   "target": "orchestration",
+   "weight": 36
+  },
+  {
+   "source": "dopamine",
+   "target": "planning",
+   "weight": 35
+  },
+  {
+   "source": "emotion regulation",
+   "target": "feedback",
+   "weight": 33
+  },
+  {
+   "source": "attention mechanism",
+   "target": "multi-agent",
+   "weight": 33
+  },
+  {
+   "source": "error correction",
+   "target": "goal",
+   "weight": 33
+  },
+  {
+   "source": "cognitive load",
+   "target": "feedback",
+   "weight": 32
+  },
+  {
+   "source": "emotion regulation",
+   "target": "medication",
+   "weight": 31
+  },
+  {
+   "source": "planning",
+   "target": "sleep",
+   "weight": 31
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "multi-agent",
+   "weight": 31
+  },
+  {
+   "source": "emotion regulation",
+   "target": "reward",
+   "weight": 30
+  },
+  {
+   "source": "reward",
+   "target": "self-reflection",
+   "weight": 30
+  },
+  {
+   "source": "retrieval",
+   "target": "self-reflection",
+   "weight": 29
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "task decomposition",
+   "weight": 29
+  },
+  {
+   "source": "goal",
+   "target": "human-in-the-loop",
+   "weight": 29
+  },
+  {
+   "source": "inhibition",
+   "target": "sleep",
+   "weight": 28
+  },
+  {
+   "source": "comorbidity",
+   "target": "planning",
+   "weight": 27
+  },
+  {
+   "source": "comorbidity",
+   "target": "feedback",
+   "weight": 27
+  },
+  {
+   "source": "attention mechanism",
+   "target": "reward",
+   "weight": 27
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "self-reflection",
+   "weight": 27
+  },
+  {
+   "source": "error correction",
+   "target": "reinforcement learning",
+   "weight": 27
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "planning",
+   "weight": 27
+  },
+  {
+   "source": "attention mechanism",
+   "target": "goal",
+   "weight": 26
+  },
+  {
+   "source": "goal",
+   "target": "tool use",
+   "weight": 26
+  },
+  {
+   "source": "context window",
+   "target": "hallucination",
+   "weight": 26
+  },
+  {
+   "source": "context window",
+   "target": "multi-agent",
+   "weight": 26
+  },
+  {
+   "source": "multi-agent",
+   "target": "self-reflection",
+   "weight": 26
+  },
+  {
+   "source": "hyperfocus",
+   "target": "impulsivity",
+   "weight": 24
+  },
+  {
+   "source": "orchestration",
+   "target": "tool use",
+   "weight": 24
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "retrieval",
+   "weight": 24
+  },
+  {
+   "source": "hallucination",
+   "target": "orchestration",
+   "weight": 24
+  },
+  {
+   "source": "error correction",
+   "target": "retrieval",
+   "weight": 23
+  },
+  {
+   "source": "reward",
+   "target": "task decomposition",
+   "weight": 22
+  },
+  {
+   "source": "context window",
+   "target": "reinforcement learning",
+   "weight": 22
+  },
+  {
+   "source": "hallucination",
+   "target": "self-reflection",
+   "weight": 22
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "feedback",
+   "weight": 21
+  },
+  {
+   "source": "cognitive load",
+   "target": "goal",
+   "weight": 21
+  },
+  {
+   "source": "goal",
+   "target": "wearable",
+   "weight": 21
+  },
+  {
+   "source": "feedback",
+   "target": "guardrail",
+   "weight": 21
+  },
+  {
+   "source": "attention mechanism",
+   "target": "hallucination",
+   "weight": 21
+  },
+  {
+   "source": "goal",
+   "target": "procrastination",
+   "weight": 20
+  },
+  {
+   "source": "inhibition",
+   "target": "reinforcement learning",
+   "weight": 20
+  },
+  {
+   "source": "cognitive load",
+   "target": "reinforcement learning",
+   "weight": 20
+  },
+  {
+   "source": "guardrail",
+   "target": "reinforcement learning",
+   "weight": 20
+  },
+  {
+   "source": "inhibition",
+   "target": "retrieval",
+   "weight": 19
+  },
+  {
+   "source": "emotion regulation",
+   "target": "sleep",
+   "weight": 19
+  },
+  {
+   "source": "cognitive load",
+   "target": "executive function",
+   "weight": 19
+  },
+  {
+   "source": "guardrail",
+   "target": "retrieval",
+   "weight": 19
+  },
+  {
+   "source": "error correction",
+   "target": "planning",
+   "weight": 19
+  },
+  {
+   "source": "guardrail",
+   "target": "hallucination",
+   "weight": 19
+  },
+  {
+   "source": "goal",
+   "target": "task decomposition",
+   "weight": 19
+  },
+  {
+   "source": "emotion regulation",
+   "target": "planning",
+   "weight": 18
+  },
+  {
+   "source": "dopamine",
+   "target": "hyperfocus",
+   "weight": 18
+  },
+  {
+   "source": "impulsivity",
+   "target": "reinforcement learning",
+   "weight": 18
+  },
+  {
+   "source": "attention mechanism",
+   "target": "context window",
+   "weight": 18
+  },
+  {
+   "source": "executive function",
+   "target": "retrieval",
+   "weight": 17
+  },
+  {
+   "source": "reward",
+   "target": "time perception",
+   "weight": 17
+  },
+  {
+   "source": "cognitive load",
+   "target": "planning",
+   "weight": 17
+  },
+  {
+   "source": "context window",
+   "target": "planning",
+   "weight": 17
+  },
+  {
+   "source": "feedback",
+   "target": "task decomposition",
+   "weight": 17
+  },
+  {
+   "source": "goal",
+   "target": "guardrail",
+   "weight": 17
+  },
+  {
+   "source": "impulsivity",
+   "target": "time perception",
+   "weight": 16
+  },
+  {
+   "source": "medication",
+   "target": "reinforcement learning",
+   "weight": 16
+  },
+  {
+   "source": "context window",
+   "target": "reward",
+   "weight": 16
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "orchestration",
+   "weight": 16
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "error correction",
+   "weight": 16
+  },
+  {
+   "source": "error correction",
+   "target": "multi-agent",
+   "weight": 16
+  },
+  {
+   "source": "retrieval",
+   "target": "task decomposition",
+   "weight": 16
+  },
+  {
+   "source": "time perception",
+   "target": "working memory",
+   "weight": 15
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "wearable",
+   "weight": 15
+  },
+  {
+   "source": "goal",
+   "target": "self-reflection",
+   "weight": 15
+  },
+  {
+   "source": "context window",
+   "target": "goal",
+   "weight": 15
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "human-in-the-loop",
+   "weight": 15
+  },
+  {
+   "source": "orchestration",
+   "target": "task decomposition",
+   "weight": 15
+  },
+  {
+   "source": "impulsivity",
+   "target": "procrastination",
+   "weight": 14
+  },
+  {
+   "source": "dopamine",
+   "target": "self-regulation",
+   "weight": 14
+  },
+  {
+   "source": "executive function",
+   "target": "mind wandering",
+   "weight": 14
+  },
+  {
+   "source": "executive function",
+   "target": "wearable",
+   "weight": 14
+  },
+  {
+   "source": "cognitive load",
+   "target": "reward",
+   "weight": 14
+  },
+  {
+   "source": "comorbidity",
+   "target": "hyperfocus",
+   "weight": 14
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "tool use",
+   "weight": 14
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "orchestration",
+   "weight": 14
+  },
+  {
+   "source": "guardrail",
+   "target": "reward",
+   "weight": 14
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "guardrail",
+   "weight": 14
+  },
+  {
+   "source": "medication",
+   "target": "retrieval",
+   "weight": 13
+  },
+  {
+   "source": "attention mechanism",
+   "target": "working memory",
+   "weight": 13
+  },
+  {
+   "source": "medication",
+   "target": "wearable",
+   "weight": 13
+  },
+  {
+   "source": "wearable",
+   "target": "working memory",
+   "weight": 13
+  },
+  {
+   "source": "guardrail",
+   "target": "planning",
+   "weight": 13
+  },
+  {
+   "source": "cognitive load",
+   "target": "retrieval",
+   "weight": 13
+  },
+  {
+   "source": "context window",
+   "target": "working memory",
+   "weight": 13
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "context window",
+   "weight": 13
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "executive function",
+   "weight": 12
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "medication",
+   "weight": 12
+  },
+  {
+   "source": "executive function",
+   "target": "procrastination",
+   "weight": 12
+  },
+  {
+   "source": "planning",
+   "target": "procrastination",
+   "weight": 12
+  },
+  {
+   "source": "retrieval",
+   "target": "sleep",
+   "weight": 12
+  },
+  {
+   "source": "comorbidity",
+   "target": "self-regulation",
+   "weight": 12
+  },
+  {
+   "source": "guardrail",
+   "target": "multi-agent",
+   "weight": 12
+  },
+  {
+   "source": "error correction",
+   "target": "reward",
+   "weight": 12
+  },
+  {
+   "source": "context window",
+   "target": "orchestration",
+   "weight": 12
+  },
+  {
+   "source": "context window",
+   "target": "feedback",
+   "weight": 12
+  },
+  {
+   "source": "attention mechanism",
+   "target": "feedback",
+   "weight": 12
+  },
+  {
+   "source": "goal",
+   "target": "mind wandering",
+   "weight": 11
+  },
+  {
+   "source": "self-reflection",
+   "target": "self-regulation",
+   "weight": 11
+  },
+  {
+   "source": "hallucination",
+   "target": "human-in-the-loop",
+   "weight": 11
+  },
+  {
+   "source": "multi-agent",
+   "target": "working memory",
+   "weight": 11
+  },
+  {
+   "source": "cognitive load",
+   "target": "multi-agent",
+   "weight": 11
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "impulsivity",
+   "weight": 10
+  },
+  {
+   "source": "attention mechanism",
+   "target": "planning",
+   "weight": 10
+  },
+  {
+   "source": "hyperfocus",
+   "target": "medication",
+   "weight": 10
+  },
+  {
+   "source": "planning",
+   "target": "time perception",
+   "weight": 10
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "sleep",
+   "weight": 10
+  },
+  {
+   "source": "self-regulation",
+   "target": "sleep",
+   "weight": 10
+  },
+  {
+   "source": "hallucination",
+   "target": "tool use",
+   "weight": 10
+  },
+  {
+   "source": "memory augmentation",
+   "target": "retrieval",
+   "weight": 10
+  },
+  {
+   "source": "chain-of-thought",
+   "target": "task decomposition",
+   "weight": 10
+  },
+  {
+   "source": "executive function",
+   "target": "time perception",
+   "weight": 9
+  },
+  {
+   "source": "impulsivity",
+   "target": "wearable",
+   "weight": 9
+  },
+  {
+   "source": "inhibition",
+   "target": "wearable",
+   "weight": 9
+  },
+  {
+   "source": "hyperfocus",
+   "target": "reward",
+   "weight": 9
+  },
+  {
+   "source": "hyperfocus",
+   "target": "working memory",
+   "weight": 9
+  },
+  {
+   "source": "planning",
+   "target": "wearable",
+   "weight": 9
+  },
+  {
+   "source": "executive function",
+   "target": "hyperfocus",
+   "weight": 9
+  },
+  {
+   "source": "error correction",
+   "target": "hallucination",
+   "weight": 9
+  },
+  {
+   "source": "attention mechanism",
+   "target": "error correction",
+   "weight": 9
+  },
+  {
+   "source": "mind wandering",
+   "target": "working memory",
+   "weight": 8
+  },
+  {
+   "source": "hyperfocus",
+   "target": "self-regulation",
+   "weight": 8
+  },
+  {
+   "source": "cognitive load",
+   "target": "inhibition",
+   "weight": 8
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "working memory",
+   "weight": 8
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "self-regulation",
+   "weight": 8
+  },
+  {
+   "source": "procrastination",
+   "target": "self-regulation",
+   "weight": 8
+  },
+  {
+   "source": "hallucination",
+   "target": "medication",
+   "weight": 8
+  },
+  {
+   "source": "context window",
+   "target": "tool use",
+   "weight": 8
+  },
+  {
+   "source": "attention mechanism",
+   "target": "chain-of-thought",
+   "weight": 8
+  },
+  {
+   "source": "emotion regulation",
+   "target": "procrastination",
+   "weight": 7
+  },
+  {
+   "source": "hyperfocus",
+   "target": "planning",
+   "weight": 7
+  },
+  {
+   "source": "procrastination",
+   "target": "reward",
+   "weight": 7
+  },
+  {
+   "source": "human-in-the-loop",
+   "target": "wearable",
+   "weight": 7
+  },
+  {
+   "source": "hyperfocus",
+   "target": "mind wandering",
+   "weight": 7
+  },
+  {
+   "source": "hallucination",
+   "target": "task decomposition",
+   "weight": 7
+  },
+  {
+   "source": "guardrail",
+   "target": "orchestration",
+   "weight": 7
+  },
+  {
+   "source": "error correction",
+   "target": "self-reflection",
+   "weight": 7
+  },
+  {
+   "source": "mind wandering",
+   "target": "sleep",
+   "weight": 6
+  },
+  {
+   "source": "impulsivity",
+   "target": "mind wandering",
+   "weight": 6
+  },
+  {
+   "source": "self-regulation",
+   "target": "wearable",
+   "weight": 6
+  },
+  {
+   "source": "hyperfocus",
+   "target": "sleep",
+   "weight": 6
+  },
+  {
+   "source": "guardrail",
+   "target": "tool use",
+   "weight": 6
+  },
+  {
+   "source": "medication",
+   "target": "multi-agent",
+   "weight": 6
+  },
+  {
+   "source": "reinforcement learning",
+   "target": "wearable",
+   "weight": 6
+  },
+  {
+   "source": "guardrail",
+   "target": "human-in-the-loop",
+   "weight": 6
+  },
+  {
+   "source": "dopamine",
+   "target": "time perception",
+   "weight": 5
+  },
+  {
+   "source": "hallucination",
+   "target": "sleep",
+   "weight": 5
+  },
+  {
+   "source": "medication",
+   "target": "mind wandering",
+   "weight": 5
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "inhibition",
+   "weight": 5
+  },
+  {
+   "source": "executive function",
+   "target": "hallucination",
+   "weight": 5
+  },
+  {
+   "source": "medication",
+   "target": "time perception",
+   "weight": 5
+  },
+  {
+   "source": "cognitive load",
+   "target": "medication",
+   "weight": 5
+  },
+  {
+   "source": "dopamine",
+   "target": "retrieval",
+   "weight": 5
+  },
+  {
+   "source": "executive function",
+   "target": "reinforcement learning",
+   "weight": 5
+  },
+  {
+   "source": "cognitive load",
+   "target": "dopamine",
+   "weight": 5
+  },
+  {
+   "source": "digital therapeutic",
+   "target": "planning",
+   "weight": 5
+  },
+  {
+   "source": "cognitive load",
+   "target": "impulsivity",
+   "weight": 5
+  },
+  {
+   "source": "emotion regulation",
+   "target": "wearable",
+   "weight": 5
+  },
+  {
+   "source": "reward",
+   "target": "wearable",
+   "weight": 5
+  },
+  {
+   "source": "cognitive load",
+   "target": "self-regulation",
+   "weight": 5
+  },
+  {
+   "source": "hallucination",
+   "target": "working memory",
+   "weight": 5
+  },
+  {
+   "source": "self-reflection",
+   "target": "task decomposition",
+   "weight": 5
+  },
+  {
+   "source": "cognitive load",
+   "target": "human-in-the-loop",
+   "weight": 5
+  },
+  {
+   "source": "cognitive load",
+   "target": "sleep",
+   "weight": 5
+  }
+ ],
+ "communities": {
+  "reward": [
+   {
+    "concept": "reward",
+    "zh": "奖赏系统",
+    "count": 6302,
+    "adhd": 1577,
+    "harness": 4725,
+    "is_bridge": true
+   },
+   {
+    "concept": "reinforcement learning",
+    "zh": "强化学习",
+    "count": 6133,
+    "adhd": 199,
+    "harness": 5934,
+    "is_bridge": true
+   },
+   {
+    "concept": "feedback",
+    "zh": "反馈回路",
+    "count": 5010,
+    "adhd": 1573,
+    "harness": 3437,
+    "is_bridge": true
+   },
+   {
+    "concept": "retrieval",
+    "zh": "检索增强",
+    "count": 4958,
+    "adhd": 110,
+    "harness": 4848,
+    "is_bridge": true
+   },
+   {
+    "concept": "goal",
+    "zh": "目标管理",
+    "count": 4582,
+    "adhd": 1510,
+    "harness": 3072,
+    "is_bridge": true
+   },
+   {
+    "concept": "planning",
+    "zh": "规划",
+    "count": 4161,
+    "adhd": 851,
+    "harness": 3310,
+    "is_bridge": true
+   },
+   {
+    "concept": "multi-agent",
+    "zh": "多智能体",
+    "count": 3097,
+    "adhd": 3,
+    "harness": 3094,
+    "is_bridge": false
+   },
+   {
+    "concept": "executive function",
+    "zh": "执行功能",
+    "count": 3049,
+    "adhd": 3031,
+    "harness": 18,
+    "is_bridge": true
+   },
+   {
+    "concept": "working memory",
+    "zh": "工作记忆",
+    "count": 2781,
+    "adhd": 2489,
+    "harness": 292,
+    "is_bridge": true
+   },
+   {
+    "concept": "impulsivity",
+    "zh": "冲动性",
+    "count": 2310,
+    "adhd": 2298,
+    "harness": 12,
+    "is_bridge": true
+   },
+   {
+    "concept": "hallucination",
+    "zh": "幻觉",
+    "count": 1924,
+    "adhd": 42,
+    "harness": 1882,
+    "is_bridge": true
+   },
+   {
+    "concept": "medication",
+    "zh": "药物治疗",
+    "count": 1899,
+    "adhd": 1852,
+    "harness": 47,
+    "is_bridge": true
+   },
+   {
+    "concept": "inhibition",
+    "zh": "抑制控制",
+    "count": 1837,
+    "adhd": 1728,
+    "harness": 109,
+    "is_bridge": true
+   },
+   {
+    "concept": "chain-of-thought",
+    "zh": "思维链",
+    "count": 1696,
+    "adhd": 0,
+    "harness": 1696,
+    "is_bridge": false
+   },
+   {
+    "concept": "dopamine",
+    "zh": "多巴胺",
+    "count": 1607,
+    "adhd": 1440,
+    "harness": 167,
+    "is_bridge": true
+   },
+   {
+    "concept": "error correction",
+    "zh": "错误纠正",
+    "count": 1340,
+    "adhd": 10,
+    "harness": 1330,
+    "is_bridge": true
+   },
+   {
+    "concept": "sleep",
+    "zh": "睡眠",
+    "count": 1084,
+    "adhd": 1025,
+    "harness": 59,
+    "is_bridge": true
+   },
+   {
+    "concept": "comorbidity",
+    "zh": "共病",
+    "count": 854,
+    "adhd": 848,
+    "harness": 6,
+    "is_bridge": false
+   },
+   {
+    "concept": "self-regulation",
+    "zh": "自我调节",
+    "count": 685,
+    "adhd": 627,
+    "harness": 58,
+    "is_bridge": true
+   },
+   {
+    "concept": "emotion regulation",
+    "zh": "情绪调节",
+    "count": 632,
+    "adhd": 621,
+    "harness": 11,
+    "is_bridge": true
+   },
+   {
+    "concept": "orchestration",
+    "zh": "编排",
+    "count": 627,
+    "adhd": 2,
+    "harness": 625,
+    "is_bridge": false
+   },
+   {
+    "concept": "attention mechanism",
+    "zh": "注意力机制",
+    "count": 497,
+    "adhd": 25,
+    "harness": 472,
+    "is_bridge": true
+   },
+   {
+    "concept": "tool use",
+    "zh": "工具使用",
+    "count": 406,
+    "adhd": 13,
+    "harness": 393,
+    "is_bridge": true
+   },
+   {
+    "concept": "context window",
+    "zh": "上下文窗口",
+    "count": 404,
+    "adhd": 0,
+    "harness": 404,
+    "is_bridge": false
+   },
+   {
+    "concept": "guardrail",
+    "zh": "护栏",
+    "count": 343,
+    "adhd": 3,
+    "harness": 340,
+    "is_bridge": false
+   },
+   {
+    "concept": "wearable",
+    "zh": "可穿戴",
+    "count": 334,
+    "adhd": 228,
+    "harness": 106,
+    "is_bridge": true
+   },
+   {
+    "concept": "human-in-the-loop",
+    "zh": "人在回路",
+    "count": 301,
+    "adhd": 6,
+    "harness": 295,
+    "is_bridge": false
+   },
+   {
+    "concept": "cognitive load",
+    "zh": "认知负荷",
+    "count": 277,
+    "adhd": 144,
+    "harness": 133,
+    "is_bridge": true
+   },
+   {
+    "concept": "self-reflection",
+    "zh": "自我反思",
+    "count": 223,
+    "adhd": 20,
+    "harness": 203,
+    "is_bridge": true
+   },
+   {
+    "concept": "digital therapeutic",
+    "zh": "数字疗法",
+    "count": 150,
+    "adhd": 150,
+    "harness": 0,
+    "is_bridge": false
+   },
+   {
+    "concept": "task decomposition",
+    "zh": "任务分解",
+    "count": 150,
+    "adhd": 0,
+    "harness": 150,
+    "is_bridge": false
+   },
+   {
+    "concept": "hyperfocus",
+    "zh": "超聚焦",
+    "count": 137,
+    "adhd": 137,
+    "harness": 0,
+    "is_bridge": false
+   },
+   {
+    "concept": "procrastination",
+    "zh": "拖延",
+    "count": 98,
+    "adhd": 95,
+    "harness": 3,
+    "is_bridge": false
+   },
+   {
+    "concept": "mind wandering",
+    "zh": "走神",
+    "count": 94,
+    "adhd": 91,
+    "harness": 3,
+    "is_bridge": false
+   },
+   {
+    "concept": "time perception",
+    "zh": "时间感知",
+    "count": 71,
+    "adhd": 64,
+    "harness": 7,
+    "is_bridge": false
+   },
+   {
+    "concept": "memory augmentation",
+    "zh": "记忆增强",
+    "count": 28,
+    "adhd": 0,
+    "harness": 28,
+    "is_bridge": false
+   }
+  ]
+ }
+}

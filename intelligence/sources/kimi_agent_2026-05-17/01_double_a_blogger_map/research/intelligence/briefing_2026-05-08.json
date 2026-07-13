@@ -1,0 +1,170 @@
+{
+  "date": "2026-05-08",
+  "trend_analysis": "\n今日情报分析:\n\n📊 内容分布:\n  • tool_update: 1条\n  • creator_content: 2条\n  • community_discussion: 1条\n  • academic_paper: 1条\n  • product_launch: 1条\n  • funding_news: 1条\n\n🔧 热门工具:\n  • Claude: 4次提及\n  • Cursor: 3次提及\n  • Poppy AI: 1次提及\n  • Base44: 1次提及\n  • ChatGPT: 1次提及\n\n💡 趋势信号:\n1. ADHD专用AI工具正在快速涌现（NeuroFlow等）\n2. \"Vibe coding\"概念持续影响ADHD开发者社区\n3. 学术界开始系统化研究神经多样性×AI设计\n4. 资本市场对ADHD数字疗法的兴趣加速\n5. 中文社区ADHD×AI内容正在追赶英文社区\n\n⚠️ 预警:\n- 产品同质化风险：多个工具聚焦\"任务分解\"赛道\n- 学术空白缩小：你的\"制图者\"定位窗口有限\n",
+  "your_angle": "\n今日你的情感角度:\n\n1. 作为一个ADHDer，我看到这个功能的时候想哭——终于有人理解'切换成本'有多痛了\n2. 他说出了我不敢相信的事——我这种'没有计划就开始'的人，在AI时代反而成了优势\n3. 一个ADHDer用AI做了自己的网站——这比我看到任何$80M融资都让我激动，因为这意味着我也可以\n\n💡 选题核心: \n你的内容不是\"AI工具评测\"，而是\"一个ADHDer用AI重建自己的过程中，那些让你想哭/想喊/想分享的真实瞬间\"。\n每一个\"外包发现\"，都是你与另一个ADHDer之间的秘密握手。\n",
+  "top_stories": [
+    {
+      "title": "张程分享：用Cursor手搓ADHD个人网站的全过程",
+      "source": "ADHD执行力实验室",
+      "score": 35,
+      "url": "https://xiaohongshu.com/...",
+      "adhd_relevance": 9,
+      "actionability": 9,
+      "novelty": 8
+    },
+    {
+      "title": "新论文：'Neurodivergent-Aware AI Assistants: Design Principles'",
+      "source": "arXiv",
+      "score": 35,
+      "url": "https://arxiv.org/abs/...",
+      "adhd_relevance": 10,
+      "actionability": 6,
+      "novelty": 9
+    },
+    {
+      "title": "新产品：NeuroFlow - ADHD专用的AI任务管理工具上线Product Hunt",
+      "source": "Product Hunt",
+      "score": 35,
+      "url": "https://producthunt.com/...",
+      "adhd_relevance": 10,
+      "actionability": 8,
+      "novelty": 7
+    },
+    {
+      "title": "ThePrimeagen发推：'vibe coding is the best thing that happened to ADHD devs'",
+      "source": "@ThePrimeagen",
+      "score": 34,
+      "url": "https://x.com/ThePrimeagen/status/...",
+      "adhd_relevance": 10,
+      "actionability": 9,
+      "novelty": 5
+    },
+    {
+      "title": "Rafeh Qazi宣布Poppy AI新功能：AI-powered focus mode",
+      "source": "@rafehqazi",
+      "score": 33,
+      "url": "https://x.com/rafehqazi/status/...",
+      "adhd_relevance": 9,
+      "actionability": 8,
+      "novelty": 7
+    }
+  ],
+  "creator_momentum": [
+    {
+      "creator": "Rafeh Qazi",
+      "action": "tool_update",
+      "title": "Rafeh Qazi宣布Poppy AI新功能：AI-powered focus mode...",
+      "url": "https://x.com/rafehqazi/status/...",
+      "relevance": 9
+    },
+    {
+      "creator": "ThePrimeagen",
+      "action": "creator_content",
+      "title": "ThePrimeagen发推：'vibe coding is the best thing that happened ...",
+      "url": "https://x.com/ThePrimeagen/status/...",
+      "relevance": 10
+    },
+    {
+      "creator": "张程",
+      "action": "creator_content",
+      "title": "张程分享：用Cursor手搓ADHD个人网站的全过程...",
+      "url": "https://xiaohongshu.com/...",
+      "relevance": 9
+    }
+  ],
+  "tool_launches": [
+    {
+      "title": "Rafeh Qazi宣布Poppy AI新功能：AI-powered focus mode",
+      "tools": [
+        "Poppy AI"
+      ],
+      "url": "https://x.com/rafehqazi/status/...",
+      "novelty": 7
+    },
+    {
+      "title": "新产品：NeuroFlow - ADHD专用的AI任务管理工具上线Product Hunt",
+      "tools": [
+        "NeuroFlow"
+      ],
+      "url": "https://producthunt.com/...",
+      "novelty": 7
+    }
+  ],
+  "story_recommendations": [
+    {
+      "idea": "【外包发现】Poppy AI的focus mode如何替代我的'注意力维持'功能",
+      "emotion_angle": "作为一个ADHDer，我看到这个功能的时候想哭——终于有人理解'切换成本'有多痛了",
+      "adhd_relevance": 9,
+      "actionability": 8,
+      "estimated_time": "2-3小时",
+      "priority": "HIGH"
+    },
+    {
+      "idea": "【外包发现】vibe coding如何外包了我的'规划序列化'功能",
+      "emotion_angle": "他说出了我不敢相信的事——我这种'没有计划就开始'的人，在AI时代反而成了优势",
+      "adhd_relevance": 10,
+      "actionability": 9,
+      "estimated_time": "2-3小时",
+      "priority": "HIGH"
+    },
+    {
+      "idea": "【外包发现】Cursor如何外包了我的'编程能力'——让我从'想法'直接到'产品'",
+      "emotion_angle": "一个ADHDer用AI做了自己的网站——这比我看到任何$80M融资都让我激动，因为这意味着我也可以",
+      "adhd_relevance": 9,
+      "actionability": 9,
+      "estimated_time": "2-3小时",
+      "priority": "HIGH"
+    },
+    {
+      "idea": "社区热议分析：为什么Claude成为了ADHD程序员的'职业救生圈'",
+      "emotion_angle": "2.3k upvotes意味着这不是一个人的故事——这是整个社区的共同体验。我知道那种感觉。",
+      "adhd_relevance": 10,
+      "actionability": 7,
+      "estimated_time": "2-3小时",
+      "priority": "HIGH"
+    },
+    {
+      "idea": "【深度解读】MIT/Harvard的6大设计原则：如何让AI真正理解ADHD大脑",
+      "emotion_angle": "学术界终于开始认真对待我们了——这篇论文证明了ADHD×AI不是'个人经验'，而是'可研究的科学领域'",
+      "adhd_relevance": 10,
+      "actionability": 6,
+      "estimated_time": "2-3小时",
+      "priority": "HIGH"
+    },
+    {
+      "idea": "产品评测：NeuroFlow如何试图外包ADHDer最痛苦的'启动困难'",
+      "emotion_angle": "又一个'己病己治'的产品——ADHD创始人建ADHD工具。这个循环正在加速。",
+      "adhd_relevance": 10,
+      "actionability": 8,
+      "estimated_time": "2-3小时",
+      "priority": "HIGH"
+    },
+    {
+      "idea": "资本信号：ADHD数字疗法从'边缘'到'主流'的转折点",
+      "emotion_angle": "$300M估值意味着资本市场终于相信：ADHD不是'小问题'，而是大市场。",
+      "adhd_relevance": 7,
+      "actionability": 5,
+      "estimated_time": "2-3小时",
+      "priority": "MEDIUM"
+    },
+    {
+      "idea": "【外包日记 #X】我如何用AI外包了我的'启动困难'——从Claude到Cursor到完整工作流",
+      "emotion_angle": "每一次成功启动的背后，都是99次失败的自我对话",
+      "adhd_relevance": 10,
+      "actionability": 9,
+      "estimated_time": "3小时",
+      "priority": "HIGH",
+      "recommended_format": "长文/Newsletter"
+    },
+    {
+      "idea": "【趋势预警】ADHD×AI工具正在经历'同质化了危机'——制图者的观察",
+      "emotion_angle": "看到第10个'AI任务分解'工具时，我开始担心我们是否需要'另一个'，还是需要'不同'",
+      "adhd_relevance": 8,
+      "actionability": 7,
+      "estimated_time": "4小时",
+      "priority": "MEDIUM",
+      "recommended_format": "分析长文"
+    }
+  ],
+  "item_count": 7
+}

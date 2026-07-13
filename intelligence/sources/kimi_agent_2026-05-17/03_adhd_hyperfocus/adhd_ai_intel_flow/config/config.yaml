@@ -1,0 +1,142 @@
+# ADHD×AI 情报自动流系统配置
+# 修改此文件自定义你的情报流
+
+system:
+  name: "ADHD×AI情报自动流"
+  version: "1.0.0"
+  language: "zh"  # 输出语言: zh/en
+  timezone: "Asia/Shanghai"
+
+# 数据源配置
+data_sources:
+  # 学术源
+  arxiv:
+    enabled: true
+    categories:
+      - "cs.AI"      # 人工智能
+      - "cs.CL"      # 计算语言学/NLP
+      - "cs.LG"      # 机器学习
+      - "cs.HC"      # 人机交互
+      - "q-bio.NC"   # 神经科学
+    keywords:
+      - "ADHD"
+      - "attention deficit"
+      - "hyperactivity"
+      - "executive function"
+      - "digital phenotyping"
+      - "neurofeedback"
+      - "cognitive training"
+    max_results: 20
+    days_back: 7  # 采集最近N天的论文
+
+  pubmed:
+    enabled: true
+    keywords:
+      - "ADHD[Title/Abstract] AND (artificial intelligence OR machine learning OR digital OR app OR wearable)"
+      - "ADHD[Title/Abstract] AND (neurofeedback OR cognitive training OR brain computer interface)"
+    max_results: 15
+    days_back: 7
+
+  # 社媒/社区源
+  reddit:
+    enabled: true
+    subreddits:
+      - "ADHD"
+      - "adhd_science"
+      - "ADHD_Programmers"
+      - "Neurodiversity"
+    sort: "hot"  # hot/top/new
+    limit: 10
+    min_score: 50  # 最少点赞数
+
+  # 新闻源 (通过搜索)
+  news:
+    enabled: true
+    keywords:
+      - "ADHD AI artificial intelligence"
+      - "ADHD digital therapy app"
+      - "ADHD neurotechnology"
+    max_results: 10
+    days_back: 3
+
+  # 政策/审批源
+  regulatory:
+    enabled: true
+    sources:
+      - "FDA ADHD digital therapeutic approval"
+      - "FDA EndeavorRx"
+      - "ADHD medication shortage FDA"
+
+# 处理配置
+processing:
+  # LLM配置 (用于分析和生成)
+  llm:
+    provider: "anthropic"  # anthropic/openai/local
+    model: "claude-sonnet-4-20250514"
+    max_tokens: 4000
+    temperature: 0.7
+
+  # 分类标签
+  categories:
+    - "研究突破"      # 新论文、新发现
+    - "产品工具"      # 新App、新工具
+    - "政策监管"      # FDA审批、医保变化
+    - "社区热议"      # Reddit/Twitter热门讨论
+    - "个人故事"      # 名人披露、经历分享
+    - "争议批评"      # 过度诊断、药物争议
+    - "AI×ADHD"      # AI技术在ADHD中的应用
+
+  # 重要性评分阈值
+  importance_threshold: 6.0  # 1-10, 高于此值的进入深度分析
+
+# 输出配置
+output:
+  formats:
+    daily_brief:      # 每日简报
+      enabled: true
+      template: "templates/daily_brief.md"
+      max_items: 10
+
+    weekly_digest:    # 周报
+      enabled: true
+      template: "templates/weekly_digest.md"
+      day_of_week: 1  # 周一发布
+
+    social_posts:     # 社交媒体动态
+      enabled: true
+      template: "templates/social_post.md"
+      platforms:
+        - "twitter"
+        - "zhihu"
+        - "xiaohongshu"
+
+    deep_draft:       # 深度选题存稿
+      enabled: true
+      template: "templates/deep_draft.md"
+      trigger_threshold: 8.0  # 重要性>8时生成深度选题
+
+  # 输出目录
+  output_dir: "output"
+
+# 思考层配置
+thinking:
+  # 连接到已有知识库
+  knowledge_base:
+    enabled: true
+    vault_path: "vault"
+    connection_depth: 2  # 关联分析深度
+
+  # 自动发现的趋势
+  trend_detection:
+    enabled: true
+    min_occurrences: 3    # 最少出现次数才算趋势
+    time_window_days: 14  # 趋势检测时间窗口
+
+  # 矛盾信号检测
+  contradiction_detection:
+    enabled: true  # 检测与已有认知矛盾的新发现
+
+# 定时运行 (cron格式或间隔)
+schedule:
+  daily_run: "0 8 * * *"    # 每天早8点
+  weekly_run: "0 9 * * 1"   # 每周一早9点

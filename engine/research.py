@@ -96,6 +96,35 @@ SEARCH_QUERIES_CN = [
     "ADHD 可穿戴设备 神经反馈 AI",
 ]
 
+# Agent / LLM harness 工程域：为「ADHD 大脑 ↔ LLM 同构」论证提供真实的另一端来源。
+# 这些素材描述"如何给一个强但不可靠的生成核心套上脚手架"，与 ADHD 的执行功能脚手架
+# 形成结构对照。抓取后会被标记 domain="harness"，与 ADHD 域语料并列入库。
+SEARCH_QUERIES_HARNESS = [
+    # Agent 脚手架 / 编排
+    "LLM agent harness scaffolding architecture orchestration",
+    "AI agent framework memory tools planning loop",
+    "agentic workflow task decomposition planner executor",
+    "LLM agent reliability guardrails verification self-critique",
+    # 记忆与上下文（对应工作记忆/外部记忆）
+    "LLM agent memory long-term persistent vector store",
+    "context engineering LLM context window management",
+    "retrieval augmented generation external memory agents",
+    "LLM statelessness session memory scratchpad",
+    # 幻觉/验证（对应冲动/想当然）
+    "LLM hallucination mitigation verification grounding",
+    "chain of thought self-consistency critique loop LLM",
+    "human in the loop LLM agent oversight",
+    # 采样/不稳定（对应表现波动）
+    "LLM temperature sampling output variance determinism",
+    # 工具使用 / 重锚定
+    "LLM function calling tool use offloading reasoning",
+    "agent re-grounding system prompt goal drift long horizon",
+    # 直接讨论同构 / ADHD 与 AI 认知类比
+    "ADHD brain large language model analogy executive function",
+    "AI as external executive function cognitive prosthesis",
+    "second brain externalized cognition tools knowledge management",
+]
+
 
 def search_web(
     queries: list[str] | None = None,
@@ -114,13 +143,16 @@ def search_web(
         去重后的搜索结果列表
     """
     if queries is None:
-        queries = SEARCH_QUERIES_EN + SEARCH_QUERIES_CN
+        queries = SEARCH_QUERIES_EN + SEARCH_QUERIES_CN + SEARCH_QUERIES_HARNESS
+
+    harness_queries = set(SEARCH_QUERIES_HARNESS)
 
     ddgs = DDGS()
     all_results = {}
     seen_urls = set()
 
     for i, query in enumerate(queries):
+        domain = "harness" if query in harness_queries else "adhd"
         try:
             results = ddgs.text(query, max_results=max_results_per_query)
             for r in results:
@@ -132,6 +164,7 @@ def search_web(
                         "title": r.get("title", ""),
                         "snippet": r.get("body", ""),
                         "query": query,
+                        "domain": domain,
                     }
             print(f"  [{i+1}/{len(queries)}] {query[:50]}... → {len(results)} results")
             if delay > 0:
@@ -213,12 +246,28 @@ def save_research(data: list[dict], filename: str = "scraped_knowledge.json") ->
 
 
 def load_research(filename: str = "scraped_knowledge.json") -> list[dict]:
-    """加载已有的研究数据"""
+    """加载已有的研究数据。历史数据无 domain 字段时默认归为 adhd 域。"""
     filepath = os.path.join(DATA_DIR, filename)
     if os.path.exists(filepath):
         with open(filepath, "r", encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        for item in data:
+            item.setdefault("domain", "adhd")
+        return data
     return []
+
+
+def _interleave_by_domain(results: list[dict]) -> list[dict]:
+    """按 domain 交错排序，保证后续截断抓取时两域都被覆盖到。"""
+    adhd = [r for r in results if r.get("domain") != "harness"]
+    harness = [r for r in results if r.get("domain") == "harness"]
+    out: list[dict] = []
+    for a, h in zip(adhd, harness):
+        out.append(a)
+        out.append(h)
+    out.extend(adhd[len(harness):])
+    out.extend(harness[len(adhd):])
+    return out
 
 
 def merge_research(existing: list[dict], new: list[dict]) -> list[dict]:
@@ -238,6 +287,8 @@ def merge_research(existing: list[dict], new: list[dict]) -> list[dict]:
 def run_research(
     use_cache: bool = True,
     force_refresh: bool = False,
+    queries: list[str] | None = None,
+    max_pages: int = 150,
 ) -> list[dict]:
     """
     执行完整的研究流程
@@ -245,6 +296,8 @@ def run_research(
     Args:
         use_cache: 是否使用已有缓存数据
         force_refresh: 是否强制重新搜索和抓取
+        queries: 自定义查询；None 时使用 ADHD + harness 全量矩阵
+        max_pages: 单次抓取的最大页面数（两域交错后截断）
 
     Returns:
         完整的研究数据列表
@@ -253,14 +306,16 @@ def run_research(
     if use_cache and not force_refresh:
         existing = load_research()
         if existing:
-            print(f"  📚 已有缓存: {len(existing)} 篇研究数据")
+            n_h = sum(1 for x in existing if x.get("domain") == "harness")
+            print(f"  📚 已有缓存: {len(existing)} 篇（adhd {len(existing)-n_h} / harness {n_h}）")
 
     if force_refresh or not existing:
         print("\n🔍 Phase 1: 全网搜索...")
-        search_results = search_web()
+        search_results = search_web(queries=queries)
+        search_results = _interleave_by_domain(search_results)
 
         print("\n📄 Phase 2: 深度抓取...")
-        scraped = scrape_content(search_results)
+        scraped = scrape_content(search_results, max_pages=max_pages)
 
         if existing:
             merged = merge_research(existing, scraped)
@@ -269,6 +324,23 @@ def run_research(
             merged = scraped
 
         save_research(merged)
+        n_h = sum(1 for x in merged if x.get("domain") == "harness")
+        print(f"  域分布: adhd {len(merged)-n_h} / harness {n_h}")
         return merged
 
     return existing
+
+
+def run_harness_research(max_pages: int = 80) -> list[dict]:
+    """只补抓 harness 域素材并并入现有语料（不重抓 ADHD 域，省时省请求）。"""
+    existing = load_research()
+    print(f"  📚 现有语料: {len(existing)} 篇，开始补抓 harness 域...")
+    print("\n🔍 搜索 harness 域...")
+    results = search_web(queries=SEARCH_QUERIES_HARNESS)
+    print("\n📄 抓取 harness 域...")
+    scraped = scrape_content(results, max_pages=max_pages)
+    merged = merge_research(existing, scraped)
+    save_research(merged)
+    n_h = sum(1 for x in merged if x.get("domain") == "harness")
+    print(f"\n  合并后: {len(merged)} 篇（新增 harness 抓取 {len(scraped)}；harness 域共 {n_h}）")
+    return merged

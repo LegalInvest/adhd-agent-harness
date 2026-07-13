@@ -1,0 +1,37 @@
+{
+  "id": "问题355",
+  "number": 355,
+  "title": "问题355_为什么控制欲、信任缺口和责任归属，是 Agentic AI 普及的真正瓶颈？",
+  "priority": "B",
+  "status": "closed_loop_ready",
+  "draft": true,
+  "publish_packet": true,
+  "xhs": true,
+  "zhihu": true,
+  "short_video": true,
+  "comment_question": true,
+  "feedback_sheet": true,
+  "template_entry": true,
+  "closed_loop_ready": true,
+  "updated_at": "2026-06-03",
+  "quality_audited": true,
+  "quality_score": "upgraded_2026-06-03",
+  "ignition_rewritten": true,
+  "ignition_rewritten_at": "2026-06-03",
+  "current_scores": {
+    "desire": 7,
+    "thought": 6,
+    "action": 6,
+    "total": 19,
+    "target_total": 27
+  },
+  "current_upgrade_principle": "S级不只观点锋利；读者第3段自我识别，中段重写解释，结尾立刻行动。",
+  "current_scoring_method": "触动内容版：先列所欲/所思/所行具体触动内容，再根据文本证据和行动摩擦综合评分。",
+  "current_trigger_profile": {
+    "category": "ai_interface",
+    "desire_trigger": "既想要 AI 接住启动、排序、记忆和表达，又不想把判断权、自我效能和真实风格一起交出去。",
+    "thought_trigger": "把“我终于有工具了”改写成“这是外部前额叶、执行功能假肢，也可能制造依赖阈值和主体性稀释”。",
+    "action_trigger": "把一个任务分成可委托、必须自己判断、需要现实反馈三栏，再只交给 AI 最小一块。"
+  },
+  "rescored_at": "2026-06-03"
+}

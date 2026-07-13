@@ -1,0 +1,37 @@
+{
+  "id": "问题329",
+  "number": 329,
+  "title": "问题329_为什么ADHD 不是 AI 的被帮助者，而可能是 AI 产业的秘密武器？",
+  "priority": "B",
+  "status": "closed_loop_ready",
+  "draft": true,
+  "publish_packet": true,
+  "xhs": true,
+  "zhihu": true,
+  "short_video": true,
+  "comment_question": true,
+  "feedback_sheet": true,
+  "template_entry": true,
+  "closed_loop_ready": true,
+  "updated_at": "2026-06-03",
+  "quality_audited": true,
+  "quality_score": "upgraded_2026-06-03",
+  "ignition_rewritten": true,
+  "ignition_rewritten_at": "2026-06-03",
+  "current_scores": {
+    "desire": 6,
+    "thought": 6,
+    "action": 6,
+    "total": 18,
+    "target_total": 27
+  },
+  "current_upgrade_principle": "S级不只观点锋利；读者第3段自我识别，中段重写解释，结尾立刻行动。",
+  "current_scoring_method": "触动内容版：先列所欲/所思/所行具体触动内容，再根据文本证据和行动摩擦综合评分。",
+  "current_trigger_profile": {
+    "category": "org",
+    "desire_trigger": "不再把自己伪装成稳定、线性、随叫随到的人，而是想要岗位、会议、招聘和反馈系统真的改接口。",
+    "thought_trigger": "把“不适合组织”改写成“不适合隐性优先级、即时表达、稳定外壳这套默认组织接口”。",
+    "action_trigger": "选一个最耗能工作环节，让 AI 写成四句接口说明：输入、输出、确认节奏、反馈格式。"
+  },
+  "rescored_at": "2026-06-03"
+}

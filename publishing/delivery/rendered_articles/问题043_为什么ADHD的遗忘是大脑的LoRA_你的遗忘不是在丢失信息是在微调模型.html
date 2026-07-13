@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>问题043：为什么ADHD的&quot;遗忘&quot;是大脑的LoRA——你的遗忘不是在丢失信息，是在微调模型</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #fbfbf8; color: #182026; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.78; }
+    .shell { max-width: 820px; margin: 0 auto; padding: 32px 22px 64px; }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; color: #52606d; font-size: 14px; }
+    nav a { color: #0b66c3; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    article { background: #fff; border: 1px solid #d9e2ec; border-radius: 8px; padding: 34px 38px; box-shadow: 0 8px 24px rgba(15, 23, 42, .04); }
+    h1 { font-size: 30px; line-height: 1.32; margin: 0 0 28px; letter-spacing: 0; }
+    h2 { margin-top: 34px; padding-top: 10px; font-size: 22px; border-top: 1px solid #edf2f7; }
+    h3 { margin-top: 26px; font-size: 18px; }
+    p { margin: 14px 0; }
+    strong { color: #111827; }
+    blockquote { margin: 20px 0; padding: 6px 18px; border-left: 4px solid #9fb3c8; color: #3e4c59; background: #f8fafc; }
+    ul, ol { padding-left: 26px; }
+    li { margin: 7px 0; }
+    code { background: #f0f4f8; padding: 2px 5px; border-radius: 4px; }
+    .meta { margin-top: 28px; padding-top: 18px; border-top: 1px solid #edf2f7; color: #627d98; font-size: 14px; }
+    @media (max-width: 720px) {
+      .shell { padding: 18px 12px 44px; }
+      article { padding: 24px 18px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav>
+      <a href="../../indexes/问题001-108_MD总索引.html">返回总索引</a>
+      <a href="../../%E9%97%AE%E9%A2%98043_%E4%B8%BA%E4%BB%80%E4%B9%88ADHD%E7%9A%84%E9%81%97%E5%BF%98%E6%98%AF%E5%A4%A7%E8%84%91%E7%9A%84LoRA_%E4%BD%A0%E7%9A%84%E9%81%97%E5%BF%98%E4%B8%8D%E6%98%AF%E5%9C%A8%E4%B8%A2%E5%A4%B1%E4%BF%A1%E6%81%AF%E6%98%AF%E5%9C%A8%E5%BE%AE%E8%B0%83%E6%A8%A1%E5%9E%8B.md">查看源 Markdown</a>
+    </nav>
+    <article>
+      <h1>问题043：为什么ADHD的&quot;遗忘&quot;是大脑的LoRA——你的遗忘不是在丢失信息，是在微调模型</h1>
+<p>你刚读完一本书，三天后只记得一个模糊的&quot;感觉&quot;。你听完一个播客，一周后只能复述一个金句。你参加过一次重要会议，一个月后当别人提起那个会议的决定时，你一脸茫然。</p>
+<p>别人说你&quot;记性差&quot;&quot;不靠谱&quot;&quot;左耳进右耳出&quot;。但你自己知道，你不是没听进去——你是&quot;选择性地保留&quot;了。那个被你遗忘的会议，你真的忘了吗？还是你的大脑自动过滤掉了它认为不重要的部分，只留下了一个模式、一种氛围、一个判断？</p>
+<p>01</p>
+<p>先理解LoRA是什么。在AI大模型里，LoRA（Low-Rank Adaptation）是一种微调技术。它不重新训练整个模型，而是给模型注入一层极小的&quot;低秩矩阵&quot;，让模型在新的任务上表现得更好，同时保留原来的大部分能力。</p>
+<p>ADHD的遗忘，本质上就是大脑的LoRA微调。</p>
+<p>普通人的记忆像硬盘——力求完整保存，尽量不失真。ADHD的记忆像LoRA——它不在乎原始数据的完整性，它在乎的是&quot;提取模式后，下次遇到类似场景时能不能做出更好的反应&quot;。你遗忘的不是信息，你遗忘的是信息的&quot;存储副本&quot;，但保留了信息的&quot;权重调整&quot;。</p>
+<p>02</p>
+<p>这就是你&quot;记不住细节但直觉很准&quot;的原因。</p>
+<p>你可能记不住那个投资人的具体数据，但你能瞬间判断&quot;这个人不可信&quot;。你可能复述不出那本书的章节结构，但你能在一个完全无关的场景里突然冒出那本书的核心洞察。你可能忘了会议上的决议条款，但你的行为已经不自觉地被那个会议的&quot;氛围&quot;调整过了。</p>
+<p>这不是健忘。这是你的大脑在用LoRA的方式学习——每次经历只保留一个轻量级的&quot;差分文件&quot;（diff），而不是把整个文件重新存一遍。</p>
+<p>神经典型者的大脑是Git的全量提交（full commit），每次提交都保留完整快照。ADHD的大脑是Git的增量提交（delta commit），只记录变化量。增量提交看起来&quot;内容少&quot;，但它的优势是轻量、快速、可叠加。</p>
+<p>03</p>
+<p>这个机制为什么在社会里被惩罚？</p>
+<p>因为社会奖励&quot;精确复述&quot;。考试要求你背出原文，职场要求你准确传达领导的每一句话，社交要求你记住别人的生日和偏好。这些任务对ADHD的LoRA大脑来说，等于强迫一个增量系统做全量备份——又慢又痛苦，还容易出错。</p>
+<p>但在需要&quot;模式识别&quot;的场景里，LoRA大脑是碾压级的。</p>
+<p>urban-research里，你不需要记住一个县的所有GDP数据，你只需要记住&quot;这个县的产业结构和十年前我看过的一个东北小城惊人相似&quot;。投资判断里，你不需要背诵每份财报，你只需要保留&quot;这个CEO的说话方式和上一个爆雷公司的创始人一样&quot;的直觉权重。</p>
+<p>04</p>
+<p>neuroscience 的铁证。</p>
+<p><strong>铁证一：模式提取优于细节保存。</strong> 2019年《Neuron》的研究表明，ADHD在&quot;情景记忆&quot;（episodic memory）任务中表现较弱，但在&quot;图式记忆&quot;（schema memory）和&quot;语义提取&quot;（semantic gist extraction）中表现正常甚至优越。你不是记不住，你是自动把情景压缩成了图式。</p>
+<p><strong>铁证二：遗忘是主动的认知优化。</strong> 神经科学里有&quot;定向遗忘&quot;（directed forgetting）的概念——大脑会主动抑制不相关的记忆痕迹，以优化检索效率。ADHD的这个机制可能过度活跃，但它本质上是一个节能策略，不是故障。</p>
+<p><strong>铁证三：看看你的&quot;感觉记忆&quot;。</strong> 你是不是经常&quot;想不起来具体发生了什么，但我当时感觉很不好&quot;？这个&quot;感觉&quot;就是你的LoRA权重——它没有存储事件本身，但存储了事件对你的神经网络的影响。下次遇到类似输入，你的&quot;感觉&quot;会比别人的&quot;回忆&quot;更快地触发回避行为。</p>
+<p>05</p>
+<p>问题是怎么把你的&quot;LoRA大脑&quot;变成可验证的判断力？</p>
+<p><strong>第一步：停止为遗忘道歉，开始记录&quot;直觉&quot;。</strong> 每次你&quot;想不起来但感觉不对&quot;的时候，立刻写下来——不写原因，只写判断。这些判断就是你的LoRA权重可视化。</p>
+<p><strong>第二步：用Agent做你的&quot;全量外存&quot;。</strong> 你的大脑只做LoRA微调，让Agent帮你做全量备份。把会议记录、读书笔记、对话摘要丢给Agent，你需要细节的时候问它，你不需要的时候让它安静待着。</p>
+<p><strong>第三步：设计&quot;LoRA验证周期&quot;。</strong> 每隔一段时间，回顾你的&quot;直觉记录&quot;，看看哪些直觉被验证了，哪些被证伪了。被验证的直觉，就是你应该信任的大脑LoRA。被证伪的直觉，就是需要调整的权重。</p>
+<p>06</p>
+<p>回到你自己。你现在有没有一个&quot;我说不上为什么，但我就是觉得……&quot;的判断？</p>
+<p>不要 suppress 它。那是你的LoRA在说话。</p>
+<p>ADHD的遗忘不是大脑的故障，是大脑的优化。你没有丢失信息，你只是把信息压缩成了更高效的格式。在这个信息过载的时代，会遗忘的人反而更自由——因为你只携带模式，不携带噪音。</p>
+<p>你的大脑不是硬盘，它是LoRA。而LoRA，正在微调你成为更精准的预测机器。</p>
+      <div class="meta">渲染自：问题043_为什么ADHD的遗忘是大脑的LoRA_你的遗忘不是在丢失信息是在微调模型.md</div>
+    </article>
+  </main>
+</body>
+</html>

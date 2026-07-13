@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我从 Kimi Agent 资料里学到了什么</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f4ef;
+      --ink: #202124;
+      --muted: #666a70;
+      --line: #d8d2c5;
+      --panel: #fffdf8;
+      --panel-2: #f0f7f4;
+      --accent: #265f7c;
+      --accent-2: #8a5a18;
+      --accent-3: #486b3f;
+      --danger: #9a3f31;
+      --soft: #ece7dd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+      letter-spacing: 0;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 22px 72px;
+    }
+
+    header {
+      border-bottom: 2px solid var(--line);
+      padding: 12px 0 24px;
+      margin-bottom: 24px;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.12;
+      margin: 0 0 14px;
+      max-width: 940px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 920px;
+      margin: 0;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .meta span {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.52);
+      padding: 6px 9px;
+      border-radius: 6px;
+    }
+
+    section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+    }
+
+    p {
+      line-height: 1.78;
+      margin: 10px 0;
+    }
+
+    strong {
+      color: #111;
+    }
+
+    .lead {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      padding: 18px 18px 16px;
+      border-radius: 8px;
+    }
+
+    .lead p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .note {
+      background: var(--panel-2);
+      border: 1px solid #c8d9cf;
+      border-left: 5px solid var(--accent-3);
+      padding: 14px 16px;
+      border-radius: 8px;
+      color: #26352a;
+    }
+
+    .warning {
+      background: #fff6f2;
+      border: 1px solid #e2c1b7;
+      border-left: 5px solid var(--danger);
+      padding: 14px 16px;
+      border-radius: 8px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      line-height: 1.72;
+      margin: 6px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      margin: 14px 0 6px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 11px;
+      vertical-align: top;
+      line-height: 1.62;
+    }
+
+    th {
+      background: var(--soft);
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    tr:nth-child(even) td {
+      background: rgba(255,255,255,.52);
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--accent-2);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+
+    .quote {
+      font-size: 22px;
+      line-height: 1.55;
+      font-weight: 750;
+      color: #17232a;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent-2);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(38,95,124,.35);
+    }
+
+    .links a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 22px 14px 56px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .quote {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="kicker">Kimi Agent 资料学习汇报</div>
+      <h1>我从这批资料里学到的，不是“再多写一些 ADHD 选题”</h1>
+      <p class="subtitle">而是：这个项目正在从一个内容池，升级成一个“ADHD x AI 认知外包系统”的公开实验场。你要争的位置不是普通 ADHD 博主，也不是普通 AI 工具博主，而是能把痛点、工具、Agent、平台、产品和反馈画成地图的人。</p>
+      <div class="meta">
+        <span>生成日期：2026-05-17</span>
+        <span>资料来源：4 个 Kimi Agent 资料包</span>
+        <span>已入库文本：Markdown + docx 抽取文本</span>
+        <span>项目目录：选题池/草稿</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="lead">
+        <p><strong>一句话结论：</strong>我学到的核心不是“ADHD x AI 市场很大”，而是这个市场已经出现了大量情绪分享者、工具教程者和热点追逐者；真正稀缺的是“制图者”：能持续标注什么痛点适合什么 AI 工具、什么 Agent 工作流、什么平台表达、什么产品入口的人。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>我学到的 8 个核心判断</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>1. 你的定位不是“又一个 ADHD 博主”</h3>
+          <p>全球已经有不少 ADHD x AIGC 创作者。单纯讲“我也是 ADHD”“AI 帮了我”会变得拥挤。更稀缺的位置是把整个地形画出来：症状、工具、场景、风险、平台、产品和社群如何连接。</p>
+        </article>
+        <article class="card">
+          <h3>2. “制图者”比“老师”更适合你</h3>
+          <p>老师默认读者要跟着课程走；制图者默认读者有不同入口、不同能量、不同失败路径。ADHD 用户不适合被课程驯服，更适合拿一张地图按需导航。</p>
+        </article>
+        <article class="card">
+          <h3>3. AI 内容生态正在进入同质化疲劳</h3>
+          <p>“炸裂、封神、不眠之夜、GPT时刻”已经变成情绪预制菜。越多号复制同一套爆款模板，读者越难相信。你的机会是反同质化：真实试错、危险标注、冷静拆解。</p>
+        </article>
+        <article class="card">
+          <h3>4. Agent 是 AI 内容里的暗线</h3>
+          <p>模型跑分、参数竞赛、热点发布很热闹，但真正接近个人改变和商业落地的是 Agent：它处理最后一公里，处理“从知道到做到”的断裂。</p>
+        </article>
+        <article class="card">
+          <h3>5. ADHD 不是超能力爽文，而是环境匹配模型</h3>
+          <p>资料里最有价值的科学框架是“尖峰轮廓”：同一组神经特征，在错误环境里是伤口，在正确外部系统里才变成优势。AI 的意义不是提效，而是改造环境。</p>
+        </article>
+        <article class="card">
+          <h3>6. 选题池应该升级为产品需求池</h3>
+          <p>每个好选题都应该问：它能不能变成模板、清单、入口、Agent 流程、社群动作或最小产品？例如负罪感焚烧炉、认知外包矩阵、烂尾复活、今日唯一动作。</p>
+        </article>
+        <article class="card">
+          <h3>7. 旧法律粉丝不是包袱，是迁移样本</h3>
+          <p>法律不是新主线，但青年律师和法学生是高压执行功能人群。他们不一定自称 ADHD，却能理解任务过载、启动困难、风险焦虑和外部前额叶。</p>
+        </article>
+        <article class="card">
+          <h3>8. 最大风险不是缺资料，是继续不发布</h3>
+          <p>这批资料很强，也很容易让人继续囤、继续整理、继续兴奋。真正下一步必须进入发布、评论、私信、收藏、负面反馈和产品假设，而不是再造一层系统。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>四组资料分别教会了我什么</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>资料包</th>
+            <th>我学到的东西</th>
+            <th>对项目的影响</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>双A博主盘点</td>
+            <td>ADHD x AIGC 已经不是空白赛道，全球有创作者、开发者、播客、AI艺术家、教育者和创业者在做交叉内容。真正稀缺的不是“我也在用 AI”，而是能持续建立地图和标准。</td>
+            <td>新增“制图者定位”系列：工具地形图、危险区域标注、外包日记、读者坐标库。</td>
+          </tr>
+          <tr>
+            <td>国内 AI 公众号与小红书洞察</td>
+            <td>中文 AI 内容正在短视频化、情绪化、同质化。公众号适合框架和证据，小红书适合痛点、步骤和收藏。跨平台不是复制标题，而是换一种大脑说话。</td>
+            <td>新增“AI 内容生态”系列：反预制情绪、热点 14 天同质化、跨平台原生变形、L2.5 信源定位。</td>
+          </tr>
+          <tr>
+            <td>ADHD 超聚焦揭秘</td>
+            <td>ADHD 不能只写成超能力，也不能只写成病。更好的框架是尖峰轮廓、兴趣驱动神经系统、时间盲视、成就盲视、环境匹配和正常人方法论失配。</td>
+            <td>把“症状共鸣”升级为“机制解释 + 外部系统”。避免爽文，写清楚优势的条件和代价。</td>
+          </tr>
+          <tr>
+            <td>AI 博主深度洞察</td>
+            <td>AI 博主生态有食物链：原发源、信标层、编译层、情绪放大层、收割层。最值得争的是 L2.5：比原始信息更易懂，比媒体更快，比标题党更可信。</td>
+            <td>把 ADHD x Agent 放到更前面，少追模型热闹，多写“最后一公里”：个人执行系统、外包矩阵、Agent 场景库。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>我对你的真实意图的新理解</h2>
+      <div class="quote">
+        你不是想做一个“讲 ADHD 的公众号”。你是在把自己的高发散、高采样、高表达欲和高匮乏感，工程化成内容、工具、社群、服务和现金流。
+      </div>
+      <p>这也是为什么你会反复要求本地状态、索引、HTML、质检、正文链接、Git 项目化、Agent 可接手。你要的不是一次内容建议，而是一个不会因为账号、会话、情绪或记忆断掉而崩溃的外部认知系统。</p>
+      <p>所以我现在看这个项目，不会把它当成“选题池”。它更像一个正在成形的个人 Agent OS：你的想法进入倾倒区，Agent 变压成内容和产品动作，发布以后再用真实反馈决定下一步。</p>
+    </section>
+
+    <section>
+      <h2>新选题和旧选题的关系</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>类型</th>
+            <th>代表新题</th>
+            <th>和旧题关系</th>
+            <th>处理建议</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag">真正新增</span></td>
+            <td>109-128</td>
+            <td>旧题很少系统写 AI 内容生态、制图者、反同质化、平台变形、L2.5 信源。</td>
+            <td>优先保留，尤其是 109、111、122、123、124、125。</td>
+          </tr>
+          <tr>
+            <td><span class="tag">产品化续篇</span></td>
+            <td>141-152、157-160</td>
+            <td>延续旧题里的外部前额叶、负罪感、反馈回流、烂尾复活，但从“为什么”进入“怎么做成入口”。</td>
+            <td>保留，但写作时必须直接进入模板、流程、产品假设。</td>
+          </tr>
+          <tr>
+            <td><span class="tag">高重复风险</span></td>
+            <td>130、133、153</td>
+            <td>分别和 078、066、094 重叠较高。</td>
+            <td>不删，改角度：130 写超聚焦日志，133 写晚间关机 SOP，153 写双周地图栏目。</td>
+          </tr>
+          <tr>
+            <td><span class="tag">桥接资产</span></td>
+            <td>161-168</td>
+            <td>和 099-108 的法律桥接线有重叠，但新组更关注旧粉迁移策略。</td>
+            <td>只保留 164、167、168 做迁移说明，其余暂缓。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>这批资料改变了我的选题标准</h2>
+      <div class="grid">
+        <div class="note">
+          <h3>以前的标准</h3>
+          <ul>
+            <li>标题有没有共鸣？</li>
+            <li>比喻够不够狠？</li>
+            <li>ADHD 用户会不会说“这就是我”？</li>
+            <li>能不能从情绪上打中人？</li>
+          </ul>
+        </div>
+        <div class="note">
+          <h3>现在的标准</h3>
+          <ul>
+            <li>能不能形成一个地图坐标？</li>
+            <li>能不能对应一个 Agent 工作流？</li>
+            <li>能不能变成模板、清单或小工具？</li>
+            <li>能不能引出评论、私信、收藏和真实需求？</li>
+          </ul>
+        </div>
+      </div>
+      <p>换句话说，下一阶段不能只追求“更会写”。要追求“每篇文章都能把一个真实痛点接进系统”。</p>
+    </section>
+
+    <section>
+      <h2>我认为最该先写的 7 篇</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>优先级</th>
+            <th>编号</th>
+            <th>为什么先写</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>141</td>
+            <td>它是升级总纲：AI 不是效率工具，而是认知外包操作系统。能直接重塑账号定位。</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>109</td>
+            <td>它定义你的新身份：不是老师，而是制图者。能和资料学习结果强绑定。</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>143</td>
+            <td>它能变成表格、模板和产品入口：认知功能外包矩阵。</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>148</td>
+            <td>它把 062 从文章升级成每日入口：负罪感倾倒 + Agent 压缩动作。</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>111</td>
+            <td>它避开工具测评红海，用“危险区域标注”建立差异化标准。</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>122</td>
+            <td>它把 Agent 从热点术语拉回最后一公里，是 ADHD x AI 的商业主线。</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>157</td>
+            <td>它强迫内容进入真实回流，不让项目停在自我兴奋里。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>我会警惕的三个坑</h2>
+      <div class="warning">
+        <h3>坑 1：把“制图者”又做成一个新口号</h3>
+        <p>如果没有工具地图、实测记录、危险区域标注、读者坐标库，“制图者”就只是漂亮人设。必须落到结构化资产。</p>
+      </div>
+      <div class="warning">
+        <h3>坑 2：继续造系统，假装已经推进</h3>
+        <p>这批资料很容易诱发下一轮系统搭建兴奋。但项目现在缺的不是再多一个表，而是发出去、收回来、再迭代。</p>
+      </div>
+      <div class="warning">
+        <h3>坑 3：为了旧法律粉丝犹豫过久</h3>
+        <p>法律不用抢回主线。保留“高压职业人群”的桥即可。不要解释太多，直接用新框架解决他们旧痛点。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>最终学习结论</h2>
+      <div class="quote">
+        这批资料让我确认：下一阶段最强主线不是“ADHD 如何用 AI 提高效率”，而是“ADHD 如何把认知功能外包给 AI 和 Agent，并把这个过程公开制图、测试、产品化”。
+      </div>
+      <p>所以新增选题不应该只是 109、110、111 往下排。它应该被当成一组产品假设：哪些痛点能引发真实评论，哪些能做成模板，哪些能发展成社群入口，哪些能成为付费工具或服务。</p>
+    </section>
+
+    <section class="links">
+      <h2>相关本地资产</h2>
+      <ul>
+        <li><a href="../../sources/kimi_agent_2026-05-17/MANIFEST.md">Kimi Agent 资料清单</a></li>
+        <li><a href="./kimi_agent_2026-05-17_资料总览.md">资料总览 Markdown</a></li>
+        <li><a href="./kimi_agent_2026-05-17_用户意图判断.md">用户意图判断 Markdown</a></li>
+        <li><a href="../topic-pools/问题109-168_资料驱动选题增量.html">问题109-168 新选题 HTML 表</a></li>
+        <li><a href="../topic-pools/问题109-168_资料驱动选题增量.md">问题109-168 新选题 Markdown</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

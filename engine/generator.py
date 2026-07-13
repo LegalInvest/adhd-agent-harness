@@ -11,6 +11,7 @@ import re
 from datetime import datetime, timedelta
 
 from engine.knowledge import KnowledgeRetriever, CORE_CONCEPTS
+from engine.grade import label as grade_label
 
 
 def _seed_from(text: str) -> int:
@@ -229,7 +230,7 @@ def generate_article(topic: dict, index: int, retriever: KnowledgeRetriever) -> 
         title_src = item.get("source_title", "")
         if url and url not in seen_urls:
             seen_urls.add(url)
-            refs.append(f"- [{title_src}]({url})")
+            refs.append(f"- [{title_src}]({url}) — {grade_label(title_src, url)}")
     if refs:
         parts.append("## 参考来源\n\n" + "\n".join(refs[:6]))
 
@@ -255,9 +256,207 @@ def generate_article(topic: dict, index: int, retriever: KnowledgeRetriever) -> 
         "score": topic.get("weighted_score", 0),
         "sourceCount": len(refs),
         "toolsCited": [t["keywords"][0] for t in tools],
+        "problem": topic.get("problem", title),
+        "spine": topic.get("spine", ""),
+        "spineKind": topic.get("spine_kind", ""),
         "isEvolved": topic.get("is_evolved", False),
     }
 
+    return {
+        "frontmatter": frontmatter,
+        "content": full_content,
+        "slug": slug,
+        "filename": f"{topic_id}.md",
+    }
+
+
+ARTICLE_SYS = (
+    "你是一名资深的「ADHD × AI」中文内容作者，写作循证、克制、有观点。"
+    "你只能依据给定的 wiki 资料写作，不得编造资料中不存在的工具、数据或来源。"
+    "你的文章要在整合事实的同时**形成自己的判断与新观点**，并诚实指出争议与局限。"
+)
+
+
+def _wiki_context_block(ctx: dict) -> str:
+    """把 wiki 上下文压缩成提示词"""
+    blocks = []
+    if ctx.get("topic"):
+        t = ctx["topic"]
+        blocks.append(f"【主题综述：{t['name']}】\n{t['body'][:1400]}")
+    for c in ctx.get("concepts", []):
+        blocks.append(f"【概念页：{c['name']}】\n{c['body'][:1100]}")
+    for t in ctx.get("tools", []):
+        blocks.append(f"【工具页：{t['name']}】\n{t['body'][:1100]}")
+    if ctx.get("contradictions"):
+        blocks.append(f"【全局矛盾与存疑】\n{ctx['contradictions'][:1000]}")
+    return "\n\n".join(blocks)
+
+
+def _collect_wiki_sources(ctx: dict) -> list[dict]:
+    sources, seen = [], set()
+    pages = list(ctx.get("tools", [])) + list(ctx.get("concepts", []))
+    if ctx.get("topic"):
+        pages.append(ctx["topic"])
+    for p in pages:
+        for s in p.get("sources", []):
+            url = s.get("url", "")
+            if url and url not in seen:
+                seen.add(url)
+                sources.append({"title": s.get("title", ""), "url": url})
+    return sources
+
+
+def _case_block(topic: dict, index: int, case_retriever, cases=None) -> str:
+    if cases is None:
+        if case_retriever is None or not case_retriever.available:
+            return ""
+        cases = case_retriever.cases_for_topic(topic, offset=index)
+    if not cases:
+        return ""
+    lines = "\n".join(f"- [{c['kind']}] {c['text']}" for c in cases)
+    stat = case_retriever.stat_for_topic(topic)
+    stat_line = f"\n\u76f8\u5173\u6027\u7edf\u8ba1\uff08\u771f\u5b9e\u6765\u6e90\uff09\uff1a{stat}" if stat else ""
+    return (
+        "\n=== \u4eba\u7269\u6848\u4f8b\uff08\u771f\u5b9e\u4eba\u7269\u7684 harness \u81ea\u6211\u7ba1\u7406\u7cfb\u7edf\uff0c\u53ef\u4f5c\u4e3a\u672c\u6587\u6848\u4f8b\u7d20\u6750\uff09===\n"
+        f"{lines}{stat_line}\n"
+        "\u4f7f\u7528\u8981\u6c42\uff1a\u4ece\u4e2d\u9009 1-2 \u4f4d\u4e0e\u672c\u6587\u95ee\u9898\u6700\u5951\u5408\u7684\u4eba\u7269\uff0c\u5728\u6b63\u6587\u91cc\u7528\u4e00\u5c0f\u6bb5\u8bb2\u6e05\u4ed6/\u5979\u7684 ADHD \u7279\u8d28\u4e0e harness \u7cfb\u7edf\uff0c"
+        "\u5e76\u70b9\u660e\u5b83\u4e0e LLM/agent harness \u7684\u540c\u6784\u5bf9\u5e94\uff08\u5982\u300c\u65e5\u8bfe\u2194\u5b9a\u65f6 re-grounding\u300d\u300c\u79d8\u4e66\u2194\u5916\u90e8\u8c03\u5ea6\u5668\u300d\uff09\u3002"
+        "\u4e0d\u8981\u7f57\u5217\u5168\u90e8\u6848\u4f8b\uff0c\u4e0d\u5f97\u7f16\u9020\u6848\u4f8b\u4e2d\u6ca1\u6709\u7684\u7ec6\u8282\u3002\n=== \u6848\u4f8b\u7ed3\u675f ===\n"
+    )
+
+
+def generate_article_llm(topic: dict, index: int, wiki_retriever, llm, case_retriever=None) -> dict:
+    """
+    研究驱动 + LLM Wiki 版文章生成：
+    从 LLM 维护的互链 wiki 中取材，由大模型整合成有观点、可溯源的文章。
+    """
+    title = topic["title"]
+    subtitle = topic.get("subtitle", "")
+    category_id = topic.get("category_id", "")
+    category_name = topic.get("category_name", "")
+    category_name_en = topic.get("category_name_en", "")
+    angle = topic.get("angle", "")
+    keywords = topic.get("keywords", [])
+    topic_id = topic.get("id", f"article-{index:03d}")
+    problem = topic.get("problem", title)
+    spine = topic.get("spine", "")
+    spine_kind = topic.get("spine_kind", "")
+    spine_mirror = topic.get("spine_mirror", "")
+    adhd_pain = topic.get("adhd_pain", "")
+    harness_parallel = topic.get("harness_parallel", "")
+
+    seed = _seed_from(title)
+    slug = _slugify(title)
+    pub_date = (datetime(2025, 6, 1) - timedelta(days=seed % 90)).strftime("%Y-%m-%d")
+
+    ctx = wiki_retriever.context_for_topic(topic, offset=index)
+    context_block = _wiki_context_block(ctx)
+    wiki_sources = _collect_wiki_sources(ctx)
+    cases = (
+        case_retriever.cases_for_topic(topic, offset=index)
+        if (case_retriever is not None and case_retriever.available) else []
+    )
+    case_block = _case_block(topic, index, case_retriever, cases)
+
+    spine_block = ""
+    if spine:
+        spine_block = (
+            f"\n=== 同构脊柱（本文的思想主线，必须贯穿全文）===\n"
+            f"核心概念：{spine}\n"
+            + (f"ADHD 侧痛点：{adhd_pain}\n" if adhd_pain else "")
+            + (f"LLM/Agent 侧对应：{harness_parallel or spine_mirror}\n" if (harness_parallel or spine_mirror) else "")
+            + "论证要求：ADHD 大脑与 LLM/agent 是同一类「高产但缺执行调度层的生成核心」，"
+              "两边的解法（harness/脚手架）结构同构。必须**同时给出 ADHD 侧与 LLM/agent 侧的真实证据**，"
+              "不要做空洞类比；并点明『脚手架 vs 拐杖』的边界。\n=== 脊柱结束 ===\n"
+        )
+
+    user = (
+        f"请基于以下 wiki 资料，写一篇**问题驱动**、面向中文读者的文章。\n"
+        f"它要同时打动两类人：被 {adhd_pain or 'ADHD 困扰'} 折磨的 ADHD 人群，"
+        f"以及在做 Agentic Harness 工程（{harness_parallel or 'agent/LLM 编排'}）的工程师。\n\n"
+        f"要回答的核心问题：{problem}\n"
+        f"标题：{title}\n副标题：{subtitle}\n分类：{category_name}\n切入角度：{angle}\n"
+        f"{spine_block}{case_block}\n"
+        f"=== wiki 资料（你唯一可用的事实来源）===\n{context_block}\n=== 资料结束 ===\n\n"
+        "写作要求：\n"
+        "- 1200-1800 字，markdown，用 ## 小节组织；从「问题」切入，用同构脊柱给出答案；\n"
+        "- 必须整合 wiki 资料里的真实工具、概念与研究，关键论断后用「（来源：标题）」标注；\n"
+        + ("- 必须织入「人物案例」中 1-2 位真实人物的 harness 系统作为论据，并点明其与 LLM harness 的同构对应；\n" if case_block else "")
+        + "- 必须**同时**给出 ADHD 侧与 LLM/agent 侧的真实证据，让两类读者都觉得「这说的就是我」；\n"
+        "- 必须提出一个**鲜明的核心观点/判断**（不要只罗列工具），并结合『矛盾与存疑』诚实指出局限；\n"
+        "- 给出 2-4 条「今天就能试」的具体行动；\n"
+        "- 不要写 H1 大标题（标题会另行添加），从引言直接开始；\n"
+        "- 不得编造 wiki 资料中不存在的工具、数据或来源。\n\n"
+        "严格输出 JSON：\n"
+        '{\n'
+        '  "thesis": "一句话概括本文的核心观点（点明 ADHD↔LLM 同构）",\n'
+        '  "tools_cited": ["文中真实引用到的工具名", ...],\n'
+        '  "body": "markdown 正文（不含 H1 标题）"\n'
+        "}"
+    )
+    data = llm.chat_json(
+        [
+            {"role": "system", "content": ARTICLE_SYS},
+            {"role": "user", "content": user},
+        ],
+        temperature=0.65,
+        max_tokens=4000,
+    )
+    if not isinstance(data, dict) or "body" not in data:
+        raise ValueError(f"文章 {title} 返回结构异常")
+
+    body = data["body"].strip()
+    thesis = data.get("thesis", "")
+    tools_cited = [t for t in data.get("tools_cited", []) if isinstance(t, str)][:8]
+
+    reading_time = 7 + (seed % 8)
+    tags = list(dict.fromkeys([
+        "ADHD", "AI", category_name, angle,
+        (keywords[seed % len(keywords)] if keywords else "效率"),
+    ]))[:6]
+
+    refs = [
+        f"- [{s['title']}]({s['url']}) — {grade_label(s['title'], s['url'])}"
+        for s in wiki_sources[:6]
+    ]
+    refs_block = ("\n\n## 参考来源\n\n" + "\n".join(refs)) if refs else ""
+
+    full_content = (
+        f"# {title}\n\n"
+        + (f"> {subtitle}\n\n" if subtitle else "")
+        + body
+        + refs_block
+        + (
+            f"\n\n---\n\n*本文是「ADHD × AI」系列的第 {index + 1} 篇，"
+            f"由 AI 智能体从持续维护的 LLM Wiki（全网真实情报）中取材整合生成，并持续迭代更新。*\n"
+        )
+    )
+
+    frontmatter = {
+        "title": title,
+        "subtitle": subtitle,
+        "description": subtitle,
+        "date": pub_date,
+        "category": category_name,
+        "categoryId": category_id,
+        "categoryEn": category_name_en,
+        "tags": tags,
+        "readingTime": reading_time,
+        "slug": slug,
+        "topicId": topic_id,
+        "angle": angle,
+        "rank": topic.get("rank", index + 1),
+        "score": topic.get("weighted_score", 0),
+        "sourceCount": len(refs),
+        "toolsCited": tools_cited,
+        "thesis": thesis,
+        "problem": problem,
+        "spine": spine,
+        "spineKind": spine_kind,
+        "isEvolved": topic.get("is_evolved", False),
+        "llmGenerated": True,
+        "caseStudies": [c["name"] for c in cases],
+    }
     return {
         "frontmatter": frontmatter,
         "content": full_content,

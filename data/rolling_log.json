@@ -1,0 +1,357 @@
+[
+  {
+    "timestamp": "2026-07-07T09:05:23+00:00",
+    "round": 7,
+    "note": "回补：第 7 轮增量滚动（增量模式首轮）",
+    "pool_size": 400,
+    "promoted_count": 4,
+    "demoted_count": 4,
+    "moved_count": 332,
+    "promoted": [
+      {
+        "title": "如果把 ADHD 大脑当成生成核心，Forest 能不能当它的无状态与外部记忆？",
+        "rank": 371,
+        "score": 7.66,
+        "spine": "无状态与外部记忆"
+      },
+      {
+        "title": "ChatGPT 之于 ADHD，就像 reward shaping 与 credit assignment 之于 LLM——但有人用错了",
+        "rank": 67,
+        "score": 7.9,
+        "spine": "反馈信用分配"
+      },
+      {
+        "title": "如果把 ADHD 大脑当成生成核心，ChatGPT 能不能当它的反馈信用分配？",
+        "rank": 398,
+        "score": 7.66,
+        "spine": "反馈信用分配"
+      },
+      {
+        "title": "3 个 LLM 工程概念，彻底重写了我对 ADHD 被批评却不知道错在哪一步，反馈延迟就失去动力的理解",
+        "rank": 65,
+        "score": 7.9,
+        "spine": "反馈信用分配"
+      }
+    ],
+    "demoted": [
+      {
+        "title": "如果把 ADHD 大脑当成生成核心，Endel 能不能当它的无状态与外部记忆？",
+        "prev_rank": 368
+      },
+      {
+        "title": "ADHD 程序员如何用「给生成核心套 harness」的思路应对在 IDE 与 agent 之间切换里的执行功能（计划/组织/启动）先天偏弱？",
+        "prev_rank": 398
+      },
+      {
+        "title": "ADHD 学生如何用「给生成核心套 harness」的思路应对考试与作业里的怕过度依赖工具、又怕没有支撑就崩？",
+        "prev_rank": 399
+      },
+      {
+        "title": "ADHD 职场人如何用「给生成核心套 harness」的思路应对项目推进与汇报里的怕过度依赖工具、又怕没有支撑就崩？",
+        "prev_rank": 400
+      }
+    ],
+    "top_moves": [
+      {
+        "title": "ADHD 自由职业者如何用「给生成核心套 harness」的思路应对无人监督下的自我管理里的执行功能（计划/组织/启动）先天偏弱？",
+        "prev_rank": 396,
+        "rank": 399,
+        "delta": -3
+      },
+      {
+        "title": "ADHD 研究生如何用「给生成核心套 harness」的思路应对长周期科研与论文里的执行功能（计划/组织/启动）先天偏弱？",
+        "prev_rank": 397,
+        "rank": 400,
+        "delta": -3
+      },
+      {
+        "title": "为什么用 Goblin Tools 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
+        "prev_rank": 209,
+        "rank": 211,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Motion 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
+        "prev_rank": 210,
+        "rank": 212,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
+        "prev_rank": 155,
+        "rank": 157,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Perplexity 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？",
+        "prev_rank": 211,
+        "rank": 213,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 ChatGPT 治 ADHD 的卡在执行与落地，和给 agent 套 外部编排调度层 是一回事？",
+        "prev_rank": 156,
+        "rank": 158,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 ChatGPT 治 ADHD 的感到孤立缺问责，和给 agent 套 human-in-the-loop 监督 是一回事？",
+        "prev_rank": 159,
+        "rank": 161,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Goblin Tools 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
+        "prev_rank": 186,
+        "rank": 188,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Motion 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
+        "prev_rank": 187,
+        "rank": 189,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
+        "prev_rank": 89,
+        "rank": 91,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Perplexity 治 ADHD 的情绪失调，和给 agent 套 会褪去的脚手架 是一回事？",
+        "prev_rank": 188,
+        "rank": 190,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 ChatGPT 治 ADHD 的想法落地难，和给 agent 套 外部编排调度层 是一回事？",
+        "prev_rank": 157,
+        "rank": 159,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Goblin Tools 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
+        "prev_rank": 320,
+        "rank": 322,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Motion 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
+        "prev_rank": 321,
+        "rank": 323,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
+        "prev_rank": 179,
+        "rank": 181,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Perplexity 治 ADHD 的注意力涣散，和给 agent 套 上下文工程 是一回事？",
+        "prev_rank": 322,
+        "rank": 324,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Goblin Tools 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
+        "prev_rank": 326,
+        "rank": 328,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Motion 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
+        "prev_rank": 327,
+        "rank": 329,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
+        "prev_rank": 181,
+        "rank": 183,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Perplexity 治 ADHD 的学习半途而废，和给 agent 套 外部记忆/向量库 是一回事？",
+        "prev_rank": 328,
+        "rank": 330,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 ChatGPT 治 ADHD 的日常混乱不稳定，和给 agent 套 调低采样温度 是一回事？",
+        "prev_rank": 158,
+        "rank": 160,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？",
+        "prev_rank": 234,
+        "rank": 236,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的想理解自己的大脑，和给 agent 套 生成核心 + 缺失的执行层 是一回事？",
+        "prev_rank": 312,
+        "rank": 314,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Goblin Tools 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
+        "prev_rank": 323,
+        "rank": 325,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Motion 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
+        "prev_rank": 324,
+        "rank": 326,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Claude 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
+        "prev_rank": 180,
+        "rank": 182,
+        "delta": -2
+      },
+      {
+        "title": "为什么用 Perplexity 治 ADHD 的时间盲，和给 agent 套 planner-executor 任务分解 是一回事？",
+        "prev_rank": 325,
+        "rank": 327,
+        "delta": -2
+      },
+      {
+        "title": "为什么ADHD的\"拖延清单\"比\"待办清单\"更诚实——你逃避的事才是你的真需求",
+        "prev_rank": 200,
+        "rank": 202,
+        "delta": -2
+      },
+      {
+        "title": "为什么ADHD的完成恐惧比拖延更深一层？",
+        "prev_rank": 329,
+        "rank": 331,
+        "delta": -2
+      },
+      {
+        "title": "为什么ADHD的反复确认不是焦虑，是工作记忆校验和？",
+        "prev_rank": 201,
+        "rank": 203,
+        "delta": -2
+      },
+      {
+        "title": "为什么ADHD截止日期前才动是延迟最大化期望效用的理性策略？",
+        "prev_rank": 334,
+        "rank": 336,
+        "delta": -2
+      },
+      {
+        "title": "为什么ADHD最危险的不是拖延，而是把搭系统误认为推进——你以为自己在铺路，其实一直在修停车场",
+        "prev_rank": 172,
+        "rank": 174,
+        "delta": -2
+      },
+      {
+        "title": "为什么你的旧法律粉丝不是包袱，而是第一批高压执行功能用户？",
+        "prev_rank": 168,
+        "rank": 170,
+        "delta": -2
+      },
+      {
+        "title": "为什么正常人的时间管理会伤害 ADHD？",
+        "prev_rank": 182,
+        "rank": 184,
+        "delta": -2
+      },
+      {
+        "title": "为什么“焦虑/抑郁”常常是女性 ADHD 被误读后的表面标签？",
+        "prev_rank": 189,
+        "rank": 191,
+        "delta": -2
+      },
+      {
+        "title": "为什么一个人管理多个 AI Agent，本身就是一项执行功能任务？",
+        "prev_rank": 313,
+        "rank": 315,
+        "delta": -2
+      },
+      {
+        "title": "为什么“认知卸载”一旦习惯化，就可能变成不可逆的依赖？",
+        "prev_rank": 314,
+        "rank": 316,
+        "delta": -2
+      },
+      {
+        "title": "ADHD 的外部记忆（如清单）需要主动维护和回顾，而 LLM 的向量库可以自动索引和被动检索。这种“主动 vs 被动”的差异是否意味着同构只是表面相似，实际解决路径完全不同？你们怎么回应“ADHD 缺的不是记忆，而是执行功能”这个反例？",
+        "prev_rank": 160,
+        "rank": 162,
+        "delta": -2
+      },
+      {
+        "title": "如果我的 ADHD 大脑就像 LLM 的上下文窗口，为什么我的「系统提示」（睡眠、药物、环境设置）有时会被一个随机通知 token 劫持？这对 LLM harness 安全意味着什么：高优先级的系统指令是否应该有一个不可被覆盖的 attention mask 或保护头？",
+        "prev_rank": 190,
+        "rank": 192,
+        "delta": -2
+      },
+      {
+        "title": "我们用系统提示、RAG 和工具循环来让 LLM 保持任务；能否把这些反向映射为 ADHD 脚手架：系统提示 → 晨间意图仪式，RAG → 可检索笔记/物理 token，工具循环 → 身体 doubling/清单？当人类「注意力分配器」不可微时，失败模式会是什么？",
+        "prev_rank": 315,
+        "rank": 317,
+        "delta": -2
+      },
+      {
+        "title": "ADHD 前额叶执行功能缺陷与 LLM 的规划模块之间，是否存在可量化的功能同构？比如任务分解的层级数量或错误率模式？",
+        "prev_rank": 117,
+        "rank": 119,
+        "delta": -2
+      },
+      {
+        "title": "LLM agents 常出现 plan collapse（中间步骤偏离目标）和 looping（重复调用同一工具），这与 ADHD 的‘目标漂移’和‘反复打开同一标签页’高度相似。我们能否把 agent 的 recovery 策略（重规划、反射、降级）直接迁移为 ADHD 辅助工具的设计模式？",
+        "prev_rank": 235,
+        "rank": 237,
+        "delta": -2
+      },
+      {
+        "title": "Agentic harness 中的 reward signal 来自工具反馈或人工标注，而 ADHD 的行为维持依赖多巴胺奖赏。如果要设计一个 ADHD 可用的 planner-executor 循环，是否必须把每个子任务完成都变成可感知的即时奖励事件，又该如何避免 gamification 的耐受性？",
+        "prev_rank": 173,
+        "rank": 175,
+        "delta": -2
+      },
+      {
+        "title": "ADHD 的‘目标漂移’涉及前额叶-纹状体环路多巴胺失调，LLM 的‘漂移’本质是 Transformer 注意力分布变化。这两个机制是否只是表面相似，而非真正的同构？",
+        "prev_rank": 236,
+        "rank": 238,
+        "delta": -2
+      },
+      {
+        "title": "ADHD 的‘目标漂移’是执行功能缺陷，而 LLM 的‘漂移’是概率生成的自然结果。把病理现象类比为系统特性，是否在美化 ADHD 或过度简化 AI 问题？",
+        "prev_rank": 84,
+        "rank": 86,
+        "delta": -2
+      },
+      {
+        "title": "ADHD 患者用‘重锚定’策略（如番茄钟）成功率有限，而 LLM 的 prompt 重锚几乎总是有效。这个类比是否忽略了人类意志力的脆弱性，让工程师低估了真实世界的难度？",
+        "prev_rank": 330,
+        "rank": 332,
+        "delta": -2
+      },
+      {
+        "title": "ADHD 的外部支架通过纹状体的多巴胺信号增强任务显著性；身边有人确实会改变神经增益。但 LLM 没有神经调质系统，human-in-the-loop 真的能产生同质的“增益信号”，还是这个类比只能停留在行为层面？",
+        "prev_rank": 316,
+        "rank": 318,
+        "delta": -2
+      },
+      {
+        "title": "当我的执行功能崩溃时，比如无法启动一项任务，agent 的编排系统是如何模拟这种状态并尝试干预的？",
+        "prev_rank": 90,
+        "rank": 92,
+        "delta": -2
+      },
+      {
+        "title": "你说 ADHD 大脑和 LLM 都需要外部编排，那我用各种待办清单、日程工具，为什么总是坚持不下来，而你们说的 agentic harness 就能让 LLM 持续执行长任务？",
+        "prev_rank": 169,
+        "rank": 171,
+        "delta": -2
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "问题353",
+  "number": 353,
+  "title": "问题353_为什么 ADHD 人群最需要 Agentic AI，却也最容易不敢真的委托",
+  "priority": "S",
+  "status": "closed_loop_ready",
+  "draft": true,
+  "publish_packet": true,
+  "xhs": true,
+  "zhihu": true,
+  "short_video": true,
+  "comment_question": true,
+  "feedback_sheet": true,
+  "template_entry": true,
+  "closed_loop_ready": true,
+  "updated_at": "2026-06-03",
+  "publication_refined": true,
+  "refinement_level": "S/A_publish_ready_deepened_2026-06-03",
+  "ignition_rewritten": true,
+  "ignition_rewritten_at": "2026-06-03",
+  "desire_recalibrated": true,
+  "desire_recalibrated_at": "2026-06-03",
+  "current_scores": {
+    "desire": 9,
+    "thought": 9,
+    "action": 9,
+    "total": 27,
+    "target_total": 27
+  },
+  "current_upgrade_principle": "S级不只观点锋利；读者第3段自我识别，中段重写解释，结尾立刻行动。Agentic AI题先承认全痛点外包欲望，再设计可信、验收和失败恢复。",
+  "current_scoring_method": "触动内容版：先列所欲/所思/所行具体触动内容，再根据文本证据、真实欲望命中和行动摩擦综合评分。",
+  "current_trigger_profile": {
+    "category": "ai_interface",
+    "desire_trigger": "巴不得把启动、排序、记忆、催办、沟通、收尾、复盘这些执行痛点全部外包给可信 Agent，而不是再靠意志力亲自扛。",
+    "thought_trigger": "把“委托会不会让我失去主体性”改写成“彻底外包不是道德问题，而是产品可信度问题：接得住、验得清、错了能恢复”。",
+    "action_trigger": "写下最想扔掉的一种痛，让 AI 输出它能接走什么、你只需验收什么、失败后怎样一键重启。"
+  },
+  "desire_authenticity": {
+    "risk_level": "recalibrated_from_high_to_low",
+    "old_failure_mode": "把真实欲望误写成害怕委托、保留判断权、只委托最小一块。",
+    "real_desire": "ADHD 用户巴不得把反复折磨自己的执行痛点全部外包给可信外部系统。",
+    "outsourcing_angle": "Agent 接走启动、排序、记忆、催办、沟通、收尾、复盘；用户只保留最小验收口和失败重启口。",
+    "verification_signal": "评论区读者能具体说出最想让 AI/Agent 接走的痛点，并索要痛点外包协议模板。"
+  },
+  "rescored_at": "2026-06-03"
+}

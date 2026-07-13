@@ -1,0 +1,1322 @@
+[
+ {
+  "bridge": "error monitoring",
+  "bridge_zh": "错误监控与验证",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 226,
+  "harness_support": 2088,
+  "adhd_paper": {
+   "title": "Imaging Response Inhibition in a Stop-Signal Task: Neural Correlates Independent of Signal Monitoring and Post-Response Processing",
+   "year": 2006,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.3741-05.2006",
+   "cited_by": 607
+  },
+  "harness_paper": {
+   "title": "Fostering implementation of health services research findings into practice: a consolidated framework for advancing implementation science",
+   "year": 2009,
+   "venue": "Implementation Science",
+   "url": "https://doi.org/10.1186/1748-5908-4-50",
+   "cited_by": 14912
+  },
+  "score": 15519
+ },
+ {
+  "bridge": "executive function",
+  "bridge_zh": "执行功能",
+  "spine": "外部执行功能层",
+  "adhd_support": 3319,
+  "harness_support": 25,
+  "adhd_paper": {
+   "title": "Behavioral inhibition, sustained attention, and executive functions: Constructing a unifying theory of ADHD.",
+   "year": 1997,
+   "venue": "Psychological Bulletin",
+   "url": "https://doi.org/10.1037/0033-2909.121.1.65",
+   "cited_by": 7286
+  },
+  "harness_paper": {
+   "title": "Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control",
+   "year": 2007,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.5587-06.2007",
+   "cited_by": 7544
+  },
+  "score": 14830
+ },
+ {
+  "bridge": "reward",
+  "bridge_zh": "奖赏与动机",
+  "spine": "采样温度与表现波动",
+  "adhd_support": 3654,
+  "harness_support": 8174,
+  "adhd_paper": {
+   "title": "Harnessing neuroplasticity for clinical applications",
+   "year": 2011,
+   "venue": "Brain",
+   "url": "https://doi.org/10.1093/brain/awr039",
+   "cited_by": 1224
+  },
+  "harness_paper": {
+   "title": "Reinforcement Learning: A Survey",
+   "year": 1996,
+   "venue": "Journal of Artificial Intelligence Research",
+   "url": "https://doi.org/10.1613/jair.301",
+   "cited_by": 8845
+  },
+  "score": 10069
+ },
+ {
+  "bridge": "reward",
+  "bridge_zh": "奖赏与动机",
+  "spine": "采样温度与表现波动",
+  "adhd_support": 3654,
+  "harness_support": 8174,
+  "adhd_paper": {
+   "title": "Association of attention-deficit disorder and the dopamine transporter gene.",
+   "year": 1995,
+   "venue": "PubMed",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/7717410",
+   "cited_by": 1005
+  },
+  "harness_paper": {
+   "title": "Targeted Branching for the Maximum Independent Set Problem Using Graph Neural Networks",
+   "year": 2024,
+   "venue": "Leibniz-Zentrum für Informatik (Schloss Dagstuhl)",
+   "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SEA.2024.20",
+   "cited_by": 5400
+  },
+  "score": 6405
+ },
+ {
+  "bridge": "executive function",
+  "bridge_zh": "执行功能",
+  "spine": "外部执行功能层",
+  "adhd_support": 3319,
+  "harness_support": 25,
+  "adhd_paper": {
+   "title": "Executive Functions and Developmental Psychopathology",
+   "year": 1996,
+   "venue": "Journal of Child Psychology and Psychiatry",
+   "url": "https://doi.org/10.1111/j.1469-7610.1996.tb01380.x",
+   "cited_by": 3140
+  },
+  "harness_paper": {
+   "title": "Is Adolescence a Sensitive Period for Sociocultural Processing?",
+   "year": 2013,
+   "venue": "Annual Review of Psychology",
+   "url": "https://doi.org/10.1146/annurev-psych-010213-115202",
+   "cited_by": 2220
+  },
+  "score": 5360
+ },
+ {
+  "bridge": "inhibition",
+  "bridge_zh": "抑制控制",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 4092,
+  "harness_support": 120,
+  "adhd_paper": {
+   "title": "Shaping Functional Architecture by Oscillatory Alpha Activity: Gating by Inhibition",
+   "year": 2010,
+   "venue": "Frontiers in Human Neuroscience",
+   "url": "https://doi.org/10.3389/fnhum.2010.00186",
+   "cited_by": 3378
+  },
+  "harness_paper": {
+   "title": "Cytokine release syndrome",
+   "year": 2018,
+   "venue": "Journal for ImmunoTherapy of Cancer",
+   "url": "https://doi.org/10.1186/s40425-018-0343-9",
+   "cited_by": 1670
+  },
+  "score": 5048
+ },
+ {
+  "bridge": "reward",
+  "bridge_zh": "奖赏与动机",
+  "spine": "采样温度与表现波动",
+  "adhd_support": 3654,
+  "harness_support": 8174,
+  "adhd_paper": {
+   "title": "Motivation and Cognitive Control: From Behavior to Neural Mechanism",
+   "year": 2014,
+   "venue": "Annual Review of Psychology",
+   "url": "https://doi.org/10.1146/annurev-psych-010814-015044",
+   "cited_by": 942
+  },
+  "harness_paper": {
+   "title": "Making psychological theory useful for implementing evidence based practice: a consensus approach",
+   "year": 2005,
+   "venue": "BMJ Quality & Safety",
+   "url": "https://doi.org/10.1136/qshc.2004.011155",
+   "cited_by": 3616
+  },
+  "score": 4558
+ },
+ {
+  "bridge": "reward",
+  "bridge_zh": "奖赏与动机",
+  "spine": "采样温度与表现波动",
+  "adhd_support": 3654,
+  "harness_support": 8174,
+  "adhd_paper": {
+   "title": "Role of Serotonin in the Paradoxical Calming Effect of Psychostimulants on Hyperactivity",
+   "year": 1999,
+   "venue": "Science",
+   "url": "https://doi.org/10.1126/science.283.5400.397",
+   "cited_by": 884
+  },
+  "harness_paper": {
+   "title": "Exercise, physical activity, and self-determination theory: A systematic review",
+   "year": 2012,
+   "venue": "International Journal of Behavioral Nutrition and Physical Activity",
+   "url": "https://doi.org/10.1186/1479-5868-9-78",
+   "cited_by": 2860
+  },
+  "score": 3744
+ },
+ {
+  "bridge": "task decomposition",
+  "bridge_zh": "任务分解与规划",
+  "spine": "规划循环与任务分解",
+  "adhd_support": 888,
+  "harness_support": 3417,
+  "adhd_paper": {
+   "title": "Attention-deficit/hyperactivity disorder is characterized by a delay in cortical maturation",
+   "year": 2007,
+   "venue": "Proceedings of the National Academy of Sciences",
+   "url": "https://doi.org/10.1073/pnas.0707741104",
+   "cited_by": 1826
+  },
+  "harness_paper": {
+   "title": "Hippocampal sharp wave‐ripple: A cognitive biomarker for episodic memory and planning",
+   "year": 2015,
+   "venue": "Hippocampus",
+   "url": "https://doi.org/10.1002/hipo.22488",
+   "cited_by": 1884
+  },
+  "score": 3710
+ },
+ {
+  "bridge": "task decomposition",
+  "bridge_zh": "任务分解与规划",
+  "spine": "规划循环与任务分解",
+  "adhd_support": 888,
+  "harness_support": 3417,
+  "adhd_paper": {
+   "title": "Safety and recommendations for TMS use in healthy subjects and patient populations, with updates on training, ethical and regulatory issues: Expert Guidelines",
+   "year": 2020,
+   "venue": "Clinical Neurophysiology",
+   "url": "https://doi.org/10.1016/j.clinph.2020.10.003",
+   "cited_by": 1496
+  },
+  "harness_paper": {
+   "title": "A Survey of Autonomous Driving: <i>Common Practices and Emerging Technologies</i>",
+   "year": 2020,
+   "venue": "IEEE Access",
+   "url": "https://doi.org/10.1109/access.2020.2983149",
+   "cited_by": 1724
+  },
+  "score": 3220
+ },
+ {
+  "bridge": "reward",
+  "bridge_zh": "奖赏与动机",
+  "spine": "采样温度与表现波动",
+  "adhd_support": 3654,
+  "harness_support": 8174,
+  "adhd_paper": {
+   "title": "Is ADHD a disinhibitory disorder?",
+   "year": 2001,
+   "venue": "Psychological Bulletin",
+   "url": "https://doi.org/10.1037/0033-2909.127.5.571",
+   "cited_by": 875
+  },
+  "harness_paper": {
+   "title": "A Comprehensive Survey of Multiagent Reinforcement Learning",
+   "year": 2008,
+   "venue": "IEEE Transactions on Systems Man and Cybernetics Part C (Applications and Reviews)",
+   "url": "https://doi.org/10.1109/tsmcc.2007.913919",
+   "cited_by": 2197
+  },
+  "score": 3072
+ },
+ {
+  "bridge": "working memory",
+  "bridge_zh": "工作记忆",
+  "spine": "无状态与外部记忆",
+  "adhd_support": 2494,
+  "harness_support": 378,
+  "adhd_paper": {
+   "title": "Is working memory training effective? A meta-analytic review.",
+   "year": 2012,
+   "venue": "Developmental Psychology",
+   "url": "https://doi.org/10.1037/a0028228",
+   "cited_by": 1776
+  },
+  "harness_paper": {
+   "title": "Synaptic Mechanisms and Network Dynamics Underlying Spatial Working Memory in a Cortical Network Model",
+   "year": 2000,
+   "venue": "Cerebral Cortex",
+   "url": "https://doi.org/10.1093/cercor/10.9.910",
+   "cited_by": 1225
+  },
+  "score": 3001
+ },
+ {
+  "bridge": "inhibition",
+  "bridge_zh": "抑制控制",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 4092,
+  "harness_support": 120,
+  "adhd_paper": {
+   "title": "Age-Dependent Decline of Symptoms of Attention Deficit Hyperactivity Disorder: Impact of Remission Definition and Symptom Type",
+   "year": 2000,
+   "venue": "American Journal of Psychiatry",
+   "url": "https://doi.org/10.1176/appi.ajp.157.5.816",
+   "cited_by": 1500
+  },
+  "harness_paper": {
+   "title": "The Role of Autophagy in Cancer: Therapeutic Implications",
+   "year": 2011,
+   "venue": "Molecular Cancer Therapeutics",
+   "url": "https://doi.org/10.1158/1535-7163.mct-11-0047",
+   "cited_by": 1225
+  },
+  "score": 2725
+ },
+ {
+  "bridge": "executive function",
+  "bridge_zh": "执行功能",
+  "spine": "外部执行功能层",
+  "adhd_support": 3319,
+  "harness_support": 25,
+  "adhd_paper": {
+   "title": "The Science of Mind Wandering: Empirically Navigating the Stream of Consciousness",
+   "year": 2014,
+   "venue": "Annual Review of Psychology",
+   "url": "https://doi.org/10.1146/annurev-psych-010814-015331",
+   "cited_by": 1725
+  },
+  "harness_paper": {
+   "title": "Neurobiology of Exercise",
+   "year": 2006,
+   "venue": "Obesity",
+   "url": "https://doi.org/10.1038/oby.2006.46",
+   "cited_by": 943
+  },
+  "score": 2668
+ },
+ {
+  "bridge": "self-regulation",
+  "bridge_zh": "自我调节与元认知",
+  "spine": "人在回路与身体在场",
+  "adhd_support": 1114,
+  "harness_support": 127,
+  "adhd_paper": {
+   "title": "Interventions shown to aid executive function development in children 4 to 12 years old.",
+   "year": 2011,
+   "venue": "",
+   "url": "https://doi.org/10.1126/science.1204529",
+   "cited_by": 1107
+  },
+  "harness_paper": {
+   "title": "Self-awareness, self-regulation, and self-transcendence (S-ART): a framework for understanding the neurobiological mechanisms of mindfulness",
+   "year": 2012,
+   "venue": "Frontiers in Human Neuroscience",
+   "url": "https://doi.org/10.3389/fnhum.2012.00296",
+   "cited_by": 1322
+  },
+  "score": 2429
+ },
+ {
+  "bridge": "task decomposition",
+  "bridge_zh": "任务分解与规划",
+  "spine": "规划循环与任务分解",
+  "adhd_support": 888,
+  "harness_support": 3417,
+  "adhd_paper": {
+   "title": "Evidence-Based Assessment of Attention Deficit Hyperactivity Disorder in Children and Adolescents",
+   "year": 2005,
+   "venue": "Journal of Clinical Child & Adolescent Psychology",
+   "url": "https://doi.org/10.1207/s15374424jccp3403_5",
+   "cited_by": 797
+  },
+  "harness_paper": {
+   "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+   "year": 2023,
+   "venue": "",
+   "url": "https://doi.org/10.1145/3586183.3606763",
+   "cited_by": 1482
+  },
+  "score": 2279
+ },
+ {
+  "bridge": "inhibition",
+  "bridge_zh": "抑制控制",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 4092,
+  "harness_support": 120,
+  "adhd_paper": {
+   "title": "Clinical Practice Guideline: Diagnosis and Evaluation of the Child With Attention-Deficit/Hyperactivity Disorder",
+   "year": 2000,
+   "venue": "PEDIATRICS",
+   "url": "https://doi.org/10.1542/peds.105.5.1158",
+   "cited_by": 1084
+  },
+  "harness_paper": {
+   "title": "The Role for Endoplasmic Reticulum Stress in Diabetes Mellitus",
+   "year": 2007,
+   "venue": "Endocrine Reviews",
+   "url": "https://doi.org/10.1210/er.2007-0015",
+   "cited_by": 1164
+  },
+  "score": 2248
+ },
+ {
+  "bridge": "inhibition",
+  "bridge_zh": "抑制控制",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 4092,
+  "harness_support": 120,
+  "adhd_paper": {
+   "title": "Sleep and mental disorders: A meta-analysis of polysomnographic research.",
+   "year": 2016,
+   "venue": "Psychological Bulletin",
+   "url": "https://doi.org/10.1037/bul0000053",
+   "cited_by": 1062
+  },
+  "harness_paper": {
+   "title": "A dual systems model of adolescent risk‐taking",
+   "year": 2010,
+   "venue": "Developmental Psychobiology",
+   "url": "https://doi.org/10.1002/dev.20445",
+   "cited_by": 1143
+  },
+  "score": 2205
+ },
+ {
+  "bridge": "working memory",
+  "bridge_zh": "工作记忆",
+  "spine": "无状态与外部记忆",
+  "adhd_support": 2494,
+  "harness_support": 378,
+  "adhd_paper": {
+   "title": "Training of Working Memory in Children With ADHD",
+   "year": 2002,
+   "venue": "Journal of Clinical and Experimental Neuropsychology",
+   "url": "https://doi.org/10.1076/jcen.24.6.781.8395",
+   "cited_by": 1229
+  },
+  "harness_paper": {
+   "title": "Wisconsin Card Sorting Revisited: Distinct Neural Circuits Participating in Different Stages of the Task Identified by Event-Related Functional Magnetic Resonance Imaging",
+   "year": 2001,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.21-19-07733.2001",
+   "cited_by": 971
+  },
+  "score": 2200
+ },
+ {
+  "bridge": "executive function",
+  "bridge_zh": "执行功能",
+  "spine": "外部执行功能层",
+  "adhd_support": 3319,
+  "harness_support": 25,
+  "adhd_paper": {
+   "title": "The role of prefrontal cortex in cognitive control and executive function",
+   "year": 2021,
+   "venue": "Neuropsychopharmacology",
+   "url": "https://doi.org/10.1038/s41386-021-01132-0",
+   "cited_by": 1638
+  },
+  "harness_paper": {
+   "title": "Working-memory capacity protects model-based learning from stress",
+   "year": 2013,
+   "venue": "Proceedings of the National Academy of Sciences",
+   "url": "https://doi.org/10.1073/pnas.1312011110",
+   "cited_by": 521
+  },
+  "score": 2159
+ },
+ {
+  "bridge": "inhibition",
+  "bridge_zh": "抑制控制",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 4092,
+  "harness_support": 120,
+  "adhd_paper": {
+   "title": "What do verbal fluency tasks measure? Predictors of verbal fluency performance in older adults",
+   "year": 2014,
+   "venue": "Frontiers in Psychology",
+   "url": "https://doi.org/10.3389/fpsyg.2014.00772",
+   "cited_by": 1022
+  },
+  "harness_paper": {
+   "title": "A developmental, mentalization-based approach to the understanding and treatment of borderline personality disorder",
+   "year": 2009,
+   "venue": "Development and Psychopathology",
+   "url": "https://doi.org/10.1017/s0954579409990198",
+   "cited_by": 1120
+  },
+  "score": 2142
+ },
+ {
+  "bridge": "working memory",
+  "bridge_zh": "工作记忆",
+  "spine": "无状态与外部记忆",
+  "adhd_support": 2494,
+  "harness_support": 378,
+  "adhd_paper": {
+   "title": "Is working memory training effective?",
+   "year": 2012,
+   "venue": "Psychological Bulletin",
+   "url": "https://doi.org/10.1037/a0027473",
+   "cited_by": 1108
+  },
+  "harness_paper": {
+   "title": "AT THE INTERFACE: DYNAMIC INTERACTIONS OF EXPLICIT AND IMPLICIT LANGUAGE KNOWLEDGE",
+   "year": 2005,
+   "venue": "Studies in Second Language Acquisition",
+   "url": "https://doi.org/10.1017/s027226310505014x",
+   "cited_by": 875
+  },
+  "score": 1983
+ },
+ {
+  "bridge": "error monitoring",
+  "bridge_zh": "错误监控与验证",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 226,
+  "harness_support": 2088,
+  "adhd_paper": {
+   "title": "Abnormal Brain Activation During Inhibition and Error Detection in Medication-Naive Adolescents With ADHD",
+   "year": 2005,
+   "venue": "American Journal of Psychiatry",
+   "url": "https://doi.org/10.1176/appi.ajp.162.6.1067",
+   "cited_by": 535
+  },
+  "harness_paper": {
+   "title": "Guidelines and Recommendations for Laboratory Analysis in the Diagnosis and Management of Diabetes Mellitus",
+   "year": 2011,
+   "venue": "Clinical Chemistry",
+   "url": "https://doi.org/10.1373/clinchem.2010.161596",
+   "cited_by": 1360
+  },
+  "score": 1895
+ },
+ {
+  "bridge": "task decomposition",
+  "bridge_zh": "任务分解与规划",
+  "spine": "规划循环与任务分解",
+  "adhd_support": 888,
+  "harness_support": 3417,
+  "adhd_paper": {
+   "title": "How specific are executive functioning deficits in attention deficit hyperactivity disorder and autism?",
+   "year": 2004,
+   "venue": "Journal of Child Psychology and Psychiatry",
+   "url": "https://doi.org/10.1111/j.1469-7610.2004.00276.x",
+   "cited_by": 702
+  },
+  "harness_paper": {
+   "title": "Current status of Landsat program, science, and applications",
+   "year": 2019,
+   "venue": "Remote Sensing of Environment",
+   "url": "https://doi.org/10.1016/j.rse.2019.02.015",
+   "cited_by": 1109
+  },
+  "score": 1811
+ },
+ {
+  "bridge": "goal maintenance",
+  "bridge_zh": "目标维持",
+  "spine": "重锚定与目标漂移",
+  "adhd_support": 240,
+  "harness_support": 145,
+  "adhd_paper": {
+   "title": "Working Memory From the Psychological and Neurosciences Perspectives: A Review",
+   "year": 2018,
+   "venue": "Frontiers in Psychology",
+   "url": "https://doi.org/10.3389/fpsyg.2018.00401",
+   "cited_by": 511
+  },
+  "harness_paper": {
+   "title": "Apathy and the Functional Anatomy of the Prefrontal Cortex–Basal Ganglia Circuits",
+   "year": 2005,
+   "venue": "Cerebral Cortex",
+   "url": "https://doi.org/10.1093/cercor/bhj043",
+   "cited_by": 1272
+  },
+  "score": 1783
+ },
+ {
+  "bridge": "task decomposition",
+  "bridge_zh": "任务分解与规划",
+  "spine": "规划循环与任务分解",
+  "adhd_support": 888,
+  "harness_support": 3417,
+  "adhd_paper": {
+   "title": "Psychological and Behavioral Impact of Lockdown and Quarantine Measures for COVID-19 Pandemic on Children, Adolescents and Caregivers: A Systematic Review and Meta-Analysis",
+   "year": 2020,
+   "venue": "Journal of Tropical Pediatrics",
+   "url": "https://doi.org/10.1093/tropej/fmaa122",
+   "cited_by": 636
+  },
+  "harness_paper": {
+   "title": "Decision-Theoretic Planning: Structural Assumptions and Computational Leverage",
+   "year": 1999,
+   "venue": "Journal of Artificial Intelligence Research",
+   "url": "https://doi.org/10.1613/jair.575",
+   "cited_by": 1099
+  },
+  "score": 1735
+ },
+ {
+  "bridge": "self-regulation",
+  "bridge_zh": "自我调节与元认知",
+  "spine": "人在回路与身体在场",
+  "adhd_support": 1114,
+  "harness_support": 127,
+  "adhd_paper": {
+   "title": "Inhibitory control and emotion regulation in preschool children",
+   "year": 2007,
+   "venue": "Cognitive Development",
+   "url": "https://doi.org/10.1016/j.cogdev.2007.08.002",
+   "cited_by": 682
+  },
+  "harness_paper": {
+   "title": "Job Demands–Resources theory and self-regulation: new explanations and remedies for job burnout",
+   "year": 2020,
+   "venue": "Anxiety Stress & Coping",
+   "url": "https://doi.org/10.1080/10615806.2020.1797695",
+   "cited_by": 1039
+  },
+  "score": 1721
+ },
+ {
+  "bridge": "working memory",
+  "bridge_zh": "工作记忆",
+  "spine": "无状态与外部记忆",
+  "adhd_support": 2494,
+  "harness_support": 378,
+  "adhd_paper": {
+   "title": "Toward Systems Neuroscience of ADHD: A Meta-Analysis of 55 fMRI Studies",
+   "year": 2012,
+   "venue": "American Journal of Psychiatry",
+   "url": "https://doi.org/10.1176/appi.ajp.2012.11101521",
+   "cited_by": 1063
+  },
+  "harness_paper": {
+   "title": "Beyond the Status Quo: A Role for Beta Oscillations in Endogenous Content (Re)Activation",
+   "year": 2017,
+   "venue": "eNeuro",
+   "url": "https://doi.org/10.1523/eneuro.0170-17.2017",
+   "cited_by": 650
+  },
+  "score": 1713
+ },
+ {
+  "bridge": "executive function",
+  "bridge_zh": "执行功能",
+  "spine": "外部执行功能层",
+  "adhd_support": 3319,
+  "harness_support": 25,
+  "adhd_paper": {
+   "title": "Contemporary intellectual assessment: theories, tests, and issues",
+   "year": 1997,
+   "venue": "Choice Reviews Online",
+   "url": "https://doi.org/10.5860/choice.34-5370",
+   "cited_by": 1238
+  },
+  "harness_paper": {
+   "title": "Orbitofrontal Cortex and Human Drug Abuse: Functional Imaging",
+   "year": 2000,
+   "venue": "Cerebral Cortex",
+   "url": "https://doi.org/10.1093/cercor/10.3.334",
+   "cited_by": 362
+  },
+  "score": 1600
+ },
+ {
+  "bridge": "goal maintenance",
+  "bridge_zh": "目标维持",
+  "spine": "重锚定与目标漂移",
+  "adhd_support": 240,
+  "harness_support": 145,
+  "adhd_paper": {
+   "title": "Conscious perception of errors and its relation to the anterior insula",
+   "year": 2010,
+   "venue": "Brain Structure and Function",
+   "url": "https://doi.org/10.1007/s00429-010-0261-1",
+   "cited_by": 484
+  },
+  "harness_paper": {
+   "title": "Trial-by-Trial Coupling of Concurrent Electroencephalogram and Functional Magnetic Resonance Imaging Identifies the Dynamics of Performance Monitoring",
+   "year": 2005,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.3286-05.2005",
+   "cited_by": 1064
+  },
+  "score": 1548
+ },
+ {
+  "bridge": "self-regulation",
+  "bridge_zh": "自我调节与元认知",
+  "spine": "人在回路与身体在场",
+  "adhd_support": 1114,
+  "harness_support": 127,
+  "adhd_paper": {
+   "title": "Self-regulatory processes in early personality development: A multilevel approach to the study of childhood social withdrawal and aggression",
+   "year": 2002,
+   "venue": "Development and Psychopathology",
+   "url": "https://doi.org/10.1017/s095457940200305x",
+   "cited_by": 571
+  },
+  "harness_paper": {
+   "title": "Self-Assessment in the Health Professions: A Reformulation and Research Agenda",
+   "year": 2005,
+   "venue": "Academic Medicine",
+   "url": "https://doi.org/10.1097/00001888-200510001-00015",
+   "cited_by": 971
+  },
+  "score": 1542
+ },
+ {
+  "bridge": "cognitive load",
+  "bridge_zh": "认知负荷与卸载",
+  "spine": "工具使用与认知卸载",
+  "adhd_support": 171,
+  "harness_support": 152,
+  "adhd_paper": {
+   "title": "Mental workload and neural efficiency quantified in the prefrontal cortex using fNIRS",
+   "year": 2017,
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/s41598-017-05378-x",
+   "cited_by": 382
+  },
+  "harness_paper": {
+   "title": "Toward a Rational and Mechanistic Account of Mental Effort",
+   "year": 2017,
+   "venue": "Annual Review of Neuroscience",
+   "url": "https://doi.org/10.1146/annurev-neuro-072116-031526",
+   "cited_by": 1146
+  },
+  "score": 1528
+ },
+ {
+  "bridge": "goal maintenance",
+  "bridge_zh": "目标维持",
+  "spine": "重锚定与目标漂移",
+  "adhd_support": 240,
+  "harness_support": 145,
+  "adhd_paper": {
+   "title": "Functional Connectivity Delineates Distinct Roles of the Inferior Frontal Cortex and Presupplementary Motor Area in Stop Signal Inhibition",
+   "year": 2009,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.1300-09.2009",
+   "cited_by": 475
+  },
+  "harness_paper": {
+   "title": "Goals and Habits in the Brain",
+   "year": 2013,
+   "venue": "Neuron",
+   "url": "https://doi.org/10.1016/j.neuron.2013.09.007",
+   "cited_by": 1027
+  },
+  "score": 1502
+ },
+ {
+  "bridge": "error monitoring",
+  "bridge_zh": "错误监控与验证",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 226,
+  "harness_support": 2088,
+  "adhd_paper": {
+   "title": "Methods in predictive techniques for mental health status on social media: a critical review",
+   "year": 2020,
+   "venue": "npj Digital Medicine",
+   "url": "https://doi.org/10.1038/s41746-020-0233-7",
+   "cited_by": 520
+  },
+  "harness_paper": {
+   "title": "Planning and Decision-Making for Autonomous Vehicles",
+   "year": 2018,
+   "venue": "Annual Review of Control Robotics and Autonomous Systems",
+   "url": "https://doi.org/10.1146/annurev-control-060117-105157",
+   "cited_by": 936
+  },
+  "score": 1456
+ },
+ {
+  "bridge": "self-regulation",
+  "bridge_zh": "自我调节与元认知",
+  "spine": "人在回路与身体在场",
+  "adhd_support": 1114,
+  "harness_support": 127,
+  "adhd_paper": {
+   "title": "Emotion-related self-regulation and its relation to children's maladjustment.",
+   "year": 2010,
+   "venue": "",
+   "url": "https://doi.org/10.1146/annurev.clinpsy.121208.131208",
+   "cited_by": 532
+  },
+  "harness_paper": {
+   "title": "Social origins of self-regulatory competence",
+   "year": 1997,
+   "venue": "Educational Psychologist",
+   "url": "https://doi.org/10.1207/s15326985ep3204_1",
+   "cited_by": 917
+  },
+  "score": 1449
+ },
+ {
+  "bridge": "cognitive load",
+  "bridge_zh": "认知负荷与卸载",
+  "spine": "工具使用与认知卸载",
+  "adhd_support": 171,
+  "harness_support": 152,
+  "adhd_paper": {
+   "title": "Spontaneous Brain Activity in the Default Mode Network Is Sensitive to Different Resting-State Conditions with Limited Cognitive Load",
+   "year": 2009,
+   "venue": "PLoS ONE",
+   "url": "https://doi.org/10.1371/journal.pone.0005743",
+   "cited_by": 315
+  },
+  "harness_paper": {
+   "title": "Variability of worked examples and transfer of geometrical problem-solving skills: A cognitive-load approach.",
+   "year": 1994,
+   "venue": "Journal of Educational Psychology",
+   "url": "https://doi.org/10.1037/0022-0663.86.1.122",
+   "cited_by": 1128
+  },
+  "score": 1443
+ },
+ {
+  "bridge": "goal maintenance",
+  "bridge_zh": "目标维持",
+  "spine": "重锚定与目标漂移",
+  "adhd_support": 240,
+  "harness_support": 145,
+  "adhd_paper": {
+   "title": "Developmental Coordination Disorder",
+   "year": 2003,
+   "venue": "Physical Therapy",
+   "url": "https://doi.org/10.1093/ptj/83.8.722",
+   "cited_by": 472
+  },
+  "harness_paper": {
+   "title": "Action and behavior: a free-energy formulation",
+   "year": 2010,
+   "venue": "Biological Cybernetics",
+   "url": "https://doi.org/10.1007/s00422-010-0364-z",
+   "cited_by": 850
+  },
+  "score": 1322
+ },
+ {
+  "bridge": "self-regulation",
+  "bridge_zh": "自我调节与元认知",
+  "spine": "人在回路与身体在场",
+  "adhd_support": 1114,
+  "harness_support": 127,
+  "adhd_paper": {
+   "title": "Methodological Note: Neurofeedback: A Comprehensive Review on System Design, Methodology and Clinical Applications",
+   "year": 2016,
+   "venue": "Basic and Clinical Neuroscience Journal",
+   "url": "https://doi.org/10.15412/j.bcn.03070208",
+   "cited_by": 476
+  },
+  "harness_paper": {
+   "title": "The evolution of self-control",
+   "year": 2014,
+   "venue": "Proceedings of the National Academy of Sciences",
+   "url": "https://doi.org/10.1073/pnas.1323533111",
+   "cited_by": 840
+  },
+  "score": 1316
+ },
+ {
+  "bridge": "attention allocation",
+  "bridge_zh": "注意调度",
+  "spine": "上下文工程",
+  "adhd_support": 622,
+  "harness_support": 35,
+  "adhd_paper": {
+   "title": "a dynamic developmental theory of attention-deficit/hyperactivity disorder (adhd) predominantly hyperactive/impulsive and combined subtypes",
+   "year": 2005,
+   "venue": "Behavioral and Brain Sciences",
+   "url": "https://doi.org/10.1017/s0140525x05000075",
+   "cited_by": 1035
+  },
+  "harness_paper": {
+   "title": "Not All Errors Are Alike: Theta and Alpha EEG Dynamics Relate to Differences in Error-Processing Dynamics",
+   "year": 2012,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.0802-12.2012",
+   "cited_by": 234
+  },
+  "score": 1269
+ },
+ {
+  "bridge": "working memory",
+  "bridge_zh": "工作记忆",
+  "spine": "无状态与外部记忆",
+  "adhd_support": 2494,
+  "harness_support": 378,
+  "adhd_paper": {
+   "title": "The role of prefrontal cortex in cognitive control and executive function.",
+   "year": 2022,
+   "venue": "",
+   "url": "https://doi.org/10.1038/s41386-021-01132-0",
+   "cited_by": 937
+  },
+  "harness_paper": {
+   "title": "Prefrontal cortex activity is reduced in gambling and nongambling substance users during decision‐making",
+   "year": 2007,
+   "venue": "Human Brain Mapping",
+   "url": "https://doi.org/10.1002/hbm.20344",
+   "cited_by": 309
+  },
+  "score": 1246
+ },
+ {
+  "bridge": "error monitoring",
+  "bridge_zh": "错误监控与验证",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 226,
+  "harness_support": 2088,
+  "adhd_paper": {
+   "title": "Annual Research Review: Childhood maltreatment, latent vulnerability and the shift to preventative psychiatry – the contribution of functional brain imaging",
+   "year": 2017,
+   "venue": "Journal of Child Psychology and Psychiatry",
+   "url": "https://doi.org/10.1111/jcpp.12713",
+   "cited_by": 381
+  },
+  "harness_paper": {
+   "title": "What is consciousness, and could machines have it?",
+   "year": 2017,
+   "venue": "Science",
+   "url": "https://doi.org/10.1126/science.aan8871",
+   "cited_by": 840
+  },
+  "score": 1221
+ },
+ {
+  "bridge": "goal maintenance",
+  "bridge_zh": "目标维持",
+  "spine": "重锚定与目标漂移",
+  "adhd_support": 240,
+  "harness_support": 145,
+  "adhd_paper": {
+   "title": "Consensus Paper: Cerebellum and Social Cognition",
+   "year": 2020,
+   "venue": "The Cerebellum",
+   "url": "https://doi.org/10.1007/s12311-020-01155-1",
+   "cited_by": 449
+  },
+  "harness_paper": {
+   "title": "Active inference and learning",
+   "year": 2016,
+   "venue": "Neuroscience & Biobehavioral Reviews",
+   "url": "https://doi.org/10.1016/j.neubiorev.2016.06.022",
+   "cited_by": 696
+  },
+  "score": 1145
+ },
+ {
+  "bridge": "error monitoring",
+  "bridge_zh": "错误监控与验证",
+  "spine": "幻觉与验证循环",
+  "adhd_support": 226,
+  "harness_support": 2088,
+  "adhd_paper": {
+   "title": "Self-regulation interventions for children with attention deficit/hyperactivity disorder",
+   "year": 2005,
+   "venue": "",
+   "url": "https://openalex.org/W1987418967",
+   "cited_by": 336
+  },
+  "harness_paper": {
+   "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+   "year": 2025,
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-025-09422-z",
+   "cited_by": 597
+  },
+  "score": 933
+ },
+ {
+  "bridge": "distraction",
+  "bridge_zh": "分心与走神",
+  "spine": "上下文工程",
+  "adhd_support": 422,
+  "harness_support": 59,
+  "adhd_paper": {
+   "title": "Therapeutic Doses of Oral Methylphenidate Significantly Increase Extracellular Dopamine in the Human Brain",
+   "year": 2001,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.21-02-j0001.2001",
+   "cited_by": 765
+  },
+  "harness_paper": {
+   "title": "Social Influence in Adolescent Decision-Making: A Formal Framework",
+   "year": 2019,
+   "venue": "Frontiers in Psychology",
+   "url": "https://doi.org/10.3389/fpsyg.2019.01915",
+   "cited_by": 167
+  },
+  "score": 932
+ },
+ {
+  "bridge": "attention allocation",
+  "bridge_zh": "注意调度",
+  "spine": "上下文工程",
+  "adhd_support": 622,
+  "harness_support": 35,
+  "adhd_paper": {
+   "title": "Norepinephrine ignites local hotspots of neuronal excitation: How arousal amplifies selectivity in perception and memory",
+   "year": 2015,
+   "venue": "Behavioral and Brain Sciences",
+   "url": "https://doi.org/10.1017/s0140525x15000667",
+   "cited_by": 725
+  },
+  "harness_paper": {
+   "title": "Inferring Relevance in a Changing World",
+   "year": 2012,
+   "venue": "Frontiers in Human Neuroscience",
+   "url": "https://doi.org/10.3389/fnhum.2011.00189",
+   "cited_by": 168
+  },
+  "score": 893
+ },
+ {
+  "bridge": "attention allocation",
+  "bridge_zh": "注意调度",
+  "spine": "上下文工程",
+  "adhd_support": 622,
+  "harness_support": 35,
+  "adhd_paper": {
+   "title": "Dopamine release from the locus coeruleus to the dorsal hippocampus promotes spatial learning and memory",
+   "year": 2016,
+   "venue": "Proceedings of the National Academy of Sciences",
+   "url": "https://doi.org/10.1073/pnas.1616515114",
+   "cited_by": 669
+  },
+  "harness_paper": {
+   "title": "Contradictory yet Coherent? Inconsistency in Performance Feedback and R&amp;D Investment Change",
+   "year": 2015,
+   "venue": "Journal of Management",
+   "url": "https://doi.org/10.1177/0149206315584821",
+   "cited_by": 116
+  },
+  "score": 785
+ },
+ {
+  "bridge": "distraction",
+  "bridge_zh": "分心与走神",
+  "spine": "上下文工程",
+  "adhd_support": 422,
+  "harness_support": 59,
+  "adhd_paper": {
+   "title": "Effect of classroom-based physical activity interventions on academic and physical activity outcomes: a systematic review and meta-analysis",
+   "year": 2017,
+   "venue": "International Journal of Behavioral Nutrition and Physical Activity",
+   "url": "https://doi.org/10.1186/s12966-017-0569-9",
+   "cited_by": 685
+  },
+  "harness_paper": {
+   "title": "Effects of anabolic-androgens on brain reward function",
+   "year": 2015,
+   "venue": "Frontiers in Neuroscience",
+   "url": "https://doi.org/10.3389/fnins.2015.00295",
+   "cited_by": 58
+  },
+  "score": 743
+ },
+ {
+  "bridge": "attention allocation",
+  "bridge_zh": "注意调度",
+  "spine": "上下文工程",
+  "adhd_support": 622,
+  "harness_support": 35,
+  "adhd_paper": {
+   "title": "‘Willpower’ over the life span: decomposing self-regulation",
+   "year": 2010,
+   "venue": "Social Cognitive and Affective Neuroscience",
+   "url": "https://doi.org/10.1093/scan/nsq081",
+   "cited_by": 592
+  },
+  "harness_paper": {
+   "title": "Brain–Computer Interface-Based Adaptive Automation to Prevent Out-Of-The-Loop Phenomenon in Air Traffic Controllers Dealing With Highly Automated Systems",
+   "year": 2019,
+   "venue": "Frontiers in Human Neuroscience",
+   "url": "https://doi.org/10.3389/fnhum.2019.00296",
+   "cited_by": 98
+  },
+  "score": 690
+ },
+ {
+  "bridge": "time perception",
+  "bridge_zh": "时间感知",
+  "spine": "外部执行功能层",
+  "adhd_support": 134,
+  "harness_support": 17,
+  "adhd_paper": {
+   "title": "Neurocognitive functions in pathological gambling: a comparison with alcohol dependence, Tourette syndrome and normal controls",
+   "year": 2006,
+   "venue": "Addiction",
+   "url": "https://doi.org/10.1111/j.1360-0443.2006.01380.x",
+   "cited_by": 468
+  },
+  "harness_paper": {
+   "title": "Reservoir Computing Properties of Neural Dynamics in Prefrontal Cortex",
+   "year": 2016,
+   "venue": "PLoS Computational Biology",
+   "url": "https://doi.org/10.1371/journal.pcbi.1004967",
+   "cited_by": 202
+  },
+  "score": 670
+ },
+ {
+  "bridge": "attention allocation",
+  "bridge_zh": "注意调度",
+  "spine": "上下文工程",
+  "adhd_support": 622,
+  "harness_support": 35,
+  "adhd_paper": {
+   "title": "Mental Training Enhances Attentional Stability: Neural and Behavioral Evidence",
+   "year": 2009,
+   "venue": "Journal of Neuroscience",
+   "url": "https://doi.org/10.1523/jneurosci.1614-09.2009",
+   "cited_by": 498
+  },
+  "harness_paper": {
+   "title": "Chronic treatment with a tryptophan-rich protein hydrolysate improves emotional processing, mental energy levels and reaction time in middle-aged women",
+   "year": 2015,
+   "venue": "British Journal Of Nutrition",
+   "url": "https://doi.org/10.1017/s0007114514003754",
+   "cited_by": 78
+  },
+  "score": 576
+ },
+ {
+  "bridge": "cognitive load",
+  "bridge_zh": "认知负荷与卸载",
+  "spine": "工具使用与认知卸载",
+  "adhd_support": 171,
+  "harness_support": 152,
+  "adhd_paper": {
+   "title": "Sensitivity of fNIRS to cognitive state and load",
+   "year": 2014,
+   "venue": "Frontiers in Human Neuroscience",
+   "url": "https://doi.org/10.3389/fnhum.2014.00076",
+   "cited_by": 303
+  },
+  "harness_paper": {
+   "title": "Expectations of reward and efficacy guide cognitive control allocation",
+   "year": 2021,
+   "venue": "Nature Communications",
+   "url": "https://doi.org/10.1038/s41467-021-21315-z",
+   "cited_by": 254
+  },
+  "score": 557
+ },
+ {
+  "bridge": "time perception",
+  "bridge_zh": "时间感知",
+  "spine": "外部执行功能层",
+  "adhd_support": 134,
+  "harness_support": 17,
+  "adhd_paper": {
+   "title": "Hippocampus and Amygdala Morphology in Attention-Deficit/Hyperactivity Disorder",
+   "year": 2006,
+   "venue": "Archives of General Psychiatry",
+   "url": "https://doi.org/10.1001/archpsyc.63.7.795",
+   "cited_by": 350
+  },
+  "harness_paper": {
+   "title": "Neural Underpinnings of Temporal Processing: Α Review of Focal Lesion, Pharmacological, and Functional Imaging Research",
+   "year": 1999,
+   "venue": "Reviews in the Neurosciences",
+   "url": "https://doi.org/10.1515/revneuro.1999.10.2.91",
+   "cited_by": 199
+  },
+  "score": 549
+ },
+ {
+  "bridge": "distraction",
+  "bridge_zh": "分心与走神",
+  "spine": "上下文工程",
+  "adhd_support": 422,
+  "harness_support": 59,
+  "adhd_paper": {
+   "title": "The Cognitive and Behavioral Characteristics of Children With Low Working Memory",
+   "year": 2009,
+   "venue": "Child Development",
+   "url": "https://doi.org/10.1111/j.1467-8624.2009.01282.x",
+   "cited_by": 488
+  },
+  "harness_paper": {
+   "title": "Autopilot, Mind Wandering, and the Out of the Loop Performance Problem",
+   "year": 2017,
+   "venue": "Frontiers in Neuroscience",
+   "url": "https://doi.org/10.3389/fnins.2017.00541",
+   "cited_by": 53
+  },
+  "score": 541
+ },
+ {
+  "bridge": "cognitive load",
+  "bridge_zh": "认知负荷与卸载",
+  "spine": "工具使用与认知卸载",
+  "adhd_support": 171,
+  "harness_support": 152,
+  "adhd_paper": {
+   "title": "Systematic review of the neural basis of social cognition in patients with mood disorders",
+   "year": 2012,
+   "venue": "Journal of Psychiatry and Neuroscience",
+   "url": "https://doi.org/10.1503/jpn.100179",
+   "cited_by": 274
+  },
+  "harness_paper": {
+   "title": "Challenging Cognitive Load Theory: The Role of Educational Neuroscience and Artificial Intelligence in Redefining Learning Efficacy",
+   "year": 2025,
+   "venue": "Brain Sciences",
+   "url": "https://doi.org/10.3390/brainsci15020203",
+   "cited_by": 217
+  },
+  "score": 491
+ },
+ {
+  "bridge": "distraction",
+  "bridge_zh": "分心与走神",
+  "spine": "上下文工程",
+  "adhd_support": 422,
+  "harness_support": 59,
+  "adhd_paper": {
+   "title": "Fundamentals of Attention-Deficit/Hyperactivity Disorder: Circuits and Pathways",
+   "year": 2006,
+   "venue": "The Primary Care Companion To The Journal of Clinical Psychiatry",
+   "url": "https://www.psychiatrist.com/read-pdf/7524",
+   "cited_by": 380
+  },
+  "harness_paper": {
+   "title": "Neuroevolution of self-interpretable agents",
+   "year": 2020,
+   "venue": "",
+   "url": "https://doi.org/10.1145/3377930.3389847",
+   "cited_by": 50
+  },
+  "score": 430
+ },
+ {
+  "bridge": "distraction",
+  "bridge_zh": "分心与走神",
+  "spine": "上下文工程",
+  "adhd_support": 422,
+  "harness_support": 59,
+  "adhd_paper": {
+   "title": "A computational psychiatry approach identifies how alpha-2A noradrenergic agonist Guanfacine affects feature-based reinforcement learning in the macaque",
+   "year": 2017,
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/srep40606",
+   "cited_by": 369
+  },
+  "harness_paper": {
+   "title": "Distract Large Language Models for Automatic Jailbreak Attack",
+   "year": 2024,
+   "venue": "",
+   "url": "https://doi.org/10.18653/v1/2024.emnlp-main.908",
+   "cited_by": 8
+  },
+  "score": 377
+ },
+ {
+  "bridge": "time perception",
+  "bridge_zh": "时间感知",
+  "spine": "外部执行功能层",
+  "adhd_support": 134,
+  "harness_support": 17,
+  "adhd_paper": {
+   "title": "Music Training Increases Phonological Awareness and Reading Skills in Developmental Dyslexia: A Randomized Control Trial",
+   "year": 2015,
+   "venue": "PLoS ONE",
+   "url": "https://doi.org/10.1371/journal.pone.0138715",
+   "cited_by": 334
+  },
+  "harness_paper": {
+   "title": "Dopamine, time perception, and future time perspective",
+   "year": 2018,
+   "venue": "Psychopharmacology",
+   "url": "https://doi.org/10.1007/s00213-018-4971-z",
+   "cited_by": 31
+  },
+  "score": 365
+ },
+ {
+  "bridge": "time perception",
+  "bridge_zh": "时间感知",
+  "spine": "外部执行功能层",
+  "adhd_support": 134,
+  "harness_support": 17,
+  "adhd_paper": {
+   "title": "The limbic system",
+   "year": 2007,
+   "venue": "Indian Journal of Psychiatry",
+   "url": "https://doi.org/10.4103/0019-5545.33264",
+   "cited_by": 326
+  },
+  "harness_paper": {
+   "title": "Cultural influences on the processing of social comparison feedback signals—an ERP study",
+   "year": 2018,
+   "venue": "Social Cognitive and Affective Neuroscience",
+   "url": "https://doi.org/10.1093/scan/nsy097",
+   "cited_by": 19
+  },
+  "score": 345
+ },
+ {
+  "bridge": "time perception",
+  "bridge_zh": "时间感知",
+  "spine": "外部执行功能层",
+  "adhd_support": 134,
+  "harness_support": 17,
+  "adhd_paper": {
+   "title": "Evidence for a pure time perception deficit in children with ADHD",
+   "year": 2002,
+   "venue": "Journal of Child Psychology and Psychiatry",
+   "url": "https://doi.org/10.1111/1469-7610.00043",
+   "cited_by": 308
+  },
+  "harness_paper": {
+   "title": "Deep learning for autonomous driving systems: technological innovations, strategic implementations, and business implications - a comprehensive review",
+   "year": 2025,
+   "venue": "Complex Engineering Systems",
+   "url": "https://doi.org/10.20517/ces.2024.83",
+   "cited_by": 15
+  },
+  "score": 323
+ },
+ {
+  "bridge": "cognitive load",
+  "bridge_zh": "认知负荷与卸载",
+  "spine": "工具使用与认知卸载",
+  "adhd_support": 171,
+  "harness_support": 152,
+  "adhd_paper": {
+   "title": "Dopamine antagonism decreases willingness to expend physical, but not cognitive, effort: a comparison of two rodent cost/benefit decision-making tasks.",
+   "year": 2015,
+   "venue": "",
+   "url": "https://doi.org/10.1038/npp.2014.285",
+   "cited_by": 112
+  },
+  "harness_paper": {
+   "title": "Protein sequence design with deep generative models",
+   "year": 2021,
+   "venue": "Current Opinion in Chemical Biology",
+   "url": "https://doi.org/10.1016/j.cbpa.2021.04.004",
+   "cited_by": 149
+  },
+  "score": 261
+ }
+]

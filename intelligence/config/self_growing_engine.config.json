@@ -1,0 +1,129 @@
+{
+  "engine_name": "adhd-ai-self-growing-content-engine",
+  "version": "0.1.0",
+  "project_goal": "Maintain exactly 400 ADHD × AI content packs by continuously collecting evidence, scoring new angles, upgrading weak packs, and recording replacement candidates without silently overwriting published assets.",
+  "daily_scout": {
+    "task_name": "adhd-ai-daily-scout",
+    "default_run_time": "08:05",
+    "max_items_per_run": 60,
+    "min_evidence_score": 14,
+    "min_replacement_candidate_score": 22,
+    "min_s_plus_candidate_score": 25,
+    "never_auto_replace": true
+  },
+  "queries": [
+    "ADHD AI executive function",
+    "ADHD agentic AI",
+    "AI tools ADHD productivity",
+    "cognitive offloading AI ADHD",
+    "digital therapeutics ADHD",
+    "AI diagnosis ADHD bias",
+    "neurodiversity workplace AI",
+    "AI hiring neurodiversity ADHD",
+    "attention economy ADHD AI",
+    "neurodivergent AI agents"
+  ],
+  "rss_sources": [
+    {
+      "name": "arXiv ADHD AI",
+      "kind": "arxiv",
+      "url": "http://export.arxiv.org/api/query?search_query=all:ADHD+AND+artificial+intelligence&sortBy=submittedDate&max_results=10",
+      "source_type": "paper",
+      "reliability": "B+"
+    },
+    {
+      "name": "arXiv neurodiversity AI",
+      "kind": "arxiv",
+      "url": "http://export.arxiv.org/api/query?search_query=all:neurodiversity+AND+AI&sortBy=submittedDate&max_results=10",
+      "source_type": "paper",
+      "reliability": "B+"
+    },
+    {
+      "name": "MIT AI News",
+      "kind": "rss",
+      "url": "https://news.mit.edu/topic/artificial-intelligence2/feed",
+      "source_type": "media",
+      "reliability": "A-"
+    },
+    {
+      "name": "TechCrunch AI",
+      "kind": "rss",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "source_type": "media",
+      "reliability": "B"
+    },
+    {
+      "name": "Product Hunt",
+      "kind": "rss",
+      "url": "https://www.producthunt.com/feed",
+      "source_type": "product",
+      "reliability": "B-"
+    }
+  ],
+  "curated_sources": [
+    {
+      "title": "CDC ADHD Data and Statistics",
+      "url": "https://www.cdc.gov/adhd/data/index.html",
+      "source": "CDC",
+      "source_type": "public_health_data",
+      "reliability": "A",
+      "summary": "ADHD diagnosis and treatment estimates vary by data source; useful for AI diagnosis boundary and dataset-bias arguments.",
+      "related_pack_ids": ["问题281", "问题286", "问题288", "问题290", "问题306", "问题392"]
+    },
+    {
+      "title": "NIMH Attention-Deficit/Hyperactivity Disorder",
+      "url": "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd",
+      "source": "NIMH",
+      "source_type": "medical_boundary",
+      "reliability": "A",
+      "summary": "ADHD remains a medical diagnosis and support/treatment topic; AI should be framed as external executive scaffolding, not a cure.",
+      "related_pack_ids": ["问题289", "问题292", "问题293", "问题294", "问题296", "问题392", "问题394"]
+    },
+    {
+      "title": "Job Accommodation Network ADHD Accommodation Ideas",
+      "url": "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm",
+      "source": "JAN",
+      "source_type": "workplace_accommodation",
+      "reliability": "A-",
+      "summary": "Workplace ADHD friction can be reframed as task, communication, environment, and feedback-interface design, supporting Agentic AI as digital accommodation.",
+      "related_pack_ids": ["问题333", "问题350", "问题377", "问题389", "问题390", "问题391", "问题395"]
+    },
+    {
+      "title": "Microsoft Neurodiversity Hiring Program",
+      "url": "https://www.microsoft.com/en-us/diversity/inside-microsoft/cross-disability/neurodiversityhiring",
+      "source": "Microsoft",
+      "source_type": "organization_case",
+      "reliability": "A-",
+      "summary": "Neurodiversity hiring is organizational interface design, not a charity story; useful for AI hiring and workplace system articles.",
+      "related_pack_ids": ["问题333", "问题350", "问题377", "问题400"]
+    },
+    {
+      "title": "EEOC Guidance on Adverse Impact in Software, Algorithms, and AI",
+      "url": "https://www.eeoc.gov/laws/guidance/select-issues-assessing-adverse-impact-software-algorithms-and-artificial",
+      "source": "EEOC",
+      "source_type": "policy",
+      "reliability": "A",
+      "summary": "AI employment tools cannot be assumed neutral; they should be assessed for adverse impact, including disability and neurodiversity concerns.",
+      "related_pack_ids": ["问题375", "问题377", "问题390", "问题400"]
+    }
+  ],
+  "scoring_dimensions": {
+    "pain_intensity": "Does this hit a specific high-variance ADHD pain instead of generic productivity advice?",
+    "adhd_ai_intersection": "Does it explain a real intersection between executive function and AI or Agentic AI?",
+    "evidence_strength": "Does it provide paper, policy, data, product, organization case, or user quote evidence?",
+    "product_entry_potential": "Can it become a template, checklist, prompt, table, agent, or service entry?",
+    "feedback_potential": "Will readers comment with concrete problems or ask for usable artifacts?"
+  },
+  "llm": {
+    "preferred_provider_order": ["anthropic", "google", "local"],
+    "anthropic_model": "claude-sonnet-4-6",
+    "google_model": "gemini-2.5-flash"
+  },
+  "llm_wiki": {
+    "raw_sources_dir": "knowledge/raw/sources",
+    "wiki_dir": "knowledge/wiki",
+    "index_file": "knowledge/index.md",
+    "log_file": "knowledge/log.md",
+    "schema_file": "knowledge/schema.md"
+  }
+}
