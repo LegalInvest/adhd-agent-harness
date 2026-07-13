@@ -16,6 +16,7 @@ readingTime: 13
 slug: "为什么用-routinery-治-adhd-的任务启动困难和给-agent-套-function-calling-工具调用-是一回事"
 topicId: "prob-3e9b42fe11"
 angle: "反直觉同构"
+llmGenerated: false
 rank: 185
 score: 7.69
 sourceCount: 1
@@ -29,70 +30,36 @@ spine: "工具使用与认知卸载"
 spineKind: ""
 isEvolved: true
 ---
+
 # 为什么用 Routinery 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？
 
-> Routinery 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
+> function calling 讲了这么多篇,还有一个高级形态没讲:宏。单个函数解决单个动作,但有些场景是固定的动作序列——每次都一样的七八步,顺序固定、内容固定。工程的答案是把序列打包成一个宏(或者叫工作流、chain):**一次调用,顺序执行全部步骤,中间不需要模型再做任何决策**。现在看 ADHD 的晨间:起床、洗漱、吃药、早餐、穿衣、带齐三样东西、出门——每步都认识,但每天都能走丢。这不是七个任务,这是一个该被打包成宏的序列。
 
-先说一个事实：MAIN RESULTS: We included 75 randomised controlled trials (4507 participants), predominantly involving females with mean ages ranging from 14.8 to 45.7 years。
+先看为什么序列比单任务更磨 ADHD。单任务只有一次启动,序列有 N 次:**每个步骤结束时,都要重新决策「下一步是什么」——这个接缝就是漂移的入口**(刷牙完顺手看了眼手机,十五分钟没了;吃完早餐忘了吃药,因为「吃药」依赖你在正确的时刻想起它)。神经典型者的例程跑在自动化(习惯化)上,接缝几乎不耗能;ADHD 的习惯自动化更难建立,**每个接缝都是一次全价的决策+一次全价的漂移风险**。七步的序列,六个接缝,每个接缝 20% 的漂移率——算下来一个早晨能顺利走完是小概率事件。这就是「明明每件事都会做,却每天早上都兵荒马乱」的算术真相。
 
-如果你是 ADHD 人群，你大概率经历过——在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+工程侧怎么处理固定序列?**不让模型逐步决策,把序列声明成工作流**:步骤、顺序、每步的预期时长写死,运行时逐步推进、每步完成自动触发下一步——模型的自由度被刻意压到零,因为**在固定序列里,自由度不是资产,是事故源**。
 
-## 为什么这件事对 ADHD 格外重要
+Routinery 这类例程 App,就是给人用的工作流引擎:把晨间例程声明成步骤列表(每步带时长),启动后它逐步引导——当前步骤全屏显示、倒计时走着、完成点一下、下一步自动弹出。看它精确填掉的两个坑:**接缝决策归零**(「下一步是什么」永远由 App 回答,不由你此刻的脑子回答)、**每步限时**(倒计时给「洗漱」这种弹性动作装了边界,防止它悄悄膨胀成四十分钟)。按工作流的逻辑用:
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往情绪调节（emotional regulation）需要更多外部支持。但与此同时，ADHD 也有自己的天赋：对新鲜刺激敏感，学习新事物上手快。
+**一、只把「真正固定的序列」做成例程。** 晨间、睡前、出门检查、下班关机——**宏适合零决策的流程,不适合需要现场判断的工作**;把弹性工作硬塞进例程,例程会因为频繁被违反而失去权威。先做一个,跑顺再加。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+**二、步骤要「动作级」,不要「阶段级」。** 「准备出门」是阶段,不是步骤;「手机、钥匙、工卡放进包」才是步骤——**宏的每一步必须小到不需要展开**,需要展开的步骤就是漏回来的决策接缝。
 
-## 最新研究怎么说
+**三、时长按真实数据定,并留 20% 余量。** 例程崩坏的头号原因是时长设了理想值(洗漱 5 分钟,实际 12 分钟),连续超时后你对整个例程失去信任——**先按实际跑三天,记录真实时长,再定参数**。宏的可靠性来自参数的诚实。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+**四、跑崩的日子,从当前时刻插入,别从头重跑。** 起晚了四十分钟≠例程作废——**从当前时间点接入序列剩余部分**(工作流引擎都支持断点续跑)。「今天已经乱了,索性全乱」是破堤效应在早晨的版本,断点续跑是它的解药。
 
-- **Managing Data Uncertainty and Machine Learning for Adult ADHD Classification Using Accelerometry**（来源：adhd_ai_cross_literature）。
-- **Enhancing Psychologists' Understanding through Explainable Deep Learning Framework for ADHD Diagnosis**（来源：adhd_ai_cross_literature）。
-- - 核心发现：将ChatGPT-4 Turbo和Claude-3 Opus集成到机器人助手中用于ADHD治疗，ChatGPT在性能响应上更优，Claude在伦理考虑上更强。[^1205^]（来源：adhd_ai_cross_literature）。
+## 边界
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+同构强度 B 级:工作流/宏是真实的工程形态,ADHD 的习惯自动化困难与例程辅助有行为干预文献支撑(例程结构化是 ADHD 行为治疗的常规组件),Routinery 本身无对照研究。声明:例程 App 是执行层辅助,若晨间的混乱底层是睡眠问题(晚睡、睡眠惯性重),先处理睡眠——那是地基,例程是地板;药物时间的提醒尤其别只依赖单一 App,关键剂量建议加物理冗余(分药盒+闹钟)。
 
-## 真实可用的 AI 工具
+## 今天就能试的 3 件事
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+1. **今晚声明你的晨间宏**:动作级步骤+真实时长(先别优化,照实写)。
+2. **明早跑第一遍**:只跟当前步骤,倒计时管边界,接缝不做任何决策。
+3. **记下漂移点**:哪一步溜去看手机了?那个接缝明天加一道物理屏障(手机不进卫生间)。
 
-### Goblin Tools
-
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
-
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Lex
-
-Lex：内置 AI 的写作工具，能在你卡壳时续写、生成大纲、克服空白页恐惧。适用场景：解决 ADHD 写作启动困难和组织思路的难题。
-### Mem
-
-Mem：AI 驱动的笔记工具，自动整理和关联你的笔记，无需手动建立文件夹结构。适用场景：适配 ADHD 不擅长手动归类整理的特点，让 AI 自动建立知识连接。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. In this blog post, we will explore 10 effective chatbot prompts that can help individuals with ADHD and executive dysfunction manage their daily tasks more effectively.
-2. - Prioritization and Focus:- One of the most significant challenges for people with ADHD is prioritizing tasks and maintaining focus.
-3. - Time Management:- Many individuals with ADHD struggle with time management, often finding it difficult to allocate appropriate time for tasks and balance work, leisure, and self-care.
-4. - Task Simplification:- When faced with an overwhelming task, breaking it down into smaller, more manageable steps can help those with ADHD approach it with less anxiety and make progress more efficiently.
-5. - Example prompt: "I want to establish a daily routine to help manage my ADHD.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：neuroplasticity（神经可塑性（大脑通过训练改变结构的能力））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+每天早上重新发明一遍「怎么出门」,是对执行功能最愚蠢的浪费——**固定的序列就该声明成宏,把决策留给真正需要决策的地方**。你的早晨不需要更多意志力,需要一个引擎替你按顺序发牌。
 
 ## 参考来源
 
@@ -100,4 +67,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 65 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 65 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*

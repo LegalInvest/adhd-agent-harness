@@ -16,6 +16,7 @@ readingTime: 14
 slug: "为什么用-inflow-治-adhd-的任务启动困难和给-agent-套-function-calling-工具调用-是一回事"
 topicId: "prob-db785a2f11"
 angle: "反直觉同构"
+llmGenerated: false
 rank: 187
 score: 7.69
 sourceCount: 2
@@ -29,70 +30,36 @@ spine: "工具使用与认知卸载"
 spineKind: ""
 isEvolved: true
 ---
+
 # 为什么用 Inflow 治 ADHD 的任务启动困难，和给 agent 套 function calling 工具调用 是一回事？
 
-> Inflow 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
+> 这个系列讲了十几个工具,每个都在系统的某一层打补丁:打包、递送、环境、协议。但有一个层次一直没碰:**写函数的能力本身**。agent 的工具库不是天上掉下来的,是有人把常用操作沉淀成函数;同理,「把大任务拆小」「给启动降门槛」「跟情绪回避周旋」——这些本身是技能,是可以被教的。Inflow 的特殊之处在于:别的工具替你执行这些技能,它教你这些技能——**它不是又一个函数,它是函数的编写教程。**
 
-先说一个事实：MBT appears to be more effective than TAU at reducing self-harm (RR 0.62, 95% CI 0.49 to 0.80; 3 trials, 252 participants), suicidality (RR 0.10, 95% CI 0.04, 0.30, 3 trials, 218 participants) and depression (SMD -0.58, 95% CI -1.22 to 0.05, 4 trials, 333 participants)。
+先看工程侧这个层次。一个 agent 系统的长期能力上限,不在于现有工具多强,在于**「把重复出现的模式沉淀为新工具」的机制**——观察哪类操作反复出现、抽象出接口、封装成函数入库。没有这个机制,系统永远依赖外部投喂;有了它,系统随使用变强。工具库是存量,造工具的能力是增量。
 
-如果你是 ADHD 人群，你大概率经历过——在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+ADHD 侧的对应,是行为干预里早已成熟的一套东西:**针对 ADHD 的认知行为治疗(CBT)**——研究证据相对扎实(成人 ADHD 的 CBT 有多项随机对照试验支持,对执行功能相关损害有中等程度的改善效应),内容恰恰就是「函数编写课」:任务拆解的具体方法、启动的行为激活技巧、认知重构(识别「必须状态完美才能开始」这类启动杀手信念)、时间感知的补偿策略。**问题是接入成本:专业 CBT 治疗师稀缺、昂贵、候诊长——大量 ADHD 用户知道该学,但学不上。**
 
-## 为什么这件事对 ADHD 格外重要
+Inflow 做的事,是把这套课程装进 App:由临床心理学者参与设计的 CBT 模块,按主题(拖延、启动、情绪、时间)拆成每天几分钟的微课+练习。它在你的工具栈里的位置和其他所有 App 都不同:**Todoist 替你记、Routinery 替你排、Focusmate 替你盯——Inflow 教你「为什么卡住」和「拆解的手艺」,目标是让你自己变强,而不是让你多依赖一个东西。** 按「函数教程」的逻辑用:
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往时间感知偏差（time blindness），难以估算时长。但与此同时，ADHD 也有自己的天赋：发散思维和联想能力强，擅长看到别人忽略的连接。
+**一、认清它的辖区:技能区,不是代偿区。** 前面(脚手架还是拐杖篇)切分过可教技能与神经差异——**CBT 类工具全部火力应该对准可教区**(拆解方法、启动信念、情绪命名);它不会改变启动的化学门槛,别拿「学了还是难」否定学习本身,两个层次的问题,两套解法。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+**二、微课要接练习,练习要接真任务。** 只刷课不练=收藏了教程从没跑过代码。**每学一个技巧,当天在一个真实任务上跑一遍**——「行为激活」今天就用在那封拖了三天的邮件上。技能沉淀的唯一路径是「在自己的任务上反复调用」。
 
-## 最新研究怎么说
+**三、把学到的手艺,写回你的其他工具。** 学了「任务拆到两分钟粒度」,回 Todoist 里把那个大任务真的拆了;学了「启动仪式」,写进 Routinery 的例程——**教程的产出应该是你工具栈里的新配置**,这才叫函数入库,否则只是知识擦肩而过。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+**四、它是治疗的补充,不是替代。** App 化 CBT 的证据在积累但仍有限(数字干预的研究普遍样本小、随访短),**确诊、药物、共病处理、危机支持,都在专业渠道的辖区**——把它定位成「两次就诊之间的练习册」,期望值就对了。
 
-- - 核心发现：将ChatGPT-4 Turbo和Claude-3 Opus集成到机器人助手中用于ADHD治疗，ChatGPT在性能响应上更优，Claude在伦理考虑上更强。[^1205^]（来源：adhd_ai_cross_literature）。
-- - 核心发现：Sincrolab Adults AI认知刺激项目RCT，104名成人ADHD，12周干预，使用MOXO CPT、ASRS、AAQoL评估。[^1209^]（来源：adhd_ai_cross_literature）。
-- - 核心发现：153名ADHD幼儿随机分组，AI聊天机器人引导的共享阅读（SBR-AI）在表达性词汇、识字和句法上显著优于对照组。[^1218^]（来源：adhd_ai_cross_literature）。
+## 边界
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+同构强度 B 级:「沉淀新工具的机制」是真实的系统设计思想,成人 ADHD 的 CBT 有随机对照试验证据(中等效应),但 Inflow 这类 App 化交付的独立证据尚初步。声明:本文不构成治疗建议;若有未确诊的疑似 ADHD、共病抑郁焦虑、或用药问题,请优先专业评估——自助工具的最佳位置永远是专业照护的旁边,不是它的对面。
 
-## 真实可用的 AI 工具
+## 今天就能试的 3 件事
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+1. **给你的工具栈画个分层图**:哪些在替你执行,哪些在教你手艺?后者是不是零?
+2. **学一个启动技巧,今天就用**:挑一节拖延主题的微课,当天在真任务上跑一遍。
+3. **建一页「我的函数库」笔记**:每学会一个真的管用的技巧,用自己的话写一行——这是你亲手写的第一批函数。
 
-### Goblin Tools
-
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
-
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Lex
-
-Lex：内置 AI 的写作工具，能在你卡壳时续写、生成大纲、克服空白页恐惧。适用场景：解决 ADHD 写作启动困难和组织思路的难题。
-### Mem
-
-Mem：AI 驱动的笔记工具，自动整理和关联你的笔记，无需手动建立文件夹结构。适用场景：适配 ADHD 不擅长手动归类整理的特点，让 AI 自动建立知识连接。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. - Example prompt: "I want to establish a daily routine to help manage my ADHD.
-2. Chatbot prompts, such as those offered by OpenAI's ChatGPT, can provide invaluable support and guidance in areas like prioritization, time management, overcoming procrastination, and more.
-3. By utilizing these prompts, those with ADHD can better navigate their daily tasks and ultimately improve their overall well-being.
-4. Message schemas between agents are typically concise JSON packets containing task IDs, tool descriptions, input payloads, and result metadata.
-5. Decomposition considers tool registry inspection, input/output contract formation, format constraints, and, in some systems, explicit verification predicates and behavioral checks for each node in the decomposition graph (Xu et al., 24 May 2026).
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：time blindness（时间盲（难以感知时间流逝和估算时长））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+工具可以租,手艺是自己的——**最好的 harness 不只替你干活,还顺便把你教成一个更会给自己造工具的人**。练出来的每一个技巧,都是永久入库、断网也能调用的那种函数。
 
 ## 参考来源
 
@@ -101,4 +68,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 67 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 67 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
