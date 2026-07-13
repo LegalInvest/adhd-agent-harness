@@ -26,7 +26,7 @@ jobs:
           cache-dependency-path: blog/package-lock.json
       - name: Install dependencies
         working-directory: blog
-        run: npm ci
+        run: npm ci --legacy-peer-deps
       - name: Build
         working-directory: blog
         env:
