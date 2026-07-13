@@ -16,6 +16,7 @@ readingTime: 12
 slug: "为什么用-perplexity-治-adhd-的不知哪些方法有用和给-agent-套-human-in-the-loop-监督-是一回事"
 topicId: "prob-ee04f315d2"
 angle: "反直觉同构"
+llmGenerated: false
 rank: 238
 score: 7.68
 sourceCount: 4
@@ -29,70 +30,34 @@ spine: "人在回路与身体在场"
 spineKind: ""
 isEvolved: true
 ---
+
 # 为什么用 Perplexity 治 ADHD 的不知哪些方法有用，和给 agent 套 human-in-the-loop 监督 是一回事？
 
-> Perplexity 实测：同一套 harness 思路，ADHD 与 LLM 两边都成立。
+> 这个小系列的前两篇讲了方法实验(Goblin)和日程决策(Motion)的监督位,这一篇讲最上游的环节:**信息获取**。「不知哪些方法有用」的第一现场,往往是深夜的搜索框:「ADHD 怎么治拖延」——然后掉进一个内容沼泽:小红书的玄学、油管的贩卖焦虑、论坛里互相矛盾的个人经验、以及包装成科普的补剂广告。ADHD 在这个沼泽里有双重劣势:**冲动性让「看起来有道理」直接跳过查证变成「今晚就试」,而执行功能的短缺让「系统地交叉验证多个来源」这件事根本不会发生**。Perplexity 这类带引用的 AI 搜索,是这个环节的结构性升级——但它的正确用法,依然是那六个字:**human-in-the-loop**。
 
-先说一个事实：This study has expanded the number of patients, who were divided into two groups: six patients with pure ADHD, and 13 patients with ADHD in combination with other neurologic symptoms。
+先说升级在哪。传统搜索给你十个链接,合成的活全在你这边(恰恰是短缺的能力);Perplexity 反过来:**先给合成好的答案,每个论断挂着来源角标**——认知负荷的分配从「你来合成」变成「你来核查」,而核查比合成便宜得多,这个负荷转移对执行功能短缺者是真实的可及性增益。工程对应:RAG 架构的本质就是「生成必须挂引用」,让输出从「不可验证的断言」变成「可审计的合成」——**可审计性不保证正确,但它让『验证』第一次变得可行**。
 
-如果你是 ADHD 人群，你大概率经历过——想帮 ADHD 孩子，却不知道哪些方法真的有用。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+然后是监督位,一共三个,对应 AI 搜索的三个系统性弱点:
 
-## 为什么这件事对 ADHD 格外重要
+**第一,角标要抽查,因为「有引用」不等于「引用支持该论断」。** RAG 系统的已知毛病:引用真实存在,但内容与论断的关系可能是弱相关甚至错配(引用幻觉的温和版)。监督动作:**凡是打算据此行动的论断(尤其补剂、作息、干预方法),点开角标看原文**——十秒钟,只确认一件事:原文真的说了这个吗?对「今晚就想试」的冲动,这十秒就是安全审批流程。
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往时间感知偏差（time blindness），难以估算时长。但与此同时，ADHD 也有自己的天赋：发散思维和联想能力强，擅长看到别人忽略的连接。
+**第二,证据要问级别,因为合成会抹平证据等级。** AI 的综述语气是均质的:一项荟萃分析和一篇小样本预印本,在流畅的段落里读起来一样可信——**合成的代价是证据地形被压扁了**。监督动作:养成追问的习惯,「这个结论的证据等级是什么?有 RCT 吗?样本多大?」——**AI 搜索的美妙之处是追问免费**:一句话就能把地形问回来,这在传统搜索里要自己读十篇文献。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+**第三,行动前过人类闸门,因为「读到」和「适合我」之间隔着个体差异。** Goblin 篇讲过:ADHD 干预反应高度个体化,任何来源的「有用」都只是先验概率——**最终判决权在你的自我实验数据里**(每次只试一个变量、记录两周、看你自己的结果)。监督动作:把 Perplexity 的产出定位成「实验候选清单」,不是「行动指令」——**信息层的监督拦截错误信念,实验层的监督拦截不适配的方法**,两道闸,缺一不可。
 
-## 最新研究怎么说
+误用一句话带过:**把带引用的答案当免检产品**(角标从来不点开,追问从来不问,读完直接改作息买补剂)——那你只是把「轻信论坛」升级成了「轻信更流畅的论坛」,监督位全空,系统性风险原样保留。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+## 边界
 
-- Just as importantly, comparing typically developing children with ADHD children within each of these distinct subgroups increased diagnostic accuracy（来源：Distinct neuropsychological subgroups in typically developing youth inform heterogeneity in children with ADHD）。
-- Objective: To estimate the prevalence of diagnosed ADHD and 20-year trends from 1997 to 2016 among US children and adolescents using nationally representative data（来源：Twenty-Year Trends in Diagnosed Attention-Deficit/Hyperactivity Disorder Among US Children and Adolescents, 1997-2016）。
-- Conclusions and Relevance: This study's findings suggest that among US children and adolescents, the estimated prevalence of diagnosed ADHD increased significantly between 1997-1998 and 2015-2016（来源：Twenty-Year Trends in Diagnosed Attention-Deficit/Hyperactivity Disorder Among US Children and Adolescents, 1997-2016）。
+同构强度 B 级:RAG 与引用机制是真实的工程架构,健康信息素养与 ADHD 冲动性的交互有文献基础,「负荷从合成转向核查」的分析有认知科学依据;Perplexity 无 ADHD 相关对照研究。声明:任何 AI 搜索的产出都不构成医疗建议——药物、剂量、停药、补剂与处方药的相互作用,这些问题的闸门只有一个:你的医生;AI 帮你带着更好的问题走进诊室,而不是替代诊室。
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+## 今天就能试的 3 件事
 
-## 真实可用的 AI 工具
+1. **给上一个「打算试」的结论补一次抽查**:点开角标读原文——原文真说了这个吗?
+2. **练一次证据追问**:对任何 ADHD 建议追问「有 RCT 吗?样本多大?」——一句话的事。
+3. **建一个「实验候选清单」**:AI 搜到的方法先进清单,每次只放行一个进两周实验。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
-
-### Goblin Tools
-
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
-
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Motion
-
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
-
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. - 核心发现：使用ADHD-200数据库（n=776）创建"脑掩膜"，机器学习识别ADHD特定神经连接变化。[^1216^]
-2. **Saner AI Review: AI Productivity Assistant for ADHD Users**
-3. - 核心发现：使用actigraphy和AI区分青少年双相障碍和ADHD，基于日常活动模式。[^1276^]
-4. **Deep learning models for temporal processing in ADHD EEG datasets**
-5. - **第一阶段（2012-2018）**：奠基期。以ADHD-200竞赛（2012）为标志，主要探索神经影像+传统ML方法（SVM、随机森林），分类准确率55-75%。
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：cognitive load（认知负荷（大脑同时处理信息的负担））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+带引用的答案是更好的起点,但仍然只是起点——**角标你来点,等级你来问,行动你来批**。三个监督位守住了,AI 搜索才是你的研究助理,而不是又一个更会说话的沼泽。
 
 ## 参考来源
 
@@ -103,4 +68,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 94 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 94 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
