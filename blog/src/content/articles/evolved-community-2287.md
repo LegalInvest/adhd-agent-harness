@@ -16,8 +16,8 @@ readingTime: 7
 slug: "为什么用-chatgpt-治-adhd-的感到孤立缺问责和给-agent-套-human-in-the-loop-监督-是一回事"
 topicId: "evolved-community-2287"
 angle: "反直觉同构"
-rank: 161
-score: 7.79
+rank: 90
+score: 7.8
 sourceCount: 6
 toolsCited:
   - "Motion"

@@ -16,8 +16,8 @@ readingTime: 14
 slug: "3-个-llm-工程概念彻底重写了我对-adhd-被批评却不知道错在哪一步反馈延迟就失去动力的理解"
 topicId: "prob-e4598acf9d"
 angle: "数字清单"
-rank: 65
-score: 7.9
+rank: 17
+score: 8.08
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

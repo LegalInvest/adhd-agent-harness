@@ -11,6 +11,7 @@ import re
 from dataclasses import dataclass
 
 from engine.knowledge import KnowledgeRetriever
+from engine.attention import score_attention
 
 
 @dataclass
@@ -22,6 +23,7 @@ class ScoreDimensions:
     practical_value: float        # 实用价值 (1-10)
     emotional_resonance: float    # 情感共鸣 (1-10)
     share_potential: float        # 分享潜力 (1-10)
+    attention: float              # 注意力分（Upworthy 22,680 组 A/B 测试校准）(1-10)
 
     def to_dict(self) -> dict:
         return {
@@ -32,19 +34,21 @@ class ScoreDimensions:
             "practical_value": round(self.practical_value, 2),
             "emotional_resonance": round(self.emotional_resonance, 2),
             "share_potential": round(self.share_potential, 2),
+            "attention": round(self.attention, 2),
         }
 
 
 # 评分权重：证据强度 + 同构脊柱契合度并列为最高权重，
 # 体现"事实驱动 + 以 ADHD↔LLM 同构为脊柱"的双重理念。
 DEFAULT_WEIGHTS = {
-    "seo_potential": 0.14,
-    "cross_platform": 0.13,
+    "seo_potential": 0.12,
+    "cross_platform": 0.11,
     "evidence_strength": 0.22,
-    "isomorphism_alignment": 0.22,
-    "practical_value": 0.13,
-    "emotional_resonance": 0.08,
-    "share_potential": 0.08,
+    "isomorphism_alignment": 0.20,
+    "practical_value": 0.11,
+    "emotional_resonance": 0.07,
+    "share_potential": 0.07,
+    "attention": 0.10,
 }
 
 # 同构脊柱信号词：标题/副标题命中越多，说明越贴合「ADHD↔LLM 同构」脊柱
@@ -271,6 +275,7 @@ def score_topic(topic: dict, retriever: KnowledgeRetriever | None = None) -> Sco
         practical_value=round(practical_score, 2),
         emotional_resonance=round(emotion_score, 2),
         share_potential=round(share_score, 2),
+        attention=round(score_attention(title, subtitle), 2),
     )
 
 
@@ -284,6 +289,7 @@ def compute_weighted_score(dimensions: ScoreDimensions, weights: dict | None = N
         + dimensions.practical_value * w["practical_value"]
         + dimensions.emotional_resonance * w["emotional_resonance"]
         + dimensions.share_potential * w["share_potential"]
+        + dimensions.attention * w["attention"]
     )
     return round(total, 2)
 

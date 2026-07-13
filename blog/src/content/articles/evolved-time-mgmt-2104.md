@@ -16,8 +16,8 @@ readingTime: 10
 slug: "为什么用-claude-治-adhd-的时间盲和给-agent-套-planner-executor-任务分解-是一回事"
 topicId: "evolved-time-mgmt-2104"
 angle: "反直觉同构"
-rank: 182
-score: 7.75
+rank: 125
+score: 7.77
 sourceCount: 6
 toolsCited:
   - "Motion"

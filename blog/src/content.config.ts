@@ -26,6 +26,8 @@ const articles = defineCollection({
     spine: z.string().optional(),
     spineKind: z.string().optional(),
     llmGenerated: z.boolean().optional(),
+    isoStrength: z.string().optional(),
+    caseStudies: z.array(z.string()).optional(),
   }),
 });
 

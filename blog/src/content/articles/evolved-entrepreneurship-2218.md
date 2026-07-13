@@ -16,8 +16,8 @@ readingTime: 8
 slug: "为什么用-chatgpt-治-adhd-的想法落地难和给-agent-套-外部编排调度层-是一回事"
 topicId: "evolved-entrepreneurship-2218"
 angle: "反直觉同构"
-rank: 159
-score: 7.79
+rank: 88
+score: 7.8
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

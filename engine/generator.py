@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 
 from engine.knowledge import KnowledgeRetriever, CORE_CONCEPTS
 from engine.grade import label as grade_label
+from engine.iso_strength import grade_iso_strength
 
 
 def _seed_from(text: str) -> int:
@@ -419,7 +420,10 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm, case_retr
         f"- [{s['title']}]({s['url']}) — {grade_label(s['title'], s['url'])}"
         for s in wiki_sources[:6]
     ]
-    refs_block = ("\n\n## 参考来源\n\n" + "\n".join(refs)) if refs else ""
+    iso_grade, iso_label = grade_iso_strength(wiki_sources[:6])
+    refs_block = (
+        f"\n\n## 参考来源\n\n**同构强度：{iso_grade} 级** —— {iso_label}\n\n" + "\n".join(refs)
+    ) if refs else ""
 
     full_content = (
         f"# {title}\n\n"
@@ -455,6 +459,7 @@ def generate_article_llm(topic: dict, index: int, wiki_retriever, llm, case_retr
         "spineKind": spine_kind,
         "isEvolved": topic.get("is_evolved", False),
         "llmGenerated": True,
+        "isoStrength": iso_grade,
         "caseStudies": [c["name"] for c in cases],
     }
     return {

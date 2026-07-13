@@ -16,8 +16,8 @@ readingTime: 7
 slug: "为什么用-perplexity-治-adhd-的注意力涣散和给-agent-套-上下文工程-是一回事"
 topicId: "evolved-focus-2091"
 angle: "反直觉同构"
-rank: 324
-score: 7.68
+rank: 161
+score: 7.71
 sourceCount: 6
 toolsCited:
   - "Perplexity"
