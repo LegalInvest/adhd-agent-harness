@@ -27,6 +27,7 @@ const categoryColors: Record<string, string> = {
   "community": "bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300",
 };
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const colorClass = categoryColors[article.data.categoryId] || "bg-gray-100 text-gray-700";
 ---
 
@@ -35,7 +36,7 @@ const colorClass = categoryColors[article.data.categoryId] || "bg-gray-100 text-
     <!-- Header -->
     <header class="mb-10">
       <div class="flex items-center gap-3 mb-4">
-        <a href="/" class="text-sm text-[var(--color-text-secondary)] hover:text-brand-500 transition-colors">
+        <a href={`${base}/`} class="text-sm text-[var(--color-text-secondary)] hover:text-brand-500 transition-colors">
           &larr; 返回首页
         </a>
         <span class="text-[var(--color-text-secondary)]">/</span>
@@ -96,7 +97,7 @@ const colorClass = categoryColors[article.data.categoryId] || "bg-gray-100 text-
     <!-- Footer navigation -->
     <nav class="mt-16 border-t border-[var(--color-border)] pt-8">
       <a
-        href="/"
+        href={`${base}/`}
         class="inline-flex items-center gap-2 rounded-xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-600 hover:shadow-lg"
       >
         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

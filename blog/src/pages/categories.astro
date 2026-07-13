@@ -98,7 +98,7 @@ const categories = Array.from(categoriesMap.values()).map((cat) => ({
           <div class="mt-4 space-y-2">
             {cat.topArticles.map((article) => (
               <a
-                href={`/articles/${article.slug}`}
+                href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/articles/${article.slug}`}
                 class="block truncate text-sm text-[var(--color-text-secondary)] transition-colors hover:text-brand-500"
               >
                 &rarr; {article.title}

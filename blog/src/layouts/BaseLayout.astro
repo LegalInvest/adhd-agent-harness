@@ -7,6 +7,7 @@ interface Props {
 
 const { title, description = "ADHD × AI - 400 篇精选文章，探索 ADHD 与 AI 的无限可能", ogImage } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <!doctype html>
@@ -30,14 +31,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] antialiased">
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur-xl">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="/" class="flex items-center gap-3">
+        <a href={`${base}/`} class="flex items-center gap-3">
           <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-purple-500 text-lg font-bold text-white shadow-lg shadow-brand-500/25">
             A
           </div>
@@ -48,13 +49,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           </div>
         </a>
         <div class="flex items-center gap-6">
-          <a href="/" class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
+          <a href={`${base}/`} class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
             首页
           </a>
-          <a href="/categories" class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
+          <a href={`${base}/categories`} class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
             分类
           </a>
-          <a href="/about" class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
+          <a href={`${base}/about`} class="text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]">
             关于
           </a>
           <button
@@ -96,17 +97,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           <div>
             <h3 class="font-semibold">分类</h3>
             <ul class="mt-3 space-y-2 text-sm text-[var(--color-text-secondary)]">
-              <li><a href="/categories" class="hover:text-brand-500 transition-colors">AI工具实战</a></li>
-              <li><a href="/categories" class="hover:text-brand-500 transition-colors">专注力管理</a></li>
-              <li><a href="/categories" class="hover:text-brand-500 transition-colors">时间管理</a></li>
-              <li><a href="/categories" class="hover:text-brand-500 transition-colors">情绪调节</a></li>
+              <li><a href={`${base}/categories`} class="hover:text-brand-500 transition-colors">AI工具实战</a></li>
+              <li><a href={`${base}/categories`} class="hover:text-brand-500 transition-colors">专注力管理</a></li>
+              <li><a href={`${base}/categories`} class="hover:text-brand-500 transition-colors">时间管理</a></li>
+              <li><a href={`${base}/categories`} class="hover:text-brand-500 transition-colors">情绪调节</a></li>
             </ul>
           </div>
           <div>
             <h3 class="font-semibold">更多</h3>
             <ul class="mt-3 space-y-2 text-sm text-[var(--color-text-secondary)]">
-              <li><a href="/about" class="hover:text-brand-500 transition-colors">关于我们</a></li>
-              <li><a href="/categories" class="hover:text-brand-500 transition-colors">所有分类</a></li>
+              <li><a href={`${base}/about`} class="hover:text-brand-500 transition-colors">关于我们</a></li>
+              <li><a href={`${base}/categories`} class="hover:text-brand-500 transition-colors">所有分类</a></li>
             </ul>
           </div>
         </div>

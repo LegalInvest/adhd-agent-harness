@@ -3,7 +3,8 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://adhd-ai.blog",
+  site: process.env.SITE_URL || "https://adhd-ai.blog",
+  base: process.env.BASE_PATH || "/",
   integrations: [tailwind(), sitemap()],
   markdown: {
     shikiConfig: {
