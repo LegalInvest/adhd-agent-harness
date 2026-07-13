@@ -498,7 +498,7 @@
       "type": "concept",
       "slug": "认知负荷",
       "path": "concepts/认知负荷.md",
-      "summary": "认知负荷是ADHD个体因工作记忆缺陷而面临的核心挑战，AI工具通过外化思维、自动决策和视觉组织等方式显著降低认知负荷，但需警惕工具本身增加负担的风险。",
+      "summary": "认知负荷是工作记忆在处理信息时承受的心理努力总量，ADHD个体因执行功能与工作记忆有限更易超载；AI与认知卸载研究被视为可桥接ADHD和AI agentic harness的共享机制。",
       "cross_links": [
         "执行功能",
         "工作记忆",
@@ -510,6 +510,14 @@
         "Reclaim.ai"
       ],
       "sources": [
+        {
+          "title": "LBD同构对：认知负荷与卸载 — Mental workload and neural efficiency quantified in the pref ↔ Toward a Rational and Mechanistic Account of Mental Effort",
+          "url": "https://doi.org/10.1038/s41598-017-05378-x"
+        },
+        {
+          "title": "LBD同构对：认知负荷与卸载 — Spontaneous Brain Activity in the Default Mode Network Is Se ↔ Variability of worked examples and transfer of geometrical p",
+          "url": "https://doi.org/10.1371/journal.pone.0005743"
+        },
         {
           "title": "Getting Started with AI for ADHD for ADHD: AI Tools... | Blue Orchid",
           "url": "https://www.blueorchid.world/adhd/guides/getting-started-with-ai-for-adhd"
@@ -527,16 +535,8 @@
           "url": "https://www.heidihealth.com/en-us/blog/adhd-assessment-form-template"
         },
         {
-          "title": "Spontaneous Brain Activity in the Default Mode Network Is Sensitive to Different Resting-State Conditions with Limited Cognitive Load",
-          "url": "https://doi.org/10.1371/journal.pone.0005743"
-        },
-        {
           "title": "Sensitivity of fNIRS to cognitive state and load",
           "url": "https://doi.org/10.3389/fnhum.2014.00076"
-        },
-        {
-          "title": "Systematic review of the neural basis of social cognition in patients with mood disorders",
-          "url": "https://doi.org/10.1503/jpn.100179"
         }
       ],
       "ingested_source_hashes": [
@@ -546,6 +546,7 @@
         "241464074b9d",
         "2686e6816576",
         "2a8c00b7495a",
+        "3bffe8c6cba9",
         "44bf338be8da",
         "477afdc25a1d",
         "4e50b1781b35",
@@ -555,6 +556,7 @@
         "77c704a0bbd2",
         "8006805778ba",
         "91c9b338e961",
+        "9856b237e581",
         "9b3b46501226",
         "9fd3cf8b619e",
         "b1625fa6d68e",
@@ -566,7 +568,7 @@
         "f33580fd19c6",
         "f7c2aa64c266"
       ],
-      "updated_at": "2026-07-06T06:45:55.383102+00:00"
+      "updated_at": "2026-07-13T06:31:59.566186+00:00"
     },
     "concept:情绪失调": {
       "name": "情绪失调",
@@ -1664,7 +1666,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-07T08:23:05.061506+00:00"
+      "updated_at": "2026-07-13T06:43:34.333625+00:00"
     },
     "topic:AI 与 ADHD 的专注力": {
       "name": "AI 与 ADHD 的专注力",
@@ -1722,7 +1724,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-07T08:25:00.930289+00:00"
+      "updated_at": "2026-07-13T06:43:34.341781+00:00"
     },
     "topic:AI 与 ADHD 的情绪调节": {
       "name": "AI 与 ADHD 的情绪调节",
@@ -1747,7 +1749,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-07T08:26:04.941099+00:00"
+      "updated_at": "2026-07-13T06:43:34.343972+00:00"
     },
     "topic:AI 与 ADHD 的学习方式": {
       "name": "AI 与 ADHD 的学习方式",
@@ -1796,7 +1798,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-07T08:28:50.871495+00:00"
+      "updated_at": "2026-07-13T06:43:34.349440+00:00"
     },
     "topic:ADHD × AI 的科学与研究前沿": {
       "name": "ADHD × AI 的科学与研究前沿",
@@ -1846,7 +1848,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-07T08:31:26.524949+00:00"
+      "updated_at": "2026-07-13T06:43:34.355408+00:00"
     },
     "concept:神经可塑性": {
       "name": "神经可塑性",
@@ -3178,7 +3180,7 @@
     "tool_pages": 22,
     "topic_pages": 8,
     "llm_model": "kimi-latest",
-    "built_at": "2026-07-07T08:35:39.506176+00:00",
+    "built_at": "2026-07-13T06:44:05.549746+00:00",
     "source_adhd": 4230,
     "source_harness": 4051,
     "spine_pages": 12
