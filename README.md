@@ -80,6 +80,8 @@ ABCoding/
 ## 快速开始
 
 ```bash
+# 建议使用 Python 3.10+ 和 Node.js 20+
+
 # 安装 Python 依赖
 pip install -r requirements.txt
 
@@ -92,6 +94,26 @@ cd blog && npm install
 # 启动开发服务器
 npm run dev
 ```
+
+内容引擎会访问公开网络并更新 `data/` 下的研究、选题和文章产物。首次全量执行前建议先提交当前数据快照；只做静态验收时无需运行完整 400 篇管线。
+
+## 密钥与配置
+
+当前代码不需要 API Key、Token 或登录凭据。研究模块通过公开搜索与网页抓取获取资料，因此需要正常网络连接，并应遵守来源站点的访问规则。
+
+## 最小验收
+
+```bash
+# Python 源码静态验收，不触发网络抓取
+python -m compileall engine
+
+# 博客生产构建
+cd blog
+npm install
+npm run build
+```
+
+`npm run build` 成功后，静态交付物位于 `blog/dist/`。完整内容管线验收再单独执行 `python -m engine.pipeline`，并检查 `data/` 与博客文章是否同步更新。
 
 ## 部署
 
