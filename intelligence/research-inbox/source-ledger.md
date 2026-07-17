@@ -65,3 +65,26 @@
 | 2026-06-25 | Product Hunt | Swimio | https://www.producthunt.com/products/swimio | B- | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
 | 2026-06-25 | TechCrunch AI | Agility Robotics plans to go public via SPAC in a $2.5B deal | https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/ | B |  | archive only |
 | 2026-06-25 | TechCrunch AI | Facebook rolls out an AI companion app for creators | https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | TechCrunch AI | Hermes agent maker Nous Research in talks for new funding at $1.5B valuation | https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/ | B | 问题353, 问题098, 问题359, 问题356, 问题122, 问题211, 问题255, 问题341 | archive only |
+| 2026-07-15 | arXiv ADHD AI | SABER: A Semantic-Aligned Brain Network Analysis Framework via Multi-scale Hypergraphs | https://arxiv.org/abs/2607.01901v1 | B+ | 问题281, 问题392, 问题306, 问题391, 问题289, 问题019, 问题134, 问题196 | archive only |
+| 2026-07-15 | TechCrunch AI | Meta’s Adam Mosseri says AI token budgets could soon be capped per engineer | https://techcrunch.com/2026/07/14/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | TechCrunch AI | Google Images gets a Pinterest-like redesign focused on discovery | https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/ | B |  | archive only |
+| 2026-07-15 | TechCrunch AI | Reflection inks $1B compute deal with Nebius | https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | TechCrunch AI | The real AI race may no longer be at the frontier | https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | TechCrunch AI | Spotify expands its AI push with a ChatGPT-like music assistant | https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | TechCrunch AI | Superhuman’s new auto-draft feature almost makes me like AI replies | https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | TechCrunch AI | Already rich, already successful, why the last wave of tech winners is grinding again | https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/ | B | 问题098, 问题110, 问题122, 问题127, 问题188, 问题199, 问题204, 问题312 | archive only |
+| 2026-07-15 | TechCrunch AI | Uber’s product chief on hotels, robotaxis, and why the company doesn’t want to be ‘everything for everyone’ | https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/ | B | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | Product Hunt | ClawTeams | https://www.producthunt.com/products/clawteams | B- | 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359 | archive only |
+| 2026-07-15 | Product Hunt | Claude Overlay | https://www.producthunt.com/products/claude-overlay | B- |  | archive only |
+| 2026-07-15 | Product Hunt | loopclub | https://www.producthunt.com/products/loopclub | B- |  | archive only |
+| 2026-07-15 | TechCrunch AI | New York State halts construction of all new data centers | https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/ | B |  | archive only |
+| 2026-07-15 | TechCrunch AI | Video-generation startup PixVerse raises $439M, valuation soars past $2B | https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/ | B |  | archive only |
+| 2026-07-15 | Product Hunt | Branda | https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker | B- |  | archive only |
+| 2026-07-15 | Product Hunt | Mojave Paint | https://www.producthunt.com/products/mojave-paint | B- |  | archive only |
+| 2026-07-15 | Product Hunt | Pazi | https://www.producthunt.com/products/pazi | B- |  | archive only |
+| 2026-07-15 | Product Hunt | Goose Ads Remixer | https://www.producthunt.com/products/gooseworks | B- |  | archive only |
+| 2026-07-15 | Product Hunt | BugShot | https://www.producthunt.com/products/bugshot-3 | B- |  | archive only |
+| 2026-07-15 | Product Hunt | Animos App | https://www.producthunt.com/products/animos-app | B- |  | archive only |
+| 2026-07-15 | Product Hunt | Trump Accounts | https://www.producthunt.com/products/trump-accounts | B- |  | archive only |
+| 2026-07-15 | Product Hunt | Flyout | https://www.producthunt.com/products/flyout | B- |  | archive only |

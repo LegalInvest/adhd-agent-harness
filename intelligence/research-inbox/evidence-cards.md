@@ -747,3 +747,302 @@
 - Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
 - Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
 - Possible action: archive only
+
+### Evidence Card rss_965e2f380a4c
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/
+- Evidence type: media
+- Claim supported: The company is raising at least $75 million, led by Robot Ventures, with significant participation from USV and other prominent investors.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题353, 问题098, 问题359, 问题356, 问题122, 问题211, 问题255, 问题341
+- Score: 12/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=3, feedback_potential=2)
+- Possible action: archive only
+
+### Evidence Card rss_3b261d90b433
+
+- Date: 2026-07-15
+- Source: arXiv ADHD AI
+- URL: https://arxiv.org/abs/2607.01901v1
+- Evidence type: paper
+- Claim supported: Effective brain disease diagnosis requires the synergy of brain connectivity patterns and high-level semantic knowledge. Existing methods, however, largely treat semantics from large language models (LLMs) as auxiliary features or supervision, limiting their direct role in decision-making and constraining classification stability and robustness. To overcome this, we propose a semantic-aligned brain network framework that actively integrates LLM-derived semantics into the prediction process. Specifically, ROI-level semantics are first incorporated via global self-attention to enrich node representations and provide whole-brain context. Multi-scale hypergraphs are then constructed to explicitly model functional subnetworks and multi-ROI interactions, addressing the locality limitations of tr
+- ADHD × AI angle: 待人工判断
+- Reliability: B+
+- Related packs: 问题281, 问题392, 问题306, 问题391, 问题289, 问题019, 问题134, 问题196
+- Score: 10/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=5, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_69ce0fd8251f
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/
+- Evidence type: media
+- Claim supported: Instagram head Adam Mosseri believes companies will eventually need to manage AI token spending the same way they manage payroll or other operating expenses, predicting that engineers could soon face limits on how much they spend using AI tools.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_8c3e3a116d2e
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/
+- Evidence type: media
+- Claim supported: Now, when users navigate to Google Images, they'll see a "For You" gallery of images tailored to their interests and browsing history.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 待人工匹配
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_f3b2520f0b86
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/
+- Evidence type: media
+- Claim supported: Reflection AI has signed a $1 billion deal to access Nebius' compute. Reflection was founded in 2024 and is developing open source AI technology.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_66220a2e8887
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/
+- Evidence type: media
+- Claim supported: Hugging Face CEO Clem Delangue says enterprises increasingly want open models, due to cost, accessibility, and ownership. Do frontier models still matter if most production AI ends up running on open models?
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_2926143ff589
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/
+- Evidence type: media
+- Claim supported: Spotify is rolling out a new AI-powered conversational feature that lets Premium subscribers chat with the app to discover music, podcasts, audiobooks, and more.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_2d062ff1a86a
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/
+- Evidence type: media
+- Claim supported: Superhuman’s latest AI email drafting feature is its most convincing yet, generating replies that often required little to no editing in our testing.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_5ff9e4858ff1
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/13/already-rich-already-successful-why-the-last-wave-of-tech-winners-is-grinding-again/
+- Evidence type: media
+- Claim supported: They're rolling up their sleeves again, seemingly out of fear of missing AI's defining moment and, presumably, the irresistible allure of making even more money -- potentially a lot more.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题098, 问题110, 问题122, 问题127, 问题188, 问题199, 问题204, 问题312
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_4bf0e96e2a8d
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/
+- Evidence type: media
+- Claim supported: Uber Chief Product Officer Sachin Kansal walks TechCrunch through the company's financial services ambitions, its increasingly complicated relationship with Waymo, its new AV Labs data operation, and how AI is starting to show up in ways riders and drivers will actually notice.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_135479564b5a
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/clawteams
+- Evidence type: product
+- Claim supported: The first goal-driven, proactive AI team for e-commerce Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 问题281, 问题350, 问题353, 问题400, 问题098, 问题297, 问题321, 问题359
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_baa13a4aeff2
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/claude-overlay
+- Evidence type: product
+- Claim supported: A floating Claude Code chat that sees your screen Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_1d529e638e2d
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/loopclub
+- Evidence type: product
+- Claim supported: The shared drum machine to jam with strangers or with Claude Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 9/25 (pain_intensity=1, adhd_ai_intersection=2, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_77dc192c6086
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/
+- Evidence type: media
+- Claim supported: New York has become the first state to temporarily halt approval of large data centers, as Gov. Kathy Hochul argues the AI-driven building boom shouldn’t come at the expense of higher electricity costs, water supplies, or local control.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_4efd27519b81
+
+- Date: 2026-07-15
+- Source: TechCrunch AI
+- URL: https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/
+- Evidence type: media
+- Claim supported: With the cash, the company aims to expand its world model offering and reach customers across geographies.
+- ADHD × AI angle: 待人工判断
+- Reliability: B
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_89d9aa2b4570
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/branda-open-source-on-brand-ad-maker
+- Evidence type: product
+- Claim supported: Turn any domain into on-brand ads, MIT Open Source Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_c317ec669b54
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/mojave-paint
+- Evidence type: product
+- Claim supported: Direct manipulation of static images on the Mac platform Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_21872a3a1896
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/pazi
+- Evidence type: product
+- Claim supported: Vibe code business operations Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_d5634bdfcdff
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/gooseworks
+- Evidence type: product
+- Claim supported: Remix the ads already winning in your niche Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_92d2308a6cd4
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/bugshot-3
+- Evidence type: product
+- Claim supported: Discover, fix, capture, and report bugs in one shot Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_45694378cec1
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/animos-app
+- Evidence type: product
+- Claim supported: Showcase your designs in motion Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_f7cdef95d284
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/trump-accounts
+- Evidence type: product
+- Claim supported: Build long-term financial security for your child Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
+
+### Evidence Card rss_ab644f193bb9
+
+- Date: 2026-07-15
+- Source: Product Hunt
+- URL: https://www.producthunt.com/products/flyout
+- Evidence type: product
+- Claim supported: Rich-text notes that fly out from your Mac's screen edge Discussion | Link
+- ADHD × AI angle: 待人工判断
+- Reliability: B-
+- Related packs: 待人工匹配
+- Score: 8/25 (pain_intensity=1, adhd_ai_intersection=1, evidence_strength=4, product_entry_potential=1, feedback_potential=1)
+- Possible action: archive only
