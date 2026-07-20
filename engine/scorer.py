@@ -253,6 +253,14 @@ def score_topic(topic: dict, retriever: KnowledgeRetriever | None = None) -> Sco
             practical_base += 0.35
     if category_id in PRACTICAL_CATEGORIES:
         practical_base += 0.5
+    # 人生 Harness 金字塔上层（叙事/关系/价值层）加成：
+    # 项目北极星是助力 ADHD 者获得幸福与人生价值，而非仅提升效率，
+    # 自我和解、关系、职业与人生方向类选题在实用价值维度获得加权。
+    growth_markers = ["幸福", "成长", "自我和解", "羞耻", "自责", "自我接纳",
+                      "人生", "价值感", "意义", "职业", "亲密关系", "伴侣",
+                      "家人", "身份", "叙事", "和解", "优势", "长处"]
+    growth_hits = sum(1 for m in growth_markers if m in full_text)
+    practical_base += min(1.2, growth_hits * 0.4)
     practical_score = min(10.0, practical_base)
 
     # 5. 情感共鸣
