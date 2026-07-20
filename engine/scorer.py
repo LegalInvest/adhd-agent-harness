@@ -302,6 +302,35 @@ def compute_weighted_score(dimensions: ScoreDimensions, weights: dict | None = N
     return round(total, 2)
 
 
+# 模板族去同质化：标题去掉产品名/数字后取前缀作为「族指纹」，
+# 同族第 2 名起按位次递增惩罚，防止一个标题模板整族霸榜。
+_FAMILY_PRODUCT_RE = re.compile(
+    r"Claude|ChatGPT|GPT-?\d*|Saner\.AI|Reclaim\.ai|Tiimo|Brain\.fm|Focusmate|"
+    r"Structured|Lex|Mem|Otter\.ai|Reflect|Routinery|Todoist|Inflow|Endel|"
+    r"Forest|RescueTime|Habitica|Speechify|Notion|Motion",
+    re.IGNORECASE,
+)
+
+
+def _title_family(title: str) -> str:
+    t = _FAMILY_PRODUCT_RE.sub("X", title)
+    t = re.sub(r"[0-9]+", "N", t)
+    return t[:22]
+
+
+def _apply_family_diversity_penalty(scored: list[dict]) -> None:
+    """同族标题从第 2 名起递增扣分（-0.3 起步，每多一名再 -0.15，封顶 -1.5）。"""
+    seen: dict[str, int] = {}
+    for item in scored:
+        fam = _title_family(item.get("title", ""))
+        n = seen.get(fam, 0)
+        if n >= 1:
+            penalty = min(1.5, 0.3 + (n - 1) * 0.15)
+            item["weighted_score"] = round(item["weighted_score"] - penalty, 2)
+            item["family_penalty"] = penalty
+        seen[fam] = n + 1
+
+
 def rank_topics(
     topics: list[dict],
     weights: dict | None = None,
@@ -317,6 +346,8 @@ def rank_topics(
             "scores": dimensions.to_dict(),
             "weighted_score": weighted,
         })
+    scored.sort(key=lambda x: x["weighted_score"], reverse=True)
+    _apply_family_diversity_penalty(scored)
     scored.sort(key=lambda x: x["weighted_score"], reverse=True)
     for i, item in enumerate(scored):
         item["rank"] = i + 1
