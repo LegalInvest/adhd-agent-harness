@@ -28,3 +28,16 @@
 | The Effectiveness of a Virtual Reality-Based Training Program for Improving Body Awareness in Children with Attention Deficit and Hyperactivity Disorder | 15 | 问题387, 问题367, 问题339, 问题195, 问题277, 问题314 | evidence enrich |
 | Tailoring AI-Driven Reading Scaffolds to the Distinct Needs of Neurodiverse Learners | 15 | 问题387, 问题393, 问题399, 问题367, 问题389, 问题011 | evidence enrich |
 | CDC ADHD Data and Statistics | 14 | 问题281, 问题286, 问题288, 问题290, 问题306, 问题392 | evidence enrich |
+## 2026-07-15 Scout Upgrade Notes
+
+| Evidence | Score | Related packs | Next action |
+|---|---:|---|---|
+| UXR PoV for Neuroinclusive Emotion Regulation | 19 | 问题281, 问题353, 问题297, 问题359, 问题387, 问题394 | evidence enrich |
+| Job Accommodation Network ADHD Accommodation Ideas | 18 | 问题333, 问题350, 问题377, 问题389, 问题390, 问题391 | evidence enrich |
+| NIMH Attention-Deficit/Hyperactivity Disorder | 17 | 问题289, 问题292, 问题293, 问题294, 问题296, 问题392 | evidence enrich |
+| A Neurodiversity-Inspired Solver for the Abstraction \& Reasoning Corpus (ARC) Using Visual Imagery and Program Synthesis | 17 | 问题073, 问题281, 问题350, 问题353, 问题400, 问题098 | evidence enrich |
+| Microsoft Neurodiversity Hiring Program | 16 | 问题333, 问题350, 问题377, 问题400 | evidence enrich |
+| EEOC Guidance on Adverse Impact in Software, Algorithms, and AI | 16 | 问题375, 问题377, 问题390, 问题400 | evidence enrich |
+| Light-Adapted Electroretinogram and Oscillatory Potentials (LEOPs) Dataset for Autism Spectrum Disorder and Typically Developing Individuals | 15 | 问题387, 问题367, 问题339, 问题195, 问题277, 问题314 | evidence enrich |
+| Tailoring AI-Driven Reading Scaffolds to the Distinct Needs of Neurodiverse Learners | 15 | 问题387, 问题393, 问题399, 问题367, 问题389, 问题011 | evidence enrich |
+| CDC ADHD Data and Statistics | 14 | 问题281, 问题286, 问题288, 问题290, 问题306, 问题392 | evidence enrich |

@@ -1,0 +1,39 @@
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.kdbx
+
+*secret*
+*token*
+*credential*
+*password*
+
+.claude/
+.codex/
+.agents/
+.git/
+.git-sync/
+.git-sync-fixture/
+git-sync.config.json
+
+node_modules/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+Cookies
+Login Data
+Web Data
+Local State

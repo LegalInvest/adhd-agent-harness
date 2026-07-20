@@ -61,16 +61,36 @@ python engines/build_llm_wiki_export.py
 - `knowledge/wiki/topics/topic-index.md`
 - `knowledge/raw/sources/content-packs/400-content-packs.snapshot.json`
 
-## 部署每日任务
+## 当前运行策略（2026-07-15）
+
+原 `adhd-ai-daily-scout` 计划任务已退役。历史任务从未完整成功，且旧 runner 会在无人审核时调用 evidence injector 改写内容包注入区块。
+
+当前 runner 已改成**只采集、只生成审核报告、不写 `content-packs/`**。默认使用人工入口：
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-daily-scout.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\run-daily-scout.ps1 -NoLlm
 ```
 
-默认每天 08:05 运行。立即运行一次：
+该入口仍会联网采集并更新 `research-inbox/`、`knowledge/` 和 `logs/`；`-NoLlm` 可避免 API 调用与费用。运行后必须检查：
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-daily-scout.ps1 -RunNow
+git status --short -- content-packs
+```
+
+结果应为空。只有人工审核证据后，才允许单独运行 `evidence_injector.py` 的写入模式。
+
+## 重新启用每日任务（默认禁止）
+
+安装器现在要求显式传入 `-EnableUnattended`，避免误恢复已退役的自动化：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-daily-scout.ps1 -EnableUnattended
+```
+
+仅当 API 成本、网络超时和输出审核机制都重新验收后才应使用。默认每天 08:05；如需安装后立即运行：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-daily-scout.ps1 -EnableUnattended -RunNow
 ```
 
 查看任务：
