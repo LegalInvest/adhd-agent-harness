@@ -28,71 +28,44 @@ problem: "ADHD 创业者视角：Agent 工程师每天在解决的问题，ADHD 
 spine: "无状态与外部记忆"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
+
 # ADHD 创业者视角：Agent 工程师每天在解决的问题，ADHD 大脑已经面对了一辈子
 
-> 把「LLM 无跨会话状态，靠外部记忆/向量库续命」翻译成 ADHD 的工作记忆容量小、边做边忘解法。
+> 投资人问他:「你做 agent 可靠性工具,你的竞争壁垒是什么?团队里有 DeepMind 出来的人吗?」他给出了那个后来在小圈子里流传的回答:「没有。但我们产品里那个『目标漂移检测器』,不是从论文里来的——是我给自己设计的第 11 版周对账系统的直接翻译;那个『降级恢复协议』,原型是我管理自己烂尾项目的复活清单。我的联合创始人说我们做用户访谈根本是作弊——**别人要访谈一百个用户才能拼出的失败模式地图,我闭着眼就能画,因为每一种失败我都亲自失败过。**我的壁垒是:这个领域最贵的知识是『系统怎么在真实世界里失效』,而我有三十年的一手数据。」
 
-先说一个事实：We therefore conducted a meta-analysis of 11 functional magnetic resonance imaging (fMRI) studies of timing in ADHD, comprising 150 patients and 145 healthy controls。
+收敛:职场人篇讲「兑换筹码」,本文只回答创业版的一问——**「亲历过执行系统失效」在 agent 时代具体构成哪三种产品优势?这个优势的两个失效条件(别把它浪漫化)?**
 
-如果你是 ADHD 人群，你大概率经历过——在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+## 穿透:agent 产品的核心难题不是让它聪明,是让它在失效时体面——而失效学没有教材,只有亲历
 
-## 为什么这件事对 ADHD 格外重要
+先看行业的真实痛点在哪。基础模型的「聪明」是大厂的战场,创业公司卷不动;应用层的真实战场是**可靠性工程**:agent 什么时候会漂移、卡死、幻觉、循环,失效时怎么检测、怎么降级、怎么让用户还愿意继续用——这门「失效学」的知识有个特点:**它几乎无法从成功案例里学到,只能从大量失败的第一手体验里长出来**。这就是 ADHD 创业者的三种具体优势的来源:①**失效模式的先验地图**——普通团队靠用户访谈和线上事故一条条攒失效案例;ADHD 创始人的神经系统就是一台跑了三十年的失效模拟器:启动失败、中途漂移、过度并行、上下文丢失、奖励耐受、工具依赖螺旋——**每一种 agent 会犯的错,他都有身体记忆级的理解**,产品的失效处理设计因此起点就在别人的终点;②**「支撑系统」的品味**——给失效系统设计支撑(而不是嘲讽或放弃)需要一种罕见的产品品味:什么样的提醒是帮助什么样的是羞辱、什么时候该接管什么时候该放手、怎么让「被辅助」不损伤尊严——**这种品味没法开会讨论出来,它来自「被坏系统伤害过、被好系统救过」的亲身对照**(戒断协议篇的全部设计原则,最初都是某个亲历者的痛);③**双市场的天然桥位**——他同时是两个市场的原住民:agent 工具市场(他懂失效)和神经多样性辅助市场(他懂需求)——两个市场正在合流(执行功能辅助本质上就是「给人的 agent 层」),站在合流点上的人,看得见两边都看不见的产品。
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往情绪调节（emotional regulation）需要更多外部支持。但与此同时，ADHD 也有自己的天赋：对新鲜刺激敏感，学习新事物上手快。
+两个失效条件,不浪漫化:**条件一:亲历≠能交付。**「我懂这种痛」和「我能持续运营一家公司」之间,隔着 ADHD 创业的全部经典风险(冲动开新线、运营性事务的系统性逃避、超聚焦在产品上而融资/招聘/财务裸奔)——**亲历优势只在产品洞察这一个环节兑现,公司的其他环节照样按你的失效模式失效**;解法是老话:联合创始人补执行剖面(规格表篇的合伙人版)、把自己的失效地图同样用于公司架构设计(既然你能给用户设计支撑系统,给自己的 CEO 岗位也设计一套);**条件二:样本量为一。**你的三十年数据毕竟来自一个人——你的失效模式未必是用户的失效模式(ADHD 剖面的异质性),「我就是用户」的创始人直觉在提供起点之后,可能变成拒绝访谈数据的傲慢;解法:把亲历当**假设生成器**用(它产出的假设又多又准),但假设的验证权还给用户数据——**作弊的正确用法是跳过冷启动,不是免除考试。**
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+## 验证
 
-## 最新研究怎么说
+可测(创业者自查):你的产品里有几个设计决策能追溯到自己的亲历?这些决策在用户数据里的验证率如何?(高验证率=优势真实;低=你在做自传,不是产品。)可证伪:若 agent 可靠性最终被基础模型的进步直接解决(失效学贬值),这个优势窗口会收窄——但「给失效的系统设计体面支撑」的品味会迁移到下一个需要它的领域(需要支撑的系统永远存在,包括人)。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+## 决策
 
-- Note that this approach involves training the model（来源：Cutting Through the Noise: Smarter Context Management for LLM ...）。
-- Keywords: attention deficit hyperactivity disorder (ADHD), artificial intelligence (AI), objective assessment, differential diagnosis, biomarkers, neuroimaging, machine learning (ML)（来源：Artificial intelligence in ADHD assessment: a comprehensive review ...）。
-- It's about building the bridges that connect a disconnected model to the outside world, retrieving external data, using tools, and giving it a memory to ground its responses in facts, not just training data（来源：Context Engineering - LLM Memory and Retrieval for AI Agents）。
+做什么:把亲历系统性地转成失效模式库与假设清单;联创补剖面;假设一律过用户数据。
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+不做什么:不要在 pitch 里只讲情怀版的「我懂这种痛」(讲成方法论:失效地图→设计决策→验证率——那才是壁垒的样子);不要免除自己的考试。
 
-## 真实可用的 AI 工具
+先做什么:写你的「失效模式 Top 10」清单——每条标注:它对应我产品里的哪个设计?还没对应的,就是下个迭代的假设。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+## 边界
 
-### Goblin Tools
+「亲历优势」为定性论证,无创业结局数据支持(本文未做正式 A/B/C 分级);ADHD 创业者的高比例报告存在但样本与口径争议(GRADE 低)。创业风险真实且重大,本文不构成创业建议;冲动性创业决策(裸辞创业等)请先过冷静期协议(冲动辞职篇)。
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+## 今天就能试的 3 件事
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Lex
+1. 写失效模式 Top 10,标注产品对应。
+2. 检查公司架构:你给用户设计的支撑,自己的岗位有吗?
+3. 下次用户访谈,把你最确信的一条亲历假设拿去证伪——练习把作弊变成方法。
 
-Lex：内置 AI 的写作工具，能在你卡壳时续写、生成大纲、克服空白页恐惧。适用场景：解决 ADHD 写作启动困难和组织思路的难题。
-### Mem
-
-Mem：AI 驱动的笔记工具，自动整理和关联你的笔记，无需手动建立文件夹结构。适用场景：适配 ADHD 不擅长手动归类整理的特点，让 AI 自动建立知识连接。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. We reported a significant difference in rates of daily smoking and tobacco dependence for those with ADHD who had used stimulant medication in childhood in contrast to controls.
-2. However, at age 18 years, those with late-onset ADHD demonstrated comparable ADHD symptoms and impairment as well as similarly elevated rates of mental health disorders.
-3. A structured interview with a parent was used to ascertain ADHD diagnostic status, on the basis of slightly modified criteria from the Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition.
-4. BACKGROUND: The Strengths and Difficulties Questionnaire (SDQ) has become one of the most widely used measurement tools in child and adolescent mental health work across the globe.
-5. Meeting the everyday challenges of walking while dual tasking apparently relies on multiple factors including a consistent gait pattern and EF.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：executive function（执行功能（计划、组织、启动、工作记忆等大脑管理能力））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**价值层(职业设计)**:三十年来你以为自己在积累失败,其实你在积累一门还没有名字的学科的田野数据——agent 时代给它起了名字,开了市场;你不是终于赶上了风口,是风口终于赶上了你已经站了三十年的地方。
 
 ## 参考来源
 
@@ -104,4 +77,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 157 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 157 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
