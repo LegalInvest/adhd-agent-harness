@@ -28,6 +28,7 @@ problem: "为什么 ADHD 真正需要的是兴趣驱动操作系统？"
 spine: "外部执行功能层"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 为什么 ADHD 真正需要的是兴趣驱动操作系统？

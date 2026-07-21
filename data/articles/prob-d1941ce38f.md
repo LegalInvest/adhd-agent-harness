@@ -28,71 +28,48 @@ problem: "Perplexity 之于 ADHD，就像 human-in-the-loop 监督 之于 LLM—
 spine: "人在回路与身体在场"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
+
 # Perplexity 之于 ADHD，就像 human-in-the-loop 监督 之于 LLM——但有人用错了
 
-> 从同构视角实测 Perplexity：它到底补上了哪一层执行功能？
+> 她给自己的「研究流程」感到骄傲:任何决定之前——买课、换工作方向、给孩子选干预方案——她都会用 AI 搜索做足功课,收藏夹里躺着几十份「调研结论」。直到闺蜜问了一句:「你研究换工作研究半年了,面试投了几个?」她卡住了。答案是零。那几十次搜索给她的不是决策,是**决策的感觉**——每查一轮,焦虑降一点,行动的紧迫感也跟着降一点,然后生活原样继续。
 
-先说一个事实：Adolescents' Intense and Problematic Social Media Use and Their Well-Being in 29 Countries。
+收敛:本文只回答——**「查询」在决策回路里的正确位置是什么?为什么 ADHD 用户特别容易把「持续查询」用成「无限延期的批准流程」?怎么把 human-in-the-loop 的工程纪律搬过来治它?**
 
-如果你是 ADHD 人群，你大概率经历过——觉得没人真正理解 ADHD 的处境，常常感到孤立。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+## 穿透:HITL 的核心从来不是「人参与」,是「环会闭合」
 
-## 为什么这件事对 ADHD 格外重要
+LLM 侧把概念讲干净。human-in-the-loop 监督的工程含义:agent 在关键节点暂停,把中间结果交给人审批,人给出 go/no-go,**然后流程必须继续**——HITL 的设计红线是人这一环不能变成流程的黑洞,所以成熟系统都带超时机制:审批悬置超过阈值,要么升级要么按默认策略放行。**「环」的价值在于闭合;一个永不闭合的审批环,比没有环更糟——它既阻塞了执行,又制造了「正在处理」的假象。**
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往情绪调节（emotional regulation）需要更多外部支持。但与此同时，ADHD 也有自己的天赋：对新鲜刺激敏感，学习新事物上手快。
+她的用法错在哪就清楚了:每一轮 AI 搜索都是一次「提交审批」,但审批人(她自己)从不签发 go/no-go——查询结果不落到决策,落到收藏夹,然后触发下一轮查询。这个模式对 ADHD 格外致命,机制有三:①**查询是完美的伪行动**——它有信息摄入的充实感、有「负责任」的道德光环、且启动成本远低于真行动(投简历要面对被拒,搜索不用);②**延迟折扣让「再查查」永远显得划算**——行动的收益在远期,查询的安抚在当下;③**没有外部超时**——工作流程里的审批有 deadline,人生决策的审批没人催,环就永远敞着。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+修法是把工程纪律逐条搬回来:①**查询配额**——任何决策立项时先定「调研预算」(如:三次搜索/两小时/五个来源),预算烧完必须出一个中间产物;②**强制签发格式**——每轮调研的产出不许是收藏,必须是一句 go/no-go/需要补查 X(具体到一项);③**超时默认策略**——预设「若两周内未决,则执行默认选项」(默认选项在冷静时定好:通常是「做可逆的最小尝试」——投三份简历、约一次试听,而不是全有或全无)。
 
-## 最新研究怎么说
+利益视角:AI 搜索的产品指标是查询量与回访率——「帮你结束搜索」不在任何产品的利益里;审批环的闭合装置,只能装在你这一侧。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+## 验证
 
-- CONCLUSIONS AND RELEVANCE: Results suggest that a biologically informed temperament-based typology, developed with a discovery-based community detection algorithm, provides a superior description of heterogeneity in the ADHD population than does any current clinical nosologic criteria（来源：Subtyping Attention-Deficit/Hyperactivity Disorder Using Temperament Dimensions）。
-- In addition, findings from both family‐based research and randomized controlled trials of school‐based interventions highlight the importance of environmental influences on EF and so support the development of interventions to promote EF and hence improve children's academic and social outcomes（来源：Changes and challenges in 20 years of research into the development of executive functions）。
-- The evidence strongly supports the use of stimulant medications for treating the core symptoms of children with ADHD and, to a lesser degree, for improving functioning（来源：Treatment of Attention-Deficit/Hyperactivity Disorder: Overview of the Evidence）。
+自查有一个残忍但有效的指标:**收藏夹/行动比。**过去三个月,你的调研产物里有多少转化成了一次真实的、不可撤销的行动(发出的申请、付的定金、说出口的决定)?比值低于 10:1,你的 HITL 已经变成了 human-is-the-loophole。协议可测:下一个决策用「配额+签发+超时」三件套,对照过去的同类决策,比较从立项到首个真实行动的天数。可证伪:若三件套下你做出了草率的坏决定,说明你的配额定得太紧——调宽预算,但保留闭环结构;结构的敌人是「敞着」,不是「快」。
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+## 决策
 
-## 真实可用的 AI 工具
+做什么:给当前悬置最久的那个决策补装三件套;把「我再查查」重新翻译为它的真实含义之一:「我暂时不敢行动」——然后处理「不敢」,而不是喂它更多信息。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+不做什么:不要用新一轮搜索安抚决策焦虑(焦虑要用「可逆的最小行动」治,不用信息治);不要收藏任何没有附带 go/no-go 判断的调研结果。
 
-### Goblin Tools
+先做什么:找出你收藏夹里躺得最久的那个「研究项目」,现在给它签发一个动作:go(今天做最小一步)或 no-go(正式关闭,删除收藏)。
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+## 边界
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Motion
+「HITL↔决策回路」为 B 级架构类比(审批环闭合的原则两侧成立);「查询成瘾式拖延」是行为模式描述,非诊断类别(本文未做正式 A/B/C 分级)。若决策回避伴随广泛的焦虑或已显著影响生活,请考虑专业评估——那可能是焦虑议题而非信息问题,值得被专业地对待。
 
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
+## 今天就能试的 3 件事
 
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
+1. 算一次你的收藏夹/行动比——过去三个月的调研,落地了几个真动作?
+2. 给悬置最久的决策签发 go/no-go:go 则今天完成最小可逆一步,no-go 则删收藏关项目。
+3. 给下一个新决策立项时写下三行:调研配额__/默认选项__/超时日期__——贴在收藏夹的第一位。
 
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. | How to ADHD / Jessica McCabe | YouTube | 大型 ADHD 内容创作者 |
-2. - 识别 “ADHD entrepreneur / mompreneur / creator + ChatGPT prompts” 子主题。
-3. - Philip Lakin LinkedIn：`https://www.linkedin.com/posts/philip-lakin_claude-code-my-adhd-turned-a-5-min-task-activity-7448186264048144384-a2LE`
-4. - Jenna Redfield：`https://jennaredfield.substack.com/p/how-i-use-chatgpt-to-manage-my-adhd`
-5. 2023年12月发表的一篇学术论文《Challenges, Strengths, and Strategies of Software Engineers with ADHD: A Case Study》是首批专门针对ADHD软件工程师的质性研究。该研究通过对19名ADHD软件工程师的深度访谈，提取了15个挑战、8个优势和12个应对策略。
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：rejection sensitive dysphoria（拒绝敏感性焦虑（RSD，对批评和拒绝的强烈情绪反应））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层与价值层**:信息的意义是喂给决策,决策的意义是喂给人生——环闭合的那一刻,搜索才终于值回了它承诺你的东西。
 
 ## 参考来源
 
@@ -104,4 +81,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 57 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 57 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*

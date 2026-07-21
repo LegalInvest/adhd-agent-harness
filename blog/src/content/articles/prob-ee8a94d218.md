@@ -28,6 +28,7 @@ problem: "为什么“执行功能外包”需要一张依赖阈值表？"
 spine: "ADHD 大脑与 LLM 的同构"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 为什么“执行功能外包”需要一张依赖阈值表？

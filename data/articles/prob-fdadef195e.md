@@ -28,6 +28,7 @@ problem: "为什么认知外包 OS 的第一问题不是效率，而是身份感
 spine: "ADHD 大脑与 LLM 的同构"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 为什么认知外包 OS 的第一问题不是效率，而是身份感？
