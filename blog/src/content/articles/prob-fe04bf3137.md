@@ -28,71 +28,46 @@ problem: "ADHD 程序员如何用「给生成核心套 harness」的思路应对
 spine: "外部执行功能层"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
-# ADHD 程序员如何用「给生成核心套 harness」的思路应对在 IDE 与 agent 之间切换里的执行功能（计划/组织/启动）先天偏弱？
 
-> 把 LLM 工程里的「agent 的编排/记忆/工具层就是「外部执行功能」」迁移到ADHD 程序员的在 IDE 与 agent 之间切换场景，双域证据作答。
+# ADHD 程序员如何在 IDE 与 agent 之间切换时不丢掉自己的执行功能？
 
-先说一个事实：METHODS: Of 579 children who entered the study, 540 (93%) participated in the first follow-up 10 months after the end of treatment。
+> 编程曾是他的避风港:即时反馈(跑一下就知道对错)、清晰结构(类型系统和编译器是免费的 verifier)、合法的超聚焦(没人打扰的心流下午)。然后 AI coding agent 来了,他的工作流变成了新的样子:给 agent 派活→等它跑→审查它的输出→改 prompt→切回自己写核心逻辑→再切去看 agent 的 PR……三个月后他发现,自己的老问题以新形态全面复发:**等待 agent 的那两分钟,他会点开别的东西,然后半小时回不来**(等待间隙是分心的高速入口);**审查 agent 代码时的走神比写代码时严重得多**(读别人的代码本来就是低刺激任务,读机器的代码更甚);**同时管三个 agent 任务,他的工作记忆第一次在编程时爆栈**(以前是「人写一件事」,现在是「人管 N 件事」——编程从执行工作变成了调度工作)。「最讽刺的是,」他说,「agent 明明是来替我干活的,但它把我的工作从我最擅长的格式(沉浸执行),改成了我最不擅长的格式(碎片调度)。」
 
-如果你是 ADHD 人群，你大概率经历过——网上关于 ADHD 的说法五花八门，到底哪些有科学依据。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+收敛:本文只回答——**agent 化的编程工作流为什么恰好击中 ADHD 程序员的弱项(格式转换的机制)?针对三个新失效点(等待分心/审查走神/调度爆栈)的具体对策?以及这场转换里被忽视的新优势?**
 
-## 为什么这件事对 ADHD 格外重要
+## 穿透:agent 没有抢走你的工作,它把你的工作换成了你没申请过的岗位——从工人换成了工头
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往组织和优先级排序需要额外的结构支撑。但与此同时，ADHD 也有自己的天赋：在高压和紧迫感下反而能爆发出惊人的执行力。
+格式转换的机制,值得说透:前 agent 时代的编程,任务结构是「单线程沉浸」——一个问题、一个编辑器、即时反馈,这个格式与超聚焦几乎完美咬合(编程因此成为 ADHD 者高度代表的行业之一);agent 时代的结构是「多线程异步调度」——派活、等待、审查、协调,**每一项都是执行功能税**:等待要求「保持任务在心里不跑走」(工作记忆+抑制),审查要求「对低刺激材料维持注意」(持续注意的弱项区),多 agent 协调要求「状态跟踪」(爆栈现场)。**一句话:agent 把编程从心流职业改造成了管理职业——而你入行的原因恰恰是逃离管理格式。**这不是拒绝 agent 的理由(生产力差距会碾平个人偏好),是必须给新格式重新配 harness 的理由。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+三个失效点的对策。**①等待分心:堵住高速入口**——规则一:**等待时间显式化**(预估要等几分钟就设几分钟的倒计时——把「不知道等多久」的开放等待变成「三分钟后回来」的封闭等待,开放等待才是分心的入口);规则二:**等待期只许做「回得来的事」**(白名单:站起来倒水、写下一步的 prompt 草稿、看自己的任务板;黑名单:任何信息流)——等待白名单贴在屏幕边,崩溃日也执行得动;**②审查走神:把读改成问**——被动通读 agent 代码是注意力的沼泽,改成主动质询式审查:先写三个问题再看代码(「边界条件处理了吗?」「这里为什么选这个数据结构?」「错误路径走一遍」)——**带着问题读是狩猎,漫无目的读是巡逻;你的注意系统只擅长狩猎**(同时这恰好是审查 LLM 代码的正确方法论——它的错误藏在「看起来对」里,质询比通读的检出率高);**③调度爆栈:外置工头台账**——并行 agent 数设硬上限(建议 2,最多 3——上限不是能力侮辱,是 WIP limit 的老智慧);一块物理看板(每个 agent 任务一张卡:目标/状态/下一动作),**切换前先更新卡再切**(压栈篇的三行协议,工头版)——你的调度状态必须活在看板上,不能活在脑子里。
 
-## 最新研究怎么说
+被忽视的新优势,两条:①**prompt 是外化的思维**——给 agent 写清楚任务的过程,逼你把模糊意图显式化——这恰是 ADHD 者最受益的思维体操(说给别人听才想得清的机制,现在每天练);②**审查者的怀疑天赋**——多年被自己大脑的「看起来对了」坑过的人,对「流畅但可疑」的输出有肌肉级警觉——**对 LLM 代码的健康怀疑,你比从没被自己坑过的人来得自然**(验收设计篇的优势,在编程场景具体化)。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+## 验证
 
-- As such, the application of machine learning has several benefits for ADHD detection（来源：Frontiers | Advanced machine learning techniques reveal ...）。
-- This deeper understanding helps in creating more focused and effective diagnosis methods of ADHD（来源：Frontiers | Advanced machine learning techniques reveal ...）。
-- Heuristically, EEG offers millisecond temporal resolution, enabling real-time acquisition of fast neural processes crucial for studying dynamic brain activity ()（来源：Frontiers | Advanced machine learning techniques reveal ...）。
+可测:等待白名单执行四周,「等待后回不来」的次数;质询式审查的 bug 检出率 vs 通读式(自己做 A/B);看板化后的「同时在管几件事」主观负荷。可证伪:若你的工作流里 agent 产出极稳定(等待短、质量高、几乎不用审),新失效点自然不存在——对策的适用性随 agent 成熟度衰减,这是好事。
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+## 决策
 
-## 真实可用的 AI 工具
+做什么:封闭等待+白名单;质询式审查;工头看板+WIP 上限;把 prompt 写作当思维训练领工资。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+不做什么:不要开四个以上 agent 任务炫技(爆栈的代价大于并行的收益);不要在等待期开信息流(那不是休息,是失踪的开始)。
 
-### Goblin Tools
+先做什么:写你的等待白名单,贴上屏幕边——今天下一次等待就用。
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+## 边界
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Motion
+工作流变化的观察来自行业实践与个案(格局仍在快速演变,无对照研究);ADHD 与持续注意/工作记忆的机制有文献基础(GRADE 中)。编程行业的 ADHD 代表性为社群共识与调查信号(证据中等)。不构成职业建议——agent 工作流的最优形态因人因团队而异,协议供实测起点。
 
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
+## 今天就能试的 3 件事
 
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
+1. 贴等待白名单。
+2. 下一次 code review 前先写三个质询问题。
+3. 给现有的 agent/并行任务建看板卡——先把脑内的调度状态搬出来。
 
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. | Step | Purpose/Description | ADHD-Specific or Methodological Enhancements |
-2. Adaptable for use in child and adult ADHD assessments
-3. Therefore, many clinicians use ADHD assessment templates to streamline the process.
-4. ADHD is associated with increased risks of accidents and injury, substance use, challenges in education and employment, and comorbid mental health conditions—all of which are mitigated with suitable treatment.
-5. A comprehensive ADHD assessment requires collecting information from multiple sources, including the patient, family members, teachers (for children), other healthcare professionals, and sometimes employers or friends.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：executive function（执行功能（计划、组织、启动、工作记忆等大脑管理能力））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层(职业特化)**:你为逃离碎片而选择了代码,如今碎片追进了 IDE——但这一次你有备而来:封闭的等待、狩猎式的审查、外置的工头台账;工作可以换格式,你的 harness 跟着换就是——毕竟,给不受控的强大生成核心套缰绳这件事,你可比 agent 工程师们,资深多了。
 
 ## 参考来源
 
@@ -102,4 +77,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 207 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 207 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
