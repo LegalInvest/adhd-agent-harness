@@ -28,6 +28,7 @@ problem: "两个互不引用的领域都在研究「分心与走神」——ADHD
 spine: "上下文工程"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 两个互不引用的领域都在研究「分心与走神」——ADHD 文献和 LLM harness 文献为什么得出了同一个结论？

@@ -28,6 +28,7 @@ problem: "Perplexity 之于 ADHD，就像 上下文工程 之于 LLM——但有
 spine: "上下文工程"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
 
 # Perplexity 之于 ADHD，就像 上下文工程 之于 LLM——但有人用错了

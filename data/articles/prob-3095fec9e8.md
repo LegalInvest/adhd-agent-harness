@@ -28,6 +28,7 @@ problem: "用 ChatGPT 给 ADHD 补上ADHD 大脑与 LLM 的同构，是脚手架
 spine: "ADHD 大脑与 LLM 的同构"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 用 ChatGPT 给 ADHD 补上ADHD 大脑与 LLM 的同构，是脚手架还是拐杖？

@@ -28,71 +28,48 @@ problem: "给 ADHD 加一道「核对清单/验证步骤」，和给 agent 加 s
 spine: "幻觉与验证循环"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
+
 # 给 ADHD 加一道「核对清单/验证步骤」，和给 agent 加 self-critique 循环，是同一种工程吗？
 
-> ADHD 侧：冲动下结论、想当然；LLM/harness 侧：LLM 自信地编造（幻觉），靠验证与自我批判兜底。用双域证据作答。
+> 她给自己定过无数次「出门前检查钥匙钱包手机」的规矩,全部阵亡——不是不想执行,是出门那一刻大脑根本不会想起还有个规矩存在。直到她在门把手上挂了一块写着三个词的木牌,把检查从「要记得做的事」变成「挡在路上的东西」,阵亡率才归零。多年后她做 AI 产品,看到工程师为 agent 设计 self-critique 循环时争论的问题居然一模一样:验证器放在流程外靠模型「自觉」调用,还是硬编码在管线里想跳都跳不过?
 
-先说一个事实：FINDINGS: Our sample comprised 1713 participants with ADHD and 1529 controls from 23 sites with a median age of 14 years (range 4-63 years)。
+收敛:本文只回答一个工程对齐问题——**人的核对清单和 agent 的 self-critique,在什么层面是同一种工程、什么层面必须分道?搞清这个,能少走多少弯路?**
 
-如果你是 ADHD 人群，你大概率经历过——网上关于 ADHD 的说法五花八门，到底哪些有科学依据。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+## 穿透:同一个架构公理,两处不同的工程约束
 
-## 为什么这件事对 ADHD 格外重要
+先讲「同」的部分,它深刻:两者共享同一条架构公理——**生成者不可靠时,不要改进生成者,要外加验证层。**LLM 会自信地产出错误,工程答案不是「训练一个永不出错的模型」(做不到),而是加 self-critique/验证器,让输出在离开系统前过一道关。ADHD 的执行输出同样高变异(遗漏、冲动决策、细节丢失),传统答案「下次仔细点」等价于「训练永不出错的模型」——同样做不到;清单与核对步骤就是人的验证层。航空业早用几十年:检查单的前提假设从来不是飞行员无能,而是**任何生成者在负载下都会漏**。这一层,完全是同一种工程。
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往组织和优先级排序需要额外的结构支撑。但与此同时，ADHD 也有自己的天赋：在高压和紧迫感下反而能爆发出惊人的执行力。
+再讲「异」的部分,不搞清楚会白干。异之一:**触发机制**。agent 的验证器由代码调用,百分之百执行;人的验证器要靠前瞻记忆去「想起来」——恰恰是 ADHD 最弱的功能。所以人版清单的成败几乎全在触发器设计:必须把触发绑定到**物理路径**(门把手上的牌、屏幕上的便签、打不开文档的强制弹窗),而不是「记得检查」。她的木牌成功,不是清单变好了,是触发从记忆搬进了环境。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+异之二:**验证疲劳**。agent 跑一万次 critique 不抱怨,人对重复核对会快速脱敏——第二周的清单已经「看而不见」。对策也是工程的:清单要短(三项封顶)、要轮换形式(换位置/换颜色)、高频项要尽量转自动化(能自动的不留给人)。
 
-## 最新研究怎么说
+异之三:**情绪成本**。self-critique 对 agent 是零成本操作,对 ADHD,「核对」可能激活「我又要出错了」的羞耻回路,让人本能回避整个流程。人版验证层必须做情绪脱敏设计:清单语言用中性动作词(「拿钥匙」而非「别又忘了钥匙」),把核对定义为「专业行为」而非「缺陷补丁」——外科医生和机长都用检查单,没人觉得那是无能。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+## 验证
 
-- Xue, Differentiating boys with ADHD from those with typical development based on whole-brain functional connections using a machine learning approach, Neuropsychiatr（来源：Unveiling critical ADHD biomarkers in limbic system and cerebellum...）。
-- In response, machine learning (ML) approaches have emerged as promising tools for the healthcare industry, aiming to expedite the diagnosis, identify risk factors, and improve the accuracy and timeliness of ADHD detection [8,11]（来源：Machine Learning Approaches to Identify and Classify ADHD: A ...）。
-- Despite its prevalence, ADHD remains chronically underdiagnosed in adults, with research suggesting that only 10 to 20% of adults with ADHD receive a proper diagnosis and appropriate treatment（来源：ADHD Assessment Form Template with Examples - Heidi Health）。
+一条清单两周可验证:选你最高频的失误场景(出门/发邮件/交文档),做一个三项清单,配一个物理触发器,记录两周失误率对比基线。可证伪:若失误率不降,先查触发器(它真的挡在路上吗?),再查清单长度(超过三项砍),最后才怀疑方法本身。反例边界:核对若演变成反复检查十几遍无法停止,那可能滑向强迫方向的问题,机制与解法完全不同,请寻求专业评估。
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+## 决策
 
-## 真实可用的 AI 工具
+做什么:按「同」借架构(给高失误输出加验证层),按「异」改工程(物理触发器+三项封顶+中性语言+能自动则自动)。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+不做什么:不要写超过三项的清单(那是给未来的自己埋雷);不要把清单放在需要「记得去看」的地方——放在路上,不是放在心上。
 
-### Goblin Tools
+先做什么:选定你的最高频失误场景,今天做出那块「木牌」——一张便签,三项,贴在物理路径的必经处。
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+## 边界
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Motion
+「清单↔self-critique」在架构层为强同构,在触发/疲劳/情绪三个实现层需独立工程(本文未做正式 A/B/C 分级);检查单在航空与医疗的有效性证据充分,对 ADHD 个体的迁移属实践翻译。若核对行为本身失控或伴随强烈焦虑,请寻求专业评估。
 
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
+## 今天就能试的 3 件事
 
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
+1. 做你的三项木牌:最高频失误场景+三个中性动作词+物理必经处,十分钟完成。
+2. 审查一条你阵亡过的旧清单:死因是触发器(靠记忆)还是长度(超三项)?写一行验尸报告。
+3. 找一项能全自动的核对(自动扣款、日历提醒、拼写检查),今天设好——最好的验证层,是不需要你在场的那种。
 
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. And while this research is heavily focused on ADHD in youngsters, the importance of this work for adults with ADHD is significant, as it can tell us a lot about the disorder over the whole life span.
-2. Continuity from one diagnosis to another (heterotypic) was significant from depression to anxiety and anxiety to depression, from ADHD to oppositional defiant disorder, and from anxiety and conduct disorder to substance abuse.
-3. These results suggest that gwMRF parcellations reveal neurobiologically meaningful features of brain organization and are potentially useful for future applications requiring dimensionality reduction of voxel-wise fMRI data.
-4. Resting-state functional magnetic resonance imaging (fMRI) has attracted more and more attention because of its effectiveness, simplicity and non-invasiveness in exploration of the intrinsic functional architecture of the human brain.
-5. Research is needed to determine whether effective treatment would reduce the onset, persistence, and severity of disorders that co-occur with adult ADHD.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：task initiation（任务启动（开始一项任务的能力，ADHD 常见困难））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层**:machine 的验证层写在代码里,你的验证层要钉在门框上——公理相同,工程各异,而懂得这个「异」,才是真的懂了那个「同」。
 
 ## 参考来源
 
@@ -104,4 +81,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 46 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 46 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*

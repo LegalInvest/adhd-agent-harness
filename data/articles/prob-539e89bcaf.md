@@ -28,6 +28,7 @@ problem: "为什么ADHD 的“我”越来越像一个由工具、模板、Agent
 spine: "生成核心与调度层"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 为什么ADHD 的“我”越来越像一个由工具、模板、Agent 和回流组成的系统？

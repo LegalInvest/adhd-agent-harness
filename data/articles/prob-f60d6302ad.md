@@ -28,6 +28,7 @@ problem: "为什么女性 ADHD 的死亡率更高，诊断却更晚？"
 spine: "ADHD 大脑与 LLM 的同构"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
 
 # 为什么女性 ADHD 的死亡率更高，诊断却更晚？

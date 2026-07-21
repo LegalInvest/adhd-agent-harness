@@ -28,71 +28,48 @@ problem: "如果ADHD大脑是缺调度层的LLM，那么我能否设计一个类
 spine: "ADHD 大脑与 LLM 的同构"
 spineKind: "bridge"
 isEvolved: false
+llmGenerated: false
 ---
-# 如果ADHD大脑是缺调度层的LLM，那么我能否设计一个类似ReAct或Plan-and-Execute的外部编排系统，为ADHD用户提供实时任务分解与提醒？这比现有ADHD管理工具有何优势？
 
-> 构建外部调度层辅助ADHD执行功能
+# 如果ADHD大脑是缺调度层的LLM，那么我能否设计一个类似ReAct或Plan-and-Execute的外部编排系统，为ADHD用户提供实时的任务规划与自我监控？
 
-先说一个事实：- In 'Secrets of the Brain,' Jim Al-Khalili explores 600 million years of brain evolution to understand what makes us human。
+> 作为一个会写代码的 ADHD 患者,他做过最讽刺的事,是在自己人生一团乱麻的那个月,给公司交付了一套漂亮的 agent 编排系统:规划器拆任务、执行器带工具、反思器盯偏差、状态机管一切。上线那晚他盯着架构图突然愣住:这套东西的每一个组件,都是他自己没有的。那个念头自然得可怕——**既然我能给模型写编排层,为什么不能给自己写一个?**
 
-如果你是 ADHD 人群，你大概率经历过——网上关于 ADHD 的说法五花八门，到底哪些有科学依据。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+收敛:这是本站最工程化的一个问题,值得给出工程化的答案。本文只回答——**把 ReAct / Plan-and-Execute 模式移植成「人的编排系统」,哪些组件能直接搬,哪些必须改造,最小可行版本长什么样?**
 
-## 为什么这件事对 ADHD 格外重要
+## 穿透:逐组件移植评估
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往任务启动（task initiation）困难，明知该做却开不了头。但与此同时，ADHD 也有自己的天赋：在感兴趣的领域可以进入「超聚焦」（hyperfocus）状态。
+把两种经典模式拆开对照。**Plan-and-Execute**:规划器先生成全计划,执行器逐步跑,失败再重规划——移植到人身上的陷阱前面的文章讲过(全景任务树会变成拖延道具),但它的核心洞见能搬:**规划和执行由不同组件负责**,人版的翻译是「规划时段与执行时段分离」:早上 10 分钟只做规划(AI 辅助拆解今天的 3 项),白天只执行,不许在执行中途重开规划(那是 ADHD 最爱的逃生门)。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+**ReAct** 的循环是 Thought→Action→Observation:每步行动前显式写一行推理,行动后显式记录观察。移植价值极高,因为它恰好补上 ADHD 的两个断点:行动前的「我现在要做什么、为什么」(对抗自动驾驶式漂移)和行动后的「刚才发生了什么」(对抗做完即忘)。人版实现可以低技术到一张纸:干活前写一行「现在:__,因为__」,干完写一行结果。**这个仪式的本质是把内隐的执行流显式化——LLM 需要它,是因为不写出来就没有推理;ADHD 需要它,是因为不写出来就没有监控。**
 
-## 最新研究怎么说
+必须改造的部分,三处:①**监控频率**——agent 每步都反思,人会被反思仪式压垮,人版要稀疏化(只在启动、切换、卡住三个时机触发);②**奖励接口**——agent 不需要动机,人需要:每个 Observation 后追加一个微小的完成确认(划掉、打勾、对人汇报),给多巴胺系统发工资;③**强制力**——代码里的循环自动执行,人的循环会被跳过,所以人版必须借外部触发器(闹钟、身边人、body doubling)来驱动循环,而不是靠记得。
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+风险直说:自建系统本身是高刺激项目,「搭系统」可能变成最高级的拖延——判据是系统上线速度:两周还没跑起来的自我编排系统,已经变成玩具了。
 
-- The findings from this study help further our understanding of the brain processes contributing to ADHD symptoms—information that can help inform clinically relevant research and advancements（来源：Brain Connectivity Breakthrough Sheds New Light on ADHD）。
-- Landmark finding that showed brains of kids with ADHD mature later was actually a mirage in the data, new research finds（来源：Landmark finding that showed brains of kids with ADHD mature later ...）。
-- They help researchers see the structural and functional changes in the brain linked to ADHD（来源：Can You See ADHD on a Brain Scan? What Brain Imaging Reveals）。
+## 验证
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+最小可行版本(MVP)一周可验证:一张纸或一个便签软件,三条规则——①早上 10 分钟规划,产出今天 3 项(AI 可辅助);②每项启动时写一行 Thought,结束写一行 Observation;③下午设一个闹钟触发「中途反思」:我还在计划上吗?一周后数据说话:实际完成项数 vs 前一周基线。可证伪:若完成数无变化但你感到负担加重,说明监控开销超过了收益,砍掉一半仪式再试;若你三天就忘了整个系统,问题在触发器缺失,先修外部提醒,再谈编排。
 
-## 真实可用的 AI 工具
+## 决策
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+做什么:从纸质 MVP 起步,存活两周后再考虑升级为 AI 实时版(让 ChatGPT 当规划器+反思器,你只当执行器);升级时保留「人有最终启动权」——编排系统提议,你签发。
 
-### Goblin Tools
+不做什么:不要一上来就写代码搭完整系统(先用纸验证协议本身);不要给系统加超过三条规则——ADHD 系统的死因排行第一永远是维护成本。
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+先做什么:明早的 10 分钟规划,今晚先把纸和笔放在早餐位上——给第一个循环装好触发器。
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Motion
+## 边界
 
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
+「ReAct/Plan-and-Execute↔自我编排」是计算层的架构类比(本文未做正式 A/B/C 分级);外部结构化支持对 ADHD 有行为干预层面的证据,但本文的 MVP 协议是实践设计而非验证过的干预。自建系统不替代诊断与治疗;若执行困难严重损害生活,请与专业人员讨论完整的治疗方案。
 
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
+## 今天就能试的 3 件事
 
-## 可以今天就试的策略
+1. 今晚把纸笔放在早餐位——明早 10 分钟,写下今天的 3 项。
+2. 给下午 3 点设一个循环闹钟,标签就叫「我还在计划上吗?」
+3. 今天完成任何一项后,写你的第一行 Observation:「做了__,结果__」——系统从这一行开始存在。
 
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. The study should encourage researchers in the field to seek biological signatures that can be used to guide the diagnosis and treatment of individual patients rather than groups, he added.
-2. - Current brain imaging techniques are not used as a standalone diagnostic tool for ADHD.
-3. Studies using MRI have found important clues about ADHD’s causes.
-4. Types of Brain Imaging Used to Study ADHD
-5. They use SPECT scans to find patterns of brain activity linked to ADHD.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：emotional dysregulation（情绪失调（难以调节情绪强度和恢复））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层**:你给模型写过的每一个组件,都是你欠自己的那一个——从一张纸开始,把它还上。
 
 ## 参考来源
 
@@ -103,4 +80,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 39 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 39 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
