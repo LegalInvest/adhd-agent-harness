@@ -29,70 +29,44 @@ spine: "外部执行功能层"
 spineKind: "bridge"
 isEvolved: false
 ---
+
 # 为什么法学生写不出论文，不是因为懒，而是启动系统坏了？
 
-> 你缺的不是资料，是从巨大题目进入第一段的坡道
+> 图书馆闭馆音乐响起,她又一次合上只写了标题的文档。这已经是本周第四次:资料读了几十篇、笔记记了上万字、大纲改了三版——所有「准备工作」都完成得无可挑剔,唯独正文永远停在第一段。导师的评价是「基础很好,就是不够刻苦」。她不敢说的是:每天坐进图书馆的她比谁都刻苦,只是「开始写」这个动作,像一堵没有门的墙。
 
-先说一个事实：In Australia, over 280,000 individuals aged between 0 to 19 years old, and over 530,000 adults aged 20 and older were affected by ADHD (2)。
+收敛:法科的论文写作把 ADHD 的启动故障放大到极致——超长周期、无中间反馈、格式权威、错了要担后果。本文只回答——**「读得进却写不出」的启动故障,机制在哪一环?怎么给它装一个人工点火器?**
 
-如果你是 ADHD 人群，你大概率经历过——时间像握不住的沙，常常低估任务耗时、错过截止日期。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+## 穿透:为什么偏偏是「写」
 
-## 为什么这件事对 ADHD 格外重要
+拆开这个故障的三层机制。第一层是**任务的不可分解性错觉**:「写论文」在心理表征里是一整块两万字的巨石,而启动需要的是一个 10 分钟粒度的动作——表征粒度和执行粒度差了三个数量级,点火信号根本对不上接口。第二层是**反馈真空**:读文献每一页都有「学到了」的即时反馈,写作的反馈要等几周后导师批复——对延迟折扣陡峭的 ADHD 动机系统,写作的主观回报被折成了零,于是行为自然滑向永远「再读一篇」。第三层是**完美主义的法学变体**:法科训练让人对「不严谨」高度敏感,而初稿必然不严谨——「写出烂句子」的预期惩罚,让不写成为局部最优。
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往时间感知偏差（time blindness），难以估算时长。但与此同时，ADHD 也有自己的天赋：发散思维和联想能力强，擅长看到别人忽略的连接。
+LLM 侧的对应结构可以直接借来当修法:让模型写长文,没有工程师会发一句「写一篇论文」的 prompt 然后等待——标准做法是**分段生成+草稿模式+迭代精修**:先让模型低质量地把骨架吐出来(允许烂),再逐段重写。核心原理:**生成和评审是两个进程,同时运行必然死锁。**她写不出的每一天,都是生成进程刚要动、评审进程就把它按死的一天。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+利益视角:「不够刻苦」的归因对系统最省事——不需要改教学方式,也不需要理解启动机制,代价全由学生的自我叙事承担。
 
-## 最新研究怎么说
+## 验证
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+机制对不对,一周即可证伪。协议:每天只做一个 25 分钟块,规则三条——①从「口述」开始:对着手机把这一节想说的话讲 5 分钟(语音转文字),不许打字;②把转出的烂文字贴进文档,只做「把口语改成书面语」的编辑工作;③今天绝不评审昨天的内容。如果一周后正文字数仍为零,启动故障假说对你不成立——那时要排查的是更上游的问题(选题的情绪负载、对导师反馈的恐惧、或情绪状态本身),考虑和导师或咨询师直接谈。
 
-- Impairments in sustained attention in patients with attention disorders have been associated with increased trial-to-trial variability in reaction time and event-related potential deficits during attention tasks（来源：Mental Training Enhances Attentional Stability: Neural and Behavioral Evidence）。
-- This review, focusing on the visual modality, describes 55 experiments in which both emotional and neutral irrelevant distractors are presented at the same time as ongoing task targets（来源：Exogenous (automatic) attention to emotional stimuli: a review）。
-- A blindness to past, future, and time more generally, as well as an inability to direct behavior toward the future and to sustain it are among many of the deficits predicted by this model for persons with ADHD（来源：Attention-Deficit/Hyperactivity Disorder, Self-Regulation, and Time）。
+## 决策
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+做什么:把「写」重定义为两个分开的动作——「吐字」(低标准、口述友好、只求存在)和「修字」(高标准、法学的严谨在这里发挥)——用不同的时段运行,永不同时。
 
-## 真实可用的 AI 工具
+不做什么:不要再用「多读一篇文献」奖励自己(那是启动逃避的最高级伪装);不要在吐字时段打开任何文献(评审进程的传送门)。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+先做什么:今天做第一个口述块:5 分钟,对手机讲「我这一节到底想说什么」。
 
-### Motion
+## 边界
 
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
+「生成/评审分离」是写作工程的实践框架,启动困难的机制解释基于 ADHD 执行功能与延迟折扣文献(本文未做正式 A/B/C 分级)。若写作停滞伴随持续的情绪低落、失眠或自我否定,请寻求学校心理服务或专业评估——长期卡在高利害任务上的痛苦,值得被当作健康问题而非态度问题对待。
 
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
-### Structured
+## 今天就能试的 3 件事
 
-Structured：可视化的每日时间线规划 App，把一天排成清晰的视觉时间轴。适用场景：让 ADHD 用户对一天的节奏有直观掌控感。
-### Todoist
+1. 做 5 分钟口述:对手机讲出「这一节想说什么」,语音转文字,烂没关系——存在先于严谨。
+2. 把文档改名为「草稿-禁止评审」——用文件名给自己立规矩。
+3. 给写作块找一个 body double:约同学各写各的 25 分钟,或开一个线上自习房间——启动的电,可以从别人身上借。
 
-Todoist：任务管理 App，带自然语言输入和 AI 辅助功能。适用场景：快速捕捉待办，减少遗忘。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. An agent's planning capability determines its ceiling for handling complex tasks.
-2. In this blog post, we will explore 10 effective chatbot prompts that can help individuals with ADHD and executive dysfunction manage their daily tasks more effectively.
-3. - Prioritization and Focus:- One of the most significant challenges for people with ADHD is prioritizing tasks and maintaining focus.
-4. - Example prompt: "I have been avoiding [task] for some time now.
-5. - Task Simplification:- When faced with an overwhelming task, breaking it down into smaller, more manageable steps can help those with ADHD approach it with less anxiety and make progress more efficiently.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：rejection sensitive dysphoria（拒绝敏感性焦虑（RSD，对批评和拒绝的强烈情绪反应））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层与叙事层**:你不是不刻苦——你是在用别人的点火器打自己的火。换一个对接口的,墙上就有门了。
 
 ## 参考来源
 
@@ -104,4 +78,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 26 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 26 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
