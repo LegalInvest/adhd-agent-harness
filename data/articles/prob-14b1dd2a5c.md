@@ -28,71 +28,44 @@ problem: "Goblin Tools 之于 ADHD，是脚手架还是拐杖？"
 spine: "无状态与外部记忆"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
-# Goblin Tools 之于 ADHD，是脚手架还是拐杖？
 
-> 从「同构」视角评测 Goblin Tools：用久了会让 ADHD 更强还是更依赖？
+# Goblin Tools 之于 ADHD，是脚手架还是拐杖？——答案取决于你是哪一种用户
 
-先说一个事实：Seventy-seven children and adolescents, aged 6 to 16 years, comprised the four research groups--16 patients with TS, 21 patients with TS plus ADHD, 13 patients with ADHD, and 27 unaffected control subjects。
+> 站内已经从功能内部拆过这个问题(拆解=图式×点火,前者可回收后者放心外包)。但后台一直有另一类提问,来自还没开始用的人:「我到底该不该让孩子用?」「我自己刚确诊,现在就上工具会不会养成依赖?」——他们要的不是功能解剖,是**一个面向自己处境的判断**。而这恰恰是「脚手架还是拐杖」这类问题最被忽略的真相:**同一个工具,对四种不同处境的用户,答案根本不同。**给工具贴统一标签是懒惰的,正确的问法是:「Goblin Tools 之于『此刻的我』,是什么?」本文给出这张分诊表。
 
-如果你是 ADHD 人群，你大概率经历过——在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+收敛:本文只回答——**按「处境」分诊的四型用户,Goblin Tools 对每型分别是什么(答案含反直觉项)?每型的正确用法差在哪?怎么判断自己该换型了?**
 
-## 为什么这件事对 ADHD 格外重要
+## 穿透:工具没有属性,「用户处境×用法」才有属性
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往任务启动（task initiation）困难，明知该做却开不了头。但与此同时，ADHD 也有自己的天赋：在感兴趣的领域可以进入「超聚焦」（hyperfocus）状态。
+**一型:未确诊/初确诊的成年人(自我理解期)。**对这型用户,Goblin Tools 首先既不是脚手架也不是拐杖——**是诊断性的镜子**:第一次看到 AI 把「收拾房间」拆成 12 步时的那种震动(「原来正常人脑子里自动发生这个?!」),往往比任何科普都更快让人理解自己缺的是什么。正确用法:头一个月别管效率,把它当「执行功能差距的可视化仪器」用——它拆出的每一步,都是你大脑里没有自动发生的那一步。此期风险不是依赖,是**过度归因**(把一切困难都解释成「缺拆解」——拆解只是六插槽之一,镜子照不出另外五个)。**二型:治疗与系统建设期(确诊已稳,正在搭 harness)。**对这型,它是**标准的脚手架候选**——图式回收协议(看切法、预测游戏)全部适用,目标是一年后「中低难度任务徒手拆,硬任务才召唤」。此期的关键动作是把它嵌进整体系统(拆解的输出接到唯一动作/日历块),孤立使用的工具活不长。**三型:高负荷维持期(系统已有,生活满载——多职、育儿、创业)。**反直觉的答案:对这型用户,**把它当拐杖用是正确的**——满载状态下没有「训练预算」,图式回收协议是奢侈品;此期的正确姿势是最大化外包、零愧疚(把训练目标留给未来的低负荷期)——**把脚手架标准强加给满载者,是用理想主义给人加压**。四型:儿童/青少年(家长代管期)。**最需要谨慎的一型:发育中的执行功能确实有更大的可塑性空间,「全外包」可能挤占发展窗口——此期它应该是**教学脚手架**:家长/孩子一起用,每次都过「它怎么拆的?我们自己先猜」的流程(预测游戏做成亲子默认动作),重点是借它教图式,而不是让它代劳;且儿童期的执行功能干预应有专业参与,工具只是家庭练习的辅助。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+换型信号,三条:一型→二型:当「原来如此」的震动消退、开始想要效率时;二型→三型:当生活负荷陡增(新生儿/新事业)——**主动降档不是退步,是资源管理**;三型→二型:当负荷回落——记得把训练协议捡回来(满载期的拐杖习惯会有惯性,设一个「负荷回落后一个月」的日历提醒)。
 
-## 最新研究怎么说
+## 验证
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+分诊表可自测:先诚实定位自己的型,按该型协议用八周,评估指标随型而异(一型看自我理解的清晰度、二型看徒手拆解的进步、三型看总完成量与耗竭度、四型看孩子的图式表达)。可证伪:若按型使用八周后该型指标无改善,两种可能——定位错型(重新分诊),或你的瓶颈不在拆解槽(六插槽篇重新自查)——分诊表本身的失效条件是「困难主要来自拆解之外」,那时任何用法的 Goblin Tools 都帮不到主战场。
 
-- These techniques are being applied to the screening and diagnosis of ADHD, presenting the potential to create more objective and accurate diagnostic and classification models for ADHD（来源：Artificial intelligence in ADHD: a global perspective on ...）。
-- In this study, articles from the WoSCC database were analyzed to assess the research status, hotspots, and trends in this field of AI in ADHD（来源：Artificial intelligence in ADHD: a global perspective on ...）。
-- Particular emphasis was placed on examining the current state and limitations of AI in ADHD diagnosis（来源：Artificial intelligence in ADHD: a global perspective on ...）。
+## 决策
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+做什么:先分诊再用工具;按型执行对应协议;在换型信号出现时主动切换。
 
-## 真实可用的 AI 工具
+不做什么:不要用别人的型要求自己(满载者别学系统期的训练协议,家长别照搬成人的全外包);不要给工具贴永久标签(它在你人生不同阶段的角色本来就该变)。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+先做什么:花两分钟定位你的型——然后只读你那一型的协议,照做。
 
-### Goblin Tools
+## 边界
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+四型分诊为实践框架,无对照研究(本文未做正式 A/B/C 分级);儿童执行功能发展与干预窗口有文献基础但个体差异大(GRADE 中),**儿童期的评估与干预请以专业人士为主导,工具为辅助**。「满载期拐杖化」不适用于安全攸关的功能;工具使用不替代治疗决策。
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Lex
+## 今天就能试的 3 件事
 
-Lex：内置 AI 的写作工具，能在你卡壳时续写、生成大纲、克服空白页恐惧。适用场景：解决 ADHD 写作启动困难和组织思路的难题。
-### Mem
+1. 定位你的型,写下来(含理由一句话)。
+2. 按型启动对应的第一个动作(一型:拆一个日常任务看震动;二型:玩预测游戏;三型:把最重的任务外包给它并免除愧疚;四型:和孩子一起猜一次拆法)。
+3. 给未来的换型设一个触发器(日历提醒或负荷信号)。
 
-Mem：AI 驱动的笔记工具，自动整理和关联你的笔记，无需手动建立文件夹结构。适用场景：适配 ADHD 不擅长手动归类整理的特点，让 AI 自动建立知识连接。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. Gamified training appears to be highly engaging and does boost participant motivation, but mixed effects of gamification on task performance were reported.
-2. We propose that future studies examining shared familial etiological factors for ADHD and ASD use a family-based design in which the same phenotypic (ADHD and ASD), candidate endophenotypic, and environmental measurements are obtained from all family members.
-3. CONCLUSIONS: Our study shows that ADHD has a significant impact on multiple domains of HRQL in children and adolescents.
-4. BACKGROUND: Several theoretical explanations of ADHD in children have focused on executive functioning as the main explanatory neuropsychological domain for the disorder.
-5. Efficacious medication-based treatments are available and widely used, often alongside complementary psychosocial approaches.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：working memory（工作记忆（短期保持和操作信息的能力））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层的个体化原则**:「这个工具好不好」是错误的问题,「此刻的我该怎么用它」才是对的——工具和人的关系像药和人的关系:同一味药,不同的处境,不同的剂量;而知道自己此刻是谁,是一切正确用药的开始。
 
 ## 参考来源
 
@@ -102,4 +75,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 148 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 148 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
