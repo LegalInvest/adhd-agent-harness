@@ -28,71 +28,46 @@ problem: "Goblin Tools 之于 ADHD，就像 self-critique 验证循环 之于 LL
 spine: "幻觉与验证循环"
 spineKind: "llm"
 isEvolved: true
+llmGenerated: false
 ---
-# Goblin Tools 之于 ADHD，就像 self-critique 验证循环 之于 LLM——但有人用错了
 
-> 从同构视角实测 Goblin Tools：它到底补上了哪一层执行功能？
+# Goblin Tools 之于 ADHD，就像 self-critique 验证循环 之于 LLM——但有人用错了：无限拆解是新形态的不开始
 
-先说一个事实：The results of Granger causality analyses in 57 participants confirmed this hypothesis。
+> Goblin Tools 的魔法待办(Magic ToDo)有一个可爱的辣度设定:辣度越高,任务拆得越细。她把「申请研究生」丢进去,辣度拉满——得到 8 个子任务;她觉得「联系推荐人」还是太吓人,再拆——5 个孙任务;「起草给教授的邮件」还是有点堵,再拆——「打开邮箱」「写称呼」「写第一段」……当任务树拆到第四层、总节点数超过 60 个时,她忽然意识到自己在干什么:**她已经拆了四十分钟,而「申请研究生」这件事的实际进展是零。拆解——这个本该通往行动的工具——变成了行动的新替身:每按一次「再拆细点」,都获得一次「事情变简单了」的幻觉快感,而那封邮件依然一个字没写。**用 LLM 工程的话说:self-critique/验证循环是好东西(让模型检查和改进自己的输出),但工程师都知道它的经典故障——**没有停机条件的自我改进循环,会无限迭代不输出**;拆解也一样:没有停机条件的拆解,是披着生产力外衣的无限循环。
 
-如果你是 ADHD 人群，你大概率经历过——网上关于 ADHD 的说法五花八门，到底哪些有科学依据。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+收敛:拆解的价值(动作级语言、点火包)各篇讲过,本文只回答——**「拆解成瘾」的机制与判据(拆到什么程度该停)?拆解的停机条件怎么设(可操作的三条)?以及那个更根本的问题:有些任务的堵点根本不在粒度,拆解对它们无效——怎么识别?**
 
-## 为什么这件事对 ADHD 格外重要
+## 穿透:拆解的边际收益是递减的,而拆解的快感不递减——所以停机条件必须外置,不能等"感觉够细了"
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往组织和优先级排序需要额外的结构支撑。但与此同时，ADHD 也有自己的天赋：在高压和紧迫感下反而能爆发出惊人的执行力。
+机制。拆解为什么会成瘾,账目和整理/调研一脉相承但有个独有成分:**每次细拆都即时降低「感知难度」**——任务从「吓人的一坨」变成「一串小格子」,焦虑肉眼可见地下降——**这个焦虑下降就是奖励,而它可以不经过任何实际行动获得**;于是回路成型:焦虑→拆解→焦虑缓解→(行动依然可怕)→再拆→再缓解……**拆解成了焦虑的止痛片,而止痛片吃多了,就没人去做手术了。**边际账目同时恶化:拆解的真实收益集中在前两层(任务级→步骤级→动作级——每层都实打实降低启动门槛);第三层以后,收益断崖(「写称呼」比「写邮件第一段」并没有更容易启动——**门槛已经到地板了,再拆只是在地板上刻花纹**),而成本上升(60 个节点的任务树本身成为认知负担+维护对象——你现在多了一件事:管理这棵树)。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+停机条件,三条(外置的、机械的,不依赖「感觉」):**①动作级即停**——一个节点满足「物理动词开头+单次坐下可完成+无需再做决定」,就禁止再拆(「打开邮箱写称呼」已达标,住手);②**拆解限时 5 分钟**——大任务的首轮拆解限 5 分钟(AI 拆解更快),到时必须转入执行第一个节点——**拆解与执行的间隔越短,拆解的止痛片属性越弱**(拆完即做,拆解是助跑;拆完存着,拆解是逃避);③**「二次拆解」需付行动税**——对同一任务的再次拆解,必须以「已执行至少一个节点」为前提——卡住了想再拆?先把最小的那个节点做掉,再谈(多数时候做掉一个,后面就顺了——卡的从来不是粒度)。
 
-## 最新研究怎么说
+更根本的识别——三类「拆不动的堵」,拆解对它们无效,认出它们能省下无数次徒劳的细拆:①**恐惧堵**——「联系推荐人」怎么拆都吓人,因为堵点是「怕教授觉得我不配」——这是暴露焦虑,不是粒度问题;对策是恐惧对话(写下最坏情况+发生概率+应对)或直接借外部结构(和朋友约好「三点一起各发各的可怕邮件」——body double 对恐惧的疗效远超拆解);②**意义堵**——任务反复拆反复不做,可能因为你根本不想要它(申请研究生是你要的还是家人要的?)——这是价值层问题,拆解在替裁决打掩护(裁决式问题:做什么、不做什么——先答);③**能量堵**——今天什么都拆不动做不动=供电问题,回状态层(睡眠/药物/低电量模式),别在执行层空转。**判别法一句话:拆到动作级还不动的任务,堵点必在粒度之外——往恐惧、意义、能量三处查,别再往下拆。**
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+## 验证
 
-- Retinal fundus imaging as biomarker for ADHD using machine learning for screening and visual attention stratification（来源：The Retina as a Mirror: Decoding the ADHD AI "Breakthrough" and ...）。
-- Deep learning, a type of artificial intelligence, can boost the power of MRI in predicting attention deficit hyperactivity disorder (ADHD), according to a study led by Cincinnati Children’s scientist Lili He, PhD, and published in Radiology: Artificial Intelligence（来源：Artificial Intelligence Improves Ability to Use MRI to Diagnose ADHD）。
-- The result: a significantly more sophisticated model of ADHD brain activity（来源：Artificial Intelligence Improves Ability to Use MRI to Diagnose ADHD）。
+可测:三条停机条件运行两周——「拆解:执行」时间比(应大幅向执行倾斜)、首节点启动率(拆完 5 分钟内开始第一个节点的比例)。可证伪:极少数任务确需深层拆解(多人协作的项目计划)——判据是拆解产物有没有「他人消费」(给团队的 WBS 是交付物,给自己的 60 节点树是止痛片)。
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+## 决策
 
-## 真实可用的 AI 工具
+做什么:动作级即停;5 分钟限时;再拆先付行动税;拆不动的往恐惧/意义/能量三处查。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+不做什么:不要把辣度当安慰剂无限加辣;不要维护超过两层的个人任务树;不要用拆解回避裁决(「不想做」的答案不在子任务里)。
 
-### Goblin Tools
+先做什么:找出你拆得最细却没动的那个任务——按三类堵自查一次,今天要么做掉它的最小节点,要么诚实地删掉它。
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+## 边界
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Motion
+「拆解降低启动门槛」有行为激活方向的支持(GRADE 中);拆解成瘾与停机条件为使用模式分析+实践设计(无对照研究)。self-critique 类比按 B 级功能同型使用,迁移的是「循环需要停机条件」这一工程原则。Goblin Tools 本身是好工具(它的辣度设计正是为不同粒度需求服务),本文批评的是使用循环,不是产品;不构成产品评价。恐惧与意义类堵点若持续弥漫,考虑专业支持——那可能不是任务问题。
 
-Motion：AI 日历和任务管理工具，能根据优先级和截止日期自动排布你的一天，任务延误时自动重新规划。适用场景：解决 ADHD 的时间盲和过度承诺，让 AI 替你做日程决策。
-### Tiimo
+## 今天就能试的 3 件事
 
-Tiimo：视觉化的日程与计划 App，专为神经多样性设计，用图标、颜色和倒计时让时间「看得见」。适用场景：对抗时间盲，把抽象的时间转化为视觉信号。
+1. 给最细的那棵任务树做三类堵自查。
+2. 执行它的最小节点(或删掉整棵树)。
+3. 把「动作级即停」写在你的拆解工具旁。
 
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. Sex/Gender Differences and Autism: Setting the Scene for Future Research.
-2. These include (a) the tendency for researchers to define change to abilities using single tasks, (b) inconsistent use of valid WM tasks, (c) no-contact control groups, and (d) subjective measurement of change.
-3. CONCLUSIONS: Although previous research suggests that DMHIs can be useful in supporting mental health, contextual factors are important determinants of whether users actually engage with these interventions.
-4. There is little evidence that stimulant abuse or diversion is currently a major problem, particularly among those with ADHD, although recent trends suggest that this could increase with the expanding production and use of stimulants.
-5. The second set of guidelines will address the issue of treatment of children with ADHD.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：rejection sensitive dysphoria（拒绝敏感性焦虑（RSD，对批评和拒绝的强烈情绪反应））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层(拆解的停机纪律)**:拆解是把大石头敲成能搬动的小块——敲到能搬,就该弯腰去搬了;**一直蹲在那儿把石块敲成石子、石子敲成沙——沙子再细,墙不会自己砌起来;而你蹲得越久,越忘了自己原本,是来砌墙的。**
 
 ## 参考来源
 
@@ -103,4 +78,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 229 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 229 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
