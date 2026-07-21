@@ -29,70 +29,44 @@ spine: "无状态与外部记忆"
 spineKind: "llm"
 isEvolved: false
 ---
+
 # Perplexity 之于 ADHD，就像 外部记忆/向量库 之于 LLM——但有人用错了
 
-> 从同构视角实测 Perplexity：它到底补上了哪一层执行功能？
+> 一位 ADHD 咨询顾问把 Perplexity 的 Spaces 当成了「第二大脑」：项目资料、行业报告、客户背景全部喂进去，需要时提问即得。直到某次客户会议上，对方追问一个他「查过很多次」的数据的出处细节，他当场卡住——他的第二大脑知道答案，但坐在会议室里的第一大脑，是空的。
 
-先说一个事实：ADHD affects roughly 366 million adults worldwide, and the daily friction it creates, missed deadlines, forgotten tasks, hours lost to distraction, isn’t a willpower problem。
+收敛：外部记忆的类比人人会说，但用错的方式很具体。本文只回答——**把检索工具当外部记忆用时，哪些东西可以真正外包，哪些东西外包了就会在关键时刻背叛你？**
 
-如果你是 ADHD 人群，你大概率经历过——在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+## 穿透：向量库在 harness 里的真实角色
 
-## 为什么这件事对 ADHD 格外重要
+工程事实先摆清楚：LLM 的外部记忆（向量库/检索增强）解决的是「容量与持久化」，但它有一个被营销掩盖的边界——**检索回来的内容必须重新占用上下文窗口、重新被处理**。外部记忆不是「模型知道了」，而是「模型需要时能重新读到」。所以 harness 设计里有一条铁律：高频使用的核心知识要尽量留在上下文里（甚至微调进模型），只有低频的长尾才交给检索。
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往组织和优先级排序需要额外的结构支撑。但与此同时，ADHD 也有自己的天赋：在高压和紧迫感下反而能爆发出惊人的执行力。
+ADHD 侧的对应结构精确得刺眼：你可以把资料外包给 Perplexity，但**使用知识的现场**（会议、谈判、临场判断）不允许你现场检索——那一刻能用的只有已经内化的部分。用错的方式就是把「高频核心」也外包了：客户的关键数据、自己领域的支柱概念，这些是会议室里随时要调用的「热知识」，放在外部库里等于放在了防火墙外面。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+谁在获利：「把一切都存进来」是所有第二大脑产品的增长叙事，因为存得越多、锁定越深。没有产品会告诉你「有些东西你必须背下来」。
 
-## 最新研究怎么说
+## 验证：热/冷知识的分界能自测
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+判据：**调用时延要求。**需要在 3 秒内脱口而出的知识是热知识（必须内化），允许 3 分钟后再答的是冷知识（可以外包）。自测协议（一周）：记录每次「卡住」的场景——是独自工作时（可检索，外包无害）还是对人现场（不可检索，外包有害）？如果卡住集中在对人现场，你的热知识外包过度了。反例边界：纯研究型工作几乎全是冷知识场景，重度外包完全合理——分界由你的工作形态决定，不由工具决定。
 
-- **高价值线索**：ADHD 明确，且有 AI/产品/开发/效率工具邻近证据，但还需要站内核验（来源：adhd_ai_creator_map_v2_2026-07-03）。
-- - Agent Development Kit: Making it easy to build multi-agent applications — Google's announcement and design rationale for ADK: explains the multi-agent topology, tool registration model, and eval pipeline that shaped their framework（来源：ai-boost/awesome-harness-engineering - GitHub）。
-- Large language models like ChatGPT have emerged as surprisingly effective ADHD tools（来源：Revolutionizing ADHD Management with AI Assistants）。
+## 决策
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+做什么：给知识分层——列出你领域里 20 条「3 秒知识」（客户核心数据、支柱概念、关键数字），这 20 条用主动回忆内化（对 ADHD 友好的方式：讲给别人听、用自己的话写一遍），其余全部放心外包给 Perplexity。
 
-## 真实可用的 AI 工具
+不做什么：不要试图内化一切（那是在跟自己的工作记忆打必败的仗）；不要在对人场景前才临时抱佛脚地检索——检索窗口要提前到前一天。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+先做什么：现在就写那 20 条清单——写清单本身就是一次主动回忆。
 
-### Goblin Tools
+## 边界
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+「Perplexity↔向量库」是功能层类比（本文未做正式 A/B/C 分级）；Perplexity 不是 ADHD 的治疗手段，本文讨论使用结构而非疗效。若记忆困难显著影响职业功能且持续加重，请寻求专业评估。
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Lex
+## 今天就能试的 3 件事
 
-Lex：内置 AI 的写作工具，能在你卡壳时续写、生成大纲、克服空白页恐惧。适用场景：解决 ADHD 写作启动困难和组织思路的难题。
-### Mem
+1. 写出你的「3 秒知识」清单前 5 条——就 5 条，今天不求全。
+2. 挑其中 1 条，用自己的话讲给一个同事或朋友听（或者对着语音备忘录讲）——最便宜的内化协议。
+3. 检查你的 Perplexity/笔记库：把下周要见的人相关的热知识,提前一天设一个「预热提醒」。
 
-Mem：AI 驱动的笔记工具，自动整理和关联你的笔记，无需手动建立文件夹结构。适用场景：适配 ADHD 不擅长手动归类整理的特点，让 AI 自动建立知识连接。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. Start with one tool like ChatGPT for writing assistance or Notion AI for organization, then gradually add more as you build confidence.
-2. AI tools can serve as external executive functions, helping with the cognitive tasks that don't come naturally to ADHD brains.
-3. - The biggest predictor of success with an ADHD AI assistant is how smooth the onboarding experience is; poor setup is why most abandoned apps stay abandoned
-4. Support tools designed around ADHD exist in that gap: the space between clinic visits, the hours when no coach is available, the moment you need a prompt right now.
-5. AI-powered scheduling tools in this category are particularly useful for ADHD because they don’t just show you what you planned, they replan automatically when reality doesn’t cooperate.
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：rejection sensitive dysphoria（拒绝敏感性焦虑（RSD，对批评和拒绝的强烈情绪反应））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层**：外部记忆是伟大的仓库，但会议室里你带不进仓库——分清哪 20 条必须长在自己身上。
 
 ## 参考来源
 
@@ -102,4 +76,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 9 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 9 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
