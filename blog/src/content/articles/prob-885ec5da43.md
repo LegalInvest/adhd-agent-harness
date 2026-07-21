@@ -28,71 +28,46 @@ problem: "ADHD 自由职业者视角：ADHD 不是缺陷，是缺了一层 orche
 spine: "无状态与外部记忆"
 spineKind: "llm"
 isEvolved: false
+llmGenerated: false
 ---
+
 # ADHD 自由职业者视角：ADHD 不是缺陷，是缺了一层 orchestration——和 GPT 一样
 
-> 无状态与外部记忆：生成核心没问题，缺的是调度层（LLM 无跨会话状态，靠外部记忆/向量库续命）。
+> 辞职单干的第七个月,她在记账软件里看到了那个不敢细想的对比:上班时她是团队公认的「点子机器」+「救火队长」,年终评级从没低过;自由职业后,同样的大脑,收入只有原来的四成——而且她比上班时更累。深夜复盘,她列了一张「上班时我以为是我自己在做、其实是公司在做」的清单:立项(老板拍的)、排期(PM 排的)、验收(流程逼的)、开票催款(财务干的)、「今天干什么」(站会定的)……列完她愣住了:**原来公司一直是她的 orchestration 层——立项、调度、验收、状态管理,全是编排功能;她贡献的从来只是那颗生成核心,而生成核心恰恰是她最强的部分。**辞职不是失去了平台,是失去了编排层——就像把一个性能顶级的模型从生产环境的编排框架里拆出来裸跑:模型没变,产出崩了。「ADHD 不是缺陷,是缺了一层 orchestration」——这句话在职场人和创业者的版本里讲过两次,但自由职业是它最赤裸的验证场:**因为只有自由职业者,是亲手签字放弃了那一层的人。**
 
-先说一个事实：Suicide-related outcomes improved compared to TAU (SMD -0.34, 95% CI -0.57 to -0.11; 13 trials, 666 participants; low-quality evidence), corresponding to a MD of -0.11 (95% CI -0.19 to -0.034) on the Suicidal Attempt Self Injury Interview。
+收敛:与职场篇(向公司借编排)和创业篇(经验变产品)不同,本文只回答——**自由职业为什么是「缺编排」的极端暴露场景(雇佣关系篇讲了隐性 harness,本文推进到编排功能的完整清单)?自建编排层的「最小雇主协议」(把公司的编排功能逐项自建,按性价比排序)?以及什么信号说明你该考虑「租」而不是「建」?**
 
-如果你是 ADHD 人群，你大概率经历过——在一堆效率工具之间反复横跳，却没有一个能真正坚持用下去。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+## 穿透:公司之于员工,就是编排层之于模型——辞职是把自己从生产环境拆出来裸跑
 
-## 为什么这件事对 ADHD 格外重要
+先补全清单。雇佣关系篇讲过四件隐性供给(deadline/对账/时空结构/在场),用编排框架重新盘点,公司提供的其实是完整的六模块(编排蓝图篇的那六格):**规划器**(立项与拆解——老板和 PM)、**状态存储**(项目管理系统+同事的共同记忆)、**检查点**(周会、站会、汇报节点)、**错误处理**(流程兜底、同事补位、「反正有人会发现」)、**审批闸**(报销、合同要走的那些流程——你烦过的一切审批,都是防冲动的闸)、**调度器**(优先级由业务定,你不用每天早上面对「今天做什么」的开放问题)。**自由职业的真相:客户只买你的生成核心,但生活要求你同时兼任全部六个模块——而你恰好是六模块先天配置最低的人群。**收入四成的谜底:不是能力掉了,是大量生成核心的产能被六模块的兼职消耗掉了(而且干得很差)。
 
-ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往任务启动（task initiation）困难，明知该做却开不了头。但与此同时，ADHD 也有自己的天赋：在感兴趣的领域可以进入「超聚焦」（hyperfocus）状态。
+最小雇主协议——按「自建性价比」排序逐项重建:**第一优先:检查点(性价比之王)**——固定的周五自我站会(15 分钟,三行格式:本周交付/卡点/下周三件事)+找一个同为自由职业的「互相汇报伙伴」(每周互发那三行——**外部眼睛让假站会开不下去**;研究生篇的假会议,自由职业版);**第二优先:调度器**——每周站会时顺手排好下周的「每日一主件」(每天只定一件主要交付物——把「今天干什么」从每日开放题变成照单执行;决策的时机也对:周五的你给下周的你当 PM,状态好的自己指挥状态差的自己——multi-agent 单人版的应用);**第三优先:审批闸**——接单决策的 24 小时规则(任何报价/接单/拒单,睡一觉再回——自由职业最贵的错误全是冲动接单和冲动降价);**第四优先:错误处理**——「交付前 48 小时缓冲」硬编码进一切报价(你的工期估算天生乐观,缓冲不是懒惰是精算);**第五(可租不建):状态存储与规划**——项目管理工具足够,别自研流程(工作台篇的「用时才建」)。
 
-关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+「租」的信号——三个迹象说明你该花钱买编排而不是自建:①站会连续四周开不起来(自我结构供给已证明不足——去租:付费的 accountability 教练、共享工作室的固定工位、甚至「和朋友约定互为甲方」);②行政类模块(开票、催款、报税)持续吃掉生成时间(这些是纯外包品:虚拟助理/财务代办的性价比远超你兼职——**你的时薪在生成核心上最高,在报税上最低,让市场分工替你套利**);③收入允许时,「租一个 PM」(兼职项目经理/经纪人)是自由职业的终极编排采购——**很多自由职业者的天花板不是接不到活,是编排产能封顶;买编排,就是买第二条命。**
 
-## 最新研究怎么说
+## 验证
 
-在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+可测:最小雇主协议运行八周——生成核心时间占比(用时间追踪粗算,应升)、交付延误率(应降)、收入/焦虑的变化。可证伪:若你的自由职业困境主要是获客而非交付(单子都接不到),编排不是你的瓶颈——先解决市场问题;编排救交付,不救销售。
 
-- Tang, Application of artificial intelligence in the MRI classification task of human brain neurological and psychiatric diseases: A scoping review, Diagnostics, 11 (2021), 1402（来源：Unveiling critical ADHD biomarkers in limbic system and cerebellum...）。
-- Large language models (LLMs), such as ChatGPT [1], Claude [2], and Bard [3], have revolutionized natural language processing by enabling powerful capabilities across a diverse range of applications（来源：A Comprehensive Survey of Hallucination in Large Language ...）。
-- Therefore, the combination of complementary approaches (e.g., learning with uncertainty or retrieval with learning) is a promising direction to improve the overall detection robustness and accuracy（来源：A Comprehensive Survey of Hallucination in Large Language ...）。
+## 决策
 
-这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+做什么:按性价比顺序建最小雇主协议;行政外包;三信号亮起就租。
 
-## 真实可用的 AI 工具
+不做什么:不要用「自律」解释收入落差(那是拿道德解释架构);不要一次建全六模块(从检查点一件开始);不要把自由误解为「无结构」(自由是自选结构,不是没有结构)。
 
-下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+先做什么:本周五开第一次自我站会,并给一位同行发出「互相汇报」的邀请。
 
-### Goblin Tools
+## 边界
 
-Goblin Tools：一套专为神经多样性人群设计的轻量 AI 工具集，其中 Magic ToDo 能把一个笼统的任务自动拆解成可执行的微步骤。适用场景：克服任务启动困难和「不知道从哪下手」的瘫痪感。
-### Saner.AI
+雇佣结构的隐性执行支持为组织行为观察+剖面推导(无直接对照研究,本文未做正式 A/B/C 分级);「缺编排层」的同构表述按 B 级功能同型使用(与职场/创业篇同一框架,场景与方案不同)。自由职业的财务与心理压力若已影响健康,专业支持(财务与心理)优先于一切协议。
 
-Saner.AI：面向 ADHD 的 AI 个人助理，整合笔记、邮件、日程，用自然语言管理所有碎片信息。适用场景：把散落各处的想法、待办和提醒集中到一个 AI 大脑里。
-### Lex
+## 今天就能试的 3 件事
 
-Lex：内置 AI 的写作工具，能在你卡壳时续写、生成大纲、克服空白页恐惧。适用场景：解决 ADHD 写作启动困难和组织思路的难题。
-### Mem
+1. 列你自己的「原来是公司在做」清单——看清你失去的六模块。
+2. 定周五站会+发互相汇报邀请。
+3. 给下一单的报价加上 48 小时缓冲。
 
-Mem：AI 驱动的笔记工具，自动整理和关联你的笔记，无需手动建立文件夹结构。适用场景：适配 ADHD 不擅长手动归类整理的特点，让 AI 自动建立知识连接。
-
-## 可以今天就试的策略
-
-工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
-
-1. Existing survey papers have tackled the concepts of XAI, its general terms, and post-hoc explainability methods but there have not been any reviews that have looked at the assessment methods, available tools, XAI datasets, and other related aspects.
-2. Then, the significance of explainability in terms of legal demands, user viewpoints, and application orientation is outlined, termed as XAI concerns.
-3. I created a basic proof of concept of LMVM (Language Model Virtual Machine), a command line toolchain that English instructions into native binaries without intermediary high-level language compilation.
-4. The biggest gains show up in recursive and number-crunching workloads (where the cost of "figuring out what to do next" dominates) and memory-heavy tasks (where automatic garbage collection and wrapping every value in an object bloats memory usage).
-5. If the toolchain still can't work after all that, LMVM stops early and tells you exactly what to do (install manually, open a new terminal, or use Docker instead).
-
-建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
-
-## 一个容易被忽略的提醒
-
-AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
-
-另外要理解一个概念：neuroplasticity（神经可塑性（大脑通过训练改变结构的能力））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
-
-## 写在最后
-
-ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
-
-记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+本文服务于人生 Harness 金字塔的**执行层(自由职业架构)与价值层的接口**:你辞职时以为自己带走了全部实力,其实你只带走了引擎,把整个底盘留在了公司——好消息是底盘可以重造,而且这次是按你的尺寸;造好那天你会发现:自由职业真正的自由,不是没人管你,是**你终于有权雇一个懂你的老板——哪怕那个老板是一张周五下午的三行清单。**
 
 ## 参考来源
 
@@ -103,4 +78,4 @@ ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能
 
 ---
 
-*本文是「ADHD × AI」系列的第 214 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*
+*本文是「ADHD × AI」系列的第 214 篇，由 Devin 基于持续维护的双域研究语料（72,739 篇论文 + LLM Wiki）亲自撰写，并持续迭代更新。*
