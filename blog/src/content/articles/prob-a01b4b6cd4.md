@@ -16,7 +16,7 @@ readingTime: 11
 slug: "为什么200个skill不是数字囤积而是moe专家库你的囤积癖正在搭建认知基础设施"
 topicId: "prob-a01b4b6cd4"
 angle: "问题XXX精修"
-rank: 156
+rank: 73
 score: 7.71
 sourceCount: 6
 toolsCited:

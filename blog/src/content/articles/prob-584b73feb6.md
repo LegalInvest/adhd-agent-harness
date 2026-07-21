@@ -16,8 +16,8 @@ readingTime: 13
 slug: "adhd-职场人视角为什么治好-adhd-的状态日内大幅波动不稳定和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-584b73feb6"
 angle: "人群×同构"
-rank: 72
-score: 7.81
+rank: 386
+score: 7.21
 sourceCount: 6
 toolsCited:
   - "Routinery"

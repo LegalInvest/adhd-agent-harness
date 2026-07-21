@@ -16,7 +16,7 @@ readingTime: 13
 slug: "为什么让-ai-帮我检查对-adhd-有效却也可能制造新的幻觉"
 topicId: "prob-199c5a2efc"
 angle: "同构问答"
-rank: 389
+rank: 128
 score: 7.61
 sourceCount: 6
 toolsCited:

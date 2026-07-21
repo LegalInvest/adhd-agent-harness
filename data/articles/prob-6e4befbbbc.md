@@ -16,8 +16,8 @@ readingTime: 10
 slug: "adhd-家长视角为什么治好-adhd-的分心走神或超聚焦跑偏丢失目标和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-6e4befbbbc"
 angle: "人群×同构"
-rank: 120
-score: 7.77
+rank: 371
+score: 7.32
 sourceCount: 6
 toolsCited:
   - "Brain.fm"

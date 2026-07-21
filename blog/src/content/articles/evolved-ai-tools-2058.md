@@ -16,8 +16,8 @@ readingTime: 14
 slug: "为什么用-claude-治-adhd-的任务启动困难和给-agent-套-function-calling-工具调用-是一回事"
 topicId: "evolved-ai-tools-2058"
 angle: "反直觉同构"
-rank: 85
-score: 7.81
+rank: 205
+score: 7.51
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

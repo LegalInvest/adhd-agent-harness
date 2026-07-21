@@ -16,8 +16,8 @@ slug: "为什么用-reclaimai-治-adhd-的学习半途而废和给-agent-套-外
 topicId: "prob-c2d1a5c024"
 angle: "反直觉同构"
 llmGenerated: false
-rank: 303
-score: 7.65
+rank: 391
+score: 7.2
 sourceCount: 5
 toolsCited:
   - "Perplexity"

@@ -17,7 +17,7 @@ slug: "两个互不引用的领域都在研究认知负荷与卸载adhd-文献�
 topicId: "prob-a24ee9685d"
 angle: "LBD同构发现"
 llmGenerated: false
-rank: 262
+rank: 99
 score: 7.65
 sourceCount: 4
 toolsCited:

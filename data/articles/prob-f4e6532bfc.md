@@ -16,8 +16,8 @@ readingTime: 10
 slug: "adhd-职场人视角为什么治好-adhd-的独自做事缺乏问责容易放弃和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-f4e6532bfc"
 angle: "人群×同构"
-rank: 79
-score: 7.81
+rank: 399
+score: 7.06
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

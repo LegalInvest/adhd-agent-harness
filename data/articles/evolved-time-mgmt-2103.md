@@ -16,7 +16,7 @@ readingTime: 13
 slug: "为什么用-chatgpt-治-adhd-的时间盲和给-agent-套-planner-executor-任务分解-是一回事"
 topicId: "evolved-time-mgmt-2103"
 angle: "反直觉同构"
-rank: 41
+rank: 18
 score: 7.95
 sourceCount: 6
 toolsCited:

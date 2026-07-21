@@ -16,8 +16,8 @@ readingTime: 11
 slug: "为什么治好-adhd-的有想法有能力却卡在执行与落地和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-f6c966a4e7"
 angle: "反直觉同构"
-rank: 329
-score: 7.63
+rank: 88
+score: 7.67
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

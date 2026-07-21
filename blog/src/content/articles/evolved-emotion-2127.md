@@ -16,8 +16,8 @@ readingTime: 7
 slug: "为什么用-claude-治-adhd-的情绪失调和给-agent-套-会褪去的脚手架-是一回事"
 topicId: "evolved-emotion-2127"
 angle: "反直觉同构"
-rank: 67
-score: 7.84
+rank: 169
+score: 7.54
 sourceCount: 6
 toolsCited:
   - "Inflow"

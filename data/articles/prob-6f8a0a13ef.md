@@ -16,8 +16,8 @@ readingTime: 10
 slug: "为什么用-reclaimai-治-adhd-的时间盲和给-agent-套-planner-executor-任务分解-是一回事"
 topicId: "prob-6f8a0a13ef"
 angle: "反直觉同构"
-rank: 285
-score: 7.65
+rank: 390
+score: 7.2
 sourceCount: 6
 toolsCited:
   - "Reclaim.ai"

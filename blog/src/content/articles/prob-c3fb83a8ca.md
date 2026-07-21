@@ -16,7 +16,7 @@ readingTime: 7
 slug: "为什么治好-adhd-的被批评却不知道错在哪一步反馈延迟就失去动力和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-c3fb83a8ca"
 angle: "反直觉同构"
-rank: 330
+rank: 112
 score: 7.63
 sourceCount: 6
 toolsCited:

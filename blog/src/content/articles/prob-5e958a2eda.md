@@ -16,7 +16,7 @@ readingTime: 13
 slug: "为什么adhd的准备行为是最贵的认知税你在用装修拖延开火"
 topicId: "prob-5e958a2eda"
 angle: "问题XXX精修"
-rank: 240
+rank: 86
 score: 7.67
 sourceCount: 6
 toolsCited:

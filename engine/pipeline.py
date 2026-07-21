@@ -145,6 +145,9 @@ def _append_rolling_log(pool: list, prev_ranks: dict, data_dir: str) -> None:
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 ARTICLES_DIR = os.path.join(DATA_DIR, "articles")
+# 下架文章归档目录：被挤出 Top 400 的文章正文完整留存（不进博客构建），
+# 重新上榜时优先从归档复用正文而不是重新生成。
+ARCHIVE_DIR = os.path.join(DATA_DIR, "archive")
 BLOG_CONTENT_DIR = os.path.join(
     os.path.dirname(os.path.dirname(__file__)), "blog", "src", "content", "articles"
 )
@@ -327,17 +330,28 @@ def run_pipeline(
         existing = _index_existing_articles(ARTICLES_DIR)
         keep_titles = {t["title"] for t in pool}
         removed = 0
+        os.makedirs(ARCHIVE_DIR, exist_ok=True)
         for title, path in list(existing.items()):
             if title not in keep_titles:
-                for d in (ARTICLES_DIR, BLOG_CONTENT_DIR):
-                    p = os.path.join(d, os.path.basename(path))
-                    if os.path.exists(p):
-                        os.remove(p)
+                # 正文归档而非删除：选题回池，文章进 archive
+                shutil.move(path, os.path.join(ARCHIVE_DIR, os.path.basename(path)))
+                blog_p = os.path.join(BLOG_CONTENT_DIR, os.path.basename(path))
+                if os.path.exists(blog_p):
+                    os.remove(blog_p)
                 existing.pop(title)
                 removed += 1
+        archived = _index_existing_articles(ARCHIVE_DIR)
+        restored = 0
         targets = []
         for t in pool:
             path = existing.get(t["title"])
+            if path is None and t["title"] in archived:
+                # 重新上榜：从归档复用正文
+                apath = archived[t["title"]]
+                path = os.path.join(ARTICLES_DIR, os.path.basename(apath))
+                shutil.move(apath, path)
+                existing[t["title"]] = path
+                restored += 1
             if path is None:
                 # 避免位置式 id 与复用文章的文件名碰撞，新文章用标题哈希 id
                 t = dict(t, id=_stable_id(t["title"]))
@@ -346,7 +360,7 @@ def run_pipeline(
                 _refresh_article_ranking(path, t)
                 blog_path = os.path.join(BLOG_CONTENT_DIR, os.path.basename(path))
                 shutil.copyfile(path, blog_path)
-        print(f"\n♻️  增量模式: 复用 {len(pool) - len(targets)} 篇 / 下架 {removed} 篇 / 新生成 {len(targets)} 篇")
+        print(f"\n♻️  增量模式: 复用 {len(pool) - len(targets)} 篇（含归档恢复 {restored}） / 下架归档 {removed} 篇 / 新生成 {len(targets)} 篇")
 
     mode = "LLM Wiki 取材" if (llm and wiki_retriever and wiki_retriever.available) else "确定性模板"
     print(f"\n✍️  步骤 7/7: 生成 {len(targets)} 篇文章（{mode}）...")

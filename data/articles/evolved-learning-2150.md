@@ -16,8 +16,8 @@ readingTime: 7
 slug: "为什么用-claude-治-adhd-的学习半途而废和给-agent-套-外部记忆向量库-是一回事"
 topicId: "evolved-learning-2150"
 angle: "反直觉同构"
-rank: 126
-score: 7.77
+rank: 249
+score: 7.47
 sourceCount: 6
 toolsCited:
   - "Perplexity"
