@@ -16,7 +16,7 @@ readingTime: 13
 slug: "chatgpt-之于-adhd就像-reward-shaping-与-credit-assignment-之于-llm但有人用错了"
 topicId: "prob-2bb414c69f"
 angle: "工具×同构"
-rank: 131
+rank: 60
 score: 7.76
 sourceCount: 6
 toolsCited:

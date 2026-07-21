@@ -16,8 +16,8 @@ readingTime: 11
 slug: "为什么用-reclaimai-治-adhd-的情绪失调和给-agent-套-会褪去的脚手架-是一回事"
 topicId: "prob-2c7bc9f41a"
 angle: "反直觉同构"
-rank: 219
-score: 7.68
+rank: 378
+score: 7.23
 sourceCount: 6
 toolsCited:
   - "Reclaim.ai"

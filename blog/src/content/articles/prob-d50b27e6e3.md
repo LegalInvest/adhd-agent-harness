@@ -16,8 +16,8 @@ readingTime: 13
 slug: "adhd-程序员视角为什么治好-adhd-的不擅长精确重复状态维护类任务和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-d50b27e6e3"
 angle: "人群×同构"
-rank: 78
-score: 7.81
+rank: 204
+score: 7.51
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

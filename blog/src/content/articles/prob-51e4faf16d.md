@@ -16,7 +16,7 @@ readingTime: 8
 slug: "为什么治好-adhd-的独自做事缺乏问责容易放弃和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-51e4faf16d"
 angle: "反直觉同构"
-rank: 328
+rank: 111
 score: 7.63
 sourceCount: 6
 toolsCited:

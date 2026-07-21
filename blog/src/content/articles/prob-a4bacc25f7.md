@@ -16,7 +16,7 @@ readingTime: 12
 slug: "为什么ai-诊断-adhd-最危险的不是不准而是把高偏倚研究包装成确定性"
 topicId: "prob-a4bacc25f7"
 angle: "问题XXX精修"
-rank: 257
+rank: 94
 score: 7.65
 sourceCount: 6
 toolsCited:

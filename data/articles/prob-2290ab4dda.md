@@ -16,7 +16,7 @@ readingTime: 12
 slug: "为什么中年adhd需要第二次确诊你的代偿系统正在中年崩溃"
 topicId: "prob-2290ab4dda"
 angle: "问题XXX精修"
-rank: 253
+rank: 90
 score: 7.66
 sourceCount: 6
 toolsCited:

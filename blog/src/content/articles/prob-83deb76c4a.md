@@ -16,7 +16,7 @@ readingTime: 11
 slug: "为什么治好-adhd-的任务启动困难不会拆解和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-83deb76c4a"
 angle: "反直觉同构"
-rank: 97
+rank: 55
 score: 7.77
 sourceCount: 6
 toolsCited:

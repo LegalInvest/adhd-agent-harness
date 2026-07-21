@@ -16,8 +16,8 @@ readingTime: 14
 slug: "为什么用-goblin-tools-治-adhd-的任务启动困难和给-agent-套-function-calling-工具调用-是一回事"
 topicId: "evolved-ai-tools-2047"
 angle: "反直觉同构"
-rank: 139
-score: 7.75
+rank: 281
+score: 7.45
 sourceCount: 6
 toolsCited:
   - "Goblin Tools"

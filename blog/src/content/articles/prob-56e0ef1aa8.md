@@ -1,0 +1,106 @@
+---
+title: "我们用系统提示、RAG 和工具循环来让 LLM 保持任务；能否把这些反向映射为 ADHD 脚手架：系统提示 → 晨间意图仪式，RAG → 可检索笔记/物理 token，工具循环 → 身体 doubling/清单？当人类「注意力分配器」不可微时，失败模式会是什么？"
+subtitle: "把 LLM 上下文控制工程化到日常生活"
+description: "把 LLM 上下文控制工程化到日常生活"
+date: "2025-03-13"
+category: "专注力管理"
+categoryId: "focus"
+categoryEn: "Focus Management"
+tags:
+  - "ADHD"
+  - "AI"
+  - "专注力管理"
+  - "STORM视角轮"
+  - "专注力"
+readingTime: 9
+slug: "我们用系统提示rag-和工具循环来让-llm-保持任务能否把这些反向映射为-adhd-脚手架系统提示-晨间意图仪式rag-可检索笔记物理-token工具循环"
+topicId: "prob-56e0ef1aa8"
+angle: "STORM视角轮"
+rank: 348
+score: 7.4
+sourceCount: 4
+toolsCited:
+  - "Brain.fm"
+  - "Focusmate"
+  - "Endel"
+  - "Forest"
+problem: "我们用系统提示、RAG 和工具循环来让 LLM 保持任务；能否把这些反向映射为 ADHD 脚手架：系统提示 → 晨间意图仪式，RAG → 可检索笔记/物理 token，工具循环 → 身体 doubling/清单？当人类「注意力分配器」不可微时，失败模式会是什么？"
+spine: "上下文工程"
+spineKind: "llm"
+isEvolved: false
+---
+# 我们用系统提示、RAG 和工具循环来让 LLM 保持任务；能否把这些反向映射为 ADHD 脚手架：系统提示 → 晨间意图仪式，RAG → 可检索笔记/物理 token，工具循环 → 身体 doubling/清单？当人类「注意力分配器」不可微时，失败模式会是什么？
+
+> 把 LLM 上下文控制工程化到日常生活
+
+先说一个事实：An electronic database search in May 2017 identified 18 eligible randomized controlled trials of 22 smartphone apps, with outcome data from 3,414 participants。
+
+如果你是 ADHD 人群，你大概率经历过——注意力像没装锚的船，明明想专注却总是漂走。这不是你不够努力，而是 ADHD 大脑的运作方式本就不同。而 AI 的出现，第一次让我们有机会用「外接」的方式补上这块短板。这篇文章不讲空话，只讲有据可查的工具、研究和可落地的方法。
+
+## 为什么这件事对 ADHD 格外重要
+
+ADHD 并不是「注意力不足」这么简单，它的核心是执行功能（executive function）的差异。具体来说，ADHD 大脑往往任务启动（task initiation）困难，明知该做却开不了头。但与此同时，ADHD 也有自己的天赋：在感兴趣的领域可以进入「超聚焦」（hyperfocus）状态。
+
+关键不在于「治好」ADHD，而在于用合适的外部系统补上短板、放大长处。AI 恰好擅长承接那些 ADHD 最吃力的部分——记住、组织、提醒、拆解、追踪。
+
+## 最新研究怎么说
+
+在动手之前，先看看证据。近年来 AI×ADHD 领域的研究进展很快：
+
+- 作者改编了认知科学中的前摄干扰(PI)范式（先前信息破坏对新更新的回忆），在人类中，对这种干扰的易感性与工作记忆容量负相关。研究发现：尽管最终值明确位于查询之前，随着干扰累积，LLM检索准确率对数下降至零；错误源于检索先前被覆盖的值。即使通过提示工程（如指示模型忽略早期输入）来减轻干扰也收效甚微。这些发现揭示了LLM在区分干扰和灵活操作信息方面的根本限制——无法主动抑制无关内容，这正是ADHD患者在信息更新和任务切换中面临的核心困难（来源：Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length）。
+- 核心同构性发现：LLM无法抑制先前信息的前摄干扰，无法灵活更新信息；即使目标信息就在查询前，随着干扰累积检索准确率对数下降至零——这是ADHD认知更新缺陷的典型表现 作者：Chupei Wang, Jiaqiu Vince Sun（2025，arXiv:2506.08184, 2025）。分类：【认知缺陷实证】前摄干扰抑制缺陷。该论文的同构落点在脊柱概念「无状态与外部记忆」（来源：Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length）。
+- 这项研究从认知科学的角度整合洞见，定量检查LLM在n-back任务上的表现。研究发现，尽管模型规模增大，LLM在有效保持和处理信息方面仍面临重大挑战，特别是在复杂任务条件下。研究还评估了各种提示策略，揭示了它们对LLM表现的不同影响。结果凸显了当前LLM在没有严重依赖手动修正提示的情况下，自主发现最佳问题解决模式的困难——这与ADHD患者在无外部结构时自主组织任务的困难高度相似（来源：Working Memory Identifies Reasoning Limits in Language Models）。
+
+这些研究的共同信号是：AI 在 ADHD 的评估、辅助和日常管理上正在从「概念」走向「可用」，但也要警惕被夸大的宣传——真正可靠的方案，往往是把 AI 当工具而非神药。
+
+## 真实可用的 AI 工具
+
+下面这些工具都是 ADHD 社区和评测中被反复推荐的，按它们最擅长的场景挑一两个上手即可，千万别一次性全装——那只会变成新的分心来源。
+
+### Brain.fm
+
+Brain.fm：基于神经科学的 AI 功能性音乐平台，用特定节奏的声音诱导专注、放松或睡眠状态。适用场景：用声音环境帮助 ADHD 大脑更快进入并维持专注状态。
+### Focusmate
+
+Focusmate：虚拟共同工作（body doubling）平台，把你和另一个真人配对进行计时专注 session。适用场景：利用「身体在场效应」对抗拖延和孤独工作时的分心。
+### Endel
+
+Endel：AI 生成的自适应声景 App，根据时间、天气、心率实时生成专注或放松音景。适用场景：个性化的声音环境帮助专注和放松。
+### Forest
+
+Forest：游戏化专注 App，专注时种一棵虚拟树，离开则树枯死。适用场景：用游戏化机制和损失厌恶对抗手机分心。
+
+## 可以今天就试的策略
+
+工具只是载体，方法才是关键。结合社区实践，这里有几条可操作的策略：
+
+1. Overall, this investigation uncovered potential ADHD biomarkers in the limbic system and cerebellar network through the use of ALFF realizing highly credible results, which can provide new insights for ADHD diagnosis and treatment.
+2. Schweren, et al., Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: A cross-sectional mega-analysis, Lancet Psychiatry, 4 (2017), 310–319.
+3. This survey provides a comprehensive review of research on hallucination in LLMs, with a focus on causes, detection, and mitigation.
+4. The World Health Organization Adult ADHD Self-Report Scale (ASRS): a short screening scale for use in the general population.
+5. Well, scientists studying biomarkers are trying to do just that, not only with ADHD or Alzheimer’s disease, but with a range of other conditions as well.
+
+建议只挑其中**一条**今天就开始，ADHD 大脑最怕「全部一起改」。
+
+## 一个容易被忽略的提醒
+
+AI 很强，但它不是替你做决定的人。对 ADHD 来说，最大的风险是「工具囤积」——不停地试新工具，却从没真正用起来任何一个。这本身就是一种拖延。
+
+另外要理解一个概念：task initiation（任务启动（开始一项任务的能力，ADHD 常见困难））。真正可持续的改变，是让 AI 嵌入你已有的习惯回路，而不是再造一套全新的系统。从最小、最痛的那个点开始，让 AI 帮你赢得第一个小胜利，多巴胺会带着你继续走下去。
+
+## 写在最后
+
+ADHD 不是你的缺陷，而是一套不同的操作系统。AI 也不是万能解药，它是一个强大的外接模块——当你学会正确地接上它，那些曾经让你精疲力竭的事，会变得轻一点。
+
+记住：**开始不需要完美，只需要开始。** 选择这篇文章里最打动你的那一个方法，今天就试试看。
+
+## 参考来源
+
+- [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](https://arxiv.org/pdf/2506.08184) — 证据等级：低（GRADE）
+- [Working Memory Identifies Reasoning Limits in Language Models](https://aclanthology.org/2024.emnlp-main.938.pdf) — 证据等级：低（GRADE）
+- [The efficacy of smartphone-based mental health interventions for depressive symptoms: a meta-analysis of randomized controlled trials.](https://doi.org/10.1002/wps.20472) — 证据等级：高（GRADE）
+- [Risk Factors for School Absenteeism and Dropout: A Meta-Analytic Review](https://doi.org/10.1007/s10964-019-01072-5) — 证据等级：低（GRADE）
+
+---
+
+*本文是「ADHD × AI」系列的第 201 篇，内容基于全网最新情报与研究自动整合生成，并持续迭代更新。*

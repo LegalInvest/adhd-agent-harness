@@ -16,7 +16,7 @@ readingTime: 8
 slug: "为什么-220-个选题之后必须停一次继续扩题可能是在把推进伪装成供料"
 topicId: "prob-ebc724f965"
 angle: "问题XXX精修"
-rank: 157
+rank: 74
 score: 7.71
 sourceCount: 6
 toolsCited:

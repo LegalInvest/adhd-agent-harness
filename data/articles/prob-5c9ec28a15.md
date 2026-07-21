@@ -16,7 +16,7 @@ readingTime: 9
 slug: "为什么治好-adhd-的注意力容易被环境带偏和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-5c9ec28a15"
 angle: "反直觉同构"
-rank: 95
+rank: 53
 score: 7.77
 sourceCount: 6
 toolsCited:

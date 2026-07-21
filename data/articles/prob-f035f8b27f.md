@@ -16,7 +16,7 @@ readingTime: 9
 slug: "为什么治好-adhd-的工作记忆容量小边做边忘和让-llm-不跑飞其实是同一道工程题"
 topicId: "prob-f035f8b27f"
 angle: "反直觉同构"
-rank: 94
+rank: 52
 score: 7.77
 sourceCount: 6
 toolsCited:

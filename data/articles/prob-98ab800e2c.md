@@ -16,7 +16,7 @@ readingTime: 13
 slug: "为什么agent正在成为adhd新的多巴胺来源"
 topicId: "prob-98ab800e2c"
 angle: "问题XXX精修"
-rank: 239
+rank: 85
 score: 7.67
 sourceCount: 6
 toolsCited:

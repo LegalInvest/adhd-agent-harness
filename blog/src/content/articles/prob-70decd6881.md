@@ -16,7 +16,7 @@ readingTime: 7
 slug: "为什么adhd-ai-最该讨论的不是效率极限而是依赖阈值"
 topicId: "prob-70decd6881"
 angle: "问题XXX精修"
-rank: 259
+rank: 96
 score: 7.65
 sourceCount: 6
 toolsCited:

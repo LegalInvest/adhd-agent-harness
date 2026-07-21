@@ -1666,7 +1666,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-13T06:43:34.333625+00:00"
+      "updated_at": "2026-07-21T06:18:03.036541+00:00"
     },
     "topic:AI 与 ADHD 的专注力": {
       "name": "AI 与 ADHD 的专注力",
@@ -1724,7 +1724,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-13T06:43:34.341781+00:00"
+      "updated_at": "2026-07-21T06:18:03.079238+00:00"
     },
     "topic:AI 与 ADHD 的情绪调节": {
       "name": "AI 与 ADHD 的情绪调节",
@@ -1749,7 +1749,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-13T06:43:34.343972+00:00"
+      "updated_at": "2026-07-21T06:18:03.081420+00:00"
     },
     "topic:AI 与 ADHD 的学习方式": {
       "name": "AI 与 ADHD 的学习方式",
@@ -1798,7 +1798,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-13T06:43:34.349440+00:00"
+      "updated_at": "2026-07-21T06:18:03.087515+00:00"
     },
     "topic:ADHD × AI 的科学与研究前沿": {
       "name": "ADHD × AI 的科学与研究前沿",
@@ -1848,7 +1848,7 @@
       ],
       "sources": [],
       "ingested_source_hashes": [],
-      "updated_at": "2026-07-13T06:43:34.355408+00:00"
+      "updated_at": "2026-07-21T06:18:03.094312+00:00"
     },
     "concept:神经可塑性": {
       "name": "神经可塑性",
@@ -3180,7 +3180,7 @@
     "tool_pages": 22,
     "topic_pages": 8,
     "llm_model": "kimi-latest",
-    "built_at": "2026-07-13T06:44:05.549746+00:00",
+    "built_at": "2026-07-21T06:18:03.102668+00:00",
     "source_adhd": 4230,
     "source_harness": 4051,
     "spine_pages": 12

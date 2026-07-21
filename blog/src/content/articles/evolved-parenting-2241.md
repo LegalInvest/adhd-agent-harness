@@ -16,7 +16,7 @@ readingTime: 11
 slug: "为什么用-chatgpt-治-adhd-的不知哪些方法有用和给-agent-套-human-in-the-loop-监督-是一回事"
 topicId: "evolved-parenting-2241"
 angle: "反直觉同构"
-rank: 46
+rank: 22
 score: 7.92
 sourceCount: 6
 toolsCited:

@@ -16,7 +16,7 @@ readingTime: 7
 slug: "为什么用-chatgpt-治-adhd-的日常混乱不稳定和给-agent-套-调低采样温度-是一回事"
 topicId: "evolved-lifestyle-2264"
 angle: "反直觉同构"
-rank: 89
+rank: 47
 score: 7.8
 sourceCount: 6
 toolsCited:

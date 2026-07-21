@@ -17,8 +17,8 @@ slug: "为什么用-reclaimai-治-adhd-的任务启动困难和给-agent-套-fun
 topicId: "prob-e2eeba71c6"
 angle: "反直觉同构"
 llmGenerated: false
-rank: 176
-score: 7.69
+rank: 376
+score: 7.24
 sourceCount: 4
 toolsCited:
   - "Goblin Tools"

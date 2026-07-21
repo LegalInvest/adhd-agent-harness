@@ -16,7 +16,7 @@ readingTime: 11
 slug: "两个互不引用的领域都在研究目标维持adhd-文献和-llm-harness-文献为什么得出了同一个结论"
 topicId: "prob-b48bcaec3a"
 angle: "LBD同构发现"
-rank: 261
+rank: 98
 score: 7.65
 sourceCount: 6
 toolsCited:
