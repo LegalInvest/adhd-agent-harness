@@ -46,3 +46,34 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-aliyun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.12"
+          cache: npm
+          cache-dependency-path: blog/package-lock.json
+      - name: Install dependencies
+        working-directory: blog
+        run: npm ci --legacy-peer-deps
+      - name: Build for Aliyun
+        working-directory: blog
+        env:
+          SITE_URL: https://legalbot.top
+          BASE_PATH: /adhd
+        run: npm run build
+      - name: Rsync to Aliyun server
+        env:
+          ALIYUN_SSH_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
+          ALIYUN_HOST: ${{ secrets.ALIYUN_HOST }}
+          ALIYUN_USER: ${{ secrets.ALIYUN_USER }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$ALIYUN_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$ALIYUN_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" \
+            blog/dist/ "$ALIYUN_USER@$ALIYUN_HOST:/opt/apps/static/adhd/"
