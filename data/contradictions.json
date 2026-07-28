@@ -1,0 +1,510 @@
+[
+  {
+    "topic": "screen_time",
+    "label": "屏幕时间与 ADHD",
+    "support": 27,
+    "contrast": 9,
+    "neutral": 64,
+    "controversy": 0.25,
+    "examples_support": [
+      {
+        "id": "epmc:41823121",
+        "title": "Screen time, social jetlag, future hope, and ADHD symptoms in university students."
+      },
+      {
+        "id": "epmc:41273568",
+        "title": "Electronic Media Use and Symptoms of Attention-Deficit/Hyperactivity Disorder in Greek Adolescents."
+      },
+      {
+        "id": "epmc:42294390",
+        "title": "Physical activity, sedentary behavior, and cognitive function in children and adolescents: a scoping review of dose-response relationships, screen time interact"
+      },
+      {
+        "id": "epmc:PPR1166409",
+        "title": "Association Between Short-Form Video Screen Time and ADHD-Like Symptoms among College Students in Dhaka: A Cross-Sectional Study"
+      },
+      {
+        "id": "epmc:41174591",
+        "title": "Reducing smartphone overuse for adolescents with attention-deficit hyperactive disorder: study protocol for a randomized controlled trial."
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "epmc:42184802",
+        "title": "The relationship between ADHD, OCD, and problematic social media use."
+      },
+      {
+        "id": "epmc:41520374",
+        "title": "Beyond the label: identifying modifiable predictors of ADHD-like adaptation in young adults."
+      },
+      {
+        "id": "epmc:41558234",
+        "title": "ADHD symptoms and problematic digital media use in emerging adults: Investigating the role of cognitive deficits as mediators."
+      },
+      {
+        "id": "https://openalex.org/W4307299153",
+        "title": "Association of Video Gaming With Cognitive Performance Among Children"
+      },
+      {
+        "id": "https://openalex.org/W4417101649",
+        "title": "Digital Media, Genetics, and Risk for ADHD Symptoms in Children: A Longitudinal Study"
+      }
+    ]
+  },
+  {
+    "topic": "adult_outcome",
+    "label": "成年后转归",
+    "support": 37,
+    "contrast": 11,
+    "neutral": 50,
+    "controversy": 0.229,
+    "examples_support": [
+      {
+        "id": "epmc:42127382",
+        "title": "Methylphenidate treatment in adults with comorbid attention-deficit/hyperactivity disorder and borderline personality disorder: a prospective longitudinal study"
+      },
+      {
+        "id": "epmc:42306341",
+        "title": "Use of \"R&amp;R\" for Medical Students and Physicians with Attention Deficit Hyperactivity Disorder: A Conceptual Framework."
+      },
+      {
+        "id": "epmc:41967364",
+        "title": "Effectiveness of intermittent theta-burst stimulation for major depressive disorder with and without neurodevelopmental comorbidities: A real-world retrospectiv"
+      },
+      {
+        "id": "epmc:41986891",
+        "title": "Childhood ADHD and autism spectrum disorder difficulties: exploring the impact of copy number variants on young adult outcomes."
+      },
+      {
+        "id": "epmc:41978610",
+        "title": "Efficacy and Tolerability of Viloxazine Extended-Release for Attention-Deficit/Hyperactivity Disorder in Adolescents and Adults: A Systematic Review With Qualit"
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W2041100912",
+        "title": "Adult Outcome of Hyperactive Boys"
+      },
+      {
+        "id": "https://openalex.org/W2030480409",
+        "title": "Adult Outcome of Attention-Deficit/Hyperactivity Disorder"
+      },
+      {
+        "id": "https://openalex.org/W2079752963",
+        "title": "Attention Deficit Hyperactivity Disorder (ADHD) in personality disordered offenders and the association with disruptive behavioural problems"
+      },
+      {
+        "id": "https://openalex.org/W2158859522",
+        "title": "Brain Gray Matter Deficits at 33-Year Follow-up in Adults With Attention-Deficit/Hyperactivity Disorder Established in Childhood"
+      },
+      {
+        "id": "epmc:PPR1236576",
+        "title": "Mind-Wandering, Emotion Dysregulation, and Non-Suicidal Self-Injury in Adult Attention-Deficit/Hyperactivity Disorder: A Comparative Study with Remitted Major D"
+      }
+    ]
+  },
+  {
+    "topic": "medication_growth",
+    "label": "药物与生长发育",
+    "support": 57,
+    "contrast": 16,
+    "neutral": 119,
+    "controversy": 0.219,
+    "examples_support": [
+      {
+        "id": "epmc:42308563",
+        "title": "Foveal crowding and segmentation effects in adults with ADHD."
+      },
+      {
+        "id": "epmc:42132039",
+        "title": "Don't disable me: A scoping review of ADHD employees' experiences of working in open-plan offices."
+      },
+      {
+        "id": "epmc:42018215",
+        "title": "Pharmacological Management of ADHD in Women Across Perimenopause, Menopause and Post-Menopause."
+      },
+      {
+        "id": "epmc:41740565",
+        "title": "Validity of screening tools and risk factors for Co-occurring ADHD in children with epilepsy: a systematic review and meta-analysis."
+      },
+      {
+        "id": "epmc:42172624",
+        "title": "Comparing Real and Virtual Nature Exposure on Cognition, Well-Being, and Brain Activity in Adults With and Without Attention-Deficit/Hyperactivity Disorder: Pro"
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W1958794310",
+        "title": "Quantitative morphology of the caudate nucleus in attention deficit hyperactivity disorder"
+      },
+      {
+        "id": "https://openalex.org/W1891688809",
+        "title": "Prevalence of overweight in children and adolescents with attention deficit hyperactivity disorder and autism spectrum disorders: a chart review"
+      },
+      {
+        "id": "https://openalex.org/W2064171003",
+        "title": "Performance monitoring and response inhibition in anxiety disorders with and without comorbid ADHD"
+      },
+      {
+        "id": "https://openalex.org/W2196470354",
+        "title": "Executive attention control and emotional responding in attention-deficit/hyperactivity disorder — A functional MRI study"
+      },
+      {
+        "id": "https://openalex.org/W2267910626",
+        "title": "Dietary intake and nutrient status in children with Attention Deficit Hyperactivity Disorder (ADHD)"
+      }
+    ]
+  },
+  {
+    "topic": "stimulant_longterm",
+    "label": "兴奋剂药物的长期效应",
+    "support": 740,
+    "contrast": 89,
+    "neutral": 552,
+    "controversy": 0.107,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W2124613981",
+        "title": "A Review of the Pathophysiology, Etiology, and Treatment of Attention-Deficit Hyperactivity Disorder (ADHD)"
+      },
+      {
+        "id": "https://openalex.org/W2518157807",
+        "title": "National Institute of Mental Health Multimodal Treatment Study of ADHD Follow-up: 24-Month Outcomes of Treatment Strategies for Attention-Deficit/Hyperactivity "
+      },
+      {
+        "id": "https://openalex.org/W72468019",
+        "title": "Nicotine and attention in adult attention deficit hyperactivity disorder (ADHD)."
+      },
+      {
+        "id": "https://openalex.org/W2802039131",
+        "title": "Methylphenidate for attention deficit hyperactivity disorder (ADHD) in children and adolescents - assessment of adverse events in non-randomised studies"
+      },
+      {
+        "id": "https://openalex.org/W2140513029",
+        "title": "Diagnosis and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents"
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W2280437071",
+        "title": "Attention-Deficit/Hyperactivity Disorder (ADHD) Symptoms in Pediatric Narcolepsy: A Cross-Sectional Study"
+      },
+      {
+        "id": "https://openalex.org/W2589105429",
+        "title": "Subcortical brain volume differences in participants with attention deficit hyperactivity disorder in children and adults: a cross-sectional mega-analysis"
+      },
+      {
+        "id": "https://openalex.org/W2123547278",
+        "title": "Quantitative Brain Magnetic Resonance Imaging in Girls With Attention-Deficit/Hyperactivity Disorder"
+      },
+      {
+        "id": "https://openalex.org/W1975744827",
+        "title": "Alterations in Pain Response are Partially Reversed by Methylphenidate (Ritalin) in Adults with Attention Deficit Hyperactivity Disorder (<scp>ADHD</scp>)"
+      },
+      {
+        "id": "https://openalex.org/W2069524524",
+        "title": "ADHD: a scientific fact or a factual opinion? A critique of the veracity of Attention Deficit Hyperactivity Disorder"
+      }
+    ]
+  },
+  {
+    "topic": "diet",
+    "label": "饮食干预",
+    "support": 113,
+    "contrast": 9,
+    "neutral": 86,
+    "controversy": 0.074,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W1704435756",
+        "title": "A Comparison of American and Canadian Teachers' Knowledge and Attitudes towards Attention Deficit Hyperactivity Disorder (Adhd)"
+      },
+      {
+        "id": "https://openalex.org/W2060657533",
+        "title": "Nutritional and Environmental Approaches to Preventing and Treating Autism and Attention Deficit Hyperactivity Disorder (ADHD): A Review"
+      },
+      {
+        "id": "https://openalex.org/W2168463919",
+        "title": "Attention deficit/hyperactivity disorder (ADHD) in children: rationale for its integrative management."
+      },
+      {
+        "id": "https://openalex.org/W2174506609",
+        "title": "Effective management of attention-deficit/hyperactivity disorder (ADHD) through structured re-assessment: the Dundee ADHD Clinical Care Pathway"
+      },
+      {
+        "id": "https://openalex.org/W2182630377",
+        "title": "Complementary and alternative medical therapies for children with attention-deficit/hyperactivity disorder (ADHD)."
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W2891191096",
+        "title": "Sugar consumption and attention-deficit/hyperactivity disorder (ADHD): A birth cohort study"
+      },
+      {
+        "id": "epmc:41776368",
+        "title": "Attention-deficit/hyperactivity disorder is associated with increased consumption of ultra-processed foods among children."
+      },
+      {
+        "id": "epmc:PPR1239774",
+        "title": "Maternal Dietary Quality During Pregnancy and Risk of Neurodevelopmental Disorders in Offspring: A Systematic Review and Meta-Analysis"
+      },
+      {
+        "id": "epmc:41612434",
+        "title": "Dietary patterns and neuropsychological function in adolescents: a cross-sectional and longitudinal study."
+      },
+      {
+        "id": "https://openalex.org/W2267910626",
+        "title": "Dietary intake and nutrient status in children with Attention Deficit Hyperactivity Disorder (ADHD)"
+      }
+    ]
+  },
+  {
+    "topic": "digital_intervention",
+    "label": "数字化干预（App/游戏）",
+    "support": 147,
+    "contrast": 6,
+    "neutral": 64,
+    "controversy": 0.039,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W3020723043",
+        "title": "Antonyms: A Computer Game to Improve Inhibitory Control of Impulsivity in Children with Attention Deficit/Hyperactivity Disorder (ADHD)"
+      },
+      {
+        "id": "https://openalex.org/W4323647032",
+        "title": "Effects of Music on Attention-Deficit/Hyperactivity Disorder (ADHD) and Potential Application in Serious Video Games: Systematic Review"
+      },
+      {
+        "id": "epmc:42240305",
+        "title": "Efficacy of an Unguided Digital Intervention for Adults With Attention-Deficit/Hyperactivity Disorder: A Randomized Controlled Trial."
+      },
+      {
+        "id": "epmc:42358407",
+        "title": "Effectiveness of different digital interventions on symptoms for children and adolescents with attention-deficit/hyperactivity disorder: a network meta-analysis"
+      },
+      {
+        "id": "epmc:42175348",
+        "title": "Emerging Digital Interventions for ADHD: An Overview of Ongoing Clinical Trials."
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W2154806445",
+        "title": "A cross-sectional analysis of video games and attention deficit hyperactivity disorder symptoms in adolescents"
+      },
+      {
+        "id": "https://openalex.org/W4307299153",
+        "title": "Association of Video Gaming With Cognitive Performance Among Children"
+      },
+      {
+        "id": "https://openalex.org/W4210402997",
+        "title": "Usage Patterns of an mHealth Symptom Monitoring App Among Adolescents With Acute Mild Traumatic Brain Injuries"
+      },
+      {
+        "id": "https://openalex.org/W4417101649",
+        "title": "Digital Media, Genetics, and Risk for ADHD Symptoms in Children: A Longitudinal Study"
+      },
+      {
+        "id": "epmc:35125434",
+        "title": "Usage Patterns of an mHealth Symptom Monitoring App Among Adolescents With Acute Mild Traumatic Brain Injuries."
+      }
+    ]
+  },
+  {
+    "topic": "cognitive_training",
+    "label": "认知/工作记忆训练",
+    "support": 206,
+    "contrast": 7,
+    "neutral": 96,
+    "controversy": 0.033,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W2795059326",
+        "title": "Cognitive Neuroscience of Attention Deficit Hyperactivity Disorder (ADHD) and Its Clinical Translation"
+      },
+      {
+        "id": "https://openalex.org/W2895924317",
+        "title": "Twenty years of research on attention-deficit/hyperactivity disorder (ADHD): looking back, looking forward"
+      },
+      {
+        "id": "https://openalex.org/W3043826827",
+        "title": "Social skills training for attention deficit hyperactivity disorder (ADHD) in children aged 5 to 18 years"
+      },
+      {
+        "id": "https://openalex.org/W2103206785",
+        "title": "Efficacy of Neurofeedback Treatment in ADHD: The Effects on Inattention, Impulsivity and Hyperactivity: A Meta-Analysis"
+      },
+      {
+        "id": "https://openalex.org/W2152202641",
+        "title": "Barkley's Parent Training Program, Working Memory Training and their Combination for Children with ADHD: Attention Deficit Hyperactivity Disorder."
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W2156821941",
+        "title": "Cognitive Training for Attention-Deficit/Hyperactivity Disorder: Meta-Analysis of Clinical and Neuropsychological Outcomes From Randomized Controlled Trials"
+      },
+      {
+        "id": "https://openalex.org/W2914622006",
+        "title": "Effect of combined neurofeedback and game-based cognitive training on the treatment of ADHD: A randomized controlled study"
+      },
+      {
+        "id": "https://openalex.org/W4200214137",
+        "title": "The effect of transcranial direct current stimulation (tDCS) combined with cognitive training on EEG spectral power in adolescent boys with ADHD: A double-blind"
+      },
+      {
+        "id": "https://openalex.org/W3186823119",
+        "title": "The effect of transcranial direct current stimulation (tDCS) combined with cognitive training on EEG spectral power in adolescent boys with ADHD: a double-blind"
+      },
+      {
+        "id": "https://openalex.org/W2266048359",
+        "title": "An Educational Application Of Online Games For Learning Difficulties"
+      }
+    ]
+  },
+  {
+    "topic": "neurofeedback",
+    "label": "神经反馈",
+    "support": 271,
+    "contrast": 9,
+    "neutral": 127,
+    "controversy": 0.032,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W2795059326",
+        "title": "Cognitive Neuroscience of Attention Deficit Hyperactivity Disorder (ADHD) and Its Clinical Translation"
+      },
+      {
+        "id": "https://openalex.org/W2125077387",
+        "title": "1Controlled evaluation of a neurofeedback training of slow cortical potentials in children with Attention Deficit/Hyperactivity Disorder (ADHD)"
+      },
+      {
+        "id": "https://openalex.org/W3195883681",
+        "title": "Neurotherapeutics for Attention Deficit/Hyperactivity Disorder (ADHD): A Review"
+      },
+      {
+        "id": "https://openalex.org/W2103206785",
+        "title": "Efficacy of Neurofeedback Treatment in ADHD: The Effects on Inattention, Impulsivity and Hyperactivity: A Meta-Analysis"
+      },
+      {
+        "id": "https://openalex.org/W2129770827",
+        "title": "Clinical Utility of EEG in Attention Deficit Hyperactivity Disorder"
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W4403614455",
+        "title": "Effects of fMRI neurofeedback of right inferior frontal cortex on inhibitory brain activation in children with ADHD"
+      },
+      {
+        "id": "epmc:39428885",
+        "title": "Effects of fMRI neurofeedback of right inferior frontal cortex on inhibitory brain activation in children with ADHD."
+      },
+      {
+        "id": "https://openalex.org/W2914622006",
+        "title": "Effect of combined neurofeedback and game-based cognitive training on the treatment of ADHD: A randomized controlled study"
+      },
+      {
+        "id": "https://openalex.org/W2788172317",
+        "title": "Sustained effects of neurofeedback in ADHD: a systematic review and meta-analysis"
+      },
+      {
+        "id": "epmc:39674997",
+        "title": "Theta/Beta Ratio Neurofeedback Effects on Resting and Task-Related Theta Activity in Children with ADHD."
+      }
+    ]
+  },
+  {
+    "topic": "exercise",
+    "label": "运动干预",
+    "support": 174,
+    "contrast": 5,
+    "neutral": 77,
+    "controversy": 0.028,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W2011822081",
+        "title": "Effect of Acute Exercise on Executive Function in Children with Attention Deficit Hyperactivity Disorder"
+      },
+      {
+        "id": "https://openalex.org/W1505124759",
+        "title": "The effects of physical exercise in children with attention deficit hyperactivity disorder: a systematic review and meta‐analysis of randomized control trials"
+      },
+      {
+        "id": "https://openalex.org/W2048896705",
+        "title": "Childhood Attention-Deficit/Hyperactivity Disorder Symptoms Are Risk Factors for Obesity and Physical Inactivity in Adolescence"
+      },
+      {
+        "id": "epmc:42259585",
+        "title": "Advances in the management of ADHD in children and adolescents."
+      },
+      {
+        "id": "epmc:41851804",
+        "title": "Symptomatic improvement in fibromyalgia after treatment of comorbid attention deficit hyperactivity disorder: a case report."
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "epmc:41914673",
+        "title": "Impact of Medication Therapy on Social, Behavioral, and Employment Outcomes in Adults With ADHD."
+      },
+      {
+        "id": "https://openalex.org/W2267910626",
+        "title": "Dietary intake and nutrient status in children with Attention Deficit Hyperactivity Disorder (ADHD)"
+      },
+      {
+        "id": "epmc:37590053",
+        "title": "Microtemporal Dynamics of Dietary Intake, Physical Activity, and Impulsivity in Adult Attention-Deficit/Hyperactivity Disorder: Ecological Momentary Assessment "
+      },
+      {
+        "id": "epmc:39932962",
+        "title": "Association of exercise and ADHD symptoms: Analysis within an adult general population sample."
+      },
+      {
+        "id": "https://openalex.org/W1866392637",
+        "title": "Attention Deficit/Hyperactivity Disorder, Screen Time, Physical Activity, and Diet Quality: A Dissertation"
+      }
+    ]
+  },
+  {
+    "topic": "mindfulness",
+    "label": "正念冥想",
+    "support": 130,
+    "contrast": 2,
+    "neutral": 54,
+    "controversy": 0.015,
+    "examples_support": [
+      {
+        "id": "https://openalex.org/W2158687757",
+        "title": "Meditation therapies for attention-deficit/hyperactivity disorder (ADHD)"
+      },
+      {
+        "id": "https://openalex.org/W1481120849",
+        "title": "Use of the Transcendental Meditation Technique to Reduce Symptoms of Attention Deficit Hyperactivity Disorder (ADHD) by Reducing Stress and Anxiety: An Explorat"
+      },
+      {
+        "id": "https://openalex.org/W2540372158",
+        "title": "CBT/DBT skills training for adults with attention deficit hyperactivity disorder (ADHD)."
+      },
+      {
+        "id": "https://openalex.org/W2026225711",
+        "title": "Structured Group Psychotherapy in Adults With Attention Deficit Hyperactivity Disorder"
+      },
+      {
+        "id": "https://openalex.org/W2126949109",
+        "title": "Mindfulness based cognitive therapy versus treatment as usual in adults with attention deficit hyperactivity disorder (ADHD)"
+      }
+    ],
+    "examples_contrast": [
+      {
+        "id": "https://openalex.org/W2738446593",
+        "title": "Mind wandering during attention performance: Effects of ADHD-inattention symptomatology, negative mood, ruminative response style and working memory capacity"
+      },
+      {
+        "id": "https://openalex.org/W2914948866",
+        "title": "Genetic and environmental aetiologies of associations between dispositional mindfulness and ADHD traits: a population-based twin study"
+      }
+    ]
+  }
+]
