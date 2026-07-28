@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层(人机分工架构)与价值层的接口**:这个架构图的真正野心不是省时间,是**让你终于只干你的天才部分**——那些格式、校对、套话的苦力,几十年来吃掉了你多少本该用来发光的电;现在工具层就位,把苦力发出去——然后回答那个更大的问题:**如果苦力不再消耗你,你的生成核心,究竟能长到多大?**
 
+> **专业支持边界**：如果你正处于情绪危机或有自伤念头，请立即联系当地心理危机干预热线或前往医院精神科急诊——这不是任何文章或工具能替代的。
+
 ## 参考来源
 
 - [Behavioral inhibition, sustained attention, and executive functions: Constructing a unifying theory of ADHD.](https://doi.org/10.1037/0033-2909.121.1.65) — 证据等级：低（GRADE）

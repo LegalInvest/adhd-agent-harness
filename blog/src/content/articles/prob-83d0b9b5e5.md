@@ -67,6 +67,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**价值层(职业设计)**:你被批评了半生的那台永远关不上的雷达,在某些岗位上是缺陷,在另一些岗位上是全组唯一的天线——职业设计的全部艺术,不过是把天线搬到信号来的方向;而在那之前,先相信一件事:它不是坏掉的聚光灯,它是没找到岗位的广播。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [The sustainability of new programs and innovations: a review of the empirical literature and recommendations for future research](https://doi.org/10.1186/1748-5908-7-17) — 证据等级：低（GRADE）

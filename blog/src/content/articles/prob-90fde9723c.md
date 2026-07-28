@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**价值层(创作者版收束)**:信息免费的时代,知识不值钱,值钱的是从证据走到「今天做这件事」的那条被验证过的路——修路的人不怕别人抄走路面,因为路会延伸,而只有修路的人知道下一段怎么修。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Neural Substrates of Decision Making in Adults With Attention Deficit Hyperactivity Disorder](https://doi.org/10.1176/appi.ajp.160.6.1061) — 证据等级：低（GRADE）

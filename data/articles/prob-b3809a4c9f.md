@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层的安全工程**:外部前额叶越强大,越要记得它是「外部」的——真正的安心不是系统永不宕机(没有系统做得到),是宕机的那个下午,你知道抽屉里有纸有笔,知道三件事怎么写,知道自己还会开手动挡;全自动是舒适,可接管才是自由。
 
+> **专业支持边界**：涉及药物的内容仅为研究综述，任何用药、调整剂量或停药的决定，请务必与你的精神科医生或处方医师讨论。
+
 ## 参考来源
 
 - [Brain Connectivity Breakthrough Sheds New Light on ADHD](https://neurosciencenews.com/brain-connectivity-adhd-25751/) — 证据等级：中（GRADE）

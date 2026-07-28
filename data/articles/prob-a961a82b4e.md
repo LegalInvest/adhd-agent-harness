@@ -67,6 +67,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层的生态学**:每件你做了多年的事,哪怕是最痛恨的那件,都在你的生活里长出了根须——交换的、感知的、节律的;外包剪掉主干时记得看一眼根须,该移栽的移栽,该补种的补种——这不是外包的反对意见,是外包的园艺学。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Artificial Intelligence Improves Ability to Use MRI to Diagnose ADHD](https://scienceblog.cincinnatichildrens.org/artificial-intelligence-improves-ability-to-use-mri-to-diagnose-adhd/) — 证据等级：中（GRADE）

@@ -71,6 +71,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**价值层**:内容工业用一个时钟计时,人心用另一个——而你那个从不守时的创作节律,可能一直都对齐着第二个时钟,只是没人告诉过你,那也是一种准时。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](https://arxiv.org/pdf/2506.08184) — 证据等级：低（GRADE）

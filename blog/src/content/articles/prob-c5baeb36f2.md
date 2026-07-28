@@ -71,6 +71,8 @@ LLM 侧有个精准的类比帮你拿捏分寸:高温度采样(high temperature)
 
 本文服务于人生 Harness 金字塔的**价值层**:你不需要用「文明引擎」来证明自己配活着——你需要的是找到那个让你的温度成为优势的位置,然后在那里,认真地建好自己的系统。
 
+> **专业支持边界**：如果你正处于情绪危机或有自伤念头，请立即联系当地心理危机干预热线或前往医院精神科急诊——这不是任何文章或工具能替代的。 ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Brain Connectivity Breakthrough Sheds New Light on ADHD](https://neurosciencenews.com/brain-connectivity-adhd-25751/) — 证据等级：中（GRADE）

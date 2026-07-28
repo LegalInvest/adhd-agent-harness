@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层的理论地基**:当两群从未见面的研究者,在两种完全不同的系统上,被同一个问题结构逼出同一个答案——那个答案就值得你认真对待:漫长的路撑不起终点的一次掌声,路上的每一个关键路口,都需要有人站在那里说「对,往这边」。
 
+> **专业支持边界**：涉及药物的内容仅为研究综述，任何用药、调整剂量或停药的决定，请务必与你的精神科医生或处方医师讨论。
+
 ## 参考来源
 
 - [The Economic Burden of Adults With Major Depressive Disorder in the United States (2005 and 2010)](https://doi.org/10.4088/jcp.14m09298) — 证据等级：低（GRADE）

@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层(创作者版)**:掌声不是信号,是噪音里最好听的那种——回流系统的全部纪律,就是在最好听的噪音里,依然只认那些带着坐标、场景和「但是」的声音;因为只有它们,还在给你指路。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Development of Cortical Asymmetry in Typically Developing Children and Its Disruption in Attention-Deficit/Hyperactivity Disorder](https://doi.org/10.1001/archgenpsychiatry.2009.103) — 证据等级：低（GRADE）

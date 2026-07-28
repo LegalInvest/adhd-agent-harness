@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**状态层与叙事层**:那个坐不住的身体不是你专注力的敌人,是它的发电机——二十年来缺的从来不是安分,是一套不需要桌子的工作方式;现在它有了。
 
+> **专业支持边界**：涉及药物的内容仅为研究综述，任何用药、调整剂量或停药的决定，请务必与你的精神科医生或处方医师讨论。
+
 ## 参考来源
 
 - [Physical Activity and Cognitive Functioning of Children: A Systematic Review](https://doi.org/10.3390/ijerph15040800) — 证据等级：高（GRADE）

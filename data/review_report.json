@@ -1,7 +1,7 @@
 {
   "total": 400,
-  "fail": 57,
-  "warn": 335,
+  "fail": 0,
+  "warn": 388,
   "results": [
     {
       "file": "data/articles/evolved-ai-tools-2047.md",
@@ -25,15 +25,13 @@
     },
     {
       "file": "data/articles/evolved-ai-tools-2058.md",
-      "cn_chars": 1325,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1376,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1325，低于目标 1800",
+        "正文中文字符 1376，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/evolved-ai-tools-2068.md",
@@ -87,15 +85,13 @@
     },
     {
       "file": "data/articles/evolved-emotion-2127.md",
-      "cn_chars": 1330,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1431,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1330，低于目标 1800",
+        "正文中文字符 1431，低于目标 1800",
         "五型问题结构信号缺失：收敛、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/evolved-emotion-2137.md",
@@ -209,15 +205,13 @@
     },
     {
       "file": "data/articles/evolved-science-2172.md",
-      "cn_chars": 1326,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1372,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1326，低于目标 1800",
+        "正文中文字符 1372，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/evolved-science-2173.md",
@@ -261,15 +255,13 @@
     },
     {
       "file": "data/articles/prob-0076.md",
-      "cn_chars": 1635,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1726,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1635，低于目标 1800",
+        "正文中文字符 1726，低于目标 1800",
         "五型问题结构信号缺失：收敛、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0077.md",
@@ -312,15 +304,13 @@
     },
     {
       "file": "data/articles/prob-0095.md",
-      "cn_chars": 1292,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1338,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1292，低于目标 1800",
+        "正文中文字符 1338，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0095a7d9d7.md",
@@ -513,16 +503,13 @@
     },
     {
       "file": "data/articles/prob-0457.md",
-      "cn_chars": 1406,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明",
-        "疑似类比字面等同红线：/就是[一个]*\\s*(?:Transformer|KV\\s*cache|LLM|大模型)/"
-      ],
+      "cn_chars": 1452,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1406，低于目标 1800",
+        "正文中文字符 1452，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0459.md",
@@ -587,14 +574,12 @@
     {
       "file": "data/articles/prob-0538.md",
       "cn_chars": 1120,
-      "issues": [
-        "疑似类比字面等同红线：/就是[一个]*\\s*(?:Transformer|KV\\s*cache|LLM|大模型)/"
-      ],
+      "issues": [],
       "warnings": [
         "正文中文字符 1120，低于目标 1800",
         "五型问题结构信号缺失：验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0541.md",
@@ -628,15 +613,13 @@
     },
     {
       "file": "data/articles/prob-0629.md",
-      "cn_chars": 1224,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1270,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1224，低于目标 1800",
+        "正文中文字符 1270，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0630.md",
@@ -670,14 +653,12 @@
     },
     {
       "file": "data/articles/prob-0657f9e0b5.md",
-      "cn_chars": 1646,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1697,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1646，低于目标 1800"
+        "正文中文字符 1697，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0687445e4c.md",
@@ -766,14 +747,12 @@
     },
     {
       "file": "data/articles/prob-0876d4349c.md",
-      "cn_chars": 1575,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1621,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1575，低于目标 1800"
+        "正文中文字符 1621，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-0931.md",
@@ -844,14 +823,12 @@
     },
     {
       "file": "data/articles/prob-107411c699.md",
-      "cn_chars": 1485,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1586,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1485，低于目标 1800"
+        "正文中文字符 1586，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1147.md",
@@ -885,15 +862,13 @@
     },
     {
       "file": "data/articles/prob-1213.md",
-      "cn_chars": 1181,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1242,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1181，低于目标 1800",
+        "正文中文字符 1242，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1273.md",
@@ -916,15 +891,13 @@
     },
     {
       "file": "data/articles/prob-1345.md",
-      "cn_chars": 1133,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1179,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1133，低于目标 1800",
+        "正文中文字符 1179，低于目标 1800",
         "五型问题结构信号缺失：验证"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1351.md",
@@ -1046,26 +1019,22 @@
     },
     {
       "file": "data/articles/prob-17136c2f9b.md",
-      "cn_chars": 1262,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1308,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1262，低于目标 1800"
+        "正文中文字符 1308，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1759.md",
-      "cn_chars": 1323,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1414,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1323，低于目标 1800",
+        "正文中文字符 1414，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1760.md",
@@ -1079,15 +1048,13 @@
     },
     {
       "file": "data/articles/prob-1761.md",
-      "cn_chars": 1209,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1260,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1209，低于目标 1800",
+        "正文中文字符 1260，低于目标 1800",
         "五型问题结构信号缺失：收敛、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1762.md",
@@ -1139,15 +1106,13 @@
     },
     {
       "file": "data/articles/prob-1897.md",
-      "cn_chars": 1377,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1428,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1377，低于目标 1800",
+        "正文中文字符 1428，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-199c5a2efc.md",
@@ -1189,13 +1154,11 @@
     {
       "file": "data/articles/prob-1b243003e4.md",
       "cn_chars": 1120,
-      "issues": [
-        "疑似类比字面等同红线：/就是[一个]*\\s*(?:Transformer|KV\\s*cache|LLM|大模型)/"
-      ],
+      "issues": [],
       "warnings": [
         "正文中文字符 1120，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1c40e50c25.md",
@@ -1209,25 +1172,21 @@
     },
     {
       "file": "data/articles/prob-1de7414bd8.md",
-      "cn_chars": 1661,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1722,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1661，低于目标 1800"
+        "正文中文字符 1722，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1e774b4997.md",
-      "cn_chars": 1565,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1611,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1565，低于目标 1800"
+        "正文中文字符 1611，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-1f6bd9f89a.md",
@@ -1258,15 +1217,13 @@
     },
     {
       "file": "data/articles/prob-2035.md",
-      "cn_chars": 1279,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1325,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1279，低于目标 1800",
+        "正文中文字符 1325，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2041.md",
@@ -1289,15 +1246,13 @@
     },
     {
       "file": "data/articles/prob-2173.md",
-      "cn_chars": 1264,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1315,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1264，低于目标 1800",
+        "正文中文字符 1315，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2258.md",
@@ -1331,15 +1286,13 @@
     },
     {
       "file": "data/articles/prob-2271.md",
-      "cn_chars": 1285,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1346,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1285，低于目标 1800",
+        "正文中文字符 1346，低于目标 1800",
         "五型问题结构信号缺失：收敛、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2290ab4dda.md",
@@ -1403,15 +1356,13 @@
     },
     {
       "file": "data/articles/prob-2394.md",
-      "cn_chars": 1187,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1288,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1187，低于目标 1800",
+        "正文中文字符 1288，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2395.md",
@@ -1455,15 +1406,13 @@
     },
     {
       "file": "data/articles/prob-2400.md",
-      "cn_chars": 1267,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1313,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1267，低于目标 1800",
+        "正文中文字符 1313，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2402.md",
@@ -1487,14 +1436,12 @@
     },
     {
       "file": "data/articles/prob-240b9497f0.md",
-      "cn_chars": 1488,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1534,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1488，低于目标 1800"
+        "正文中文字符 1534，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2456a666bc.md",
@@ -1525,14 +1472,12 @@
     },
     {
       "file": "data/articles/prob-274c5936bc.md",
-      "cn_chars": 1749,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1795,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1749，低于目标 1800"
+        "正文中文字符 1795，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-27b6339cc5.md",
@@ -1611,14 +1556,12 @@
     },
     {
       "file": "data/articles/prob-2d7f230038.md",
-      "cn_chars": 1730,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1781,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1730，低于目标 1800"
+        "正文中文字符 1781，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-2d82ed9ba0.md",
@@ -1778,14 +1721,12 @@
     },
     {
       "file": "data/articles/prob-3d7d39b84c.md",
-      "cn_chars": 1569,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1665,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1569，低于目标 1800"
+        "正文中文字符 1665，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-3ebdda6d5f.md",
@@ -1798,25 +1739,21 @@
     },
     {
       "file": "data/articles/prob-3ef56545ce.md",
-      "cn_chars": 1657,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1708,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1657，低于目标 1800"
+        "正文中文字符 1708，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-3f2f91259b.md",
-      "cn_chars": 1623,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1714,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1623，低于目标 1800"
+        "正文中文字符 1714，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-3f4a5b39ed.md",
@@ -2026,15 +1963,13 @@
     },
     {
       "file": "data/articles/prob-51e4faf16d.md",
-      "cn_chars": 1369,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1415,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1369，低于目标 1800",
+        "正文中文字符 1415，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-539e89bcaf.md",
@@ -2142,26 +2077,22 @@
     },
     {
       "file": "data/articles/prob-5c750fba4d.md",
-      "cn_chars": 1604,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1705,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1604，低于目标 1800"
+        "正文中文字符 1705，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-5c9ec28a15.md",
-      "cn_chars": 1293,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1344,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1293，低于目标 1800",
+        "正文中文字符 1344，低于目标 1800",
         "五型问题结构信号缺失：收敛、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-5d58b88b12.md",
@@ -2286,12 +2217,10 @@
     },
     {
       "file": "data/articles/prob-6c2886db81.md",
-      "cn_chars": 1821,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1882,
+      "issues": [],
       "warnings": [],
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "file": "data/articles/prob-6c4a29f69e.md",
@@ -2399,14 +2328,12 @@
     },
     {
       "file": "data/articles/prob-742184f806.md",
-      "cn_chars": 1694,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1745,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1694，低于目标 1800"
+        "正文中文字符 1745，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-74760fd604.md",
@@ -2465,14 +2392,10 @@
     },
     {
       "file": "data/articles/prob-7b6300d920.md",
-      "cn_chars": 1794,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
-      "warnings": [
-        "正文中文字符 1794，低于目标 1800"
-      ],
-      "status": "FAIL"
+      "cn_chars": 1845,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
     },
     {
       "file": "data/articles/prob-7c997ece7b.md",
@@ -2521,14 +2444,12 @@
     },
     {
       "file": "data/articles/prob-8300b11626.md",
-      "cn_chars": 1511,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1562,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1511，低于目标 1800"
+        "正文中文字符 1562，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-83813b4c9d.md",
@@ -2571,14 +2492,12 @@
     },
     {
       "file": "data/articles/prob-83d0b9b5e5.md",
-      "cn_chars": 1749,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1795,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1749，低于目标 1800"
+        "正文中文字符 1795，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-83deb76c4a.md",
@@ -2617,14 +2536,12 @@
     },
     {
       "file": "data/articles/prob-880269f863.md",
-      "cn_chars": 1688,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1779,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1688，低于目标 1800"
+        "正文中文字符 1779，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-885ec5da43.md",
@@ -2701,14 +2618,12 @@
     },
     {
       "file": "data/articles/prob-90fde9723c.md",
-      "cn_chars": 1699,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1745,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1699，低于目标 1800"
+        "正文中文字符 1745，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-93ff83a4b1.md",
@@ -2751,14 +2666,10 @@
     },
     {
       "file": "data/articles/prob-992bf20d82.md",
-      "cn_chars": 1780,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
-      "warnings": [
-        "正文中文字符 1780，低于目标 1800"
-      ],
-      "status": "FAIL"
+      "cn_chars": 1826,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
     },
     {
       "file": "data/articles/prob-9c324e89d5.md",
@@ -2828,14 +2739,12 @@
     },
     {
       "file": "data/articles/prob-a30724305c.md",
-      "cn_chars": 1708,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1769,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1708，低于目标 1800"
+        "正文中文字符 1769，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-a3af3de448.md",
@@ -2943,14 +2852,12 @@
     },
     {
       "file": "data/articles/prob-a961a82b4e.md",
-      "cn_chars": 1612,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1658,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1612，低于目标 1800"
+        "正文中文字符 1658，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-a96aee4540.md",
@@ -3065,14 +2972,12 @@
     },
     {
       "file": "data/articles/prob-b3809a4c9f.md",
-      "cn_chars": 1646,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1697,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1646，低于目标 1800"
+        "正文中文字符 1697，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-b3e5f65b8c.md",
@@ -3086,15 +2991,13 @@
     },
     {
       "file": "data/articles/prob-b48bcaec3a.md",
-      "cn_chars": 1320,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1371,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1320，低于目标 1800",
+        "正文中文字符 1371，低于目标 1800",
         "五型问题结构信号缺失：收敛、验证、决策"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-b4e047146c.md",
@@ -3177,14 +3080,12 @@
     },
     {
       "file": "data/articles/prob-c166dc6359.md",
-      "cn_chars": 1606,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1697,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1606，低于目标 1800"
+        "正文中文字符 1697，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-c19f731e03.md",
@@ -3236,14 +3137,12 @@
     },
     {
       "file": "data/articles/prob-c5baeb36f2.md",
-      "cn_chars": 1365,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1466,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1365，低于目标 1800"
+        "正文中文字符 1466，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-c758918d59.md",
@@ -3265,12 +3164,10 @@
     },
     {
       "file": "data/articles/prob-ca0c55530b.md",
-      "cn_chars": 1814,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1865,
+      "issues": [],
       "warnings": [],
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
       "file": "data/articles/prob-ca0cfb9a3d.md",
@@ -3326,14 +3223,12 @@
     },
     {
       "file": "data/articles/prob-ce4c78afae.md",
-      "cn_chars": 1497,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1548,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1497，低于目标 1800"
+        "正文中文字符 1548，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-cff28a225c.md",
@@ -3364,14 +3259,12 @@
     },
     {
       "file": "data/articles/prob-d23b1d4336.md",
-      "cn_chars": 1742,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1788,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1742，低于目标 1800"
+        "正文中文字符 1788，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-d50b27e6e3.md",
@@ -3469,14 +3362,12 @@
     },
     {
       "file": "data/articles/prob-db9adfb253.md",
-      "cn_chars": 1482,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1528,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1482，低于目标 1800"
+        "正文中文字符 1528，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-dcafab26f4.md",
@@ -3498,25 +3389,21 @@
     },
     {
       "file": "data/articles/prob-dd65c3f197.md",
-      "cn_chars": 1471,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1522,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1471，低于目标 1800"
+        "正文中文字符 1522，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-de65b845cb.md",
-      "cn_chars": 1528,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1574,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1528，低于目标 1800"
+        "正文中文字符 1574，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-df40f99fc2.md",
@@ -3540,14 +3427,12 @@
     },
     {
       "file": "data/articles/prob-e230ee6fa5.md",
-      "cn_chars": 1632,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1678,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1632，低于目标 1800"
+        "正文中文字符 1678，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-e2eeba71c6.md",
@@ -3781,14 +3666,12 @@
     },
     {
       "file": "data/articles/prob-f5dd00ab8e.md",
-      "cn_chars": 1594,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1690,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1594，低于目标 1800"
+        "正文中文字符 1690，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-f60d6302ad.md",
@@ -3811,14 +3694,12 @@
     },
     {
       "file": "data/articles/prob-f6ca640e81.md",
-      "cn_chars": 1677,
-      "issues": [
-        "涉及医疗/危机内容但缺少专业支持边界声明"
-      ],
+      "cn_chars": 1723,
+      "issues": [],
       "warnings": [
-        "正文中文字符 1677，低于目标 1800"
+        "正文中文字符 1723，低于目标 1800"
       ],
-      "status": "FAIL"
+      "status": "WARN"
     },
     {
       "file": "data/articles/prob-f929be9f88.md",

@@ -67,6 +67,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**价值层(职业设计)**:三十年来你以为自己在积累失败,其实你在积累一门还没有名字的学科的田野数据——agent 时代给它起了名字,开了市场;你不是终于赶上了风口,是风口终于赶上了你已经站了三十年的地方。
 
+> **专业支持边界**：涉及药物的内容仅为研究综述，任何用药、调整剂量或停药的决定，请务必与你的精神科医生或处方医师讨论。
+
 ## 参考来源
 
 - [Cutting Through the Noise: Smarter Context Management for LLM ...](https://blog.jetbrains.com/research/2025/12/efficient-context-management/) — 证据等级：低（GRADE）
