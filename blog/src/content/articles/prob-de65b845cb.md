@@ -67,6 +67,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层的个体化续篇**:防洪堤装在干旱区是浪费,安眠药发给失眠者才对症——工具评测的终点不是「它好不好」,是「你的故障在哪个端口」;先诊断自己,再评判工具,顺序反了,两边都冤。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Artificial intelligence in ADHD: a global perspective on ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC12018397/) — 证据等级：低（GRADE）

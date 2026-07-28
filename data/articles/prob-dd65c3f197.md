@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层**:你不能雇一个只在被喊到时才存在的保安来守大门——但你可以让时钟负责喊,让 AI 负责查,让自己只负责回答「我在哪」;三方各司其职,漂移第一次有了对手。
 
+> **专业支持边界**：涉及药物的内容仅为研究综述，任何用药、调整剂量或停药的决定，请务必与你的精神科医生或处方医师讨论。
+
 ## 参考来源
 
 - [Is maternal smoking during pregnancy a risk factor for attention deficit hyperactivity disorder in children?](https://doi.org/10.1176/ajp.153.9.1138) — 证据等级：低（GRADE）

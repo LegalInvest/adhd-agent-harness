@@ -79,8 +79,13 @@ def review_article(path: Path) -> dict:
             issues.append("涉及医疗/危机内容但缺少专业支持边界声明")
 
     for pat in _LITERAL_EQUATION_PATTERNS:
-        if re.search(pat, body_main, re.IGNORECASE):
+        for m in re.finditer(pat, body_main, re.IGNORECASE):
+            ctx = body_main[max(0, m.start() - 40): m.end() + 40]
+            # 引用他人错误说法并否定的语境不算违规
+            if any(k in ctx for k in ("不是", "并非", "错的", "错误", "「", "修辞", "排除")):
+                continue
             issues.append(f"疑似类比字面等同红线：/{pat}/")
+            break
 
     missing_steps = [k for k, sigs in _FIVE_STEP_SIGNALS.items()
                      if not any(s in body_main for s in sigs)]

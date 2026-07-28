@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**执行层的组织架构**:你这家「一人公司」里,诗人和经纪人的岗位空缺从来不对称——诗人一直在,挤在没有经纪人的办公室里满地散稿;AI 来应聘时,别让它坐错位置:让它管日程、管台账、管催交——写诗的那把椅子,永远是你的。
 
+> **专业支持边界**：涉及药物的内容仅为研究综述，任何用药、调整剂量或停药的决定，请务必与你的精神科医生或处方医师讨论。 如果情绪低落已持续影响生活，请寻求精神科医生或心理咨询师的专业评估，本文的方法不能替代专业治疗。
+
 ## 参考来源
 
 - [How young can children reliably and validly self-report their health-related quality of life?: An analysis of 8,591 children across age subgroups with the PedsQL™ 4.0 Generic Core Scales](https://doi.org/10.1186/1477-7525-5-1) — 证据等级：低（GRADE）

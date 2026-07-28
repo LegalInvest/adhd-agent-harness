@@ -69,6 +69,8 @@ llmGenerated: false
 
 本文服务于人生 Harness 金字塔的**叙事层(时代坐标)**:一个人的困境被世界理解,通常不是因为世界变得更善良,而是因为世界终于在别的地方撞上了同一堵墙——133 倍的研究爆发就是那声撞击;墙还是那堵墙,但从今往后,墙这边的你,不再是一个人在解释它有多难。
 
+> **专业支持边界**：ADHD 的诊断需要由精神科医生或具备资质的临床心理师完成，请勿凭自评量表或文章内容自我确诊。
+
 ## 参考来源
 
 - [Can You See ADHD on a Brain Scan? What Brain Imaging Reveals](https://int.livhospital.com/can-you-see-adhd-on-a-brain-scan-what-brain-imaging-reveals/) — 证据等级：低（GRADE）
