@@ -1,0 +1,3887 @@
+{
+  "total": 400,
+  "fail": 57,
+  "warn": 335,
+  "results": [
+    {
+      "file": "data/articles/evolved-ai-tools-2047.md",
+      "cn_chars": 1215,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1215，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-ai-tools-2057.md",
+      "cn_chars": 1187,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1187，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-ai-tools-2058.md",
+      "cn_chars": 1325,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1325，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/evolved-ai-tools-2068.md",
+      "cn_chars": 1279,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1279，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-career-2195.md",
+      "cn_chars": 1260,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1260，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-community-2287.md",
+      "cn_chars": 1388,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1388，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-emotion-2116.md",
+      "cn_chars": 1367,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1367，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-emotion-2126.md",
+      "cn_chars": 1313,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1313，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-emotion-2127.md",
+      "cn_chars": 1330,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1330，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/evolved-emotion-2137.md",
+      "cn_chars": 1305,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1305，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-entrepreneurship-2218.md",
+      "cn_chars": 1333,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1333，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-focus-2080.md",
+      "cn_chars": 1144,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1144，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-focus-2081.md",
+      "cn_chars": 1130,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1130，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-learning-2139.md",
+      "cn_chars": 1288,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1288，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-learning-2149.md",
+      "cn_chars": 1217,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1217，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-learning-2150.md",
+      "cn_chars": 1186,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1186，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-learning-2160.md",
+      "cn_chars": 1303,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1303，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-lifestyle-2264.md",
+      "cn_chars": 1505,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1505，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-parenting-2241.md",
+      "cn_chars": 1269,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1269，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-parenting-2242.md",
+      "cn_chars": 1303,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1303，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-science-2172.md",
+      "cn_chars": 1326,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1326，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/evolved-science-2173.md",
+      "cn_chars": 1247,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1247，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-time-mgmt-2103.md",
+      "cn_chars": 1171,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1171，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/evolved-time-mgmt-2104.md",
+      "cn_chars": 1149,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1149，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0053.md",
+      "cn_chars": 1159,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1159，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0076.md",
+      "cn_chars": 1635,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1635，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0077.md",
+      "cn_chars": 1412,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1412，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0082.md",
+      "cn_chars": 1355,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1355，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0086.md",
+      "cn_chars": 1336,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1336，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0093f82e76.md",
+      "cn_chars": 1162,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1162，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0095.md",
+      "cn_chars": 1292,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1292，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0095a7d9d7.md",
+      "cn_chars": 1282,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1282，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0098.md",
+      "cn_chars": 1347,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1347，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0103.md",
+      "cn_chars": 1160,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1160，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0117.md",
+      "cn_chars": 1296,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1296，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0130.md",
+      "cn_chars": 1274,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1274，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0245.md",
+      "cn_chars": 1237,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1237，低于目标 1800",
+        "五型问题结构信号缺失：验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0270.md",
+      "cn_chars": 1406,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1406，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0299.md",
+      "cn_chars": 1191,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1191，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0316.md",
+      "cn_chars": 1243,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1243，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0319.md",
+      "cn_chars": 1162,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1162，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0342.md",
+      "cn_chars": 1369,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1369，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0390.md",
+      "cn_chars": 1403,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1403，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0395.md",
+      "cn_chars": 1329,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1329，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0426.md",
+      "cn_chars": 1406,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1406，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0428.md",
+      "cn_chars": 1199,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1199，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0433.md",
+      "cn_chars": 1192,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1192，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0444b0a502.md",
+      "cn_chars": 1617,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1617，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0451.md",
+      "cn_chars": 1381,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1381，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0456.md",
+      "cn_chars": 1240,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1240，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0457.md",
+      "cn_chars": 1406,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明",
+        "疑似类比字面等同红线：/就是[一个]*\\s*(?:Transformer|KV\\s*cache|LLM|大模型)/"
+      ],
+      "warnings": [
+        "正文中文字符 1406，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0459.md",
+      "cn_chars": 1290,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1290，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0469.md",
+      "cn_chars": 1322,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1322，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-049fd57c04.md",
+      "cn_chars": 1308,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1308，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0530.md",
+      "cn_chars": 1111,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1111，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0534.md",
+      "cn_chars": 1112,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1112，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0536.md",
+      "cn_chars": 1147,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1147，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0538.md",
+      "cn_chars": 1120,
+      "issues": [
+        "疑似类比字面等同红线：/就是[一个]*\\s*(?:Transformer|KV\\s*cache|LLM|大模型)/"
+      ],
+      "warnings": [
+        "正文中文字符 1120，低于目标 1800",
+        "五型问题结构信号缺失：验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0541.md",
+      "cn_chars": 1339,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1339，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0542.md",
+      "cn_chars": 1228,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1228，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0546.md",
+      "cn_chars": 1203,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1203，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0629.md",
+      "cn_chars": 1224,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1224，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0630.md",
+      "cn_chars": 1316,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1316，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0633.md",
+      "cn_chars": 1286,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1286，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0635.md",
+      "cn_chars": 1316,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1316，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0657f9e0b5.md",
+      "cn_chars": 1646,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1646，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0687445e4c.md",
+      "cn_chars": 1392,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1392，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-06d9125055.md",
+      "cn_chars": 1669,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1669，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-075aa65434.md",
+      "cn_chars": 1442,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1442，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0780e28398.md",
+      "cn_chars": 1251,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1251，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-078978065b.md",
+      "cn_chars": 1256,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1256，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0793.md",
+      "cn_chars": 1264,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1264，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-07c5a64c3a.md",
+      "cn_chars": 1325,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1325，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-08335cedd2.md",
+      "cn_chars": 1711,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1711，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-085686f6f7.md",
+      "cn_chars": 1425,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1425，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0876d4349c.md",
+      "cn_chars": 1575,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1575，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-0931.md",
+      "cn_chars": 1211,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1211，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0958ef60a0.md",
+      "cn_chars": 1360,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1360，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0a13e322dc.md",
+      "cn_chars": 1538,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1538，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0cbb20c7e2.md",
+      "cn_chars": 1284,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1284，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0e68e81658.md",
+      "cn_chars": 1566,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1566，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-0ef02de363.md",
+      "cn_chars": 1161,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1161，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1069.md",
+      "cn_chars": 1166,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1166，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-107411c699.md",
+      "cn_chars": 1485,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1485，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1147.md",
+      "cn_chars": 1149,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1149，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-11504bab23.md",
+      "cn_chars": 1025,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1025，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1207.md",
+      "cn_chars": 1218,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1218，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1213.md",
+      "cn_chars": 1181,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1181，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1273.md",
+      "cn_chars": 1193,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1193，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1320beb404.md",
+      "cn_chars": 1503,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1503，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1345.md",
+      "cn_chars": 1133,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1133，低于目标 1800",
+        "五型问题结构信号缺失：验证"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1351.md",
+      "cn_chars": 1163,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1163，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1411.md",
+      "cn_chars": 1216,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1216，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1423.md",
+      "cn_chars": 1102,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1102，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1453.md",
+      "cn_chars": 1226,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1226，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1483.md",
+      "cn_chars": 1167,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1167，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1484.md",
+      "cn_chars": 1315,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1315，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1489.md",
+      "cn_chars": 1320,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1320，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-14b1dd2a5c.md",
+      "cn_chars": 1512,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1512，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-14b9581fe6.md",
+      "cn_chars": 1402,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1402，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1549.md",
+      "cn_chars": 1153,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1153，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-157bdbdf04.md",
+      "cn_chars": 1457,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1457，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1621.md",
+      "cn_chars": 1211,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1211，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-17136c2f9b.md",
+      "cn_chars": 1262,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1262，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1759.md",
+      "cn_chars": 1323,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1323，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1760.md",
+      "cn_chars": 1263,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1263，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1761.md",
+      "cn_chars": 1209,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1209，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1762.md",
+      "cn_chars": 1283,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1283，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1763.md",
+      "cn_chars": 1249,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1249，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1764.md",
+      "cn_chars": 1361,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1361，低于目标 1800",
+        "五型问题结构信号缺失：验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1797dc7676.md",
+      "cn_chars": 1540,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1540，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1858993caa.md",
+      "cn_chars": 1423,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1423，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1897.md",
+      "cn_chars": 1377,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1377，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-199c5a2efc.md",
+      "cn_chars": 1591,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1591，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-19da8e4a02.md",
+      "cn_chars": 1613,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1613，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1a5b4ba8aa.md",
+      "cn_chars": 1686,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1686，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1ac787eb59.md",
+      "cn_chars": 1636,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1636，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1b243003e4.md",
+      "cn_chars": 1120,
+      "issues": [
+        "疑似类比字面等同红线：/就是[一个]*\\s*(?:Transformer|KV\\s*cache|LLM|大模型)/"
+      ],
+      "warnings": [
+        "正文中文字符 1120，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1c40e50c25.md",
+      "cn_chars": 1358,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1358，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1de7414bd8.md",
+      "cn_chars": 1661,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1661，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1e774b4997.md",
+      "cn_chars": 1565,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1565，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-1f6bd9f89a.md",
+      "cn_chars": 1614,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1614，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-1fbd3f19bd.md",
+      "cn_chars": 1637,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1637，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-202449759b.md",
+      "cn_chars": 1264,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1264，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2035.md",
+      "cn_chars": 1279,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1279，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2041.md",
+      "cn_chars": 1256,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1256，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-212caccd28.md",
+      "cn_chars": 1745,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1745，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2173.md",
+      "cn_chars": 1264,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1264，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2258.md",
+      "cn_chars": 1258,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1258，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2259.md",
+      "cn_chars": 1172,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1172，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2270.md",
+      "cn_chars": 1177,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1177，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2271.md",
+      "cn_chars": 1285,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1285，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2290ab4dda.md",
+      "cn_chars": 1375,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1375，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2338.md",
+      "cn_chars": 1229,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1229，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2342.md",
+      "cn_chars": 1279,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1279，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2391.md",
+      "cn_chars": 1276,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1276，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2392.md",
+      "cn_chars": 1229,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1229，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2393.md",
+      "cn_chars": 1294,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1294，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2394.md",
+      "cn_chars": 1187,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1187，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2395.md",
+      "cn_chars": 1273,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1273，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2396.md",
+      "cn_chars": 1348,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1348，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2397.md",
+      "cn_chars": 1315,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1315，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2398.md",
+      "cn_chars": 1253,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1253，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2400.md",
+      "cn_chars": 1267,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1267，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2402.md",
+      "cn_chars": 1352,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1352，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2404.md",
+      "cn_chars": 1302,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1302，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-240b9497f0.md",
+      "cn_chars": 1488,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1488，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2456a666bc.md",
+      "cn_chars": 1730,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1730，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-25bd8b344a.md",
+      "cn_chars": 1627,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1627，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-272c20b679.md",
+      "cn_chars": 1641,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1641，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-274c5936bc.md",
+      "cn_chars": 1749,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1749，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-27b6339cc5.md",
+      "cn_chars": 1269,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1269，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-27bdb724b0.md",
+      "cn_chars": 1692,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1692，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-293c86b7b2.md",
+      "cn_chars": 1339,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1339，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2993d2e44d.md",
+      "cn_chars": 1495,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1495，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2a2b32d46c.md",
+      "cn_chars": 1627,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1627，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2a91ca14eb.md",
+      "cn_chars": 1606,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1606，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2bb414c69f.md",
+      "cn_chars": 1144,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1144，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2c7bc9f41a.md",
+      "cn_chars": 1208,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1208，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2d7f230038.md",
+      "cn_chars": 1730,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1730，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-2d82ed9ba0.md",
+      "cn_chars": 1295,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1295，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2e1aec573f.md",
+      "cn_chars": 1413,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1413，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2e86f44d8f.md",
+      "cn_chars": 1656,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1656，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2ee5f71b1f.md",
+      "cn_chars": 1793,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1793，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-2ff3241973.md",
+      "cn_chars": 1073,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1073，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3095fec9e8.md",
+      "cn_chars": 1120,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1120，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-310c68c50f.md",
+      "cn_chars": 1624,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1624，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3124aafa77.md",
+      "cn_chars": 1491,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1491，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-35dfd1d3c2.md",
+      "cn_chars": 1200,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1200，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3693739154.md",
+      "cn_chars": 1530,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1530，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-39c2ffb3ec.md",
+      "cn_chars": 1285,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1285，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3ac2c94de1.md",
+      "cn_chars": 1614,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1614，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3b1c294367.md",
+      "cn_chars": 1379,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1379，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3bb3b75391.md",
+      "cn_chars": 1320,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1320，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3bdb98e542.md",
+      "cn_chars": 1483,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1483，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3c992c2cf9.md",
+      "cn_chars": 1638,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1638，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3cd9c5744b.md",
+      "cn_chars": 1663,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1663，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3d7d39b84c.md",
+      "cn_chars": 1569,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1569，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-3ebdda6d5f.md",
+      "cn_chars": 1559,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1559，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-3ef56545ce.md",
+      "cn_chars": 1657,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1657，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-3f2f91259b.md",
+      "cn_chars": 1623,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1623，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-3f4a5b39ed.md",
+      "cn_chars": 1591,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1591，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-40a8a91e3f.md",
+      "cn_chars": 1299,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1299，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-414945e004.md",
+      "cn_chars": 1837,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-418445e243.md",
+      "cn_chars": 1567,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1567，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-41fa14c5d9.md",
+      "cn_chars": 1779,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1779，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-423afa6370.md",
+      "cn_chars": 1464,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1464，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-42ca265a26.md",
+      "cn_chars": 1428,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1428，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-43b6c73961.md",
+      "cn_chars": 1229,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1229，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-44b099e185.md",
+      "cn_chars": 1582,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1582，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-44b0cd8aba.md",
+      "cn_chars": 1111,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1111，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-4571260f2b.md",
+      "cn_chars": 1384,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1384，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-457bc09023.md",
+      "cn_chars": 1766,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1766，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-45c88c80e1.md",
+      "cn_chars": 1268,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1268，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-4677f8bed2.md",
+      "cn_chars": 1807,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-4680e1978d.md",
+      "cn_chars": 1770,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1770，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-46d1c1494b.md",
+      "cn_chars": 1631,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1631，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-476925331d.md",
+      "cn_chars": 1325,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1325，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-482f3fea3c.md",
+      "cn_chars": 1796,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1796，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-483910723c.md",
+      "cn_chars": 1817,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-48edea5b37.md",
+      "cn_chars": 1562,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1562，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-517d0ccb95.md",
+      "cn_chars": 1362,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1362，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-51c934722f.md",
+      "cn_chars": 1289,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1289，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-51d0f39ce7.md",
+      "cn_chars": 1612,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1612，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-51e4faf16d.md",
+      "cn_chars": 1369,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1369，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-539e89bcaf.md",
+      "cn_chars": 1173,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1173，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-541bca7333.md",
+      "cn_chars": 1305,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1305，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-542a5beed4.md",
+      "cn_chars": 1688,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1688，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-55ca9bac1b.md",
+      "cn_chars": 1333,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1333，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-55eec74332.md",
+      "cn_chars": 1764,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1764，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-56e0ef1aa8.md",
+      "cn_chars": 1766,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1766，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5809f72032.md",
+      "cn_chars": 1614,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1614，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-584b73feb6.md",
+      "cn_chars": 1357,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1357，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-591773cf41.md",
+      "cn_chars": 1476,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1476，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5991cdc160.md",
+      "cn_chars": 1275,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1275，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5c5e3e0f5d.md",
+      "cn_chars": 1237,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1237，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5c750fba4d.md",
+      "cn_chars": 1604,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1604，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-5c9ec28a15.md",
+      "cn_chars": 1293,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1293，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-5d58b88b12.md",
+      "cn_chars": 1348,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1348，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5e51ad7fa9.md",
+      "cn_chars": 1559,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1559，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5e958a2eda.md",
+      "cn_chars": 1325,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1325，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5eb9442790.md",
+      "cn_chars": 1725,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1725，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-5ed852507b.md",
+      "cn_chars": 1626,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1626，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-617adf5984.md",
+      "cn_chars": 1637,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1637，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-626d2a3e66.md",
+      "cn_chars": 1666,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1666，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-63985b34f3.md",
+      "cn_chars": 1333,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1333，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-63e18cd094.md",
+      "cn_chars": 1371,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1371，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-63f05ce9d9.md",
+      "cn_chars": 1524,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1524，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-65b1035661.md",
+      "cn_chars": 1742,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1742，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6776afaaf0.md",
+      "cn_chars": 1492,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1492，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6a76081b2e.md",
+      "cn_chars": 1483,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1483，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6c2886db81.md",
+      "cn_chars": 1821,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-6c4a29f69e.md",
+      "cn_chars": 1614,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1614，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6e4befbbbc.md",
+      "cn_chars": 1371,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1371，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6ebb767bf6.md",
+      "cn_chars": 1432,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1432，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6ee8520519.md",
+      "cn_chars": 1576,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1576，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6f782eff68.md",
+      "cn_chars": 1579,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1579，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-6f8a0a13ef.md",
+      "cn_chars": 1204,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1204，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-70decd6881.md",
+      "cn_chars": 1367,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1367，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-71ec0279f4.md",
+      "cn_chars": 1621,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1621，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-72c4947ed9.md",
+      "cn_chars": 1356,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1356，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-73e8949e11.md",
+      "cn_chars": 1641,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1641，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-7417d73257.md",
+      "cn_chars": 1656,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1656，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-742184f806.md",
+      "cn_chars": 1694,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1694，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-74760fd604.md",
+      "cn_chars": 1563,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1563，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-76566eba73.md",
+      "cn_chars": 1589,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1589，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-76edddaed4.md",
+      "cn_chars": 1528,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1528，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-78d9f124cc.md",
+      "cn_chars": 1713,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1713，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-79936874d7.md",
+      "cn_chars": 1288,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1288，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-79b30f8dad.md",
+      "cn_chars": 1725,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1725，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-7b6300d920.md",
+      "cn_chars": 1794,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1794，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-7c997ece7b.md",
+      "cn_chars": 1664,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1664，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-7cf7d29f67.md",
+      "cn_chars": 1532,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1532，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-7ee642b5a9.md",
+      "cn_chars": 1657,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1657，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-7f5c1b111a.md",
+      "cn_chars": 1188,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1188，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-81260abf13.md",
+      "cn_chars": 1562,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1562，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8300b11626.md",
+      "cn_chars": 1511,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1511，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-83813b4c9d.md",
+      "cn_chars": 1439,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1439，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-838f8d4636.md",
+      "cn_chars": 1405,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1405，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8390712c08.md",
+      "cn_chars": 1120,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1120，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-83980b30e8.md",
+      "cn_chars": 1438,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1438，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-83d0b9b5e5.md",
+      "cn_chars": 1749,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1749，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-83deb76c4a.md",
+      "cn_chars": 1283,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1283，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8621443067.md",
+      "cn_chars": 1157,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1157，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8721d4a489.md",
+      "cn_chars": 1806,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-8729a999cd.md",
+      "cn_chars": 1760,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1760，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-880269f863.md",
+      "cn_chars": 1688,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1688，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-885ec5da43.md",
+      "cn_chars": 1797,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1797，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8a0456774b.md",
+      "cn_chars": 1206,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1206，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8a3f22cd9f.md",
+      "cn_chars": 1351,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1351，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8ab662e679.md",
+      "cn_chars": 1642,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1642，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8ca9e1ff79.md",
+      "cn_chars": 1538,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1538，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8d4e76c440.md",
+      "cn_chars": 1403,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1403，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-8f22ef8814.md",
+      "cn_chars": 1640,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1640，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-902a751177.md",
+      "cn_chars": 1135,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1135，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-90fde9723c.md",
+      "cn_chars": 1699,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1699，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-93ff83a4b1.md",
+      "cn_chars": 1338,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1338，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-943d968f68.md",
+      "cn_chars": 1317,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1317，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-954496b152.md",
+      "cn_chars": 1375,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1375，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-98ab800e2c.md",
+      "cn_chars": 1196,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1196，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-992bf20d82.md",
+      "cn_chars": 1780,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1780，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-9c324e89d5.md",
+      "cn_chars": 1566,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1566，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-9d6f6d027d.md",
+      "cn_chars": 1456,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1456，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a01b4b6cd4.md",
+      "cn_chars": 1221,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1221，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a0205736fa.md",
+      "cn_chars": 1550,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1550，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a0dc20fbf3.md",
+      "cn_chars": 1026,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1026，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a24ee9685d.md",
+      "cn_chars": 1283,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1283，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a2c2a15101.md",
+      "cn_chars": 1407,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1407，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a30724305c.md",
+      "cn_chars": 1708,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1708，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-a3af3de448.md",
+      "cn_chars": 1529,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1529，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a43fa4d354.md",
+      "cn_chars": 1646,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1646，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a4af48ea42.md",
+      "cn_chars": 1013,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1013，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a4bacc25f7.md",
+      "cn_chars": 1382,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1382，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a551b26443.md",
+      "cn_chars": 1598,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1598，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a5d8f599dc.md",
+      "cn_chars": 1360,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1360，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a656547bad.md",
+      "cn_chars": 1540,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1540，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a681c6e310.md",
+      "cn_chars": 1232,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1232，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a6addb0d91.md",
+      "cn_chars": 1688,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1688，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a860768f76.md",
+      "cn_chars": 1179,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1179，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a8d6aeeb3d.md",
+      "cn_chars": 1390,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1390，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-a961a82b4e.md",
+      "cn_chars": 1612,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1612，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-a96aee4540.md",
+      "cn_chars": 1567,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1567，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ab1852eea7.md",
+      "cn_chars": 1235,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1235，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-af0c75d39d.md",
+      "cn_chars": 1694,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1694，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-af0d5449cc.md",
+      "cn_chars": 1465,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1465，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-af4d5907de.md",
+      "cn_chars": 1366,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1366，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b003f09249.md",
+      "cn_chars": 1276,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1276，低于目标 1800",
+        "五型问题结构信号缺失：决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b00a7a4c35.md",
+      "cn_chars": 1643,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1643，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b026ff552e.md",
+      "cn_chars": 1655,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1655，低于目标 1800",
+        "正文含 3 个百分比数字但无参考来源区块"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b11b7b906d.md",
+      "cn_chars": 1398,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1398，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b16e7d09b9.md",
+      "cn_chars": 1431,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1431，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b1c079bf9f.md",
+      "cn_chars": 1667,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1667，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b25a9f6dba.md",
+      "cn_chars": 1345,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1345，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b3809a4c9f.md",
+      "cn_chars": 1646,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1646，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-b3e5f65b8c.md",
+      "cn_chars": 1688,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1688，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b48bcaec3a.md",
+      "cn_chars": 1320,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1320，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-b4e047146c.md",
+      "cn_chars": 1519,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1519，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b5c50a6dad.md",
+      "cn_chars": 1310,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1310，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-b81c9086f3.md",
+      "cn_chars": 1853,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-b8f3dd763d.md",
+      "cn_chars": 1430,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1430，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-baaff33841.md",
+      "cn_chars": 1411,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1411，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-bb0ceef893.md",
+      "cn_chars": 1584,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1584，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-bf4427643d.md",
+      "cn_chars": 1823,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-c064b8848d.md",
+      "cn_chars": 1250,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1250，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c154309dbc.md",
+      "cn_chars": 1664,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1664，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c166dc6359.md",
+      "cn_chars": 1606,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1606，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-c19f731e03.md",
+      "cn_chars": 1172,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1172，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c295556606.md",
+      "cn_chars": 1225,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1225，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c2d1a5c024.md",
+      "cn_chars": 1155,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1155，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c34151fb85.md",
+      "cn_chars": 1655,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1655，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c3fb83a8ca.md",
+      "cn_chars": 1494,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1494，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c5baeb36f2.md",
+      "cn_chars": 1365,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1365，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-c758918d59.md",
+      "cn_chars": 1670,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1670，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-c86fc7e877.md",
+      "cn_chars": 1649,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1649，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ca0c55530b.md",
+      "cn_chars": 1814,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-ca0cfb9a3d.md",
+      "cn_chars": 1644,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1644，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ca639fec79.md",
+      "cn_chars": 1767,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1767，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ca96891d52.md",
+      "cn_chars": 1846,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-cab96ab10b.md",
+      "cn_chars": 1705,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1705，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-cbfacc08dc.md",
+      "cn_chars": 1369,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1369，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-cc83ffd3d5.md",
+      "cn_chars": 1474,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1474，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ce4c78afae.md",
+      "cn_chars": 1497,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1497，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-cff28a225c.md",
+      "cn_chars": 1555,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1555，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d0888d9c79.md",
+      "cn_chars": 1133,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1133，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d1941ce38f.md",
+      "cn_chars": 1338,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1338，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d23b1d4336.md",
+      "cn_chars": 1742,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1742，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-d50b27e6e3.md",
+      "cn_chars": 1302,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1302，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d5702d003c.md",
+      "cn_chars": 1670,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1670，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d5b66cc684.md",
+      "cn_chars": 1080,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1080，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d5f829cb85.md",
+      "cn_chars": 1764,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1764，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d6d3bd2162.md",
+      "cn_chars": 1619,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1619，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d8067cbcd8.md",
+      "cn_chars": 1636,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1636，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-d96185b793.md",
+      "cn_chars": 1332,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1332，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-da0af72ac6.md",
+      "cn_chars": 1460,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1460，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-daa14f734c.md",
+      "cn_chars": 1354,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1354，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-db0c48e534.md",
+      "cn_chars": 1709,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1709，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-db9adfb253.md",
+      "cn_chars": 1482,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1482，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-dcafab26f4.md",
+      "cn_chars": 1404,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1404，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-dcb8df9eb4.md",
+      "cn_chars": 1328,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1328，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-dd65c3f197.md",
+      "cn_chars": 1471,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1471，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-de65b845cb.md",
+      "cn_chars": 1528,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1528，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-df40f99fc2.md",
+      "cn_chars": 1333,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1333，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-df944b3626.md",
+      "cn_chars": 1738,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1738，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e230ee6fa5.md",
+      "cn_chars": 1632,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1632，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-e2eeba71c6.md",
+      "cn_chars": 1281,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1281，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e44bbd4c42.md",
+      "cn_chars": 1273,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1273，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e543c59ac8.md",
+      "cn_chars": 1512,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1512，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e609be4a09.md",
+      "cn_chars": 1506,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1506，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e6ce79d8f6.md",
+      "cn_chars": 1270,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1270，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e720aa7dbc.md",
+      "cn_chars": 1215,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1215，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e7dfc139f0.md",
+      "cn_chars": 1428,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1428，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-e8612ecafb.md",
+      "cn_chars": 1165,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1165，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-eacc7ef259.md",
+      "cn_chars": 1714,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1714，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-eb0993ef6f.md",
+      "cn_chars": 1957,
+      "issues": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "file": "data/articles/prob-eb76c9ae90.md",
+      "cn_chars": 1325,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1325，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-eb93da195b.md",
+      "cn_chars": 1306,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1306，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ebc724f965.md",
+      "cn_chars": 1110,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1110，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ec38bb09fd.md",
+      "cn_chars": 1567,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1567，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ee261f3f5f.md",
+      "cn_chars": 1702,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1702，低于目标 1800",
+        "正文含 1 个百分比数字但无参考来源区块"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ee8a94d218.md",
+      "cn_chars": 1177,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1177，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ef4fd62ba5.md",
+      "cn_chars": 1604,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1604，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-efc0a09cb5.md",
+      "cn_chars": 1231,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1231，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f035f8b27f.md",
+      "cn_chars": 1230,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1230，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f04ed723d6.md",
+      "cn_chars": 1674,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1674，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f120d52443.md",
+      "cn_chars": 1215,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1215，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f18e2e9f5d.md",
+      "cn_chars": 1732,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1732，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f48d896537.md",
+      "cn_chars": 1308,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1308，低于目标 1800",
+        "五型问题结构信号缺失：收敛、验证、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f4e6532bfc.md",
+      "cn_chars": 1353,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1353，低于目标 1800",
+        "五型问题结构信号缺失：收敛、决策"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f52340194f.md",
+      "cn_chars": 1666,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1666，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f5dd00ab8e.md",
+      "cn_chars": 1594,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1594，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-f60d6302ad.md",
+      "cn_chars": 1340,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1340，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f6c966a4e7.md",
+      "cn_chars": 1365,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1365，低于目标 1800",
+        "五型问题结构信号缺失：收敛"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f6ca640e81.md",
+      "cn_chars": 1677,
+      "issues": [
+        "涉及医疗/危机内容但缺少专业支持边界声明"
+      ],
+      "warnings": [
+        "正文中文字符 1677，低于目标 1800"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "file": "data/articles/prob-f929be9f88.md",
+      "cn_chars": 1718,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1718，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-f9d51a5c6e.md",
+      "cn_chars": 1512,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1512，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-fc863a2643.md",
+      "cn_chars": 1355,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1355，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-fc9e8a3b0a.md",
+      "cn_chars": 1582,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1582，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-fdadef195e.md",
+      "cn_chars": 1347,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1347，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-fe04bf3137.md",
+      "cn_chars": 1628,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1628，低于目标 1800"
+      ],
+      "status": "WARN"
+    },
+    {
+      "file": "data/articles/prob-ff1ce16e82.md",
+      "cn_chars": 1107,
+      "issues": [],
+      "warnings": [
+        "正文中文字符 1107，低于目标 1800"
+      ],
+      "status": "WARN"
+    }
+  ]
+}
