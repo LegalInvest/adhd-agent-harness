@@ -1,8 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import displayOrder from "../data/display-order.json";
 
 const allArticles = await getCollection("articles");
+const previewPosition = new Map(displayOrder.category_previews.map((slug, index) => [slug, index]));
+allArticles.sort((a, b) =>
+  (previewPosition.get(a.data.slug || a.id) ?? Number.MAX_SAFE_INTEGER)
+  - (previewPosition.get(b.data.slug || b.id) ?? Number.MAX_SAFE_INTEGER)
+  || (a.data.slug || a.id).localeCompare(b.data.slug || b.id)
+);
 
 const categoryIcons: Record<string, string> = {
   "ai-tools": "🛠️", "focus": "🎯", "time-mgmt": "⏰", "emotion": "💚",

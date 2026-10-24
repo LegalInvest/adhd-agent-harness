@@ -5,7 +5,7 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description = "研究院。400 篇已经公开的长文。", ogImage } = Astro.props;
+const { title, description = "研究院。ADHD 与 AI 的文章，以及更早的 ADHD 主题稿，都收在这里。现在公开 400 篇。不是诊断。", ogImage } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
@@ -86,8 +86,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
               <span>研究院</span>
             </div>
             <p class="mt-3 text-sm text-[var(--color-text-secondary)]">
-              400 篇精选文章，探索 ADHD 与 AI 的无限可能。
-              <br />用技术赋能，让每个独特的大脑闪闪发光。
+              ADHD 与 AI 的文章，以及更早的 ADHD 主题稿，都收在这里。
+              <br />现在公开的是已经写成的长文。不是诊断。
             </p>
           </div>
           <div>

@@ -4,12 +4,17 @@ import Hero from "../components/Hero.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import CategoryFilter from "../components/CategoryFilter.astro";
 import { getCollection } from "astro:content";
+import displayOrder from "../data/display-order.json";
 
 const allArticles = await getCollection("articles");
+const displayPosition = new Map(displayOrder.home.map((slug, index) => [slug, index]));
 
 // Sort by score descending
 const sortedArticles = allArticles.sort(
   (a, b) => (b.data.score || 0) - (a.data.score || 0)
+    || (displayPosition.get(a.data.slug || a.id) ?? Number.MAX_SAFE_INTEGER)
+       - (displayPosition.get(b.data.slug || b.id) ?? Number.MAX_SAFE_INTEGER)
+    || (a.data.slug || a.id).localeCompare(b.data.slug || b.id)
 );
 
 // Build category info
