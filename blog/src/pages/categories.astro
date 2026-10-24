@@ -44,7 +44,7 @@ for (const article of allArticles) {
     existing.avgScore += article.data.score || 0;
     existing.topArticles.push({
       title: article.data.title,
-      slug: article.id,
+      slug: article.data.slug || article.id,
       score: article.data.score || 0,
     });
   } else {
@@ -57,7 +57,7 @@ for (const article of allArticles) {
       avgScore: article.data.score || 0,
       topArticles: [{
         title: article.data.title,
-        slug: article.id,
+        slug: article.data.slug || article.id,
         score: article.data.score || 0,
       }],
     });
@@ -71,7 +71,7 @@ const categories = Array.from(categoriesMap.values()).map((cat) => ({
 }));
 ---
 
-<BaseLayout title="分类 - ADHD × AI">
+<BaseLayout title="分类 - 研究院">
   <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
     <div class="mb-12 text-center">
       <h1 class="text-3xl font-extrabold sm:text-4xl">

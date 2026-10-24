@@ -38,7 +38,7 @@ for (const article of sortedArticles) {
 const categories = Array.from(categoryMap.values());
 ---
 
-<BaseLayout title="ADHD × AI - 400篇精选文章">
+<BaseLayout title="研究院">
   <Hero totalArticles={sortedArticles.length} totalCategories={categories.length} />
 
   <section id="articles" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ const categories = Array.from(categoryMap.values());
             date={article.data.date}
             readingTime={article.data.readingTime}
             tags={article.data.tags}
-            slug={article.id}
+            slug={article.data.slug || article.id}
             rank={article.data.rank}
             score={article.data.score}
           />

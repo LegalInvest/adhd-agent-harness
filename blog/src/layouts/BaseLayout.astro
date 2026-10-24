@@ -5,7 +5,7 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description = "ADHD × AI - 400 篇精选文章，探索 ADHD 与 AI 的无限可能", ogImage } = Astro.props;
+const { title, description = "研究院。400 篇已经公开的长文。", ogImage } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
@@ -40,12 +40,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href={`${base}/`} class="flex items-center gap-3">
           <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-purple-500 text-lg font-bold text-white shadow-lg shadow-brand-500/25">
-            A
+            研
           </div>
           <div>
-            <span class="text-lg font-bold tracking-tight">ADHD</span>
-            <span class="mx-1 text-brand-500 font-light">&times;</span>
-            <span class="text-lg font-bold tracking-tight">AI</span>
+            <span class="text-lg font-bold tracking-tight">研究院</span>
           </div>
         </a>
         <div class="flex items-center gap-6">
@@ -85,9 +83,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         <div class="grid gap-8 md:grid-cols-3">
           <div>
             <div class="flex items-center gap-2 text-lg font-bold">
-              <span>ADHD</span>
-              <span class="text-brand-500">&times;</span>
-              <span>AI</span>
+              <span>研究院</span>
             </div>
             <p class="mt-3 text-sm text-[var(--color-text-secondary)]">
               400 篇精选文章，探索 ADHD 与 AI 的无限可能。
@@ -112,7 +108,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
           </div>
         </div>
         <div class="mt-8 border-t border-[var(--color-border)] pt-8 text-center text-sm text-[var(--color-text-secondary)]">
-          <p>&copy; 2025 ADHD &times; AI. All rights reserved.</p>
+          <p>&copy; 2026 研究院</p>
         </div>
       </div>
     </footer>
