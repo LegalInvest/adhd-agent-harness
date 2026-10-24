@@ -75,5 +75,5 @@ jobs:
           echo "$ALIYUN_SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H "$ALIYUN_HOST" >> ~/.ssh/known_hosts 2>/dev/null
-          rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" \
+          rsync -az -e "ssh -i ~/.ssh/deploy_key" \
             blog/dist/ "$ALIYUN_USER@$ALIYUN_HOST:/opt/apps/static/adhd/"
