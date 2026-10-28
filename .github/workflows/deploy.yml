@@ -62,7 +62,7 @@ jobs:
       - name: Build for Aliyun
         working-directory: blog
         env:
-          SITE_URL: https://legalbot.top
+          SITE_URL: https://cyberunion.cn
           BASE_PATH: /adhd
         run: npm run build
       - name: Rsync to Aliyun server
