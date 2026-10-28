@@ -27,6 +27,7 @@ const categoryColors: Record<string, string> = {
   "community": "bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300",
 };
 
+const includeCommunityBookmark = Astro.site?.hostname === "cyberunion.cn";
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const colorClass = categoryColors[article.data.categoryId] || "bg-gray-100 text-gray-700";
 ---
@@ -107,4 +108,5 @@ const colorClass = categoryColors[article.data.categoryId] || "bg-gray-100 text-
       </a>
     </nav>
   </article>
+  {includeCommunityBookmark && <script is:inline src="/adhdxingguang/bookmark-button.js" defer data-cu-bookmark-entry></script>}
 </BaseLayout>
